@@ -36,9 +36,27 @@ score / Brier / drift / layer assignment is verifiable.
 | `data/audit_ledger.json` | every prediction chain · 425+ rows | daily |
 | `data/audit_attestations.json` | per-chain GitHub commit reference · 3 tiers | daily |
 | `data/attestation_map.json` | methodology version → GitHub commit | per version bump |
-| `data/wallets_combined.snapshot.json` | full per-wallet records at this snapshot | daily |
+| `data/wallets_combined.snapshot.json` | full per-wallet records · 241 wallets · daily snapshot | daily |
+| `data/vpi_nav.json` | **VERDICT Polymarket Index** · today's NAV + composition | daily |
+| `data/vpi_nav_history.json` | **VPI** · append-only daily NAV history | daily |
+| `data/orderbook_per_trade_snapshots.json` | **Tier 2 transaction history** · 50,000+ per-trade orderbook fills with bid / ask / midpoint / depth at execution moment · keyed by (wallet, condition_id, trade_ts) | per data-engineer PR |
+| `data/wallet_microstructure_book.json` | live-snapshotter aggregate · maker/taker rates · slippage rollups | daily |
 | `data/venue_rating.json` | Polymarket-the-venue rating (when populated) | quarterly |
 | `methodology_versions.md` | human-readable correction history | per version bump |
+
+## Transaction-history reproducibility (M1 + M2 + M3)
+
+Every per-trade orderbook fill in `data/orderbook_per_trade_snapshots.json` is
+keyed by `(wallet, condition_id, trade_ts)` — anyone can:
+
+1. Pull the same Goldsky `OrderFilledEvent` stream we used (subgraph endpoint
+   recorded inside the file's `subgraph_endpoint` field)
+2. Compute `best_bid` / `best_ask` / `midpoint` / `depth_within_1pct_usd` /
+   `edge_over_midpoint` at the same `trade_ts`
+3. Get the same numbers we publish
+
+If our numbers differ from a reproduction run, the difference is a methodology
+bug we'll publish a correction for under `methodology_versions.md`.
 
 ## What's NOT here (deliberately)
 
