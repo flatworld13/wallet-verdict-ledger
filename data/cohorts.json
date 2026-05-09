@@ -1,0 +1,45 @@
+{
+  "schema_version": "1",
+  "cohorts": [
+    {
+      "id": "crypto",
+      "label": "Crypto cohort",
+      "filter_expr": "brier_by_domain.Crypto.count >= 5",
+      "sort_key": "composite_per_domain.Crypto",
+      "sort_dir": "desc",
+      "limit": 50,
+      "domain_pretty": "Crypto",
+      "domain_lower": "crypto",
+      "tier_pretty": "Strong-crypto",
+      "strong_tier_key": "strong_crypto",
+      "brier_attr": "crypto_brier",
+      "brier_label": "Crypto Brier",
+      "min_n_strong_key": "min_crypto_n_strong",
+      "top_n_strong_label": "\u22651 resolved crypto markets",
+      "archetype_caption": "crypto-share",
+      "cohort_script": "build_crypto_cohort.py",
+      "hero_markets_phrase": "crypto markets",
+      "pick_example_text": "BTC $150k by June 30, 2026"
+    },
+    {
+      "id": "politics",
+      "label": "Politics cohort",
+      "filter_expr": "brier_by_domain.Politics.count >= 5",
+      "sort_key": "composite_per_domain.Politics",
+      "sort_dir": "desc",
+      "limit": 50,
+      "domain_pretty": "Politics",
+      "domain_lower": "politics",
+      "tier_pretty": "Strong-politics",
+      "strong_tier_key": "strong_politics",
+      "brier_attr": "politics_brier",
+      "brier_label": "Politics Brier",
+      "min_n_strong_key": "min_politics_n_strong",
+      "top_n_strong_label": "\u226510 resolved politics markets",
+      "archetype_caption": "politics-share",
+      "cohort_script": "build_politics_cohort.py",
+      "hero_markets_phrase": "politics markets",
+      "pick_example_text": "2024 US Presidential Election"
+    }
+  ]
+}
