@@ -1,0 +1,139 @@
+{
+  "schema_version": "0.1",
+  "method_version": "S18-v0.1",
+  "quarter": "Q2 2026",
+  "published_at_unix": 1778398656,
+  "published_at_utc": "2026-05-10",
+  "venue": "Polymarket",
+  "byline": "VERDICT VENUE DESK",
+  "composite_grade": "C+",
+  "composite_score": 2.15,
+  "composite_score_max": 4.0,
+  "rating_status": "PROVISIONAL",
+  "n_metrics_available": 2,
+  "n_metrics_planned": 3,
+  "delta_vs_prior": "first published",
+  "methodology_summary": "S18 v0.1 ships with 3 of 5 planned metrics. v0.2 adds UMA dispute frequency + withdraw success rate. Each metric graded A through D against published thresholds. Composite is the equal-weighted mean of component grades. Sources: audit_ledger.json + settlement_attestations.json.",
+  "components": {
+    "resolution_timing": {
+      "metric_label": "Median time from market close to resolution",
+      "value": null,
+      "value_unit": "hours",
+      "sample_size": 0,
+      "grade": "\u2014",
+      "note": "Lower is better. Industry baseline: \u226424h is healthy."
+    },
+    "settlement_accuracy": {
+      "metric_label": "W3 Polygon block-timestamp accuracy vs reported resolution",
+      "value": 145640.0,
+      "value_unit": "seconds (median divergence)",
+      "sample_size": 248,
+      "within_60s_count": 69,
+      "grade": "D",
+      "note": "Cross-check of Polymarket-reported timestamps against Polygon block ts."
+    },
+    "backfill_coverage": {
+      "metric_label": "% of audit chains in resolved or backfilled state",
+      "value": 81.5,
+      "value_unit": "percent",
+      "sample_size": 491,
+      "n_resolved": 0,
+      "n_backfilled": 400,
+      "grade": "B+",
+      "note": "Higher is better."
+    }
+  },
+  "planned_v02_components": [
+    "uma_dispute_frequency  \u00b7 fetched from polymarket-uma subgraph",
+    "withdraw_success_rate  \u00b7 Polygon RPC monitor of withdraw txs"
+  ],
+  "sources": [
+    "data/audit_ledger.json (M1 chain ledger \u00b7 491 chains)",
+    "data/settlement_attestations.json (W3 Polygon RPC v60bf \u00b7 215 attestations)"
+  ],
+  "frame_3_role": "Venue Desk \u00b7 the Polymarket investigation beat \u00b7 S&P/Moody's pattern \u00b7 published quarterly",
+  "m_axis": [
+    "M2 (only neutral seat)",
+    "M5 (methodology version-locked)"
+  ],
+  "thresholds_published": {
+    "resolution_timing": [
+      {
+        "upper_hours": 6,
+        "grade": "A"
+      },
+      {
+        "upper_hours": 24,
+        "grade": "A-"
+      },
+      {
+        "upper_hours": 72,
+        "grade": "B+"
+      },
+      {
+        "upper_hours": 168,
+        "grade": "B"
+      },
+      {
+        "upper_hours": 336,
+        "grade": "C"
+      },
+      {
+        "upper_hours": null,
+        "grade": "D"
+      }
+    ],
+    "settlement_accuracy": [
+      {
+        "upper_sec": 60,
+        "grade": "A"
+      },
+      {
+        "upper_sec": 300,
+        "grade": "A-"
+      },
+      {
+        "upper_sec": 3600,
+        "grade": "B+"
+      },
+      {
+        "upper_sec": 14400,
+        "grade": "B"
+      },
+      {
+        "upper_sec": 86400,
+        "grade": "C"
+      },
+      {
+        "upper_sec": null,
+        "grade": "D"
+      }
+    ],
+    "backfill_coverage": [
+      {
+        "lower_pct": 95.0,
+        "grade": "A"
+      },
+      {
+        "lower_pct": 90.0,
+        "grade": "A-"
+      },
+      {
+        "lower_pct": 80.0,
+        "grade": "B+"
+      },
+      {
+        "lower_pct": 60.0,
+        "grade": "B"
+      },
+      {
+        "lower_pct": 40.0,
+        "grade": "C"
+      },
+      {
+        "lower_pct": null,
+        "grade": "D"
+      }
+    ]
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "schema_version": "0.1",
+  "method_version": "LedgerManifest-v0.1",
+  "date": "2026-05-10",
+  "generated_at_unix": 1778400748,
+  "generated_at_utc": "2026-05-10 08:12 UTC",
+  "engine_sha": "87e6fea7f3648c2ae3479a4df3c91bdaa07b871d",
+  "frame_3_role": "Masthead \u00b7 self-describing inventory \u00b7 the entry-point for any auditor",
+  "description": "Self-describing inventory of every file synced to wallet-verdict-ledger today. Every file has size + sha256 + role. Cross-references the day's OTS-anchored digest so the manifest itself is tamper-detectable: if any synced file changes after publication, its sha256 won't match this manifest record. The manifest IS the receipt-of-receipts.",
+  "totals": {
+    "n_files_synced": 33,
+    "n_files_planned_in_inventory": 33,
+    "total_bytes": 123103476,
+    "total_mb": 117.4
+  },
+  "ots_anchor": {
+    "date": "2026-05-10",
+    "digest_sha256": "ae866271ed502264c4f40f2dfc2ca36909ff15b79c1e6cf11fa756a492e46f4b",
+    "digest_path": "data/ots_receipts/2026-05-10.digest",
+    "receipt_path": "data/ots_receipts/2026-05-10.digest.ots",
+    "btc_status": "unknown",
+    "methodology_version": "L4-anchor v1.3",
+    "verify_command": "ots verify data/ots_receipts/2026-05-10.digest.ots"
+  },
+  "manifest_self_anchor": {
+    "date": "2026-05-10",
+    "manifest_sha256": "4bf019ed238a7cd27f96b42741436534a1873c51c5d1f7fcf1449de384439864",
+    "receipt_path": "data/ots_receipts/2026-05-10.manifest.digest.ots",
+    "btc_status": "pending",
+    "methodology_version": "L4-manifest v1.0",
+    "verify_command": "ots verify data/ots_receipts/2026-05-10.manifest.digest.ots",
+    "note": "OTS-anchored separately from the engine-state digest. The engine anchor covers the 9 core data files; the manifest anchor covers THIS manifest (which itself sha256s every file in the ledger). Together they form the double-anchor pattern \u00b7 two independent Bitcoin receipts per day."
+  },
+  "three_layer_architecture": {
+    "layer_1_github": "public ledger / readable history \u00b7 wallet-verdict-ledger repo",
+    "layer_2_ots": "decentralized timestamp proof \u00b7 daily Bitcoin anchor (2 receipts: engine + manifest)",
+    "layer_3_polygon": "optional easy enterprise receipt / settlement proof \u00b7 W3 settlement attestations live \u00b7 daily-hash contract DEFERRED until enterprise pull",
+    "rule": "Do NOT put bulk data on-chain \u00b7 only hashes",
+    "reopen_when": "Watchtower customer asks for L1/L2 receipt explicitly \u00b7 OR regulator subpoena hypothetical \u00b7 OR GitHub takes visible action against similar product"
+  },
+  "strategy_locks": [
+    {
+      "lock_id": "verified_wallet_rating_lock",
+      "lock_name": "Verified Wallet Rating \u00b7 Top Position + Moat (operator-canonical)",
+      "set_date": "2026-05-10",
+      "sha256_canonical": "2dffae38d8b1129aae569828c08a4a1cfc3ff3f4bca945668f829553e8a98d54",
+      "file": "data/locks/verified_wallet_rating_lock.json"
+    },
+    {
+      "lock_id": "notion_lock",
+      "lock_name": "Notion + Data Priority Lock",
+      "set_date": "2026-05-10",
+      "sha256_canonical": "d1f5bd76834798e4b55bcb4081e3d99c384cd6506d9e2541555d175eb3234f7e",
+      "file": "data/locks/notion_lock.json"
+    },
+    {
+      "lock_id": "launch_priority_lock",
+      "lock_name": "Launch Priority Lock \u00b7 Pro Trader \u2192 Creator Desk \u2192 Enterprise Pilot",
+      "set_date": "2026-05-10",
+      "sha256_canonical": "148bf0f8f12ac7d606fa41383a69bbefabbbb3750975b19dfa95b034d8bef470",
+      "file": "data/locks/launch_priority_lock.json"
+    },
+    {
+      "lock_id": "wallet_ratings_agency_reframe",
+      "lock_name": "Wallet Ratings Agency Reframe \u00b7 Bible Deck",
+      "set_date": "2026-05-10",
+      "sha256_canonical": "fb77f47b3dbbb23873cef7467311eaec1a5c592f26c85e60bf74cbd98218a9c4",
+      "file": "data/locks/wallet_ratings_agency_reframe.json"
+    },
+    {
+      "lock_id": "use_case_signal_data_matrix",
+      "lock_name": "Use-case \u00d7 Signal \u00d7 Data Matrix",
+      "set_date": "2026-05-10",
+      "sha256_canonical": "377def096a59857d04103acbd7901fbca18d2b40690d49e4c8ee442eb92b3058",
+      "file": "data/locks/use_case_signal_data_matrix.json"
+    }
+  ],
+  "synced_files": [
+    {
+      "path": "data/audit_ledger.json",
+      "size_bytes": 513768,
+      "size_kb": 501.7,
+      "sha256": "3802ada6850d9f4b9ed6ed9baefc4b724f770fe5c3727aaf674fe6da5c7173e4",
+      "role": "M1 chain ledger \u00b7 forward-witnessed predictions",
+      "rows": 491
+    },
+    {
+      "path": "data/audit_attestations.json",
+      "size_bytes": 232580,
+      "size_kb": 227.1,
+      "sha256": "e52a333efe267f258132d812e2937be756ac8248c07c8ca81d3272f5485e6076",
+      "role": "M1 + L3 GitHub witness \u00b7 per-chain attestation"
+    },
+    {
+      "path": "data/attestation_map.json",
+      "size_bytes": 1475,
+      "size_kb": 1.4,
+      "sha256": "3a08b08c73d70349cbab0f1768bc172deab81e2df3b40c84b6dab45e4d96aa99",
+      "role": "methodology version \u2192 GitHub commit lookup"
+    },
+    {
+      "path": "data/wallets_combined.snapshot.json",
+      "size_bytes": 47413686,
+      "size_kb": 46302.4,
+      "sha256": "19ca475fe03238961f87a09b00fae07856ceac9fa256a5671c08969a31e7b65d",
+      "role": "per-wallet records \u00b7 daily snapshot",
+      "rows": 339
+    },
+    {
+      "path": "data/markets.json",
+      "size_bytes": 352262,
+      "size_kb": 344.0,
+      "sha256": "3029b6a48004b1c8ea129cc154843b5b92f9c3df37a0c043d000a66fc4dd96d8",
+      "role": "Polymarket markets list",
+      "rows": 150
+    },
+    {
+      "path": "data/resolved_markets.json",
+      "size_bytes": 41080,
+      "size_kb": 40.1,
+      "sha256": "c444195f5881d784b51394fbc0062e2f31d998fb30acec0cdc7211464656ce27",
+      "role": "resolved Polymarket markets \u00b7 M4 input"
+    },
+    {
+      "path": "data/btc_picker.json",
+      "size_bytes": 191756,
+      "size_kb": 187.3,
+      "sha256": "01e1b12211d5a89c32a3c3df66ab4065fe397274c1978a7ad9e5a1a988420d64",
+      "role": "BTC $150K picker scores"
+    },
+    {
+      "path": "data/cohorts.json",
+      "size_bytes": 1568,
+      "size_kb": 1.5,
+      "sha256": "c4191f247e957b811d89c407c0c6a0ba44e19d8cd8d3c16c2862e073ad52664e",
+      "role": "cohort view config"
+    },
+    {
+      "path": "data/crypto_cohort.json",
+      "size_bytes": 3682295,
+      "size_kb": 3596.0,
+      "sha256": "cb0098a8472c763cd46773277093c52571c28d2f9cbc1ed42913034972ab34e3",
+      "role": "crypto-domain cohort view",
+      "rows": 50
+    },
+    {
+      "path": "data/politics_cohort.json",
+      "size_bytes": 3902091,
+      "size_kb": 3810.6,
+      "sha256": "6062e3d72e88a1591d4c8ad62d72a00d1bf3f8edc067d3a38eaef512288ff3c4",
+      "role": "politics-domain cohort view",
+      "rows": 50
+    },
+    {
+      "path": "data/signal_radar.json",
+      "size_bytes": 396,
+      "size_kb": 0.4,
+      "sha256": "e02944cc1cb146738f4fc77b75bd28a2136815ecea3928beff9d2e957990469a",
+      "role": "per-market signal radar"
+    },
+    {
+      "path": "data/vpi_nav.json",
+      "size_bytes": 10621,
+      "size_kb": 10.4,
+      "sha256": "d71e7c0d5dc1bc2ad50354bea7f7ee0162b066e5aba4e96bbff1352109b9afb4",
+      "role": "VPI NAV \u00b7 the mega-moat product \u00b7 daily calibration index"
+    },
+    {
+      "path": "data/vpi_nav_history.json",
+      "size_bytes": 18946,
+      "size_kb": 18.5,
+      "sha256": "4044d26d06043de7aa3bcdb2c9f73b91781e0accac173a1e5b1ce296eb27a966",
+      "role": "VPI NAV history",
+      "rows": 92
+    },
+    {
+      "path": "data/vpi_baselines.json",
+      "size_bytes": 1266,
+      "size_kb": 1.2,
+      "sha256": "796505559e953617bc8497bd8517491a7370e6ca94e84533f25c41ff62af8532",
+      "role": "VPI baselines \u00b7 3 naive forecasters \u00b7 K01"
+    },
+    {
+      "path": "data/vri_returns.json",
+      "size_bytes": 31339,
+      "size_kb": 30.6,
+      "sha256": "23b1df42e7888d5251f608738c893a29c77cbb1efb00b8587d5aef3b2b263e03",
+      "role": "VRI returns \u00b7 dollar-PnL receipts \u00b7 K04"
+    },
+    {
+      "path": "data/wallet_backtest.json",
+      "size_bytes": 544626,
+      "size_kb": 531.9,
+      "sha256": "ee624befb5072e537c13b87bd9de3acaf55b3b803c8818e889beaf64435956a3",
+      "role": "J02 dollar-PnL backtest grid",
+      "rows": 241
+    },
+    {
+      "path": "data/ots_anchor_history.json",
+      "size_bytes": 1871,
+      "size_kb": 1.8,
+      "sha256": "7f7468a38d2a33b38e9d4c39bea19f0b8e3fb30421a927d53066c93f21bf5ee7",
+      "role": "L4 OTS Bitcoin anchor history index",
+      "rows": 3
+    },
+    {
+      "path": "data/orderbook_per_trade_snapshots.json",
+      "size_bytes": 50328105,
+      "size_kb": 49148.5,
+      "sha256": "f9c83ce9fc0ae46b665401ff0cee53708029a50053cebbc82b85ea773d11f610",
+      "role": "Tier 2 microstructure \u00b7 63K fills \u00b7 M3 + M5 input",
+      "rows": 63155
+    },
+    {
+      "path": "data/wallet_microstructure_book.json",
+      "size_bytes": 145688,
+      "size_kb": 142.3,
+      "sha256": "b7d1bfb87b05dace83f7b673eb80eab5899727cb1e6b3050199ada59883e0135",
+      "role": "live snapshotter aggregate",
+      "rows": 241
+    },
+    {
+      "path": "data/counterparty_graph.json",
+      "size_bytes": 885861,
+      "size_kb": 865.1,
+      "sha256": "b7a1b7a7fe035b0927b94a63d4824684416e98a3687e9ea692aeea2ee3d22606",
+      "role": "W2 counterparty graph \u00b7 7.2\u00d7 cohort widening \u00b7 9th component"
+    },
+    {
+      "path": "data/settlement_attestations.json",
+      "size_bytes": 92782,
+      "size_kb": 90.6,
+      "sha256": "6151c153a85c1d42afc8d5953ae6ebe9b552d1101c813d7e8a7147359ac8dd07",
+      "role": "W3 Polygon RPC settlement attestations \u00b7 8th component",
+      "rows": 248
+    },
+    {
+      "path": "data/derived_metrics_daily.json",
+      "size_bytes": 167744,
+      "size_kb": 163.8,
+      "sha256": "710a3e33537940dfb8bf0a378d945dc6e115b17b8043228e53314f55c0f17d04",
+      "role": "D5 forward-anchored derived metrics \u00b7 7th component"
+    },
+    {
+      "path": "data/moat_status.json",
+      "size_bytes": 11436,
+      "size_kb": 11.2,
+      "sha256": "9bdc3635318a237de45c226ec710341e06fc604826c1c4df35b83456783a26ef",
+      "role": "Board 6 \u00b7 9-component moat scorecard \u00b7 self-audit"
+    },
+    {
+      "path": "data/ledger_health_history.json",
+      "size_bytes": 23995,
+      "size_kb": 23.4,
+      "sha256": "fb7468e0c2268bae12f2e88ac101ffd175f37cbdf02d3670442429f3506a4936",
+      "role": "ledger-health watchdog history",
+      "rows": 5
+    },
+    {
+      "path": "data/edge_decay_features.json",
+      "size_bytes": 117398,
+      "size_kb": 114.6,
+      "sha256": "404660a5dc7bdf7ddb2b47a1c53647e4d5781401ab7126de3d13ab85ad852793",
+      "role": "J12 edge decay observable features \u00b7 v60bp",
+      "rows": 241
+    },
+    {
+      "path": "data/size_calculator_features.json",
+      "size_bytes": 298208,
+      "size_kb": 291.2,
+      "sha256": "03b2937dc3bed3d5ffb66b69dded153a928b9b2fc28295f412fab52b41e8ccab",
+      "role": "J11 size calculator observable features \u00b7 v60bq",
+      "rows": 236
+    },
+    {
+      "path": "data/brier_skill_per_wallet.json",
+      "size_bytes": 253670,
+      "size_kb": 247.7,
+      "sha256": "1472ea61d09aa4f9f1287092cdc94ad31f27b8d1cba4935b35b90ea61939cb10",
+      "role": "J16 Brier Skill Score per wallet \u00b7 Murphy 1973 textbook \u00b7 v60bx",
+      "rows": 239
+    },
+    {
+      "path": "data/uma_disputes_raw.json",
+      "size_bytes": 4059314,
+      "size_kb": 3964.2,
+      "sha256": "f8d0f990aed32de1b134199e053bf48c2ad36cc88236c2e529e3cd2a89287f63",
+      "role": "UMA resolution metadata \u00b7 raw Gamma API \u00b7 v60bz",
+      "rows": 6000
+    },
+    {
+      "path": "data/venue_rating_v0_1.json",
+      "size_bytes": 3562,
+      "size_kb": 3.5,
+      "sha256": "454ee112bbbe5b5cb5eccdc8b76a3fdb0e74f4c9dd6eabba8e4bd1573d498aba",
+      "role": "S18 v0.1 venue rating"
+    },
+    {
+      "path": "data/venue_rating_v0_2.json",
+      "size_bytes": 4736,
+      "size_kb": 4.6,
+      "sha256": "703de33b49101ea2ee9c954d0b2f12452df1260f2790e0a9905be5f286a68975",
+      "role": "S18 v0.2 venue rating \u00b7 resolution_timing live \u00b7 v60bz"
+    },
+    {
+      "path": "data/venue_rating_history.json",
+      "size_bytes": 669,
+      "size_kb": 0.7,
+      "sha256": "98064b2099376db2f6a1abfaab9eac2ea686ca4da1bdfc85a63da15304954588",
+      "role": "S18 quarterly publication history \u00b7 S&P/Moody's pattern",
+      "rows": 2
+    },
+    {
+      "path": "data/trade_chain_summary.json",
+      "size_bytes": 642,
+      "size_kb": 0.6,
+      "sha256": "78b19893eaaa90a21d3904864b7454c3fdee4bd33e84b4f89ef54fa139e591be",
+      "role": "v60cd \u00b7 per-fill 6-layer chain \u00b7 cohort summary"
+    },
+    {
+      "path": "data/trade_chain_records.json",
+      "size_bytes": 9768040,
+      "size_kb": 9539.1,
+      "sha256": "a7f3faefee11a727c926eb4a4879c65d24fde1efab11562d9ebdd791de374606",
+      "role": "v60cd \u00b7 per-fill 6-layer chain records \u00b7 the strategic enrichment",
+      "rows": 5000
+    }
+  ],
+  "verification_steps": [
+    "Step 1 \u00b7 clone wallet-verdict-ledger",
+    "Step 2 \u00b7 for each entry in synced_files \u00b7 run `sha256sum <path>` \u00b7 compare to .sha256",
+    "Step 3 \u00b7 run `ots verify data/ots_receipts/<date>.digest.ots` to confirm L4 Bitcoin anchor",
+    "Step 4 \u00b7 for each entry in strategy_locks \u00b7 sha256(canonical_text) matches \u00b7 proves positioning was X on date Y"
+  ],
+  "cross_references": [
+    "README.md",
+    "methodology_versions.md",
+    "data/ots_receipts/<date>.digest.ots",
+    "data/locks/index.json"
+  ]
+}

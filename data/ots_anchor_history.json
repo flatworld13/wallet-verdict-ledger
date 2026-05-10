@@ -1,19 +1,41 @@
 {
   "schema_version": 1,
-  "generated_at_unix": 1778306123,
-  "methodology_version": "L4-anchor v1.0",
+  "generated_at_unix": 1778400628,
+  "methodology_version": "L4-anchor v1.3",
   "description": "Daily OpenTimestamps Bitcoin anchor for the engine-state digest \u00b7 the Layer 4 belt-and-suspenders attestation",
   "verify_instructions": "Anyone can verify any row: `ots verify <receipt_path>`. Pending status upgrades to confirmed within 24-72h as Bitcoin includes the calendar attestations.",
   "history": [
     {
       "date": "2026-05-09",
-      "digest_sha256": "c9edc1983bae496e4bdbebe246631d38d883e6f34ac0ebbe06b2b4bcc17b66b7",
-      "methodology_version": "L4-anchor v1.0",
+      "digest_sha256": "a1b84c40bb877d06adbde0254a5c1c7bc5a086667c059b7a76a35ada30d7d8d1",
+      "methodology_version": "L4-anchor v1.2",
       "receipt_path": "data/ots_receipts/2026-05-09.digest.ots",
       "digest_input_path": "data/ots_receipts/2026-05-09.digest",
-      "status": "pending",
-      "stamped_at_unix": 1778306123,
+      "status": "unknown",
+      "stamped_at_unix": 1778369459,
       "verify_command": "ots verify data/ots_receipts/2026-05-09.digest.ots"
+    },
+    {
+      "date": "2026-05-10",
+      "mode": "engine",
+      "digest_sha256": "ae866271ed502264c4f40f2dfc2ca36909ff15b79c1e6cf11fa756a492e46f4b",
+      "methodology_version": "L4-anchor v1.3",
+      "receipt_path": "data/ots_receipts/2026-05-10.digest.ots",
+      "digest_input_path": "data/ots_receipts/2026-05-10.digest",
+      "status": "unknown",
+      "stamped_at_unix": 1778400613,
+      "verify_command": "ots verify data/ots_receipts/2026-05-10.digest.ots"
+    },
+    {
+      "date": "2026-05-10",
+      "mode": "manifest",
+      "digest_sha256": "4bf019ed238a7cd27f96b42741436534a1873c51c5d1f7fcf1449de384439864",
+      "methodology_version": "L4-manifest v1.0",
+      "receipt_path": "data/ots_receipts/2026-05-10.manifest.digest.ots",
+      "digest_input_path": "data/ots_receipts/2026-05-10.manifest.digest",
+      "status": "pending",
+      "stamped_at_unix": 1778400620,
+      "verify_command": "ots verify data/ots_receipts/2026-05-10.manifest.digest.ots"
     }
   ]
 }

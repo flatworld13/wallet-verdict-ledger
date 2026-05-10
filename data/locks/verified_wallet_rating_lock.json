@@ -1,0 +1,135 @@
+{
+  "lock_id": "verified_wallet_rating_lock",
+  "lock_name": "Verified Wallet Rating \u00b7 Top Position + Moat (operator-canonical)",
+  "set_date": "2026-05-10",
+  "set_time_hkt": "14:XX",
+  "set_by": "operator-directive 2026-05-10 mid-afternoon HKT \u00b7 \"it is our top position and moat\"",
+  "canonical_text": "VERDICT joins wallet behavior, forecast skill, execution quality, market-risk context, and timestamped proof into one verified wallet rating.",
+  "rank": "TOP-LEVEL \u00b7 supersedes all prior 1-liners as the lead positioning copy",
+  "five_buckets_to_eleven_components": [
+    {
+      "bucket_order": 1,
+      "bucket": "wallet behavior",
+      "plain_english": "who they are \u00b7 what they trade \u00b7 how often \u00b7 which domains",
+      "maps_to_board6_components": [
+        "#2 wallet identity"
+      ],
+      "evidence_files": [
+        "data/wallets_combined.json",
+        "data/wallets_master.json"
+      ],
+      "m_axis": "M3 vocabulary"
+    },
+    {
+      "bucket_order": 2,
+      "bucket": "forecast skill",
+      "plain_english": "how accurate were their predictions vs the market \u00b7 per domain \u00b7 with sample-size guards",
+      "maps_to_board6_components": [
+        "#5 proprietary scoring",
+        "#4 outcome verification"
+      ],
+      "evidence_files": [
+        "_private/_ingest/compute_briers.py (private)",
+        "data/audit_ledger.json",
+        "data/brier_skill_per_wallet.json"
+      ],
+      "m_axis": "M5 methodology versioning + M1 outcome ground-truth"
+    },
+    {
+      "bucket_order": 3,
+      "bucket": "execution quality",
+      "plain_english": "orderbook microstructure at trade time \u00b7 slip \u00b7 depth \u00b7 book-crossed \u00b7 maker/taker",
+      "maps_to_board6_components": [
+        "#1 orderbook replay",
+        "#3 execution timing"
+      ],
+      "evidence_files": [
+        "data/orderbook_per_trade_snapshots.json",
+        "data/wallet_microstructure_book.json",
+        "data/edge_decay_features.json",
+        "data/size_calculator_features.json"
+      ],
+      "m_axis": "M5 input quality + M3 vocabulary"
+    },
+    {
+      "bucket_order": 4,
+      "bucket": "market-risk context",
+      "plain_english": "venue reliability \u00b7 UMA dispute frequency \u00b7 oracle delay \u00b7 settlement timing \u00b7 counterparty universe",
+      "maps_to_board6_components": [
+        "#8 polygon settlement attestations",
+        "#9 counterparty graph"
+      ],
+      "evidence_files": [
+        "data/uma_disputes_raw.json",
+        "data/venue_rating_v0_2.json",
+        "data/settlement_attestations.json",
+        "data/counterparty_graph.json"
+      ],
+      "m_axis": "M1 venue forward-witnessed + M2 only-neutral-seat"
+    },
+    {
+      "bucket_order": 5,
+      "bucket": "timestamped proof",
+      "plain_english": "GitHub commit timestamps + OpenTimestamps Bitcoin anchor + methodology version chain + sha256 of every published snapshot",
+      "maps_to_board6_components": [
+        "#6 audit history",
+        "#7 forward-anchored derived metrics",
+        "#10 strategy locks",
+        "#11 ledger manifest"
+      ],
+      "evidence_files": [
+        "data/audit_ledger.json",
+        "data/audit_attestations.json",
+        "data/ots_anchor_history.json",
+        "data/ots_receipts/",
+        "data/derived_metrics_daily.json",
+        "data/locks/",
+        "data/LEDGER_MANIFEST.json",
+        "methodology_versions.md (sibling ledger)"
+      ],
+      "m_axis": "M1 forward-witnessed + M2 neutral seat + M4 reproducibility-from-clone + M5 methodology version chain"
+    }
+  ],
+  "why_this_is_the_moat": "Best competitor stack covers 4 of the 5 buckets at most (Nansen has #1+#2 \u00b7 Arkham has #1+#3 partial \u00b7 TipRanks has #2+#4 partial \u00b7 DeBank has #1+#5 partial). VERDICT is the only stack that joins ALL FIVE into ONE verified wallet rating with sha256 receipts at every join. The \"joining\" is the moat \u00b7 not any single bucket.",
+  "output_form": "One verdict per wallet \u00b7 COPY/WATCH/AVOID/INSUFFICIENT \u00b7 with the 5-bucket evidence panel under it \u00b7 every bucket carrying a `verified by \u2197` link to the source file in the public ledger.",
+  "use_in_copy_now": [
+    "homepage hero band \u00b7 replaces prior 1-liner",
+    "/operate Board 6 summary intro",
+    "/wallets directory subhead",
+    "/wallet/<addr> passport opening line",
+    "/pricing tagline \u00b7 all 5 tiers",
+    "/watchtower hero",
+    "_layout.html masthead",
+    "pitch decks \u00b7 sales emails \u00b7 /api docs"
+  ],
+  "cross_references": [
+    "CLAUDE.md TOP RULE 0 \u00b7 canonical positioning subsection",
+    "STRATEGY.md top block",
+    "_handoff/2026-05-09_frame_3_news_agency_lock.md (the meta-frame)",
+    "data/moat_status.json (the 11-component scorecard this maps to)"
+  ],
+  "supersedes": [
+    "\"Wallet ratings for prediction markets. Know which wallets to trust, whether to copy now, and why.\" (Notion lock 12:30 HKT \u00b7 still valid as short headline \u00b7 this lock is the long-form canonical that explains how)"
+  ],
+  "m_axis": [
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5"
+  ],
+  "v_axis": [
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5"
+  ],
+  "methodology_version": "v2.3",
+  "frame_3_role": "Masthead canonical \u00b7 the 1-line statement under the VERDICT logo",
+  "schema_version": "0.1",
+  "generator_version": "StrategyLocks-v0.1",
+  "generated_at_unix": 1778394885,
+  "generated_at_utc": "2026-05-10 06:34 UTC",
+  "sha256_of_canonical_text": "2dffae38d8b1129aae569828c08a4a1cfc3ff3f4bca945668f829553e8a98d54"
+}

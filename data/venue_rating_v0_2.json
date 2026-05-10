@@ -1,0 +1,152 @@
+{
+  "schema_version": "0.2",
+  "method_version": "S18-v0.2",
+  "quarter": "Q2 2026",
+  "published_at_unix": 1778398656,
+  "published_at_utc": "2026-05-10",
+  "venue": "Polymarket",
+  "byline": "VERDICT VENUE DESK",
+  "composite_grade": "B-",
+  "composite_score": 2.77,
+  "composite_score_max": 4.0,
+  "rating_status": "PROVISIONAL",
+  "n_metrics_available": 3,
+  "n_metrics_planned": 5,
+  "delta_vs_prior": "first published",
+  "methodology_summary": "S18 v0.2 ships with 3 of 5 planned metrics live + 1 supplementary. v0.2 vs v0.1 delta: resolution_timing now LIVE (was pending due to missing end_unix in audit_ledger; now sourced from data/uma_disputes_raw.json closed_at_unix + resolved_at_unix). v0.3 will add uma_dispute_frequency (via Polygon RPC OO V2 contract events) + withdraw_success_rate (Polygon RPC withdraw monitor). Each metric graded A-D; composite is equal-weighted mean. Sources: audit_ledger + settlement_attestations + uma_disputes_raw (Polymarket Gamma /markets resolution metadata).",
+  "components": {
+    "resolution_timing": {
+      "metric_label": "Median time from market close to UMA resolution",
+      "value": 0.0,
+      "value_unit": "hours",
+      "p90": 0.0,
+      "sample_size": 5998,
+      "grade": "A",
+      "note": "Lower is better. Industry baseline: \u226424h is healthy. n=5998 markets \u00b7 NEW v0.2 (was n=0 in v0.1)."
+    },
+    "settlement_accuracy": {
+      "metric_label": "W3 Polygon block-timestamp accuracy vs reported resolution",
+      "value": 145640.0,
+      "value_unit": "seconds (median divergence)",
+      "sample_size": 248,
+      "within_60s_count": 69,
+      "grade": "D",
+      "note": "Cross-check of Polymarket-reported timestamps against Polygon block ts."
+    },
+    "backfill_coverage": {
+      "metric_label": "% of audit chains in resolved or backfilled state",
+      "value": 81.5,
+      "value_unit": "percent",
+      "sample_size": 491,
+      "n_resolved": 0,
+      "n_backfilled": 400,
+      "grade": "B+",
+      "note": "Higher is better. Resolved chains without receipts indicate audit-trail gaps."
+    }
+  },
+  "supplementary_metrics": {
+    "uma_bond_aggregate": {
+      "metric_label": "Aggregate UMA bond exposure (proxy for venue dispute-risk surface)",
+      "total_bond_usdc": 2999995.0,
+      "median_bond_usdc": 500.0,
+      "n_markets_with_bond": 6000,
+      "n_high_bond_markets": 0,
+      "high_bond_threshold_usdc": 50000,
+      "note": "Markets with high UMA bonds (\u2265$50K) are higher-stakes resolutions where disputes are more likely. Total exposure = sum of all bonds posted across closed markets."
+    }
+  },
+  "planned_v03_components": [
+    "uma_dispute_frequency  \u00b7 ground-truth via Polygon RPC OO V2 contract events (DisputePrice events on 0xeE3Afe347D5C74317041E2618C49534dAf887c24)",
+    "withdraw_success_rate  \u00b7 Polygon RPC monitor of CTFExchange withdraw txs"
+  ],
+  "sources": [
+    "data/audit_ledger.json (M1 chain ledger \u00b7 491 chains)",
+    "data/settlement_attestations.json (W3 Polygon RPC v60bf \u00b7 248 attestations)",
+    "data/uma_disputes_raw.json (NEW v60bz \u00b7 Polymarket Gamma /markets \u00b7 6000 closed markets)"
+  ],
+  "frame_3_role": "Venue Desk \u00b7 the Polymarket investigation beat \u00b7 S&P/Moody's pattern \u00b7 published quarterly",
+  "m_axis": [
+    "M2 (only neutral seat)",
+    "M5 (methodology version-locked \u00b7 v0.1 \u2192 v0.2 corrections-history audit)"
+  ],
+  "thresholds_published": {
+    "resolution_timing": [
+      {
+        "upper_hours": 6,
+        "grade": "A"
+      },
+      {
+        "upper_hours": 24,
+        "grade": "A-"
+      },
+      {
+        "upper_hours": 72,
+        "grade": "B+"
+      },
+      {
+        "upper_hours": 168,
+        "grade": "B"
+      },
+      {
+        "upper_hours": 336,
+        "grade": "C"
+      },
+      {
+        "upper_hours": null,
+        "grade": "D"
+      }
+    ],
+    "settlement_accuracy": [
+      {
+        "upper_sec": 60,
+        "grade": "A"
+      },
+      {
+        "upper_sec": 300,
+        "grade": "A-"
+      },
+      {
+        "upper_sec": 3600,
+        "grade": "B+"
+      },
+      {
+        "upper_sec": 14400,
+        "grade": "B"
+      },
+      {
+        "upper_sec": 86400,
+        "grade": "C"
+      },
+      {
+        "upper_sec": null,
+        "grade": "D"
+      }
+    ],
+    "backfill_coverage": [
+      {
+        "lower_pct": 95.0,
+        "grade": "A"
+      },
+      {
+        "lower_pct": 90.0,
+        "grade": "A-"
+      },
+      {
+        "lower_pct": 80.0,
+        "grade": "B+"
+      },
+      {
+        "lower_pct": 60.0,
+        "grade": "B"
+      },
+      {
+        "lower_pct": 40.0,
+        "grade": "C"
+      },
+      {
+        "lower_pct": null,
+        "grade": "D"
+      }
+    ]
+  }
+}
