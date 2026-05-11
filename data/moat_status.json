@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "date": "2026-05-11",
-  "generated_at_unix": 1778490380,
+  "generated_at_unix": 1778493672,
   "five_bucket_framing": {
     "top_level_canonical_1liner": "VERDICT joins wallet behavior, forecast skill, execution quality, market-risk context, and timestamped proof into one verified wallet rating.",
     "lock_id": "verified_wallet_rating_lock",
@@ -16,7 +16,7 @@
         "maps_to_components": [
           "2_wallet_identity"
         ],
-        "live_evidence_count": 360
+        "live_evidence_count": 374
       },
       {
         "order": 2,
@@ -26,7 +26,7 @@
           "5_proprietary_scoring",
           "4_outcome_verification"
         ],
-        "live_evidence_count": 573
+        "live_evidence_count": 578
       },
       {
         "order": 3,
@@ -36,7 +36,7 @@
           "1_orderbook_replay",
           "3_execution_timing"
         ],
-        "live_evidence_count": 63270
+        "live_evidence_count": 63384
       },
       {
         "order": 4,
@@ -68,11 +68,11 @@
       "rank": 1,
       "name": "Orderbook replay",
       "description": "Per-fill book-state reconstruction \u00b7 bid/ask/depth/spread/midpoint at trade time",
-      "evidence_count": 63270,
+      "evidence_count": 63384,
       "evidence_unit": "Tier 2 fills",
       "source_file": "data/orderbook_per_trade_snapshots.json",
-      "cohort_coverage_pct": 80.0,
-      "freshness_unix": 1778490325,
+      "cohort_coverage_pct": 87.4,
+      "freshness_unix": 1778493655,
       "m_axis": "M5 input quality",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/data/orderbook_per_trade_snapshots.json"
     },
@@ -80,10 +80,10 @@
       "rank": 2,
       "name": "Wallet identity",
       "description": "Pseudonym + ENS + archetype + skill layer + cohort membership",
-      "evidence_count": 360,
+      "evidence_count": 374,
       "evidence_unit": "wallets in cohort",
       "source_file": "data/wallets_combined.json",
-      "freshness_unix": 1778490326,
+      "freshness_unix": 1778493655,
       "m_axis": "M3 vocabulary",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/data/wallets_combined.json"
     },
@@ -91,30 +91,30 @@
       "rank": 3,
       "name": "Execution timing",
       "description": "Per-fill timestamps + edge_over_midpoint_bps + book_crossed flag",
-      "evidence_count": 63270,
+      "evidence_count": 63384,
       "evidence_unit": "timestamped fills",
       "source_file": "data/orderbook_per_trade_snapshots.json",
-      "freshness_unix": 1778490325,
+      "freshness_unix": 1778493655,
       "m_axis": "M5 + M3"
     },
     "4_outcome_verification": {
       "rank": 4,
       "name": "Outcome verification",
       "description": "UMA-resolved markets + engine_was_right per chain + AVOID-call accuracy",
-      "evidence_count": 566,
+      "evidence_count": 571,
       "evidence_unit": "forward-witnessed chains",
-      "live_chains": 166,
+      "live_chains": 171,
       "resolved_chains": 400,
-      "avoid_accuracy_pct": 78.9,
+      "avoid_accuracy_pct": 83.4,
       "avoid_accuracy_ci95": [
-        74.2,
-        83.0
+        79.1,
+        87.0
       ],
       "avoid_accuracy_method": "Wilson score interval \u00b7 z=1.96",
-      "avoid_calls_n": 327,
-      "avoid_correct_n": 258,
+      "avoid_calls_n": 344,
+      "avoid_correct_n": 287,
       "source_file": "data/audit_ledger.json",
-      "freshness_unix": 1778490338,
+      "freshness_unix": 1778493667,
       "m_axis": "M1 forward-witnessed pre-resolution truth",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/data/audit_ledger.json"
     },
@@ -126,7 +126,7 @@
       "evidence_unit": "methodology versions",
       "methodology_current": "v2.3",
       "source_file": "_private/_ingest/compute_*.py (private repo per TOP RULE -1)",
-      "freshness_unix": 1778490380,
+      "freshness_unix": 1778493672,
       "m_axis": "M5 methodology versioning + legal armor",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/methodology_versions.md"
     },
@@ -142,7 +142,7 @@
       "first_anchor": "2026-05-09",
       "latest_anchor": "2026-05-11",
       "source_file": "data/ots_anchor_history.json + data/ots_receipts/",
-      "freshness_unix": 1778490377,
+      "freshness_unix": 1778493669,
       "m_axis": "M1 + M2 (only-neutral-seat audit ledger)",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/tree/main/data/ots_receipts"
     },
@@ -152,9 +152,9 @@
       "description": "Daily OTS-stamped per-wallet derived metrics (copyability \u00b7 edge decay \u00b7 drift \u00b7 skill layer \u00b7 Brier per-domain)",
       "evidence_count": 1,
       "evidence_unit": "daily snapshot \u00b7 cumulative count grows by 1 per cron run",
-      "wallets_in_snapshot": 360,
+      "wallets_in_snapshot": 374,
       "snapshot_date": "2026-05-11",
-      "snapshot_digest_sha256": "b7b399df969ef3a31f9a9b1dfcb939ec0b43fb2ad1d49d2fe3d6bf446edaa2dc",
+      "snapshot_digest_sha256": "641662f7f4ef99a9b6befd3e4befccdcf06753f8ecd12f03afa46e2e5822cb04",
       "metric_versions": {
         "skill_layer": "v2.2",
         "drift_state": "v2.x",
@@ -167,7 +167,7 @@
         "avg_depth_pct_usd": "v1.0"
       },
       "source_file": "data/derived_metrics_daily.json",
-      "freshness_unix": 1778490339,
+      "freshness_unix": 1778493668,
       "d5_status": "LIVE since 2026-05-10 (v60bc \u00b7 Foundation D5 LOCKED)",
       "m_axis": "M1 + M5 (forward-witnessed derived metrics) \u00b7 the moat-lock for derived analytics",
       "note": "Backfillers can clone the math but cannot retroactively appear in the bitcoin chain. A competitor arriving on Day 365 has 0 days of timestamped predictions. We have N (and counting)."
@@ -185,7 +185,7 @@
       "rpc_endpoint": "https://polygon-bor.publicnode.com",
       "methodology": "W3 v0.1 first-pass \u00b7 linear-estimation block lookup \u00b7 v0.2 will read ConditionalTokens reportPayouts events for full on-chain verification",
       "source_file": "data/settlement_attestations.json",
-      "freshness_unix": 1778490377,
+      "freshness_unix": 1778493655,
       "w3_status": "LIVE since 2026-05-10 (v60bf \u00b7 W3 of the 4-axis base-widening)",
       "m_axis": "M1 strengthening \u00b7 independent on-chain ground-truth \u00b7 zero auth \u00b7 zero $/mo",
       "note": "Polygon RPC is free + public + zero auth. v0.2 will read actual ConditionalTokens reportPayouts events for exact on-chain resolution timestamps."
@@ -202,7 +202,7 @@
       "expansion_factor": 7.216,
       "methodology": "W2-v0.1-smoke",
       "source_file": "data/counterparty_graph.json",
-      "freshness_unix": 1778490377,
+      "freshness_unix": 1778493668,
       "w2_status": "LIVE since 2026-05-10 (v60bg \u00b7 W2 of the 4-axis base-widening \u00b7 the REAL widening)",
       "m_axis": "M1 (forward-witnessed universe snapshot) + M3 (vocabulary lock-in)",
       "v_axis": "V1 (verdict-on-watchlist \u00b7 cohort-INDEPENDENT \u00b7 works on any address)",
@@ -225,7 +225,7 @@
       "first_lock_date": "2026-05-10",
       "freshest_lock_date": "2026-05-10",
       "source_file": "data/locks/index.json",
-      "freshness_unix": 1778490325,
+      "freshness_unix": 1778493655,
       "m_axis": "M2 (only-neutral-seat positioning lock) + M5 (versioned positioning chain)",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/tree/main/data/locks",
       "shipped": "v60ce \u00b7 2026-05-10 (Rec 3 from public-ledger Frame 3+4 alignment audit)",
@@ -241,7 +241,7 @@
       "auxiliary_truth_count": 8,
       "auxiliary_truth_mb": 59.81,
       "source_file": "data/LEDGER_MANIFEST.json totals.by_category",
-      "freshness_unix": 1778490325,
+      "freshness_unix": 1778493655,
       "m_axis": "M1 forward-witnessed (the structural moat) + M2 (only-neutral-seat capable of these captures)",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/LEDGER_MANIFEST.json",
       "shipped": "v60cq \u00b7 2026-05-10 mid-PM (operator: \"the trick is the most important moat is some truth that cannot be backfilled\")",
@@ -260,7 +260,7 @@
       "manifest_self_anchor_date": "2026-05-10",
       "manifest_self_anchor_receipt": "data/ots_receipts/2026-05-10.manifest.digest.ots",
       "source_file": "data/LEDGER_MANIFEST.json",
-      "freshness_unix": 1778490325,
+      "freshness_unix": 1778493655,
       "m_axis": "M4 (reproducibility-from-clone made provable in one read) + M1 (forward-witnessed inventory \u00b7 double-anchored as of v60cm)",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/data/LEDGER_MANIFEST.json",
       "shipped": "v60ce \u00b7 2026-05-10 (Rec 2 from public-ledger Frame 3+4 alignment audit) \u00b7 v60cm \u00b7 2026-05-10 mid-PM (double-anchor pattern)",
@@ -274,19 +274,19 @@
     "ots_pending": 0,
     "ots_confirmed": 6,
     "methodology_versions_published": 7,
-    "forward_chains_total": 566,
-    "forward_chains_live": 166,
+    "forward_chains_total": 571,
+    "forward_chains_live": 171,
     "forward_verified": 0,
-    "forward_pending": 166,
-    "avoid_accuracy_pct": 78.9,
+    "forward_pending": 171,
+    "avoid_accuracy_pct": 83.4,
     "avoid_accuracy_ci95": [
-      74.2,
-      83.0
+      79.1,
+      87.0
     ],
-    "avoid_calls_n": 327,
-    "cohort_size": 360,
-    "tier2_fills": 63270,
-    "derived_metrics_today": 360,
+    "avoid_calls_n": 344,
+    "cohort_size": 374,
+    "tier2_fills": 63384,
+    "derived_metrics_today": 374,
     "universe_size": 1739,
     "universe_expansion_x": 7.216,
     "note": "The compounding-dataset flywheel \u00b7 per CLAUDE.md TOP RULE 0 \u00a7 \"THE COMPOUNDING-DATASET FLYWHEEL\". A new entrant on Day 1 has 0 of any of the above. Every day from now, our gap WIDENS \u00b7 not stays flat."
@@ -298,7 +298,7 @@
     "strongest_component": "12 Truth-ephemeral (the #1 moat-of-moats \u00b7 11 non-backfillable files \u00b7 58.46 MB) \u00b7 operator-locked v60cq",
     "newest_component": "12 Truth-ephemeral \u00b7 live since 2026-05-10 mid-PM (v60cq \u00b7 11 non-backfillable files \u00b7 58.46 MB) \u00b7 11 Public ledger manifest \u00b7 36 files indexed \u00b7 119.9 MB \u00b7 10 Strategy locks \u00b7 5 records",
     "snapshot_date": "2026-05-11",
-    "snapshot_unix": 1778490380,
+    "snapshot_unix": 1778493672,
     "next_scheduled_anchor": "tomorrow 03:00 UTC via daily-moat.yml Stage 6b-pre + Stage 6b"
   },
   "description": "Board 6 of the 6-board operating model \u00b7 per CLAUDE.md TOP RULE 0 \u00a7 \"THE 6-COMPONENT MOAT SURFACE\" (LOCKED 2026-05-10 \u00b7 D1) + \u00a7 \"FORWARD-ANCHORED DERIVED METRICS\" (LOCKED 2026-05-10 \u00b7 D5) + \u00a7 VERIFIED WALLET RATING LOCK (2026-05-10 mid-afternoon \u00b7 TOP-LEVEL canonical 1-liner \u00b7 v60cj). Daily snapshot pushed to Notion DB \u00b7 operator can see the moat compound over time."
