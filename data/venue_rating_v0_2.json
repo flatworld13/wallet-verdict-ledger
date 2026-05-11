@@ -2,7 +2,7 @@
   "schema_version": "0.2",
   "method_version": "S18-v0.2",
   "quarter": "Q2 2026",
-  "published_at_unix": 1778513286,
+  "published_at_unix": 1778517887,
   "published_at_utc": "2026-05-11",
   "venue": "Polymarket",
   "byline": "VERDICT VENUE DESK",
@@ -20,24 +20,24 @@
       "value": 0.0,
       "value_unit": "hours",
       "p90": 0.0,
-      "sample_size": 5998,
+      "sample_size": 5999,
       "grade": "A",
-      "note": "Lower is better. Industry baseline: \u226424h is healthy. n=5998 markets \u00b7 NEW v0.2 (was n=0 in v0.1)."
+      "note": "Lower is better. Industry baseline: \u226424h is healthy. n=5999 markets \u00b7 NEW v0.2 (was n=0 in v0.1)."
     },
     "settlement_accuracy": {
       "metric_label": "W3 Polygon block-timestamp accuracy vs reported resolution",
-      "value": 6498.0,
+      "value": 5916.0,
       "value_unit": "seconds (median divergence)",
-      "sample_size": 382,
-      "within_60s_count": 106,
+      "sample_size": 380,
+      "within_60s_count": 111,
       "grade": "B",
       "note": "Cross-check of Polymarket-reported timestamps against Polygon block ts."
     },
     "backfill_coverage": {
       "metric_label": "% of audit chains in resolved or backfilled state",
-      "value": 68.6,
+      "value": 66.4,
       "value_unit": "percent",
-      "sample_size": 583,
+      "sample_size": 602,
       "n_resolved": 0,
       "n_backfilled": 400,
       "grade": "B",
@@ -47,9 +47,9 @@
   "supplementary_metrics": {
     "uma_bond_aggregate": {
       "metric_label": "Aggregate UMA bond exposure (proxy for venue dispute-risk surface)",
-      "total_bond_usdc": 2999995.0,
+      "total_bond_usdc": 3000495.0,
       "median_bond_usdc": 500.0,
-      "n_markets_with_bond": 6000,
+      "n_markets_with_bond": 6001,
       "n_high_bond_markets": 0,
       "high_bond_threshold_usdc": 50000,
       "note": "Markets with high UMA bonds (\u2265$50K) are higher-stakes resolutions where disputes are more likely. Total exposure = sum of all bonds posted across closed markets."
@@ -60,9 +60,9 @@
     "withdraw_success_rate  \u00b7 Polygon RPC monitor of CTFExchange withdraw txs"
   ],
   "sources": [
-    "data/audit_ledger.json (M1 chain ledger \u00b7 583 chains)",
-    "data/settlement_attestations.json (W3 Polygon RPC v60bf \u00b7 382 attestations)",
-    "data/uma_disputes_raw.json (NEW v60bz \u00b7 Polymarket Gamma /markets \u00b7 6000 closed markets)"
+    "data/audit_ledger.json (M1 chain ledger \u00b7 602 chains)",
+    "data/settlement_attestations.json (W3 Polygon RPC v60bf \u00b7 380 attestations)",
+    "data/uma_disputes_raw.json (NEW v60bz \u00b7 Polymarket Gamma /markets \u00b7 6001 closed markets)"
   ],
   "frame_3_role": "Venue Desk \u00b7 the Polymarket investigation beat \u00b7 S&P/Moody's pattern \u00b7 published quarterly",
   "m_axis": [
