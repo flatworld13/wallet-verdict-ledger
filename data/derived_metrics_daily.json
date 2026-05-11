@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "date": "2026-05-11",
-  "generated_at_unix": 1778485285,
+  "generated_at_unix": 1778490339,
   "methodology_version": "v2.3",
   "metric_versions": {
     "skill_layer": "v2.2",
@@ -2915,15 +2915,15 @@
         "Sports": 0.1668,
         "Entertainment": 0.1075
       },
-      "avg_slip_cents": null,
-      "avg_depth_1pct_usd": null,
-      "avg_depth_5pct_usd": null,
-      "n_complete_fills": 0,
-      "copyability_at_100": null,
-      "copyability_at_500": null,
-      "copyability_at_1000": null,
-      "copyability_at_5000": null,
-      "copyability_at_10000": null,
+      "avg_slip_cents": 9.63,
+      "avg_depth_1pct_usd": 7984.0,
+      "avg_depth_5pct_usd": 33379.0,
+      "n_complete_fills": 10,
+      "copyability_at_100": 10,
+      "copyability_at_500": 10,
+      "copyability_at_1000": 10,
+      "copyability_at_5000": 10,
+      "copyability_at_10000": 10,
       "edge_decay_proxy_min": null
     },
     "0x5b8f191a4a3e66fe9b7348891f21021399762c14": {
@@ -8260,7 +8260,7 @@
       "edge_decay_proxy_min": null
     }
   },
-  "digest_sha256": "36e69a0656da777d4bddf155e9f606c98ad894708355af0a3f334f67bf4e7032",
+  "digest_sha256": "b7b399df969ef3a31f9a9b1dfcb939ec0b43fb2ad1d49d2fe3d6bf446edaa2dc",
   "description": "Daily snapshot of every derived metric for every cohort wallet. OTS Bitcoin-anchored alongside audit_ledger digest in the L4 sequence (per CLAUDE.md TOP RULE 0 D5 \u00b7 2026-05-10). Backfillers cloning the formula cannot retroactively appear in the bitcoin chain \u00b7 this file IS the moat for derived analytics.",
-  "verification": "sha256 of sorted-keys json(metrics) == 36e69a0656da777d4bddf155e9f606c98ad894708355af0a3f334f67bf4e7032 \u00b7 check via `python3 -c \"import json,hashlib; d=json.load(open('data/derived_metrics_daily.json'));print(hashlib.sha256(json.dumps(d[\\\\\"metrics\\\\\"], sort_keys=True, separators=(\\\\\",\\\\\",\\\\\":\\\\\")).encode()).hexdigest())\"`"
+  "verification": "sha256 of sorted-keys json(metrics) == b7b399df969ef3a31f9a9b1dfcb939ec0b43fb2ad1d49d2fe3d6bf446edaa2dc \u00b7 check via `python3 -c \"import json,hashlib; d=json.load(open('data/derived_metrics_daily.json'));print(hashlib.sha256(json.dumps(d[\\\\\"metrics\\\\\"], sort_keys=True, separators=(\\\\\",\\\\\",\\\\\":\\\\\")).encode()).hexdigest())\"`"
 }
