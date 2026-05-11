@@ -73,9 +73,9 @@
     "execution_quality.avg_size_impact_pct": "STRIPPED v60dx · was 0/382 · size-impact populator not shipped · honest deferral",
     "execution_quality.median_obi_at_entry": "STRIPPED v60dx · was 0/382 · OBI v0.2 populator not shipped",
     "copyability.score": "STRIPPED v60dx (only when null · populated values preserved) · was 239/393 null because coverage_pct=0 · the verdict_label + reason fields (populated) explain why · stripping the null score field honors the doctrine while preserving the explanation",
-    "execution_quality.avg_realized_slippage_cents": "STRIPPED v60ec · diagnosis: n_takers_with_slippage=0 on all 239 wallets that have execution_quality because the legacy join_book_to_trades_2026_05_08 engine was cache.db-bound and never attributed any trades. v60dr A3 microstructure-from-Tier-2 replaced that path but populates maker_pct/taker_pct only · slippage cents have NO populator producing real values. Honest strip · v0.2 populator can repopulate when shipped.",
-    "execution_quality.median_realized_slippage_cents": "STRIPPED v60ec · same root cause as avg_realized_slippage_cents",
-    "execution_quality.is_likely_mm_rebate_farmer": "STRIPPED v60ec · classifier flag on the same slippage-cents data · same root cause · v0.1 classifier (maker_pct >= 0.95 AND mean_edge_over_midpoint <= 0) deferred to operator-review session"
+    "execution_quality.avg_realized_slippage_cents": "POPULATED v60ee (89% · 348/393) · v60ec strip was wrong-target: data DOES exist in wallet_microstructure_book.json but propagation block at L196-212 of build_microstructure_from_tier2.py only wrote 5 fields. v60ee extends propagation to add slip-cents (avg + median) + depth_within_1pct_usd + n_takers_with_slippage. Median slip +0.07¢ · IQR -0.64 to +0.91. Strip script still fires for the 45/393 wallets without Tier 2 attribution · doctrine clean.",
+    "execution_quality.median_realized_slippage_cents": "POPULATED v60ee (89%) · same root cause + same fix as avg_realized_slippage_cents",
+    "execution_quality.is_likely_mm_rebate_farmer": "POPULATED v60ee (89%) · already in propagation block but was reading from null-output legacy script · now reads from build_microstructure_from_tier2 (155/348 flagged likely MM via maker_pct>0.8 AND n_attr>=10)"
   },
   "v60dy_queue": {
     "_note": "Remaining transient violations after v60ec strip. sybil_* fields auto-repopulate on the next cron at Stage 6-pre-sybil (build_sybil_clusters_v01.py writes back to wallets_combined.json). NOT structural · just timing.",
