@@ -1,11 +1,11 @@
 {
-  "built_at_unix": 1778509414,
+  "built_at_unix": 1778513265,
   "source_cohort": "crypto_cohort.json",
-  "total_rows": 582,
+  "total_rows": 583,
   "n_resolved": 400,
   "n_correct": 327,
   "n_with_verdict": 400,
-  "n_live_committed": 182,
+  "n_live_committed": 183,
   "n_live_resolved_now": 0,
   "n_resolved_post": 0,
   "n_backfilled": 400,
@@ -16,6 +16,37 @@
     "A": 14
   },
   "rows": [
+    {
+      "chain_id": "8464e4cd81b7cb3581a7d5dd9f693568277aaf9e02f015a9335d80ca0e4fb4df",
+      "wallet": "0xa803c7e478c7539ba363a0de9399c4fc2c0b2949",
+      "pseudonym": "Kaiyunman",
+      "condition_id": "0x7f49c47465c0f8bcec5de2aab3b41ffbeb78e44976ef6837f8abaab59c5d34b8",
+      "event_slug": "cs2-mouz-9z-2026-05-11",
+      "market_question": "Counter-Strike: MOUZ vs 9z (BO3) - PGL Astana Group Stage",
+      "side": "9z",
+      "side_index": 1,
+      "size": 4015.1515,
+      "avg_entry": 0.33,
+      "grade": "B",
+      "grade_phrase": "qualified with caveats \u00b7 copy carefully",
+      "headline_phrase": "B \u00b7 1_relaxed",
+      "cta_action": "review",
+      "committed_at_unix": 1778513257,
+      "picked_at_unix": 1778513257,
+      "resolved_at_unix": null,
+      "market_end_unix": 1778518800,
+      "cycle_tag": "top-vol",
+      "state": "live",
+      "note": "forward chain \u00b7 v53 cron \u00b7 score=65 \u00b7 layer=LAYER_1_RELAXED \u00b7 cycle=top-vol",
+      "icon": "shield",
+      "engine_was_right": null,
+      "outcome_actual": null,
+      "outcome_brier": null,
+      "outcome_pnl_per_dollar": null,
+      "weakest_link": null,
+      "weakest_score": 65,
+      "prev_chain_id": null
+    },
     {
       "chain_id": "52734a2a59362c29a27a65f5ae6bd5945077f7be36d595f7213425818ccb9910",
       "wallet": "0xa803c7e478c7539ba363a0de9399c4fc2c0b2949",
@@ -15734,5 +15765,5 @@
       "state": "backfilled"
     }
   ],
-  "state_note": "182 live commits awaiting resolution \u00b7 0 live commits already resolved + backfilled \u00b7 400 historical reconstructions. Live \u2192 resolved transitions happen in this script when the wallet's recent_positions show the conditionId resolved. This closes the M1 audit loop: commit before \u00b7 resolve after \u00b7 engine_was_right backfills publicly."
+  "state_note": "183 live commits awaiting resolution \u00b7 0 live commits already resolved + backfilled \u00b7 400 historical reconstructions. Live \u2192 resolved transitions happen in this script when the wallet's recent_positions show the conditionId resolved. This closes the M1 audit loop: commit before \u00b7 resolve after \u00b7 engine_was_right backfills publicly."
 }
