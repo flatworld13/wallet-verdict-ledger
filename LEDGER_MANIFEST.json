@@ -1,17 +1,52 @@
 {
   "schema_version": "0.1",
   "method_version": "LedgerManifest-v0.1",
-  "date": "2026-05-10",
-  "generated_at_unix": 1778400748,
-  "generated_at_utc": "2026-05-10 08:12 UTC",
-  "engine_sha": "87e6fea7f3648c2ae3479a4df3c91bdaa07b871d",
+  "date": "2026-05-11",
+  "generated_at_unix": 1778470907,
+  "generated_at_utc": "2026-05-11 03:41 UTC",
+  "engine_sha": "9ffb106df24f78fc27cba1840f827475bb84adbd",
   "frame_3_role": "Masthead \u00b7 self-describing inventory \u00b7 the entry-point for any auditor",
   "description": "Self-describing inventory of every file synced to wallet-verdict-ledger today. Every file has size + sha256 + role. Cross-references the day's OTS-anchored digest so the manifest itself is tamper-detectable: if any synced file changes after publication, its sha256 won't match this manifest record. The manifest IS the receipt-of-receipts.",
   "totals": {
-    "n_files_synced": 33,
-    "n_files_planned_in_inventory": 33,
-    "total_bytes": 123103476,
-    "total_mb": 117.4
+    "n_files_synced": 36,
+    "n_files_planned_in_inventory": 36,
+    "total_bytes": 125895053,
+    "total_mb": 120.06,
+    "by_category": {
+      "truth_ephemeral": {
+        "count": 11,
+        "bytes": 61337616,
+        "mb": 58.5
+      },
+      "truth_permanent": {
+        "count": 8,
+        "bytes": 62804697,
+        "mb": 59.9
+      },
+      "derived": {
+        "count": 12,
+        "bytes": 1706762,
+        "mb": 1.63
+      },
+      "meta": {
+        "count": 5,
+        "bytes": 45978,
+        "mb": 0.04
+      },
+      "truth": {
+        "count": 19,
+        "bytes": 124142313,
+        "mb": 118.39
+      }
+    }
+  },
+  "truth_vs_derived_doctrine": {
+    "rule": "TRUTH-LEDGER \u00b7 this ledger captures verifiable inputs (wallet trades \u00b7 orderbook \u00b7 settlements \u00b7 counterparty \u00b7 UMA) \u00b7 NOT our predictions. Within truth: NON-BACKFILLABLE files are the #1 moat \u00b7 backfillable files are auxiliary.",
+    "why": "Per operator directive 2026-05-10 mid-PM HKT: \"we set up a ledger to store something to validate the correctness of wallet and orderbook, the truth, not to record we own prediction \u00b7 no one care about our prediction \u00b7 timestamp it \u00b7 encry it is no use\". v60cq sharpening: \"the trick is the most important moat is some truth that cannot be backfilled, this is #1 moat. we can still store other important data (which can be backfilled) but top priority is those cannot be.\"",
+    "sp_parallel": "S&P's moat is the bond default-rate dataset they curate \u00b7 not the ratings they issue. VERDICT mirrors that pattern: the wallet+orderbook truth dataset is the moat \u00b7 our scores are downstream evidence. Among truth files: ephemeral observations (orderbook at trade-time \u00b7 forward-witnessed timestamps) are the moat-of-moats since competitors cannot reconstruct them retroactively.",
+    "ots_anchor_scope": "Truth-files only (methodology L4-truth-anchor v2.0) \u00b7 derived files (vpi_nav \u00b7 vri \u00b7 backtest \u00b7 derived_metrics \u00b7 brier_skill \u00b7 venue_rating) are NO LONGER part of the OTS digest input set as of v60cp \u00b7 they remain in the public ledger but unanchored. All TRUTH files (ephemeral + permanent) are in the digest equally \u00b7 but the ephemeral subset is what no entrant on day N+365 can ever clone.",
+    "why_ephemeral_is_top_priority": "A competitor arriving on day N+365 with infinite compute and access to all public sources CAN re-derive: wallet trades (Polymarket Subgraph) \u00b7 settlement attestations (Polygon RPC chain history) \u00b7 counterparty graph (on-chain tx) \u00b7 UMA oracle resolutions (UMA chain). They CANNOT reconstruct: orderbook book state at trade-time (only existed during the 60s snapshotter window) \u00b7 wallet_microstructure_book (joined book+trades at the moment) \u00b7 audit_ledger forward-witnessed timestamps (their git history doesn't include our day-N commits) \u00b7 J11/J12 observable features captured at observation-time. THESE are the structural-moat files \u00b7 the ones we should defend, prioritize, and compound first.",
+    "how_to_use": "Anyone can clone this repo \u00b7 sha256-verify any TRUTH file against this manifest \u00b7 run `ots verify` on the engine receipt \u00b7 and re-derive their own scores from the same truth. Our scores are one valid derivation; theirs may differ; the truth doesn't change."
   },
   "ots_anchor": {
     "date": "2026-05-10",
@@ -26,7 +61,7 @@
     "date": "2026-05-10",
     "manifest_sha256": "4bf019ed238a7cd27f96b42741436534a1873c51c5d1f7fcf1449de384439864",
     "receipt_path": "data/ots_receipts/2026-05-10.manifest.digest.ots",
-    "btc_status": "pending",
+    "btc_status": "unknown",
     "methodology_version": "L4-manifest v1.0",
     "verify_command": "ots verify data/ots_receipts/2026-05-10.manifest.digest.ots",
     "note": "OTS-anchored separately from the engine-state digest. The engine anchor covers the 9 core data files; the manifest anchor covers THIS manifest (which itself sha256s every file in the ledger). Together they form the double-anchor pattern \u00b7 two independent Bitcoin receipts per day."
@@ -77,253 +112,312 @@
   ],
   "synced_files": [
     {
+      "path": "data/orderbook_per_trade_snapshots.json",
+      "category": "truth_ephemeral",
+      "size_bytes": 50328105,
+      "size_kb": 49148.5,
+      "sha256": "f9c83ce9fc0ae46b665401ff0cee53708029a50053cebbc82b85ea773d11f610",
+      "role": "Tier 2 \u00b7 book state at trade-time \u00b7 63K fills \u00b7 NON-BACKFILLABLE (ephemeral \u00b7 60s snapshotter window \u00b7 gone after)",
+      "rows": 63155
+    },
+    {
+      "path": "data/wallet_microstructure_book.json",
+      "category": "truth_ephemeral",
+      "size_bytes": 145688,
+      "size_kb": 142.3,
+      "sha256": "b7d1bfb87b05dace83f7b673eb80eab5899727cb1e6b3050199ada59883e0135",
+      "role": "live-snapshotter aggregate \u00b7 joined book+trades at the moment they happened \u00b7 NON-BACKFILLABLE",
+      "rows": 241
+    },
+    {
       "path": "data/audit_ledger.json",
-      "size_bytes": 513768,
-      "size_kb": 501.7,
-      "sha256": "3802ada6850d9f4b9ed6ed9baefc4b724f770fe5c3727aaf674fe6da5c7173e4",
-      "role": "M1 chain ledger \u00b7 forward-witnessed predictions",
-      "rows": 491
+      "category": "truth_ephemeral",
+      "size_bytes": 592280,
+      "size_kb": 578.4,
+      "sha256": "7cb2b2768eaa5ce6765725b08812fe342748e91ea62e135d99fccbf2fb6b94ef",
+      "role": "M1 forward-witnessed timestamps \u00b7 NON-BACKFILLABLE (a competitor cannot retroactively appear in our day-N GitHub commit history)",
+      "rows": 561
     },
     {
       "path": "data/audit_attestations.json",
-      "size_bytes": 232580,
-      "size_kb": 227.1,
-      "sha256": "e52a333efe267f258132d812e2937be756ac8248c07c8ca81d3272f5485e6076",
-      "role": "M1 + L3 GitHub witness \u00b7 per-chain attestation"
+      "category": "truth_ephemeral",
+      "size_bytes": 268719,
+      "size_kb": 262.4,
+      "sha256": "7541a76817eae06033b049f72f5d9816a271ac0887d84fc9448febcefb86952a",
+      "role": "M1 + L3 GitHub witness \u00b7 per-chain cryptographic attestation at commit time \u00b7 NON-BACKFILLABLE"
+    },
+    {
+      "path": "data/edge_decay_features.json",
+      "category": "truth_ephemeral",
+      "size_bytes": 117403,
+      "size_kb": 114.7,
+      "sha256": "cde09291a559f90924e6007c22628a3bc28d54a519a646487acac82e7ad0fe17",
+      "role": "J12 edge-decay timing measurements \u00b7 captured at observation time \u00b7 NON-BACKFILLABLE",
+      "rows": 241
+    },
+    {
+      "path": "data/size_calculator_features.json",
+      "category": "truth_ephemeral",
+      "size_bytes": 298208,
+      "size_kb": 291.2,
+      "sha256": "616e849e855db1c0d5881f6959d2a896df3c67d77a4cbd965ab45dea47db93e7",
+      "role": "J11 size-calculator depth measurements \u00b7 captured at observation time \u00b7 NON-BACKFILLABLE",
+      "rows": 236
+    },
+    {
+      "path": "data/trade_chain_summary.json",
+      "category": "truth_ephemeral",
+      "size_bytes": 594,
+      "size_kb": 0.6,
+      "sha256": "0c74479ef5feb9fcc3afc9fc6f50b98f23a063902b505c725559ea512c9c72c2",
+      "role": "v60cd \u00b7 per-fill 6-layer chain summary \u00b7 forward-witnessed \u00b7 NON-BACKFILLABLE"
+    },
+    {
+      "path": "data/trade_chain_records.json",
+      "category": "truth_ephemeral",
+      "size_bytes": 9462162,
+      "size_kb": 9240.4,
+      "sha256": "c900d3f9a93b0a976f4650fb1962d3fc2a5c848526eb796f2abc3e766dbb1d90",
+      "role": "v60cd \u00b7 per-fill 6-layer chain records \u00b7 forward-witnessed \u00b7 NON-BACKFILLABLE",
+      "rows": 5000
+    },
+    {
+      "path": "data/signal_radar.json",
+      "category": "truth_ephemeral",
+      "size_bytes": 396,
+      "size_kb": 0.4,
+      "sha256": "801b87a71d1e485132edc1a781fe75fb5950c7531bf6c8883dee36ce11f81f09",
+      "role": "per-market signal radar \u00b7 captured at observation time \u00b7 NON-BACKFILLABLE"
+    },
+    {
+      "path": "data/hedge_cluster_features.json",
+      "category": "truth_ephemeral",
+      "size_bytes": 112645,
+      "size_kb": 110.0,
+      "sha256": "fd462415cba45b329b4ce70bad4c95ca4cbc411250036db2876626f6ac004529",
+      "role": "v60cz \u00b7 Hedge Cluster network-snapshot observables \u00b7 cluster IDs at point-in-time \u00b7 NON-BACKFILLABLE",
+      "rows": 147
+    },
+    {
+      "path": "data/order_persistence_features.json",
+      "category": "truth_ephemeral",
+      "size_bytes": 11416,
+      "size_kb": 11.1,
+      "sha256": "65941085b63a3245920fe99fb70b5b444f4036621466c21b9a439d1958c01b6d",
+      "role": "v60db \u00b7 per-market order add/cancel/persist deltas \u00b7 snapshot-window observation \u00b7 NON-BACKFILLABLE"
+    },
+    {
+      "path": "data/wallets_combined.snapshot.json",
+      "category": "truth_permanent",
+      "size_bytes": 49733378,
+      "size_kb": 48567.8,
+      "sha256": "c2ead798613c908e3bad8f400557a88c1e11aa4af77469f7da7be9905415249a",
+      "role": "wallet identity + trade history \u00b7 BACKFILLABLE from Polymarket Subgraph at any future date",
+      "rows": 360
+    },
+    {
+      "path": "data/markets.json",
+      "category": "truth_permanent",
+      "size_bytes": 360613,
+      "size_kb": 352.2,
+      "sha256": "6ac83f18e18c6b79bf168c37f727e4698fc2a2ff4a018768aec33f8406233ffd",
+      "role": "Polymarket markets list \u00b7 BACKFILLABLE from Gamma API",
+      "rows": 150
+    },
+    {
+      "path": "data/resolved_markets.json",
+      "category": "truth_permanent",
+      "size_bytes": 41080,
+      "size_kb": 40.1,
+      "sha256": "c444195f5881d784b51394fbc0062e2f31d998fb30acec0cdc7211464656ce27",
+      "role": "resolved Polymarket markets \u00b7 BACKFILLABLE from Gamma API"
+    },
+    {
+      "path": "data/counterparty_graph.json",
+      "category": "truth_permanent",
+      "size_bytes": 885861,
+      "size_kb": 865.1,
+      "sha256": "b7a1b7a7fe035b0927b94a63d4824684416e98a3687e9ea692aeea2ee3d22606",
+      "role": "W2 universe \u00b7 who-traded-with-whom \u00b7 BACKFILLABLE from on-chain tx history"
+    },
+    {
+      "path": "data/settlement_attestations.json",
+      "category": "truth_permanent",
+      "size_bytes": 117417,
+      "size_kb": 114.7,
+      "sha256": "b0bc48b139a262ef4146020a7c5c25782dbf1fd71cb532d1dc468604015595b6",
+      "role": "W3 Polygon RPC ground-truth \u00b7 BACKFILLABLE from Polygon block archive",
+      "rows": 315
+    },
+    {
+      "path": "data/uma_disputes_raw.json",
+      "category": "truth_permanent",
+      "size_bytes": 4059314,
+      "size_kb": 3964.2,
+      "sha256": "0462fab7e82bd61b7cb23ef899f628407d1a8613269d5dbd5d8fce59a8623f61",
+      "role": "UMA oracle resolution metadata \u00b7 BACKFILLABLE from UMA on-chain",
+      "rows": 6000
+    },
+    {
+      "path": "data/crypto_cohort.json",
+      "category": "truth_permanent",
+      "size_bytes": 3734639,
+      "size_kb": 3647.1,
+      "sha256": "c627b6b3f2874f92a872069ac9562be5a6657312d21159dc9839b3ced5e9c382",
+      "role": "crypto-domain cohort slice \u00b7 BACKFILLABLE",
+      "rows": 50
+    },
+    {
+      "path": "data/politics_cohort.json",
+      "category": "truth_permanent",
+      "size_bytes": 3872395,
+      "size_kb": 3781.6,
+      "sha256": "5d40c2a78c34406098ffcade8f8c5483fdca55ed92ef60bd9dc7e8d9d211b17b",
+      "role": "politics-domain cohort slice \u00b7 BACKFILLABLE",
+      "rows": 50
+    },
+    {
+      "path": "data/vpi_nav.json",
+      "category": "derived",
+      "size_bytes": 17052,
+      "size_kb": 16.7,
+      "sha256": "30a11b4d3bd6d182ee99371563c5876ab81fc62567cda9c726ac501f3b40a0e3",
+      "role": "VPI NAV \u00b7 OUR composite calibration index (downstream score)"
+    },
+    {
+      "path": "data/vpi_nav_history.json",
+      "category": "derived",
+      "size_bytes": 19070,
+      "size_kb": 18.6,
+      "sha256": "8056ffa87fa1012ab8bc65549e8728c4c04c2079978f1672c4010f5f8c098546",
+      "role": "VPI NAV history (downstream)",
+      "rows": 93
+    },
+    {
+      "path": "data/vpi_baselines.json",
+      "category": "derived",
+      "size_bytes": 1266,
+      "size_kb": 1.2,
+      "sha256": "69eb51a9d8435e2331aa39fd124c5c2f357702709928fa0807103874a519537c",
+      "role": "VPI baselines \u00b7 OUR 3 naive forecasters (downstream)"
+    },
+    {
+      "path": "data/vri_returns.json",
+      "category": "derived",
+      "size_bytes": 31358,
+      "size_kb": 30.6,
+      "sha256": "f20501d3ca7e8c4826dc882575f814f6b7d8be74ad3f6388c1240605b3a99f0f",
+      "role": "VRI returns \u00b7 OUR dollar-PnL index (downstream)"
+    },
+    {
+      "path": "data/wallet_backtest.json",
+      "category": "derived",
+      "size_bytes": 817513,
+      "size_kb": 798.4,
+      "sha256": "ae3b223ed1f55eca31e105a456fb3ba9f6c20f125b5f026e0c36948ab520ab91",
+      "role": "J02 OUR simulated copy-PnL grid (downstream)",
+      "rows": 360
+    },
+    {
+      "path": "data/derived_metrics_daily.json",
+      "category": "derived",
+      "size_bytes": 243027,
+      "size_kb": 237.3,
+      "sha256": "f284aba98628fde63df0b892e48a208f62c5d8db0f30258a8afc6b22d636cfdb",
+      "role": "D5 OUR daily metric snapshots (downstream)"
+    },
+    {
+      "path": "data/brier_skill_per_wallet.json",
+      "category": "derived",
+      "size_bytes": 335156,
+      "size_kb": 327.3,
+      "sha256": "a796497cfa17f4ce8654b9cbada5d2fdbc594d0659c2e660e5fe6e205b83d504",
+      "role": "J16 OUR Brier Skill Score per wallet (downstream \u00b7 S&P-pattern self-cal)",
+      "rows": 358
+    },
+    {
+      "path": "data/hedge_cluster_score.json",
+      "category": "derived",
+      "size_bytes": 41293,
+      "size_kb": 40.3,
+      "sha256": "30c6222a22983daaf7045ae9005a73a16e19f8e9aa361ae4a5c1942378aa5d02",
+      "role": "v60cz OUR Hedge Cluster Score \u00b7 CLEAR/WATCH/HEDGE CLUSTER label (downstream)",
+      "rows": 147
+    },
+    {
+      "path": "data/venue_rating_v0_1.json",
+      "category": "derived",
+      "size_bytes": 3555,
+      "size_kb": 3.5,
+      "sha256": "9c32c8b250801d690491f01fcdbbaf759223a9c7caedfc431667fad2b47c080b",
+      "role": "S18 v0.1 OUR venue rating (downstream)"
+    },
+    {
+      "path": "data/venue_rating_v0_2.json",
+      "category": "derived",
+      "size_bytes": 4731,
+      "size_kb": 4.6,
+      "sha256": "fed1ac92a613f611c6e013c9153ef9208856bdced30a4a27cf6888ec8d3b03f8",
+      "role": "S18 v0.2 OUR venue rating (downstream)"
+    },
+    {
+      "path": "data/venue_rating_history.json",
+      "category": "derived",
+      "size_bytes": 669,
+      "size_kb": 0.7,
+      "sha256": "98064b2099376db2f6a1abfaab9eac2ea686ca4da1bdfc85a63da15304954588",
+      "role": "S18 quarterly publication history (downstream)",
+      "rows": 2
+    },
+    {
+      "path": "data/btc_picker.json",
+      "category": "derived",
+      "size_bytes": 192072,
+      "size_kb": 187.6,
+      "sha256": "3d4c256f819ae0df98661dad174793ce57c0b1a282b0599ffdb5377754469845",
+      "role": "BTC $150K picker scores (downstream)"
     },
     {
       "path": "data/attestation_map.json",
+      "category": "meta",
       "size_bytes": 1475,
       "size_kb": 1.4,
       "sha256": "3a08b08c73d70349cbab0f1768bc172deab81e2df3b40c84b6dab45e4d96aa99",
       "role": "methodology version \u2192 GitHub commit lookup"
     },
     {
-      "path": "data/wallets_combined.snapshot.json",
-      "size_bytes": 47413686,
-      "size_kb": 46302.4,
-      "sha256": "19ca475fe03238961f87a09b00fae07856ceac9fa256a5671c08969a31e7b65d",
-      "role": "per-wallet records \u00b7 daily snapshot",
-      "rows": 339
-    },
-    {
-      "path": "data/markets.json",
-      "size_bytes": 352262,
-      "size_kb": 344.0,
-      "sha256": "3029b6a48004b1c8ea129cc154843b5b92f9c3df37a0c043d000a66fc4dd96d8",
-      "role": "Polymarket markets list",
-      "rows": 150
-    },
-    {
-      "path": "data/resolved_markets.json",
-      "size_bytes": 41080,
-      "size_kb": 40.1,
-      "sha256": "c444195f5881d784b51394fbc0062e2f31d998fb30acec0cdc7211464656ce27",
-      "role": "resolved Polymarket markets \u00b7 M4 input"
-    },
-    {
-      "path": "data/btc_picker.json",
-      "size_bytes": 191756,
-      "size_kb": 187.3,
-      "sha256": "01e1b12211d5a89c32a3c3df66ab4065fe397274c1978a7ad9e5a1a988420d64",
-      "role": "BTC $150K picker scores"
-    },
-    {
       "path": "data/cohorts.json",
+      "category": "meta",
       "size_bytes": 1568,
       "size_kb": 1.5,
       "sha256": "c4191f247e957b811d89c407c0c6a0ba44e19d8cd8d3c16c2862e073ad52664e",
-      "role": "cohort view config"
-    },
-    {
-      "path": "data/crypto_cohort.json",
-      "size_bytes": 3682295,
-      "size_kb": 3596.0,
-      "sha256": "cb0098a8472c763cd46773277093c52571c28d2f9cbc1ed42913034972ab34e3",
-      "role": "crypto-domain cohort view",
-      "rows": 50
-    },
-    {
-      "path": "data/politics_cohort.json",
-      "size_bytes": 3902091,
-      "size_kb": 3810.6,
-      "sha256": "6062e3d72e88a1591d4c8ad62d72a00d1bf3f8edc067d3a38eaef512288ff3c4",
-      "role": "politics-domain cohort view",
-      "rows": 50
-    },
-    {
-      "path": "data/signal_radar.json",
-      "size_bytes": 396,
-      "size_kb": 0.4,
-      "sha256": "e02944cc1cb146738f4fc77b75bd28a2136815ecea3928beff9d2e957990469a",
-      "role": "per-market signal radar"
-    },
-    {
-      "path": "data/vpi_nav.json",
-      "size_bytes": 10621,
-      "size_kb": 10.4,
-      "sha256": "d71e7c0d5dc1bc2ad50354bea7f7ee0162b066e5aba4e96bbff1352109b9afb4",
-      "role": "VPI NAV \u00b7 the mega-moat product \u00b7 daily calibration index"
-    },
-    {
-      "path": "data/vpi_nav_history.json",
-      "size_bytes": 18946,
-      "size_kb": 18.5,
-      "sha256": "4044d26d06043de7aa3bcdb2c9f73b91781e0accac173a1e5b1ce296eb27a966",
-      "role": "VPI NAV history",
-      "rows": 92
-    },
-    {
-      "path": "data/vpi_baselines.json",
-      "size_bytes": 1266,
-      "size_kb": 1.2,
-      "sha256": "796505559e953617bc8497bd8517491a7370e6ca94e84533f25c41ff62af8532",
-      "role": "VPI baselines \u00b7 3 naive forecasters \u00b7 K01"
-    },
-    {
-      "path": "data/vri_returns.json",
-      "size_bytes": 31339,
-      "size_kb": 30.6,
-      "sha256": "23b1df42e7888d5251f608738c893a29c77cbb1efb00b8587d5aef3b2b263e03",
-      "role": "VRI returns \u00b7 dollar-PnL receipts \u00b7 K04"
-    },
-    {
-      "path": "data/wallet_backtest.json",
-      "size_bytes": 544626,
-      "size_kb": 531.9,
-      "sha256": "ee624befb5072e537c13b87bd9de3acaf55b3b803c8818e889beaf64435956a3",
-      "role": "J02 dollar-PnL backtest grid",
-      "rows": 241
+      "role": "cohort view config (declarative routing)"
     },
     {
       "path": "data/ots_anchor_history.json",
-      "size_bytes": 1871,
-      "size_kb": 1.8,
-      "sha256": "7f7468a38d2a33b38e9d4c39bea19f0b8e3fb30421a927d53066c93f21bf5ee7",
+      "category": "meta",
+      "size_bytes": 2837,
+      "size_kb": 2.8,
+      "sha256": "5f030f643eaf121c71ec0a9489cc01dec724edd9a875d745fb68f23c288b5f30",
       "role": "L4 OTS Bitcoin anchor history index",
-      "rows": 3
-    },
-    {
-      "path": "data/orderbook_per_trade_snapshots.json",
-      "size_bytes": 50328105,
-      "size_kb": 49148.5,
-      "sha256": "f9c83ce9fc0ae46b665401ff0cee53708029a50053cebbc82b85ea773d11f610",
-      "role": "Tier 2 microstructure \u00b7 63K fills \u00b7 M3 + M5 input",
-      "rows": 63155
-    },
-    {
-      "path": "data/wallet_microstructure_book.json",
-      "size_bytes": 145688,
-      "size_kb": 142.3,
-      "sha256": "b7d1bfb87b05dace83f7b673eb80eab5899727cb1e6b3050199ada59883e0135",
-      "role": "live snapshotter aggregate",
-      "rows": 241
-    },
-    {
-      "path": "data/counterparty_graph.json",
-      "size_bytes": 885861,
-      "size_kb": 865.1,
-      "sha256": "b7a1b7a7fe035b0927b94a63d4824684416e98a3687e9ea692aeea2ee3d22606",
-      "role": "W2 counterparty graph \u00b7 7.2\u00d7 cohort widening \u00b7 9th component"
-    },
-    {
-      "path": "data/settlement_attestations.json",
-      "size_bytes": 92782,
-      "size_kb": 90.6,
-      "sha256": "6151c153a85c1d42afc8d5953ae6ebe9b552d1101c813d7e8a7147359ac8dd07",
-      "role": "W3 Polygon RPC settlement attestations \u00b7 8th component",
-      "rows": 248
-    },
-    {
-      "path": "data/derived_metrics_daily.json",
-      "size_bytes": 167744,
-      "size_kb": 163.8,
-      "sha256": "710a3e33537940dfb8bf0a378d945dc6e115b17b8043228e53314f55c0f17d04",
-      "role": "D5 forward-anchored derived metrics \u00b7 7th component"
+      "rows": 5
     },
     {
       "path": "data/moat_status.json",
-      "size_bytes": 11436,
-      "size_kb": 11.2,
-      "sha256": "9bdc3635318a237de45c226ec710341e06fc604826c1c4df35b83456783a26ef",
-      "role": "Board 6 \u00b7 9-component moat scorecard \u00b7 self-audit"
+      "category": "meta",
+      "size_bytes": 16103,
+      "size_kb": 15.7,
+      "sha256": "ad1b2d3b6e211e55228ae8a473699f6d2e22504e7882c3a349ecec45e3f82a07",
+      "role": "Board 6 \u00b7 11-component moat scorecard \u00b7 self-audit"
     },
     {
       "path": "data/ledger_health_history.json",
+      "category": "meta",
       "size_bytes": 23995,
       "size_kb": 23.4,
       "sha256": "fb7468e0c2268bae12f2e88ac101ffd175f37cbdf02d3670442429f3506a4936",
       "role": "ledger-health watchdog history",
       "rows": 5
-    },
-    {
-      "path": "data/edge_decay_features.json",
-      "size_bytes": 117398,
-      "size_kb": 114.6,
-      "sha256": "404660a5dc7bdf7ddb2b47a1c53647e4d5781401ab7126de3d13ab85ad852793",
-      "role": "J12 edge decay observable features \u00b7 v60bp",
-      "rows": 241
-    },
-    {
-      "path": "data/size_calculator_features.json",
-      "size_bytes": 298208,
-      "size_kb": 291.2,
-      "sha256": "03b2937dc3bed3d5ffb66b69dded153a928b9b2fc28295f412fab52b41e8ccab",
-      "role": "J11 size calculator observable features \u00b7 v60bq",
-      "rows": 236
-    },
-    {
-      "path": "data/brier_skill_per_wallet.json",
-      "size_bytes": 253670,
-      "size_kb": 247.7,
-      "sha256": "1472ea61d09aa4f9f1287092cdc94ad31f27b8d1cba4935b35b90ea61939cb10",
-      "role": "J16 Brier Skill Score per wallet \u00b7 Murphy 1973 textbook \u00b7 v60bx",
-      "rows": 239
-    },
-    {
-      "path": "data/uma_disputes_raw.json",
-      "size_bytes": 4059314,
-      "size_kb": 3964.2,
-      "sha256": "f8d0f990aed32de1b134199e053bf48c2ad36cc88236c2e529e3cd2a89287f63",
-      "role": "UMA resolution metadata \u00b7 raw Gamma API \u00b7 v60bz",
-      "rows": 6000
-    },
-    {
-      "path": "data/venue_rating_v0_1.json",
-      "size_bytes": 3562,
-      "size_kb": 3.5,
-      "sha256": "454ee112bbbe5b5cb5eccdc8b76a3fdb0e74f4c9dd6eabba8e4bd1573d498aba",
-      "role": "S18 v0.1 venue rating"
-    },
-    {
-      "path": "data/venue_rating_v0_2.json",
-      "size_bytes": 4736,
-      "size_kb": 4.6,
-      "sha256": "703de33b49101ea2ee9c954d0b2f12452df1260f2790e0a9905be5f286a68975",
-      "role": "S18 v0.2 venue rating \u00b7 resolution_timing live \u00b7 v60bz"
-    },
-    {
-      "path": "data/venue_rating_history.json",
-      "size_bytes": 669,
-      "size_kb": 0.7,
-      "sha256": "98064b2099376db2f6a1abfaab9eac2ea686ca4da1bdfc85a63da15304954588",
-      "role": "S18 quarterly publication history \u00b7 S&P/Moody's pattern",
-      "rows": 2
-    },
-    {
-      "path": "data/trade_chain_summary.json",
-      "size_bytes": 642,
-      "size_kb": 0.6,
-      "sha256": "78b19893eaaa90a21d3904864b7454c3fdee4bd33e84b4f89ef54fa139e591be",
-      "role": "v60cd \u00b7 per-fill 6-layer chain \u00b7 cohort summary"
-    },
-    {
-      "path": "data/trade_chain_records.json",
-      "size_bytes": 9768040,
-      "size_kb": 9539.1,
-      "sha256": "a7f3faefee11a727c926eb4a4879c65d24fde1efab11562d9ebdd791de374606",
-      "role": "v60cd \u00b7 per-fill 6-layer chain records \u00b7 the strategic enrichment",
-      "rows": 5000
     }
   ],
   "verification_steps": [
