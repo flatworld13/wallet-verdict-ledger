@@ -72,13 +72,13 @@
     "execution_quality.pct_extreme_obi_entries": "STRIPPED v60dx · was 0/382 · OBI v0.2 populator not shipped · honest deferral via absence",
     "execution_quality.avg_size_impact_pct": "STRIPPED v60dx · was 0/382 · size-impact populator not shipped · honest deferral",
     "execution_quality.median_obi_at_entry": "STRIPPED v60dx · was 0/382 · OBI v0.2 populator not shipped",
-    "copyability.score": "STRIPPED v60dx (only when null · populated values preserved) · was 239/393 null because coverage_pct=0 · the verdict_label + reason fields (populated) explain why · stripping the null score field honors the doctrine while preserving the explanation"
+    "copyability.score": "STRIPPED v60dx (only when null · populated values preserved) · was 239/393 null because coverage_pct=0 · the verdict_label + reason fields (populated) explain why · stripping the null score field honors the doctrine while preserving the explanation",
+    "execution_quality.avg_realized_slippage_cents": "STRIPPED v60ec · diagnosis: n_takers_with_slippage=0 on all 239 wallets that have execution_quality because the legacy join_book_to_trades_2026_05_08 engine was cache.db-bound and never attributed any trades. v60dr A3 microstructure-from-Tier-2 replaced that path but populates maker_pct/taker_pct only · slippage cents have NO populator producing real values. Honest strip · v0.2 populator can repopulate when shipped.",
+    "execution_quality.median_realized_slippage_cents": "STRIPPED v60ec · same root cause as avg_realized_slippage_cents",
+    "execution_quality.is_likely_mm_rebate_farmer": "STRIPPED v60ec · classifier flag on the same slippage-cents data · same root cause · v0.1 classifier (maker_pct >= 0.95 AND mean_edge_over_midpoint <= 0) deferred to operator-review session"
   },
   "v60dy_queue": {
-    "_note": "These violations surfaced AFTER the v60dx strip when the test re-ran on the post-rebase 393-wallet file. They are transient (will repopulate next cron at Stage 6-pre-sybil) or pre-existing dormant. Queued for v60dy follow-up: investigate why the slippage fields are 0/393 (n_takers_with_slippage IS populated · so why are the cents-denominated slippage fields null?). For the sybil fields: confirm Stage 6-pre-sybil propagates back into wallets_combined.json on every cron run.",
-    "execution_quality.avg_realized_slippage_cents": "0/393 · n_takers_with_slippage IS populated · investigate populator pipeline (maybe edge_consistency_pct populated but slippage_cents not propagated)",
-    "execution_quality.median_realized_slippage_cents": "see avg_realized_slippage_cents",
-    "execution_quality.is_likely_mm_rebate_farmer": "0/393 · classifier flag wired but no populator · candidate to strip OR ship v0.1 classifier (rule: maker_pct >= 0.95 AND mean_edge_over_midpoint <= 0)",
+    "_note": "Remaining transient violations after v60ec strip. sybil_* fields auto-repopulate on the next cron at Stage 6-pre-sybil (build_sybil_clusters_v01.py writes back to wallets_combined.json). NOT structural · just timing.",
     "sybil_cluster_id": "0/393 · TRANSIENT · post-rebase wallets_combined.json predates Stage 6-pre-sybil run · cron at 03:00 UTC will repopulate · confirm by checking next-cron file",
     "sybil_confidence": "see sybil_cluster_id · TRANSIENT"
   }
