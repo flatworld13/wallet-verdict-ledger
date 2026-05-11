@@ -2,7 +2,7 @@
   "schema_version": "0.2",
   "method_version": "S18-v0.2",
   "quarter": "Q2 2026",
-  "published_at_unix": 1778493669,
+  "published_at_unix": 1778500716,
   "published_at_utc": "2026-05-11",
   "venue": "Polymarket",
   "byline": "VERDICT VENUE DESK",
@@ -26,18 +26,18 @@
     },
     "settlement_accuracy": {
       "metric_label": "W3 Polygon block-timestamp accuracy vs reported resolution",
-      "value": 5986,
+      "value": 5972.0,
       "value_unit": "seconds (median divergence)",
-      "sample_size": 357,
-      "within_60s_count": 103,
+      "sample_size": 362,
+      "within_60s_count": 107,
       "grade": "B",
       "note": "Cross-check of Polymarket-reported timestamps against Polygon block ts."
     },
     "backfill_coverage": {
       "metric_label": "% of audit chains in resolved or backfilled state",
-      "value": 70.1,
+      "value": 70.5,
       "value_unit": "percent",
-      "sample_size": 571,
+      "sample_size": 567,
       "n_resolved": 0,
       "n_backfilled": 400,
       "grade": "B",
@@ -60,8 +60,8 @@
     "withdraw_success_rate  \u00b7 Polygon RPC monitor of CTFExchange withdraw txs"
   ],
   "sources": [
-    "data/audit_ledger.json (M1 chain ledger \u00b7 571 chains)",
-    "data/settlement_attestations.json (W3 Polygon RPC v60bf \u00b7 357 attestations)",
+    "data/audit_ledger.json (M1 chain ledger \u00b7 567 chains)",
+    "data/settlement_attestations.json (W3 Polygon RPC v60bf \u00b7 362 attestations)",
     "data/uma_disputes_raw.json (NEW v60bz \u00b7 Polymarket Gamma /markets \u00b7 6000 closed markets)"
   ],
   "frame_3_role": "Venue Desk \u00b7 the Polymarket investigation beat \u00b7 S&P/Moody's pattern \u00b7 published quarterly",
