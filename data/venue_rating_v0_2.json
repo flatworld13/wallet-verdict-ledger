@@ -2,12 +2,12 @@
   "schema_version": "0.2",
   "method_version": "S18-v0.2",
   "quarter": "Q2 2026",
-  "published_at_unix": 1778517887,
-  "published_at_utc": "2026-05-11",
+  "published_at_unix": 1778572794,
+  "published_at_utc": "2026-05-12",
   "venue": "Polymarket",
   "byline": "VERDICT VENUE DESK",
   "composite_grade": "B+",
-  "composite_score": 3.33,
+  "composite_score": 3.43,
   "composite_score_max": 4.0,
   "rating_status": "PROVISIONAL",
   "n_metrics_available": 3,
@@ -26,21 +26,21 @@
     },
     "settlement_accuracy": {
       "metric_label": "W3 Polygon block-timestamp accuracy vs reported resolution",
-      "value": 5916.0,
+      "value": 6226,
       "value_unit": "seconds (median divergence)",
-      "sample_size": 380,
-      "within_60s_count": 111,
+      "sample_size": 537,
+      "within_60s_count": 153,
       "grade": "B",
       "note": "Cross-check of Polymarket-reported timestamps against Polygon block ts."
     },
     "backfill_coverage": {
       "metric_label": "% of audit chains in resolved or backfilled state",
-      "value": 66.4,
+      "value": 80.1,
       "value_unit": "percent",
-      "sample_size": 602,
+      "sample_size": 1248,
       "n_resolved": 0,
-      "n_backfilled": 400,
-      "grade": "B",
+      "n_backfilled": 1000,
+      "grade": "B+",
       "note": "Higher is better. Resolved chains without receipts indicate audit-trail gaps."
     }
   },
@@ -60,8 +60,8 @@
     "withdraw_success_rate  \u00b7 Polygon RPC monitor of CTFExchange withdraw txs"
   ],
   "sources": [
-    "data/audit_ledger.json (M1 chain ledger \u00b7 602 chains)",
-    "data/settlement_attestations.json (W3 Polygon RPC v60bf \u00b7 380 attestations)",
+    "data/audit_ledger.json (M1 chain ledger \u00b7 1248 chains)",
+    "data/settlement_attestations.json (W3 Polygon RPC v60bf \u00b7 537 attestations)",
     "data/uma_disputes_raw.json (NEW v60bz \u00b7 Polymarket Gamma /markets \u00b7 6001 closed markets)"
   ],
   "frame_3_role": "Venue Desk \u00b7 the Polymarket investigation beat \u00b7 S&P/Moody's pattern \u00b7 published quarterly",

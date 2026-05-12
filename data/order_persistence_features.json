@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "methodology_version": "order-persistence-features-v0.1",
-  "date": "2026-05-11",
-  "generated_at_unix": 1778463176,
+  "date": "2026-05-12",
+  "generated_at_unix": 1778572800,
   "description": "Order-persistence observable features per market \u00b7 v0.1 snapshot-delta inference \u00b7 60s granularity \u00b7 serves 5 downstream scores (Order Persistence Filter \u00b7 Spoof Filter \u00b7 Iceberg \u00b7 Adverse Flow Risk \u00b7 Crowding Risk). Cheap implementation (no external dep \u00b7 uses existing data/order_book/ snapshots) \u00b7 upgrades to WebSocket order-delta stream in Month 3 v0.2.",
   "per_market": {
     "88304163265734087403223321042172792808390195323159743956352682998398711353447": {
@@ -12,17 +12,17 @@
       "domain": "Politics",
       "window_unix": [
         1778220891,
-        1778292023
+        1778251279
       ],
-      "window_seconds": 71132,
-      "n_snapshots": 891,
-      "add_count": 2429,
-      "disappear_count": 2409,
-      "cancel_likely_count": 2409,
+      "window_seconds": 30388,
+      "n_snapshots": 212,
+      "add_count": 647,
+      "disappear_count": 641,
+      "cancel_likely_count": 641,
       "fill_consumed_count": 0,
-      "persistence_avg_sec": 25602.3,
+      "persistence_avg_sec": 8499.8,
       "cancel_to_fill_ratio": null,
-      "levels_observed_total": 2429
+      "levels_observed_total": 647
     },
     "74106961297441804122404565448852295289442372706468216938279361169799682393163": {
       "condition_id": "0x1db02ba50e2312a62b4104de691cc7a76065d8d0da40decf93eb1b914a3217b7",
@@ -31,36 +31,17 @@
       "domain": "Politics",
       "window_unix": [
         1778220891,
-        1778292023
+        1778251279
       ],
-      "window_seconds": 71132,
-      "n_snapshots": 891,
-      "add_count": 2427,
-      "disappear_count": 2407,
-      "cancel_likely_count": 2407,
+      "window_seconds": 30388,
+      "n_snapshots": 212,
+      "add_count": 647,
+      "disappear_count": 641,
+      "cancel_likely_count": 641,
       "fill_consumed_count": 0,
-      "persistence_avg_sec": 25583.1,
+      "persistence_avg_sec": 8499.8,
       "cancel_to_fill_ratio": null,
-      "levels_observed_total": 2427
-    },
-    "13915689317269078219168496739008737517740566192006337297676041270492637394586": {
-      "condition_id": "0xa0f4c4924ea1a8b410b4ce821c2a9955fad21a1b19bdcfde90816732278b3dd5",
-      "question": "Will Bitcoin hit $150k by June 30, 2026?",
-      "outcome": "Yes",
-      "domain": "Crypto",
-      "window_unix": [
-        1778220891,
-        1778292023
-      ],
-      "window_seconds": 71132,
-      "n_snapshots": 891,
-      "add_count": 963,
-      "disappear_count": 960,
-      "cancel_likely_count": 960,
-      "fill_consumed_count": 0,
-      "persistence_avg_sec": 36901.9,
-      "cancel_to_fill_ratio": null,
-      "levels_observed_total": 963
+      "levels_observed_total": 647
     },
     "13290642914521189871602119663452054126359842904805799115978921503195267156991": {
       "condition_id": "0xa0f4c4924ea1a8b410b4ce821c2a9955fad21a1b19bdcfde90816732278b3dd5",
@@ -69,17 +50,36 @@
       "domain": "Crypto",
       "window_unix": [
         1778220891,
-        1778292023
+        1778251279
       ],
-      "window_seconds": 71132,
-      "n_snapshots": 891,
-      "add_count": 963,
-      "disappear_count": 960,
-      "cancel_likely_count": 960,
+      "window_seconds": 30388,
+      "n_snapshots": 212,
+      "add_count": 230,
+      "disappear_count": 231,
+      "cancel_likely_count": 231,
       "fill_consumed_count": 0,
-      "persistence_avg_sec": 36854.6,
+      "persistence_avg_sec": 8537.3,
       "cancel_to_fill_ratio": null,
-      "levels_observed_total": 963
+      "levels_observed_total": 230
+    },
+    "13915689317269078219168496739008737517740566192006337297676041270492637394586": {
+      "condition_id": "0xa0f4c4924ea1a8b410b4ce821c2a9955fad21a1b19bdcfde90816732278b3dd5",
+      "question": "Will Bitcoin hit $150k by June 30, 2026?",
+      "outcome": "Yes",
+      "domain": "Crypto",
+      "window_unix": [
+        1778220891,
+        1778251279
+      ],
+      "window_seconds": 30388,
+      "n_snapshots": 212,
+      "add_count": 229,
+      "disappear_count": 230,
+      "cancel_likely_count": 230,
+      "fill_consumed_count": 0,
+      "persistence_avg_sec": 8555.1,
+      "cancel_to_fill_ratio": null,
+      "levels_observed_total": 229
     },
     "9476445326282666463762072399564010356029268509631635291163637063240758755114": {
       "condition_id": "0xffe381a80c1e36f9e0b03a542aa8fe56e74a67d2566a4e29396d4427aa4244c9",
@@ -88,17 +88,17 @@
       "domain": "Macro",
       "window_unix": [
         1778220891,
-        1778292023
+        1778251279
       ],
-      "window_seconds": 71132,
-      "n_snapshots": 891,
-      "add_count": 725,
-      "disappear_count": 732,
-      "cancel_likely_count": 729,
-      "fill_consumed_count": 3,
-      "persistence_avg_sec": 24506.8,
-      "cancel_to_fill_ratio": 243.0,
-      "levels_observed_total": 725
+      "window_seconds": 30388,
+      "n_snapshots": 212,
+      "add_count": 154,
+      "disappear_count": 154,
+      "cancel_likely_count": 153,
+      "fill_consumed_count": 1,
+      "persistence_avg_sec": 6635.4,
+      "cancel_to_fill_ratio": 153.0,
+      "levels_observed_total": 154
     },
     "11941591959393922646818837304923279193381647193368590717078836000466185896447": {
       "condition_id": "0xffe381a80c1e36f9e0b03a542aa8fe56e74a67d2566a4e29396d4427aa4244c9",
@@ -107,17 +107,17 @@
       "domain": "Macro",
       "window_unix": [
         1778220891,
-        1778292023
+        1778251279
       ],
-      "window_seconds": 71132,
-      "n_snapshots": 891,
-      "add_count": 725,
-      "disappear_count": 732,
-      "cancel_likely_count": 729,
-      "fill_consumed_count": 3,
-      "persistence_avg_sec": 24506.8,
-      "cancel_to_fill_ratio": 243.0,
-      "levels_observed_total": 725
+      "window_seconds": 30388,
+      "n_snapshots": 212,
+      "add_count": 154,
+      "disappear_count": 154,
+      "cancel_likely_count": 153,
+      "fill_consumed_count": 1,
+      "persistence_avg_sec": 6635.4,
+      "cancel_to_fill_ratio": 153.0,
+      "levels_observed_total": 154
     },
     "81548932975533771477831239196460540429757065670562945752665718871547755688736": {
       "condition_id": "0x471e2fa06bd8975b77be49a36781bc41286d57bffa84de55173f4eacdbd52b28",
@@ -126,17 +126,17 @@
       "domain": "Macro",
       "window_unix": [
         1778220891,
-        1778292023
+        1778251279
       ],
-      "window_seconds": 71132,
-      "n_snapshots": 891,
-      "add_count": 228,
-      "disappear_count": 233,
-      "cancel_likely_count": 233,
+      "window_seconds": 30388,
+      "n_snapshots": 212,
+      "add_count": 68,
+      "disappear_count": 71,
+      "cancel_likely_count": 71,
       "fill_consumed_count": 0,
-      "persistence_avg_sec": 30081.7,
+      "persistence_avg_sec": 11018.7,
       "cancel_to_fill_ratio": null,
-      "levels_observed_total": 228
+      "levels_observed_total": 68
     },
     "96453053179310398478021793900871636512959801672463356164796908031258558329792": {
       "condition_id": "0x471e2fa06bd8975b77be49a36781bc41286d57bffa84de55173f4eacdbd52b28",
@@ -145,17 +145,17 @@
       "domain": "Macro",
       "window_unix": [
         1778220891,
-        1778292023
+        1778251279
       ],
-      "window_seconds": 71132,
-      "n_snapshots": 891,
-      "add_count": 227,
-      "disappear_count": 232,
-      "cancel_likely_count": 232,
+      "window_seconds": 30388,
+      "n_snapshots": 212,
+      "add_count": 68,
+      "disappear_count": 71,
+      "cancel_likely_count": 71,
       "fill_consumed_count": 0,
-      "persistence_avg_sec": 29973.3,
+      "persistence_avg_sec": 11018.7,
       "cancel_to_fill_ratio": null,
-      "levels_observed_total": 227
+      "levels_observed_total": 68
     },
     "69324317355037271422943965141382095011871956039434394956830818206664869608517": {
       "condition_id": "0x0b4cc3b739e1dfe5d73274740e7308b6fb389c5af040c3a174923d928d134bee",
@@ -164,17 +164,17 @@
       "domain": "Entertainment",
       "window_unix": [
         1778220891,
-        1778292023
+        1778251279
       ],
-      "window_seconds": 71132,
-      "n_snapshots": 891,
-      "add_count": 105,
-      "disappear_count": 117,
-      "cancel_likely_count": 117,
+      "window_seconds": 30388,
+      "n_snapshots": 212,
+      "add_count": 27,
+      "disappear_count": 29,
+      "cancel_likely_count": 29,
       "fill_consumed_count": 0,
-      "persistence_avg_sec": 24736.2,
+      "persistence_avg_sec": 7672.4,
       "cancel_to_fill_ratio": null,
-      "levels_observed_total": 105
+      "levels_observed_total": 27
     },
     "51797157743046504218541616681751597845468055908324407922581755135522797852101": {
       "condition_id": "0x0b4cc3b739e1dfe5d73274740e7308b6fb389c5af040c3a174923d928d134bee",
@@ -183,17 +183,17 @@
       "domain": "Entertainment",
       "window_unix": [
         1778220891,
-        1778292023
+        1778251279
       ],
-      "window_seconds": 71132,
-      "n_snapshots": 891,
-      "add_count": 105,
-      "disappear_count": 117,
-      "cancel_likely_count": 117,
+      "window_seconds": 30388,
+      "n_snapshots": 212,
+      "add_count": 27,
+      "disappear_count": 29,
+      "cancel_likely_count": 29,
       "fill_consumed_count": 0,
-      "persistence_avg_sec": 24736.2,
+      "persistence_avg_sec": 7672.4,
       "cancel_to_fill_ratio": null,
-      "levels_observed_total": 105
+      "levels_observed_total": 27
     },
     "55115078421062885512539156303747803058407616201213034911037320915726138659123": {
       "condition_id": "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
@@ -202,17 +202,17 @@
       "domain": "Politics",
       "window_unix": [
         1778220891,
-        1778292023
+        1778251279
       ],
-      "window_seconds": 71132,
-      "n_snapshots": 891,
-      "add_count": 78,
-      "disappear_count": 78,
-      "cancel_likely_count": 78,
+      "window_seconds": 30388,
+      "n_snapshots": 212,
+      "add_count": 13,
+      "disappear_count": 14,
+      "cancel_likely_count": 14,
       "fill_consumed_count": 0,
-      "persistence_avg_sec": 30273.3,
+      "persistence_avg_sec": 7530.9,
       "cancel_to_fill_ratio": null,
-      "levels_observed_total": 78
+      "levels_observed_total": 13
     },
     "1910830010387565971650098373488592514702818137344973088263643820608151819241": {
       "condition_id": "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
@@ -221,17 +221,17 @@
       "domain": "Politics",
       "window_unix": [
         1778220891,
-        1778292023
+        1778251279
       ],
-      "window_seconds": 71132,
-      "n_snapshots": 891,
-      "add_count": 78,
-      "disappear_count": 78,
-      "cancel_likely_count": 78,
+      "window_seconds": 30388,
+      "n_snapshots": 212,
+      "add_count": 13,
+      "disappear_count": 14,
+      "cancel_likely_count": 14,
       "fill_consumed_count": 0,
-      "persistence_avg_sec": 30273.3,
+      "persistence_avg_sec": 7530.9,
       "cancel_to_fill_ratio": null,
-      "levels_observed_total": 78
+      "levels_observed_total": 13
     },
     "50852603992824764339731623899789844115153195618326528701556184392590013238150": {
       "condition_id": "0x7ae064ed7f3c9f4d201ce007b05b3a23f8e824170981c4d301f07301d554f451",
@@ -240,17 +240,17 @@
       "domain": "Other",
       "window_unix": [
         1778220891,
-        1778292023
+        1778251279
       ],
-      "window_seconds": 71132,
-      "n_snapshots": 891,
-      "add_count": 30,
-      "disappear_count": 33,
-      "cancel_likely_count": 33,
+      "window_seconds": 30388,
+      "n_snapshots": 212,
+      "add_count": 11,
+      "disappear_count": 13,
+      "cancel_likely_count": 13,
       "fill_consumed_count": 0,
-      "persistence_avg_sec": 26009.1,
+      "persistence_avg_sec": 7423.0,
       "cancel_to_fill_ratio": null,
-      "levels_observed_total": 30
+      "levels_observed_total": 11
     },
     "71772341710030335189942588441227311843986748122822985476859368292740666018070": {
       "condition_id": "0x7ae064ed7f3c9f4d201ce007b05b3a23f8e824170981c4d301f07301d554f451",
@@ -259,31 +259,31 @@
       "domain": "Other",
       "window_unix": [
         1778220891,
-        1778292023
+        1778251279
       ],
-      "window_seconds": 71132,
-      "n_snapshots": 891,
-      "add_count": 30,
-      "disappear_count": 33,
-      "cancel_likely_count": 33,
+      "window_seconds": 30388,
+      "n_snapshots": 212,
+      "add_count": 11,
+      "disappear_count": 13,
+      "cancel_likely_count": 13,
       "fill_consumed_count": 0,
-      "persistence_avg_sec": 26009.1,
+      "persistence_avg_sec": 7423.0,
       "cancel_to_fill_ratio": null,
-      "levels_observed_total": 30
+      "levels_observed_total": 11
     }
   },
   "summary": {
-    "n_snapshots_processed": 891,
+    "n_snapshots_processed": 212,
     "n_markets_active": 14,
     "snapshot_window_unix": [
       1778220891,
-      1778292083
+      1778251279
     ],
-    "snapshot_window_hours": 19.8,
-    "total_adds_observed": 9113,
-    "total_disappears_observed": 9121,
-    "total_cancels_likely": 9115,
-    "total_fills_in_window": 6,
+    "snapshot_window_hours": 8.4,
+    "total_adds_observed": 2299,
+    "total_disappears_observed": 2305,
+    "total_cancels_likely": 2303,
+    "total_fills_in_window": 2,
     "coverage_caveat": "snapshotter watches 14 markets \u00b7 fills cover thousands \u00b7 cohort-wide cancel/fill ratio is NOT meaningful at v0.1 \u00b7 use per_market values \u00b7 v0.2 upgrade (WebSocket \u00b7 Month 2 week 5) expands coverage",
     "fill_tolerance_factor": 0.15,
     "max_gap_sec": 600
