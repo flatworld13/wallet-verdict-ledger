@@ -2,16 +2,16 @@
   "schema_version": "0.1",
   "method_version": "LedgerManifest-v0.1",
   "date": "2026-05-12",
-  "generated_at_unix": 1778590842,
-  "generated_at_utc": "2026-05-12 13:00 UTC",
-  "engine_sha": "050bc90a05ecc89c35ff80bd06ab94bba19023d9",
+  "generated_at_unix": 1778592265,
+  "generated_at_utc": "2026-05-12 13:24 UTC",
+  "engine_sha": "785d0aeb783f74db0f32f900cf08e05ccfbb3c78",
   "frame_3_role": "Masthead \u00b7 self-describing inventory \u00b7 the entry-point for any auditor",
   "description": "Self-describing inventory of every file synced to wallet-verdict-ledger today. Every file has size + sha256 + role. Cross-references the day's OTS-anchored digest so the manifest itself is tamper-detectable: if any synced file changes after publication, its sha256 won't match this manifest record. The manifest IS the receipt-of-receipts.",
   "totals": {
     "n_files_synced": 45,
     "n_files_planned_in_inventory": 45,
-    "total_bytes": 143811799,
-    "total_mb": 137.15,
+    "total_bytes": 143946330,
+    "total_mb": 137.28,
     "by_category": {
       "truth_ephemeral": {
         "count": 10,
@@ -20,23 +20,23 @@
       },
       "truth_permanent": {
         "count": 7,
-        "bytes": 64498157,
-        "mb": 61.51
+        "bytes": 64634853,
+        "mb": 61.64
       },
       "derived": {
         "count": 21,
-        "bytes": 7748835,
+        "bytes": 7746460,
         "mb": 7.39
       },
       "meta": {
         "count": 7,
-        "bytes": 57680,
+        "bytes": 57890,
         "mb": 0.06
       },
       "truth": {
         "count": 17,
-        "bytes": 136005284,
-        "mb": 129.7
+        "bytes": 136141980,
+        "mb": 129.84
       }
     }
   },
@@ -202,9 +202,9 @@
     {
       "path": "data/wallets_combined.snapshot.json",
       "category": "truth_permanent",
-      "size_bytes": 55198512,
-      "size_kb": 53904.8,
-      "sha256": "20065a5666a5b7185517a5b54700476e66c6731d20ff93999b3a8efd45275e1f",
+      "size_bytes": 55211582,
+      "size_kb": 53917.6,
+      "sha256": "e6ab37d9be59cd20854ebe9424abf77737bd4c7b691bb4534fa604c27e1ac105",
       "role": "wallet identity + trade history \u00b7 BACKFILLABLE from Polymarket Subgraph at any future date",
       "rows": 402
     },
@@ -228,9 +228,9 @@
     {
       "path": "data/counterparty_graph.json",
       "category": "truth_permanent",
-      "size_bytes": 1569792,
-      "size_kb": 1533.0,
-      "sha256": "64612ab27567aa6d93a46398873afa86fd0901435c8a9a0c95d1ed5c5dd024b6",
+      "size_bytes": 907386,
+      "size_kb": 886.1,
+      "sha256": "c95245f76f5517eecff6c4b3dc2c80bc01001edbd784023da3082c0bef690d07",
       "role": "W2 universe \u00b7 who-traded-with-whom \u00b7 BACKFILLABLE from on-chain tx history"
     },
     {
@@ -372,29 +372,29 @@
     {
       "path": "data/sybil_clusters.json",
       "category": "derived",
-      "size_bytes": 67633,
-      "size_kb": 66.0,
-      "sha256": "862087a46aa395c6c80c66337e0e719bc05885ec4f403e96ced1c8f1a0c6f366",
+      "size_bytes": 57838,
+      "size_kb": 56.5,
+      "sha256": "8902aa7f8ea2da4e90576f91b3827b4471e847954c977d93f08184bb7d46f857",
       "role": "v60du \u00b7 Sybil cluster v0.1 \u00b7 rule-based union-find on counterparty graph Jaccard similarity (Role 8 Compliance \u00b7 masthead lock backed by data)",
-      "rows": 147
+      "rows": 122
     },
     {
       "path": "data/wallet_counterparties_onchain.json",
       "category": "truth_permanent",
-      "size_bytes": 3050164,
-      "size_kb": 2978.7,
-      "sha256": "a702f5ab7d60d65a106c04ea226cb643bf296aaff437ec75f4ce51c6a3c0121a",
+      "size_bytes": 3836196,
+      "size_kb": 3746.3,
+      "sha256": "f43a901b53bec7653ad41ed7cd95b5eb1d319dde1f05aefcc087bd0eceed7570",
       "role": "v60dv Path A \u00b7 per-wallet counterparty graph \u00b7 Goldsky-sourced full backfill \u00b7 was SMOKE_PREVIEW pre-v60dv",
-      "rows": 241
+      "rows": 242
     },
     {
       "path": "data/counterparty_backfill_state.json",
       "category": "meta",
-      "size_bytes": 705,
-      "size_kb": 0.7,
-      "sha256": "c2bfd55e7214d2d9228f5e74dcd3f0db8d9088b739aea61ba1279296b745ed1e",
+      "size_bytes": 914,
+      "size_kb": 0.9,
+      "sha256": "501d01733205f96a301bf8a28890f8f5ef73c83eecd762b84ff5428ed729f666",
       "role": "v60dv Path A \u00b7 per-wallet incremental backfill checkpoint state",
-      "rows": 3
+      "rows": 4
     },
     {
       "path": "data/insider_overlap_v01.json",
@@ -434,9 +434,9 @@
     {
       "path": "data/wallet_clusters.json",
       "category": "derived",
-      "size_bytes": 458642,
-      "size_kb": 447.9,
-      "sha256": "34712e68f95037801bd070d9f5d3c8816c40343ae81f884fc80a30941c3ca425",
+      "size_bytes": 466062,
+      "size_kb": 455.1,
+      "sha256": "be32cfdb822ea262001f9753326d144d1fc2ff7b63760a6e2c0fd94e27a30678",
       "role": "v60em \u00b7 WALLET CLUSTER DETECTION v1.0 \u00b7 graduated from Lab v0.4 \u00b7 6-signal cluster identity + evidence transparency \u00b7 Phase 1 Advisory (badge surfaces \u00b7 NO methodology change) \u00b7 Role 1/7/8"
     },
     {
@@ -484,9 +484,9 @@
     {
       "path": "data/moat_status.json",
       "category": "meta",
-      "size_bytes": 18485,
+      "size_bytes": 18486,
       "size_kb": 18.1,
-      "sha256": "75ffc2bec9f02e545cf8351cac1692d460129af7f869fb30030b07f6318e03fe",
+      "sha256": "1f3d2a84e3866de5726ea50ac6ebdc1ddd129b083f74dddecedf6493e73687d3",
       "role": "Board 6 \u00b7 11-component moat scorecard \u00b7 self-audit"
     },
     {
