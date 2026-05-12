@@ -45,7 +45,9 @@
     "insider_overlap.methodology_version",
     "insider_overlap.n_overlap_events",
     "insider_overlap.overlap_score",
-    "insider_overlap.top_partners"
+    "insider_overlap.top_partners",
+    "inclusion_method",
+    "cohort_methodology_version"
   ],
   "rationale": {
     "passport_positions": "Only 1/382 hit · sample wallet has rich position dump for /wallet/<addr> demo · others use default-empty intentionally · candidate for v0.2 backfill",
@@ -62,7 +64,9 @@
     "plain_english_brier.*": "Tier-1 surface that requires sample-size pass · legitimate gating",
     "backtest_90d.*": "Only computed for wallets with sufficient 90-day trade history · legitimate gating",
     "sybil_evidence": "Empty list = correct null for non-clustered wallets · only wallets in multi-member cluster get evidence entries · v0.1 currently produces only 1 multi-cluster (S038)",
-    "insider_overlap": "v60dy v0.1 · ONLY wallets with actual same-side-same-market winning overlap get this block (8-10 of 393 today · 2% population) · sparsity is the signal · CLEAR/no-overlap wallets correctly have NO block per CAPTURE DOCTRINE option-b honest absence. Will rise to 20-40% population once Path A counterparty data lands and v0.2 blends graph proximity into the overlap detector."
+    "insider_overlap": "v60dy v0.1 · ONLY wallets with actual same-side-same-market winning overlap get this block (8-10 of 393 today · 2% population) · sparsity is the signal · CLEAR/no-overlap wallets correctly have NO block per CAPTURE DOCTRINE option-b honest absence. Will rise to 20-40% population once Path A counterparty data lands and v0.2 blends graph proximity into the overlap detector.",
+    "inclusion_method": "v60es · cohort-v3.0-bulk-expanded · tag is sparse for one cron run · ALL wallets get it post-cron-rerun · lifetime (pre-v60es) vs bulk_v60es_2026-05-11 (added in this round). After full cohort rebuild this should be at 100% coverage. Operator-aware sparse window.",
+    "cohort_methodology_version": "v60es · same v3.0 methodology bump tag · sparse during the cron transition window · settles to 100% after one cron run."
   },
   "watchlist_known_violations": {
     "_note": "These were KNOWN wired-but-null violations · v60dx (2026-05-11 late evening HKT) shipped _ingest/strip_doctrine_violations.py + daily-moat Stage 5c to STRIP these fields when their value is None · 7 fields cleared at populator side. The strip is idempotent + only deletes None values · populated values are preserved. If a future populator starts emitting real values for these fields, the strip becomes a no-op and the doctrine continues to clear cleanly.",
