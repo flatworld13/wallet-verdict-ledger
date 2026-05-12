@@ -1,67 +1,20 @@
 {
   "lock_id": "use_case_signal_data_matrix",
   "lock_name": "Use-case \u00d7 Signal \u00d7 Data Matrix",
+  "public_visibility": "internal_hash_only",
+  "sha256": "90431ea22bf890ecada8ebd3907ae9635be76aeb885ffb85bae1d8ec0072c9a7",
   "set_date": "2026-05-10",
-  "set_time_hkt": "09:46",
-  "set_by": "operator-directive 2026-05-10 09:46 HKT",
-  "canonical_text": "Before adding a new signal, answer: who uses it, which market, when in the lifecycle, why it changes the decision, and what raw data proves it.",
-  "expanded_pro_trader_targets": [
-    "copy trader",
-    "whale watcher",
-    "news/event trader",
-    "arbitrage trader",
-    "market maker"
-  ],
-  "venue_sequence": [
-    {
-      "order": 1,
-      "venue": "Polymarket",
-      "role": "core market"
-    },
-    {
-      "order": 2,
-      "venue": "Kalshi",
-      "role": "first cross-venue expansion \u00b7 arb + rule-equivalence"
-    },
-    {
-      "order": 3,
-      "venue": "Limitless / PredictIt",
-      "role": "further out"
-    }
-  ],
-  "required_signal_families": [
-    "live book / copyability / size",
-    "edge decay / thin book / exit risk",
-    "Discord / Telegram bot commands",
-    "hedge-wallet clusters",
-    "UMA / oracle risk",
-    "news auto-tag-to-market",
-    "paper / demo copy mode",
-    "cross-venue arb / rule-equivalence",
-    "order persistence",
-    "insider evidence",
-    "webhook delivery SLA",
-    "enterprise receipt packs"
-  ],
-  "cross_references": [
-    "_handoff/2026-05-10_use_case_signal_data_matrix.md",
-    "STRATEGY.md use-case matrix lock block"
-  ],
+  "generated_at_unix": 1778394885,
   "m_axis": [
     "M1",
     "M3",
     "M5"
   ],
-  "v_axis": [
-    "V1",
-    "V2",
-    "V3"
-  ],
-  "methodology_version": "v2.3",
   "frame_3_role": "Editorial style guide \u00b7 the 5-question test before any signal ships",
-  "schema_version": "0.1",
-  "generator_version": "StrategyLocks-v0.1",
-  "generated_at_unix": 1778394885,
-  "generated_at_utc": "2026-05-10 06:34 UTC",
-  "sha256_of_canonical_text": "377def096a59857d04103acbd7901fbca18d2b40690d49e4c8ee442eb92b3058"
+  "cross_references": [
+    "_handoff/2026-05-10_use_case_signal_data_matrix.md",
+    "STRATEGY.md use-case matrix lock block"
+  ],
+  "redaction_doc": "v60fd \u00b7 this lock contains internal strategy/positioning detail (shipping order \u00b7 pricing intent \u00b7 competitive playbook). The sha256 anchors its existence at the timestamp \u00b7 the contents stay in the private engine repo. M1 forward-witness preserved.",
+  "verifiable_at_anchor": "https://github.com/flatworld13/wallet-verdict-ledger/commits/main"
 }
