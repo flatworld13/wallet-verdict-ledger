@@ -2,32 +2,12 @@
   "schema_version": 1,
   "methodology_version": "learning-brief-v0.1",
   "date": "2026-05-13",
-  "built_at_unix": 1778637410,
+  "built_at_unix": 1778632197,
   "day_n": 0,
   "milestone": "pre-Day-7",
   "ledger_source": "data/copyability_audit_ledger.json",
   "ledger_methodology": "copyability-validation-v0.1",
   "tier_rollup": {
-    "COPY_SMALL": {
-      "n_decisions": 30,
-      "n_resolved": 6,
-      "n_positive_for_follower": 3,
-      "positive_rate_for_follower": 0.5,
-      "tier_correct_rate": 0.5,
-      "tier_correct_meaning": "follower would have made money",
-      "avg_follower_pnl": 20.8615,
-      "insufficient_n": true
-    },
-    "WAIT": {
-      "n_decisions": 616,
-      "n_resolved": 537,
-      "n_positive_for_follower": 372,
-      "positive_rate_for_follower": 0.6927,
-      "tier_correct_rate": null,
-      "tier_correct_meaning": "neutral \u00b7 WAIT does not commit to direction",
-      "avg_follower_pnl": 15.8527,
-      "insufficient_n": false
-    },
     "AVOID": {
       "n_decisions": 244,
       "n_resolved": 158,
@@ -37,6 +17,26 @@
       "tier_correct_meaning": "follower would have lost money (AVOID was right)",
       "avg_follower_pnl": 16.8803,
       "insufficient_n": false
+    },
+    "WAIT": {
+      "n_decisions": 593,
+      "n_resolved": 532,
+      "n_positive_for_follower": 367,
+      "positive_rate_for_follower": 0.6898,
+      "tier_correct_rate": null,
+      "tier_correct_meaning": "neutral \u00b7 WAIT does not commit to direction",
+      "avg_follower_pnl": 15.9422,
+      "insufficient_n": false
+    },
+    "COPY_SMALL": {
+      "n_decisions": 33,
+      "n_resolved": 11,
+      "n_positive_for_follower": 8,
+      "positive_rate_for_follower": 0.7273,
+      "tier_correct_rate": 0.7273,
+      "tier_correct_meaning": "follower would have made money",
+      "avg_follower_pnl": 14.2482,
+      "insufficient_n": true
     },
     "COPY_NOW": {
       "n_decisions": 0,
