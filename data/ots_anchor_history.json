@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at_unix": 1778669737,
+  "generated_at_unix": 1778676241,
   "methodology_version": "L4-truth-anchor v2.0",
   "description": "Daily OpenTimestamps Bitcoin anchor for the engine-state digest \u00b7 the Layer 4 belt-and-suspenders attestation",
   "verify_instructions": "Anyone can verify any row: `ots verify <receipt_path>`. Pending status upgrades to confirmed within 24-72h as Bitcoin includes the calendar attestations.",
@@ -88,13 +88,24 @@
     },
     {
       "date": "2026-05-13",
+      "mode": "manifest",
+      "digest_sha256": "517b7722dc6ddaaed792b2a78e71f270f87b978935c04852c3f2a6f3ddc230f7",
+      "methodology_version": "L4-manifest v1.0",
+      "receipt_path": "data/ots_receipts/2026-05-13.manifest.digest.ots",
+      "digest_input_path": "data/ots_receipts/2026-05-13.manifest.digest",
+      "status": "pending",
+      "stamped_at_unix": 1778676239,
+      "verify_command": "ots verify data/ots_receipts/2026-05-13.manifest.digest.ots"
+    },
+    {
+      "date": "2026-05-13",
       "mode": "truth",
       "digest_sha256": "029a00ee2e5c88da8f226c65bb2b6b1e6b93ca266ca759b129ead8a536809021",
       "methodology_version": "L4-truth-anchor v2.0",
       "receipt_path": "data/ots_receipts/2026-05-13.digest.ots",
       "digest_input_path": "data/ots_receipts/2026-05-13.digest",
       "status": "confirmed",
-      "stamped_at_unix": 1778669737,
+      "stamped_at_unix": 1778676090,
       "verify_command": "ots verify data/ots_receipts/2026-05-13.digest.ots"
     }
   ]
