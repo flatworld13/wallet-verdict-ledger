@@ -2,16 +2,16 @@
   "schema_version": "0.1",
   "method_version": "LedgerManifest-v0.1",
   "date": "2026-05-13",
-  "generated_at_unix": 1778632274,
-  "generated_at_utc": "2026-05-13 00:31 UTC",
-  "engine_sha": "e845cf44ec3ca13eaef7ca454b4e66ad2cda2885",
+  "generated_at_unix": 1778635176,
+  "generated_at_utc": "2026-05-13 01:19 UTC",
+  "engine_sha": "79ea228043fab7e0e88644279bf03023a858e6f2",
   "frame_3_role": "Masthead \u00b7 self-describing inventory \u00b7 the entry-point for any auditor",
   "description": "Self-describing inventory of every file synced to wallet-verdict-ledger today. Every file has size + sha256 + role. Cross-references the day's OTS-anchored digest so the manifest itself is tamper-detectable: if any synced file changes after publication, its sha256 won't match this manifest record. The manifest IS the receipt-of-receipts.",
   "totals": {
-    "n_files_synced": 48,
-    "n_files_planned_in_inventory": 48,
-    "total_bytes": 175909490,
-    "total_mb": 167.76,
+    "n_files_synced": 49,
+    "n_files_planned_in_inventory": 49,
+    "total_bytes": 175972619,
+    "total_mb": 167.82,
     "by_category": {
       "truth_ephemeral": {
         "count": 10,
@@ -24,9 +24,9 @@
         "mb": 90.79
       },
       "derived": {
-        "count": 23,
-        "bytes": 8319586,
-        "mb": 7.93
+        "count": 24,
+        "bytes": 8382715,
+        "mb": 7.99
       },
       "meta": {
         "count": 8,
@@ -517,6 +517,17 @@
       "rows": 870,
       "schema_version": "1",
       "methodology_version": "copyability-validation-v0.1"
+    },
+    {
+      "path": "data/wallet_dollar_pnl_30d.json",
+      "category": "derived",
+      "size_bytes": 63129,
+      "size_kb": 61.6,
+      "sha256": "e2f7e8d4eeeb5622db23f8023cd7d051ce3766ce98a0179782fc1257a754801b",
+      "role": "v60fr \u00b7 per-wallet dollar-PnL at $100/trade \u00b7 30d + 90d windows \u00b7 derived from copyability_audit_ledger \u00b7 V3 dollar-grounded \u00b7 the gut-feel number the retail-pro pays for",
+      "rows": 11,
+      "schema_version": "1",
+      "methodology_version": "wallet-execution-pnl-v0.1"
     },
     {
       "path": "data/learning_briefs_history.json",
