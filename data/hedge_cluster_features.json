@@ -2,16 +2,16 @@
   "schema_version": 1,
   "methodology_version": "hedge-cluster-features-v0.1",
   "date": "2026-05-13",
-  "generated_at_unix": 1778665077,
+  "generated_at_unix": 1778669742,
   "description": "Hedge Cluster observable features per cohort wallet \u00b7 v0.1 rule-based \u00b7 uses only counterparty_graph.json data we already collect today. The SCORE (with weights/action-label) lives in _private/_ingest/compute_hedge_cluster_score.py per CLAUDE.md TOP RULE -1 methodology privacy.",
   "features": {
     "0x3cf3e8d5427aed066a7a5926980600f6c3cf87b3": {
-      "n_cohort_partners": 29,
-      "n_strong_cohort_partners": 24,
+      "n_cohort_partners": 28,
+      "n_strong_cohort_partners": 23,
       "max_n_co_fills_with_cohort": 7309,
-      "total_co_fill_volume": 14248,
+      "total_co_fill_volume": 14020,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
@@ -49,9 +49,9 @@
       "n_cohort_partners": 33,
       "n_strong_cohort_partners": 24,
       "max_n_co_fills_with_cohort": 7309,
-      "total_co_fill_volume": 19272,
+      "total_co_fill_volume": 18353,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x3cf3e8d5427aed066a7a5926980600f6c3cf87b3",
@@ -91,7 +91,7 @@
       "max_n_co_fills_with_cohort": 3144,
       "total_co_fill_volume": 4966,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
@@ -131,7 +131,7 @@
       "max_n_co_fills_with_cohort": 3144,
       "total_co_fill_volume": 20093,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x14964aefa2cd7caff7878b3820a690a03c5aa429",
@@ -171,7 +171,7 @@
       "max_n_co_fills_with_cohort": 3130,
       "total_co_fill_volume": 6340,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x9f47f1fcb1701bf9eaf31236ad39875e5d60af93",
@@ -206,23 +206,17 @@
       ]
     },
     "0x9f47f1fcb1701bf9eaf31236ad39875e5d60af93": {
-      "n_cohort_partners": 9,
-      "n_strong_cohort_partners": 7,
+      "n_cohort_partners": 8,
+      "n_strong_cohort_partners": 6,
       "max_n_co_fills_with_cohort": 3130,
-      "total_co_fill_volume": 5698,
+      "total_co_fill_volume": 4580,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x4a9a87962893e6e119f1cc7f67c61d0287e0f675",
           "pseudonym": "",
           "n_co_fills": 3130,
-          "in_cluster": true
-        },
-        {
-          "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
-          "pseudonym": "wokerjoesleeper",
-          "n_co_fills": 1118,
           "in_cluster": true
         },
         {
@@ -242,6 +236,12 @@
           "pseudonym": "YatSen",
           "n_co_fills": 71,
           "in_cluster": true
+        },
+        {
+          "wallet": "0x0b935e95bdf36322c14815f002d9759079a03c34",
+          "pseudonym": "Smoggy-Dedication",
+          "n_co_fills": 50,
+          "in_cluster": true
         }
       ]
     },
@@ -251,7 +251,7 @@
       "max_n_co_fills_with_cohort": 2966,
       "total_co_fill_volume": 6517,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
@@ -291,7 +291,7 @@
       "max_n_co_fills_with_cohort": 2966,
       "total_co_fill_volume": 19459,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x4133bcbad1d9c41de776646696f41c34d0a65e70",
@@ -326,12 +326,12 @@
       ]
     },
     "0xd42f6a1634a3707e27cbae14ca966068e5d1047d": {
-      "n_cohort_partners": 23,
-      "n_strong_cohort_partners": 18,
+      "n_cohort_partners": 22,
+      "n_strong_cohort_partners": 17,
       "max_n_co_fills_with_cohort": 1410,
-      "total_co_fill_volume": 8565,
+      "total_co_fill_volume": 7669,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x1dbd30000dd7dd051e8fc803fac38e8246d9af92",
@@ -352,15 +352,15 @@
           "in_cluster": true
         },
         {
-          "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
-          "pseudonym": "wokerjoesleeper",
-          "n_co_fills": 896,
-          "in_cluster": true
-        },
-        {
           "wallet": "0x4f2ba33b080882c0f6b296f48cfd07b6c326f448",
           "pseudonym": "0x4f2BA33b0808",
           "n_co_fills": 691,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x4a9a87962893e6e119f1cc7f67c61d0287e0f675",
+          "pseudonym": "",
+          "n_co_fills": 687,
           "in_cluster": true
         }
       ]
@@ -371,7 +371,7 @@
       "max_n_co_fills_with_cohort": 2877,
       "total_co_fill_volume": 10371,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xee613b3fc183ee44f9da9c05f53e2da107e3debf",
@@ -411,7 +411,7 @@
       "max_n_co_fills_with_cohort": 2877,
       "total_co_fill_volume": 9093,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x492442eab586f242b53bda933fd5de859c8a3782",
@@ -446,12 +446,12 @@
       ]
     },
     "0x2d27e4d20f3b8a2ee3bc861d9b83752f338676d8": {
-      "n_cohort_partners": 17,
-      "n_strong_cohort_partners": 17,
+      "n_cohort_partners": 16,
+      "n_strong_cohort_partners": 16,
       "max_n_co_fills_with_cohort": 2853,
-      "total_co_fill_volume": 7727,
+      "total_co_fill_volume": 7179,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xc613e6707bd115e5c04d303d944568232697662b",
@@ -472,26 +472,26 @@
           "in_cluster": true
         },
         {
-          "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
-          "pseudonym": "wokerjoesleeper",
-          "n_co_fills": 548,
-          "in_cluster": true
-        },
-        {
           "wallet": "0x4f2ba33b080882c0f6b296f48cfd07b6c326f448",
           "pseudonym": "0x4f2BA33b0808",
           "n_co_fills": 419,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x3f7aee8f1fafcd873343105b24f83f3f98a9248e",
+          "pseudonym": "Cool-Spread",
+          "n_co_fills": 413,
           "in_cluster": true
         }
       ]
     },
     "0xc613e6707bd115e5c04d303d944568232697662b": {
-      "n_cohort_partners": 45,
-      "n_strong_cohort_partners": 37,
+      "n_cohort_partners": 44,
+      "n_strong_cohort_partners": 36,
       "max_n_co_fills_with_cohort": 2853,
-      "total_co_fill_volume": 15888,
+      "total_co_fill_volume": 15506,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x2d27e4d20f3b8a2ee3bc861d9b83752f338676d8",
@@ -531,7 +531,7 @@
       "max_n_co_fills_with_cohort": 2337,
       "total_co_fill_volume": 6048,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
@@ -571,7 +571,7 @@
       "max_n_co_fills_with_cohort": 2337,
       "total_co_fill_volume": 13962,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x5aa981521b4e94fee3b3bf18fe441f62e865febe",
@@ -611,7 +611,7 @@
       "max_n_co_fills_with_cohort": 2315,
       "total_co_fill_volume": 5771,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -646,12 +646,12 @@
       ]
     },
     "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86": {
-      "n_cohort_partners": 50,
-      "n_strong_cohort_partners": 50,
+      "n_cohort_partners": 51,
+      "n_strong_cohort_partners": 51,
       "max_n_co_fills_with_cohort": 2315,
-      "total_co_fill_volume": 21011,
+      "total_co_fill_volume": 21097,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x00e2d8f88b39d9b430c136c679369f41101cd56a",
@@ -686,12 +686,12 @@
       ]
     },
     "0x43372356634781eea88d61bbdd7824cdce958882": {
-      "n_cohort_partners": 20,
-      "n_strong_cohort_partners": 17,
+      "n_cohort_partners": 19,
+      "n_strong_cohort_partners": 16,
       "max_n_co_fills_with_cohort": 2289,
-      "total_co_fill_volume": 9327,
+      "total_co_fill_volume": 9016,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
@@ -731,7 +731,7 @@
       "max_n_co_fills_with_cohort": 2057,
       "total_co_fill_volume": 8082,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x53757615de1c42b83f893b79d4241a009dc2aeea",
@@ -771,7 +771,7 @@
       "max_n_co_fills_with_cohort": 2057,
       "total_co_fill_volume": 8000,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x16b29c50f2439faf627209b2ac0c7bbddaa8a881",
@@ -811,7 +811,7 @@
       "max_n_co_fills_with_cohort": 2047,
       "total_co_fill_volume": 8404,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
@@ -851,7 +851,7 @@
       "max_n_co_fills_with_cohort": 1927,
       "total_co_fill_volume": 5163,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
@@ -891,7 +891,7 @@
       "max_n_co_fills_with_cohort": 1866,
       "total_co_fill_volume": 4946,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
@@ -931,7 +931,7 @@
       "max_n_co_fills_with_cohort": 1826,
       "total_co_fill_volume": 5426,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -971,7 +971,7 @@
       "max_n_co_fills_with_cohort": 1821,
       "total_co_fill_volume": 9136,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xb7d54bf1d0a362beb916d9cb58a04c41d67e0789",
@@ -1006,12 +1006,12 @@
       ]
     },
     "0xb7d54bf1d0a362beb916d9cb58a04c41d67e0789": {
-      "n_cohort_partners": 21,
-      "n_strong_cohort_partners": 19,
+      "n_cohort_partners": 22,
+      "n_strong_cohort_partners": 20,
       "max_n_co_fills_with_cohort": 1821,
-      "total_co_fill_volume": 6335,
+      "total_co_fill_volume": 6575,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x4e25605fd905e9972efc0f4d8814530c655cd7a7",
@@ -1051,7 +1051,7 @@
       "max_n_co_fills_with_cohort": 1482,
       "total_co_fill_volume": 4875,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
@@ -1091,7 +1091,7 @@
       "max_n_co_fills_with_cohort": 1776,
       "total_co_fill_volume": 9035,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -1131,7 +1131,7 @@
       "max_n_co_fills_with_cohort": 1763,
       "total_co_fill_volume": 5926,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -1171,7 +1171,7 @@
       "max_n_co_fills_with_cohort": 1754,
       "total_co_fill_volume": 5925,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
@@ -1211,7 +1211,7 @@
       "max_n_co_fills_with_cohort": 1749,
       "total_co_fill_volume": 9579,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x43372356634781eea88d61bbdd7824cdce958882",
@@ -1251,7 +1251,7 @@
       "max_n_co_fills_with_cohort": 1741,
       "total_co_fill_volume": 6670,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x6d3c5bd13984b2de47c3a88ddc455309aab3d294",
@@ -1291,7 +1291,7 @@
       "max_n_co_fills_with_cohort": 1741,
       "total_co_fill_volume": 9984,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x37c1874a60d348903594a96703e0507c518fc53a",
@@ -1331,7 +1331,7 @@
       "max_n_co_fills_with_cohort": 1730,
       "total_co_fill_volume": 8168,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111",
@@ -1366,12 +1366,12 @@
       ]
     },
     "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111": {
-      "n_cohort_partners": 34,
-      "n_strong_cohort_partners": 26,
+      "n_cohort_partners": 35,
+      "n_strong_cohort_partners": 27,
       "max_n_co_fills_with_cohort": 1730,
-      "total_co_fill_volume": 7539,
+      "total_co_fill_volume": 7702,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
@@ -1411,7 +1411,7 @@
       "max_n_co_fills_with_cohort": 1571,
       "total_co_fill_volume": 4023,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
@@ -1446,12 +1446,12 @@
       ]
     },
     "0xd218e474776403a330142299f7796e8ba32eb5c9": {
-      "n_cohort_partners": 77,
-      "n_strong_cohort_partners": 76,
+      "n_cohort_partners": 78,
+      "n_strong_cohort_partners": 77,
       "max_n_co_fills_with_cohort": 1569,
-      "total_co_fill_volume": 27026,
+      "total_co_fill_volume": 27528,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71",
@@ -1491,7 +1491,7 @@
       "max_n_co_fills_with_cohort": 1539,
       "total_co_fill_volume": 11325,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x56c9fbdeccf198f1f5ad95ace39b24f5f7fb0d9e",
@@ -1531,7 +1531,7 @@
       "max_n_co_fills_with_cohort": 1546,
       "total_co_fill_volume": 1832,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x55b4af6a1cff148a307cad8ad098206a028e80ea",
@@ -1571,7 +1571,7 @@
       "max_n_co_fills_with_cohort": 1546,
       "total_co_fill_volume": 7454,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x482bf5accdecfaffa67c14d4d4fbb59f428a3266",
@@ -1611,7 +1611,7 @@
       "max_n_co_fills_with_cohort": 1461,
       "total_co_fill_volume": 5205,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -1651,7 +1651,7 @@
       "max_n_co_fills_with_cohort": 1453,
       "total_co_fill_volume": 3791,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -1691,7 +1691,7 @@
       "max_n_co_fills_with_cohort": 1415,
       "total_co_fill_volume": 5290,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x492442eab586f242b53bda933fd5de859c8a3782",
@@ -1731,7 +1731,7 @@
       "max_n_co_fills_with_cohort": 1410,
       "total_co_fill_volume": 5476,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd42f6a1634a3707e27cbae14ca966068e5d1047d",
@@ -1771,7 +1771,7 @@
       "max_n_co_fills_with_cohort": 1370,
       "total_co_fill_volume": 6313,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd42f6a1634a3707e27cbae14ca966068e5d1047d",
@@ -1811,7 +1811,7 @@
       "max_n_co_fills_with_cohort": 1361,
       "total_co_fill_volume": 5646,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd106952ebf30a3125affd8a23b6c1f30c35fc79c",
@@ -1851,7 +1851,7 @@
       "max_n_co_fills_with_cohort": 1361,
       "total_co_fill_volume": 4116,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x03e8a544e97eeff5753bc1e90d46e5ef22af1697",
@@ -1891,7 +1891,7 @@
       "max_n_co_fills_with_cohort": 1293,
       "total_co_fill_volume": 4594,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xc613e6707bd115e5c04d303d944568232697662b",
@@ -1931,7 +1931,7 @@
       "max_n_co_fills_with_cohort": 1283,
       "total_co_fill_volume": 6999,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x7ba5354929bf388707f397c8b21b8322dc954252",
@@ -1971,7 +1971,7 @@
       "max_n_co_fills_with_cohort": 1283,
       "total_co_fill_volume": 1451,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
@@ -1994,12 +1994,12 @@
       ]
     },
     "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1": {
-      "n_cohort_partners": 66,
-      "n_strong_cohort_partners": 63,
+      "n_cohort_partners": 58,
+      "n_strong_cohort_partners": 55,
       "max_n_co_fills_with_cohort": 1275,
-      "total_co_fill_volume": 21702,
+      "total_co_fill_volume": 16921,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x4c2a07d0b2f77d7b2cc30d9c7379fbf80ed265dc",
@@ -2020,15 +2020,15 @@
           "in_cluster": true
         },
         {
-          "wallet": "0x9f47f1fcb1701bf9eaf31236ad39875e5d60af93",
-          "pseudonym": "TheGuru-791",
-          "n_co_fills": 1118,
-          "in_cluster": true
-        },
-        {
           "wallet": "0x1f6b85cb85876df272199039207b33166757267e",
           "pseudonym": "0x1f6b85CB8587",
           "n_co_fills": 1112,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x4e25605fd905e9972efc0f4d8814530c655cd7a7",
+          "pseudonym": "0x4e25605Fd905",
+          "n_co_fills": 1089,
           "in_cluster": true
         }
       ]
@@ -2039,7 +2039,7 @@
       "max_n_co_fills_with_cohort": 1222,
       "total_co_fill_volume": 1936,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
@@ -2079,7 +2079,7 @@
       "max_n_co_fills_with_cohort": 1177,
       "total_co_fill_volume": 1464,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x5d1d9cfd66ee3068c2a8a57dedf1e1b006dcafd2",
@@ -2101,7 +2101,7 @@
       "max_n_co_fills_with_cohort": 1171,
       "total_co_fill_volume": 3582,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
@@ -2141,7 +2141,7 @@
       "max_n_co_fills_with_cohort": 1135,
       "total_co_fill_volume": 5173,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
@@ -2181,7 +2181,7 @@
       "max_n_co_fills_with_cohort": 1132,
       "total_co_fill_volume": 4114,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x0b9cae2b0dfe7a71c413e0604eaac1c352f87e44",
@@ -2221,7 +2221,7 @@
       "max_n_co_fills_with_cohort": 1129,
       "total_co_fill_volume": 1185,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x16b29c50f2439faf627209b2ac0c7bbddaa8a881",
@@ -2243,7 +2243,7 @@
       "max_n_co_fills_with_cohort": 1113,
       "total_co_fill_volume": 6320,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
@@ -2283,7 +2283,7 @@
       "max_n_co_fills_with_cohort": 1112,
       "total_co_fill_volume": 2437,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
@@ -2323,7 +2323,7 @@
       "max_n_co_fills_with_cohort": 1105,
       "total_co_fill_volume": 3427,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -2358,12 +2358,12 @@
       ]
     },
     "0x4f2ba33b080882c0f6b296f48cfd07b6c326f448": {
-      "n_cohort_partners": 27,
-      "n_strong_cohort_partners": 24,
+      "n_cohort_partners": 28,
+      "n_strong_cohort_partners": 25,
       "max_n_co_fills_with_cohort": 1026,
-      "total_co_fill_volume": 7441,
+      "total_co_fill_volume": 7519,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x9f47f1fcb1701bf9eaf31236ad39875e5d60af93",
@@ -2403,7 +2403,7 @@
       "max_n_co_fills_with_cohort": 991,
       "total_co_fill_volume": 1457,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
@@ -2438,12 +2438,12 @@
       ]
     },
     "0x5f390e4b7d6f06d6756a6c92afdbf7b3176aa78c": {
-      "n_cohort_partners": 30,
-      "n_strong_cohort_partners": 30,
+      "n_cohort_partners": 31,
+      "n_strong_cohort_partners": 31,
       "max_n_co_fills_with_cohort": 975,
-      "total_co_fill_volume": 7817,
+      "total_co_fill_volume": 7874,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xc613e6707bd115e5c04d303d944568232697662b",
@@ -2483,7 +2483,7 @@
       "max_n_co_fills_with_cohort": 969,
       "total_co_fill_volume": 2124,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
@@ -2523,7 +2523,7 @@
       "max_n_co_fills_with_cohort": 929,
       "total_co_fill_volume": 2913,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
@@ -2563,7 +2563,7 @@
       "max_n_co_fills_with_cohort": 883,
       "total_co_fill_volume": 2634,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x507e52ef684ca2dd91f90a9d26d149dd3288beae",
@@ -2603,7 +2603,7 @@
       "max_n_co_fills_with_cohort": 882,
       "total_co_fill_volume": 2090,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xdb2223cc5202a4718c3069f577ec971f71c96478",
@@ -2643,7 +2643,7 @@
       "max_n_co_fills_with_cohort": 882,
       "total_co_fill_volume": 1795,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x27f738fe203827445690339104aae35b20bc44b0",
@@ -2671,7 +2671,7 @@
       "max_n_co_fills_with_cohort": 876,
       "total_co_fill_volume": 1030,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x84ad9c5c547a82ec9a08547b94bd922446e5bfb7",
@@ -2705,7 +2705,7 @@
       "max_n_co_fills_with_cohort": 876,
       "total_co_fill_volume": 2933,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x0346afae2603313d2bbee96b628536c8cbe352a5",
@@ -2745,7 +2745,7 @@
       "max_n_co_fills_with_cohort": 868,
       "total_co_fill_volume": 2326,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
@@ -2785,7 +2785,7 @@
       "max_n_co_fills_with_cohort": 867,
       "total_co_fill_volume": 2133,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
@@ -2825,7 +2825,7 @@
       "max_n_co_fills_with_cohort": 714,
       "total_co_fill_volume": 1369,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
@@ -2865,7 +2865,7 @@
       "max_n_co_fills_with_cohort": 740,
       "total_co_fill_volume": 4515,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xa61ef8773ec2e821962306ca87d4b57e39ff0abd",
@@ -2905,7 +2905,7 @@
       "max_n_co_fills_with_cohort": 814,
       "total_co_fill_volume": 1653,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -2945,7 +2945,7 @@
       "max_n_co_fills_with_cohort": 810,
       "total_co_fill_volume": 3836,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -2985,7 +2985,7 @@
       "max_n_co_fills_with_cohort": 787,
       "total_co_fill_volume": 2754,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
@@ -3025,7 +3025,7 @@
       "max_n_co_fills_with_cohort": 779,
       "total_co_fill_volume": 3595,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
@@ -3065,7 +3065,7 @@
       "max_n_co_fills_with_cohort": 253,
       "total_co_fill_volume": 1024,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
@@ -3105,7 +3105,7 @@
       "max_n_co_fills_with_cohort": 764,
       "total_co_fill_volume": 2727,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
@@ -3145,7 +3145,7 @@
       "max_n_co_fills_with_cohort": 744,
       "total_co_fill_volume": 800,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x53757615de1c42b83f893b79d4241a009dc2aeea",
@@ -3185,7 +3185,7 @@
       "max_n_co_fills_with_cohort": 740,
       "total_co_fill_volume": 1085,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x3f7aee8f1fafcd873343105b24f83f3f98a9248e",
@@ -3225,7 +3225,7 @@
       "max_n_co_fills_with_cohort": 740,
       "total_co_fill_volume": 2207,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xee613b3fc183ee44f9da9c05f53e2da107e3debf",
@@ -3265,7 +3265,7 @@
       "max_n_co_fills_with_cohort": 734,
       "total_co_fill_volume": 3435,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x30cecdf29f069563ea21b8ae94492e41e53a6b2b",
@@ -3303,9 +3303,9 @@
       "n_cohort_partners": 27,
       "n_strong_cohort_partners": 15,
       "max_n_co_fills_with_cohort": 724,
-      "total_co_fill_volume": 2386,
+      "total_co_fill_volume": 2208,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x5f390e4b7d6f06d6756a6c92afdbf7b3176aa78c",
@@ -3320,12 +3320,6 @@
           "in_cluster": true
         },
         {
-          "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
-          "pseudonym": "wokerjoesleeper",
-          "n_co_fills": 286,
-          "in_cluster": true
-        },
-        {
           "wallet": "0x44c1dfe43260c94ed4f1d00de2e1f80fb113ebc1",
           "pseudonym": "aenews2",
           "n_co_fills": 197,
@@ -3336,6 +3330,12 @@
           "pseudonym": "0x21f90e5Ff30C",
           "n_co_fills": 158,
           "in_cluster": true
+        },
+        {
+          "wallet": "0x4cc3522b689a6bf1fb4a2444c523e7776db47552",
+          "pseudonym": "0x4CC3522B689A",
+          "n_co_fills": 122,
+          "in_cluster": true
         }
       ]
     },
@@ -3345,7 +3345,7 @@
       "max_n_co_fills_with_cohort": 715,
       "total_co_fill_volume": 2737,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
@@ -3385,7 +3385,7 @@
       "max_n_co_fills_with_cohort": 712,
       "total_co_fill_volume": 1131,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
@@ -3420,12 +3420,12 @@
       ]
     },
     "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418": {
-      "n_cohort_partners": 48,
-      "n_strong_cohort_partners": 34,
+      "n_cohort_partners": 49,
+      "n_strong_cohort_partners": 35,
       "max_n_co_fills_with_cohort": 707,
-      "total_co_fill_volume": 4831,
+      "total_co_fill_volume": 4901,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x4e25605fd905e9972efc0f4d8814530c655cd7a7",
@@ -3465,7 +3465,7 @@
       "max_n_co_fills_with_cohort": 704,
       "total_co_fill_volume": 2384,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -3505,7 +3505,7 @@
       "max_n_co_fills_with_cohort": 700,
       "total_co_fill_volume": 1235,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x3f7aee8f1fafcd873343105b24f83f3f98a9248e",
@@ -3545,7 +3545,7 @@
       "max_n_co_fills_with_cohort": 507,
       "total_co_fill_volume": 1442,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -3585,7 +3585,7 @@
       "max_n_co_fills_with_cohort": 158,
       "total_co_fill_volume": 230,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x1dbd30000dd7dd051e8fc803fac38e8246d9af92",
@@ -3619,7 +3619,7 @@
       "max_n_co_fills_with_cohort": 676,
       "total_co_fill_volume": 862,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x3cf3e8d5427aed066a7a5926980600f6c3cf87b3",
@@ -3659,7 +3659,7 @@
       "max_n_co_fills_with_cohort": 652,
       "total_co_fill_volume": 1509,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -3699,7 +3699,7 @@
       "max_n_co_fills_with_cohort": 628,
       "total_co_fill_volume": 2041,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -3739,7 +3739,7 @@
       "max_n_co_fills_with_cohort": 616,
       "total_co_fill_volume": 1260,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
@@ -3779,7 +3779,7 @@
       "max_n_co_fills_with_cohort": 614,
       "total_co_fill_volume": 1748,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xb7d54bf1d0a362beb916d9cb58a04c41d67e0789",
@@ -3819,7 +3819,7 @@
       "max_n_co_fills_with_cohort": 587,
       "total_co_fill_volume": 1816,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -3859,7 +3859,7 @@
       "max_n_co_fills_with_cohort": 575,
       "total_co_fill_volume": 1158,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x30cecdf29f069563ea21b8ae94492e41e53a6b2b",
@@ -3893,7 +3893,7 @@
       "max_n_co_fills_with_cohort": 573,
       "total_co_fill_volume": 626,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x492442eab586f242b53bda933fd5de859c8a3782",
@@ -3933,7 +3933,7 @@
       "max_n_co_fills_with_cohort": 568,
       "total_co_fill_volume": 1698,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
@@ -3973,7 +3973,7 @@
       "max_n_co_fills_with_cohort": 547,
       "total_co_fill_volume": 1156,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
@@ -4013,7 +4013,7 @@
       "max_n_co_fills_with_cohort": 546,
       "total_co_fill_volume": 1081,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x16b29c50f2439faf627209b2ac0c7bbddaa8a881",
@@ -4053,7 +4053,7 @@
       "max_n_co_fills_with_cohort": 534,
       "total_co_fill_volume": 755,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x5d1d9cfd66ee3068c2a8a57dedf1e1b006dcafd2",
@@ -4087,7 +4087,7 @@
       "max_n_co_fills_with_cohort": 529,
       "total_co_fill_volume": 653,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x53757615de1c42b83f893b79d4241a009dc2aeea",
@@ -4115,7 +4115,7 @@
       "max_n_co_fills_with_cohort": 528,
       "total_co_fill_volume": 2203,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -4155,7 +4155,7 @@
       "max_n_co_fills_with_cohort": 524,
       "total_co_fill_volume": 1722,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -4195,7 +4195,7 @@
       "max_n_co_fills_with_cohort": 510,
       "total_co_fill_volume": 1333,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
@@ -4235,7 +4235,7 @@
       "max_n_co_fills_with_cohort": 506,
       "total_co_fill_volume": 2150,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x37c1874a60d348903594a96703e0507c518fc53a",
@@ -4269,13 +4269,53 @@
         }
       ]
     },
+    "0x1cc16713196d456f86fa9c7387dd326a7f73b8df": {
+      "n_cohort_partners": 10,
+      "n_strong_cohort_partners": 10,
+      "max_n_co_fills_with_cohort": 502,
+      "total_co_fill_volume": 1566,
+      "cluster_id": 1,
+      "cluster_size": 242,
+      "top_partners": [
+        {
+          "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+          "pseudonym": "cigarettes",
+          "n_co_fills": 502,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xb7d54bf1d0a362beb916d9cb58a04c41d67e0789",
+          "pseudonym": "Wicked-Sonnet",
+          "n_co_fills": 240,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
+          "pseudonym": "wokerjoesleeper",
+          "n_co_fills": 196,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111",
+          "pseudonym": "0x1cFC260BfA2b",
+          "n_co_fills": 163,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x96b59f71f635da5da031e3e93448c54fe226f5e7",
+          "pseudonym": "Sparkling-Commonsense",
+          "n_co_fills": 108,
+          "in_cluster": true
+        }
+      ]
+    },
     "0xce5bec63b40392845a9a504915f607c8e03a047a": {
       "n_cohort_partners": 7,
       "n_strong_cohort_partners": 3,
       "max_n_co_fills_with_cohort": 486,
       "total_co_fill_volume": 558,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
@@ -4315,7 +4355,7 @@
       "max_n_co_fills_with_cohort": 483,
       "total_co_fill_volume": 1075,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
@@ -4355,7 +4395,7 @@
       "max_n_co_fills_with_cohort": 479,
       "total_co_fill_volume": 1077,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x43372356634781eea88d61bbdd7824cdce958882",
@@ -4395,7 +4435,7 @@
       "max_n_co_fills_with_cohort": 479,
       "total_co_fill_volume": 1893,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71",
@@ -4435,7 +4475,7 @@
       "max_n_co_fills_with_cohort": 479,
       "total_co_fill_volume": 1438,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
@@ -4470,23 +4510,17 @@
       ]
     },
     "0x684bc3eb000bff0979d14b60cc74861736150601": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 2,
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
       "max_n_co_fills_with_cohort": 466,
-      "total_co_fill_volume": 689,
+      "total_co_fill_volume": 466,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x4a9a87962893e6e119f1cc7f67c61d0287e0f675",
           "pseudonym": "",
           "n_co_fills": 466,
-          "in_cluster": true
-        },
-        {
-          "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
-          "pseudonym": "wokerjoesleeper",
-          "n_co_fills": 223,
           "in_cluster": true
         }
       ]
@@ -4497,7 +4531,7 @@
       "max_n_co_fills_with_cohort": 454,
       "total_co_fill_volume": 1155,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -4537,7 +4571,7 @@
       "max_n_co_fills_with_cohort": 454,
       "total_co_fill_volume": 703,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x492442eab586f242b53bda933fd5de859c8a3782",
@@ -4577,7 +4611,7 @@
       "max_n_co_fills_with_cohort": 446,
       "total_co_fill_volume": 2664,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
@@ -4617,7 +4651,7 @@
       "max_n_co_fills_with_cohort": 419,
       "total_co_fill_volume": 1001,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x84ad9c5c547a82ec9a08547b94bd922446e5bfb7",
@@ -4657,7 +4691,7 @@
       "max_n_co_fills_with_cohort": 416,
       "total_co_fill_volume": 2203,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x224b255eaa3279ceb77330317d3c38ee8e73f6b8",
@@ -4697,7 +4731,7 @@
       "max_n_co_fills_with_cohort": 398,
       "total_co_fill_volume": 1927,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xee613b3fc183ee44f9da9c05f53e2da107e3debf",
@@ -4737,7 +4771,7 @@
       "max_n_co_fills_with_cohort": 395,
       "total_co_fill_volume": 1487,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -4777,7 +4811,7 @@
       "max_n_co_fills_with_cohort": 370,
       "total_co_fill_volume": 760,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xc613e6707bd115e5c04d303d944568232697662b",
@@ -4817,7 +4851,7 @@
       "max_n_co_fills_with_cohort": 370,
       "total_co_fill_volume": 882,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -4857,7 +4891,7 @@
       "max_n_co_fills_with_cohort": 367,
       "total_co_fill_volume": 862,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71",
@@ -4897,7 +4931,7 @@
       "max_n_co_fills_with_cohort": 2,
       "total_co_fill_volume": 4,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
@@ -4925,7 +4959,7 @@
       "max_n_co_fills_with_cohort": 360,
       "total_co_fill_volume": 1375,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x3cf3e8d5427aed066a7a5926980600f6c3cf87b3",
@@ -4965,7 +4999,7 @@
       "max_n_co_fills_with_cohort": 358,
       "total_co_fill_volume": 1299,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xee613b3fc183ee44f9da9c05f53e2da107e3debf",
@@ -5005,7 +5039,7 @@
       "max_n_co_fills_with_cohort": 357,
       "total_co_fill_volume": 588,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x5aa981521b4e94fee3b3bf18fe441f62e865febe",
@@ -5039,7 +5073,7 @@
       "max_n_co_fills_with_cohort": 329,
       "total_co_fill_volume": 760,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x7ea571c40408f340c1c8fc8eaacebab53c1bde7b",
@@ -5079,7 +5113,7 @@
       "max_n_co_fills_with_cohort": 318,
       "total_co_fill_volume": 1339,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -5119,7 +5153,7 @@
       "max_n_co_fills_with_cohort": 178,
       "total_co_fill_volume": 180,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
@@ -5141,7 +5175,7 @@
       "max_n_co_fills_with_cohort": 70,
       "total_co_fill_volume": 157,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x0612b467c882a22ab966d734dd7203daf705bf7b",
@@ -5175,7 +5209,7 @@
       "max_n_co_fills_with_cohort": 300,
       "total_co_fill_volume": 459,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -5203,7 +5237,7 @@
       "max_n_co_fills_with_cohort": 298,
       "total_co_fill_volume": 1078,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x507e52ef684ca2dd91f90a9d26d149dd3288beae",
@@ -5243,7 +5277,7 @@
       "max_n_co_fills_with_cohort": 294,
       "total_co_fill_volume": 875,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -5283,7 +5317,7 @@
       "max_n_co_fills_with_cohort": 282,
       "total_co_fill_volume": 343,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x54498e4c40b17261479aeaeeddf9cc37bd46992b",
@@ -5311,7 +5345,7 @@
       "max_n_co_fills_with_cohort": 280,
       "total_co_fill_volume": 280,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x492442eab586f242b53bda933fd5de859c8a3782",
@@ -5327,7 +5361,7 @@
       "max_n_co_fills_with_cohort": 275,
       "total_co_fill_volume": 972,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x3fd9a838ded6eb832baab3ccbcb5e934e3871ef0",
@@ -5367,7 +5401,7 @@
       "max_n_co_fills_with_cohort": 274,
       "total_co_fill_volume": 487,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -5407,7 +5441,7 @@
       "max_n_co_fills_with_cohort": 272,
       "total_co_fill_volume": 1356,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
@@ -5447,7 +5481,7 @@
       "max_n_co_fills_with_cohort": 271,
       "total_co_fill_volume": 1025,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x3cf3e8d5427aed066a7a5926980600f6c3cf87b3",
@@ -5487,7 +5521,7 @@
       "max_n_co_fills_with_cohort": 270,
       "total_co_fill_volume": 331,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
@@ -5521,7 +5555,7 @@
       "max_n_co_fills_with_cohort": 267,
       "total_co_fill_volume": 1029,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x4e25605fd905e9972efc0f4d8814530c655cd7a7",
@@ -5561,7 +5595,7 @@
       "max_n_co_fills_with_cohort": 266,
       "total_co_fill_volume": 649,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x30cecdf29f069563ea21b8ae94492e41e53a6b2b",
@@ -5601,7 +5635,7 @@
       "max_n_co_fills_with_cohort": 255,
       "total_co_fill_volume": 1180,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x12d6cccfc7470a3f4bafc53599a4779cbf2cf2a8",
@@ -5641,7 +5675,7 @@
       "max_n_co_fills_with_cohort": 254,
       "total_co_fill_volume": 980,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -5681,7 +5715,7 @@
       "max_n_co_fills_with_cohort": 245,
       "total_co_fill_volume": 245,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x12d6cccfc7470a3f4bafc53599a4779cbf2cf2a8",
@@ -5697,7 +5731,7 @@
       "max_n_co_fills_with_cohort": 240,
       "total_co_fill_volume": 318,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x1df231bd33dae91463e1682927e8096b82c289a0",
@@ -5725,7 +5759,7 @@
       "max_n_co_fills_with_cohort": 239,
       "total_co_fill_volume": 736,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x3f7aee8f1fafcd873343105b24f83f3f98a9248e",
@@ -5765,7 +5799,7 @@
       "max_n_co_fills_with_cohort": 239,
       "total_co_fill_volume": 240,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x53757615de1c42b83f893b79d4241a009dc2aeea",
@@ -5787,7 +5821,7 @@
       "max_n_co_fills_with_cohort": 238,
       "total_co_fill_volume": 537,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -5827,7 +5861,7 @@
       "max_n_co_fills_with_cohort": 236,
       "total_co_fill_volume": 391,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x6d3c5bd13984b2de47c3a88ddc455309aab3d294",
@@ -5867,7 +5901,7 @@
       "max_n_co_fills_with_cohort": 229,
       "total_co_fill_volume": 1369,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
@@ -5907,7 +5941,7 @@
       "max_n_co_fills_with_cohort": 217,
       "total_co_fill_volume": 497,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71",
@@ -5947,7 +5981,7 @@
       "max_n_co_fills_with_cohort": 214,
       "total_co_fill_volume": 427,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -5981,7 +6015,7 @@
       "max_n_co_fills_with_cohort": 198,
       "total_co_fill_volume": 342,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
@@ -6021,7 +6055,7 @@
       "max_n_co_fills_with_cohort": 198,
       "total_co_fill_volume": 575,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -6061,7 +6095,7 @@
       "max_n_co_fills_with_cohort": 184,
       "total_co_fill_volume": 526,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
@@ -6101,7 +6135,7 @@
       "max_n_co_fills_with_cohort": 179,
       "total_co_fill_volume": 329,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x2be4dda4820730d431642ae97753e1f6ba6c01ad",
@@ -6141,7 +6175,7 @@
       "max_n_co_fills_with_cohort": 179,
       "total_co_fill_volume": 518,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -6181,7 +6215,7 @@
       "max_n_co_fills_with_cohort": 178,
       "total_co_fill_volume": 224,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x5bab6b0b49e77983e882768030f8cc335bee53e6",
@@ -6203,7 +6237,7 @@
       "max_n_co_fills_with_cohort": 177,
       "total_co_fill_volume": 431,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x2be4dda4820730d431642ae97753e1f6ba6c01ad",
@@ -6231,7 +6265,7 @@
       "max_n_co_fills_with_cohort": 171,
       "total_co_fill_volume": 424,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x2fb0f88ef5ba40e799b996e6f07b590d92b4abf8",
@@ -6271,7 +6305,7 @@
       "max_n_co_fills_with_cohort": 167,
       "total_co_fill_volume": 309,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf",
@@ -6311,7 +6345,7 @@
       "max_n_co_fills_with_cohort": 166,
       "total_co_fill_volume": 167,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x0b01d14b4f91acdf61534543d4a645f142238f47",
@@ -6333,7 +6367,7 @@
       "max_n_co_fills_with_cohort": 165,
       "total_co_fill_volume": 743,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
@@ -6373,7 +6407,7 @@
       "max_n_co_fills_with_cohort": 160,
       "total_co_fill_volume": 553,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -6413,7 +6447,7 @@
       "max_n_co_fills_with_cohort": 159,
       "total_co_fill_volume": 276,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x55b4af6a1cff148a307cad8ad098206a028e80ea",
@@ -6453,7 +6487,7 @@
       "max_n_co_fills_with_cohort": 158,
       "total_co_fill_volume": 158,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x6356fb47642a028bc09df92023c35a21a0b41885",
@@ -6469,7 +6503,7 @@
       "max_n_co_fills_with_cohort": 143,
       "total_co_fill_volume": 143,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd42f6a1634a3707e27cbae14ca966068e5d1047d",
@@ -6485,7 +6519,7 @@
       "max_n_co_fills_with_cohort": 142,
       "total_co_fill_volume": 426,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -6525,7 +6559,7 @@
       "max_n_co_fills_with_cohort": 140,
       "total_co_fill_volume": 433,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -6565,7 +6599,7 @@
       "max_n_co_fills_with_cohort": 139,
       "total_co_fill_volume": 457,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
@@ -6605,7 +6639,7 @@
       "max_n_co_fills_with_cohort": 134,
       "total_co_fill_volume": 232,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x8e9eedf20dfa70956d49f608a205e402d9df38e4",
@@ -6645,7 +6679,7 @@
       "max_n_co_fills_with_cohort": 127,
       "total_co_fill_volume": 356,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x55b4af6a1cff148a307cad8ad098206a028e80ea",
@@ -6685,7 +6719,7 @@
       "max_n_co_fills_with_cohort": 104,
       "total_co_fill_volume": 845,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
@@ -6725,7 +6759,7 @@
       "max_n_co_fills_with_cohort": 122,
       "total_co_fill_volume": 122,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
@@ -6741,7 +6775,7 @@
       "max_n_co_fills_with_cohort": 9,
       "total_co_fill_volume": 14,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x6203f0777b21514df8ce9bbae60776e09c93d744",
@@ -6781,7 +6815,7 @@
       "max_n_co_fills_with_cohort": 117,
       "total_co_fill_volume": 131,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x48185887c8dc95de60ee89722f1d0ee7894cbf0b",
@@ -6803,7 +6837,7 @@
       "max_n_co_fills_with_cohort": 115,
       "total_co_fill_volume": 624,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
@@ -6843,7 +6877,7 @@
       "max_n_co_fills_with_cohort": 109,
       "total_co_fill_volume": 424,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -6883,7 +6917,7 @@
       "max_n_co_fills_with_cohort": 107,
       "total_co_fill_volume": 466,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x53757615de1c42b83f893b79d4241a009dc2aeea",
@@ -6923,7 +6957,7 @@
       "max_n_co_fills_with_cohort": 102,
       "total_co_fill_volume": 370,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x4a9a87962893e6e119f1cc7f67c61d0287e0f675",
@@ -6963,7 +6997,7 @@
       "max_n_co_fills_with_cohort": 99,
       "total_co_fill_volume": 253,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
@@ -7003,7 +7037,7 @@
       "max_n_co_fills_with_cohort": 99,
       "total_co_fill_volume": 100,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x16cbe223607a6513ae76d1e3751c78e4eabc2704",
@@ -7025,7 +7059,7 @@
       "max_n_co_fills_with_cohort": 97,
       "total_co_fill_volume": 280,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -7065,7 +7099,7 @@
       "max_n_co_fills_with_cohort": 95,
       "total_co_fill_volume": 281,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
@@ -7105,7 +7139,7 @@
       "max_n_co_fills_with_cohort": 92,
       "total_co_fill_volume": 229,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -7145,7 +7179,7 @@
       "max_n_co_fills_with_cohort": 92,
       "total_co_fill_volume": 344,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -7185,7 +7219,7 @@
       "max_n_co_fills_with_cohort": 85,
       "total_co_fill_volume": 522,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x3cf3e8d5427aed066a7a5926980600f6c3cf87b3",
@@ -7225,7 +7259,7 @@
       "max_n_co_fills_with_cohort": 87,
       "total_co_fill_volume": 252,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x507e52ef684ca2dd91f90a9d26d149dd3288beae",
@@ -7259,7 +7293,7 @@
       "max_n_co_fills_with_cohort": 80,
       "total_co_fill_volume": 80,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
@@ -7275,7 +7309,7 @@
       "max_n_co_fills_with_cohort": 78,
       "total_co_fill_volume": 164,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x463e797dccfe0fd56839bc855f1e94b3f6ef664e",
@@ -7315,7 +7349,7 @@
       "max_n_co_fills_with_cohort": 76,
       "total_co_fill_volume": 289,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
@@ -7355,7 +7389,7 @@
       "max_n_co_fills_with_cohort": 67,
       "total_co_fill_volume": 268,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x89cd944aa9cf528142e3557099c6992eb7ce4d7d",
@@ -7395,7 +7429,7 @@
       "max_n_co_fills_with_cohort": 67,
       "total_co_fill_volume": 69,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x3b96172a668b4a6dad2f39dfb22604c362c1a092",
@@ -7423,7 +7457,7 @@
       "max_n_co_fills_with_cohort": 62,
       "total_co_fill_volume": 210,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xfbfd14dd4bb607373119de95f1d4b21c3b6c0029",
@@ -7463,7 +7497,7 @@
       "max_n_co_fills_with_cohort": 62,
       "total_co_fill_volume": 99,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x6d3c5bd13984b2de47c3a88ddc455309aab3d294",
@@ -7491,7 +7525,7 @@
       "max_n_co_fills_with_cohort": 61,
       "total_co_fill_volume": 63,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x3a5164ade2d7938fe00b346fb5135ebd1a08b2b6",
@@ -7519,7 +7553,7 @@
       "max_n_co_fills_with_cohort": 58,
       "total_co_fill_volume": 107,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x1c1675a7c3662131acfd00aaabcbc97a6a4f45e9",
@@ -7553,7 +7587,7 @@
       "max_n_co_fills_with_cohort": 57,
       "total_co_fill_volume": 85,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x3a5164ade2d7938fe00b346fb5135ebd1a08b2b6",
@@ -7587,7 +7621,7 @@
       "max_n_co_fills_with_cohort": 56,
       "total_co_fill_volume": 173,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
@@ -7627,7 +7661,7 @@
       "max_n_co_fills_with_cohort": 56,
       "total_co_fill_volume": 56,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x14f66f7e5ca69e756cac1bfd4c7c8ac3a7fd15c4",
@@ -7643,7 +7677,7 @@
       "max_n_co_fills_with_cohort": 54,
       "total_co_fill_volume": 54,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x58b3380f71bd6c706dd398a5e60bde55fa3a653c",
@@ -7659,7 +7693,7 @@
       "max_n_co_fills_with_cohort": 53,
       "total_co_fill_volume": 53,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
@@ -7675,7 +7709,7 @@
       "max_n_co_fills_with_cohort": 52,
       "total_co_fill_volume": 58,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x4c2a07d0b2f77d7b2cc30d9c7379fbf80ed265dc",
@@ -7715,7 +7749,7 @@
       "max_n_co_fills_with_cohort": 51,
       "total_co_fill_volume": 106,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x23073ad0c9dff45353cedb11760570b995663934",
@@ -7755,7 +7789,7 @@
       "max_n_co_fills_with_cohort": 50,
       "total_co_fill_volume": 310,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xc613e6707bd115e5c04d303d944568232697662b",
@@ -7795,7 +7829,7 @@
       "max_n_co_fills_with_cohort": 50,
       "total_co_fill_volume": 308,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
@@ -7835,7 +7869,7 @@
       "max_n_co_fills_with_cohort": 49,
       "total_co_fill_volume": 49,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x5d189e816b4149be00977c1a3c8840374aec4972",
@@ -7851,7 +7885,7 @@
       "max_n_co_fills_with_cohort": 48,
       "total_co_fill_volume": 203,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
@@ -7891,7 +7925,7 @@
       "max_n_co_fills_with_cohort": 44,
       "total_co_fill_volume": 117,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xf0ec554fe75d57fef3f2404fce070b5c71d46064",
@@ -7931,7 +7965,7 @@
       "max_n_co_fills_with_cohort": 42,
       "total_co_fill_volume": 46,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x2663daca3cecf3767ca1c3b126002a8578a8ed1f",
@@ -7971,7 +8005,7 @@
       "max_n_co_fills_with_cohort": 42,
       "total_co_fill_volume": 99,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x216509be5332c6037105b4f871966eb97240f598",
@@ -8011,7 +8045,7 @@
       "max_n_co_fills_with_cohort": 36,
       "total_co_fill_volume": 130,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -8051,7 +8085,7 @@
       "max_n_co_fills_with_cohort": 36,
       "total_co_fill_volume": 100,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x84ad9c5c547a82ec9a08547b94bd922446e5bfb7",
@@ -8085,7 +8119,7 @@
       "max_n_co_fills_with_cohort": 35,
       "total_co_fill_volume": 50,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x216509be5332c6037105b4f871966eb97240f598",
@@ -8113,7 +8147,7 @@
       "max_n_co_fills_with_cohort": 33,
       "total_co_fill_volume": 33,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x006cc834cc092684f1b56626e23bedb3835c16ea",
@@ -8129,7 +8163,7 @@
       "max_n_co_fills_with_cohort": 33,
       "total_co_fill_volume": 33,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd0d6053c3c37e727402d84c14069780d360993aa",
@@ -8145,7 +8179,7 @@
       "max_n_co_fills_with_cohort": 30,
       "total_co_fill_volume": 65,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
@@ -8173,7 +8207,7 @@
       "max_n_co_fills_with_cohort": 29,
       "total_co_fill_volume": 163,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x30cecdf29f069563ea21b8ae94492e41e53a6b2b",
@@ -8213,7 +8247,7 @@
       "max_n_co_fills_with_cohort": 28,
       "total_co_fill_volume": 53,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x3fdf3e4b1d86ddd1b6ca0ccf4ba387ecf6721561",
@@ -8241,7 +8275,7 @@
       "max_n_co_fills_with_cohort": 28,
       "total_co_fill_volume": 30,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x2785e7022dc20757108204b13c08cea8613b70ae",
@@ -8269,7 +8303,7 @@
       "max_n_co_fills_with_cohort": 26,
       "total_co_fill_volume": 26,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x2785e7022dc20757108204b13c08cea8613b70ae",
@@ -8285,7 +8319,7 @@
       "max_n_co_fills_with_cohort": 23,
       "total_co_fill_volume": 168,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
@@ -8325,7 +8359,7 @@
       "max_n_co_fills_with_cohort": 19,
       "total_co_fill_volume": 21,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x4bb2547d10d4af0c3366ab96988fb06102b26c95",
@@ -8353,7 +8387,7 @@
       "max_n_co_fills_with_cohort": 19,
       "total_co_fill_volume": 20,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x4bb2547d10d4af0c3366ab96988fb06102b26c95",
@@ -8375,7 +8409,7 @@
       "max_n_co_fills_with_cohort": 19,
       "total_co_fill_volume": 19,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x3b96172a668b4a6dad2f39dfb22604c362c1a092",
@@ -8391,7 +8425,7 @@
       "max_n_co_fills_with_cohort": 18,
       "total_co_fill_volume": 64,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
@@ -8425,7 +8459,7 @@
       "max_n_co_fills_with_cohort": 17,
       "total_co_fill_volume": 91,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1",
@@ -8465,7 +8499,7 @@
       "max_n_co_fills_with_cohort": 17,
       "total_co_fill_volume": 29,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x06cb73531a43553e31a8ad031026d4b33f1af47f",
@@ -8505,7 +8539,7 @@
       "max_n_co_fills_with_cohort": 14,
       "total_co_fill_volume": 14,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xc613e6707bd115e5c04d303d944568232697662b",
@@ -8521,7 +8555,7 @@
       "max_n_co_fills_with_cohort": 12,
       "total_co_fill_volume": 36,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -8561,7 +8595,7 @@
       "max_n_co_fills_with_cohort": 11,
       "total_co_fill_volume": 53,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -8601,7 +8635,7 @@
       "max_n_co_fills_with_cohort": 10,
       "total_co_fill_volume": 51,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xc613e6707bd115e5c04d303d944568232697662b",
@@ -8641,7 +8675,7 @@
       "max_n_co_fills_with_cohort": 10,
       "total_co_fill_volume": 10,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x3d0b1da57130cf26686c58bbee43466dcc134f4d",
@@ -8657,7 +8691,7 @@
       "max_n_co_fills_with_cohort": 9,
       "total_co_fill_volume": 22,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
@@ -8697,7 +8731,7 @@
       "max_n_co_fills_with_cohort": 9,
       "total_co_fill_volume": 38,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
@@ -8737,7 +8771,7 @@
       "max_n_co_fills_with_cohort": 8,
       "total_co_fill_volume": 8,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x0a371f1edf28cbe6ed5b798a038345a8bf047cd4",
@@ -8753,7 +8787,7 @@
       "max_n_co_fills_with_cohort": 7,
       "total_co_fill_volume": 29,
       "cluster_id": 1,
-      "cluster_size": 241,
+      "cluster_size": 242,
       "top_partners": [
         {
           "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
@@ -9455,6 +9489,28 @@
         }
       ]
     },
+    "0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292": {
+      "n_cohort_partners": 2,
+      "n_strong_cohort_partners": 0,
+      "max_n_co_fills_with_cohort": 1,
+      "total_co_fill_volume": 2,
+      "cluster_id": null,
+      "cluster_size": 1,
+      "top_partners": [
+        {
+          "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
+          "pseudonym": "wokerjoesleeper",
+          "n_co_fills": 1,
+          "in_cluster": false
+        },
+        {
+          "wallet": "0x8c76c4787bf236398d2d1a42dd3e8af1393206ac",
+          "pseudonym": "Bare-Toothpaste",
+          "n_co_fills": 1,
+          "in_cluster": false
+        }
+      ]
+    },
     "0xbc8c61c1de7c31a8ff68aebf55256c028db9273f": {
       "n_cohort_partners": 1,
       "n_strong_cohort_partners": 0,
@@ -9705,28 +9761,6 @@
         }
       ]
     },
-    "0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
-          "pseudonym": "wokerjoesleeper",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x8c76c4787bf236398d2d1a42dd3e8af1393206ac",
-          "pseudonym": "Bare-Toothpaste",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
     "0x8c76c4787bf236398d2d1a42dd3e8af1393206ac": {
       "n_cohort_partners": 1,
       "n_strong_cohort_partners": 0,
@@ -9827,11 +9861,11 @@
     }
   },
   "summary": {
-    "n_cohort_wallets_with_any_partner": 289,
-    "n_cohort_wallets_in_a_cluster": 241,
+    "n_cohort_wallets_with_any_partner": 290,
+    "n_cohort_wallets_in_a_cluster": 242,
     "n_clusters": 1,
-    "largest_cluster_size": 241,
-    "n_cohort_to_cohort_edges": 1470,
+    "largest_cluster_size": 242,
+    "n_cohort_to_cohort_edges": 1473,
     "strong_partner_threshold": 5
   },
   "source_engine": "build_hedge_cluster_features.py \u00b7 v60cz",
