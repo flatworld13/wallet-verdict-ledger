@@ -11,7 +11,7 @@
     "4_builder",
     "5_hedge_fund"
   ],
-  "built_at_unix": 1778634913,
+  "built_at_unix": 1778687794,
   "trade_size_usd": 100.0,
   "ledger_source": "data/copyability_audit_ledger.json",
   "ledger_methodology": "copyability-validation-v0.1",
@@ -19,23 +19,96 @@
     "30d": {
       "days": 30,
       "trade_size_usd": 100.0,
-      "n_wallets": 6,
-      "n_copy_decisions": 4,
-      "n_avoid_decisions": 31,
-      "total_copy_pnl_usd": 12201.01,
-      "total_avoid_saved_usd": -1020.73
+      "n_wallets": 3,
+      "n_copy_decisions": 0,
+      "n_avoid_decisions": 22,
+      "total_copy_pnl_usd": 0,
+      "total_avoid_saved_usd": -1207.76
     },
     "90d": {
       "days": 90,
       "trade_size_usd": 100.0,
-      "n_wallets": 9,
-      "n_copy_decisions": 7,
-      "n_avoid_decisions": 59,
-      "total_copy_pnl_usd": 15355.17,
-      "total_avoid_saved_usd": -71092.99
+      "n_wallets": 5,
+      "n_copy_decisions": 0,
+      "n_avoid_decisions": 48,
+      "total_copy_pnl_usd": 0,
+      "total_avoid_saved_usd": -71587.32
     }
   },
   "per_wallet": {
+    "0x6db568e61e5e3de7d87f831431b673f38ce2e279": {
+      "pseudonym": "0x6db568e61e5e3de7d87f831431b673f38ce2e279",
+      "windows": {
+        "30d": {
+          "days": 30,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 2,
+          "avoid_saved_usd": -150.04,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": [
+            {
+              "chain_id": "f73817b94e796b86",
+              "condition_id": "0x10e268eb49ba9c89268d4017df611ec036dbccd3a845991d457dd1e3206e21ef",
+              "market_question": "Minnesota Twins vs. Washington Nationals",
+              "side": "Washington Nationals",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1778108987,
+              "pnl_per_dollar": 0.7502,
+              "pnl_usd_at_100": 75.02
+            },
+            {
+              "chain_id": "b47ef51bc424cd4e",
+              "condition_id": "0x10e268eb49ba9c89268d4017df611ec036dbccd3a845991d457dd1e3206e21ef",
+              "market_question": "Minnesota Twins vs. Washington Nationals",
+              "side": "Minnesota Twins",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1778108987,
+              "pnl_per_dollar": 0.7502,
+              "pnl_usd_at_100": 75.02
+            }
+          ]
+        },
+        "90d": {
+          "days": 90,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 2,
+          "avoid_saved_usd": -150.04,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": [
+            {
+              "chain_id": "f73817b94e796b86",
+              "condition_id": "0x10e268eb49ba9c89268d4017df611ec036dbccd3a845991d457dd1e3206e21ef",
+              "market_question": "Minnesota Twins vs. Washington Nationals",
+              "side": "Washington Nationals",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1778108987,
+              "pnl_per_dollar": 0.7502,
+              "pnl_usd_at_100": 75.02
+            },
+            {
+              "chain_id": "b47ef51bc424cd4e",
+              "condition_id": "0x10e268eb49ba9c89268d4017df611ec036dbccd3a845991d457dd1e3206e21ef",
+              "market_question": "Minnesota Twins vs. Washington Nationals",
+              "side": "Minnesota Twins",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1778108987,
+              "pnl_per_dollar": 0.7502,
+              "pnl_usd_at_100": 75.02
+            }
+          ]
+        }
+      }
+    },
     "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1": {
       "pseudonym": "debased",
       "windows": {
@@ -45,12 +118,22 @@
           "n_copy_decisions": 0,
           "copy_pnl_usd": 0,
           "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 16,
-          "avoid_saved_usd": -565.21,
+          "n_avoid_decisions": 18,
+          "avoid_saved_usd": -1142.78,
           "best_call": null,
           "worst_call": null,
           "all_copy_calls": [],
           "all_avoid_calls": [
+            {
+              "chain_id": "f5c119e464315c51",
+              "condition_id": "0x924a2942747dd75703321a7c8d809c68f6a514c3b0f2a2e64274e02310634669",
+              "market_question": "Strait of Hormuz traffic returns to normal by end of April?",
+              "side": "No",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776362804,
+              "pnl_per_dollar": 0.3986,
+              "pnl_usd_at_100": 39.86
+            },
             {
               "chain_id": "0b6442fd9c4b7f35",
               "condition_id": "0x9ec068d68055cc7e14d82b67da6f8069423ce64d4cd3549aeb50116156a622f0",
@@ -92,16 +175,6 @@
               "pnl_usd_at_100": -100.0
             },
             {
-              "chain_id": "cfe79b20d6de9980",
-              "condition_id": "0xceb6dfaa2cf5abc9d47ebc867b984a7715104944249274e8a483a2e17473e5f5",
-              "market_question": "US x Iran permanent peace deal by April 30, 2026?",
-              "side": "No",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776247800,
-              "pnl_per_dollar": 0.4388,
-              "pnl_usd_at_100": 43.88
-            },
-            {
               "chain_id": "6ffd7011e3f3e1d2",
               "condition_id": "0xadead580ed2e2961c9a7a3cb9db78daf96faf94bdc00a82ec217cfd6bf341bf0",
               "market_question": "Will the DHS shutdown end after April 30, 2026?",
@@ -120,6 +193,26 @@
               "wallet_fill_unix": 1777466890,
               "pnl_per_dollar": 3.6175,
               "pnl_usd_at_100": 361.75
+            },
+            {
+              "chain_id": "bbe4f30bbbf861db",
+              "condition_id": "0xde41745762fd150d1576a21c19be96f7b1bc9f95e6b2c464c655ad248ef0ac3d",
+              "market_question": "Will the DHS shutdown end between April 29-30, 2026?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1777416188,
+              "pnl_per_dollar": -1.0,
+              "pnl_usd_at_100": -100.0
+            },
+            {
+              "chain_id": "14ccd9ce40c769cc",
+              "condition_id": "0xde41745762fd150d1576a21c19be96f7b1bc9f95e6b2c464c655ad248ef0ac3d",
+              "market_question": "Will the DHS shutdown end between April 29-30, 2026?",
+              "side": "No",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1777416188,
+              "pnl_per_dollar": -1.0,
+              "pnl_usd_at_100": -100.0
             },
             {
               "chain_id": "71e6f5954ccb8f67",
@@ -142,16 +235,6 @@
               "pnl_usd_at_100": -100.0
             },
             {
-              "chain_id": "5447318667bb6a65",
-              "condition_id": "0xceb6dfaa2cf5abc9d47ebc867b984a7715104944249274e8a483a2e17473e5f5",
-              "market_question": "US x Iran permanent peace deal by April 30, 2026?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776247800,
-              "pnl_per_dollar": 0.4388,
-              "pnl_usd_at_100": 43.88
-            },
-            {
               "chain_id": "245f2c3e0f4a8228",
               "condition_id": "0x626d0441b078eefbe2c49047960e7a3b6b4512c235507a2528ccc0f95f2474a6",
               "market_question": "Fed rate cut by April 2026 meeting?",
@@ -160,6 +243,16 @@
               "wallet_fill_unix": 1777064710,
               "pnl_per_dollar": 0.0101,
               "pnl_usd_at_100": 1.01
+            },
+            {
+              "chain_id": "1cb9064f30bcae4f",
+              "condition_id": "0x52bda1b8d68c469eb3176f2052f4da7cacc65a814c51f53294637d124af6afde",
+              "market_question": "Will J.D. Vance have a diplomatic meeting with Iran by April 30?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776603126,
+              "pnl_per_dollar": 5.0606,
+              "pnl_usd_at_100": 506.06
             },
             {
               "chain_id": "e378cdc701251bcc",
@@ -182,6 +275,16 @@
               "pnl_usd_at_100": 62.6
             },
             {
+              "chain_id": "03f5b568aaf26d24",
+              "condition_id": "0xbcf8a1105392d88cdd573deaa65df33e1f89fc87d250fd6f5513b60ee51f548a",
+              "market_question": "Will Jared Kushner have a diplomatic meeting with Iran by April 30?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776626946,
+              "pnl_per_dollar": 3.5455,
+              "pnl_usd_at_100": 354.55
+            },
+            {
               "chain_id": "6c49cb44900cd573",
               "condition_id": "0x807ba575f84169bdb061dd05da3e8eb314a129aa152e31518c2aff9979d5f986",
               "market_question": "Will Trump agree to Iranian enrichment of uranium in April?",
@@ -190,16 +293,6 @@
               "wallet_fill_unix": 1776514334,
               "pnl_per_dollar": 0.7271,
               "pnl_usd_at_100": 72.71
-            },
-            {
-              "chain_id": "c4bf4a86eccf395e",
-              "condition_id": "0x6468c95a0308394330bf55ae21835c8a341bf7efaeb697964ea5f9107972da2c",
-              "market_question": "Will Trump agree to unfreeze Iranian assets in April?",
-              "side": "No",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776801166,
-              "pnl_per_dollar": 0.3514,
-              "pnl_usd_at_100": 35.14
             },
             {
               "chain_id": "c0aa0ae2e846deb0",
@@ -219,12 +312,22 @@
           "n_copy_decisions": 0,
           "copy_pnl_usd": 0,
           "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 23,
-          "avoid_saved_usd": -1938.13,
+          "n_avoid_decisions": 25,
+          "avoid_saved_usd": -2623.0,
           "best_call": null,
           "worst_call": null,
           "all_copy_calls": [],
           "all_avoid_calls": [
+            {
+              "chain_id": "f5c119e464315c51",
+              "condition_id": "0x924a2942747dd75703321a7c8d809c68f6a514c3b0f2a2e64274e02310634669",
+              "market_question": "Strait of Hormuz traffic returns to normal by end of April?",
+              "side": "No",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776362804,
+              "pnl_per_dollar": 0.3986,
+              "pnl_usd_at_100": 39.86
+            },
             {
               "chain_id": "0b6442fd9c4b7f35",
               "condition_id": "0x9ec068d68055cc7e14d82b67da6f8069423ce64d4cd3549aeb50116156a622f0",
@@ -266,16 +369,6 @@
               "pnl_usd_at_100": -100.0
             },
             {
-              "chain_id": "cfe79b20d6de9980",
-              "condition_id": "0xceb6dfaa2cf5abc9d47ebc867b984a7715104944249274e8a483a2e17473e5f5",
-              "market_question": "US x Iran permanent peace deal by April 30, 2026?",
-              "side": "No",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776247800,
-              "pnl_per_dollar": 0.4388,
-              "pnl_usd_at_100": 43.88
-            },
-            {
               "chain_id": "6ffd7011e3f3e1d2",
               "condition_id": "0xadead580ed2e2961c9a7a3cb9db78daf96faf94bdc00a82ec217cfd6bf341bf0",
               "market_question": "Will the DHS shutdown end after April 30, 2026?",
@@ -296,6 +389,16 @@
               "pnl_usd_at_100": 361.75
             },
             {
+              "chain_id": "bbe4f30bbbf861db",
+              "condition_id": "0xde41745762fd150d1576a21c19be96f7b1bc9f95e6b2c464c655ad248ef0ac3d",
+              "market_question": "Will the DHS shutdown end between April 29-30, 2026?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1777416188,
+              "pnl_per_dollar": -1.0,
+              "pnl_usd_at_100": -100.0
+            },
+            {
               "chain_id": "9ba852115cdbbf5a",
               "condition_id": "0xa78ecba9c4273564cce4b810db46bb36cc35db9cd52fc4e067c77f85af1c1048",
               "market_question": "Kharg Island no longer under Iranian control by April 30?",
@@ -304,6 +407,26 @@
               "wallet_fill_unix": 1774041839,
               "pnl_per_dollar": 0.6,
               "pnl_usd_at_100": 60.0
+            },
+            {
+              "chain_id": "aa549a580eaca38f",
+              "condition_id": "0x3b6e28dcff1d4cfed3e169baefd383fb2ac39698d695baaf9eeb73f0e83cd6f0",
+              "market_question": "Pete Hegseth out as Secretary of Defense by April 30?",
+              "side": "No",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1775355409,
+              "pnl_per_dollar": 0.073,
+              "pnl_usd_at_100": 7.3
+            },
+            {
+              "chain_id": "14ccd9ce40c769cc",
+              "condition_id": "0xde41745762fd150d1576a21c19be96f7b1bc9f95e6b2c464c655ad248ef0ac3d",
+              "market_question": "Will the DHS shutdown end between April 29-30, 2026?",
+              "side": "No",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1777416188,
+              "pnl_per_dollar": -1.0,
+              "pnl_usd_at_100": -100.0
             },
             {
               "chain_id": "71e6f5954ccb8f67",
@@ -346,16 +469,6 @@
               "pnl_usd_at_100": 27.53
             },
             {
-              "chain_id": "5447318667bb6a65",
-              "condition_id": "0xceb6dfaa2cf5abc9d47ebc867b984a7715104944249274e8a483a2e17473e5f5",
-              "market_question": "US x Iran permanent peace deal by April 30, 2026?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776247800,
-              "pnl_per_dollar": 0.4388,
-              "pnl_usd_at_100": 43.88
-            },
-            {
               "chain_id": "663d6fd67023273c",
               "condition_id": "0x48fbf70c1713e71a405052bc4641e26dbba435fa557672c4040763c901cbf606",
               "market_question": "Will Trump visit China by April 30?",
@@ -396,6 +509,16 @@
               "pnl_usd_at_100": 1.01
             },
             {
+              "chain_id": "1cb9064f30bcae4f",
+              "condition_id": "0x52bda1b8d68c469eb3176f2052f4da7cacc65a814c51f53294637d124af6afde",
+              "market_question": "Will J.D. Vance have a diplomatic meeting with Iran by April 30?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776603126,
+              "pnl_per_dollar": 5.0606,
+              "pnl_usd_at_100": 506.06
+            },
+            {
               "chain_id": "e378cdc701251bcc",
               "condition_id": "0x5d37825716832a4a54f89450932e89510f26cf4be59aeec3149d2c49e5fdf44d",
               "market_question": "Iran agrees to surrender enriched uranium stockpile by April 30, 2026?",
@@ -416,6 +539,16 @@
               "pnl_usd_at_100": 62.6
             },
             {
+              "chain_id": "03f5b568aaf26d24",
+              "condition_id": "0xbcf8a1105392d88cdd573deaa65df33e1f89fc87d250fd6f5513b60ee51f548a",
+              "market_question": "Will Jared Kushner have a diplomatic meeting with Iran by April 30?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776626946,
+              "pnl_per_dollar": 3.5455,
+              "pnl_usd_at_100": 354.55
+            },
+            {
               "chain_id": "6c49cb44900cd573",
               "condition_id": "0x807ba575f84169bdb061dd05da3e8eb314a129aa152e31518c2aff9979d5f986",
               "market_question": "Will Trump agree to Iranian enrichment of uranium in April?",
@@ -426,16 +559,6 @@
               "pnl_usd_at_100": 72.71
             },
             {
-              "chain_id": "c4bf4a86eccf395e",
-              "condition_id": "0x6468c95a0308394330bf55ae21835c8a341bf7efaeb697964ea5f9107972da2c",
-              "market_question": "Will Trump agree to unfreeze Iranian assets in April?",
-              "side": "No",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776801166,
-              "pnl_per_dollar": 0.3514,
-              "pnl_usd_at_100": 35.14
-            },
-            {
               "chain_id": "c0aa0ae2e846deb0",
               "condition_id": "0xe31a6c763685129123cb6a0f729bfce04b768c5a22cb09c5610406df1a302465",
               "market_question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by April 30, 2026?",
@@ -444,16 +567,6 @@
               "wallet_fill_unix": 1776432500,
               "pnl_per_dollar": 0.626,
               "pnl_usd_at_100": 62.6
-            },
-            {
-              "chain_id": "6e2169c541d5d043",
-              "condition_id": "0x1480b819d03d4b6388d70e848b0384adf38c38d955cb783cdbcf6d4a436dee14",
-              "market_question": "Will the next Prime Minister of Hungary be P\u00e9ter Magyar?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1772895467,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
             }
           ]
         }
@@ -502,8 +615,8 @@
           "n_copy_decisions": 0,
           "copy_pnl_usd": 0,
           "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 12,
-          "avoid_saved_usd": -11691.21,
+          "n_avoid_decisions": 11,
+          "avoid_saved_usd": -11791.21,
           "best_call": null,
           "worst_call": null,
           "all_copy_calls": [],
@@ -617,628 +730,8 @@
               "wallet_fill_unix": 1771416386,
               "pnl_per_dollar": -1.0,
               "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "5bf3744f0caf0a68",
-              "condition_id": "0x9f4bf8c2db9e2cd3b8ee76a947d2f9ddb6e9d827cd43f7394d1a3328664ec328",
-              "market_question": "Bitcoin Up or Down - February 14, 12:40AM-12:45AM ET",
-              "side": "Up",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1771047889,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
             }
           ]
-        }
-      }
-    },
-    "0xd218e474776403a330142299f7796e8ba32eb5c9": {
-      "pseudonym": "cigarettes",
-      "windows": {
-        "30d": {
-          "days": 30,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 2,
-          "copy_pnl_usd": -200.0,
-          "copy_pnl_per_dollar": -1.0,
-          "n_avoid_decisions": 0,
-          "avoid_saved_usd": 0,
-          "best_call": {
-            "chain_id": "5fb063258036b64b",
-            "condition_id": "0x11afb0e52a15490da2ad7bcbea5038c6dac2e9f0fbbd89048d69b0a393c6e3c4",
-            "market_question": "Will Kimi Antonelli win the 2026 F1 Miami Grand Prix?",
-            "side": "No",
-            "tier_label": "COPY_SMALL",
-            "wallet_fill_unix": 1777774088,
-            "pnl_per_dollar": -1.0,
-            "pnl_usd_at_100": -100.0
-          },
-          "worst_call": {
-            "chain_id": "5fb063258036b64b",
-            "condition_id": "0x11afb0e52a15490da2ad7bcbea5038c6dac2e9f0fbbd89048d69b0a393c6e3c4",
-            "market_question": "Will Kimi Antonelli win the 2026 F1 Miami Grand Prix?",
-            "side": "No",
-            "tier_label": "COPY_SMALL",
-            "wallet_fill_unix": 1777774088,
-            "pnl_per_dollar": -1.0,
-            "pnl_usd_at_100": -100.0
-          },
-          "all_copy_calls": [
-            {
-              "chain_id": "5fb063258036b64b",
-              "condition_id": "0x11afb0e52a15490da2ad7bcbea5038c6dac2e9f0fbbd89048d69b0a393c6e3c4",
-              "market_question": "Will Kimi Antonelli win the 2026 F1 Miami Grand Prix?",
-              "side": "No",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1777774088,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "0177d3b609b1412c",
-              "condition_id": "0x11afb0e52a15490da2ad7bcbea5038c6dac2e9f0fbbd89048d69b0a393c6e3c4",
-              "market_question": "Will Kimi Antonelli win the 2026 F1 Miami Grand Prix?",
-              "side": "Yes",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1777774088,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            }
-          ],
-          "all_avoid_calls": []
-        },
-        "90d": {
-          "days": 90,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 2,
-          "copy_pnl_usd": -200.0,
-          "copy_pnl_per_dollar": -1.0,
-          "n_avoid_decisions": 0,
-          "avoid_saved_usd": 0,
-          "best_call": {
-            "chain_id": "5fb063258036b64b",
-            "condition_id": "0x11afb0e52a15490da2ad7bcbea5038c6dac2e9f0fbbd89048d69b0a393c6e3c4",
-            "market_question": "Will Kimi Antonelli win the 2026 F1 Miami Grand Prix?",
-            "side": "No",
-            "tier_label": "COPY_SMALL",
-            "wallet_fill_unix": 1777774088,
-            "pnl_per_dollar": -1.0,
-            "pnl_usd_at_100": -100.0
-          },
-          "worst_call": {
-            "chain_id": "5fb063258036b64b",
-            "condition_id": "0x11afb0e52a15490da2ad7bcbea5038c6dac2e9f0fbbd89048d69b0a393c6e3c4",
-            "market_question": "Will Kimi Antonelli win the 2026 F1 Miami Grand Prix?",
-            "side": "No",
-            "tier_label": "COPY_SMALL",
-            "wallet_fill_unix": 1777774088,
-            "pnl_per_dollar": -1.0,
-            "pnl_usd_at_100": -100.0
-          },
-          "all_copy_calls": [
-            {
-              "chain_id": "5fb063258036b64b",
-              "condition_id": "0x11afb0e52a15490da2ad7bcbea5038c6dac2e9f0fbbd89048d69b0a393c6e3c4",
-              "market_question": "Will Kimi Antonelli win the 2026 F1 Miami Grand Prix?",
-              "side": "No",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1777774088,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "0177d3b609b1412c",
-              "condition_id": "0x11afb0e52a15490da2ad7bcbea5038c6dac2e9f0fbbd89048d69b0a393c6e3c4",
-              "market_question": "Will Kimi Antonelli win the 2026 F1 Miami Grand Prix?",
-              "side": "Yes",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1777774088,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            }
-          ],
-          "all_avoid_calls": []
-        }
-      }
-    },
-    "0x4133bcbad1d9c41de776646696f41c34d0a65e70": {
-      "pseudonym": "EF203F2IPFC2ICP20W-CP3",
-      "windows": {
-        "30d": {
-          "days": 30,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 13,
-          "avoid_saved_usd": -540.58,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": [
-            {
-              "chain_id": "d12891e8df5188b5",
-              "condition_id": "0x0445ea2c776c894c7f12226689ce6ba241e7c5732c5d693035e4d5c7b6d4bd11",
-              "market_question": "Will Inter Miami CF win on 2026-04-22?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776850826,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "1f39db5c98d28195",
-              "condition_id": "0x09a7611f6a7a7995c388e8550ad045b8c0c5358966b7c65054dce429d80c3469",
-              "market_question": "Spread: Brighton & Hove Albion FC (-2.5)",
-              "side": "Chelsea FC",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776784212,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "ec9016b4a6f2aab0",
-              "condition_id": "0x09a7611f6a7a7995c388e8550ad045b8c0c5358966b7c65054dce429d80c3469",
-              "market_question": "Spread: Brighton & Hove Albion FC (-2.5)",
-              "side": "Brighton & Hove Albion FC",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776784212,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "2e92ce6533630904",
-              "condition_id": "0x062918e2e53609c5eecbc396b65d714fe72dfff5e4829f5de83a71391e89c358",
-              "market_question": "Will Real Madrid CF win on 2026-04-21?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776723042,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "946d38e4afbdd7f1",
-              "condition_id": "0x062918e2e53609c5eecbc396b65d714fe72dfff5e4829f5de83a71391e89c358",
-              "market_question": "Will Real Madrid CF win on 2026-04-21?",
-              "side": "No",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776723042,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "218d010fab886697",
-              "condition_id": "0x074b8576b721617d33e837abec16a5070358acd22d8da4fed98a2ce78fc2d669",
-              "market_question": "Will West Bromwich Albion FC win on 2026-04-21?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776797292,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "fa4397c3f483e796",
-              "condition_id": "0x1593c6e48656e70d0fb61322eb5fcf25474dd665eb07c5a812a58e0cf745044d",
-              "market_question": "Will Portsmouth FC win on 2026-04-21?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776798522,
-              "pnl_per_dollar": 15.6667,
-              "pnl_usd_at_100": 1566.67
-            },
-            {
-              "chain_id": "c91d4118bd13203d",
-              "condition_id": "0x06d2fb929d8883f65453eea140193d6065b3d5b7c076154e5626cf64e369523f",
-              "market_question": "Southampton FC vs. Bristol City FC: O/U 1.5",
-              "side": "Under",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776794864,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "167c0588339fb30f",
-              "condition_id": "0x074b8576b721617d33e837abec16a5070358acd22d8da4fed98a2ce78fc2d669",
-              "market_question": "Will West Bromwich Albion FC win on 2026-04-21?",
-              "side": "No",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776797292,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "5db6f00ad6d09634",
-              "condition_id": "0x04a49c759879b8c588c309a100b9443766e9678eee496b2c1aa6e1d897cbb662",
-              "market_question": "Will Athletic Club win on 2026-04-21?",
-              "side": "No",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776785134,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "18ec32cc5dd16907",
-              "condition_id": "0x04a49c759879b8c588c309a100b9443766e9678eee496b2c1aa6e1d897cbb662",
-              "market_question": "Will Athletic Club win on 2026-04-21?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776785134,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "0519ac25cd71ee38",
-              "condition_id": "0x11a45c244814ae0f1baebc956247c08b70ba1151de578ee94ffd07c43997eeb1",
-              "market_question": "RCD Mallorca vs. Valencia CF: O/U 2.5",
-              "side": "Under",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776789120,
-              "pnl_per_dollar": 0.7391,
-              "pnl_usd_at_100": 73.91
-            },
-            {
-              "chain_id": "fa724bdd0071ce7a",
-              "condition_id": "0x06d2fb929d8883f65453eea140193d6065b3d5b7c076154e5626cf64e369523f",
-              "market_question": "Southampton FC vs. Bristol City FC: O/U 1.5",
-              "side": "Over",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776794864,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            }
-          ]
-        },
-        "90d": {
-          "days": 90,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 13,
-          "avoid_saved_usd": -540.58,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": [
-            {
-              "chain_id": "d12891e8df5188b5",
-              "condition_id": "0x0445ea2c776c894c7f12226689ce6ba241e7c5732c5d693035e4d5c7b6d4bd11",
-              "market_question": "Will Inter Miami CF win on 2026-04-22?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776850826,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "1f39db5c98d28195",
-              "condition_id": "0x09a7611f6a7a7995c388e8550ad045b8c0c5358966b7c65054dce429d80c3469",
-              "market_question": "Spread: Brighton & Hove Albion FC (-2.5)",
-              "side": "Chelsea FC",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776784212,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "ec9016b4a6f2aab0",
-              "condition_id": "0x09a7611f6a7a7995c388e8550ad045b8c0c5358966b7c65054dce429d80c3469",
-              "market_question": "Spread: Brighton & Hove Albion FC (-2.5)",
-              "side": "Brighton & Hove Albion FC",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776784212,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "2e92ce6533630904",
-              "condition_id": "0x062918e2e53609c5eecbc396b65d714fe72dfff5e4829f5de83a71391e89c358",
-              "market_question": "Will Real Madrid CF win on 2026-04-21?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776723042,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "946d38e4afbdd7f1",
-              "condition_id": "0x062918e2e53609c5eecbc396b65d714fe72dfff5e4829f5de83a71391e89c358",
-              "market_question": "Will Real Madrid CF win on 2026-04-21?",
-              "side": "No",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776723042,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "218d010fab886697",
-              "condition_id": "0x074b8576b721617d33e837abec16a5070358acd22d8da4fed98a2ce78fc2d669",
-              "market_question": "Will West Bromwich Albion FC win on 2026-04-21?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776797292,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "fa4397c3f483e796",
-              "condition_id": "0x1593c6e48656e70d0fb61322eb5fcf25474dd665eb07c5a812a58e0cf745044d",
-              "market_question": "Will Portsmouth FC win on 2026-04-21?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776798522,
-              "pnl_per_dollar": 15.6667,
-              "pnl_usd_at_100": 1566.67
-            },
-            {
-              "chain_id": "c91d4118bd13203d",
-              "condition_id": "0x06d2fb929d8883f65453eea140193d6065b3d5b7c076154e5626cf64e369523f",
-              "market_question": "Southampton FC vs. Bristol City FC: O/U 1.5",
-              "side": "Under",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776794864,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "167c0588339fb30f",
-              "condition_id": "0x074b8576b721617d33e837abec16a5070358acd22d8da4fed98a2ce78fc2d669",
-              "market_question": "Will West Bromwich Albion FC win on 2026-04-21?",
-              "side": "No",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776797292,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "5db6f00ad6d09634",
-              "condition_id": "0x04a49c759879b8c588c309a100b9443766e9678eee496b2c1aa6e1d897cbb662",
-              "market_question": "Will Athletic Club win on 2026-04-21?",
-              "side": "No",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776785134,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "18ec32cc5dd16907",
-              "condition_id": "0x04a49c759879b8c588c309a100b9443766e9678eee496b2c1aa6e1d897cbb662",
-              "market_question": "Will Athletic Club win on 2026-04-21?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776785134,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "0519ac25cd71ee38",
-              "condition_id": "0x11a45c244814ae0f1baebc956247c08b70ba1151de578ee94ffd07c43997eeb1",
-              "market_question": "RCD Mallorca vs. Valencia CF: O/U 2.5",
-              "side": "Under",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776789120,
-              "pnl_per_dollar": 0.7391,
-              "pnl_usd_at_100": 73.91
-            },
-            {
-              "chain_id": "fa724bdd0071ce7a",
-              "condition_id": "0x06d2fb929d8883f65453eea140193d6065b3d5b7c076154e5626cf64e369523f",
-              "market_question": "Southampton FC vs. Bristol City FC: O/U 1.5",
-              "side": "Over",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776794864,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            }
-          ]
-        }
-      }
-    },
-    "0x5d189e816b4149be00977c1a3c8840374aec4972": {
-      "pseudonym": "gloriafoster",
-      "windows": {
-        "30d": {
-          "days": 30,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 1,
-          "copy_pnl_usd": 12400.0,
-          "copy_pnl_per_dollar": 124.0,
-          "n_avoid_decisions": 0,
-          "avoid_saved_usd": 0,
-          "best_call": {
-            "chain_id": "acb65ee35147f65c",
-            "condition_id": "0x0d14f5dc9fb3250ec888b1ac8d9fe9a0ce06f9d3ea60fdf138e8690622fea84c",
-            "market_question": "Will the Fed decrease interest rates by 25 bps after the April 2026 meeting?",
-            "side": "Yes",
-            "tier_label": "COPY_SMALL",
-            "wallet_fill_unix": 1776841276,
-            "pnl_per_dollar": 124.0,
-            "pnl_usd_at_100": 12400.0
-          },
-          "worst_call": {
-            "chain_id": "acb65ee35147f65c",
-            "condition_id": "0x0d14f5dc9fb3250ec888b1ac8d9fe9a0ce06f9d3ea60fdf138e8690622fea84c",
-            "market_question": "Will the Fed decrease interest rates by 25 bps after the April 2026 meeting?",
-            "side": "Yes",
-            "tier_label": "COPY_SMALL",
-            "wallet_fill_unix": 1776841276,
-            "pnl_per_dollar": 124.0,
-            "pnl_usd_at_100": 12400.0
-          },
-          "all_copy_calls": [
-            {
-              "chain_id": "acb65ee35147f65c",
-              "condition_id": "0x0d14f5dc9fb3250ec888b1ac8d9fe9a0ce06f9d3ea60fdf138e8690622fea84c",
-              "market_question": "Will the Fed decrease interest rates by 25 bps after the April 2026 meeting?",
-              "side": "Yes",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1776841276,
-              "pnl_per_dollar": 124.0,
-              "pnl_usd_at_100": 12400.0
-            }
-          ],
-          "all_avoid_calls": []
-        },
-        "90d": {
-          "days": 90,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 1,
-          "copy_pnl_usd": 12400.0,
-          "copy_pnl_per_dollar": 124.0,
-          "n_avoid_decisions": 0,
-          "avoid_saved_usd": 0,
-          "best_call": {
-            "chain_id": "acb65ee35147f65c",
-            "condition_id": "0x0d14f5dc9fb3250ec888b1ac8d9fe9a0ce06f9d3ea60fdf138e8690622fea84c",
-            "market_question": "Will the Fed decrease interest rates by 25 bps after the April 2026 meeting?",
-            "side": "Yes",
-            "tier_label": "COPY_SMALL",
-            "wallet_fill_unix": 1776841276,
-            "pnl_per_dollar": 124.0,
-            "pnl_usd_at_100": 12400.0
-          },
-          "worst_call": {
-            "chain_id": "acb65ee35147f65c",
-            "condition_id": "0x0d14f5dc9fb3250ec888b1ac8d9fe9a0ce06f9d3ea60fdf138e8690622fea84c",
-            "market_question": "Will the Fed decrease interest rates by 25 bps after the April 2026 meeting?",
-            "side": "Yes",
-            "tier_label": "COPY_SMALL",
-            "wallet_fill_unix": 1776841276,
-            "pnl_per_dollar": 124.0,
-            "pnl_usd_at_100": 12400.0
-          },
-          "all_copy_calls": [
-            {
-              "chain_id": "acb65ee35147f65c",
-              "condition_id": "0x0d14f5dc9fb3250ec888b1ac8d9fe9a0ce06f9d3ea60fdf138e8690622fea84c",
-              "market_question": "Will the Fed decrease interest rates by 25 bps after the April 2026 meeting?",
-              "side": "Yes",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1776841276,
-              "pnl_per_dollar": 124.0,
-              "pnl_usd_at_100": 12400.0
-            }
-          ],
-          "all_avoid_calls": []
-        }
-      }
-    },
-    "0x96489abcb9f583d6835c8ef95ffc923d05a86825": {
-      "pseudonym": "anoin123",
-      "windows": {
-        "30d": {
-          "days": 30,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 1,
-          "copy_pnl_usd": 1.01,
-          "copy_pnl_per_dollar": 0.0101,
-          "n_avoid_decisions": 0,
-          "avoid_saved_usd": 0,
-          "best_call": {
-            "chain_id": "cfa127b444dc5726",
-            "condition_id": "0x1507c50c86fb307e4f1acd9d740b2be66d98773f90d161e94907d8ef2c5699b3",
-            "market_question": "Trump announces end of military operations against Iran by April 21st?",
-            "side": "No",
-            "tier_label": "COPY_SMALL",
-            "wallet_fill_unix": 1776808468,
-            "pnl_per_dollar": 0.0101,
-            "pnl_usd_at_100": 1.01
-          },
-          "worst_call": {
-            "chain_id": "cfa127b444dc5726",
-            "condition_id": "0x1507c50c86fb307e4f1acd9d740b2be66d98773f90d161e94907d8ef2c5699b3",
-            "market_question": "Trump announces end of military operations against Iran by April 21st?",
-            "side": "No",
-            "tier_label": "COPY_SMALL",
-            "wallet_fill_unix": 1776808468,
-            "pnl_per_dollar": 0.0101,
-            "pnl_usd_at_100": 1.01
-          },
-          "all_copy_calls": [
-            {
-              "chain_id": "cfa127b444dc5726",
-              "condition_id": "0x1507c50c86fb307e4f1acd9d740b2be66d98773f90d161e94907d8ef2c5699b3",
-              "market_question": "Trump announces end of military operations against Iran by April 21st?",
-              "side": "No",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1776808468,
-              "pnl_per_dollar": 0.0101,
-              "pnl_usd_at_100": 1.01
-            }
-          ],
-          "all_avoid_calls": []
-        },
-        "90d": {
-          "days": 90,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 4,
-          "copy_pnl_usd": 3155.17,
-          "copy_pnl_per_dollar": 7.8879,
-          "n_avoid_decisions": 0,
-          "avoid_saved_usd": 0,
-          "best_call": {
-            "chain_id": "8917371f262adaa7",
-            "condition_id": "0x10d4b55e87cd8df815a88de7a8eccdff77418d361285a540fbdc6505bb99a4a2",
-            "market_question": "Kharg Island no longer under Iranian control by April 15?",
-            "side": "Yes",
-            "tier_label": "COPY_SMALL",
-            "wallet_fill_unix": 1775692501,
-            "pnl_per_dollar": 27.5714,
-            "pnl_usd_at_100": 2757.14
-          },
-          "worst_call": {
-            "chain_id": "cfa127b444dc5726",
-            "condition_id": "0x1507c50c86fb307e4f1acd9d740b2be66d98773f90d161e94907d8ef2c5699b3",
-            "market_question": "Trump announces end of military operations against Iran by April 21st?",
-            "side": "No",
-            "tier_label": "COPY_SMALL",
-            "wallet_fill_unix": 1776808468,
-            "pnl_per_dollar": 0.0101,
-            "pnl_usd_at_100": 1.01
-          },
-          "all_copy_calls": [
-            {
-              "chain_id": "cfa127b444dc5726",
-              "condition_id": "0x1507c50c86fb307e4f1acd9d740b2be66d98773f90d161e94907d8ef2c5699b3",
-              "market_question": "Trump announces end of military operations against Iran by April 21st?",
-              "side": "No",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1776808468,
-              "pnl_per_dollar": 0.0101,
-              "pnl_usd_at_100": 1.01
-            },
-            {
-              "chain_id": "33858603fea2c8ec",
-              "condition_id": "0x01ffd0acf0d6e42558a7cbd521efde937166a1bf09f3a2dfcdf36950c2dd3635",
-              "market_question": "US escorts commercial ship through Hormuz by April 30?",
-              "side": "No",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1774745384,
-              "pnl_per_dollar": 1.9851,
-              "pnl_usd_at_100": 198.51
-            },
-            {
-              "chain_id": "8917371f262adaa7",
-              "condition_id": "0x10d4b55e87cd8df815a88de7a8eccdff77418d361285a540fbdc6505bb99a4a2",
-              "market_question": "Kharg Island no longer under Iranian control by April 15?",
-              "side": "Yes",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1775692501,
-              "pnl_per_dollar": 27.5714,
-              "pnl_usd_at_100": 2757.14
-            },
-            {
-              "chain_id": "69e98e5634539036",
-              "condition_id": "0x01ffd0acf0d6e42558a7cbd521efde937166a1bf09f3a2dfcdf36950c2dd3635",
-              "market_question": "US escorts commercial ship through Hormuz by April 30?",
-              "side": "Yes",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1774745384,
-              "pnl_per_dollar": 1.9851,
-              "pnl_usd_at_100": 198.51
-            }
-          ],
-          "all_avoid_calls": []
         }
       }
     },
@@ -1264,8 +757,8 @@
           "n_copy_decisions": 0,
           "copy_pnl_usd": 0,
           "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 8,
-          "avoid_saved_usd": -55684.61,
+          "n_avoid_decisions": 9,
+          "avoid_saved_usd": -55584.61,
           "best_call": null,
           "worst_call": null,
           "all_copy_calls": [],
@@ -1277,6 +770,16 @@
               "side": "Capitals",
               "tier_label": "AVOID",
               "wallet_fill_unix": 1775700565,
+              "pnl_per_dollar": -1.0,
+              "pnl_usd_at_100": -100.0
+            },
+            {
+              "chain_id": "61d8aee298838716",
+              "condition_id": "0x4b5443bd1ad329e8a9bc7226fc9b763a5d82d9535ad2be6d7362a73f147d6f09",
+              "market_question": "Spread: Capitals (-2.5)",
+              "side": "Capitals",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1775700395,
               "pnl_per_dollar": -1.0,
               "pnl_usd_at_100": -100.0
             },
@@ -1393,89 +896,6 @@
               "pnl_usd_at_100": 1438.46
             }
           ]
-        }
-      }
-    },
-    "0x9b979a065641e8cfde3022a30ed2d9415cf55e12": {
-      "pseudonym": "Digital-Shelf",
-      "windows": {
-        "30d": {
-          "days": 30,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 0,
-          "avoid_saved_usd": 0,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": []
-        },
-        "90d": {
-          "days": 90,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 2,
-          "avoid_saved_usd": 200.0,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": [
-            {
-              "chain_id": "bc467bad5ab98999",
-              "condition_id": "0xd4bbf7f6707c67beb736135ad32a41f6db41f8ae52d3ac4919650de9eeb94ed8",
-              "market_question": "Khamenei out as Supreme Leader of Iran by February 28?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1772316519,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "d08f245eb834567e",
-              "condition_id": "0xcd90979fa7b289d91bc8f7f908791819ed407421e3df4b490b34c9ca061264aa",
-              "market_question": "Will the US strike Somalia next?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1771541136,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            }
-          ]
-        }
-      }
-    },
-    "0x2785e7022dc20757108204b13c08cea8613b70ae": {
-      "pseudonym": "poorsob",
-      "windows": {
-        "30d": {
-          "days": 30,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 0,
-          "avoid_saved_usd": 0,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": []
-        },
-        "90d": {
-          "days": 90,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 0,
-          "avoid_saved_usd": 0,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": []
         }
       }
     },

@@ -1,18 +1,18 @@
 {
   "schema_version": "2",
   "methodology_version": "W2-v0.2-full",
-  "built_at_unix": 1778676089,
+  "built_at_unix": 1778688597,
   "source_file": "data/wallet_counterparties_onchain.json",
   "source_engine": "build_counterparty_graph_incremental_v60dv_PathA",
   "source_predecessor_brief": "Replaces cache.db-dependent v0.1 SMOKE_PREVIEW (gitignored 9.3 GB blocker). Per-wallet incremental Goldsky queries \u00b7 cron-able \u00b7 full backfill over 13-14 daily runs.",
   "source_delivery_status": "INCREMENTAL_BUILD",
   "source_delivery_caveat": "v0.2 build \u00b7 accumulating \u00b7 each cron processes WALLETS_PER_RUN least-recently-updated \u00b7 full cohort covered over ~14 days \u00b7 then daily delta only.",
-  "cohort_size": 408,
-  "universe_size": 2550,
-  "n_cohort_nodes": 336,
+  "cohort_size": 410,
+  "universe_size": 2551,
+  "n_cohort_nodes": 337,
   "n_external_nodes": 2214,
-  "expansion_factor": 6.25,
-  "n_edges": 6302,
+  "expansion_factor": 6.222,
+  "n_edges": 6321,
   "top_external_counterparties": [
     {
       "address": "0xc5d563a36ae78145c45a50134d48a1215220f80a",
@@ -22,7 +22,7 @@
     {
       "address": "0x4bfb41d5b3570defd03c39a9a4d8de6bd8b8982e",
       "n_cohort_links": 147,
-      "total_co_fills": 289370
+      "total_co_fills": 286695
     },
     {
       "address": "0xe60a9b0be459d9849bc2339dac20517639ae6a47",
@@ -85,11 +85,6 @@
       "total_co_fills": 7125
     },
     {
-      "address": "0x6031B6eed1C97e853c6e0F03Ad3ce3529351F96d",
-      "n_cohort_links": 9,
-      "total_co_fills": 6760
-    },
-    {
       "address": "0x83b9f9e2d28ab875b9c9f73cdd5535c4c8926124",
       "n_cohort_links": 9,
       "total_co_fills": 6678
@@ -116,8 +111,8 @@
     },
     {
       "address": "0xD37ab1A5eEB25696C568e20E94af72b8D3422358",
-      "n_cohort_links": 22,
-      "total_co_fills": 5305
+      "n_cohort_links": 23,
+      "total_co_fills": 5353
     },
     {
       "address": "0xca3f77cb090cf7cbcf48bcf865e8f27364418078",
@@ -138,6 +133,11 @@
       "address": "0x01c78f8873c0c86d6b6b92ff627e3802237ee995",
       "n_cohort_links": 25,
       "total_co_fills": 3844
+    },
+    {
+      "address": "0x15fd4fe1f0d8629fffd90531f7b0afd0584d19c9",
+      "n_cohort_links": 1,
+      "total_co_fills": 3805
     }
   ],
   "top_cohort_bridges": [
@@ -271,8 +271,8 @@
       "address": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
       "address_lc": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
       "in_cohort": true,
-      "n_cohort_links": 38,
-      "total_co_fills": 31549
+      "n_cohort_links": 39,
+      "total_co_fills": 31617
     },
     {
       "address": "0x507E52ef684CA2dD91F90a9d26D149Dd3288BEae",
@@ -280,13 +280,6 @@
       "in_cohort": true,
       "n_cohort_links": 25,
       "total_co_fills": 30952
-    },
-    {
-      "address": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "address_lc": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "in_cohort": true,
-      "n_cohort_links": 2,
-      "total_co_fills": 29084
     },
     {
       "address": "0x224b255eaa3279ceb77330317d3c38ee8e73f6b8",
@@ -481,8 +474,8 @@
       "address": "0x1f6b85cb85876df272199039207b33166757267e",
       "address_lc": "0x1f6b85cb85876df272199039207b33166757267e",
       "in_cohort": true,
-      "n_cohort_links": 0,
-      "total_co_fills": 16860
+      "n_cohort_links": 1,
+      "total_co_fills": 16861
     },
     {
       "address": "0xc613e6707bd115e5c04d303d944568232697662b",
@@ -761,8 +754,8 @@
       "address": "0x5bAb6B0B49E77983E882768030F8cC335BEe53E6",
       "address_lc": "0x5bab6b0b49e77983e882768030f8cc335bee53e6",
       "in_cohort": true,
-      "n_cohort_links": 1,
-      "total_co_fills": 6863
+      "n_cohort_links": 2,
+      "total_co_fills": 6864
     },
     {
       "address": "0x21f90e5ff30c12f52fbb2fb220aa268f22faed12",
@@ -1008,6 +1001,13 @@
       "in_cohort": true,
       "n_cohort_links": 2,
       "total_co_fills": 3362
+    },
+    {
+      "address": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "address_lc": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "in_cohort": true,
+      "n_cohort_links": 0,
+      "total_co_fills": 3346
     },
     {
       "address": "0x06cb73531a43553e31a8ad031026d4b33f1af47f",
@@ -1687,6 +1687,13 @@
       "in_cohort": true,
       "n_cohort_links": 1,
       "total_co_fills": 252
+    },
+    {
+      "address": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
+      "address_lc": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
+      "in_cohort": true,
+      "n_cohort_links": 2,
+      "total_co_fills": 250
     },
     {
       "address": "0xfd2b117412a698f322b0cd18d6827dad262b8e50",
@@ -2547,7 +2554,7 @@
       "address_lc": "0x4bfb41d5b3570defd03c39a9a4d8de6bd8b8982e",
       "in_cohort": false,
       "n_cohort_links": 147,
-      "total_co_fills": 289370
+      "total_co_fills": 286695
     },
     {
       "address": "0xe60a9b0be459d9849bc2339dac20517639ae6a47",
@@ -2634,13 +2641,6 @@
       "total_co_fills": 7125
     },
     {
-      "address": "0x6031B6eed1C97e853c6e0F03Ad3ce3529351F96d",
-      "address_lc": "0x6031b6eed1c97e853c6e0f03ad3ce3529351f96d",
-      "in_cohort": false,
-      "n_cohort_links": 9,
-      "total_co_fills": 6760
-    },
-    {
       "address": "0x83b9f9e2d28ab875b9c9f73cdd5535c4c8926124",
       "address_lc": "0x83b9f9e2d28ab875b9c9f73cdd5535c4c8926124",
       "in_cohort": false,
@@ -2679,8 +2679,8 @@
       "address": "0xD37ab1A5eEB25696C568e20E94af72b8D3422358",
       "address_lc": "0xd37ab1a5eeb25696c568e20e94af72b8d3422358",
       "in_cohort": false,
-      "n_cohort_links": 22,
-      "total_co_fills": 5305
+      "n_cohort_links": 23,
+      "total_co_fills": 5353
     },
     {
       "address": "0xca3f77cb090cf7cbcf48bcf865e8f27364418078",
@@ -2802,6 +2802,13 @@
       "total_co_fills": 2998
     },
     {
+      "address": "0xf1addd3c7e01df23c3258ec690bbef8896546979",
+      "address_lc": "0xf1addd3c7e01df23c3258ec690bbef8896546979",
+      "in_cohort": false,
+      "n_cohort_links": 6,
+      "total_co_fills": 2898
+    },
+    {
       "address": "0x9e8f16bc41362e2e1b2e40ffc0ffe0e45a126b61",
       "address_lc": "0x9e8f16bc41362e2e1b2e40ffc0ffe0e45a126b61",
       "in_cohort": false,
@@ -2865,6 +2872,13 @@
       "total_co_fills": 2497
     },
     {
+      "address": "0x6031B6eed1C97e853c6e0F03Ad3ce3529351F96d",
+      "address_lc": "0x6031b6eed1c97e853c6e0f03ad3ce3529351f96d",
+      "in_cohort": false,
+      "n_cohort_links": 8,
+      "total_co_fills": 2482
+    },
+    {
       "address": "0x8e8d8163c34d90ce063c7438637a0e5c3ffa5a27",
       "address_lc": "0x8e8d8163c34d90ce063c7438637a0e5c3ffa5a27",
       "in_cohort": false,
@@ -2893,18 +2907,18 @@
       "total_co_fills": 2403
     },
     {
+      "address": "0x51dbdd2b19427dc8e88bb15a4046a38d8427f9b3",
+      "address_lc": "0x51dbdd2b19427dc8e88bb15a4046a38d8427f9b3",
+      "in_cohort": false,
+      "n_cohort_links": 9,
+      "total_co_fills": 2377
+    },
+    {
       "address": "0x4c0340f93e3c590118fc6e35215d51ce7dc80cc1",
       "address_lc": "0x4c0340f93e3c590118fc6e35215d51ce7dc80cc1",
       "in_cohort": false,
       "n_cohort_links": 8,
       "total_co_fills": 2314
-    },
-    {
-      "address": "0x51dbdd2b19427dc8e88bb15a4046a38d8427f9b3",
-      "address_lc": "0x51dbdd2b19427dc8e88bb15a4046a38d8427f9b3",
-      "in_cohort": false,
-      "n_cohort_links": 8,
-      "total_co_fills": 2274
     },
     {
       "address": "0x9D94F602535e518ee1cB6aade0ca9569f1B1017d",
@@ -2947,13 +2961,6 @@
       "in_cohort": false,
       "n_cohort_links": 7,
       "total_co_fills": 2163
-    },
-    {
-      "address": "0xf1addd3c7e01df23c3258ec690bbef8896546979",
-      "address_lc": "0xf1addd3c7e01df23c3258ec690bbef8896546979",
-      "in_cohort": false,
-      "n_cohort_links": 5,
-      "total_co_fills": 2120
     },
     {
       "address": "0xb13D096B2E90411d0E5F42891d2E73eF4CEA2e90",
@@ -3068,13 +3075,6 @@
       "total_co_fills": 1865
     },
     {
-      "address": "0xc8e3b71b2d059cd1a54b1631d302980a41766fb0",
-      "address_lc": "0xc8e3b71b2d059cd1a54b1631d302980a41766fb0",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 1853
-    },
-    {
       "address": "0x161f2db0e40c59b2f29e898efb63cc415228b075",
       "address_lc": "0x161f2db0e40c59b2f29e898efb63cc415228b075",
       "in_cohort": false,
@@ -3108,13 +3108,6 @@
       "in_cohort": false,
       "n_cohort_links": 18,
       "total_co_fills": 1715
-    },
-    {
-      "address": "0xf247584e41117bbbe4cc06e4d2c95741792a5216",
-      "address_lc": "0xf247584e41117bbbe4cc06e4d2c95741792a5216",
-      "in_cohort": false,
-      "n_cohort_links": 2,
-      "total_co_fills": 1714
     },
     {
       "address": "0xcd91a549956854fdc38efad7e80ff5da8f5432b8",
@@ -3208,13 +3201,6 @@
       "total_co_fills": 1494
     },
     {
-      "address": "0xd44e29936409019f93993de8bd603ef6cb1bb15e",
-      "address_lc": "0xd44e29936409019f93993de8bd603ef6cb1bb15e",
-      "in_cohort": false,
-      "n_cohort_links": 5,
-      "total_co_fills": 1464
-    },
-    {
       "address": "0x3abffa6d0b8a22423a66064ca458499225feb143",
       "address_lc": "0x3abffa6d0b8a22423a66064ca458499225feb143",
       "in_cohort": false,
@@ -3290,13 +3276,6 @@
       "in_cohort": false,
       "n_cohort_links": 8,
       "total_co_fills": 1315
-    },
-    {
-      "address": "0x23cb796cf58Bfa12352F0164f479deedbd50658E",
-      "address_lc": "0x23cb796cf58bfa12352f0164f479deedbd50658e",
-      "in_cohort": false,
-      "n_cohort_links": 4,
-      "total_co_fills": 1313
     },
     {
       "address": "0x97e12cc7391a50e49042b44a2d4a0cef54c8017b",
@@ -3404,13 +3383,6 @@
       "total_co_fills": 1171
     },
     {
-      "address": "0x565c29a430e7e835f81196a1ca2bdae928ac467e",
-      "address_lc": "0x565c29a430e7e835f81196a1ca2bdae928ac467e",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 1163
-    },
-    {
       "address": "0x116c6d1117c8690203bad2e6c5bee0d9f27fe162",
       "address_lc": "0x116c6d1117c8690203bad2e6c5bee0d9f27fe162",
       "in_cohort": false,
@@ -3425,25 +3397,11 @@
       "total_co_fills": 1155
     },
     {
-      "address": "0x589222a5124a96765443b97a3498d89ffd824ad2",
-      "address_lc": "0x589222a5124a96765443b97a3498d89ffd824ad2",
-      "in_cohort": false,
-      "n_cohort_links": 2,
-      "total_co_fills": 1155
-    },
-    {
       "address": "0x4E948fa5d984C0077bb8f0d2f8D0F7779f656243",
       "address_lc": "0x4e948fa5d984c0077bb8f0d2f8d0f7779f656243",
       "in_cohort": false,
       "n_cohort_links": 4,
       "total_co_fills": 1153
-    },
-    {
-      "address": "0x7881a9189e6e6030ba46a3dfa06b0f35efea611b",
-      "address_lc": "0x7881a9189e6e6030ba46a3dfa06b0f35efea611b",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 1139
     },
     {
       "address": "0x71034b4172924d7d74e794240d78b84a6f5acdb2",
@@ -3502,13 +3460,6 @@
       "total_co_fills": 1080
     },
     {
-      "address": "0x80b7cb8a62d9bbc8820476414f2788e4b89dc001",
-      "address_lc": "0x80b7cb8a62d9bbc8820476414f2788e4b89dc001",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 1071
-    },
-    {
       "address": "0xb052d0472429182393da68249ab7aedd7107ff06",
       "address_lc": "0xb052d0472429182393da68249ab7aedd7107ff06",
       "in_cohort": false,
@@ -3542,13 +3493,6 @@
       "in_cohort": false,
       "n_cohort_links": 4,
       "total_co_fills": 1032
-    },
-    {
-      "address": "0xe1a532a9991cc9ce27174b0296d077f824149dad",
-      "address_lc": "0xe1a532a9991cc9ce27174b0296d077f824149dad",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 1025
     },
     {
       "address": "0x1217832819e321d21f4e5a27c62b8ec6ad845d72",
@@ -3691,18 +3635,11 @@
       "total_co_fills": 912
     },
     {
-      "address": "0x557bed924a1bb6f62842c5742d1dc789b8d480d4",
-      "address_lc": "0x557bed924a1bb6f62842c5742d1dc789b8d480d4",
+      "address": "0xaea0d2d9c206f0a3f9cf05aae723942a61500dec",
+      "address_lc": "0xaea0d2d9c206f0a3f9cf05aae723942a61500dec",
       "in_cohort": false,
-      "n_cohort_links": 3,
-      "total_co_fills": 911
-    },
-    {
-      "address": "0xbe285f036120817114f342b4a57a140e74f578ec",
-      "address_lc": "0xbe285f036120817114f342b4a57a140e74f578ec",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 889
+      "n_cohort_links": 5,
+      "total_co_fills": 912
     },
     {
       "address": "0xb6c6271ca430f29bfd70ccb70b803cff122a043d",
@@ -3717,13 +3654,6 @@
       "in_cohort": false,
       "n_cohort_links": 2,
       "total_co_fills": 887
-    },
-    {
-      "address": "0x8c573be6f79a6207b895eb726c3cf408db50cf0e",
-      "address_lc": "0x8c573be6f79a6207b895eb726c3cf408db50cf0e",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 884
     },
     {
       "address": "0xa3ad70cf48a2f2b44163e798223c01a2c2536866",
@@ -3775,13 +3705,6 @@
       "total_co_fills": 844
     },
     {
-      "address": "0xaea0d2d9c206f0a3f9cf05aae723942a61500dec",
-      "address_lc": "0xaea0d2d9c206f0a3f9cf05aae723942a61500dec",
-      "in_cohort": false,
-      "n_cohort_links": 4,
-      "total_co_fills": 833
-    },
-    {
       "address": "0xD6EeF76188C7068719ac881460b7431E1Ae137A2",
       "address_lc": "0xd6eef76188c7068719ac881460b7431e1ae137a2",
       "in_cohort": false,
@@ -3824,6 +3747,13 @@
       "total_co_fills": 800
     },
     {
+      "address": "0xc37141e2aadfa26655bf039cacdc239c9da21e28",
+      "address_lc": "0xc37141e2aadfa26655bf039cacdc239c9da21e28",
+      "in_cohort": false,
+      "n_cohort_links": 5,
+      "total_co_fills": 799
+    },
+    {
       "address": "0x9c88c0ad88b0c7dd929b0cf040abc9a46b2bc405",
       "address_lc": "0x9c88c0ad88b0c7dd929b0cf040abc9a46b2bc405",
       "in_cohort": false,
@@ -3856,6 +3786,13 @@
       "address_lc": "0x490f66ea703fc8fae19fd231c9921e3f4c0c17e5",
       "in_cohort": false,
       "n_cohort_links": 9,
+      "total_co_fills": 765
+    },
+    {
+      "address": "0x0c69d91489f2eaeb9032328bec33a86378142b8d",
+      "address_lc": "0x0c69d91489f2eaeb9032328bec33a86378142b8d",
+      "in_cohort": false,
+      "n_cohort_links": 4,
       "total_co_fills": 765
     },
     {
@@ -3915,13 +3852,6 @@
       "total_co_fills": 724
     },
     {
-      "address": "0x0d05acd6baaa8ea1fac50ab74a7679ae6f534518",
-      "address_lc": "0x0d05acd6baaa8ea1fac50ab74a7679ae6f534518",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 722
-    },
-    {
       "address": "0x1418d1d10cc82124d6e3ba689062bfe0d2876fef",
       "address_lc": "0x1418d1d10cc82124d6e3ba689062bfe0d2876fef",
       "in_cohort": false,
@@ -3940,6 +3870,13 @@
       "address_lc": "0xaa9acd637320b0e2ccf170fe0335ab6a89f1a377",
       "in_cohort": false,
       "n_cohort_links": 1,
+      "total_co_fills": 714
+    },
+    {
+      "address": "0x47138dc1eef25f1ea91f3b2fda0e0f455c634d21",
+      "address_lc": "0x47138dc1eef25f1ea91f3b2fda0e0f455c634d21",
+      "in_cohort": false,
+      "n_cohort_links": 3,
       "total_co_fills": 714
     },
     {
@@ -3985,11 +3922,11 @@
       "total_co_fills": 698
     },
     {
-      "address": "0xc37141e2aadfa26655bf039cacdc239c9da21e28",
-      "address_lc": "0xc37141e2aadfa26655bf039cacdc239c9da21e28",
+      "address": "0x21c24a79a0c2f07b2ed34e30d42dffa3d0b66749",
+      "address_lc": "0x21c24a79a0c2f07b2ed34e30d42dffa3d0b66749",
       "in_cohort": false,
-      "n_cohort_links": 4,
-      "total_co_fills": 695
+      "n_cohort_links": 5,
+      "total_co_fills": 698
     },
     {
       "address": "0xf6129c47f5ef4cab25f3aa67b5e3aaac77b15700",
@@ -4034,13 +3971,6 @@
       "total_co_fills": 675
     },
     {
-      "address": "0x21c24a79a0c2f07b2ed34e30d42dffa3d0b66749",
-      "address_lc": "0x21c24a79a0c2f07b2ed34e30d42dffa3d0b66749",
-      "in_cohort": false,
-      "n_cohort_links": 4,
-      "total_co_fills": 660
-    },
-    {
       "address": "0xea2986f56a8c0c2e2cd4991ad2ea6469ea5343e3",
       "address_lc": "0xea2986f56a8c0c2e2cd4991ad2ea6469ea5343e3",
       "in_cohort": false,
@@ -4053,13 +3983,6 @@
       "in_cohort": false,
       "n_cohort_links": 2,
       "total_co_fills": 655
-    },
-    {
-      "address": "0x4302da58fa5a7bc39dd4fe96026c32c4e3deaed4",
-      "address_lc": "0x4302da58fa5a7bc39dd4fe96026c32c4e3deaed4",
-      "in_cohort": false,
-      "n_cohort_links": 2,
-      "total_co_fills": 654
     },
     {
       "address": "0xC314E4ACa823495502a44a6B20A3b0c84D9cf2cB",
@@ -4081,13 +4004,6 @@
       "in_cohort": false,
       "n_cohort_links": 4,
       "total_co_fills": 642
-    },
-    {
-      "address": "0xf2fd22084c260a01adeefb1e23921333b00a4ec0",
-      "address_lc": "0xf2fd22084c260a01adeefb1e23921333b00a4ec0",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 638
     },
     {
       "address": "0x3b6fd06a595d71c70afb3f44414be1c11304340b",
@@ -4202,13 +4118,6 @@
       "total_co_fills": 591
     },
     {
-      "address": "0x56e59348ccf8d11b172bd74ddc9ec69722ff6be4",
-      "address_lc": "0x56e59348ccf8d11b172bd74ddc9ec69722ff6be4",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 583
-    },
-    {
       "address": "0xa3a417e434923aeaf97afe9a61b10ff9364e5106",
       "address_lc": "0xa3a417e434923aeaf97afe9a61b10ff9364e5106",
       "in_cohort": false,
@@ -4223,13 +4132,6 @@
       "total_co_fills": 578
     },
     {
-      "address": "0x47138dc1eef25f1ea91f3b2fda0e0f455c634d21",
-      "address_lc": "0x47138dc1eef25f1ea91f3b2fda0e0f455c634d21",
-      "in_cohort": false,
-      "n_cohort_links": 2,
-      "total_co_fills": 575
-    },
-    {
       "address": "0xf29bb8e0712075041e87E8605b69833eF738dd4c",
       "address_lc": "0xf29bb8e0712075041e87e8605b69833ef738dd4c",
       "in_cohort": false,
@@ -4242,6 +4144,13 @@
       "in_cohort": false,
       "n_cohort_links": 1,
       "total_co_fills": 573
+    },
+    {
+      "address": "0xf898dc38744d9e173bcaadef0647ceb42ad8e720",
+      "address_lc": "0xf898dc38744d9e173bcaadef0647ceb42ad8e720",
+      "in_cohort": false,
+      "n_cohort_links": 3,
+      "total_co_fills": 569
     },
     {
       "address": "0xe91171f655be1568e4c63f29663c0028649e3d4e",
@@ -4265,18 +4174,11 @@
       "total_co_fills": 559
     },
     {
-      "address": "0x577346971f8d0a1338bc340a7f540a0b6f1ddc71",
-      "address_lc": "0x577346971f8d0a1338bc340a7f540a0b6f1ddc71",
+      "address": "0xd44e29936409019f93993de8bd603ef6cb1bb15e",
+      "address_lc": "0xd44e29936409019f93993de8bd603ef6cb1bb15e",
       "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 558
-    },
-    {
-      "address": "0x0c69d91489f2eaeb9032328bec33a86378142b8d",
-      "address_lc": "0x0c69d91489f2eaeb9032328bec33a86378142b8d",
-      "in_cohort": false,
-      "n_cohort_links": 3,
-      "total_co_fills": 557
+      "n_cohort_links": 4,
+      "total_co_fills": 552
     },
     {
       "address": "0xa1d75a199ef084ee3ec9ae60dc986b439fe6e17e",
@@ -4321,11 +4223,11 @@
       "total_co_fills": 540
     },
     {
-      "address": "0xf898dc38744d9e173bcaadef0647ceb42ad8e720",
-      "address_lc": "0xf898dc38744d9e173bcaadef0647ceb42ad8e720",
+      "address": "0xfdc0bd67fbd71aa8edd00121eb2a7fcbddc34b85",
+      "address_lc": "0xfdc0bd67fbd71aa8edd00121eb2a7fcbddc34b85",
       "in_cohort": false,
-      "n_cohort_links": 2,
-      "total_co_fills": 538
+      "n_cohort_links": 5,
+      "total_co_fills": 539
     },
     {
       "address": "0xb08f6a09fa946ed8fe8a71d9c834d18ad2a74ab7",
@@ -4370,25 +4272,11 @@
       "total_co_fills": 523
     },
     {
-      "address": "0x2254a9ca800571cca2bb46195d399e39cf032937",
-      "address_lc": "0x2254a9ca800571cca2bb46195d399e39cf032937",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 522
-    },
-    {
       "address": "0x8f1402325a72dcfd4ee73c25c02a5592653f26cb",
       "address_lc": "0x8f1402325a72dcfd4ee73c25c02a5592653f26cb",
       "in_cohort": false,
       "n_cohort_links": 1,
       "total_co_fills": 519
-    },
-    {
-      "address": "0x29bc82f761749e67fa00d62896bc6855097b683c",
-      "address_lc": "0x29bc82f761749e67fa00d62896bc6855097b683c",
-      "in_cohort": false,
-      "n_cohort_links": 3,
-      "total_co_fills": 516
     },
     {
       "address": "0x369421b8b6fe558eda4a8cdfbfc121a216c11d72",
@@ -4510,13 +4398,6 @@
       "total_co_fills": 484
     },
     {
-      "address": "0xfdc0bd67fbd71aa8edd00121eb2a7fcbddc34b85",
-      "address_lc": "0xfdc0bd67fbd71aa8edd00121eb2a7fcbddc34b85",
-      "in_cohort": false,
-      "n_cohort_links": 4,
-      "total_co_fills": 483
-    },
-    {
       "address": "0x66a1db98713015330a82f08273b682bee77e80d9",
       "address_lc": "0x66a1db98713015330a82f08273b682bee77e80d9",
       "in_cohort": false,
@@ -4564,13 +4445,6 @@
       "in_cohort": false,
       "n_cohort_links": 3,
       "total_co_fills": 466
-    },
-    {
-      "address": "0x32526c1de010a670eed9a5fbddacccb551c17830",
-      "address_lc": "0x32526c1de010a670eed9a5fbddacccb551c17830",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 462
     },
     {
       "address": "0x5abbb4f25adbac230a7cd46784a91ca3643c8633",
@@ -4678,13 +4552,6 @@
       "total_co_fills": 446
     },
     {
-      "address": "0x5a7f24bfc137995fb4fcec2f400cea71f6aa91eb",
-      "address_lc": "0x5a7f24bfc137995fb4fcec2f400cea71f6aa91eb",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 445
-    },
-    {
       "address": "0xfea2050b3b3becb7414a99af4f4138a17607581e",
       "address_lc": "0xfea2050b3b3becb7414a99af4f4138a17607581e",
       "in_cohort": false,
@@ -4762,10 +4629,10 @@
       "total_co_fills": 433
     },
     {
-      "address": "0xbd5cd4cdbeb4a872daf8dcc8adb1284e680aa55f",
-      "address_lc": "0xbd5cd4cdbeb4a872daf8dcc8adb1284e680aa55f",
+      "address": "0xe2e10f790c159bfbd5d74ba0d38fcc19dcf8c20a",
+      "address_lc": "0xe2e10f790c159bfbd5d74ba0d38fcc19dcf8c20a",
       "in_cohort": false,
-      "n_cohort_links": 1,
+      "n_cohort_links": 2,
       "total_co_fills": 433
     },
     {
@@ -4846,13 +4713,6 @@
       "total_co_fills": 418
     },
     {
-      "address": "0x492494973c94e901e3be9f75796dea83057cfac2",
-      "address_lc": "0x492494973c94e901e3be9f75796dea83057cfac2",
-      "in_cohort": false,
-      "n_cohort_links": 2,
-      "total_co_fills": 410
-    },
-    {
       "address": "0x0eca22b35c0aacf21e5ecff602489ee239e5c56a",
       "address_lc": "0x0eca22b35c0aacf21e5ecff602489ee239e5c56a",
       "in_cohort": false,
@@ -4881,13 +4741,6 @@
       "total_co_fills": 408
     },
     {
-      "address": "0xec5de5247067f82058cd9927e8ded9f7bf7cd7b4",
-      "address_lc": "0xec5de5247067f82058cd9927e8ded9f7bf7cd7b4",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 408
-    },
-    {
       "address": "0x560b69a33751e15bd28123910ec268a8742f85d7",
       "address_lc": "0x560b69a33751e15bd28123910ec268a8742f85d7",
       "in_cohort": false,
@@ -4912,8 +4765,8 @@
       "address": "0x716445Fe00d0A78172b8be46D216E08d15159DB6",
       "address_lc": "0x716445fe00d0a78172b8be46d216e08d15159db6",
       "in_cohort": false,
-      "n_cohort_links": 4,
-      "total_co_fills": 402
+      "n_cohort_links": 5,
+      "total_co_fills": 403
     },
     {
       "address": "0xed61f86bb5298d2f27c21c433ce58d80b88a9aa3",
@@ -4979,24 +4832,10 @@
       "total_co_fills": 387
     },
     {
-      "address": "0xe2e10f790c159bfbd5d74ba0d38fcc19dcf8c20a",
-      "address_lc": "0xe2e10f790c159bfbd5d74ba0d38fcc19dcf8c20a",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 387
-    },
-    {
       "address": "0x231786b506aC0Fb5f271F8145599436EfaD3c891",
       "address_lc": "0x231786b506ac0fb5f271f8145599436efad3c891",
       "in_cohort": false,
       "n_cohort_links": 3,
-      "total_co_fills": 386
-    },
-    {
-      "address": "0xbdb6bdf102d858298e43c0b774221f55e49a8d7a",
-      "address_lc": "0xbdb6bdf102d858298e43c0b774221f55e49a8d7a",
-      "in_cohort": false,
-      "n_cohort_links": 1,
       "total_co_fills": 386
     },
     {
@@ -5035,13 +4874,6 @@
       "total_co_fills": 381
     },
     {
-      "address": "0xbace19b995b39ecafb2b6cf21234fffa11f76a61",
-      "address_lc": "0xbace19b995b39ecafb2b6cf21234fffa11f76a61",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 381
-    },
-    {
       "address": "0xc1647ee4c8b2a16c13feea3f17335584ee7074d4",
       "address_lc": "0xc1647ee4c8b2a16c13feea3f17335584ee7074d4",
       "in_cohort": false,
@@ -5049,25 +4881,11 @@
       "total_co_fills": 379
     },
     {
-      "address": "0x4fc0a52a3eec17380ac240caace3433b09bffed7",
-      "address_lc": "0x4fc0a52a3eec17380ac240caace3433b09bffed7",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 377
-    },
-    {
       "address": "0xd09007efbe88b0fd45ba309d43529043222e6660",
       "address_lc": "0xd09007efbe88b0fd45ba309d43529043222e6660",
       "in_cohort": false,
       "n_cohort_links": 2,
       "total_co_fills": 373
-    },
-    {
-      "address": "0x2cf113ce3d85e4e091b45bcaf21f89e0581edb39",
-      "address_lc": "0x2cf113ce3d85e4e091b45bcaf21f89e0581edb39",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 372
     },
     {
       "address": "0x7fea691e28d169a33c500607279f2acb49058f74",
@@ -5105,25 +4923,25 @@
       "total_co_fills": 364
     },
     {
-      "address": "0x793c61ad8897050e828ad173f2fd44fa706de8da",
-      "address_lc": "0x793c61ad8897050e828ad173f2fd44fa706de8da",
+      "address": "0x38e598961dD0456A7fB2E758bD433D3E59FB8A4A",
+      "address_lc": "0x38e598961dd0456a7fb2e758bd433d3e59fb8a4a",
       "in_cohort": false,
-      "n_cohort_links": 3,
-      "total_co_fills": 361
+      "n_cohort_links": 5,
+      "total_co_fills": 362
     },
     {
       "address": "0x818F214c7F3e479CCE1D964D53Fe3Db7297558Cb",
       "address_lc": "0x818f214c7f3e479cce1d964d53fe3db7297558cb",
       "in_cohort": false,
-      "n_cohort_links": 4,
-      "total_co_fills": 358
+      "n_cohort_links": 5,
+      "total_co_fills": 361
     },
     {
-      "address": "0x38e598961dD0456A7fB2E758bD433D3E59FB8A4A",
-      "address_lc": "0x38e598961dd0456a7fb2e758bd433d3e59fb8a4a",
+      "address": "0x793c61ad8897050e828ad173f2fd44fa706de8da",
+      "address_lc": "0x793c61ad8897050e828ad173f2fd44fa706de8da",
       "in_cohort": false,
-      "n_cohort_links": 4,
-      "total_co_fills": 357
+      "n_cohort_links": 3,
+      "total_co_fills": 361
     },
     {
       "address": "0x2a69660046d7acc4ab204d7cc5ba78b0776cd2f7",
@@ -5185,8 +5003,8 @@
       "address": "0xB27BC932bf8110D8F78e55da7d5f0497A18B5b82",
       "address_lc": "0xb27bc932bf8110d8f78e55da7d5f0497a18b5b82",
       "in_cohort": false,
-      "n_cohort_links": 4,
-      "total_co_fills": 344
+      "n_cohort_links": 5,
+      "total_co_fills": 345
     },
     {
       "address": "0xf699a6477fa8e385987f8ae6a3657b2e106107e1",
@@ -5714,6 +5532,13 @@
       "total_co_fills": 266
     },
     {
+      "address": "0xb22326c1770aa89dfb2b372137e570a360433772",
+      "address_lc": "0xb22326c1770aa89dfb2b372137e570a360433772",
+      "in_cohort": false,
+      "n_cohort_links": 2,
+      "total_co_fills": 265
+    },
+    {
       "address": "0x10ff6cd4b1b5669d4ca87faebae0c869ad315088",
       "address_lc": "0x10ff6cd4b1b5669d4ca87faebae0c869ad315088",
       "in_cohort": false,
@@ -5768,6 +5593,13 @@
       "in_cohort": false,
       "n_cohort_links": 2,
       "total_co_fills": 258
+    },
+    {
+      "address": "0x23cb796cf58Bfa12352F0164f479deedbd50658E",
+      "address_lc": "0x23cb796cf58bfa12352f0164f479deedbd50658e",
+      "in_cohort": false,
+      "n_cohort_links": 3,
+      "total_co_fills": 255
     },
     {
       "address": "0x45c49bf952a3b2247392899b0ea781eabd52eee1",
@@ -5994,6 +5826,13 @@
       "total_co_fills": 232
     },
     {
+      "address": "0xD866b0Ac7b156973943cDFf2E5B63cDD3aD955e0",
+      "address_lc": "0xd866b0ac7b156973943cdff2e5b63cdd3ad955e0",
+      "in_cohort": false,
+      "n_cohort_links": 3,
+      "total_co_fills": 232
+    },
+    {
       "address": "0xc8a4015689ac73e16d533beda4254364bb4902a5",
       "address_lc": "0xc8a4015689ac73e16d533beda4254364bb4902a5",
       "in_cohort": false,
@@ -6185,6 +6024,13 @@
     {
       "address": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
       "address_lc": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
+      "in_cohort": false,
+      "n_cohort_links": 2,
+      "total_co_fills": 218
+    },
+    {
+      "address": "0xdbdd45150249e229eb4ca8aa48a30dca21faa5de",
+      "address_lc": "0xdbdd45150249e229eb4ca8aa48a30dca21faa5de",
       "in_cohort": false,
       "n_cohort_links": 2,
       "total_co_fills": 218
@@ -6414,13 +6260,6 @@
       "total_co_fills": 196
     },
     {
-      "address": "0xD866b0Ac7b156973943cDFf2E5B63cDD3aD955e0",
-      "address_lc": "0xd866b0ac7b156973943cdff2e5b63cdd3ad955e0",
-      "in_cohort": false,
-      "n_cohort_links": 2,
-      "total_co_fills": 196
-    },
-    {
       "address": "0xec3C9891b36EbD1044945cE48Ae3CDf6cdF5d68E",
       "address_lc": "0xec3c9891b36ebd1044945ce48ae3cdf6cdf5d68e",
       "in_cohort": false,
@@ -6596,13 +6435,6 @@
       "total_co_fills": 186
     },
     {
-      "address": "0xdbdd45150249e229eb4ca8aa48a30dca21faa5de",
-      "address_lc": "0xdbdd45150249e229eb4ca8aa48a30dca21faa5de",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 184
-    },
-    {
       "address": "0xb8b44e3cc9e0962982e3c8bf444b6a7411f51f6e",
       "address_lc": "0xb8b44e3cc9e0962982e3c8bf444b6a7411f51f6e",
       "in_cohort": false,
@@ -6717,6 +6549,13 @@
     {
       "address": "0xc59c0058c745e6b1893f638f047f00b76820cf84",
       "address_lc": "0xc59c0058c745e6b1893f638f047f00b76820cf84",
+      "in_cohort": false,
+      "n_cohort_links": 2,
+      "total_co_fills": 175
+    },
+    {
+      "address": "0x29b52d98ac9ef9414b04164246c95bc63d74cc6c",
+      "address_lc": "0x29b52d98ac9ef9414b04164246c95bc63d74cc6c",
       "in_cohort": false,
       "n_cohort_links": 2,
       "total_co_fills": 175
@@ -7401,6 +7240,13 @@
       "total_co_fills": 148
     },
     {
+      "address": "0xf247584e41117bbbe4cc06e4d2c95741792a5216",
+      "address_lc": "0xf247584e41117bbbe4cc06e4d2c95741792a5216",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 147
+    },
+    {
       "address": "0x0a6d26d31b28fd5a84c301f8b27296612f3b1d0a",
       "address_lc": "0x0a6d26d31b28fd5a84c301f8b27296612f3b1d0a",
       "in_cohort": false,
@@ -7497,6 +7343,13 @@
       "in_cohort": false,
       "n_cohort_links": 1,
       "total_co_fills": 143
+    },
+    {
+      "address": "0x4302da58fa5a7bc39dd4fe96026c32c4e3deaed4",
+      "address_lc": "0x4302da58fa5a7bc39dd4fe96026c32c4e3deaed4",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 142
     },
     {
       "address": "0xd4cf7dbc6261a7ff821a5c2eaa84b251a7e22d96",
@@ -7818,6 +7671,13 @@
       "address_lc": "0xce316f28ac125b4eb96f30f629bc14d7b0ea19c4",
       "in_cohort": false,
       "n_cohort_links": 3,
+      "total_co_fills": 121
+    },
+    {
+      "address": "0xdbb36e465641957d32376f0e5d32a1f725ce76a9",
+      "address_lc": "0xdbb36e465641957d32376f0e5d32a1f725ce76a9",
+      "in_cohort": false,
+      "n_cohort_links": 2,
       "total_co_fills": 121
     },
     {
@@ -8304,6 +8164,20 @@
       "total_co_fills": 92
     },
     {
+      "address": "0xdbf7c763002709257c86b5d3f435c02450c606ac",
+      "address_lc": "0xdbf7c763002709257c86b5d3f435c02450c606ac",
+      "in_cohort": false,
+      "n_cohort_links": 2,
+      "total_co_fills": 92
+    },
+    {
+      "address": "0x4ec30a1c1d754913cc9b537cee9483655fb534a7",
+      "address_lc": "0x4ec30a1c1d754913cc9b537cee9483655fb534a7",
+      "in_cohort": false,
+      "n_cohort_links": 3,
+      "total_co_fills": 92
+    },
+    {
       "address": "0x561880fb5aed0cf155b32296fa6f1d8e1eaebe67",
       "address_lc": "0x561880fb5aed0cf155b32296fa6f1d8e1eaebe67",
       "in_cohort": false,
@@ -8383,13 +8257,6 @@
     {
       "address": "0xd999956c8fd23d07a5de449803d2254c6ecb4a20",
       "address_lc": "0xd999956c8fd23d07a5de449803d2254c6ecb4a20",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 88
-    },
-    {
-      "address": "0xdbb36e465641957d32376f0e5d32a1f725ce76a9",
-      "address_lc": "0xdbb36e465641957d32376f0e5d32a1f725ce76a9",
       "in_cohort": false,
       "n_cohort_links": 1,
       "total_co_fills": 88
@@ -8556,6 +8423,13 @@
       "total_co_fills": 80
     },
     {
+      "address": "0x8056189d56833ce5b3945dea9149b62c5111b64d",
+      "address_lc": "0x8056189d56833ce5b3945dea9149b62c5111b64d",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 80
+    },
+    {
       "address": "0x8e4427777852b02277b97cbb1aab436178b9d8a1",
       "address_lc": "0x8e4427777852b02277b97cbb1aab436178b9d8a1",
       "in_cohort": false,
@@ -8630,6 +8504,13 @@
       "address_lc": "0xc0c230ae6d9083424667eb8997c2882c429db14d",
       "in_cohort": false,
       "n_cohort_links": 2,
+      "total_co_fills": 76
+    },
+    {
+      "address": "0x80da7318e0f97e839a4def3de2e2a2ecdce0d26f",
+      "address_lc": "0x80da7318e0f97e839a4def3de2e2a2ecdce0d26f",
+      "in_cohort": false,
+      "n_cohort_links": 1,
       "total_co_fills": 76
     },
     {
@@ -8885,13 +8766,6 @@
       "total_co_fills": 69
     },
     {
-      "address": "0xb22326c1770aa89dfb2b372137e570a360433772",
-      "address_lc": "0xb22326c1770aa89dfb2b372137e570a360433772",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 69
-    },
-    {
       "address": "0xa5414c18131fc93a3e45b1841773a18128b73b55",
       "address_lc": "0xa5414c18131fc93a3e45b1841773a18128b73b55",
       "in_cohort": false,
@@ -8964,6 +8838,13 @@
     {
       "address": "0x8584eb6388f3e81395e13ab5906661743cfc6b7d",
       "address_lc": "0x8584eb6388f3e81395e13ab5906661743cfc6b7d",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 67
+    },
+    {
+      "address": "0x310b101238977299d93fed11796dd56df76298a7",
+      "address_lc": "0x310b101238977299d93fed11796dd56df76298a7",
       "in_cohort": false,
       "n_cohort_links": 1,
       "total_co_fills": 67
@@ -9074,6 +8955,13 @@
       "total_co_fills": 64
     },
     {
+      "address": "0x29bc82f761749e67fa00d62896bc6855097b683c",
+      "address_lc": "0x29bc82f761749e67fa00d62896bc6855097b683c",
+      "in_cohort": false,
+      "n_cohort_links": 3,
+      "total_co_fills": 64
+    },
+    {
       "address": "0xA24493DD9beBf113A04E5aA7D5cf5A65a878557F",
       "address_lc": "0xa24493dd9bebf113a04e5aa7d5cf5a65a878557f",
       "in_cohort": false,
@@ -9139,13 +9027,6 @@
     {
       "address": "0x45a22737a76fafd5dd101eb0dc6030986eb13c01",
       "address_lc": "0x45a22737a76fafd5dd101eb0dc6030986eb13c01",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 61
-    },
-    {
-      "address": "0xdbf7c763002709257c86b5d3f435c02450c606ac",
-      "address_lc": "0xdbf7c763002709257c86b5d3f435c02450c606ac",
       "in_cohort": false,
       "n_cohort_links": 1,
       "total_co_fills": 61
@@ -9242,13 +9123,6 @@
       "total_co_fills": 57
     },
     {
-      "address": "0x4ec30a1c1d754913cc9b537cee9483655fb534a7",
-      "address_lc": "0x4ec30a1c1d754913cc9b537cee9483655fb534a7",
-      "in_cohort": false,
-      "n_cohort_links": 2,
-      "total_co_fills": 56
-    },
-    {
       "address": "0x7bda5bceac127c3fc41d7fe7ac335593aaaa121b",
       "address_lc": "0x7bda5bceac127c3fc41d7fe7ac335593aaaa121b",
       "in_cohort": false,
@@ -9291,10 +9165,10 @@
       "total_co_fills": 55
     },
     {
-      "address": "0x29b52d98ac9ef9414b04164246c95bc63d74cc6c",
-      "address_lc": "0x29b52d98ac9ef9414b04164246c95bc63d74cc6c",
+      "address": "0x3e6d998a25793c1d0ca5b59d7d7ac7f8d0132671",
+      "address_lc": "0x3e6d998a25793c1d0ca5b59d7d7ac7f8d0132671",
       "in_cohort": false,
-      "n_cohort_links": 1,
+      "n_cohort_links": 2,
       "total_co_fills": 55
     },
     {
@@ -9571,6 +9445,20 @@
       "total_co_fills": 50
     },
     {
+      "address": "0x567464a8b6b5794c43282c4a9274e12b48ba8b14",
+      "address_lc": "0x567464a8b6b5794c43282c4a9274e12b48ba8b14",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 50
+    },
+    {
+      "address": "0x37f8718d0b036b92f2aee7bd6ef80d1b5ef6b5e5",
+      "address_lc": "0x37f8718d0b036b92f2aee7bd6ef80d1b5ef6b5e5",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 50
+    },
+    {
       "address": "0xd49c4579bbc25d1d1a26a1976c9576d806c98150",
       "address_lc": "0xd49c4579bbc25d1d1a26a1976c9576d806c98150",
       "in_cohort": false,
@@ -9580,6 +9468,13 @@
     {
       "address": "0x30c3d04ea4d0b85aa71ade35447f70e5e5945d8e",
       "address_lc": "0x30c3d04ea4d0b85aa71ade35447f70e5e5945d8e",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 49
+    },
+    {
+      "address": "0x1b9ec8b97969543ad2260cd04f7294c26ccdeb82",
+      "address_lc": "0x1b9ec8b97969543ad2260cd04f7294c26ccdeb82",
       "in_cohort": false,
       "n_cohort_links": 1,
       "total_co_fills": 49
@@ -10124,6 +10019,13 @@
       "total_co_fills": 37
     },
     {
+      "address": "0x19a15ee029467816eb96dc303d81ee4b2fe47698",
+      "address_lc": "0x19a15ee029467816eb96dc303d81ee4b2fe47698",
+      "in_cohort": false,
+      "n_cohort_links": 2,
+      "total_co_fills": 37
+    },
+    {
       "address": "0x6096feb8b802dfa6885ce70572f851142e810f9c",
       "address_lc": "0x6096feb8b802dfa6885ce70572f851142e810f9c",
       "in_cohort": false,
@@ -10145,6 +10047,13 @@
       "total_co_fills": 37
     },
     {
+      "address": "0xbeccf1ec86abb15649df4d4023821f2f557ff560",
+      "address_lc": "0xbeccf1ec86abb15649df4d4023821f2f557ff560",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 37
+    },
+    {
       "address": "0x4d840f893614877da74db906018450afba0e21b1",
       "address_lc": "0x4d840f893614877da74db906018450afba0e21b1",
       "in_cohort": false,
@@ -10154,13 +10063,6 @@
     {
       "address": "0x52f8784a81d967a3afb74d2e1608503ff5e261b9",
       "address_lc": "0x52f8784a81d967a3afb74d2e1608503ff5e261b9",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 36
-    },
-    {
-      "address": "0x19a15ee029467816eb96dc303d81ee4b2fe47698",
-      "address_lc": "0x19a15ee029467816eb96dc303d81ee4b2fe47698",
       "in_cohort": false,
       "n_cohort_links": 1,
       "total_co_fills": 36
@@ -10434,6 +10336,20 @@
     {
       "address": "0xca6e53a606d825d2312a86c1a5dcc4c1e6eb73e8",
       "address_lc": "0xca6e53a606d825d2312a86c1a5dcc4c1e6eb73e8",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 32
+    },
+    {
+      "address": "0x965f3c17110a24a706a7c67b7e0d97951caf50de",
+      "address_lc": "0x965f3c17110a24a706a7c67b7e0d97951caf50de",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 32
+    },
+    {
+      "address": "0x9a657eabec16f0cb19c01b373e0be649b2a0208d",
+      "address_lc": "0x9a657eabec16f0cb19c01b373e0be649b2a0208d",
       "in_cohort": false,
       "n_cohort_links": 1,
       "total_co_fills": 32
@@ -11181,13 +11097,6 @@
       "total_co_fills": 21
     },
     {
-      "address": "0x3e6d998a25793c1d0ca5b59d7d7ac7f8d0132671",
-      "address_lc": "0x3e6d998a25793c1d0ca5b59d7d7ac7f8d0132671",
-      "in_cohort": false,
-      "n_cohort_links": 1,
-      "total_co_fills": 21
-    },
-    {
       "address": "0xc4dbd5631f003f3f7d10bc31338b1fe5c6ff7e0c",
       "address_lc": "0xc4dbd5631f003f3f7d10bc31338b1fe5c6ff7e0c",
       "in_cohort": false,
@@ -11351,6 +11260,13 @@
     {
       "address": "0x03c3b0236c5a01051381482e77f2210349073a1d",
       "address_lc": "0x03c3b0236c5a01051381482e77f2210349073a1d",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 19
+    },
+    {
+      "address": "0x589222a5124a96765443b97a3498d89ffd824ad2",
+      "address_lc": "0x589222a5124a96765443b97a3498d89ffd824ad2",
       "in_cohort": false,
       "n_cohort_links": 1,
       "total_co_fills": 19
@@ -11542,6 +11458,13 @@
       "address_lc": "0x440d5285a1727adddc2bc3283ee90027466d55e6",
       "in_cohort": false,
       "n_cohort_links": 1,
+      "total_co_fills": 17
+    },
+    {
+      "address": "0x557bEd924A1bB6F62842C5742d1dc789B8D480d4",
+      "address_lc": "0x557bed924a1bb6f62842c5742d1dc789b8d480d4",
+      "in_cohort": false,
+      "n_cohort_links": 2,
       "total_co_fills": 17
     },
     {
@@ -13556,6 +13479,13 @@
     {
       "address": "0x4A2Be7A7E6e3b41Dc2de00706B4C09660CA9af20",
       "address_lc": "0x4a2be7a7e6e3b41dc2de00706b4c09660ca9af20",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 2
+    },
+    {
+      "address": "0x253ad134a7728B899610f8A004cbfC4a12f6Af26",
+      "address_lc": "0x253ad134a7728b899610f8a004cbfc4a12f6af26",
       "in_cohort": false,
       "n_cohort_links": 1,
       "total_co_fills": 2
@@ -17509,6 +17439,76 @@
       "total_co_fills": 1
     },
     {
+      "address": "0x798cB5640f7e0790420126d299Be0eB1421c88d5",
+      "address_lc": "0x798cb5640f7e0790420126d299be0eb1421c88d5",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 1
+    },
+    {
+      "address": "0x02a6c5cb93c5601dC14Ef1B6f0b9E8B8bfEA9574",
+      "address_lc": "0x02a6c5cb93c5601dc14ef1b6f0b9e8b8bfea9574",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 1
+    },
+    {
+      "address": "0xC9e31C6c3d1e425Bd8bc07c16C412d3856CBC282",
+      "address_lc": "0xc9e31c6c3d1e425bd8bc07c16c412d3856cbc282",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 1
+    },
+    {
+      "address": "0x7ED8DA77bA07B50D6e4E1CBEa3ce9C09c49eE3eE",
+      "address_lc": "0x7ed8da77ba07b50d6e4e1cbea3ce9c09c49ee3ee",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 1
+    },
+    {
+      "address": "0x64002b4d9579c4449A8E56c5E02D4ECfAe01818c",
+      "address_lc": "0x64002b4d9579c4449a8e56c5e02d4ecfae01818c",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 1
+    },
+    {
+      "address": "0x437bFe05a1E169b1443F16e718525A88B6F283B2",
+      "address_lc": "0x437bfe05a1e169b1443f16e718525a88b6f283b2",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 1
+    },
+    {
+      "address": "0xf47919311539e1309b5DeAB44Cd1F6d92Ddec838",
+      "address_lc": "0xf47919311539e1309b5deab44cd1f6d92ddec838",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 1
+    },
+    {
+      "address": "0x2AEA6Cb6c3267DE9Fa56B87F5D4bEa837308085c",
+      "address_lc": "0x2aea6cb6c3267de9fa56b87f5d4bea837308085c",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 1
+    },
+    {
+      "address": "0xd8345F47D3b78A65636Ef56E444c7A4C9c4be011",
+      "address_lc": "0xd8345f47d3b78a65636ef56e444c7a4c9c4be011",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 1
+    },
+    {
+      "address": "0xcd8d2C48f19555f7bD70B790433eDb7CF6FFceA5",
+      "address_lc": "0xcd8d2c48f19555f7bd70b790433edb7cf6ffcea5",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 1
+    },
+    {
       "address": "0xE342A99351a67563133d042Ab54CeC6f2aD81F86",
       "address_lc": "0xe342a99351a67563133d042ab54cec6f2ad81f86",
       "in_cohort": false,
@@ -17651,6 +17651,13 @@
     {
       "address": "0x3B9D2c0C92AFde665347144aEDa1EF11f4067d0B",
       "address_lc": "0x3b9d2c0c92afde665347144aeda1ef11f4067d0b",
+      "in_cohort": false,
+      "n_cohort_links": 1,
+      "total_co_fills": 1
+    },
+    {
+      "address": "0x492494973c94E901e3BE9F75796DEA83057cfAc2",
+      "address_lc": "0x492494973c94e901e3be9f75796dea83057cfac2",
       "in_cohort": false,
       "n_cohort_links": 1,
       "total_co_fills": 1
@@ -18225,13 +18232,6 @@
       "n_co_fills": 4741
     },
     {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x6031b6eed1c97e853c6e0f03ad3ce3529351f96d",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 4278
-    },
-    {
       "from": "0x13414a77a4be48988851c73dfd824d0168e70853",
       "to": "0x4bfb41d5b3570defd03c39a9a4d8de6bd8b8982e",
       "from_in_cohort": true,
@@ -18314,13 +18314,6 @@
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 3345
-    },
-    {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x4bfb41d5b3570defd03c39a9a4d8de6bd8b8982e",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 3330
     },
     {
       "from": "0x37c1874a60d348903594a96703e0507c518fc53a",
@@ -18729,13 +18722,6 @@
       "n_co_fills": 1866
     },
     {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0xc8e3b71b2d059cd1a54b1631d302980a41766fb0",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 1853
-    },
-    {
       "from": "0x4cc3522b689a6bf1fb4a2444c523e7776db47552",
       "to": "0x4bfb41d5b3570defd03c39a9a4d8de6bd8b8982e",
       "from_in_cohort": true,
@@ -18916,13 +18902,6 @@
       "from_in_cohort": true,
       "to_in_cohort": true,
       "n_co_fills": 1569
-    },
-    {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0xf247584e41117bbbe4cc06e4d2c95741792a5216",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 1567
     },
     {
       "from": "0x03e8a544e97eeff5753bc1e90d46e5ef22af1697",
@@ -19436,13 +19415,6 @@
       "n_co_fills": 1165
     },
     {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x565c29a430e7e835f81196a1ca2bdae928ac467e",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 1163
-    },
-    {
       "from": "0x3fd9a838ded6eb832baab3ccbcb5e934e3871ef0",
       "to": "0x7ea571c40408f340c1c8fc8eaacebab53c1bde7b",
       "from_in_cohort": true,
@@ -19471,25 +19443,11 @@
       "n_co_fills": 1139
     },
     {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x7881a9189e6e6030ba46a3dfa06b0f35efea611b",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 1139
-    },
-    {
       "from": "0x1521b47bf0c41f6b7fd3ad41cdec566812c8f23e",
       "to": "0x71034b4172924d7d74e794240d78b84a6f5acdb2",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 1138
-    },
-    {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x589222a5124a96765443b97a3498d89ffd824ad2",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 1136
     },
     {
       "from": "0x224b255eaa3279ceb77330317d3c38ee8e73f6b8",
@@ -19590,25 +19548,11 @@
       "n_co_fills": 1073
     },
     {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x80b7cb8a62d9bbc8820476414f2788e4b89dc001",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 1071
-    },
-    {
       "from": "0x3b5d93e768e79c0974ac0f7d210237988120cc80",
       "to": "0xc5d563a36ae78145c45a50134d48a1215220f80a",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 1061
-    },
-    {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x23cb796cf58bfa12352f0164f479deedbd50658e",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 1058
     },
     {
       "from": "0x03e8a544e97eeff5753bc1e90d46e5ef22af1697",
@@ -19669,13 +19613,6 @@
     {
       "from": "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71",
       "to": "0xe3726a1b9c6ba2f06585d1c9e01d00afaedaeb38",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 1025
-    },
-    {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0xe1a532a9991cc9ce27174b0296d077f824149dad",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 1025
@@ -19926,13 +19863,6 @@
       "n_co_fills": 912
     },
     {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0xd44e29936409019f93993de8bd603ef6cb1bb15e",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 912
-    },
-    {
       "from": "0x1295269296e51cd28a3db85fa6728c0e352b5cfd",
       "to": "0xc5d563a36ae78145c45a50134d48a1215220f80a",
       "from_in_cohort": true,
@@ -19982,13 +19912,6 @@
       "n_co_fills": 894
     },
     {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x557bed924a1bb6f62842c5742d1dc789b8d480d4",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 894
-    },
-    {
       "from": "0x3fd9a838ded6eb832baab3ccbcb5e934e3871ef0",
       "to": "0x507e52ef684ca2dd91f90a9d26d149dd3288beae",
       "from_in_cohort": true,
@@ -19998,13 +19921,6 @@
     {
       "from": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
       "to": "0x3078db4a9737866b4d6529f655025b3a20f80389",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 889
-    },
-    {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0xbe285f036120817114f342b4a57a140e74f578ec",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 889
@@ -20022,13 +19938,6 @@
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 886
-    },
-    {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x8c573be6f79a6207b895eb726c3cf408db50cf0e",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 884
     },
     {
       "from": "0x1df231bd33dae91463e1682927e8096b82c289a0",
@@ -20451,6 +20360,13 @@
       "n_co_fills": 779
     },
     {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0xf1addd3c7e01df23c3258ec690bbef8896546979",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 778
+    },
+    {
       "from": "0x507e52ef684ca2dd91f90a9d26d149dd3288beae",
       "to": "0x2652dd1140c3b9e69c8852264cf8dbe727672a1d",
       "from_in_cohort": true,
@@ -20740,13 +20656,6 @@
     {
       "from": "0x30cecdf29f069563ea21b8ae94492e41e53a6b2b",
       "to": "0xf0b0ef1d6320c6be896b4c9c54dd74407e7f8cab",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 722
-    },
-    {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x0d05acd6baaa8ea1fac50ab74a7679ae6f534518",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 722
@@ -21158,6 +21067,13 @@
       "n_co_fills": 655
     },
     {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0x4bfb41d5b3570defd03c39a9a4d8de6bd8b8982e",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 655
+    },
+    {
       "from": "0x011f2d377e56119fb09196dffb0948ae55711122",
       "to": "0xc613e6707bd115e5c04d303d944568232697662b",
       "from_in_cohort": true,
@@ -21233,13 +21149,6 @@
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 640
-    },
-    {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0xf2fd22084c260a01adeefb1e23921333b00a4ec0",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 638
     },
     {
       "from": "0x224b255eaa3279ceb77330317d3c38ee8e73f6b8",
@@ -21585,13 +21494,6 @@
       "n_co_fills": 587
     },
     {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x56e59348ccf8d11b172bd74ddc9ec69722ff6be4",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 583
-    },
-    {
       "from": "0x13414a77a4be48988851c73dfd824d0168e70853",
       "to": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
       "from_in_cohort": true,
@@ -21828,13 +21730,6 @@
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 560
-    },
-    {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x577346971f8d0a1338bc340a7f540a0b6f1ddc71",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 558
     },
     {
       "from": "0x56c9fbdeccf198f1f5ad95ace39b24f5f7fb0d9e",
@@ -22222,13 +22117,6 @@
       "n_co_fills": 523
     },
     {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x2254a9ca800571cca2bb46195d399e39cf032937",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 522
-    },
-    {
       "from": "0x1dbd30000dd7dd051e8fc803fac38e8246d9af92",
       "to": "0xfe911a4e80ee71b47cd1ee690733ac4062e970ff",
       "from_in_cohort": true,
@@ -22322,13 +22210,6 @@
     {
       "from": "0x4f2ba33b080882c0f6b296f48cfd07b6c326f448",
       "to": "0x369421b8b6fe558eda4a8cdfbfc121a216c11d72",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 512
-    },
-    {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x4302da58fa5a7bc39dd4fe96026c32c4e3deaed4",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 512
@@ -22894,13 +22775,6 @@
       "n_co_fills": 464
     },
     {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x32526c1de010a670eed9a5fbddacccb551c17830",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 462
-    },
-    {
       "from": "0x1bfdf7224c358405a486b5fd8489f13c2adcb5f3",
       "to": "0xf8ba34bf0e95d952d05b578bfbc0833f9242a286",
       "from_in_cohort": true,
@@ -23020,13 +22894,6 @@
       "n_co_fills": 454
     },
     {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x29bc82f761749e67fa00d62896bc6855097b683c",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 453
-    },
-    {
       "from": "0x03e8a544e97eeff5753bc1e90d46e5ef22af1697",
       "to": "0xee613b3fc183ee44f9da9c05f53e2da107e3debf",
       "from_in_cohort": true,
@@ -23120,13 +22987,6 @@
     {
       "from": "0x4cc3522b689a6bf1fb4a2444c523e7776db47552",
       "to": "0xaaf4acafbb7980ce93631d238eb10a5c4ca67883",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 445
-    },
-    {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x5a7f24bfc137995fb4fcec2f400cea71f6aa91eb",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 445
@@ -23228,13 +23088,6 @@
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 434
-    },
-    {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0xbd5cd4cdbeb4a872daf8dcc8adb1284e680aa55f",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 433
     },
     {
       "from": "0x03e8a544e97eeff5753bc1e90d46e5ef22af1697",
@@ -23657,22 +23510,8 @@
       "n_co_fills": 411
     },
     {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x492494973c94e901e3be9f75796dea83057cfac2",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 409
-    },
-    {
       "from": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
       "to": "0xe9cbb1c9b3f7f411dd4fdf2ea7afa780c8b4d096",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 408
-    },
-    {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0xec5de5247067f82058cd9927e8ded9f7bf7cd7b4",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 408
@@ -24000,13 +23839,6 @@
       "n_co_fills": 386
     },
     {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0xbdb6bdf102d858298e43c0b774221f55e49a8d7a",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 386
-    },
-    {
       "from": "0x0e1b30c63f6bac4fa1eacc7b852fa7e72e93ecaf",
       "to": "0x204f0a3daba2136fa857863d5d008c6a02b6ba2c",
       "from_in_cohort": true,
@@ -24084,13 +23916,6 @@
       "n_co_fills": 381
     },
     {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0xbace19b995b39ecafb2b6cf21234fffa11f76a61",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 381
-    },
-    {
       "from": "0x32ed517a571c01b6e9adecf61ba81ca48ff2f960",
       "to": "0x53757615de1c42b83f893b79d4241a009dc2aeea",
       "from_in_cohort": true,
@@ -24163,13 +23988,6 @@
     {
       "from": "0x47ab026767cc320ac6e62f6ec747d59cf4d795df",
       "to": "0x51373c6b56e4a38bf97c301efbff840fc8451556",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 377
-    },
-    {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x4fc0a52a3eec17380ac240caace3433b09bffed7",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 377
@@ -24261,13 +24079,6 @@
     {
       "from": "0x3f02a8b650d4b30449e83616f2165460209ca51c",
       "to": "0x4bfb41d5b3570defd03c39a9a4d8de6bd8b8982e",
-      "from_in_cohort": true,
-      "to_in_cohort": false,
-      "n_co_fills": 372
-    },
-    {
-      "from": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-      "to": "0x2cf113ce3d85e4e091b45bcaf21f89e0581edb39",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 372
@@ -29663,6 +29474,13 @@
       "n_co_fills": 208
     },
     {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0x0c69d91489f2eaeb9032328bec33a86378142b8d",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 208
+    },
+    {
       "from": "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71",
       "to": "0xc5d563a36ae78145c45a50134d48a1215220f80a",
       "from_in_cohort": true,
@@ -30206,6 +30024,13 @@
       "to": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
       "from_in_cohort": true,
       "to_in_cohort": true,
+      "n_co_fills": 196
+    },
+    {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0xb22326c1770aa89dfb2b372137e570a360433772",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
       "n_co_fills": 196
     },
     {
@@ -33569,6 +33394,13 @@
       "n_co_fills": 139
     },
     {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0x47138dc1eef25f1ea91f3b2fda0e0f455c634d21",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 139
+    },
+    {
       "from": "0x6356fb47642a028bc09df92023c35a21a0b41885",
       "to": "0x2370d48501dbbe1974b6cf228e77d459f4870e10",
       "from_in_cohort": true,
@@ -34773,6 +34605,13 @@
       "n_co_fills": 120
     },
     {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0x29b52d98ac9ef9414b04164246c95bc63d74cc6c",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 120
+    },
+    {
       "from": "0x562fa836dd0c7ecaf666cd02e88652b8acfde46f",
       "to": "0xeee92f1cc6d6e0ad0b4ffda20b01cf3678e27ecb",
       "from_in_cohort": true,
@@ -35767,6 +35606,13 @@
       "n_co_fills": 104
     },
     {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0xc37141e2aadfa26655bf039cacdc239c9da21e28",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 104
+    },
+    {
       "from": "0x5371f1b6954e31c502064614649cea3568cb76eb",
       "to": "0x25af52a8b44bfe158be649552737942dd2afbcaf",
       "from_in_cohort": true,
@@ -35825,6 +35671,13 @@
     {
       "from": "0x1bfdf7224c358405a486b5fd8489f13c2adcb5f3",
       "to": "0x971f91a412236cc942a6f4485d3d88aa8dcb5929",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 103
+    },
+    {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0x51dbdd2b19427dc8e88bb15a4046a38d8427f9b3",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 103
@@ -37594,6 +37447,13 @@
       "n_co_fills": 80
     },
     {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0x8056189d56833ce5b3945dea9149b62c5111b64d",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 80
+    },
+    {
       "from": "0x3de4543d599ffb09386aac2eab198a295511b032",
       "to": "0x4bfb41d5b3570defd03c39a9a4d8de6bd8b8982e",
       "from_in_cohort": true,
@@ -37673,6 +37533,13 @@
     {
       "from": "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf",
       "to": "0x8df1e8deb689ab43eea50151923fd04e6567d7fb",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 79
+    },
+    {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0xaea0d2d9c206f0a3f9cf05aae723942a61500dec",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 79
@@ -37983,6 +37850,13 @@
       "to": "0x204f72f35326db932158cba6adff0b9a1da95e14",
       "from_in_cohort": true,
       "to_in_cohort": true,
+      "n_co_fills": 76
+    },
+    {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0x80da7318e0f97e839a4def3de2e2a2ecdce0d26f",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
       "n_co_fills": 76
     },
     {
@@ -39001,6 +38875,13 @@
       "n_co_fills": 68
     },
     {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
+      "from_in_cohort": true,
+      "to_in_cohort": true,
+      "n_co_fills": 68
+    },
+    {
       "from": "0x47bc8458d60154c8a17c2d8ce332f088a602abd2",
       "to": "0xa9f9c0ca31912bee7ecd8aa25bfad07adcd6b3de",
       "from_in_cohort": true,
@@ -39094,6 +38975,13 @@
     {
       "from": "0x12d693e52701abf02785355c5cb060f16500dbbc",
       "to": "0x4bfb41d5b3570defd03c39a9a4d8de6bd8b8982e",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 67
+    },
+    {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0x310b101238977299d93fed11796dd56df76298a7",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 67
@@ -40429,6 +40317,13 @@
       "n_co_fills": 56
     },
     {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0xfdc0bd67fbd71aa8edd00121eb2a7fcbddc34b85",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 56
+    },
+    {
       "from": "0x3b5a307f9b679922a105fe9f55013b0d05babb9b",
       "to": "0x68146921df11eab44296dc4e58025ca84741a9e7",
       "from_in_cohort": true,
@@ -41381,6 +41276,20 @@
       "n_co_fills": 50
     },
     {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0x567464a8b6b5794c43282c4a9274e12b48ba8b14",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 50
+    },
+    {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0x37f8718d0b036b92f2aee7bd6ef80d1b5ef6b5e5",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 50
+    },
+    {
       "from": "0x3a5164ade2d7938fe00b346fb5135ebd1a08b2b6",
       "to": "0xe40172522c7c64afa2d052ddae6c92cd0f417b88",
       "from_in_cohort": true,
@@ -41551,6 +41460,13 @@
     {
       "from": "0x2580d0e16709994f5b8a0206271ad14e2b911d56",
       "to": "0xd6a3f0ec6c4a8ad680d580610c82ca57ff139489",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 49
+    },
+    {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0x1b9ec8b97969543ad2260cd04f7294c26ccdeb82",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 49
@@ -41747,6 +41663,13 @@
     {
       "from": "0x163eff4d251df4bfc95c49f4d90cd1bf224edc5b",
       "to": "0x1455445e9a775cfa3fe9fc4b02bb4d2f682ae5cd",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 48
+    },
+    {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0xd37ab1a5eeb25696c568e20e94af72b8d3422358",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 48
@@ -42106,6 +42029,13 @@
       "to": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
       "from_in_cohort": true,
       "to_in_cohort": true,
+      "n_co_fills": 46
+    },
+    {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0xe2e10f790c159bfbd5d74ba0d38fcc19dcf8c20a",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
       "n_co_fills": 46
     },
     {
@@ -43628,6 +43558,13 @@
       "n_co_fills": 38
     },
     {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0x21c24a79a0c2f07b2ed34e30d42dffa3d0b66749",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 38
+    },
+    {
       "from": "0x30c7ac0158499ddc6761047f7f69bcf7d036ac3b",
       "to": "0xdd882a70680633a75516f6ed5fce443e2d96dadb",
       "from_in_cohort": true,
@@ -43784,6 +43721,13 @@
     {
       "from": "0x2785e7022dc20757108204b13c08cea8613b70ae",
       "to": "0xa6e2eaf32ce203a2bdeec4703344c6fd52fb09c8",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 37
+    },
+    {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0xbeccf1ec86abb15649df4d4023821f2f557ff560",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 37
@@ -43966,6 +43910,20 @@
     {
       "from": "0x2785e7022dc20757108204b13c08cea8613b70ae",
       "to": "0xb83f717cd03598dde412bc63e8ec1f18914fb5b2",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 36
+    },
+    {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0x4ec30a1c1d754913cc9b537cee9483655fb534a7",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 36
+    },
+    {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0xd866b0ac7b156973943cdff2e5b63cdd3ad955e0",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 36
@@ -44391,6 +44349,20 @@
       "n_co_fills": 34
     },
     {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0xdbdd45150249e229eb4ca8aa48a30dca21faa5de",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 34
+    },
+    {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0x3e6d998a25793c1d0ca5b59d7d7ac7f8d0132671",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 34
+    },
+    {
       "from": "0x38f0b76ed812c24166a4f6293f991ac4b9972768",
       "to": "0xa509ae942ac8d8bc3f8c5df30cb6ae2c9b13ae46",
       "from_in_cohort": true,
@@ -44615,6 +44587,13 @@
       "n_co_fills": 33
     },
     {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0xdbb36e465641957d32376f0e5d32a1f725ce76a9",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 33
+    },
+    {
       "from": "0x38f0b76ed812c24166a4f6293f991ac4b9972768",
       "to": "0x4b493d8ea89203ecfa5ac53ff8fc4a45aa050397",
       "from_in_cohort": true,
@@ -44778,6 +44757,20 @@
     {
       "from": "0x2785e7022dc20757108204b13c08cea8613b70ae",
       "to": "0xca6e53a606d825d2312a86c1a5dcc4c1e6eb73e8",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 32
+    },
+    {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0x965f3c17110a24a706a7c67b7e0d97951caf50de",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 32
+    },
+    {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0x9a657eabec16f0cb19c01b373e0be649b2a0208d",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 32
@@ -44995,6 +44988,20 @@
     {
       "from": "0x2580d0e16709994f5b8a0206271ad14e2b911d56",
       "to": "0x64df1adc2bf84d3212d04db134d3c0a9a30eab80",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 31
+    },
+    {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0xf898dc38744d9e173bcaadef0647ceb42ad8e720",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 31
+    },
+    {
+      "from": "0x21ecbb95a15822bbdd4ab71345385a6056d95348",
+      "to": "0xdbf7c763002709257c86b5d3f435c02450c606ac",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 31
@@ -51412,6 +51419,13 @@
       "n_co_fills": 5
     },
     {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0x38e598961dD0456A7fB2E758bD433D3E59FB8A4A",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 5
+    },
+    {
       "from": "0x0a371f1edf28cbe6ed5b798a038345a8bf047cd4",
       "to": "0x93c22116e4402c9332ee6db578050e688934c072",
       "from_in_cohort": true,
@@ -52240,6 +52254,13 @@
     {
       "from": "0x88C4919De76E526d55A32c1F8aFB439dd1f1129a",
       "to": "0x644740223C854cB3cdA40b40f81761fc09908075",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 3
+    },
+    {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0x818F214c7F3e479CCE1D964D53Fe3Db7297558Cb",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 3
@@ -53439,6 +53460,13 @@
       "to": "0xDD572169e741c72227589C5cB56b9ddD638d694D",
       "from_in_cohort": true,
       "to_in_cohort": true,
+      "n_co_fills": 2
+    },
+    {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0x253ad134a7728B899610f8A004cbfC4a12f6Af26",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
       "n_co_fills": 2
     },
     {
@@ -61116,6 +61144,118 @@
     {
       "from": "0x9703676286B93C2eCa71ca96e8757104519a69C2",
       "to": "0x63589EF338c13a63E8CbcDfFec58C4630468f4B5",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 1
+    },
+    {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0x29bc82f761749E67fa00D62896bC6855097b683C",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 1
+    },
+    {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0x798cB5640f7e0790420126d299Be0eB1421c88d5",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 1
+    },
+    {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0x02a6c5cb93c5601dC14Ef1B6f0b9E8B8bfEA9574",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 1
+    },
+    {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0xC9e31C6c3d1e425Bd8bc07c16C412d3856CBC282",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 1
+    },
+    {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0x7ED8DA77bA07B50D6e4E1CBEa3ce9C09c49eE3eE",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 1
+    },
+    {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0x64002b4d9579c4449A8E56c5E02D4ECfAe01818c",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 1
+    },
+    {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0xB27BC932bf8110D8F78e55da7d5f0497A18B5b82",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 1
+    },
+    {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0x19A15ee029467816eb96Dc303D81Ee4b2fe47698",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 1
+    },
+    {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0x437bFe05a1E169b1443F16e718525A88B6F283B2",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 1
+    },
+    {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0xf47919311539e1309b5DeAB44Cd1F6d92Ddec838",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 1
+    },
+    {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0x1f6b85CB85876dF272199039207B33166757267E",
+      "from_in_cohort": true,
+      "to_in_cohort": true,
+      "n_co_fills": 1
+    },
+    {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0x716445Fe00d0A78172b8be46D216E08d15159DB6",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 1
+    },
+    {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0x2AEA6Cb6c3267DE9Fa56B87F5D4bEa837308085c",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 1
+    },
+    {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0xd8345F47D3b78A65636Ef56E444c7A4C9c4be011",
+      "from_in_cohort": true,
+      "to_in_cohort": false,
+      "n_co_fills": 1
+    },
+    {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0x5bAb6B0B49E77983E882768030F8cC335BEe53E6",
+      "from_in_cohort": true,
+      "to_in_cohort": true,
+      "n_co_fills": 1
+    },
+    {
+      "from": "0x63CE342161250D705dC0b16dF89036C8E5F9Ba9a",
+      "to": "0xcd8d2C48f19555f7bD70B790433eDb7CF6FFceA5",
       "from_in_cohort": true,
       "to_in_cohort": false,
       "n_co_fills": 1
