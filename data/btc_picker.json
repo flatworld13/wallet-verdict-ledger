@@ -1,6 +1,6 @@
 {
-  "fetched_at_unix": 1778632623,
-  "scored_at_unix": 1778632624,
+  "fetched_at_unix": 1778653720,
+  "scored_at_unix": 1778653721,
   "market": {
     "conditionId": "0xa0f4c4924ea1a8b410b4ce821c2a9955fad21a1b19bdcfde90816732278b3dd5",
     "id": "573655",
@@ -29,8 +29,8 @@
       "13290642914521189871602119663452054126359842904805799115978921503195267156991"
     ]
   },
-  "cohort_size_eligible": 10,
-  "cohort_size_caution": 14,
+  "cohort_size_eligible": 11,
+  "cohort_size_caution": 13,
   "winner": {
     "wallet": "0x5c7ae9d70bcee044792a656173d085e27da01a97",
     "pseudonym": "Amusing-Substitution",
@@ -39,37 +39,38 @@
     "thin_history": false,
     "history_count": 3500,
     "overall_brier": {
-      "count": 22,
-      "mean_brier": 0.001,
-      "volume_weighted_brier": 0.0009
+      "count": 77,
+      "mean_brier": 0.0084,
+      "volume_weighted_brier": 0.0016
     },
     "crypto_brier": {
-      "count": 22,
-      "mean_brier": 0.001,
-      "volume_weighted_brier": 0.0009
+      "count": 75,
+      "mean_brier": 0.0086,
+      "volume_weighted_brier": 0.0125
     },
     "domain_counts": {
-      "Crypto": 22
+      "Crypto": 75,
+      "Sports": 2
     },
     "backtest_90d": {
-      "positions_count": 22,
-      "roi_per_dollar": 0.0281,
-      "cumulative_pnl_per_dollar": 0.6191
+      "positions_count": 77,
+      "roi_per_dollar": 0.0649,
+      "cumulative_pnl_per_dollar": 5.0008
     },
-    "median_trade_usd": 295.44,
+    "median_trade_usd": 293.73,
     "max_trade_usd": 1159.62,
     "copy_label": "Stretch \u00b7 mid-sized bankroll",
     "drift": {
-      "first_half_brier": 0.0006,
-      "second_half_brier": 0.0013,
-      "delta": 0.0006,
+      "first_half_brier": 0.0147,
+      "second_half_brier": 0.0022,
+      "delta": -0.0124,
       "verdict": "stable"
     },
     "extreme_share": 0.964,
     "contrarian_score": 0.964,
-    "crypto_specialty_share": 1.0,
-    "markets_breadth": 377,
-    "resolved_count": 22,
+    "crypto_specialty_share": 0.974,
+    "markets_breadth": 371,
+    "resolved_count": 77,
     "btc_position": {
       "primary_outcome": "No",
       "primary_outcome_index": 1,
@@ -104,11 +105,27 @@
         "eventSlug": "2026-fifa-world-cup-winner-595",
         "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-ecuador-win-the-2026-fifa-world-cup-986-uC9PrssrShwX.jpg",
         "avg_buy_price": 0.993,
-        "buy_size": 15390.97,
-        "sell_size": 15390.97,
-        "trade_count": 102,
+        "buy_size": 16015.1,
+        "sell_size": 16015.1,
+        "trade_count": 106,
         "first_ts": 1777717552,
-        "last_ts": 1778631944,
+        "last_ts": 1778653348,
+        "domain": "Sports",
+        "resolved": null
+      },
+      {
+        "conditionId": "0x7876851632c295043c66536150a304cb785abdf712ba8489d298c6e6926be106",
+        "outcomeIndex": 1,
+        "outcome": "No",
+        "title": "Will Uruguay win the 2026 FIFA World Cup?",
+        "eventSlug": "2026-fifa-world-cup-winner-595",
+        "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-uruguay-win-the-2026-fifa-world-cup-932-_dehTCk0jVI6.jpg",
+        "avg_buy_price": 0.99,
+        "buy_size": 40782.27,
+        "sell_size": 40782.26,
+        "trade_count": 222,
+        "first_ts": 1777719842,
+        "last_ts": 1778652616,
         "domain": "Sports",
         "resolved": null
       },
@@ -120,91 +137,43 @@
         "eventSlug": "2026-fifa-world-cup-winner-595",
         "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-belgium-win-the-2026-fifa-world-cup-358-I6h99tED1CtG.jpg",
         "avg_buy_price": 0.981,
-        "buy_size": 28040.38,
-        "sell_size": 28040.38,
-        "trade_count": 148,
+        "buy_size": 28594.13,
+        "sell_size": 28594.13,
+        "trade_count": 152,
         "first_ts": 1777626634,
-        "last_ts": 1778631412,
+        "last_ts": 1778651859,
         "domain": "Sports",
         "resolved": null
       },
       {
-        "conditionId": "0xde04b189b3f19eaccda02529a3ea67abfc46bff5c0c8fc42d8a2d0ed7b8f0d41",
-        "outcomeIndex": 0,
-        "outcome": "Yes",
-        "title": "Will there be no change in Fed interest rates after the June 2026 meeting?",
-        "eventSlug": "fed-decision-in-june-825",
-        "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/jerome+powell+glasses1.png",
-        "avg_buy_price": 0.974053,
-        "buy_size": 4455.22,
-        "sell_size": 4455.22,
-        "trade_count": 30,
-        "first_ts": 1778362276,
-        "last_ts": 1778630743,
-        "domain": "Macro",
+        "conditionId": "0x0189df05ed7bf84d799213b01a79571e305c03b2ac5359cfbb3a323448ba20fa",
+        "outcomeIndex": 1,
+        "outcome": "No",
+        "title": "Will Japan win the 2026 FIFA World Cup?",
+        "eventSlug": "2026-fifa-world-cup-winner-595",
+        "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-japan-win-the-2026-fifa-world-cup-112-8AQwfmoAsz2d.jpg",
+        "avg_buy_price": 0.979595,
+        "buy_size": 22956.6,
+        "sell_size": 22956.59,
+        "trade_count": 136,
+        "first_ts": 1777992988,
+        "last_ts": 1778651379,
+        "domain": "Sports",
         "resolved": null
       },
       {
-        "conditionId": "0x3733a1b647e7364095736ab0966465d896a84cf3b6bc1695ca1f26c3239b3868",
+        "conditionId": "0x6972edb1b3f8cd8192651a665fc424dff846efe1c4a2376f628d4b20c704144c",
         "outcomeIndex": 1,
         "outcome": "No",
-        "title": "MicroStrategy sells any Bitcoin by May 31, 2026?",
-        "eventSlug": "microstrategy-sell-any-bitcoin-in-2025",
-        "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-microstrategy-purchase-bitcoin-july-1-7-mzoE5TYk_cCI.jpg",
-        "avg_buy_price": null,
-        "buy_size": 0.0,
-        "sell_size": 715.9,
-        "trade_count": 5,
-        "first_ts": 1778351258,
-        "last_ts": 1778627341,
-        "domain": "Macro",
-        "resolved": null
-      },
-      {
-        "conditionId": "0x0b4fdc620f5aeafbfa8603a7fe9f3dd2dbae70e73aa157c8c94275676043ce06",
-        "outcomeIndex": 1,
-        "outcome": "No",
-        "title": "Will Laurent Wauquiez win the 2027 French presidential election?",
-        "eventSlug": "next-french-presidential-election",
-        "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-laurent-wauquiez-win-the-2027-french-presidential-election-ZeqQ272NROXf.jpg",
+        "title": "Will Senegal win the 2026 FIFA World Cup?",
+        "eventSlug": "2026-fifa-world-cup-winner-595",
+        "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-senegal-win-the-2026-fifa-world-cup-_aVr7pz_5zsU.jpg",
         "avg_buy_price": 0.993,
-        "buy_size": 4401.65,
-        "sell_size": 4401.64,
-        "trade_count": 30,
-        "first_ts": 1778487730,
-        "last_ts": 1778626424,
-        "domain": "Politics",
-        "resolved": null
-      },
-      {
-        "conditionId": "0x9be56371f6a29d12769b2f196847ee825b9585ebb8bfa042136be031b081eba1",
-        "outcomeIndex": 1,
-        "outcome": "No",
-        "title": "Will Netherlands win the 2026 FIFA World Cup?",
-        "eventSlug": "2026-fifa-world-cup-winner-595",
-        "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-netherlands-win-the-2026-fifa-world-cup-739-vMGKphh9oaFR.jpg",
-        "avg_buy_price": 0.96632,
-        "buy_size": 18838.11,
-        "sell_size": 18838.11,
-        "trade_count": 112,
-        "first_ts": 1777631132,
-        "last_ts": 1778625672,
-        "domain": "Sports",
-        "resolved": null
-      },
-      {
-        "conditionId": "0x5ccfe1b69a582d2985db08a8481a0d74c314b1fce9b4711ae2efb2c6467fe6aa",
-        "outcomeIndex": 1,
-        "outcome": "No",
-        "title": "Will Mexico win the 2026 FIFA World Cup?",
-        "eventSlug": "2026-fifa-world-cup-winner-595",
-        "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-mexico-win-the-2026-fifa-world-cup-529-CmZbz0GIAvB8.jpg",
-        "avg_buy_price": 0.99,
-        "buy_size": 28637.42,
-        "sell_size": 28637.41,
-        "trade_count": 176,
-        "first_ts": 1777992208,
-        "last_ts": 1778625157,
+        "buy_size": 9400.25,
+        "sell_size": 9400.25,
+        "trade_count": 62,
+        "first_ts": 1778321473,
+        "last_ts": 1778650753,
         "domain": "Sports",
         "resolved": null
       },
@@ -215,428 +184,171 @@
         "title": "Will Norway win the 2026 FIFA World Cup?",
         "eventSlug": "2026-fifa-world-cup-winner-595",
         "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-norway-win-the-2026-fifa-world-cup-893-fuf9rF2E62eo.jpg",
-        "avg_buy_price": 0.977789,
-        "buy_size": 23166.07,
-        "sell_size": 23166.07,
-        "trade_count": 132,
+        "avg_buy_price": 0.977803,
+        "buy_size": 24719.98,
+        "sell_size": 24719.98,
+        "trade_count": 142,
         "first_ts": 1777726928,
-        "last_ts": 1778624587,
+        "last_ts": 1778650033,
         "domain": "Sports",
+        "resolved": null
+      },
+      {
+        "conditionId": "0x0b4fdc620f5aeafbfa8603a7fe9f3dd2dbae70e73aa157c8c94275676043ce06",
+        "outcomeIndex": 1,
+        "outcome": "No",
+        "title": "Will Laurent Wauquiez win the 2027 French presidential election?",
+        "eventSlug": "next-french-presidential-election",
+        "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-laurent-wauquiez-win-the-2027-french-presidential-election-ZeqQ272NROXf.jpg",
+        "avg_buy_price": 0.993,
+        "buy_size": 6074.25,
+        "sell_size": 6074.24,
+        "trade_count": 40,
+        "first_ts": 1778487730,
+        "last_ts": 1778649214,
+        "domain": "Politics",
+        "resolved": null
+      },
+      {
+        "conditionId": "0xde04b189b3f19eaccda02529a3ea67abfc46bff5c0c8fc42d8a2d0ed7b8f0d41",
+        "outcomeIndex": 0,
+        "outcome": "Yes",
+        "title": "Will there be no change in Fed interest rates after the June 2026 meeting?",
+        "eventSlug": "fed-decision-in-june-825",
+        "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/jerome+powell+glasses1.png",
+        "avg_buy_price": 0.974266,
+        "buy_size": 5002.66,
+        "sell_size": 5002.65,
+        "trade_count": 34,
+        "first_ts": 1778362276,
+        "last_ts": 1778648656,
+        "domain": "Macro",
         "resolved": null
       }
     ],
     "tier": "strong_crypto",
     "archetype": {
       "label": "Crypto \u00b7 extreme-price \u00b7 specialist",
-      "confidence": "medium",
-      "n_resolved": 22,
+      "confidence": "high",
+      "n_resolved": 77,
       "features": {
-        "crypto_share": 1.0,
+        "crypto_share": 0.974,
         "extreme_share": 0.964,
-        "median_trade_usd": 295.44,
-        "side_skew": -0.182
+        "median_trade_usd": 293.73,
+        "side_skew": -0.221
       }
     },
     "plain_english_brier": {
       "label": "Excellent",
       "tone": "good",
-      "note": "n=22 resolved"
+      "note": "n=75 resolved"
     },
     "traffic_light": {
       "light": "yellow",
       "phrase": "Strong wallet \u00b7 entry late \u00b7 watchlist only"
     },
     "reason_codes": [],
-    "composite_score": 66.1,
-    "trust_score_v0": 99.6,
+    "composite_score": 71.5,
+    "trust_score_v0": 96.6,
     "ranks": {
       "crypto_brier_lower": {
-        "rank": 2,
-        "of": 10,
-        "percentile": 88.9,
-        "norm": "rank 2/10 \u00b7 top 20%",
-        "value": 0.001
+        "rank": 4,
+        "of": 11,
+        "percentile": 70.0,
+        "norm": "rank 4/11 \u00b7 upper half",
+        "value": 0.0086
       },
       "overall_brier_lower": {
-        "rank": 1,
-        "of": 10,
-        "percentile": 100.0,
-        "norm": "rank 1/10 \u00b7 best in cohort",
-        "value": 0.001
+        "rank": 3,
+        "of": 11,
+        "percentile": 80.0,
+        "norm": "rank 3/11 \u00b7 upper half",
+        "value": 0.0084
       },
       "backtest_90d": {
-        "rank": 5,
-        "of": 10,
-        "percentile": 55.6,
-        "norm": "rank 5/10 \u00b7 upper half",
-        "value": 0.0281
+        "rank": 1,
+        "of": 11,
+        "percentile": 100.0,
+        "norm": "rank 1/11 \u00b7 best in cohort",
+        "value": 0.0649
       },
       "drift_lower": {
-        "rank": 9,
-        "of": 10,
-        "percentile": 11.1,
-        "norm": "rank 9/10 \u00b7 lower half",
-        "value": 0.0006
+        "rank": 5,
+        "of": 11,
+        "percentile": 60.0,
+        "norm": "rank 5/11 \u00b7 upper half",
+        "value": -0.0124
       },
       "copy_smaller": {
         "rank": 7,
-        "of": 10,
-        "percentile": 33.3,
-        "norm": "rank 7/10 \u00b7 lower half",
-        "value": 295.44
+        "of": 11,
+        "percentile": 40.0,
+        "norm": "rank 7/11 \u00b7 lower half",
+        "value": 293.73
       },
       "breadth_higher": {
         "rank": 6,
-        "of": 10,
-        "percentile": 44.4,
-        "norm": "rank 6/10 \u00b7 lower half",
-        "value": 377
+        "of": 11,
+        "percentile": 50.0,
+        "norm": "rank 6/11 \u00b7 lower half",
+        "value": 371
       },
       "specialty_higher": {
-        "rank": 2,
-        "of": 10,
-        "percentile": 88.9,
-        "norm": "rank 2/10 \u00b7 top 20%",
-        "value": 1.0
+        "rank": 3,
+        "of": 11,
+        "percentile": 80.0,
+        "norm": "rank 3/11 \u00b7 upper half",
+        "value": 0.974
       },
       "extreme_higher": {
         "rank": 2,
-        "of": 10,
-        "percentile": 88.9,
-        "norm": "rank 2/10 \u00b7 top 20%",
+        "of": 11,
+        "percentile": 90.0,
+        "norm": "rank 2/11 \u00b7 top 18%",
         "value": 0.964
       }
     }
   },
   "eligible": [
     {
-      "wallet": "0x5371f1b6954e31c502064614649cea3568cb76eb",
-      "pseudonym": "Embellished-Observatory",
-      "name": "oegdatam",
-      "profile_image": "",
-      "thin_history": false,
-      "history_count": 758,
-      "overall_brier": {
-        "count": 24,
-        "mean_brier": 0.0023,
-        "volume_weighted_brier": 0.0038
-      },
-      "crypto_brier": {
-        "count": 24,
-        "mean_brier": 0.0023,
-        "volume_weighted_brier": 0.0038
-      },
-      "domain_counts": {
-        "Crypto": 24
-      },
-      "backtest_90d": {
-        "positions_count": 24,
-        "roi_per_dollar": 0.0412,
-        "cumulative_pnl_per_dollar": 0.9895
-      },
-      "median_trade_usd": 1345.26,
-      "max_trade_usd": 49445.17,
-      "copy_label": "Stretch \u00b7 mid-sized bankroll",
-      "drift": {
-        "first_half_brier": 0.0035,
-        "second_half_brier": 0.001,
-        "delta": -0.0026,
-        "verdict": "stable"
-      },
-      "extreme_share": 0.896,
-      "contrarian_score": 0.896,
-      "crypto_specialty_share": 1.0,
-      "markets_breadth": 101,
-      "resolved_count": 24,
-      "btc_position": {
-        "primary_outcome": "No",
-        "primary_outcome_index": 1,
-        "yes_size": 0.0,
-        "no_size": 2446.8594,
-        "avg_buy_price_yes": null,
-        "avg_buy_price_no": 0.976256,
-        "volume_in_market_usd": 2388.76,
-        "trades_in_market": 1,
-        "first_ts": 1777359310,
-        "last_ts": 1777359310
-      },
-      "entry_gap": {
-        "avg_entry": 0.9763,
-        "current_price": 0.9865,
-        "diff_cents": 1.02,
-        "state": "late"
-      },
-      "copy_return_remaining": {
-        "customer_upside": 0.0135,
-        "wallet_upside": 0.0237,
-        "remaining_pct": 0.57,
-        "label": "limited"
-      },
-      "market_only_share": 0.008,
-      "recent_positions": [
-        {
-          "conditionId": "0xa0f4c4924ea1a8b410b4ce821c2a9955fad21a1b19bdcfde90816732278b3dd5",
-          "outcomeIndex": 1,
-          "outcome": "No",
-          "title": "Will Bitcoin hit $150k by June 30, 2026?",
-          "eventSlug": "when-will-bitcoin-hit-150k",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
-          "avg_buy_price": 0.975426,
-          "buy_size": 6440.5301,
-          "sell_size": 0.0,
-          "trade_count": 6,
-          "first_ts": 1775413877,
-          "last_ts": 1777359310,
-          "domain": "Crypto",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x1889ef2e34ca3dd4e9da9e49fb0a06e3a94e10297ce1a72933c6583eafcef437",
-          "outcomeIndex": 1,
-          "outcome": "No",
-          "title": "Will XRP dip to $1.00 in April?",
-          "eventSlug": "what-price-will-xrp-hit-in-april-2026",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/XRP-logo.png",
-          "avg_buy_price": 0.969933,
-          "buy_size": 62714.202,
-          "sell_size": 0.0,
-          "trade_count": 25,
-          "first_ts": 1777056516,
-          "last_ts": 1777323730,
-          "domain": "Crypto",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x752fa61c93f16c4b15e85b0bd438d9c684176b0ea7b319a84c8aca34616e8a8c",
-          "outcomeIndex": 1,
-          "outcome": "No",
-          "title": "Will Bitcoin dip to $55,000 by December 31, 2026?",
-          "eventSlug": "what-price-will-bitcoin-hit-before-2027",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
-          "avg_buy_price": 0.446473,
-          "buy_size": 15385.2283,
-          "sell_size": 0.0,
-          "trade_count": 6,
-          "first_ts": 1776432216,
-          "last_ts": 1777321770,
-          "domain": "Crypto",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x337ed4a919995ef9ba9d705b319055633a5dfdcb3ab97cf610009a7d11a9ade4",
-          "outcomeIndex": 1,
-          "outcome": "No",
-          "title": "Bitcoin all time high by June 30, 2026?",
-          "eventSlug": "bitcoin-all-time-high-by",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
-          "avg_buy_price": 0.968847,
-          "buy_size": 9691.073,
-          "sell_size": 0.0,
-          "trade_count": 7,
-          "first_ts": 1776582818,
-          "last_ts": 1777321508,
-          "domain": "Crypto",
-          "resolved": null
-        },
-        {
-          "conditionId": "0xf326a07132ea27d151fade9df0424db7c5ee496b44e5f373a41b4f15431bfd97",
-          "outcomeIndex": 1,
-          "outcome": "No",
-          "title": "Will Bitcoin dip to $65,000 in April?",
-          "eventSlug": "what-price-will-bitcoin-hit-in-april-2026",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
-          "avg_buy_price": 0.970847,
-          "buy_size": 141207.1023,
-          "sell_size": 0.0,
-          "trade_count": 32,
-          "first_ts": 1777061668,
-          "last_ts": 1777297706,
-          "domain": "Crypto",
-          "resolved": {
-            "winning_outcome_index": 1,
-            "actual": 1,
-            "brier": 0.00085,
-            "pnl_per_dollar": 0.030028,
-            "state": "resolved"
-          }
-        },
-        {
-          "conditionId": "0xe6ca9df9502600d4f652a725babeff09cd2947974d18351c18a3ba86cc985c50",
-          "outcomeIndex": 1,
-          "outcome": "No",
-          "title": "Will Bitcoin reach $90,000 in April?",
-          "eventSlug": "what-price-will-bitcoin-hit-in-april-2026",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
-          "avg_buy_price": 0.973181,
-          "buy_size": 6403.2598,
-          "sell_size": 802.71,
-          "trade_count": 6,
-          "first_ts": 1775760495,
-          "last_ts": 1777238022,
-          "domain": "Crypto",
-          "resolved": {
-            "winning_outcome_index": 1,
-            "actual": 1,
-            "brier": 0.000719,
-            "pnl_per_dollar": 0.027558,
-            "state": "resolved"
-          }
-        },
-        {
-          "conditionId": "0xce3c54c3e773e8b3bf73e4c12af93205b21195d03b9c386e22f274b9acfc2c56",
-          "outcomeIndex": 1,
-          "outcome": "No",
-          "title": "Will Bitcoin dip to $50,000 by December 31, 2026?",
-          "eventSlug": "what-price-will-bitcoin-hit-before-2027",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
-          "avg_buy_price": 0.549337,
-          "buy_size": 84223.3456,
-          "sell_size": 0.0,
-          "trade_count": 25,
-          "first_ts": 1775910963,
-          "last_ts": 1777196204,
-          "domain": "Crypto",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x024b68f77bfc019341ee3db8f57c103334e4b9430bba4746d8c94aafd8b36fee",
-          "outcomeIndex": 1,
-          "outcome": "No",
-          "title": "Will Bitcoin dip to $45,000 by December 31, 2026?",
-          "eventSlug": "what-price-will-bitcoin-hit-before-2027",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
-          "avg_buy_price": 0.649884,
-          "buy_size": 36767.6669,
-          "sell_size": 0.0,
-          "trade_count": 11,
-          "first_ts": 1776373458,
-          "last_ts": 1777195906,
-          "domain": "Crypto",
-          "resolved": null
-        }
-      ],
-      "tier": "strong_crypto",
-      "archetype": {
-        "label": "Crypto \u00b7 extreme-price \u00b7 No-side \u00b7 specialist",
-        "confidence": "medium",
-        "n_resolved": 24,
-        "features": {
-          "crypto_share": 1.0,
-          "extreme_share": 0.896,
-          "median_trade_usd": 1345.26,
-          "side_skew": 1.0
-        }
-      },
-      "plain_english_brier": {
-        "label": "Excellent",
-        "tone": "good",
-        "note": "n=24 resolved"
-      },
-      "traffic_light": {
-        "light": "yellow",
-        "phrase": "Strong wallet \u00b7 entry late \u00b7 watchlist only"
-      },
-      "reason_codes": [],
-      "composite_score": 57.2,
-      "trust_score_v0": 99.1,
-      "ranks": {
-        "crypto_brier_lower": {
-          "rank": 3,
-          "of": 10,
-          "percentile": 77.8,
-          "norm": "rank 3/10 \u00b7 upper half",
-          "value": 0.0023
-        },
-        "overall_brier_lower": {
-          "rank": 2,
-          "of": 10,
-          "percentile": 88.9,
-          "norm": "rank 2/10 \u00b7 top 20%",
-          "value": 0.0023
-        },
-        "backtest_90d": {
-          "rank": 4,
-          "of": 10,
-          "percentile": 66.7,
-          "norm": "rank 4/10 \u00b7 upper half",
-          "value": 0.0412
-        },
-        "drift_lower": {
-          "rank": 8,
-          "of": 10,
-          "percentile": 22.2,
-          "norm": "rank 8/10 \u00b7 lower half",
-          "value": -0.0026
-        },
-        "copy_smaller": {
-          "rank": 10,
-          "of": 10,
-          "percentile": 0.0,
-          "norm": "rank 10/10 \u00b7 lower half",
-          "value": 1345.26
-        },
-        "breadth_higher": {
-          "rank": 9,
-          "of": 10,
-          "percentile": 11.1,
-          "norm": "rank 9/10 \u00b7 lower half",
-          "value": 101
-        },
-        "specialty_higher": {
-          "rank": 3,
-          "of": 10,
-          "percentile": 77.8,
-          "norm": "rank 3/10 \u00b7 upper half",
-          "value": 1.0
-        },
-        "extreme_higher": {
-          "rank": 3,
-          "of": 10,
-          "percentile": 77.8,
-          "norm": "rank 3/10 \u00b7 upper half",
-          "value": 0.896
-        }
-      }
-    },
-    {
       "wallet": "0x4f315c1f2fcfbcbccc31fa28ae086babf309efa3",
       "pseudonym": "Intrepid-Holder",
       "name": "DFV2",
       "profile_image": "",
       "thin_history": false,
-      "history_count": 683,
+      "history_count": 684,
       "overall_brier": {
-        "count": 26,
-        "mean_brier": 0.0042,
-        "volume_weighted_brier": 0.0026
+        "count": 82,
+        "mean_brier": 0.0056,
+        "volume_weighted_brier": 0.0072
       },
       "crypto_brier": {
-        "count": 26,
-        "mean_brier": 0.0042,
-        "volume_weighted_brier": 0.0026
+        "count": 82,
+        "mean_brier": 0.0056,
+        "volume_weighted_brier": 0.0072
       },
       "domain_counts": {
-        "Crypto": 26
+        "Crypto": 82
       },
       "backtest_90d": {
-        "positions_count": 23,
-        "roi_per_dollar": 0.0555,
-        "cumulative_pnl_per_dollar": 1.276
+        "positions_count": 72,
+        "roi_per_dollar": 0.0647,
+        "cumulative_pnl_per_dollar": 4.6605
       },
-      "median_trade_usd": 1004.78,
+      "median_trade_usd": 1019.85,
       "max_trade_usd": 50710.73,
       "copy_label": "Stretch \u00b7 mid-sized bankroll",
       "drift": {
-        "first_half_brier": 0.0056,
-        "second_half_brier": 0.0028,
-        "delta": -0.0027,
+        "first_half_brier": 0.0077,
+        "second_half_brier": 0.0034,
+        "delta": -0.0042,
         "verdict": "stable"
       },
       "extreme_share": 0.849,
       "contrarian_score": 0.849,
       "crypto_specialty_share": 1.0,
       "markets_breadth": 97,
-      "resolved_count": 26,
+      "resolved_count": 82,
       "btc_position": {
         "primary_outcome": "No",
         "primary_outcome_index": 1,
@@ -670,12 +382,12 @@
           "title": "Will XRP reach $2.00 in May?",
           "eventSlug": "what-price-will-xrp-hit-in-may-2026",
           "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/XRP-logo.png",
-          "avg_buy_price": 0.957714,
-          "buy_size": 30976.8914,
+          "avg_buy_price": 0.957427,
+          "buy_size": 32372.6987,
           "sell_size": 0.0,
-          "trade_count": 15,
+          "trade_count": 16,
           "first_ts": 1778164245,
-          "last_ts": 1778599327,
+          "last_ts": 1778644563,
           "domain": "Crypto",
           "resolved": null
         },
@@ -795,83 +507,378 @@
       "tier": "strong_crypto",
       "archetype": {
         "label": "Crypto \u00b7 extreme-price \u00b7 No-side \u00b7 specialist",
-        "confidence": "medium",
-        "n_resolved": 26,
+        "confidence": "high",
+        "n_resolved": 82,
         "features": {
           "crypto_share": 1.0,
           "extreme_share": 0.849,
-          "median_trade_usd": 1004.78,
-          "side_skew": 1.0
+          "median_trade_usd": 1019.85,
+          "side_skew": 0.976
         }
       },
       "plain_english_brier": {
         "label": "Excellent",
         "tone": "good",
-        "note": "n=26 resolved"
+        "note": "n=82 resolved"
       },
       "traffic_light": {
         "light": "yellow",
         "phrase": "Strong wallet \u00b7 entry late \u00b7 watchlist only"
       },
       "reason_codes": [],
-      "composite_score": 55.0,
-      "trust_score_v0": 98.3,
+      "composite_score": 63.5,
+      "trust_score_v0": 97.8,
       "ranks": {
         "crypto_brier_lower": {
-          "rank": 4,
-          "of": 10,
-          "percentile": 66.7,
-          "norm": "rank 4/10 \u00b7 upper half",
-          "value": 0.0042
+          "rank": 3,
+          "of": 11,
+          "percentile": 80.0,
+          "norm": "rank 3/11 \u00b7 upper half",
+          "value": 0.0056
         },
         "overall_brier_lower": {
-          "rank": 3,
-          "of": 10,
-          "percentile": 77.8,
-          "norm": "rank 3/10 \u00b7 upper half",
-          "value": 0.0042
+          "rank": 2,
+          "of": 11,
+          "percentile": 90.0,
+          "norm": "rank 2/11 \u00b7 top 18%",
+          "value": 0.0056
         },
         "backtest_90d": {
-          "rank": 3,
-          "of": 10,
-          "percentile": 77.8,
-          "norm": "rank 3/10 \u00b7 upper half",
-          "value": 0.0555
+          "rank": 2,
+          "of": 11,
+          "percentile": 90.0,
+          "norm": "rank 2/11 \u00b7 top 18%",
+          "value": 0.0647
         },
         "drift_lower": {
-          "rank": 7,
-          "of": 10,
-          "percentile": 33.3,
-          "norm": "rank 7/10 \u00b7 lower half",
-          "value": -0.0027
+          "rank": 8,
+          "of": 11,
+          "percentile": 30.0,
+          "norm": "rank 8/11 \u00b7 lower half",
+          "value": -0.0042
         },
         "copy_smaller": {
-          "rank": 9,
-          "of": 10,
-          "percentile": 11.1,
-          "norm": "rank 9/10 \u00b7 lower half",
-          "value": 1004.78
+          "rank": 10,
+          "of": 11,
+          "percentile": 10.0,
+          "norm": "rank 10/11 \u00b7 lower half",
+          "value": 1019.85
         },
         "breadth_higher": {
-          "rank": 10,
-          "of": 10,
+          "rank": 11,
+          "of": 11,
           "percentile": 0.0,
-          "norm": "rank 10/10 \u00b7 lower half",
+          "norm": "rank 11/11 \u00b7 lower half",
           "value": 97
         },
         "specialty_higher": {
           "rank": 1,
-          "of": 10,
+          "of": 11,
           "percentile": 100.0,
-          "norm": "rank 1/10 \u00b7 best in cohort",
+          "norm": "rank 1/11 \u00b7 best in cohort",
           "value": 1.0
         },
         "extreme_higher": {
           "rank": 5,
-          "of": 10,
-          "percentile": 55.6,
-          "norm": "rank 5/10 \u00b7 upper half",
+          "of": 11,
+          "percentile": 60.0,
+          "norm": "rank 5/11 \u00b7 upper half",
           "value": 0.849
+        }
+      }
+    },
+    {
+      "wallet": "0x5371f1b6954e31c502064614649cea3568cb76eb",
+      "pseudonym": "Embellished-Observatory",
+      "name": "oegdatam",
+      "profile_image": "",
+      "thin_history": false,
+      "history_count": 758,
+      "overall_brier": {
+        "count": 94,
+        "mean_brier": 0.0029,
+        "volume_weighted_brier": 0.0038
+      },
+      "crypto_brier": {
+        "count": 94,
+        "mean_brier": 0.0029,
+        "volume_weighted_brier": 0.0038
+      },
+      "domain_counts": {
+        "Crypto": 94
+      },
+      "backtest_90d": {
+        "positions_count": 94,
+        "roi_per_dollar": 0.0424,
+        "cumulative_pnl_per_dollar": 3.9836
+      },
+      "median_trade_usd": 1345.26,
+      "max_trade_usd": 49445.17,
+      "copy_label": "Stretch \u00b7 mid-sized bankroll",
+      "drift": {
+        "first_half_brier": 0.0038,
+        "second_half_brier": 0.0019,
+        "delta": -0.0019,
+        "verdict": "stable"
+      },
+      "extreme_share": 0.896,
+      "contrarian_score": 0.896,
+      "crypto_specialty_share": 1.0,
+      "markets_breadth": 101,
+      "resolved_count": 94,
+      "btc_position": {
+        "primary_outcome": "No",
+        "primary_outcome_index": 1,
+        "yes_size": 0.0,
+        "no_size": 2446.8594,
+        "avg_buy_price_yes": null,
+        "avg_buy_price_no": 0.976256,
+        "volume_in_market_usd": 2388.76,
+        "trades_in_market": 1,
+        "first_ts": 1777359310,
+        "last_ts": 1777359310
+      },
+      "entry_gap": {
+        "avg_entry": 0.9763,
+        "current_price": 0.9865,
+        "diff_cents": 1.02,
+        "state": "late"
+      },
+      "copy_return_remaining": {
+        "customer_upside": 0.0135,
+        "wallet_upside": 0.0237,
+        "remaining_pct": 0.57,
+        "label": "limited"
+      },
+      "market_only_share": 0.008,
+      "recent_positions": [
+        {
+          "conditionId": "0xa0f4c4924ea1a8b410b4ce821c2a9955fad21a1b19bdcfde90816732278b3dd5",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will Bitcoin hit $150k by June 30, 2026?",
+          "eventSlug": "when-will-bitcoin-hit-150k",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+          "avg_buy_price": 0.975426,
+          "buy_size": 6440.5301,
+          "sell_size": 0.0,
+          "trade_count": 6,
+          "first_ts": 1775413877,
+          "last_ts": 1777359310,
+          "domain": "Crypto",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x1889ef2e34ca3dd4e9da9e49fb0a06e3a94e10297ce1a72933c6583eafcef437",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will XRP dip to $1.00 in April?",
+          "eventSlug": "what-price-will-xrp-hit-in-april-2026",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/XRP-logo.png",
+          "avg_buy_price": 0.969933,
+          "buy_size": 62714.202,
+          "sell_size": 0.0,
+          "trade_count": 25,
+          "first_ts": 1777056516,
+          "last_ts": 1777323730,
+          "domain": "Crypto",
+          "resolved": {
+            "winning_outcome_index": 1,
+            "actual": 1,
+            "brier": 0.000904,
+            "pnl_per_dollar": 0.030999,
+            "state": "resolved"
+          }
+        },
+        {
+          "conditionId": "0x752fa61c93f16c4b15e85b0bd438d9c684176b0ea7b319a84c8aca34616e8a8c",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will Bitcoin dip to $55,000 by December 31, 2026?",
+          "eventSlug": "what-price-will-bitcoin-hit-before-2027",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+          "avg_buy_price": 0.446473,
+          "buy_size": 15385.2283,
+          "sell_size": 0.0,
+          "trade_count": 6,
+          "first_ts": 1776432216,
+          "last_ts": 1777321770,
+          "domain": "Crypto",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x337ed4a919995ef9ba9d705b319055633a5dfdcb3ab97cf610009a7d11a9ade4",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Bitcoin all time high by June 30, 2026?",
+          "eventSlug": "bitcoin-all-time-high-by",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+          "avg_buy_price": 0.968847,
+          "buy_size": 9691.073,
+          "sell_size": 0.0,
+          "trade_count": 7,
+          "first_ts": 1776582818,
+          "last_ts": 1777321508,
+          "domain": "Crypto",
+          "resolved": null
+        },
+        {
+          "conditionId": "0xf326a07132ea27d151fade9df0424db7c5ee496b44e5f373a41b4f15431bfd97",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will Bitcoin dip to $65,000 in April?",
+          "eventSlug": "what-price-will-bitcoin-hit-in-april-2026",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+          "avg_buy_price": 0.970847,
+          "buy_size": 141207.1023,
+          "sell_size": 0.0,
+          "trade_count": 32,
+          "first_ts": 1777061668,
+          "last_ts": 1777297706,
+          "domain": "Crypto",
+          "resolved": {
+            "winning_outcome_index": 1,
+            "actual": 1,
+            "brier": 0.00085,
+            "pnl_per_dollar": 0.030028,
+            "state": "resolved"
+          }
+        },
+        {
+          "conditionId": "0xe6ca9df9502600d4f652a725babeff09cd2947974d18351c18a3ba86cc985c50",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will Bitcoin reach $90,000 in April?",
+          "eventSlug": "what-price-will-bitcoin-hit-in-april-2026",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+          "avg_buy_price": 0.973181,
+          "buy_size": 6403.2598,
+          "sell_size": 802.71,
+          "trade_count": 6,
+          "first_ts": 1775760495,
+          "last_ts": 1777238022,
+          "domain": "Crypto",
+          "resolved": {
+            "winning_outcome_index": 1,
+            "actual": 1,
+            "brier": 0.000719,
+            "pnl_per_dollar": 0.027558,
+            "state": "resolved"
+          }
+        },
+        {
+          "conditionId": "0xce3c54c3e773e8b3bf73e4c12af93205b21195d03b9c386e22f274b9acfc2c56",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will Bitcoin dip to $50,000 by December 31, 2026?",
+          "eventSlug": "what-price-will-bitcoin-hit-before-2027",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+          "avg_buy_price": 0.549337,
+          "buy_size": 84223.3456,
+          "sell_size": 0.0,
+          "trade_count": 25,
+          "first_ts": 1775910963,
+          "last_ts": 1777196204,
+          "domain": "Crypto",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x024b68f77bfc019341ee3db8f57c103334e4b9430bba4746d8c94aafd8b36fee",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will Bitcoin dip to $45,000 by December 31, 2026?",
+          "eventSlug": "what-price-will-bitcoin-hit-before-2027",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+          "avg_buy_price": 0.649884,
+          "buy_size": 36767.6669,
+          "sell_size": 0.0,
+          "trade_count": 11,
+          "first_ts": 1776373458,
+          "last_ts": 1777195906,
+          "domain": "Crypto",
+          "resolved": null
+        }
+      ],
+      "tier": "strong_crypto",
+      "archetype": {
+        "label": "Crypto \u00b7 extreme-price \u00b7 No-side \u00b7 specialist",
+        "confidence": "high",
+        "n_resolved": 94,
+        "features": {
+          "crypto_share": 1.0,
+          "extreme_share": 0.896,
+          "median_trade_usd": 1345.26,
+          "side_skew": 1.0
+        }
+      },
+      "plain_english_brier": {
+        "label": "Excellent",
+        "tone": "good",
+        "note": "n=94 resolved"
+      },
+      "traffic_light": {
+        "light": "yellow",
+        "phrase": "Strong wallet \u00b7 entry late \u00b7 watchlist only"
+      },
+      "reason_codes": [],
+      "composite_score": 63.5,
+      "trust_score_v0": 98.8,
+      "ranks": {
+        "crypto_brier_lower": {
+          "rank": 2,
+          "of": 11,
+          "percentile": 90.0,
+          "norm": "rank 2/11 \u00b7 top 18%",
+          "value": 0.0029
+        },
+        "overall_brier_lower": {
+          "rank": 1,
+          "of": 11,
+          "percentile": 100.0,
+          "norm": "rank 1/11 \u00b7 best in cohort",
+          "value": 0.0029
+        },
+        "backtest_90d": {
+          "rank": 4,
+          "of": 11,
+          "percentile": 70.0,
+          "norm": "rank 4/11 \u00b7 upper half",
+          "value": 0.0424
+        },
+        "drift_lower": {
+          "rank": 9,
+          "of": 11,
+          "percentile": 20.0,
+          "norm": "rank 9/11 \u00b7 lower half",
+          "value": -0.0019
+        },
+        "copy_smaller": {
+          "rank": 11,
+          "of": 11,
+          "percentile": 0.0,
+          "norm": "rank 11/11 \u00b7 lower half",
+          "value": 1345.26
+        },
+        "breadth_higher": {
+          "rank": 10,
+          "of": 11,
+          "percentile": 10.0,
+          "norm": "rank 10/11 \u00b7 lower half",
+          "value": 101
+        },
+        "specialty_higher": {
+          "rank": 2,
+          "of": 11,
+          "percentile": 90.0,
+          "norm": "rank 2/11 \u00b7 top 18%",
+          "value": 1.0
+        },
+        "extreme_higher": {
+          "rank": 3,
+          "of": 11,
+          "percentile": 80.0,
+          "norm": "rank 3/11 \u00b7 upper half",
+          "value": 0.896
         }
       }
     },
@@ -883,41 +890,41 @@
       "thin_history": false,
       "history_count": 3023,
       "overall_brier": {
-        "count": 389,
-        "mean_brier": 0.0112,
-        "volume_weighted_brier": 0.0018
+        "count": 1217,
+        "mean_brier": 0.0093,
+        "volume_weighted_brier": 0.0043
       },
       "crypto_brier": {
-        "count": 123,
-        "mean_brier": 0.0139,
-        "volume_weighted_brier": 0.0018
+        "count": 357,
+        "mean_brier": 0.0133,
+        "volume_weighted_brier": 0.0015
       },
       "domain_counts": {
-        "Other": 236,
-        "Politics": 13,
-        "Crypto": 123,
-        "Macro": 7,
-        "Sports": 10
+        "Other": 784,
+        "Crypto": 357,
+        "Politics": 25,
+        "Macro": 22,
+        "Sports": 29
       },
       "backtest_90d": {
-        "positions_count": 304,
-        "roi_per_dollar": -0.006,
-        "cumulative_pnl_per_dollar": -1.8373
+        "positions_count": 977,
+        "roi_per_dollar": 0.0184,
+        "cumulative_pnl_per_dollar": 17.9804
       },
       "median_trade_usd": 375.03,
       "max_trade_usd": 21014.54,
       "copy_label": "Stretch \u00b7 mid-sized bankroll",
       "drift": {
-        "first_half_brier": 0.0224,
-        "second_half_brier": 0.0,
-        "delta": -0.0223,
-        "verdict": "improving"
+        "first_half_brier": 0.0156,
+        "second_half_brier": 0.0031,
+        "delta": -0.0124,
+        "verdict": "stable"
       },
       "extreme_share": 0.982,
       "contrarian_score": 0.982,
-      "crypto_specialty_share": 0.316,
+      "crypto_specialty_share": 0.293,
       "markets_breadth": 1711,
-      "resolved_count": 389,
+      "resolved_count": 1217,
       "btc_position": {
         "primary_outcome": "No",
         "primary_outcome_index": 1,
@@ -1075,366 +1082,84 @@
       ],
       "tier": "strong_crypto",
       "archetype": {
-        "label": "Crypto-leaning \u00b7 extreme-price \u00b7 No-side \u00b7 generalist",
+        "label": "Generalist \u00b7 extreme-price \u00b7 No-side \u00b7 generalist",
         "confidence": "high",
-        "n_resolved": 389,
+        "n_resolved": 1217,
         "features": {
-          "crypto_share": 0.316,
+          "crypto_share": 0.293,
           "extreme_share": 0.982,
           "median_trade_usd": 375.03,
-          "side_skew": 0.609
+          "side_skew": 0.622
         }
       },
       "plain_english_brier": {
         "label": "Excellent",
         "tone": "good",
-        "note": "n=123 resolved"
+        "note": "n=357 resolved"
       },
       "traffic_light": {
         "light": "yellow",
         "phrase": "Strong wallet \u00b7 entry late \u00b7 watchlist only"
       },
       "reason_codes": [],
-      "composite_score": 52.2,
-      "trust_score_v0": 94.4,
+      "composite_score": 60.5,
+      "trust_score_v0": 94.7,
       "ranks": {
         "crypto_brier_lower": {
-          "rank": 6,
-          "of": 10,
-          "percentile": 44.4,
-          "norm": "rank 6/10 \u00b7 lower half",
-          "value": 0.0139
+          "rank": 5,
+          "of": 11,
+          "percentile": 60.0,
+          "norm": "rank 5/11 \u00b7 upper half",
+          "value": 0.0133
         },
         "overall_brier_lower": {
           "rank": 4,
-          "of": 10,
-          "percentile": 66.7,
-          "norm": "rank 4/10 \u00b7 upper half",
-          "value": 0.0112
+          "of": 11,
+          "percentile": 70.0,
+          "norm": "rank 4/11 \u00b7 upper half",
+          "value": 0.0093
         },
         "backtest_90d": {
-          "rank": 7,
-          "of": 10,
-          "percentile": 33.3,
-          "norm": "rank 7/10 \u00b7 lower half",
-          "value": -0.006
+          "rank": 5,
+          "of": 11,
+          "percentile": 60.0,
+          "norm": "rank 5/11 \u00b7 upper half",
+          "value": 0.0184
         },
         "drift_lower": {
-          "rank": 3,
-          "of": 10,
-          "percentile": 77.8,
-          "norm": "rank 3/10 \u00b7 upper half",
-          "value": -0.0223
+          "rank": 6,
+          "of": 11,
+          "percentile": 50.0,
+          "norm": "rank 6/11 \u00b7 lower half",
+          "value": -0.0124
         },
         "copy_smaller": {
-          "rank": 8,
-          "of": 10,
-          "percentile": 22.2,
-          "norm": "rank 8/10 \u00b7 lower half",
+          "rank": 9,
+          "of": 11,
+          "percentile": 20.0,
+          "norm": "rank 9/11 \u00b7 lower half",
           "value": 375.03
         },
         "breadth_higher": {
           "rank": 1,
-          "of": 10,
+          "of": 11,
           "percentile": 100.0,
-          "norm": "rank 1/10 \u00b7 best in cohort",
+          "norm": "rank 1/11 \u00b7 best in cohort",
           "value": 1711
         },
         "specialty_higher": {
-          "rank": 6,
-          "of": 10,
-          "percentile": 44.4,
-          "norm": "rank 6/10 \u00b7 lower half",
-          "value": 0.316
+          "rank": 7,
+          "of": 11,
+          "percentile": 40.0,
+          "norm": "rank 7/11 \u00b7 lower half",
+          "value": 0.293
         },
         "extreme_higher": {
           "rank": 1,
-          "of": 10,
+          "of": 11,
           "percentile": 100.0,
-          "norm": "rank 1/10 \u00b7 best in cohort",
+          "norm": "rank 1/11 \u00b7 best in cohort",
           "value": 0.982
-        }
-      }
-    },
-    {
-      "wallet": "0x42477970683d4d0a52ec7082fee5d760cc5591c4",
-      "pseudonym": "",
-      "name": "",
-      "profile_image": "",
-      "thin_history": false,
-      "history_count": 3500,
-      "overall_brier": {
-        "count": 136,
-        "mean_brier": 0.1175,
-        "volume_weighted_brier": 0.05
-      },
-      "crypto_brier": {
-        "count": 22,
-        "mean_brier": 0.01,
-        "volume_weighted_brier": 0.0002
-      },
-      "domain_counts": {
-        "Sports": 77,
-        "Politics": 24,
-        "Entertainment": 6,
-        "Crypto": 22,
-        "Macro": 4,
-        "Other": 3
-      },
-      "backtest_90d": {
-        "positions_count": 136,
-        "roi_per_dollar": -0.4476,
-        "cumulative_pnl_per_dollar": -60.8755
-      },
-      "median_trade_usd": 3.91,
-      "max_trade_usd": 31775.99,
-      "copy_label": "Easy \u00b7 retail-friendly",
-      "drift": {
-        "first_half_brier": 0.1265,
-        "second_half_brier": 0.1085,
-        "delta": -0.018,
-        "verdict": "stable"
-      },
-      "extreme_share": 0.549,
-      "contrarian_score": 0.549,
-      "crypto_specialty_share": 0.162,
-      "markets_breadth": 857,
-      "resolved_count": 136,
-      "btc_position": {
-        "primary_outcome": "Yes",
-        "primary_outcome_index": 0,
-        "yes_size": 18958.2301,
-        "no_size": 1716.4669,
-        "avg_buy_price_yes": 0.015598,
-        "avg_buy_price_no": 0.983964,
-        "volume_in_market_usd": 1977.31,
-        "trades_in_market": 75,
-        "first_ts": 1777682018,
-        "last_ts": 1778629922
-      },
-      "entry_gap": {
-        "avg_entry": 0.0156,
-        "current_price": 0.0135,
-        "diff_cents": -0.21,
-        "state": "aligned"
-      },
-      "copy_return_remaining": {
-        "customer_upside": 0.9865,
-        "wallet_upside": 0.9844,
-        "remaining_pct": 1.002,
-        "label": "ample"
-      },
-      "market_only_share": 0.022,
-      "recent_positions": [
-        {
-          "conditionId": "0x54e4fa7e8273740217108f56b1442bb7fb01a738bf6ed7449b8ef20a5a61caee",
-          "outcomeIndex": 1,
-          "outcome": "Legacy",
-          "title": "Counter-Strike: Astralis vs Legacy - Map 1 Winner",
-          "eventSlug": "cs2-ast10-lgc-2026-05-12",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/counter-strike-image-16c415c538.png",
-          "avg_buy_price": 0.78,
-          "buy_size": 249.1282,
-          "sell_size": 249.12,
-          "trade_count": 2,
-          "first_ts": 1778631324,
-          "last_ts": 1778632183,
-          "domain": "Sports",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x65f204a8ebbaa472d668cc4fdbe4dd45249405a7e0acea43b7930a216e5bfdc7",
-          "outcomeIndex": 1,
-          "outcome": "No",
-          "title": "Will Trump visit China by May 15?",
-          "eventSlug": "will-trump-visit-china-by",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-trump-visit-china-by-october-31-ujqWMja0Uizt.png",
-          "avg_buy_price": 0.0142,
-          "buy_size": 39285.882,
-          "sell_size": 3518.24,
-          "trade_count": 84,
-          "first_ts": 1777953034,
-          "last_ts": 1778631025,
-          "domain": "Politics",
-          "resolved": null
-        },
-        {
-          "conditionId": "0xad1e8e4ac8e9dfd420aa1d10a47e235342a7e682a69db2b538492614c49ec34e",
-          "outcomeIndex": 0,
-          "outcome": "Sabres",
-          "title": "Sabres vs. Canadiens",
-          "eventSlug": "nhl-buf-mon-2026-05-12",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/nhl.png",
-          "avg_buy_price": 0.28,
-          "buy_size": 27.7857,
-          "sell_size": 0.0,
-          "trade_count": 1,
-          "first_ts": 1778630906,
-          "last_ts": 1778630906,
-          "domain": "Sports",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x49fb406f7455392f2a4b502e6eeafabb37ac6d97a01a2d641157c1fb0e446c8a",
-          "outcomeIndex": 0,
-          "outcome": "Yes",
-          "title": "Will Solana reach $100 in May?",
-          "eventSlug": "what-price-will-solana-hit-in-may-2026",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/SOL-logo.png",
-          "avg_buy_price": 0.686529,
-          "buy_size": 684.2976,
-          "sell_size": 235.6,
-          "trade_count": 16,
-          "first_ts": 1778468511,
-          "last_ts": 1778630612,
-          "domain": "Crypto",
-          "resolved": null
-        },
-        {
-          "conditionId": "0xcdc9fdf7598f8328e710ab991b30551048a3384cd8d03796b8cf900cd10fad84",
-          "outcomeIndex": 0,
-          "outcome": "Yes",
-          "title": "Will Trump and Xi kiss at their summit?",
-          "eventSlug": "will-trump-and-xi-kiss-at-their-summit",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-trump-and-xi-kiss-at-their-summit-Lcju_6liHB_q.jpg",
-          "avg_buy_price": 0.006698,
-          "buy_size": 346.3643,
-          "sell_size": 0.0,
-          "trade_count": 1,
-          "first_ts": 1778630488,
-          "last_ts": 1778630488,
-          "domain": "Politics",
-          "resolved": null
-        },
-        {
-          "conditionId": "0xcecd1388983a8e8afebab7d3f9e226f894f74e1b03c5579e8c4afa7e6b0ab9f3",
-          "outcomeIndex": 0,
-          "outcome": "Yes",
-          "title": "Bill Clinton divorce by June 30?",
-          "eventSlug": "bill-clinton-divorce-by-june-30",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/bill-clinton-divorce-by-june-30-2bvY8TOrilIi.jpg",
-          "avg_buy_price": 0.019353,
-          "buy_size": 1341.3624,
-          "sell_size": 808.64,
-          "trade_count": 4,
-          "first_ts": 1778601053,
-          "last_ts": 1778630262,
-          "domain": "Politics",
-          "resolved": null
-        },
-        {
-          "conditionId": "0xa0f4c4924ea1a8b410b4ce821c2a9955fad21a1b19bdcfde90816732278b3dd5",
-          "outcomeIndex": 0,
-          "outcome": "Yes",
-          "title": "Will Bitcoin hit $150k by June 30, 2026?",
-          "eventSlug": "when-will-bitcoin-hit-150k",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
-          "avg_buy_price": 0.015867,
-          "buy_size": 15496.5288,
-          "sell_size": 3902.87,
-          "trade_count": 53,
-          "first_ts": 1776978918,
-          "last_ts": 1778629922,
-          "domain": "Crypto",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x476b81d77821facad72d4b1301a491c202e83c0bb8bd16456b4b510dc32f5dbc",
-          "outcomeIndex": 0,
-          "outcome": "Passion UA",
-          "title": "Counter-Strike: Passion UA vs Sinners - Map 2 Winner",
-          "eventSlug": "cs2-pssnua-sin2-2026-05-12",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/counter-strike-image-16c415c538.png",
-          "avg_buy_price": 0.765084,
-          "buy_size": 349.1775,
-          "sell_size": 0.0,
-          "trade_count": 1,
-          "first_ts": 1778629529,
-          "last_ts": 1778629529,
-          "domain": "Sports",
-          "resolved": null
-        }
-      ],
-      "tier": "strong_crypto",
-      "archetype": {
-        "label": "Generalist \u00b7 extreme-price \u00b7 retail \u00b7 generalist",
-        "confidence": "high",
-        "n_resolved": 136,
-        "features": {
-          "crypto_share": 0.162,
-          "extreme_share": 0.549,
-          "median_trade_usd": 3.91,
-          "side_skew": -0.279
-        }
-      },
-      "plain_english_brier": {
-        "label": "Excellent",
-        "tone": "good",
-        "note": "n=22 resolved"
-      },
-      "traffic_light": {
-        "light": "green",
-        "phrase": "Strong wallet \u00b7 good price \u00b7 watch and consider small copy"
-      },
-      "reason_codes": [],
-      "composite_score": 47.2,
-      "trust_score_v0": 96.0,
-      "ranks": {
-        "crypto_brier_lower": {
-          "rank": 5,
-          "of": 10,
-          "percentile": 55.6,
-          "norm": "rank 5/10 \u00b7 upper half",
-          "value": 0.01
-        },
-        "overall_brier_lower": {
-          "rank": 8,
-          "of": 10,
-          "percentile": 22.2,
-          "norm": "rank 8/10 \u00b7 lower half",
-          "value": 0.1175
-        },
-        "backtest_90d": {
-          "rank": 10,
-          "of": 10,
-          "percentile": 0.0,
-          "norm": "rank 10/10 \u00b7 lower half",
-          "value": -0.4476
-        },
-        "drift_lower": {
-          "rank": 4,
-          "of": 10,
-          "percentile": 66.7,
-          "norm": "rank 4/10 \u00b7 upper half",
-          "value": -0.018
-        },
-        "copy_smaller": {
-          "rank": 2,
-          "of": 10,
-          "percentile": 88.9,
-          "norm": "rank 2/10 \u00b7 top 20%",
-          "value": 3.91
-        },
-        "breadth_higher": {
-          "rank": 2,
-          "of": 10,
-          "percentile": 88.9,
-          "norm": "rank 2/10 \u00b7 top 20%",
-          "value": 857
-        },
-        "specialty_higher": {
-          "rank": 8,
-          "of": 10,
-          "percentile": 22.2,
-          "norm": "rank 8/10 \u00b7 lower half",
-          "value": 0.162
-        },
-        "extreme_higher": {
-          "rank": 8,
-          "of": 10,
-          "percentile": 22.2,
-          "norm": "rank 8/10 \u00b7 lower half",
-          "value": 0.549
         }
       }
     },
@@ -1444,44 +1169,44 @@
       "name": "chopin",
       "profile_image": "",
       "thin_history": false,
-      "history_count": 1018,
+      "history_count": 1022,
       "overall_brier": {
-        "count": 162,
-        "mean_brier": 0.0887,
-        "volume_weighted_brier": 0.0418
+        "count": 448,
+        "mean_brier": 0.0768,
+        "volume_weighted_brier": 0.0378
       },
       "crypto_brier": {
-        "count": 51,
-        "mean_brier": 0.1264,
-        "volume_weighted_brier": 0.0672
+        "count": 137,
+        "mean_brier": 0.1087,
+        "volume_weighted_brier": 0.0583
       },
       "domain_counts": {
-        "Sports": 50,
-        "Entertainment": 23,
-        "Crypto": 51,
-        "Politics": 20,
-        "Macro": 17,
-        "Other": 1
+        "Sports": 149,
+        "Entertainment": 63,
+        "Crypto": 137,
+        "Macro": 41,
+        "Politics": 53,
+        "Other": 5
       },
       "backtest_90d": {
-        "positions_count": 94,
-        "roi_per_dollar": -0.0303,
-        "cumulative_pnl_per_dollar": -2.8496
+        "positions_count": 244,
+        "roi_per_dollar": -0.0539,
+        "cumulative_pnl_per_dollar": -13.1478
       },
       "median_trade_usd": 100.0,
       "max_trade_usd": 3000.0,
       "copy_label": "Mirrorable \u00b7 standard sizes",
       "drift": {
-        "first_half_brier": 0.1025,
-        "second_half_brier": 0.0748,
-        "delta": -0.0277,
+        "first_half_brier": 0.1032,
+        "second_half_brier": 0.0504,
+        "delta": -0.0528,
         "verdict": "improving"
       },
       "extreme_share": 0.727,
       "contrarian_score": 0.727,
-      "crypto_specialty_share": 0.315,
-      "markets_breadth": 515,
-      "resolved_count": 162,
+      "crypto_specialty_share": 0.306,
+      "markets_breadth": 517,
+      "resolved_count": 448,
       "btc_position": {
         "primary_outcome": "No",
         "primary_outcome_index": 1,
@@ -1508,6 +1233,70 @@
       },
       "market_only_share": 0.002,
       "recent_positions": [
+        {
+          "conditionId": "0xfbb9e922b7dbbb4aa5253d98203d5593a93b59599447aff02354ecafbe19b916",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will Elon Musk win his case against Sam Altman?",
+          "eventSlug": "will-elon-musk-win-his-case-against-sam-altman",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-elon-musk-win-his-case-against-sam-altman-3b7rjuMNHGHy.jpg",
+          "avg_buy_price": 0.651827,
+          "buy_size": 84.3783,
+          "sell_size": 0.0,
+          "trade_count": 2,
+          "first_ts": 1778374088,
+          "last_ts": 1778635647,
+          "domain": "Politics",
+          "resolved": null
+        },
+        {
+          "conditionId": "0xa02a44b5ea09939795abf91b6f93906a2330c22a078b6d96827b7e7b5c57d689",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will Elon Musk post 20-39 tweets from May 12 to May 19, 2026?",
+          "eventSlug": "elon-musk-of-tweets-may-12-may-19",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/elon-musk-of-tweets-nov-22-29-apMPG21-pzx_.jpg",
+          "avg_buy_price": null,
+          "buy_size": 0.0,
+          "sell_size": 200.0,
+          "trade_count": 1,
+          "first_ts": 1778635559,
+          "last_ts": 1778635559,
+          "domain": "Entertainment",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x61929dda3307755fb9db66fd43c99a74ca200780f725e07f7b9ab83d55035175",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will Elon Musk post 40-59 tweets from May 12 to May 19, 2026?",
+          "eventSlug": "elon-musk-of-tweets-may-12-may-19",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/elon-musk-of-tweets-nov-22-29-apMPG21-pzx_.jpg",
+          "avg_buy_price": 0.999,
+          "buy_size": 100.1,
+          "sell_size": 100.1,
+          "trade_count": 2,
+          "first_ts": 1778379777,
+          "last_ts": 1778635545,
+          "domain": "Entertainment",
+          "resolved": null
+        },
+        {
+          "conditionId": "0xe9e3d24aaeb9a3cadc276f2696b916d8c9b47b6737c0112d9699899880acda1d",
+          "outcomeIndex": 1,
+          "outcome": "Spurs",
+          "title": "Timberwolves vs. Spurs",
+          "eventSlug": "nba-min-sas-2026-05-12",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/super+cool+basketball+in+red+and+blue+wow.png",
+          "avg_buy_price": 0.9,
+          "buy_size": 22.2222,
+          "sell_size": 0.0,
+          "trade_count": 1,
+          "first_ts": 1778635388,
+          "last_ts": 1778635388,
+          "domain": "Sports",
+          "resolved": null
+        },
         {
           "conditionId": "0xd9fb1184af0064e5e34b129f5b79afa5a17b7e32f2953ab05efed82315fee6d4",
           "outcomeIndex": 1,
@@ -1571,151 +1360,87 @@
           "last_ts": 1778477637,
           "domain": "Macro",
           "resolved": null
-        },
-        {
-          "conditionId": "0x83317def163de692b6221b4f63552dba5db71723698da4467b4eadfd00162dc2",
-          "outcomeIndex": 1,
-          "outcome": "No",
-          "title": "Will BNB dip to $400 in May?",
-          "eventSlug": "what-price-will-bnb-hit-in-may",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/bnb-all-time-high-by-december-31-MRsmG1FSYuSN.png",
-          "avg_buy_price": 0.993,
-          "buy_size": 100.7049,
-          "sell_size": 0.0,
-          "trade_count": 1,
-          "first_ts": 1778477590,
-          "last_ts": 1778477590,
-          "domain": "Crypto",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x9affeb38bce1e9a6de30e9ecada1ecfaf636574d3961cf3b9177299786214234",
-          "outcomeIndex": 1,
-          "outcome": "No",
-          "title": "Will Bitcoin reach $170,000 by December 31, 2026?",
-          "eventSlug": "what-price-will-bitcoin-hit-before-2027",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
-          "avg_buy_price": 0.92,
-          "buy_size": 326.087,
-          "sell_size": 163.04,
-          "trade_count": 3,
-          "first_ts": 1770781659,
-          "last_ts": 1778477445,
-          "domain": "Crypto",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x97947fe256c481e0f651723674a93ecf35c3999f782b56f41b40c31cb78b2af4",
-          "outcomeIndex": 1,
-          "outcome": "No",
-          "title": "Will Bitcoin reach $150,000 in May?",
-          "eventSlug": "what-price-will-bitcoin-hit-in-may-2026",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
-          "avg_buy_price": 0.9965,
-          "buy_size": 4014.05,
-          "sell_size": 0.0,
-          "trade_count": 4,
-          "first_ts": 1777730064,
-          "last_ts": 1778477417,
-          "domain": "Crypto",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x4cb0649062be5d361ff07c9d54e3741ae4f515d64b000c91e48a3353a7330d59",
-          "outcomeIndex": 1,
-          "outcome": "No",
-          "title": "Will Elon Musk post 0-19 tweets from May 12 to May 19, 2026?",
-          "eventSlug": "elon-musk-of-tweets-may-12-may-19",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/elon-musk-of-tweets-nov-22-29-apMPG21-pzx_.jpg",
-          "avg_buy_price": 0.999,
-          "buy_size": 300.3,
-          "sell_size": 0.0,
-          "trade_count": 1,
-          "first_ts": 1778477265,
-          "last_ts": 1778477265,
-          "domain": "Entertainment",
-          "resolved": null
         }
       ],
       "tier": "strong_crypto",
       "archetype": {
         "label": "Crypto-leaning \u00b7 extreme-price \u00b7 generalist",
         "confidence": "high",
-        "n_resolved": 162,
+        "n_resolved": 448,
         "features": {
-          "crypto_share": 0.315,
+          "crypto_share": 0.306,
           "extreme_share": 0.727,
           "median_trade_usd": 100.0,
-          "side_skew": 0.099
+          "side_skew": 0.054
         }
       },
       "plain_english_brier": {
         "label": "Decent",
         "tone": "ok",
-        "note": "n=51 resolved"
+        "note": "n=137 resolved"
       },
       "traffic_light": {
         "light": "yellow",
         "phrase": "Strong wallet \u00b7 entry late \u00b7 watchlist only"
       },
       "reason_codes": [],
-      "composite_score": 39.4,
-      "trust_score_v0": 49.4,
+      "composite_score": 48.5,
+      "trust_score_v0": 56.5,
       "ranks": {
         "crypto_brier_lower": {
           "rank": 8,
-          "of": 10,
-          "percentile": 22.2,
-          "norm": "rank 8/10 \u00b7 lower half",
-          "value": 0.1264
+          "of": 11,
+          "percentile": 30.0,
+          "norm": "rank 8/11 \u00b7 lower half",
+          "value": 0.1087
         },
         "overall_brier_lower": {
           "rank": 7,
-          "of": 10,
-          "percentile": 33.3,
-          "norm": "rank 7/10 \u00b7 lower half",
-          "value": 0.0887
+          "of": 11,
+          "percentile": 40.0,
+          "norm": "rank 7/11 \u00b7 lower half",
+          "value": 0.0768
         },
         "backtest_90d": {
-          "rank": 8,
-          "of": 10,
-          "percentile": 22.2,
-          "norm": "rank 8/10 \u00b7 lower half",
-          "value": -0.0303
+          "rank": 7,
+          "of": 11,
+          "percentile": 40.0,
+          "norm": "rank 7/11 \u00b7 lower half",
+          "value": -0.0539
         },
         "drift_lower": {
-          "rank": 2,
-          "of": 10,
-          "percentile": 88.9,
-          "norm": "rank 2/10 \u00b7 top 20%",
-          "value": -0.0277
+          "rank": 1,
+          "of": 11,
+          "percentile": 100.0,
+          "norm": "rank 1/11 \u00b7 best in cohort",
+          "value": -0.0528
         },
         "copy_smaller": {
           "rank": 4,
-          "of": 10,
-          "percentile": 66.7,
-          "norm": "rank 4/10 \u00b7 upper half",
+          "of": 11,
+          "percentile": 70.0,
+          "norm": "rank 4/11 \u00b7 upper half",
           "value": 100.0
         },
         "breadth_higher": {
           "rank": 4,
-          "of": 10,
-          "percentile": 66.7,
-          "norm": "rank 4/10 \u00b7 upper half",
-          "value": 515
+          "of": 11,
+          "percentile": 70.0,
+          "norm": "rank 4/11 \u00b7 upper half",
+          "value": 517
         },
         "specialty_higher": {
-          "rank": 7,
-          "of": 10,
-          "percentile": 33.3,
-          "norm": "rank 7/10 \u00b7 lower half",
-          "value": 0.315
+          "rank": 6,
+          "of": 11,
+          "percentile": 50.0,
+          "norm": "rank 6/11 \u00b7 lower half",
+          "value": 0.306
         },
         "extreme_higher": {
           "rank": 6,
-          "of": 10,
-          "percentile": 44.4,
-          "norm": "rank 6/10 \u00b7 lower half",
+          "of": 11,
+          "percentile": 50.0,
+          "norm": "rank 6/11 \u00b7 lower half",
           "value": 0.727
         }
       }
@@ -1728,42 +1453,42 @@
       "thin_history": false,
       "history_count": 455,
       "overall_brier": {
-        "count": 49,
-        "mean_brier": 0.0288,
-        "volume_weighted_brier": 0.0123
+        "count": 189,
+        "mean_brier": 0.0249,
+        "volume_weighted_brier": 0.0098
       },
       "crypto_brier": {
-        "count": 20,
-        "mean_brier": 0.0353,
-        "volume_weighted_brier": 0.0354
+        "count": 83,
+        "mean_brier": 0.0271,
+        "volume_weighted_brier": 0.0125
       },
       "domain_counts": {
-        "Entertainment": 16,
+        "Entertainment": 71,
+        "Politics": 15,
         "Sports": 1,
-        "Crypto": 20,
-        "Politics": 5,
-        "Macro": 6,
-        "Other": 1
+        "Crypto": 83,
+        "Other": 5,
+        "Macro": 14
       },
       "backtest_90d": {
-        "positions_count": 25,
-        "roi_per_dollar": -0.1113,
-        "cumulative_pnl_per_dollar": -2.782
+        "positions_count": 101,
+        "roi_per_dollar": -0.0685,
+        "cumulative_pnl_per_dollar": -6.9215
       },
       "median_trade_usd": 108.67,
       "max_trade_usd": 8970.51,
       "copy_label": "Mirrorable \u00b7 standard sizes",
       "drift": {
-        "first_half_brier": 0.0327,
-        "second_half_brier": 0.0251,
-        "delta": -0.0075,
+        "first_half_brier": 0.0283,
+        "second_half_brier": 0.0215,
+        "delta": -0.0068,
         "verdict": "stable"
       },
       "extreme_share": 0.866,
       "contrarian_score": 0.866,
-      "crypto_specialty_share": 0.408,
+      "crypto_specialty_share": 0.439,
       "markets_breadth": 217,
-      "resolved_count": 49,
+      "resolved_count": 189,
       "btc_position": {
         "primary_outcome": "No",
         "primary_outcome_index": 1,
@@ -1916,89 +1641,377 @@
           "first_ts": 1778053904,
           "last_ts": 1778080185,
           "domain": "Entertainment",
-          "resolved": null
+          "resolved": {
+            "winning_outcome_index": 1,
+            "actual": 1,
+            "brier": 0.005936,
+            "pnl_per_dollar": 0.083476,
+            "state": "resolved"
+          }
         }
       ],
       "tier": "strong_crypto",
       "archetype": {
-        "label": "Crypto-leaning \u00b7 extreme-price \u00b7 generalist",
-        "confidence": "medium",
-        "n_resolved": 49,
+        "label": "Crypto-leaning \u00b7 extreme-price \u00b7 No-side \u00b7 generalist",
+        "confidence": "high",
+        "n_resolved": 189,
         "features": {
-          "crypto_share": 0.408,
+          "crypto_share": 0.439,
           "extreme_share": 0.866,
           "median_trade_usd": 108.67,
-          "side_skew": 0.265
+          "side_skew": 0.333
         }
       },
       "plain_english_brier": {
         "label": "Excellent",
         "tone": "good",
-        "note": "n=20 resolved"
+        "note": "n=83 resolved"
       },
       "traffic_light": {
         "light": "yellow",
         "phrase": "Strong wallet \u00b7 entry late \u00b7 watchlist only"
       },
       "reason_codes": [],
-      "composite_score": 35.5,
-      "trust_score_v0": 85.9,
+      "composite_score": 46.5,
+      "trust_score_v0": 89.2,
       "ranks": {
         "crypto_brier_lower": {
-          "rank": 7,
-          "of": 10,
-          "percentile": 33.3,
-          "norm": "rank 7/10 \u00b7 lower half",
-          "value": 0.0353
+          "rank": 6,
+          "of": 11,
+          "percentile": 50.0,
+          "norm": "rank 6/11 \u00b7 lower half",
+          "value": 0.0271
         },
         "overall_brier_lower": {
           "rank": 5,
-          "of": 10,
-          "percentile": 55.6,
-          "norm": "rank 5/10 \u00b7 upper half",
-          "value": 0.0288
+          "of": 11,
+          "percentile": 60.0,
+          "norm": "rank 5/11 \u00b7 upper half",
+          "value": 0.0249
         },
         "backtest_90d": {
-          "rank": 9,
-          "of": 10,
-          "percentile": 11.1,
-          "norm": "rank 9/10 \u00b7 lower half",
-          "value": -0.1113
+          "rank": 8,
+          "of": 11,
+          "percentile": 30.0,
+          "norm": "rank 8/11 \u00b7 lower half",
+          "value": -0.0685
         },
         "drift_lower": {
-          "rank": 6,
-          "of": 10,
-          "percentile": 44.4,
-          "norm": "rank 6/10 \u00b7 lower half",
-          "value": -0.0075
+          "rank": 7,
+          "of": 11,
+          "percentile": 40.0,
+          "norm": "rank 7/11 \u00b7 lower half",
+          "value": -0.0068
         },
         "copy_smaller": {
           "rank": 5,
-          "of": 10,
-          "percentile": 55.6,
-          "norm": "rank 5/10 \u00b7 upper half",
+          "of": 11,
+          "percentile": 60.0,
+          "norm": "rank 5/11 \u00b7 upper half",
           "value": 108.67
         },
         "breadth_higher": {
           "rank": 7,
-          "of": 10,
-          "percentile": 33.3,
-          "norm": "rank 7/10 \u00b7 lower half",
+          "of": 11,
+          "percentile": 40.0,
+          "norm": "rank 7/11 \u00b7 lower half",
           "value": 217
         },
         "specialty_higher": {
           "rank": 5,
-          "of": 10,
-          "percentile": 55.6,
-          "norm": "rank 5/10 \u00b7 upper half",
-          "value": 0.408
+          "of": 11,
+          "percentile": 60.0,
+          "norm": "rank 5/11 \u00b7 upper half",
+          "value": 0.439
         },
         "extreme_higher": {
           "rank": 4,
-          "of": 10,
-          "percentile": 66.7,
-          "norm": "rank 4/10 \u00b7 upper half",
+          "of": 11,
+          "percentile": 70.0,
+          "norm": "rank 4/11 \u00b7 upper half",
           "value": 0.866
+        }
+      }
+    },
+    {
+      "wallet": "0x42477970683d4d0a52ec7082fee5d760cc5591c4",
+      "pseudonym": "",
+      "name": "",
+      "profile_image": "",
+      "thin_history": false,
+      "history_count": 3500,
+      "overall_brier": {
+        "count": 390,
+        "mean_brier": 0.1261,
+        "volume_weighted_brier": 0.0196
+      },
+      "crypto_brier": {
+        "count": 56,
+        "mean_brier": 0.0378,
+        "volume_weighted_brier": 0.0011
+      },
+      "domain_counts": {
+        "Entertainment": 34,
+        "Sports": 212,
+        "Politics": 71,
+        "Macro": 6,
+        "Crypto": 56,
+        "Other": 11
+      },
+      "backtest_90d": {
+        "positions_count": 390,
+        "roi_per_dollar": -0.351,
+        "cumulative_pnl_per_dollar": -136.8937
+      },
+      "median_trade_usd": 3.91,
+      "max_trade_usd": 31775.99,
+      "copy_label": "Easy \u00b7 retail-friendly",
+      "drift": {
+        "first_half_brier": 0.1464,
+        "second_half_brier": 0.1058,
+        "delta": -0.0406,
+        "verdict": "improving"
+      },
+      "extreme_share": 0.551,
+      "contrarian_score": 0.551,
+      "crypto_specialty_share": 0.144,
+      "markets_breadth": 844,
+      "resolved_count": 390,
+      "btc_position": {
+        "primary_outcome": "Yes",
+        "primary_outcome_index": 0,
+        "yes_size": 18958.2301,
+        "no_size": 2456.4567,
+        "avg_buy_price_yes": 0.015598,
+        "avg_buy_price_no": 0.984899,
+        "volume_in_market_usd": 2708.05,
+        "trades_in_market": 80,
+        "first_ts": 1777682018,
+        "last_ts": 1778645709
+      },
+      "entry_gap": {
+        "avg_entry": 0.0156,
+        "current_price": 0.0135,
+        "diff_cents": -0.21,
+        "state": "aligned"
+      },
+      "copy_return_remaining": {
+        "customer_upside": 0.9865,
+        "wallet_upside": 0.9844,
+        "remaining_pct": 1.002,
+        "label": "ample"
+      },
+      "market_only_share": 0.024,
+      "recent_positions": [
+        {
+          "conditionId": "0xa2333934993e8cdd616f29c7747a620745a817ae0ff0babce9be881f400068cd",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will Donald Trump visit China on May 13, 2026?",
+          "eventSlug": "will-trump-visit-china-on",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-trump-visit-china-by-october-31-ujqWMja0Uizt.png",
+          "avg_buy_price": 0.046679,
+          "buy_size": 2415.6265,
+          "sell_size": 164.03,
+          "trade_count": 20,
+          "first_ts": 1778336860,
+          "last_ts": 1778649822,
+          "domain": "Politics",
+          "resolved": null
+        },
+        {
+          "conditionId": "0xcd215b8330a35098a1a3f6c46b6492347edb5e74c1e0a95ac4d3d54aece6c262",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will Trump visit China by May 31?",
+          "eventSlug": "will-trump-visit-china-by",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-trump-visit-china-by-october-31-ujqWMja0Uizt.png",
+          "avg_buy_price": 0.003863,
+          "buy_size": 58321.2846,
+          "sell_size": 2646.57,
+          "trade_count": 56,
+          "first_ts": 1778083064,
+          "last_ts": 1778649260,
+          "domain": "Politics",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x65f204a8ebbaa472d668cc4fdbe4dd45249405a7e0acea43b7930a216e5bfdc7",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will Trump visit China by May 15?",
+          "eventSlug": "will-trump-visit-china-by",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-trump-visit-china-by-october-31-ujqWMja0Uizt.png",
+          "avg_buy_price": 0.008706,
+          "buy_size": 67295.882,
+          "sell_size": 3518.24,
+          "trade_count": 91,
+          "first_ts": 1777953034,
+          "last_ts": 1778647811,
+          "domain": "Politics",
+          "resolved": null
+        },
+        {
+          "conditionId": "0xaaacff0f7424b38e61ee5c5b2ea9d7335d0553eca2afb874267cd94c54a11925",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will Trump visit China by June 30?",
+          "eventSlug": "will-trump-visit-china-by",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-trump-visit-china-by-october-31-ujqWMja0Uizt.png",
+          "avg_buy_price": 0.007659,
+          "buy_size": 28771.6825,
+          "sell_size": 2761.05,
+          "trade_count": 34,
+          "first_ts": 1777707812,
+          "last_ts": 1778647790,
+          "domain": "Politics",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x3535fb2f4aef6619dde8b367cb5e5d209526bb496d5d9778428c58a0252435e3",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Will Zohran Mamdani win the 2028 Democratic presidential nomination?",
+          "eventSlug": "democratic-presidential-nominee-2028",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Zohran_Mamdani.png",
+          "avg_buy_price": 0.008,
+          "buy_size": 815.0,
+          "sell_size": 815.0,
+          "trade_count": 2,
+          "first_ts": 1778229850,
+          "last_ts": 1778647291,
+          "domain": "Politics",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x2cd24d17f5680dc6e7b7d67c712a223ae85550745597e81bd2d2b8d073443951",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Will Roberto S\u00e1nchez Palomino win the 2026 Peruvian presidential election?",
+          "eventSlug": "peru-presidential-election-winner",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election-mF4hJyaSxWsY.jpg",
+          "avg_buy_price": 0.358185,
+          "buy_size": 246.9118,
+          "sell_size": 0.0,
+          "trade_count": 7,
+          "first_ts": 1778122995,
+          "last_ts": 1778645860,
+          "domain": "Politics",
+          "resolved": null
+        },
+        {
+          "conditionId": "0xa0f4c4924ea1a8b410b4ce821c2a9955fad21a1b19bdcfde90816732278b3dd5",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will Bitcoin hit $150k by June 30, 2026?",
+          "eventSlug": "when-will-bitcoin-hit-150k",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+          "avg_buy_price": 0.984899,
+          "buy_size": 1597.6967,
+          "sell_size": 858.76,
+          "trade_count": 30,
+          "first_ts": 1777682018,
+          "last_ts": 1778645709,
+          "domain": "Crypto",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x2c81281d5829b3bf09440bfbeec7930fb7d9520234a1b96e38b45d28760cd7d9",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Will Trump Leave China on May 16?",
+          "eventSlug": "when-will-trump-leave-china",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/when-will-trump-leave-china-rmZ8n2FKq0LS.jpg",
+          "avg_buy_price": 0.022889,
+          "buy_size": 90.0,
+          "sell_size": 0.0,
+          "trade_count": 1,
+          "first_ts": 1778645319,
+          "last_ts": 1778645319,
+          "domain": "Politics",
+          "resolved": null
+        }
+      ],
+      "tier": "strong_crypto",
+      "archetype": {
+        "label": "Generalist \u00b7 extreme-price \u00b7 retail \u00b7 generalist",
+        "confidence": "high",
+        "n_resolved": 390,
+        "features": {
+          "crypto_share": 0.144,
+          "extreme_share": 0.551,
+          "median_trade_usd": 3.91,
+          "side_skew": -0.221
+        }
+      },
+      "plain_english_brier": {
+        "label": "Excellent",
+        "tone": "good",
+        "note": "n=56 resolved"
+      },
+      "traffic_light": {
+        "light": "green",
+        "phrase": "Strong wallet \u00b7 good price \u00b7 watch and consider small copy"
+      },
+      "reason_codes": [],
+      "composite_score": 42.5,
+      "trust_score_v0": 84.9,
+      "ranks": {
+        "crypto_brier_lower": {
+          "rank": 7,
+          "of": 11,
+          "percentile": 40.0,
+          "norm": "rank 7/11 \u00b7 lower half",
+          "value": 0.0378
+        },
+        "overall_brier_lower": {
+          "rank": 10,
+          "of": 11,
+          "percentile": 10.0,
+          "norm": "rank 10/11 \u00b7 lower half",
+          "value": 0.1261
+        },
+        "backtest_90d": {
+          "rank": 11,
+          "of": 11,
+          "percentile": 0.0,
+          "norm": "rank 11/11 \u00b7 lower half",
+          "value": -0.351
+        },
+        "drift_lower": {
+          "rank": 2,
+          "of": 11,
+          "percentile": 90.0,
+          "norm": "rank 2/11 \u00b7 top 18%",
+          "value": -0.0406
+        },
+        "copy_smaller": {
+          "rank": 2,
+          "of": 11,
+          "percentile": 90.0,
+          "norm": "rank 2/11 \u00b7 top 18%",
+          "value": 3.91
+        },
+        "breadth_higher": {
+          "rank": 2,
+          "of": 11,
+          "percentile": 90.0,
+          "norm": "rank 2/11 \u00b7 top 18%",
+          "value": 844
+        },
+        "specialty_higher": {
+          "rank": 9,
+          "of": 11,
+          "percentile": 20.0,
+          "norm": "rank 9/11 \u00b7 lower half",
+          "value": 0.144
+        },
+        "extreme_higher": {
+          "rank": 9,
+          "of": 11,
+          "percentile": 20.0,
+          "norm": "rank 9/11 \u00b7 lower half",
+          "value": 0.551
         }
       }
     },
@@ -2010,38 +2023,38 @@
       "thin_history": false,
       "history_count": 3500,
       "overall_brier": {
-        "count": 80,
-        "mean_brier": 0.1827,
-        "volume_weighted_brier": 0.0597
+        "count": 305,
+        "mean_brier": 0.1773,
+        "volume_weighted_brier": 0.1389
       },
       "crypto_brier": {
-        "count": 70,
-        "mean_brier": 0.1776,
-        "volume_weighted_brier": 0.0587
+        "count": 282,
+        "mean_brier": 0.175,
+        "volume_weighted_brier": 0.1386
       },
       "domain_counts": {
-        "Crypto": 70,
-        "Sports": 10
+        "Crypto": 282,
+        "Sports": 23
       },
       "backtest_90d": {
-        "positions_count": 80,
-        "roi_per_dollar": 0.0248,
-        "cumulative_pnl_per_dollar": 1.9825
+        "positions_count": 305,
+        "roi_per_dollar": 0.0178,
+        "cumulative_pnl_per_dollar": 5.4281
       },
-      "median_trade_usd": 3.4,
+      "median_trade_usd": 3.39,
       "max_trade_usd": 1469.27,
       "copy_label": "Easy \u00b7 retail-friendly",
       "drift": {
-        "first_half_brier": 0.1915,
-        "second_half_brier": 0.174,
-        "delta": -0.0174,
+        "first_half_brier": 0.1858,
+        "second_half_brier": 0.1689,
+        "delta": -0.0169,
         "verdict": "stable"
       },
-      "extreme_share": 0.281,
-      "contrarian_score": 0.281,
-      "crypto_specialty_share": 0.875,
-      "markets_breadth": 402,
-      "resolved_count": 80,
+      "extreme_share": 0.282,
+      "contrarian_score": 0.282,
+      "crypto_specialty_share": 0.925,
+      "markets_breadth": 403,
+      "resolved_count": 305,
       "btc_position": {
         "primary_outcome": "No",
         "primary_outcome_index": 1,
@@ -2068,6 +2081,102 @@
       },
       "market_only_share": 0.0,
       "recent_positions": [
+        {
+          "conditionId": "0x1167ff40fdec61c475580f80421c7e32b29b6d4f1b5c91217057fe0aed77521a",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Will San Diego FC win the 2026 MLS Cup?",
+          "eventSlug": "mls-cup-winner-2026",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/major-league-soccer-mls-cup-winner-dzEu6SuEjvrE.jpg",
+          "avg_buy_price": null,
+          "buy_size": 0.0,
+          "sell_size": 26.0,
+          "trade_count": 1,
+          "first_ts": 1778647041,
+          "last_ts": 1778647041,
+          "domain": "Sports",
+          "resolved": null
+        },
+        {
+          "conditionId": "0xbfe96d50581032d229cd39c8d61317fc05cb3314bbdd568e856a89d79ee03a9b",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Will The Weeknd be the Billboard #1 top artist in 2026?",
+          "eventSlug": "billboard-1-artist-2026",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/billboard-1-artist-2026-3b1HSIngfuv5.jpg",
+          "avg_buy_price": null,
+          "buy_size": 0.0,
+          "sell_size": 3.2,
+          "trade_count": 1,
+          "first_ts": 1778647037,
+          "last_ts": 1778647037,
+          "domain": "Entertainment",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x909659c9436228e2be56d5582ba6188166f2f8bf3c596335512c8f2e380d01ec",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Will Kamala Harris win the 2028 Democratic presidential nomination?",
+          "eventSlug": "democratic-presidential-nominee-2028",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-kamala-harris-win-the-2028-us-presidential-election-9XuXzOE7K1B1.png",
+          "avg_buy_price": null,
+          "buy_size": 0.0,
+          "sell_size": 15.0,
+          "trade_count": 1,
+          "first_ts": 1778647036,
+          "last_ts": 1778647036,
+          "domain": "Politics",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x23d6498682e9ab4f6d21fa2b2a762dc72507473a1fd08991202ee4b432c1911b",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Solstice FDV above $400M one day after launch?",
+          "eventSlug": "solstice-fdv-above-one-day-after-launch",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-solstice-launch-a-token-by-6xdUTCnxokbI.png",
+          "avg_buy_price": null,
+          "buy_size": 0.0,
+          "sell_size": 25.0,
+          "trade_count": 1,
+          "first_ts": 1778647032,
+          "last_ts": 1778647032,
+          "domain": "Crypto",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x3b08ae92e63b8d3c505a66f5b64979469cdf907894510f11b4cf5b2c7ac3dd27",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Will San Jose Earthquakes win the 2026 MLS Cup?",
+          "eventSlug": "mls-cup-winner-2026",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/major-league-soccer-mls-cup-winner-dzEu6SuEjvrE.jpg",
+          "avg_buy_price": null,
+          "buy_size": 0.0,
+          "sell_size": 34.0,
+          "trade_count": 1,
+          "first_ts": 1778647030,
+          "last_ts": 1778647030,
+          "domain": "Sports",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x0f3062f421a43ab9af2f3dc9c3eef48e2aab38a4c9858aca7651947642c4c964",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will the next diplomatic US-Iran meeting be in Pakistan?",
+          "eventSlug": "where-will-the-next-us-iran-diplomatic-meeting-happen-455",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-x-iran-meeting-by-9btZGbUg-ikA.jpg",
+          "avg_buy_price": null,
+          "buy_size": 0.0,
+          "sell_size": 7.0,
+          "trade_count": 1,
+          "first_ts": 1778647029,
+          "last_ts": 1778647029,
+          "domain": "Politics",
+          "resolved": null
+        },
         {
           "conditionId": "0x46be817d766d088a3f01b4a4e386456f9f36310640441a3c6b5d48e19ba9dbfd",
           "outcomeIndex": 0,
@@ -2099,467 +2208,88 @@
           "last_ts": 1778045206,
           "domain": "Crypto",
           "resolved": null
-        },
-        {
-          "conditionId": "0x46a5790bb3836056a98034b002b0334e7ee17d059803a44862dd3c7dcb0759e5",
-          "outcomeIndex": 1,
-          "outcome": "Down",
-          "title": "Bitcoin Up or Down - May 6, 1:25AM-1:30AM ET",
-          "eventSlug": "btc-updown-5m-1778045100",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
-          "avg_buy_price": 0.447717,
-          "buy_size": 153.62,
-          "sell_size": 0.0,
-          "trade_count": 4,
-          "first_ts": 1778045174,
-          "last_ts": 1778045174,
-          "domain": "Crypto",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x40356df247022b5bbc718dd8dd786527ecd39e7da233d5212c1fc094c3ad9b3d",
-          "outcomeIndex": 1,
-          "outcome": "Down",
-          "title": "Bitcoin Up or Down - May 6, 1:15AM-1:20AM ET",
-          "eventSlug": "btc-updown-5m-1778044500",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
-          "avg_buy_price": 0.52539,
-          "buy_size": 114.0,
-          "sell_size": 0.0,
-          "trade_count": 4,
-          "first_ts": 1778044628,
-          "last_ts": 1778044696,
-          "domain": "Crypto",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x2ce62d816c35e7a93975421dc5d3d05122419d75f897c291e7d76c5ecd810187",
-          "outcomeIndex": 0,
-          "outcome": "Up",
-          "title": "Bitcoin Up or Down - May 6, 1:10AM-1:15AM ET",
-          "eventSlug": "btc-updown-5m-1778044200",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
-          "avg_buy_price": 0.42234,
-          "buy_size": 26.11,
-          "sell_size": 0.0,
-          "trade_count": 1,
-          "first_ts": 1778044412,
-          "last_ts": 1778044412,
-          "domain": "Crypto",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x0773484748365ed63df2b8511324d14876d1a1a0716b36e9a0b343d4f51e6812",
-          "outcomeIndex": 0,
-          "outcome": "Up",
-          "title": "Bitcoin Up or Down - May 6, 1:00AM-1:05AM ET",
-          "eventSlug": "btc-updown-5m-1778043600",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
-          "avg_buy_price": 0.311565,
-          "buy_size": 144.96,
-          "sell_size": 0.0,
-          "trade_count": 5,
-          "first_ts": 1778043726,
-          "last_ts": 1778043894,
-          "domain": "Crypto",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x759c3c61f72b878a7008bc1fbd6e493b4fefad36b9d6e4b442d7ddbdcc199cbf",
-          "outcomeIndex": 0,
-          "outcome": "Up",
-          "title": "Bitcoin Up or Down - May 6, 12:45AM-1:00AM ET",
-          "eventSlug": "btc-updown-15m-1778042700",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
-          "avg_buy_price": 0.130176,
-          "buy_size": 155.86,
-          "sell_size": 0.0,
-          "trade_count": 12,
-          "first_ts": 1778043334,
-          "last_ts": 1778043538,
-          "domain": "Crypto",
-          "resolved": null
-        },
-        {
-          "conditionId": "0xa636dbedc73f23aaf6bd5c7c9e6e1ee9e3fe4ce22dd0baa7ec42c4a03d085b34",
-          "outcomeIndex": 0,
-          "outcome": "Up",
-          "title": "Bitcoin Up or Down - May 6, 12:55AM-1:00AM ET",
-          "eventSlug": "btc-updown-5m-1778043300",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
-          "avg_buy_price": 0.428085,
-          "buy_size": 137.32,
-          "sell_size": 0.0,
-          "trade_count": 14,
-          "first_ts": 1778043338,
-          "last_ts": 1778043452,
-          "domain": "Crypto",
-          "resolved": null
         }
       ],
       "tier": "strong_crypto",
       "archetype": {
         "label": "Crypto \u00b7 retail \u00b7 trader",
         "confidence": "high",
-        "n_resolved": 80,
+        "n_resolved": 305,
         "features": {
-          "crypto_share": 0.875,
-          "extreme_share": 0.281,
-          "median_trade_usd": 3.4,
-          "side_skew": 0.025
+          "crypto_share": 0.925,
+          "extreme_share": 0.282,
+          "median_trade_usd": 3.39,
+          "side_skew": 0.01
         }
       },
       "plain_english_brier": {
         "label": "Decent",
         "tone": "ok",
-        "note": "n=70 resolved"
+        "note": "n=282 resolved"
       },
       "traffic_light": {
         "light": "green",
         "phrase": "Strong wallet \u00b7 good price \u00b7 watch and consider small copy"
       },
       "reason_codes": [],
-      "composite_score": 30.0,
-      "trust_score_v0": 29.0,
+      "composite_score": 37.5,
+      "trust_score_v0": 30.0,
       "ranks": {
         "crypto_brier_lower": {
           "rank": 10,
-          "of": 10,
-          "percentile": 0.0,
-          "norm": "rank 10/10 \u00b7 lower half",
-          "value": 0.1776
+          "of": 11,
+          "percentile": 10.0,
+          "norm": "rank 10/11 \u00b7 lower half",
+          "value": 0.175
         },
         "overall_brier_lower": {
-          "rank": 10,
-          "of": 10,
+          "rank": 11,
+          "of": 11,
           "percentile": 0.0,
-          "norm": "rank 10/10 \u00b7 lower half",
-          "value": 0.1827
+          "norm": "rank 11/11 \u00b7 lower half",
+          "value": 0.1773
         },
         "backtest_90d": {
           "rank": 6,
-          "of": 10,
-          "percentile": 44.4,
-          "norm": "rank 6/10 \u00b7 lower half",
-          "value": 0.0248
+          "of": 11,
+          "percentile": 50.0,
+          "norm": "rank 6/11 \u00b7 lower half",
+          "value": 0.0178
         },
         "drift_lower": {
-          "rank": 5,
-          "of": 10,
-          "percentile": 55.6,
-          "norm": "rank 5/10 \u00b7 upper half",
-          "value": -0.0174
+          "rank": 3,
+          "of": 11,
+          "percentile": 80.0,
+          "norm": "rank 3/11 \u00b7 upper half",
+          "value": -0.0169
         },
         "copy_smaller": {
           "rank": 1,
-          "of": 10,
+          "of": 11,
           "percentile": 100.0,
-          "norm": "rank 1/10 \u00b7 best in cohort",
-          "value": 3.4
+          "norm": "rank 1/11 \u00b7 best in cohort",
+          "value": 3.39
         },
         "breadth_higher": {
           "rank": 5,
-          "of": 10,
-          "percentile": 55.6,
-          "norm": "rank 5/10 \u00b7 upper half",
-          "value": 402
+          "of": 11,
+          "percentile": 60.0,
+          "norm": "rank 5/11 \u00b7 upper half",
+          "value": 403
         },
         "specialty_higher": {
           "rank": 4,
-          "of": 10,
-          "percentile": 66.7,
-          "norm": "rank 4/10 \u00b7 upper half",
-          "value": 0.875
+          "of": 11,
+          "percentile": 70.0,
+          "norm": "rank 4/11 \u00b7 upper half",
+          "value": 0.925
         },
         "extreme_higher": {
-          "rank": 10,
-          "of": 10,
+          "rank": 11,
+          "of": 11,
           "percentile": 0.0,
-          "norm": "rank 10/10 \u00b7 lower half",
-          "value": 0.281
-        }
-      }
-    },
-    {
-      "wallet": "0xfea31bc088000ff909be1dfd8d0e3f2c7ef2d227",
-      "pseudonym": "Tinted-Consciousness",
-      "name": "newdogbeginning",
-      "profile_image": "",
-      "thin_history": false,
-      "history_count": 2058,
-      "overall_brier": {
-        "count": 170,
-        "mean_brier": 0.073,
-        "volume_weighted_brier": 0.1441
-      },
-      "crypto_brier": {
-        "count": 2,
-        "mean_brier": 0.0,
-        "volume_weighted_brier": 0.0
-      },
-      "domain_counts": {
-        "Sports": 166,
-        "Macro": 1,
-        "Other": 1,
-        "Crypto": 2
-      },
-      "backtest_90d": {
-        "positions_count": 170,
-        "roi_per_dollar": 0.1842,
-        "cumulative_pnl_per_dollar": 31.3085
-      },
-      "median_trade_usd": 249.64,
-      "max_trade_usd": 573451.73,
-      "copy_label": "Mirrorable \u00b7 standard sizes",
-      "drift": {
-        "first_half_brier": 0.0892,
-        "second_half_brier": 0.0568,
-        "delta": -0.0324,
-        "verdict": "improving"
-      },
-      "extreme_share": 0.699,
-      "contrarian_score": 0.699,
-      "crypto_specialty_share": 0.012,
-      "markets_breadth": 703,
-      "resolved_count": 170,
-      "btc_position": {
-        "primary_outcome": "No",
-        "primary_outcome_index": 1,
-        "yes_size": 0.0,
-        "no_size": 48336.11,
-        "avg_buy_price_yes": null,
-        "avg_buy_price_no": 0.985329,
-        "volume_in_market_usd": 47626.96,
-        "trades_in_market": 13,
-        "first_ts": 1777862890,
-        "last_ts": 1778606276
-      },
-      "entry_gap": {
-        "avg_entry": 0.9853,
-        "current_price": 0.9865,
-        "diff_cents": 0.12,
-        "state": "aligned"
-      },
-      "copy_return_remaining": {
-        "customer_upside": 0.0135,
-        "wallet_upside": 0.0147,
-        "remaining_pct": 0.918,
-        "label": "ample"
-      },
-      "market_only_share": 0.006,
-      "recent_positions": [
-        {
-          "conditionId": "0xfb673ca8fc574f463c78202db4e40bca4b6558dec665ddb23c4b21e5be1f2650",
-          "outcomeIndex": 1,
-          "outcome": "Under",
-          "title": "Southampton FC vs. Middlesbrough FC: O/U 4.5",
-          "eventSlug": "elc-sot-mid-2026-05-12-more-markets",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/efl-championship-icon-2026-d5493f69b0.png",
-          "avg_buy_price": 0.82,
-          "buy_size": 2245.75,
-          "sell_size": 0.0,
-          "trade_count": 1,
-          "first_ts": 1778615994,
-          "last_ts": 1778615994,
-          "domain": "Sports",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x54b5c8e02baca42c2f85ccbcffe4c131c20e3ca858852da47832afb9ce43211a",
-          "outcomeIndex": 1,
-          "outcome": "Under",
-          "title": "Southampton FC vs. Middlesbrough FC: O/U 2.5",
-          "eventSlug": "elc-sot-mid-2026-05-12-more-markets",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/efl-championship-icon-2026-d5493f69b0.png",
-          "avg_buy_price": 0.22,
-          "buy_size": 23.35,
-          "sell_size": 0.0,
-          "trade_count": 1,
-          "first_ts": 1778615809,
-          "last_ts": 1778615809,
-          "domain": "Sports",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x70b0e465e403e3871c7b89c53de34e93f7be56a9bd796e5e142a8866e77f8b54",
-          "outcomeIndex": 1,
-          "outcome": "No",
-          "title": "Will Burnley FC win on 2026-05-18?",
-          "eventSlug": "epl-ars-bur-2026-05-18",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Repetitive-markets/premier+league.jpg",
-          "avg_buy_price": 0.967205,
-          "buy_size": 3228.58,
-          "sell_size": 0.0,
-          "trade_count": 2,
-          "first_ts": 1778607193,
-          "last_ts": 1778614962,
-          "domain": "Sports",
-          "resolved": null
-        },
-        {
-          "conditionId": "0xc5928686f2e2b52b102b9e0a5ee99143fea334c97524df74f3b54ec6bbf0803d",
-          "outcomeIndex": 1,
-          "outcome": "Spurs",
-          "title": "Timberwolves vs. Spurs",
-          "eventSlug": "nba-min-sas-2026-05-17",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/super+cool+basketball+in+red+and+blue+wow.png",
-          "avg_buy_price": 0.56,
-          "buy_size": 336.38,
-          "sell_size": 0.0,
-          "trade_count": 1,
-          "first_ts": 1778614855,
-          "last_ts": 1778614855,
-          "domain": "Sports",
-          "resolved": null
-        },
-        {
-          "conditionId": "0xcba24842ceac7a40d2a8b9adde1f4407999b6505193b9fd68156ae76fbffa706",
-          "outcomeIndex": 1,
-          "outcome": "No",
-          "title": "Will Arsenal win the 2025\u201326 English Premier League?",
-          "eventSlug": "english-premier-league-winner",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-arsenal-win-the-202526-english-premier-league-j8lEI_4IMCza.jpg",
-          "avg_buy_price": 0.14,
-          "buy_size": 22978.83,
-          "sell_size": 0.0,
-          "trade_count": 1,
-          "first_ts": 1778611656,
-          "last_ts": 1778611656,
-          "domain": "Sports",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x7f376558845e2d0a53821e9d0ef5a3a7894a1ff15bd666d462753ecc27b6d889",
-          "outcomeIndex": 1,
-          "outcome": "Under",
-          "title": "Sabres vs. Canadiens: O/U 6.5",
-          "eventSlug": "nhl-buf-mon-2026-05-12",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/nhl.png",
-          "avg_buy_price": 0.54,
-          "buy_size": 46608.52,
-          "sell_size": 0.0,
-          "trade_count": 1,
-          "first_ts": 1778609670,
-          "last_ts": 1778609670,
-          "domain": "Sports",
-          "resolved": null
-        },
-        {
-          "conditionId": "0xa0f4c4924ea1a8b410b4ce821c2a9955fad21a1b19bdcfde90816732278b3dd5",
-          "outcomeIndex": 1,
-          "outcome": "No",
-          "title": "Will Bitcoin hit $150k by June 30, 2026?",
-          "eventSlug": "when-will-bitcoin-hit-150k",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
-          "avg_buy_price": 0.985329,
-          "buy_size": 48336.11,
-          "sell_size": 0.0,
-          "trade_count": 13,
-          "first_ts": 1777862890,
-          "last_ts": 1778606276,
-          "domain": "Crypto",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x5ffbad3ab75b1091e7fc748258e0daec74b88e70359a68d9fe3f5bf21eb256ce",
-          "outcomeIndex": 1,
-          "outcome": "SSG Landers",
-          "title": "KBO: Hanwha Eagles vs. SSG Landers",
-          "eventSlug": "kbo-han-ssg-2026-04-09",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/kbo-8cac2c2a6e.png",
-          "avg_buy_price": null,
-          "buy_size": 0.0,
-          "sell_size": 4.02,
-          "trade_count": 2,
-          "first_ts": 1778604708,
-          "last_ts": 1778604806,
-          "domain": "Sports",
-          "resolved": null
-        }
-      ],
-      "tier": "general_strong",
-      "archetype": {
-        "label": "Generalist \u00b7 extreme-price \u00b7 No-side \u00b7 generalist",
-        "confidence": "high",
-        "n_resolved": 170,
-        "features": {
-          "crypto_share": 0.012,
-          "extreme_share": 0.699,
-          "median_trade_usd": 249.64,
-          "side_skew": 0.494
-        }
-      },
-      "plain_english_brier": {
-        "label": "low evidence",
-        "tone": "muted",
-        "note": "insufficient resolved history (n=2)"
-      },
-      "traffic_light": {
-        "light": "yellow",
-        "phrase": "Cross-domain wallet \u00b7 light evidence in this market type \u00b7 review"
-      },
-      "reason_codes": [
-        "no_crypto_brier",
-        "general_strong_only"
-      ],
-      "composite_score": 56.1,
-      "trust_score_v0": 100.0,
-      "ranks": {
-        "crypto_brier_lower": {
-          "rank": 1,
-          "of": 10,
-          "percentile": 100.0,
-          "norm": "rank 1/10 \u00b7 best in cohort",
-          "value": 0.0
-        },
-        "overall_brier_lower": {
-          "rank": 6,
-          "of": 10,
-          "percentile": 44.4,
-          "norm": "rank 6/10 \u00b7 lower half",
-          "value": 0.073
-        },
-        "backtest_90d": {
-          "rank": 1,
-          "of": 10,
-          "percentile": 100.0,
-          "norm": "rank 1/10 \u00b7 best in cohort",
-          "value": 0.1842
-        },
-        "drift_lower": {
-          "rank": 1,
-          "of": 10,
-          "percentile": 100.0,
-          "norm": "rank 1/10 \u00b7 best in cohort",
-          "value": -0.0324
-        },
-        "copy_smaller": {
-          "rank": 6,
-          "of": 10,
-          "percentile": 44.4,
-          "norm": "rank 6/10 \u00b7 lower half",
-          "value": 249.64
-        },
-        "breadth_higher": {
-          "rank": 3,
-          "of": 10,
-          "percentile": 77.8,
-          "norm": "rank 3/10 \u00b7 upper half",
-          "value": 703
-        },
-        "specialty_higher": {
-          "rank": 10,
-          "of": 10,
-          "percentile": 0.0,
-          "norm": "rank 10/10 \u00b7 lower half",
-          "value": 0.012
-        },
-        "extreme_higher": {
-          "rank": 7,
-          "of": 10,
-          "percentile": 33.3,
-          "norm": "rank 7/10 \u00b7 lower half",
-          "value": 0.699
+          "norm": "rank 11/11 \u00b7 lower half",
+          "value": 0.282
         }
       }
     },
@@ -2571,42 +2301,42 @@
       "thin_history": false,
       "history_count": 263,
       "overall_brier": {
-        "count": 50,
-        "mean_brier": 0.1421,
-        "volume_weighted_brier": 0.0218
+        "count": 124,
+        "mean_brier": 0.1074,
+        "volume_weighted_brier": 0.0192
       },
       "crypto_brier": {
-        "count": 7,
-        "mean_brier": 0.1486,
-        "volume_weighted_brier": 0.0166
+        "count": 22,
+        "mean_brier": 0.146,
+        "volume_weighted_brier": 0.0355
       },
       "domain_counts": {
-        "Sports": 13,
-        "Politics": 9,
-        "Crypto": 7,
-        "Other": 2,
-        "Entertainment": 18,
+        "Sports": 25,
+        "Politics": 26,
+        "Crypto": 22,
+        "Other": 5,
+        "Entertainment": 45,
         "Macro": 1
       },
       "backtest_90d": {
-        "positions_count": 18,
-        "roi_per_dollar": 0.1719,
-        "cumulative_pnl_per_dollar": 3.0942
+        "positions_count": 34,
+        "roi_per_dollar": -0.1466,
+        "cumulative_pnl_per_dollar": -4.9837
       },
       "median_trade_usd": 30.0,
       "max_trade_usd": 4999.69,
       "copy_label": "Easy \u00b7 retail-friendly",
       "drift": {
-        "first_half_brier": 0.065,
-        "second_half_brier": 0.2192,
-        "delta": 0.1542,
+        "first_half_brier": 0.0663,
+        "second_half_brier": 0.1485,
+        "delta": 0.0822,
         "verdict": "drifting"
       },
       "extreme_share": 0.54,
       "contrarian_score": 0.54,
-      "crypto_specialty_share": 0.14,
+      "crypto_specialty_share": 0.177,
       "markets_breadth": 148,
-      "resolved_count": 50,
+      "resolved_count": 124,
       "btc_position": {
         "primary_outcome": "No",
         "primary_outcome_index": 1,
@@ -2663,13 +2393,7 @@
           "first_ts": 1778458961,
           "last_ts": 1778471624,
           "domain": "Sports",
-          "resolved": {
-            "winning_outcome_index": 1,
-            "actual": 1,
-            "brier": 0.1089,
-            "pnl_per_dollar": 0.492537,
-            "state": "resolved"
-          }
+          "resolved": null
         },
         {
           "conditionId": "0xa0f4c4924ea1a8b410b4ce821c2a9955fad21a1b19bdcfde90816732278b3dd5",
@@ -2749,7 +2473,13 @@
           "first_ts": 1778371015,
           "last_ts": 1778371015,
           "domain": "Sports",
-          "resolved": null
+          "resolved": {
+            "winning_outcome_index": 0,
+            "actual": 0,
+            "brier": 0.36,
+            "pnl_per_dollar": -1.0,
+            "state": "resolved"
+          }
         },
         {
           "conditionId": "0x21a7d756b5d03ee10fb9aca60e818282d2deee44feae775ebd1aec9ad90bbc0a",
@@ -2768,88 +2498,667 @@
           "resolved": null
         }
       ],
-      "tier": "general_strong",
+      "tier": "strong_crypto",
       "archetype": {
         "label": "Generalist \u00b7 extreme-price \u00b7 retail \u00b7 generalist",
         "confidence": "high",
-        "n_resolved": 50,
+        "n_resolved": 124,
         "features": {
-          "crypto_share": 0.14,
+          "crypto_share": 0.177,
           "extreme_share": 0.54,
           "median_trade_usd": 30.0,
-          "side_skew": -0.2
+          "side_skew": -0.129
+        }
+      },
+      "plain_english_brier": {
+        "label": "Decent",
+        "tone": "ok",
+        "note": "n=22 resolved"
+      },
+      "traffic_light": {
+        "light": "green",
+        "phrase": "Strong wallet \u00b7 good price \u00b7 watch and consider small copy"
+      },
+      "reason_codes": [],
+      "composite_score": 25.0,
+      "trust_score_v0": 41.6,
+      "ranks": {
+        "crypto_brier_lower": {
+          "rank": 9,
+          "of": 11,
+          "percentile": 20.0,
+          "norm": "rank 9/11 \u00b7 lower half",
+          "value": 0.146
+        },
+        "overall_brier_lower": {
+          "rank": 9,
+          "of": 11,
+          "percentile": 20.0,
+          "norm": "rank 9/11 \u00b7 lower half",
+          "value": 0.1074
+        },
+        "backtest_90d": {
+          "rank": 9,
+          "of": 11,
+          "percentile": 20.0,
+          "norm": "rank 9/11 \u00b7 lower half",
+          "value": -0.1466
+        },
+        "drift_lower": {
+          "rank": 11,
+          "of": 11,
+          "percentile": 0.0,
+          "norm": "rank 11/11 \u00b7 lower half",
+          "value": 0.0822
+        },
+        "copy_smaller": {
+          "rank": 3,
+          "of": 11,
+          "percentile": 80.0,
+          "norm": "rank 3/11 \u00b7 upper half",
+          "value": 30.0
+        },
+        "breadth_higher": {
+          "rank": 8,
+          "of": 11,
+          "percentile": 30.0,
+          "norm": "rank 8/11 \u00b7 lower half",
+          "value": 148
+        },
+        "specialty_higher": {
+          "rank": 8,
+          "of": 11,
+          "percentile": 30.0,
+          "norm": "rank 8/11 \u00b7 lower half",
+          "value": 0.177
+        },
+        "extreme_higher": {
+          "rank": 10,
+          "of": 11,
+          "percentile": 10.0,
+          "norm": "rank 10/11 \u00b7 lower half",
+          "value": 0.54
+        }
+      }
+    },
+    {
+      "wallet": "0xfea31bc088000ff909be1dfd8d0e3f2c7ef2d227",
+      "pseudonym": "Tinted-Consciousness",
+      "name": "newdogbeginning",
+      "profile_image": "",
+      "thin_history": false,
+      "history_count": 2071,
+      "overall_brier": {
+        "count": 535,
+        "mean_brier": 0.0553,
+        "volume_weighted_brier": 0.1016
+      },
+      "crypto_brier": {
+        "count": 3,
+        "mean_brier": 0.0,
+        "volume_weighted_brier": 0.0
+      },
+      "domain_counts": {
+        "Sports": 523,
+        "Politics": 1,
+        "Macro": 1,
+        "Other": 7,
+        "Crypto": 3
+      },
+      "backtest_90d": {
+        "positions_count": 535,
+        "roi_per_dollar": 0.0475,
+        "cumulative_pnl_per_dollar": 25.4047
+      },
+      "median_trade_usd": 249.64,
+      "max_trade_usd": 573451.73,
+      "copy_label": "Mirrorable \u00b7 standard sizes",
+      "drift": {
+        "first_half_brier": 0.0619,
+        "second_half_brier": 0.0487,
+        "delta": -0.0132,
+        "verdict": "stable"
+      },
+      "extreme_share": 0.7,
+      "contrarian_score": 0.7,
+      "crypto_specialty_share": 0.006,
+      "markets_breadth": 709,
+      "resolved_count": 535,
+      "btc_position": {
+        "primary_outcome": "No",
+        "primary_outcome_index": 1,
+        "yes_size": 0.0,
+        "no_size": 48336.11,
+        "avg_buy_price_yes": null,
+        "avg_buy_price_no": 0.985329,
+        "volume_in_market_usd": 47626.96,
+        "trades_in_market": 13,
+        "first_ts": 1777862890,
+        "last_ts": 1778606276
+      },
+      "entry_gap": {
+        "avg_entry": 0.9853,
+        "current_price": 0.9865,
+        "diff_cents": 0.12,
+        "state": "aligned"
+      },
+      "copy_return_remaining": {
+        "customer_upside": 0.0135,
+        "wallet_upside": 0.0147,
+        "remaining_pct": 0.918,
+        "label": "ample"
+      },
+      "market_only_share": 0.006,
+      "recent_positions": [
+        {
+          "conditionId": "0xbbaf5a74bb271d856cb078ef2edffe38cba8c7b3e816523eed1a9b52b77935b5",
+          "outcomeIndex": 1,
+          "outcome": "Under",
+          "title": "Ducks vs. Golden Knights: O/U 6.5",
+          "eventSlug": "nhl-ana-las-2026-05-12",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/nhl.png",
+          "avg_buy_price": 0.52,
+          "buy_size": 46.67,
+          "sell_size": 53.85,
+          "trade_count": 4,
+          "first_ts": 1778640683,
+          "last_ts": 1778643432,
+          "domain": "Sports",
+          "resolved": null
+        },
+        {
+          "conditionId": "0xd175d5454046b2a54c76de7ea2f91f3f179ee2460159ea70139c75c1092ab181",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Will Erling Haaland be the top goal scorer in the 2025\u201326 English Premier League season?",
+          "eventSlug": "english-premier-league-top-goalscorer",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/english-premier-league-winner-VFcNkpZeA9Sz.jpg",
+          "avg_buy_price": 0.990326,
+          "buy_size": 550.58,
+          "sell_size": 0.0,
+          "trade_count": 2,
+          "first_ts": 1778641334,
+          "last_ts": 1778641385,
+          "domain": "Sports",
+          "resolved": null
+        },
+        {
+          "conditionId": "0xa62558c07dee376f7903e95977b10c13544d3546eeae6c98130839753e093979",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will Viktor Gyokeres be the top goal scorer in the 2025\u201326 English Premier League season?",
+          "eventSlug": "english-premier-league-top-goalscorer",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/english-premier-league-winner-VFcNkpZeA9Sz.jpg",
+          "avg_buy_price": 0.997,
+          "buy_size": 15407.98,
+          "sell_size": 0.0,
+          "trade_count": 1,
+          "first_ts": 1778641311,
+          "last_ts": 1778641311,
+          "domain": "Sports",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x1e722ca9fef1bcde22157eb0be3bfa5e6f5a791c986928a3a38d860e40a31bf7",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Will PSG win the 2025\u201326 French Ligue 1?",
+          "eventSlug": "french-ligue-1-winner",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/french-ligue-1-winner-jbZM_0UOhXlV.jpg",
+          "avg_buy_price": 0.997982,
+          "buy_size": 20627.71,
+          "sell_size": 0.0,
+          "trade_count": 7,
+          "first_ts": 1777862940,
+          "last_ts": 1778641086,
+          "domain": "Sports",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x68c7e3aafd5f70550455e4025f14793ed2e3631686dfb6e1111f9400cc7e2a6f",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will Sal Stewart win the 2026 NL Rookie of the Year award?",
+          "eventSlug": "mlb-nl-rookie-of-the-year",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/mlb-5ce04351e7.png",
+          "avg_buy_price": null,
+          "buy_size": 0.0,
+          "sell_size": 4.22,
+          "trade_count": 2,
+          "first_ts": 1778558199,
+          "last_ts": 1778640788,
+          "domain": "Entertainment",
+          "resolved": null
+        },
+        {
+          "conditionId": "0xe0ed2f6e2b644f9a1fb3b1afd368a95706fb2356b2dd12a98c77c55e7836fbc3",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will Carlos Alcaraz win a calendar Grand Slam in 2026?",
+          "eventSlug": "who-will-win-a-calendar-grand-slam-in-2026",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-there-be-a-mens-tennis-calendar-grand-slam-winner-in-2026-tQQN4D3O8D2o.jpg",
+          "avg_buy_price": 0.998,
+          "buy_size": 99.99,
+          "sell_size": 0.0,
+          "trade_count": 1,
+          "first_ts": 1778639012,
+          "last_ts": 1778639012,
+          "domain": "Sports",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x13899385b89f58be96d16b68e4dba51608162dc9749702206505929f1faf7d45",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Will no male player win a calendar Grand Slam in 2026?",
+          "eventSlug": "who-will-win-a-calendar-grand-slam-in-2026",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-there-be-a-mens-tennis-calendar-grand-slam-winner-in-2026-tQQN4D3O8D2o.jpg",
+          "avg_buy_price": 0.996606,
+          "buy_size": 32108.34,
+          "sell_size": 0.0,
+          "trade_count": 1,
+          "first_ts": 1778639005,
+          "last_ts": 1778639005,
+          "domain": "Sports",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x6d6fd5d251ce4cf80ec381a0fb7fcccefff4859ba7be92eddb1f7e6b1ef48595",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Will Arsenal win a trophy this season?",
+          "eventSlug": "will-arsenal-win-a-trophy-this-season",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-arsenal-win-a-trophy-this-season-ofydJEuACQIh.jpg",
+          "avg_buy_price": 0.71146,
+          "buy_size": 100747.94,
+          "sell_size": 3466.25,
+          "trade_count": 60,
+          "first_ts": 1776041255,
+          "last_ts": 1778638643,
+          "domain": "Sports",
+          "resolved": null
+        }
+      ],
+      "tier": "general_strong",
+      "archetype": {
+        "label": "Generalist \u00b7 extreme-price \u00b7 No-side \u00b7 generalist",
+        "confidence": "high",
+        "n_resolved": 535,
+        "features": {
+          "crypto_share": 0.006,
+          "extreme_share": 0.7,
+          "median_trade_usd": 249.64,
+          "side_skew": 0.499
         }
       },
       "plain_english_brier": {
         "label": "low evidence",
         "tone": "muted",
-        "note": "insufficient resolved history (n=7)"
+        "note": "insufficient resolved history (n=3)"
       },
       "traffic_light": {
         "light": "yellow",
         "phrase": "Cross-domain wallet \u00b7 light evidence in this market type \u00b7 review"
       },
       "reason_codes": [
+        "no_crypto_brier",
         "general_strong_only"
       ],
-      "composite_score": 32.8,
-      "trust_score_v0": 40.6,
+      "composite_score": 52.0,
+      "trust_score_v0": 100.0,
       "ranks": {
         "crypto_brier_lower": {
-          "rank": 9,
-          "of": 10,
-          "percentile": 11.1,
-          "norm": "rank 9/10 \u00b7 lower half",
-          "value": 0.1486
+          "rank": 1,
+          "of": 11,
+          "percentile": 100.0,
+          "norm": "rank 1/11 \u00b7 best in cohort",
+          "value": 0.0
         },
         "overall_brier_lower": {
-          "rank": 9,
-          "of": 10,
-          "percentile": 11.1,
-          "norm": "rank 9/10 \u00b7 lower half",
-          "value": 0.1421
+          "rank": 6,
+          "of": 11,
+          "percentile": 50.0,
+          "norm": "rank 6/11 \u00b7 lower half",
+          "value": 0.0553
         },
         "backtest_90d": {
-          "rank": 2,
-          "of": 10,
-          "percentile": 88.9,
-          "norm": "rank 2/10 \u00b7 top 20%",
-          "value": 0.1719
+          "rank": 3,
+          "of": 11,
+          "percentile": 80.0,
+          "norm": "rank 3/11 \u00b7 upper half",
+          "value": 0.0475
+        },
+        "drift_lower": {
+          "rank": 4,
+          "of": 11,
+          "percentile": 70.0,
+          "norm": "rank 4/11 \u00b7 upper half",
+          "value": -0.0132
+        },
+        "copy_smaller": {
+          "rank": 6,
+          "of": 11,
+          "percentile": 50.0,
+          "norm": "rank 6/11 \u00b7 lower half",
+          "value": 249.64
+        },
+        "breadth_higher": {
+          "rank": 3,
+          "of": 11,
+          "percentile": 80.0,
+          "norm": "rank 3/11 \u00b7 upper half",
+          "value": 709
+        },
+        "specialty_higher": {
+          "rank": 11,
+          "of": 11,
+          "percentile": 0.0,
+          "norm": "rank 11/11 \u00b7 lower half",
+          "value": 0.006
+        },
+        "extreme_higher": {
+          "rank": 8,
+          "of": 11,
+          "percentile": 30.0,
+          "norm": "rank 8/11 \u00b7 lower half",
+          "value": 0.7
+        }
+      }
+    },
+    {
+      "wallet": "0x8c76c4787bf236398d2d1a42dd3e8af1393206ac",
+      "pseudonym": "Bare-Toothpaste",
+      "name": "MajoriT",
+      "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5766138-7196d5f3-90a2-4256-ae7d-5f8a913ad00e.png",
+      "thin_history": false,
+      "history_count": 369,
+      "overall_brier": {
+        "count": 73,
+        "mean_brier": 0.1043,
+        "volume_weighted_brier": 0.0465
+      },
+      "crypto_brier": {
+        "count": 1,
+        "mean_brier": 0.4482,
+        "volume_weighted_brier": 0.4482
+      },
+      "domain_counts": {
+        "Politics": 46,
+        "Macro": 5,
+        "Entertainment": 4,
+        "Crypto": 1,
+        "Sports": 13,
+        "Other": 4
+      },
+      "backtest_90d": {
+        "positions_count": 53,
+        "roi_per_dollar": -0.3426,
+        "cumulative_pnl_per_dollar": -18.1556
+      },
+      "median_trade_usd": 324.98,
+      "max_trade_usd": 94012.35,
+      "copy_label": "Stretch \u00b7 mid-sized bankroll",
+      "drift": {
+        "first_half_brier": 0.079,
+        "second_half_brier": 0.1288,
+        "delta": 0.0498,
+        "verdict": "drifting"
+      },
+      "extreme_share": 0.702,
+      "contrarian_score": 0.702,
+      "crypto_specialty_share": 0.014,
+      "markets_breadth": 142,
+      "resolved_count": 73,
+      "btc_position": {
+        "primary_outcome": "No",
+        "primary_outcome_index": 1,
+        "yes_size": 0.0,
+        "no_size": 7777.0,
+        "avg_buy_price_yes": null,
+        "avg_buy_price_no": 0.973496,
+        "volume_in_market_usd": 7570.88,
+        "trades_in_market": 1,
+        "first_ts": 1777384262,
+        "last_ts": 1777384262
+      },
+      "entry_gap": {
+        "avg_entry": 0.9735,
+        "current_price": 0.9865,
+        "diff_cents": 1.3,
+        "state": "late"
+      },
+      "copy_return_remaining": {
+        "customer_upside": 0.0135,
+        "wallet_upside": 0.0265,
+        "remaining_pct": 0.509,
+        "label": "limited"
+      },
+      "market_only_share": 0.003,
+      "recent_positions": [
+        {
+          "conditionId": "0xc16c17705f64ffec3e2a4d7aa0fdb3a21162c39878a6b6cbbac14d83501392e1",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Aliens.gov confirmed immigration website?",
+          "eventSlug": "aliensgov-confirmed-as-immigration-website",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/aliensgov-confirmed-as-immigration-website-TqfJH7VREYOB.jpg",
+          "avg_buy_price": 0.672866,
+          "buy_size": 475.66,
+          "sell_size": 483.66,
+          "trade_count": 2,
+          "first_ts": 1778342271,
+          "last_ts": 1778639423,
+          "domain": "Politics",
+          "resolved": null
+        },
+        {
+          "conditionId": "0xe354455967af6981882359d57fce88b00952f21da007ece90a374bfc464b331d",
+          "outcomeIndex": 1,
+          "outcome": "No",
+          "title": "Will TheUnitedStrand get a haircut by 2025-26 season end?",
+          "eventSlug": "will-theunitedstrand-get-a-haircut-by-2025-26-season-end",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-theunitedstrand-get-a-haircut-by-2025-26-season-end-5pD82H8Ub6X1.jpg",
+          "avg_buy_price": 0.642614,
+          "buy_size": 155.6145,
+          "sell_size": 855.56,
+          "trade_count": 2,
+          "first_ts": 1770340775,
+          "last_ts": 1778549757,
+          "domain": "Sports",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x2bf8ed26aeeb07f4a12d1bb47905272633a379b0fcfddecdce51b8822fb5671e",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Will the Green Party win at least 600 council seat elections in the 2026 United Kingdom local elections?",
+          "eventSlug": "2026-united-kingdom-local-elections-green-wins-seats",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/greens-b52e852131.png",
+          "avg_buy_price": 0.78,
+          "buy_size": 322.8,
+          "sell_size": 1078.15,
+          "trade_count": 5,
+          "first_ts": 1778206290,
+          "last_ts": 1778338521,
+          "domain": "Politics",
+          "resolved": {
+            "winning_outcome_index": 1,
+            "actual": 0,
+            "brier": 0.6084,
+            "pnl_per_dollar": -1.0,
+            "state": "resolved"
+          }
+        },
+        {
+          "conditionId": "0x534416d066d87af2749f669173847635cc7b812035d0398cc063a153fee251d0",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Critical Discord Incident by May 31?",
+          "eventSlug": "critical-discord-incident-by-may-31",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/discord-ipo-closing-market-cap-tte9bO-sFl33.png",
+          "avg_buy_price": 0.742069,
+          "buy_size": 1766.41,
+          "sell_size": 0.0,
+          "trade_count": 4,
+          "first_ts": 1778270299,
+          "last_ts": 1778270780,
+          "domain": "Macro",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x1480b819d03d4b6388d70e848b0384adf38c38d955cb783cdbcf6d4a436dee14",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Will the next Prime Minister of Hungary be P\u00e9ter Magyar?",
+          "eventSlug": "next-prime-minister-of-hungary",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-the-next-prime-minister-of-romania-be-pter-magyar-HbEv3YBJrtaT.jpg",
+          "avg_buy_price": null,
+          "buy_size": 0.0,
+          "sell_size": 20812.56,
+          "trade_count": 4,
+          "first_ts": 1776289452,
+          "last_ts": 1778270737,
+          "domain": "Politics",
+          "resolved": {
+            "state": "inconclusive"
+          }
+        },
+        {
+          "conditionId": "0x8f2e6ae9c7a37585600abf0423115bc1a2b129d3c08b2ea571a6df04382eee2e",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Will the Green Party win at least 700 council seat elections in the 2026 United Kingdom local elections?",
+          "eventSlug": "2026-united-kingdom-local-elections-green-wins-seats",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/greens-b52e852131.png",
+          "avg_buy_price": null,
+          "buy_size": 0.0,
+          "sell_size": 1402.91,
+          "trade_count": 1,
+          "first_ts": 1778269214,
+          "last_ts": 1778269214,
+          "domain": "Politics",
+          "resolved": {
+            "state": "inconclusive"
+          }
+        },
+        {
+          "conditionId": "0xa93b28a6384aefff4e7d5adb2061c444e4a0e95b8ad17755f9cee123c7099b35",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Russia x Ukraine ceasefire by May 31, 2026?",
+          "eventSlug": "russia-x-ukraine-ceasefire-by-may-31-2026",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/russia-x-ukraine-ceasefire-before-july-GSNGh26whPic.jpg",
+          "avg_buy_price": null,
+          "buy_size": 0.0,
+          "sell_size": 499.99,
+          "trade_count": 1,
+          "first_ts": 1778267485,
+          "last_ts": 1778267485,
+          "domain": "Politics",
+          "resolved": {
+            "state": "inconclusive"
+          }
+        },
+        {
+          "conditionId": "0xbee2cd40473495f713c69b9dfbce9fc2837fa4011568222c83c83bb773e35053",
+          "outcomeIndex": 0,
+          "outcome": "Yes",
+          "title": "Starmer out by June 30, 2026?",
+          "eventSlug": "starmer-out-in-2025",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/starmer-out-in-2025-teE3zEaEEyuO.jpg",
+          "avg_buy_price": 0.476691,
+          "buy_size": 1048.8975,
+          "sell_size": 1074.51,
+          "trade_count": 2,
+          "first_ts": 1770281383,
+          "last_ts": 1778243236,
+          "domain": "Politics",
+          "resolved": null
+        }
+      ],
+      "tier": "general_strong",
+      "archetype": {
+        "label": "Generalist \u00b7 extreme-price \u00b7 generalist",
+        "confidence": "high",
+        "n_resolved": 73,
+        "features": {
+          "crypto_share": 0.014,
+          "extreme_share": 0.702,
+          "median_trade_usd": 324.98,
+          "side_skew": -0.288
+        }
+      },
+      "plain_english_brier": {
+        "label": "low evidence",
+        "tone": "muted",
+        "note": "insufficient resolved history (n=1)"
+      },
+      "traffic_light": {
+        "light": "yellow",
+        "phrase": "Cross-domain wallet \u00b7 price moved \u00b7 watchlist"
+      },
+      "reason_codes": [
+        "no_crypto_brier",
+        "general_strong_only"
+      ],
+      "composite_score": 20.5,
+      "trust_score_v0": 58.3,
+      "ranks": {
+        "crypto_brier_lower": {
+          "rank": 11,
+          "of": 11,
+          "percentile": 0.0,
+          "norm": "rank 11/11 \u00b7 lower half",
+          "value": 0.4482
+        },
+        "overall_brier_lower": {
+          "rank": 8,
+          "of": 11,
+          "percentile": 30.0,
+          "norm": "rank 8/11 \u00b7 lower half",
+          "value": 0.1043
+        },
+        "backtest_90d": {
+          "rank": 10,
+          "of": 11,
+          "percentile": 10.0,
+          "norm": "rank 10/11 \u00b7 lower half",
+          "value": -0.3426
         },
         "drift_lower": {
           "rank": 10,
-          "of": 10,
-          "percentile": 0.0,
-          "norm": "rank 10/10 \u00b7 lower half",
-          "value": 0.1542
+          "of": 11,
+          "percentile": 10.0,
+          "norm": "rank 10/11 \u00b7 lower half",
+          "value": 0.0498
         },
         "copy_smaller": {
-          "rank": 3,
-          "of": 10,
-          "percentile": 77.8,
-          "norm": "rank 3/10 \u00b7 upper half",
-          "value": 30.0
+          "rank": 8,
+          "of": 11,
+          "percentile": 30.0,
+          "norm": "rank 8/11 \u00b7 lower half",
+          "value": 324.98
         },
         "breadth_higher": {
-          "rank": 8,
-          "of": 10,
-          "percentile": 22.2,
-          "norm": "rank 8/10 \u00b7 lower half",
-          "value": 148
+          "rank": 9,
+          "of": 11,
+          "percentile": 20.0,
+          "norm": "rank 9/11 \u00b7 lower half",
+          "value": 142
         },
         "specialty_higher": {
-          "rank": 9,
-          "of": 10,
-          "percentile": 11.1,
-          "norm": "rank 9/10 \u00b7 lower half",
-          "value": 0.14
+          "rank": 10,
+          "of": 11,
+          "percentile": 10.0,
+          "norm": "rank 10/11 \u00b7 lower half",
+          "value": 0.014
         },
         "extreme_higher": {
-          "rank": 9,
-          "of": 10,
-          "percentile": 11.1,
-          "norm": "rank 9/10 \u00b7 lower half",
-          "value": 0.54
+          "rank": 7,
+          "of": 11,
+          "percentile": 40.0,
+          "norm": "rank 7/11 \u00b7 lower half",
+          "value": 0.702
         }
       }
     }
@@ -3042,226 +3351,6 @@
       ]
     },
     {
-      "wallet": "0x8c76c4787bf236398d2d1a42dd3e8af1393206ac",
-      "pseudonym": "Bare-Toothpaste",
-      "name": "MajoriT",
-      "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5766138-7196d5f3-90a2-4256-ae7d-5f8a913ad00e.png",
-      "thin_history": false,
-      "history_count": 368,
-      "overall_brier": {
-        "count": 18,
-        "mean_brier": 0.1071,
-        "volume_weighted_brier": 0.1177
-      },
-      "crypto_brier": null,
-      "domain_counts": {
-        "Politics": 11,
-        "Sports": 4,
-        "Other": 1,
-        "Macro": 2
-      },
-      "backtest_90d": {
-        "positions_count": 15,
-        "roi_per_dollar": -0.2361,
-        "cumulative_pnl_per_dollar": -3.5418
-      },
-      "median_trade_usd": 329.05,
-      "max_trade_usd": 94012.35,
-      "copy_label": "Stretch \u00b7 mid-sized bankroll",
-      "drift": {
-        "first_half_brier": 0.1664,
-        "second_half_brier": 0.0479,
-        "delta": -0.1184,
-        "verdict": "improving"
-      },
-      "extreme_share": 0.704,
-      "contrarian_score": 0.704,
-      "crypto_specialty_share": 0.0,
-      "markets_breadth": 142,
-      "resolved_count": 18,
-      "btc_position": {
-        "primary_outcome": "No",
-        "primary_outcome_index": 1,
-        "yes_size": 0.0,
-        "no_size": 7777.0,
-        "avg_buy_price_yes": null,
-        "avg_buy_price_no": 0.973496,
-        "volume_in_market_usd": 7570.88,
-        "trades_in_market": 1,
-        "first_ts": 1777384262,
-        "last_ts": 1777384262
-      },
-      "entry_gap": {
-        "avg_entry": 0.9735,
-        "current_price": 0.9865,
-        "diff_cents": 1.3,
-        "state": "late"
-      },
-      "copy_return_remaining": {
-        "customer_upside": 0.0135,
-        "wallet_upside": 0.0265,
-        "remaining_pct": 0.509,
-        "label": "limited"
-      },
-      "market_only_share": 0.003,
-      "recent_positions": [
-        {
-          "conditionId": "0xe354455967af6981882359d57fce88b00952f21da007ece90a374bfc464b331d",
-          "outcomeIndex": 1,
-          "outcome": "No",
-          "title": "Will TheUnitedStrand get a haircut by 2025-26 season end?",
-          "eventSlug": "will-theunitedstrand-get-a-haircut-by-2025-26-season-end",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-theunitedstrand-get-a-haircut-by-2025-26-season-end-5pD82H8Ub6X1.jpg",
-          "avg_buy_price": 0.642614,
-          "buy_size": 155.6145,
-          "sell_size": 855.56,
-          "trade_count": 2,
-          "first_ts": 1770340775,
-          "last_ts": 1778549757,
-          "domain": "Sports",
-          "resolved": null
-        },
-        {
-          "conditionId": "0xc16c17705f64ffec3e2a4d7aa0fdb3a21162c39878a6b6cbbac14d83501392e1",
-          "outcomeIndex": 0,
-          "outcome": "Yes",
-          "title": "Aliens.gov confirmed immigration website?",
-          "eventSlug": "aliensgov-confirmed-as-immigration-website",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/aliensgov-confirmed-as-immigration-website-TqfJH7VREYOB.jpg",
-          "avg_buy_price": 0.672866,
-          "buy_size": 475.66,
-          "sell_size": 0.0,
-          "trade_count": 1,
-          "first_ts": 1778342271,
-          "last_ts": 1778342271,
-          "domain": "Politics",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x2bf8ed26aeeb07f4a12d1bb47905272633a379b0fcfddecdce51b8822fb5671e",
-          "outcomeIndex": 0,
-          "outcome": "Yes",
-          "title": "Will the Green Party win at least 600 council seat elections in the 2026 United Kingdom local elections?",
-          "eventSlug": "2026-united-kingdom-local-elections-green-wins-seats",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/greens-b52e852131.png",
-          "avg_buy_price": 0.78,
-          "buy_size": 322.8,
-          "sell_size": 1078.15,
-          "trade_count": 5,
-          "first_ts": 1778206290,
-          "last_ts": 1778338521,
-          "domain": "Politics",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x534416d066d87af2749f669173847635cc7b812035d0398cc063a153fee251d0",
-          "outcomeIndex": 0,
-          "outcome": "Yes",
-          "title": "Critical Discord Incident by May 31?",
-          "eventSlug": "critical-discord-incident-by-may-31",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/discord-ipo-closing-market-cap-tte9bO-sFl33.png",
-          "avg_buy_price": 0.742069,
-          "buy_size": 1766.41,
-          "sell_size": 0.0,
-          "trade_count": 4,
-          "first_ts": 1778270299,
-          "last_ts": 1778270780,
-          "domain": "Macro",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x1480b819d03d4b6388d70e848b0384adf38c38d955cb783cdbcf6d4a436dee14",
-          "outcomeIndex": 0,
-          "outcome": "Yes",
-          "title": "Will the next Prime Minister of Hungary be P\u00e9ter Magyar?",
-          "eventSlug": "next-prime-minister-of-hungary",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-the-next-prime-minister-of-romania-be-pter-magyar-HbEv3YBJrtaT.jpg",
-          "avg_buy_price": null,
-          "buy_size": 0.0,
-          "sell_size": 20812.56,
-          "trade_count": 4,
-          "first_ts": 1776289452,
-          "last_ts": 1778270737,
-          "domain": "Politics",
-          "resolved": {
-            "state": "inconclusive"
-          }
-        },
-        {
-          "conditionId": "0x8f2e6ae9c7a37585600abf0423115bc1a2b129d3c08b2ea571a6df04382eee2e",
-          "outcomeIndex": 0,
-          "outcome": "Yes",
-          "title": "Will the Green Party win at least 700 council seat elections in the 2026 United Kingdom local elections?",
-          "eventSlug": "2026-united-kingdom-local-elections-green-wins-seats",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/greens-b52e852131.png",
-          "avg_buy_price": null,
-          "buy_size": 0.0,
-          "sell_size": 1402.91,
-          "trade_count": 1,
-          "first_ts": 1778269214,
-          "last_ts": 1778269214,
-          "domain": "Politics",
-          "resolved": null
-        },
-        {
-          "conditionId": "0xa93b28a6384aefff4e7d5adb2061c444e4a0e95b8ad17755f9cee123c7099b35",
-          "outcomeIndex": 0,
-          "outcome": "Yes",
-          "title": "Russia x Ukraine ceasefire by May 31, 2026?",
-          "eventSlug": "russia-x-ukraine-ceasefire-by-may-31-2026",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/russia-x-ukraine-ceasefire-before-july-GSNGh26whPic.jpg",
-          "avg_buy_price": null,
-          "buy_size": 0.0,
-          "sell_size": 499.99,
-          "trade_count": 1,
-          "first_ts": 1778267485,
-          "last_ts": 1778267485,
-          "domain": "Politics",
-          "resolved": null
-        },
-        {
-          "conditionId": "0xbee2cd40473495f713c69b9dfbce9fc2837fa4011568222c83c83bb773e35053",
-          "outcomeIndex": 0,
-          "outcome": "Yes",
-          "title": "Starmer out by June 30, 2026?",
-          "eventSlug": "starmer-out-in-2025",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/starmer-out-in-2025-teE3zEaEEyuO.jpg",
-          "avg_buy_price": 0.476691,
-          "buy_size": 1048.8975,
-          "sell_size": 1074.51,
-          "trade_count": 2,
-          "first_ts": 1770281383,
-          "last_ts": 1778243236,
-          "domain": "Politics",
-          "resolved": null
-        }
-      ],
-      "tier": "weak",
-      "archetype": {
-        "label": "Generalist \u00b7 extreme-price \u00b7 Yes-side \u00b7 generalist",
-        "confidence": "medium",
-        "n_resolved": 18,
-        "features": {
-          "crypto_share": 0.0,
-          "extreme_share": 0.704,
-          "median_trade_usd": 329.05,
-          "side_skew": -0.444
-        }
-      },
-      "plain_english_brier": {
-        "label": "Decent",
-        "tone": "ok",
-        "note": "n=18 resolved"
-      },
-      "traffic_light": {
-        "light": "red",
-        "phrase": "Insufficient evidence \u00b7 do not copy"
-      },
-      "reason_codes": [
-        "no_crypto_brier"
-      ]
-    },
-    {
       "wallet": "0xb806060495c5159b64bc484430aa534a9e866787",
       "pseudonym": "Supportive-Load",
       "name": "NBWang",
@@ -3269,29 +3358,34 @@
       "thin_history": true,
       "history_count": 57,
       "overall_brier": {
-        "count": 3,
-        "mean_brier": 0.0201,
-        "volume_weighted_brier": 0.0338
+        "count": 11,
+        "mean_brier": 0.0727,
+        "volume_weighted_brier": 0.0551
       },
       "crypto_brier": null,
       "domain_counts": {
-        "Other": 2,
-        "Sports": 1
+        "Sports": 4,
+        "Other": 7
       },
       "backtest_90d": {
-        "positions_count": 3,
-        "roi_per_dollar": -1.0,
-        "cumulative_pnl_per_dollar": -3.0
+        "positions_count": 11,
+        "roi_per_dollar": -0.6858,
+        "cumulative_pnl_per_dollar": -7.5433
       },
       "median_trade_usd": 1.93,
       "max_trade_usd": 3395.82,
       "copy_label": "Easy \u00b7 retail-friendly",
-      "drift": null,
+      "drift": {
+        "first_half_brier": 0.0224,
+        "second_half_brier": 0.1147,
+        "delta": 0.0923,
+        "verdict": "drifting"
+      },
       "extreme_share": 0.789,
       "contrarian_score": 0.789,
       "crypto_specialty_share": 0.0,
       "markets_breadth": 37,
-      "resolved_count": 3,
+      "resolved_count": 11,
       "btc_position": {
         "primary_outcome": "No",
         "primary_outcome_index": 1,
@@ -3449,20 +3543,20 @@
       ],
       "tier": "weak",
       "archetype": {
-        "label": "Generalist \u00b7 extreme-price \u00b7 Yes-side \u00b7 retail \u00b7 generalist",
+        "label": "Generalist \u00b7 extreme-price \u00b7 retail \u00b7 generalist",
         "confidence": "low",
-        "n_resolved": 3,
+        "n_resolved": 11,
         "features": {
           "crypto_share": 0.0,
           "extreme_share": 0.789,
           "median_trade_usd": 1.93,
-          "side_skew": -0.333
+          "side_skew": -0.091
         }
       },
       "plain_english_brier": {
-        "label": "low evidence",
-        "tone": "muted",
-        "note": "insufficient resolved history (n=3)"
+        "label": "Strong",
+        "tone": "good",
+        "note": "n=11 resolved"
       },
       "traffic_light": {
         "light": "red",
@@ -3481,32 +3575,38 @@
       "thin_history": true,
       "history_count": 58,
       "overall_brier": {
-        "count": 2,
-        "mean_brier": 0.0019,
-        "volume_weighted_brier": 0.0022
+        "count": 6,
+        "mean_brier": 0.0381,
+        "volume_weighted_brier": 0.0066
       },
       "crypto_brier": {
-        "count": 2,
-        "mean_brier": 0.0019,
-        "volume_weighted_brier": 0.0022
+        "count": 5,
+        "mean_brier": 0.0446,
+        "volume_weighted_brier": 0.0091
       },
       "domain_counts": {
-        "Crypto": 2
+        "Crypto": 5,
+        "Macro": 1
       },
       "backtest_90d": {
-        "positions_count": 2,
-        "roi_per_dollar": 0.042,
-        "cumulative_pnl_per_dollar": 0.0841
+        "positions_count": 6,
+        "roi_per_dollar": -0.1185,
+        "cumulative_pnl_per_dollar": -0.7108
       },
       "median_trade_usd": 24.53,
       "max_trade_usd": 4924.82,
       "copy_label": "Easy \u00b7 retail-friendly",
-      "drift": null,
+      "drift": {
+        "first_half_brier": 0.0728,
+        "second_half_brier": 0.0034,
+        "delta": -0.0694,
+        "verdict": "improving"
+      },
       "extreme_share": 0.638,
       "contrarian_score": 0.638,
-      "crypto_specialty_share": 1.0,
+      "crypto_specialty_share": 0.833,
       "markets_breadth": 29,
-      "resolved_count": 2,
+      "resolved_count": 6,
       "btc_position": {
         "primary_outcome": "No",
         "primary_outcome_index": 1,
@@ -3666,26 +3766,25 @@
       "archetype": {
         "label": "Crypto \u00b7 extreme-price \u00b7 No-side \u00b7 retail \u00b7 specialist",
         "confidence": "low",
-        "n_resolved": 2,
+        "n_resolved": 6,
         "features": {
-          "crypto_share": 1.0,
+          "crypto_share": 0.833,
           "extreme_share": 0.638,
           "median_trade_usd": 24.53,
-          "side_skew": 1.0
+          "side_skew": 0.667
         }
       },
       "plain_english_brier": {
         "label": "low evidence",
         "tone": "muted",
-        "note": "insufficient resolved history (n=2)"
+        "note": "insufficient resolved history (n=5)"
       },
       "traffic_light": {
         "light": "red",
         "phrase": "Insufficient evidence \u00b7 do not copy"
       },
       "reason_codes": [
-        "thin_history",
-        "no_crypto_brier"
+        "thin_history"
       ]
     },
     {
@@ -3787,18 +3886,23 @@
       "thin_history": true,
       "history_count": 15,
       "overall_brier": {
-        "count": 1,
-        "mean_brier": 0.0049,
-        "volume_weighted_brier": 0.0049
+        "count": 5,
+        "mean_brier": 0.0012,
+        "volume_weighted_brier": 0.0013
       },
-      "crypto_brier": null,
+      "crypto_brier": {
+        "count": 2,
+        "mean_brier": 0.0002,
+        "volume_weighted_brier": 0.0002
+      },
       "domain_counts": {
-        "Politics": 1
+        "Crypto": 2,
+        "Politics": 3
       },
       "backtest_90d": {
-        "positions_count": 1,
-        "roi_per_dollar": 0.0753,
-        "cumulative_pnl_per_dollar": 0.0753
+        "positions_count": 5,
+        "roi_per_dollar": 0.0277,
+        "cumulative_pnl_per_dollar": 0.1384
       },
       "median_trade_usd": 972.64,
       "max_trade_usd": 3060.47,
@@ -3806,9 +3910,9 @@
       "drift": null,
       "extreme_share": 1.0,
       "contrarian_score": 1.0,
-      "crypto_specialty_share": 0.0,
+      "crypto_specialty_share": 0.4,
       "markets_breadth": 8,
-      "resolved_count": 1,
+      "resolved_count": 5,
       "btc_position": {
         "primary_outcome": "No",
         "primary_outcome_index": 1,
@@ -3897,7 +4001,13 @@
           "first_ts": 1774916885,
           "last_ts": 1774916885,
           "domain": "Crypto",
-          "resolved": null
+          "resolved": {
+            "winning_outcome_index": 1,
+            "actual": 1,
+            "brier": 4e-06,
+            "pnl_per_dollar": 0.002004,
+            "state": "resolved"
+          }
         },
         {
           "conditionId": "0x149e2cdbf5b3df3142452412c4c9f4e8f39379020ba1bc25c1811a3f43c8ad27",
@@ -3935,7 +4045,13 @@
           "first_ts": 1774075783,
           "last_ts": 1774750514,
           "domain": "Politics",
-          "resolved": null
+          "resolved": {
+            "winning_outcome_index": 1,
+            "actual": 1,
+            "brier": 0.000287,
+            "pnl_per_dollar": 0.017238,
+            "state": "resolved"
+          }
         },
         {
           "conditionId": "0x101b7888bf1b299591d674e5f0a29c6444bab247c950a51fc15b7ab38d02529e",
@@ -3951,7 +4067,13 @@
           "first_ts": 1772620285,
           "last_ts": 1774075765,
           "domain": "Politics",
-          "resolved": null
+          "resolved": {
+            "winning_outcome_index": 1,
+            "actual": 1,
+            "brier": 0.000571,
+            "pnl_per_dollar": 0.024474,
+            "state": "resolved"
+          }
         },
         {
           "conditionId": "0x2e150ddea5674a8cf543f90a9bf1c3552aa9c3f784d82d24e21a522a391534fb",
@@ -3967,16 +4089,22 @@
           "first_ts": 1771131687,
           "last_ts": 1772034910,
           "domain": "Crypto",
-          "resolved": null
+          "resolved": {
+            "winning_outcome_index": 1,
+            "actual": 1,
+            "brier": 0.000364,
+            "pnl_per_dollar": 0.019446,
+            "state": "resolved"
+          }
         }
       ],
       "tier": "weak",
       "archetype": {
-        "label": "Generalist \u00b7 extreme-price \u00b7 No-side \u00b7 generalist",
+        "label": "Crypto-leaning \u00b7 extreme-price \u00b7 No-side \u00b7 generalist",
         "confidence": "low",
-        "n_resolved": 1,
+        "n_resolved": 5,
         "features": {
-          "crypto_share": 0.0,
+          "crypto_share": 0.4,
           "extreme_share": 1.0,
           "median_trade_usd": 972.64,
           "side_skew": 1.0
@@ -3985,7 +4113,7 @@
       "plain_english_brier": {
         "label": "low evidence",
         "tone": "muted",
-        "note": "insufficient resolved history (n=1)"
+        "note": "insufficient resolved history (n=2)"
       },
       "traffic_light": {
         "light": "red",
@@ -3997,6 +4125,227 @@
       ]
     },
     {
+      "wallet": "0xf02fd365a731fd3a9a2f079a0e26337ce59b1ed8",
+      "pseudonym": "Superficial-Micronutrient",
+      "name": "blindsamsam",
+      "profile_image": "",
+      "thin_history": false,
+      "history_count": 3500,
+      "overall_brier": {
+        "count": 660,
+        "mean_brier": 0.1836,
+        "volume_weighted_brier": 0.1842
+      },
+      "crypto_brier": null,
+      "domain_counts": {
+        "Sports": 660
+      },
+      "backtest_90d": {
+        "positions_count": 660,
+        "roi_per_dollar": -0.0236,
+        "cumulative_pnl_per_dollar": -15.5956
+      },
+      "median_trade_usd": 100.1,
+      "max_trade_usd": 5764.83,
+      "copy_label": "Mirrorable \u00b7 standard sizes",
+      "drift": {
+        "first_half_brier": 0.1844,
+        "second_half_brier": 0.1829,
+        "delta": -0.0015,
+        "verdict": "stable"
+      },
+      "extreme_share": 0.287,
+      "contrarian_score": 0.287,
+      "crypto_specialty_share": 0.0,
+      "markets_breadth": 1185,
+      "resolved_count": 660,
+      "btc_position": {
+        "primary_outcome": "No",
+        "primary_outcome_index": 1,
+        "yes_size": 0.0,
+        "no_size": 3051.0,
+        "avg_buy_price_yes": null,
+        "avg_buy_price_no": 0.987845,
+        "volume_in_market_usd": 3010.16,
+        "trades_in_market": 4,
+        "first_ts": 1777862892,
+        "last_ts": 1777966862
+      },
+      "entry_gap": {
+        "avg_entry": 0.9878,
+        "current_price": 0.9865,
+        "diff_cents": -0.13,
+        "state": "aligned"
+      },
+      "copy_return_remaining": {
+        "customer_upside": 0.0135,
+        "wallet_upside": 0.0122,
+        "remaining_pct": 1.107,
+        "label": "ample"
+      },
+      "market_only_share": 0.001,
+      "recent_positions": [
+        {
+          "conditionId": "0xa880c424854d4d7be4e71a2f2e5c50f3e7d78c6bbcd62903010fc48d244e9939",
+          "outcomeIndex": 0,
+          "outcome": "Over",
+          "title": "Cavaliers vs. Pistons: O/U 212.5",
+          "eventSlug": "nba-cle-det-2026-05-13",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/super+cool+basketball+in+red+and+blue+wow.png",
+          "avg_buy_price": 0.51,
+          "buy_size": 326.92,
+          "sell_size": 0.0,
+          "trade_count": 2,
+          "first_ts": 1778634777,
+          "last_ts": 1778653196,
+          "domain": "Sports",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x7cebcda1d84a906a7093d3b67c2ddd618c7f342713864a9a454c2f475df9b1ec",
+          "outcomeIndex": 1,
+          "outcome": "Golden Knights",
+          "title": "Ducks vs. Golden Knights",
+          "eventSlug": "nhl-ana-las-2026-05-12",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/nhl.png",
+          "avg_buy_price": 0.58,
+          "buy_size": 266.0,
+          "sell_size": 266.0,
+          "trade_count": 2,
+          "first_ts": 1778557061,
+          "last_ts": 1778647853,
+          "domain": "Sports",
+          "resolved": null
+        },
+        {
+          "conditionId": "0xb232f60f61ae33f5d0311e778c8d7114dbdcce5e5d0ead96bd1f226328b9a2c6",
+          "outcomeIndex": 0,
+          "outcome": "San Francisco Giants",
+          "title": "San Francisco Giants vs. Los Angeles Dodgers",
+          "eventSlug": "mlb-sf-lad-2026-05-12",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Repetitive-markets/MLB.jpg",
+          "avg_buy_price": null,
+          "buy_size": 0.0,
+          "sell_size": 400.0,
+          "trade_count": 1,
+          "first_ts": 1778647851,
+          "last_ts": 1778647851,
+          "domain": "Sports",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x88b54c3da37dff1d6b37caf8e4fc8aa601c784faffa207d4e94b0b41e779e77d",
+          "outcomeIndex": 0,
+          "outcome": "Over",
+          "title": "Timberwolves vs. Spurs: O/U 218.5",
+          "eventSlug": "nba-min-sas-2026-05-12",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/super+cool+basketball+in+red+and+blue+wow.png",
+          "avg_buy_price": null,
+          "buy_size": 0.0,
+          "sell_size": 313.0,
+          "trade_count": 1,
+          "first_ts": 1778640671,
+          "last_ts": 1778640671,
+          "domain": "Sports",
+          "resolved": null
+        },
+        {
+          "conditionId": "0xb865a4a9d49f5892a04e2dfe8bb879913d19fdecc38c2743313ec0d16678e694",
+          "outcomeIndex": 0,
+          "outcome": "Over",
+          "title": "Timberwolves vs. Spurs: O/U 217.5",
+          "eventSlug": "nba-min-sas-2026-05-12",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/super+cool+basketball+in+red+and+blue+wow.png",
+          "avg_buy_price": 0.54,
+          "buy_size": 186.0,
+          "sell_size": 186.0,
+          "trade_count": 2,
+          "first_ts": 1778581292,
+          "last_ts": 1778640671,
+          "domain": "Sports",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x2ee7d631788a616a601a192ae9444b17ac0fe72b2c0dfa8d5ff8ff5daf404205",
+          "outcomeIndex": 0,
+          "outcome": "Spurs",
+          "title": "Spread: Spurs (-9.5)",
+          "eventSlug": "nba-min-sas-2026-05-12",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/super+cool+basketball+in+red+and+blue+wow.png",
+          "avg_buy_price": 0.54,
+          "buy_size": 372.0,
+          "sell_size": 372.0,
+          "trade_count": 3,
+          "first_ts": 1778582172,
+          "last_ts": 1778640067,
+          "domain": "Sports",
+          "resolved": null
+        },
+        {
+          "conditionId": "0x5169cbcb24891fbf46ce96f45ba8cd7a2ee2905dbd50efc5c8d5cbd7c97c30ec",
+          "outcomeIndex": 0,
+          "outcome": "Spurs",
+          "title": "Spread: Spurs (-10.5)",
+          "eventSlug": "nba-min-sas-2026-05-12",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/super+cool+basketball+in+red+and+blue+wow.png",
+          "avg_buy_price": 0.49,
+          "buy_size": 1835.0,
+          "sell_size": 1835.0,
+          "trade_count": 7,
+          "first_ts": 1778552581,
+          "last_ts": 1778640067,
+          "domain": "Sports",
+          "resolved": null
+        },
+        {
+          "conditionId": "0xff1c3bbcb43edc4e3d910c7c2eb3cd3f9bd03c94407d9f0f938448ecc8f36f89",
+          "outcomeIndex": 1,
+          "outcome": "Milwaukee Brewers",
+          "title": "San Diego Padres vs. Milwaukee Brewers",
+          "eventSlug": "mlb-sd-mil-2026-05-12",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Repetitive-markets/MLB.jpg",
+          "avg_buy_price": 0.5633,
+          "buy_size": 891.0,
+          "sell_size": 891.0,
+          "trade_count": 9,
+          "first_ts": 1778580744,
+          "last_ts": 1778639483,
+          "domain": "Sports",
+          "resolved": {
+            "winning_outcome_index": 1,
+            "actual": 1,
+            "brier": 0.190707,
+            "pnl_per_dollar": 0.775253,
+            "state": "resolved"
+          }
+        }
+      ],
+      "tier": "weak",
+      "archetype": {
+        "label": "Generalist \u00b7 generalist",
+        "confidence": "high",
+        "n_resolved": 660,
+        "features": {
+          "crypto_share": 0.0,
+          "extreme_share": 0.287,
+          "median_trade_usd": 100.1,
+          "side_skew": 0.079
+        }
+      },
+      "plain_english_brier": {
+        "label": "Mediocre",
+        "tone": "warn",
+        "note": "n=660 resolved"
+      },
+      "traffic_light": {
+        "light": "red",
+        "phrase": "Insufficient evidence \u00b7 do not copy"
+      },
+      "reason_codes": [
+        "no_crypto_brier"
+      ]
+    },
+    {
       "wallet": "0xa7bf23c25b57571e3bc2ac3bb3379ae65e1ff7c3",
       "pseudonym": "",
       "name": "",
@@ -4004,18 +4353,19 @@
       "thin_history": false,
       "history_count": 3500,
       "overall_brier": {
-        "count": 1,
-        "mean_brier": 0.6889,
-        "volume_weighted_brier": 0.6889
+        "count": 3,
+        "mean_brier": 0.2336,
+        "volume_weighted_brier": 0.2612
       },
       "crypto_brier": null,
       "domain_counts": {
-        "Sports": 1
+        "Sports": 1,
+        "Politics": 2
       },
       "backtest_90d": {
-        "positions_count": 1,
-        "roi_per_dollar": -1.0,
-        "cumulative_pnl_per_dollar": -1.0
+        "positions_count": 3,
+        "roi_per_dollar": -0.2867,
+        "cumulative_pnl_per_dollar": -0.8602
       },
       "median_trade_usd": 4.8,
       "max_trade_usd": 10.8,
@@ -4025,7 +4375,7 @@
       "contrarian_score": 0.861,
       "crypto_specialty_share": 0.0,
       "markets_breadth": 15,
-      "resolved_count": 1,
+      "resolved_count": 3,
       "btc_position": {
         "primary_outcome": "No",
         "primary_outcome_index": 1,
@@ -4185,7 +4535,7 @@
       "archetype": {
         "label": "Generalist \u00b7 extreme-price \u00b7 No-side \u00b7 retail \u00b7 generalist",
         "confidence": "low",
-        "n_resolved": 1,
+        "n_resolved": 3,
         "features": {
           "crypto_share": 0.0,
           "extreme_share": 0.861,
@@ -4196,15 +4546,14 @@
       "plain_english_brier": {
         "label": "low evidence",
         "tone": "muted",
-        "note": "insufficient resolved history (n=1)"
+        "note": "insufficient resolved history (n=3)"
       },
       "traffic_light": {
         "light": "red",
         "phrase": "Insufficient evidence \u00b7 do not copy"
       },
       "reason_codes": [
-        "no_crypto_brier",
-        "weak_calibration"
+        "no_crypto_brier"
       ]
     },
     {
@@ -4215,32 +4564,37 @@
       "thin_history": true,
       "history_count": 33,
       "overall_brier": {
-        "count": 3,
-        "mean_brier": 0.0006,
-        "volume_weighted_brier": 0.0002
+        "count": 13,
+        "mean_brier": 0.0002,
+        "volume_weighted_brier": 0.0003
       },
       "crypto_brier": {
-        "count": 3,
-        "mean_brier": 0.0006,
-        "volume_weighted_brier": 0.0002
+        "count": 13,
+        "mean_brier": 0.0002,
+        "volume_weighted_brier": 0.0003
       },
       "domain_counts": {
-        "Crypto": 3
+        "Crypto": 13
       },
       "backtest_90d": {
-        "positions_count": 3,
-        "roi_per_dollar": 0.0217,
-        "cumulative_pnl_per_dollar": 0.0652
+        "positions_count": 13,
+        "roi_per_dollar": 0.0118,
+        "cumulative_pnl_per_dollar": 0.153
       },
       "median_trade_usd": 9.12,
       "max_trade_usd": 4825.75,
       "copy_label": "Easy \u00b7 retail-friendly",
-      "drift": null,
+      "drift": {
+        "first_half_brier": 0.0002,
+        "second_half_brier": 0.0001,
+        "delta": -0.0,
+        "verdict": "stable"
+      },
       "extreme_share": 1.0,
       "contrarian_score": 1.0,
       "crypto_specialty_share": 1.0,
       "markets_breadth": 33,
-      "resolved_count": 3,
+      "resolved_count": 13,
       "btc_position": {
         "primary_outcome": "No",
         "primary_outcome_index": 1,
@@ -4396,11 +4750,11 @@
           "resolved": null
         }
       ],
-      "tier": "weak",
+      "tier": "strong_crypto",
       "archetype": {
         "label": "Crypto \u00b7 extreme-price \u00b7 No-side \u00b7 retail \u00b7 specialist",
         "confidence": "low",
-        "n_resolved": 3,
+        "n_resolved": 13,
         "features": {
           "crypto_share": 1.0,
           "extreme_share": 1.0,
@@ -4409,17 +4763,16 @@
         }
       },
       "plain_english_brier": {
-        "label": "low evidence",
-        "tone": "muted",
-        "note": "insufficient resolved history (n=3)"
+        "label": "Excellent",
+        "tone": "good",
+        "note": "n=13 resolved"
       },
       "traffic_light": {
-        "light": "red",
-        "phrase": "Insufficient evidence \u00b7 do not copy"
+        "light": "green",
+        "phrase": "Strong wallet \u00b7 good price \u00b7 watch and consider small copy"
       },
       "reason_codes": [
-        "thin_history",
-        "no_crypto_brier"
+        "thin_history"
       ]
     },
     {
@@ -4430,34 +4783,34 @@
       "thin_history": false,
       "history_count": 103,
       "overall_brier": {
-        "count": 7,
-        "mean_brier": 0.0024,
-        "volume_weighted_brier": 0.0019
+        "count": 11,
+        "mean_brier": 0.0016,
+        "volume_weighted_brier": 0.0014
       },
       "crypto_brier": null,
       "domain_counts": {
-        "Politics": 2,
-        "Sports": 5
+        "Politics": 5,
+        "Sports": 6
       },
       "backtest_90d": {
-        "positions_count": 7,
-        "roi_per_dollar": -0.4048,
-        "cumulative_pnl_per_dollar": -2.8334
+        "positions_count": 11,
+        "roi_per_dollar": -0.3445,
+        "cumulative_pnl_per_dollar": -3.7898
       },
       "median_trade_usd": 794.65,
       "max_trade_usd": 4516.82,
       "copy_label": "Stretch \u00b7 mid-sized bankroll",
       "drift": {
-        "first_half_brier": 0.0009,
-        "second_half_brier": 0.0035,
-        "delta": 0.0026,
+        "first_half_brier": 0.0006,
+        "second_half_brier": 0.0025,
+        "delta": 0.0019,
         "verdict": "stable"
       },
       "extreme_share": 0.874,
       "contrarian_score": 0.874,
       "crypto_specialty_share": 0.0,
       "markets_breadth": 43,
-      "resolved_count": 7,
+      "resolved_count": 11,
       "btc_position": {
         "primary_outcome": "No",
         "primary_outcome_index": 1,
@@ -4623,233 +4976,18 @@
       "archetype": {
         "label": "Generalist \u00b7 extreme-price \u00b7 generalist",
         "confidence": "low",
-        "n_resolved": 7,
+        "n_resolved": 11,
         "features": {
           "crypto_share": 0.0,
           "extreme_share": 0.874,
           "median_trade_usd": 794.65,
-          "side_skew": 0.143
+          "side_skew": 0.273
         }
       },
       "plain_english_brier": {
-        "label": "low evidence",
-        "tone": "muted",
-        "note": "insufficient resolved history (n=7)"
-      },
-      "traffic_light": {
-        "light": "red",
-        "phrase": "Insufficient evidence \u00b7 do not copy"
-      },
-      "reason_codes": [
-        "no_crypto_brier"
-      ]
-    },
-    {
-      "wallet": "0xf02fd365a731fd3a9a2f079a0e26337ce59b1ed8",
-      "pseudonym": "Superficial-Micronutrient",
-      "name": "blindsamsam",
-      "profile_image": "",
-      "thin_history": false,
-      "history_count": 3500,
-      "overall_brier": {
-        "count": 209,
-        "mean_brier": 0.1807,
-        "volume_weighted_brier": 0.1925
-      },
-      "crypto_brier": null,
-      "domain_counts": {
-        "Sports": 209
-      },
-      "backtest_90d": {
-        "positions_count": 209,
-        "roi_per_dollar": 0.0503,
-        "cumulative_pnl_per_dollar": 10.5162
-      },
-      "median_trade_usd": 100.1,
-      "max_trade_usd": 5764.83,
-      "copy_label": "Mirrorable \u00b7 standard sizes",
-      "drift": {
-        "first_half_brier": 0.1763,
-        "second_half_brier": 0.1851,
-        "delta": 0.0088,
-        "verdict": "stable"
-      },
-      "extreme_share": 0.285,
-      "contrarian_score": 0.285,
-      "crypto_specialty_share": 0.0,
-      "markets_breadth": 1184,
-      "resolved_count": 209,
-      "btc_position": {
-        "primary_outcome": "No",
-        "primary_outcome_index": 1,
-        "yes_size": 0.0,
-        "no_size": 2034.0,
-        "avg_buy_price_yes": null,
-        "avg_buy_price_no": 0.987845,
-        "volume_in_market_usd": 2007.4,
-        "trades_in_market": 3,
-        "first_ts": 1777862892,
-        "last_ts": 1777966862
-      },
-      "entry_gap": {
-        "avg_entry": 0.9878,
-        "current_price": 0.9865,
-        "diff_cents": -0.13,
-        "state": "aligned"
-      },
-      "copy_return_remaining": {
-        "customer_upside": 0.0135,
-        "wallet_upside": 0.0122,
-        "remaining_pct": 1.107,
-        "label": "ample"
-      },
-      "market_only_share": 0.001,
-      "recent_positions": [
-        {
-          "conditionId": "0x876240d73a95ffc030cd3773f7fd6b61f502cc62d7a247bc28f54b8b9f151fc2",
-          "outcomeIndex": 0,
-          "outcome": "Chicago Cubs",
-          "title": "Chicago Cubs vs. Atlanta Braves",
-          "eventSlug": "mlb-chc-atl-2026-05-12",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Repetitive-markets/MLB.jpg",
-          "avg_buy_price": 0.464942,
-          "buy_size": 1724.0,
-          "sell_size": 0.0,
-          "trade_count": 8,
-          "first_ts": 1778579568,
-          "last_ts": 1778623699,
-          "domain": "Sports",
-          "resolved": null
-        },
-        {
-          "conditionId": "0xff1c3bbcb43edc4e3d910c7c2eb3cd3f9bd03c94407d9f0f938448ecc8f36f89",
-          "outcomeIndex": 1,
-          "outcome": "Milwaukee Brewers",
-          "title": "San Diego Padres vs. Milwaukee Brewers",
-          "eventSlug": "mlb-sd-mil-2026-05-12",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Repetitive-markets/MLB.jpg",
-          "avg_buy_price": 0.5633,
-          "buy_size": 891.0,
-          "sell_size": 0.0,
-          "trade_count": 5,
-          "first_ts": 1778580744,
-          "last_ts": 1778623528,
-          "domain": "Sports",
-          "resolved": null
-        },
-        {
-          "conditionId": "0xe05bf193a3afd569fca1986d9ca421d74be77113f9128724171a468a53db616f",
-          "outcomeIndex": 1,
-          "outcome": "Cleveland Guardians",
-          "title": "Los Angeles Angels vs. Cleveland Guardians",
-          "eventSlug": "mlb-laa-cle-2026-05-12",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Repetitive-markets/MLB.jpg",
-          "avg_buy_price": 0.56,
-          "buy_size": 179.0,
-          "sell_size": 0.0,
-          "trade_count": 1,
-          "first_ts": 1778623321,
-          "last_ts": 1778623321,
-          "domain": "Sports",
-          "resolved": null
-        },
-        {
-          "conditionId": "0xb4847d170b036dced8186bf45322c234c3429c4f7a805769598bdcea7f959d86",
-          "outcomeIndex": 0,
-          "outcome": "paiN",
-          "title": "Counter-Strike: paiN vs FUT Esports (BO3) - IEM Atlanta Group A",
-          "eventSlug": "cs2-pain-fut-2026-05-12",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/counter-strike-image-16c415c538.png",
-          "avg_buy_price": null,
-          "buy_size": 0.0,
-          "sell_size": 980.9,
-          "trade_count": 1,
-          "first_ts": 1778623313,
-          "last_ts": 1778623313,
-          "domain": "Sports",
-          "resolved": null
-        },
-        {
-          "conditionId": "0xee5ea577f0d4aa8cb9b4d9f40c87333b3cdf3adebb4d111a6bee18bca031ac31",
-          "outcomeIndex": 0,
-          "outcome": "Over",
-          "title": "Games Total: O/U 2.5",
-          "eventSlug": "cs2-prv-g2-2026-05-12",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/counter-strike-image-16c415c538.png",
-          "avg_buy_price": null,
-          "buy_size": 0.0,
-          "sell_size": 249.0,
-          "trade_count": 1,
-          "first_ts": 1778592668,
-          "last_ts": 1778592668,
-          "domain": "Sports",
-          "resolved": null
-        },
-        {
-          "conditionId": "0xafd5fe9c9b1f40b655f6632f4db60bea862d90e8d8be3453eeadba10ecdfa50d",
-          "outcomeIndex": 0,
-          "outcome": "Karen Khachanov",
-          "title": "Internazionali BNL d'Italia: Karen Khachanov vs Dino Prizmic",
-          "eventSlug": "atp-khachan-prizmic-2026-05-11",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/atp-tour-b4390c4fb8.jpg",
-          "avg_buy_price": null,
-          "buy_size": 0.0,
-          "sell_size": 541.9,
-          "trade_count": 2,
-          "first_ts": 1778584277,
-          "last_ts": 1778584277,
-          "domain": "Sports",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x2ee7d631788a616a601a192ae9444b17ac0fe72b2c0dfa8d5ff8ff5daf404205",
-          "outcomeIndex": 0,
-          "outcome": "Spurs",
-          "title": "Spread: Spurs (-9.5)",
-          "eventSlug": "nba-min-sas-2026-05-12",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/super+cool+basketball+in+red+and+blue+wow.png",
-          "avg_buy_price": 0.54,
-          "buy_size": 372.0,
-          "sell_size": 0.0,
-          "trade_count": 2,
-          "first_ts": 1778582172,
-          "last_ts": 1778582748,
-          "domain": "Sports",
-          "resolved": null
-        },
-        {
-          "conditionId": "0x5169cbcb24891fbf46ce96f45ba8cd7a2ee2905dbd50efc5c8d5cbd7c97c30ec",
-          "outcomeIndex": 0,
-          "outcome": "Spurs",
-          "title": "Spread: Spurs (-10.5)",
-          "eventSlug": "nba-min-sas-2026-05-12",
-          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/super+cool+basketball+in+red+and+blue+wow.png",
-          "avg_buy_price": 0.49,
-          "buy_size": 1835.0,
-          "sell_size": 0.0,
-          "trade_count": 6,
-          "first_ts": 1778552581,
-          "last_ts": 1778582524,
-          "domain": "Sports",
-          "resolved": null
-        }
-      ],
-      "tier": "weak",
-      "archetype": {
-        "label": "Generalist \u00b7 generalist",
-        "confidence": "high",
-        "n_resolved": 209,
-        "features": {
-          "crypto_share": 0.0,
-          "extreme_share": 0.285,
-          "median_trade_usd": 100.1,
-          "side_skew": -0.043
-        }
-      },
-      "plain_english_brier": {
-        "label": "Mediocre",
-        "tone": "warn",
-        "note": "n=209 resolved"
+        "label": "Excellent",
+        "tone": "good",
+        "note": "n=11 resolved"
       },
       "traffic_light": {
         "light": "red",
@@ -4867,22 +5005,22 @@
       "thin_history": true,
       "history_count": 10,
       "overall_brier": {
-        "count": 1,
-        "mean_brier": 0.3025,
-        "volume_weighted_brier": 0.3025
+        "count": 2,
+        "mean_brier": 0.1513,
+        "volume_weighted_brier": 0.1561
       },
       "crypto_brier": {
-        "count": 1,
-        "mean_brier": 0.3025,
-        "volume_weighted_brier": 0.3025
+        "count": 2,
+        "mean_brier": 0.1513,
+        "volume_weighted_brier": 0.1561
       },
       "domain_counts": {
-        "Crypto": 1
+        "Crypto": 2
       },
       "backtest_90d": {
-        "positions_count": 1,
-        "roi_per_dollar": 1.2222,
-        "cumulative_pnl_per_dollar": 1.2222
+        "positions_count": 2,
+        "roi_per_dollar": 0.6116,
+        "cumulative_pnl_per_dollar": 1.2232
       },
       "median_trade_usd": 4.0,
       "max_trade_usd": 994.5,
@@ -4892,7 +5030,7 @@
       "contrarian_score": 0.7,
       "crypto_specialty_share": 1.0,
       "markets_breadth": 8,
-      "resolved_count": 1,
+      "resolved_count": 2,
       "btc_position": {
         "primary_outcome": "No",
         "primary_outcome_index": 1,
@@ -4997,7 +5135,13 @@
           "first_ts": 1777971264,
           "last_ts": 1777971264,
           "domain": "Crypto",
-          "resolved": null
+          "resolved": {
+            "winning_outcome_index": 0,
+            "actual": 1,
+            "brier": 1e-06,
+            "pnl_per_dollar": 0.001001,
+            "state": "resolved"
+          }
         },
         {
           "conditionId": "0xa0f4c4924ea1a8b410b4ce821c2a9955fad21a1b19bdcfde90816732278b3dd5",
@@ -5060,7 +5204,7 @@
       "archetype": {
         "label": "Crypto \u00b7 extreme-price \u00b7 Yes-side \u00b7 retail \u00b7 specialist",
         "confidence": "low",
-        "n_resolved": 1,
+        "n_resolved": 2,
         "features": {
           "crypto_share": 1.0,
           "extreme_share": 0.7,
@@ -5071,7 +5215,7 @@
       "plain_english_brier": {
         "label": "low evidence",
         "tone": "muted",
-        "note": "insufficient resolved history (n=1)"
+        "note": "insufficient resolved history (n=2)"
       },
       "traffic_light": {
         "light": "red",
@@ -5079,8 +5223,7 @@
       },
       "reason_codes": [
         "thin_history",
-        "no_crypto_brier",
-        "weak_calibration"
+        "no_crypto_brier"
       ]
     },
     {
@@ -5091,41 +5234,42 @@
       "thin_history": false,
       "history_count": 96,
       "overall_brier": {
-        "count": 11,
-        "mean_brier": 0.0082,
-        "volume_weighted_brier": 0.0054
+        "count": 28,
+        "mean_brier": 0.0073,
+        "volume_weighted_brier": 0.0029
       },
       "crypto_brier": {
-        "count": 1,
-        "mean_brier": 0.0004,
-        "volume_weighted_brier": 0.0004
+        "count": 6,
+        "mean_brier": 0.018,
+        "volume_weighted_brier": 0.0047
       },
       "domain_counts": {
-        "Sports": 1,
-        "Politics": 2,
-        "Macro": 6,
-        "Crypto": 1,
-        "Other": 1
+        "Sports": 2,
+        "Macro": 12,
+        "Other": 2,
+        "Politics": 5,
+        "Crypto": 6,
+        "Entertainment": 1
       },
       "backtest_90d": {
-        "positions_count": 8,
-        "roi_per_dollar": 0.0659,
-        "cumulative_pnl_per_dollar": 0.5275
+        "positions_count": 22,
+        "roi_per_dollar": -0.058,
+        "cumulative_pnl_per_dollar": -1.2759
       },
       "median_trade_usd": 24.44,
       "max_trade_usd": 991.8,
       "copy_label": "Easy \u00b7 retail-friendly",
       "drift": {
-        "first_half_brier": 0.0165,
-        "second_half_brier": 0.0013,
-        "delta": -0.0152,
+        "first_half_brier": 0.0137,
+        "second_half_brier": 0.0009,
+        "delta": -0.0129,
         "verdict": "stable"
       },
       "extreme_share": 0.938,
       "contrarian_score": 0.938,
-      "crypto_specialty_share": 0.091,
+      "crypto_specialty_share": 0.214,
       "markets_breadth": 44,
-      "resolved_count": 11,
+      "resolved_count": 28,
       "btc_position": {
         "primary_outcome": "No",
         "primary_outcome_index": 1,
@@ -5284,33 +5428,37 @@
           "first_ts": 1776322888,
           "last_ts": 1777562922,
           "domain": "Macro",
-          "resolved": null
+          "resolved": {
+            "winning_outcome_index": 0,
+            "actual": 1,
+            "brier": 0.000121,
+            "pnl_per_dollar": 0.011122,
+            "state": "resolved"
+          }
         }
       ],
       "tier": "weak",
       "archetype": {
         "label": "Generalist \u00b7 extreme-price \u00b7 retail \u00b7 generalist",
-        "confidence": "low",
-        "n_resolved": 11,
+        "confidence": "medium",
+        "n_resolved": 28,
         "features": {
-          "crypto_share": 0.091,
+          "crypto_share": 0.214,
           "extreme_share": 0.938,
           "median_trade_usd": 24.44,
-          "side_skew": -0.091
+          "side_skew": 0.071
         }
       },
       "plain_english_brier": {
         "label": "low evidence",
         "tone": "muted",
-        "note": "insufficient resolved history (n=1)"
+        "note": "insufficient resolved history (n=6)"
       },
       "traffic_light": {
         "light": "red",
         "phrase": "Insufficient evidence \u00b7 do not copy"
       },
-      "reason_codes": [
-        "no_crypto_brier"
-      ]
+      "reason_codes": []
     },
     {
       "wallet": "0xf617bb5ce12a0bc9699628a612621a5ae8078370",
