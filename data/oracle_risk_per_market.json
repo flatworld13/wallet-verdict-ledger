@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "methodology_version": "oracle-risk-v0.1",
-  "generated_at_unix": 1778685942,
-  "n_markets": 6001,
-  "n_proposals": 6001,
+  "generated_at_unix": 1779758329,
+  "n_markets": 6002,
+  "n_proposals": 6002,
   "category_counts": {
     "HIGH_RISK": 0,
     "ELEVATED": 0,
     "MINOR_FLAG": 0,
-    "CLEAN": 6001
+    "CLEAN": 6002
   },
   "description": "Per-market UMA dispute / oracle-risk score \u00b7 aggregates uma_disputes_raw.json by polymarket_condition_id. Higher = riskier. Use cases: pro-trader copy-decision guard (Role 1) \u00b7 enterprise audit (Role 7).",
   "markets": {
@@ -108038,6 +108038,24 @@
       "risk_reasons": [
         "delay 60.0h"
       ],
+      "methodology_version": "oracle-risk-v0.1"
+    },
+    "0x49c778d7b068e7d031b272b2660d829448f7d1e17cecf792416cba15cac56431": {
+      "condition_id": "0x49c778d7b068e7d031b272b2660d829448f7d1e17cecf792416cba15cac56431",
+      "event_slug": "will-venezuelan-crude-oil-production-reach-1m-barrels-per-day-in-2026",
+      "question": "Will Venezuelan crude oil production reach 1m barrels per day in 2026?",
+      "n_proposals": 1,
+      "n_disputed": 0,
+      "total_dispute_count": 0,
+      "has_high_bond": false,
+      "manual_resolution": false,
+      "resolution_delay_h_max": 0.0,
+      "first_closed_at_unix": 1778691424,
+      "last_resolved_at_unix": 1778691424,
+      "risk_score": 0,
+      "risk_label": "CLEAN",
+      "risk_icon": "\ud83d\udfe2",
+      "risk_reasons": [],
       "methodology_version": "oracle-risk-v0.1"
     }
   }

@@ -11,7 +11,7 @@
     "4_builder",
     "5_hedge_fund"
   ],
-  "built_at_unix": 1778687794,
+  "built_at_unix": 1778748330,
   "trade_size_usd": 100.0,
   "ledger_source": "data/copyability_audit_ledger.json",
   "ledger_methodology": "copyability-validation-v0.1",
@@ -19,20 +19,20 @@
     "30d": {
       "days": 30,
       "trade_size_usd": 100.0,
-      "n_wallets": 3,
-      "n_copy_decisions": 0,
-      "n_avoid_decisions": 22,
-      "total_copy_pnl_usd": 0,
-      "total_avoid_saved_usd": -1207.76
+      "n_wallets": 5,
+      "n_copy_decisions": 3,
+      "n_avoid_decisions": 27,
+      "total_copy_pnl_usd": 12550.04,
+      "total_avoid_saved_usd": -597.24
     },
     "90d": {
       "days": 90,
       "trade_size_usd": 100.0,
-      "n_wallets": 5,
-      "n_copy_decisions": 0,
-      "n_avoid_decisions": 48,
-      "total_copy_pnl_usd": 0,
-      "total_avoid_saved_usd": -71587.32
+      "n_wallets": 7,
+      "n_copy_decisions": 3,
+      "n_avoid_decisions": 53,
+      "total_copy_pnl_usd": 12550.04,
+      "total_avoid_saved_usd": -70976.8
     }
   },
   "per_wallet": {
@@ -42,21 +42,38 @@
         "30d": {
           "days": 30,
           "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 2,
-          "avoid_saved_usd": -150.04,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": [
+          "n_copy_decisions": 2,
+          "copy_pnl_usd": 150.04,
+          "copy_pnl_per_dollar": 0.7502,
+          "n_avoid_decisions": 0,
+          "avoid_saved_usd": 0,
+          "best_call": {
+            "chain_id": "f73817b94e796b86",
+            "condition_id": "0x10e268eb49ba9c89268d4017df611ec036dbccd3a845991d457dd1e3206e21ef",
+            "market_question": "Minnesota Twins vs. Washington Nationals",
+            "side": "Washington Nationals",
+            "tier_label": "COPY_SMALL",
+            "wallet_fill_unix": 1778108987,
+            "pnl_per_dollar": 0.7502,
+            "pnl_usd_at_100": 75.02
+          },
+          "worst_call": {
+            "chain_id": "f73817b94e796b86",
+            "condition_id": "0x10e268eb49ba9c89268d4017df611ec036dbccd3a845991d457dd1e3206e21ef",
+            "market_question": "Minnesota Twins vs. Washington Nationals",
+            "side": "Washington Nationals",
+            "tier_label": "COPY_SMALL",
+            "wallet_fill_unix": 1778108987,
+            "pnl_per_dollar": 0.7502,
+            "pnl_usd_at_100": 75.02
+          },
+          "all_copy_calls": [
             {
               "chain_id": "f73817b94e796b86",
               "condition_id": "0x10e268eb49ba9c89268d4017df611ec036dbccd3a845991d457dd1e3206e21ef",
               "market_question": "Minnesota Twins vs. Washington Nationals",
               "side": "Washington Nationals",
-              "tier_label": "AVOID",
+              "tier_label": "COPY_SMALL",
               "wallet_fill_unix": 1778108987,
               "pnl_per_dollar": 0.7502,
               "pnl_usd_at_100": 75.02
@@ -66,31 +83,49 @@
               "condition_id": "0x10e268eb49ba9c89268d4017df611ec036dbccd3a845991d457dd1e3206e21ef",
               "market_question": "Minnesota Twins vs. Washington Nationals",
               "side": "Minnesota Twins",
-              "tier_label": "AVOID",
+              "tier_label": "COPY_SMALL",
               "wallet_fill_unix": 1778108987,
               "pnl_per_dollar": 0.7502,
               "pnl_usd_at_100": 75.02
             }
-          ]
+          ],
+          "all_avoid_calls": []
         },
         "90d": {
           "days": 90,
           "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 2,
-          "avoid_saved_usd": -150.04,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": [
+          "n_copy_decisions": 2,
+          "copy_pnl_usd": 150.04,
+          "copy_pnl_per_dollar": 0.7502,
+          "n_avoid_decisions": 0,
+          "avoid_saved_usd": 0,
+          "best_call": {
+            "chain_id": "f73817b94e796b86",
+            "condition_id": "0x10e268eb49ba9c89268d4017df611ec036dbccd3a845991d457dd1e3206e21ef",
+            "market_question": "Minnesota Twins vs. Washington Nationals",
+            "side": "Washington Nationals",
+            "tier_label": "COPY_SMALL",
+            "wallet_fill_unix": 1778108987,
+            "pnl_per_dollar": 0.7502,
+            "pnl_usd_at_100": 75.02
+          },
+          "worst_call": {
+            "chain_id": "f73817b94e796b86",
+            "condition_id": "0x10e268eb49ba9c89268d4017df611ec036dbccd3a845991d457dd1e3206e21ef",
+            "market_question": "Minnesota Twins vs. Washington Nationals",
+            "side": "Washington Nationals",
+            "tier_label": "COPY_SMALL",
+            "wallet_fill_unix": 1778108987,
+            "pnl_per_dollar": 0.7502,
+            "pnl_usd_at_100": 75.02
+          },
+          "all_copy_calls": [
             {
               "chain_id": "f73817b94e796b86",
               "condition_id": "0x10e268eb49ba9c89268d4017df611ec036dbccd3a845991d457dd1e3206e21ef",
               "market_question": "Minnesota Twins vs. Washington Nationals",
               "side": "Washington Nationals",
-              "tier_label": "AVOID",
+              "tier_label": "COPY_SMALL",
               "wallet_fill_unix": 1778108987,
               "pnl_per_dollar": 0.7502,
               "pnl_usd_at_100": 75.02
@@ -100,12 +135,13 @@
               "condition_id": "0x10e268eb49ba9c89268d4017df611ec036dbccd3a845991d457dd1e3206e21ef",
               "market_question": "Minnesota Twins vs. Washington Nationals",
               "side": "Minnesota Twins",
-              "tier_label": "AVOID",
+              "tier_label": "COPY_SMALL",
               "wallet_fill_unix": 1778108987,
               "pnl_per_dollar": 0.7502,
               "pnl_usd_at_100": 75.02
             }
-          ]
+          ],
+          "all_avoid_calls": []
         }
       }
     },
@@ -735,6 +771,268 @@
         }
       }
     },
+    "0x4133bcbad1d9c41de776646696f41c34d0a65e70": {
+      "pseudonym": "EF203F2IPFC2ICP20W-CP3",
+      "windows": {
+        "30d": {
+          "days": 30,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 7,
+          "avoid_saved_usd": 460.48,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": [
+            {
+              "chain_id": "d12891e8df5188b5",
+              "condition_id": "0x0445ea2c776c894c7f12226689ce6ba241e7c5732c5d693035e4d5c7b6d4bd11",
+              "market_question": "Will Inter Miami CF win on 2026-04-22?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776850826,
+              "pnl_per_dollar": -1.0,
+              "pnl_usd_at_100": -100.0
+            },
+            {
+              "chain_id": "1f39db5c98d28195",
+              "condition_id": "0x09a7611f6a7a7995c388e8550ad045b8c0c5358966b7c65054dce429d80c3469",
+              "market_question": "Spread: Brighton & Hove Albion FC (-2.5)",
+              "side": "Chelsea FC",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776784212,
+              "pnl_per_dollar": -1.0,
+              "pnl_usd_at_100": -100.0
+            },
+            {
+              "chain_id": "ec9016b4a6f2aab0",
+              "condition_id": "0x09a7611f6a7a7995c388e8550ad045b8c0c5358966b7c65054dce429d80c3469",
+              "market_question": "Spread: Brighton & Hove Albion FC (-2.5)",
+              "side": "Brighton & Hove Albion FC",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776784212,
+              "pnl_per_dollar": -1.0,
+              "pnl_usd_at_100": -100.0
+            },
+            {
+              "chain_id": "9975edc8faaf41d7",
+              "condition_id": "0x10fc5f7c6b9928cbe499c5ae66409c99901263ae746b933989f62e1c12affa8a",
+              "market_question": "Will Norwich City FC vs. Derby County FC end in a draw?",
+              "side": "No",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776803344,
+              "pnl_per_dollar": 0.1976,
+              "pnl_usd_at_100": 19.76
+            },
+            {
+              "chain_id": "2e92ce6533630904",
+              "condition_id": "0x062918e2e53609c5eecbc396b65d714fe72dfff5e4829f5de83a71391e89c358",
+              "market_question": "Will Real Madrid CF win on 2026-04-21?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776723042,
+              "pnl_per_dollar": -1.0,
+              "pnl_usd_at_100": -100.0
+            },
+            {
+              "chain_id": "946d38e4afbdd7f1",
+              "condition_id": "0x062918e2e53609c5eecbc396b65d714fe72dfff5e4829f5de83a71391e89c358",
+              "market_question": "Will Real Madrid CF win on 2026-04-21?",
+              "side": "No",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776723042,
+              "pnl_per_dollar": -1.0,
+              "pnl_usd_at_100": -100.0
+            },
+            {
+              "chain_id": "b98c4b63dfc800a7",
+              "condition_id": "0x17d8dc2d50cb679932ceb091257bb64e10813108432d4bf0759665a73a78b95d",
+              "market_question": "Will Stoke City FC vs. Millwall FC end in a draw?",
+              "side": "No",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776801020,
+              "pnl_per_dollar": 0.1976,
+              "pnl_usd_at_100": 19.76
+            }
+          ]
+        },
+        "90d": {
+          "days": 90,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 7,
+          "avoid_saved_usd": 460.48,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": [
+            {
+              "chain_id": "d12891e8df5188b5",
+              "condition_id": "0x0445ea2c776c894c7f12226689ce6ba241e7c5732c5d693035e4d5c7b6d4bd11",
+              "market_question": "Will Inter Miami CF win on 2026-04-22?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776850826,
+              "pnl_per_dollar": -1.0,
+              "pnl_usd_at_100": -100.0
+            },
+            {
+              "chain_id": "1f39db5c98d28195",
+              "condition_id": "0x09a7611f6a7a7995c388e8550ad045b8c0c5358966b7c65054dce429d80c3469",
+              "market_question": "Spread: Brighton & Hove Albion FC (-2.5)",
+              "side": "Chelsea FC",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776784212,
+              "pnl_per_dollar": -1.0,
+              "pnl_usd_at_100": -100.0
+            },
+            {
+              "chain_id": "ec9016b4a6f2aab0",
+              "condition_id": "0x09a7611f6a7a7995c388e8550ad045b8c0c5358966b7c65054dce429d80c3469",
+              "market_question": "Spread: Brighton & Hove Albion FC (-2.5)",
+              "side": "Brighton & Hove Albion FC",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776784212,
+              "pnl_per_dollar": -1.0,
+              "pnl_usd_at_100": -100.0
+            },
+            {
+              "chain_id": "9975edc8faaf41d7",
+              "condition_id": "0x10fc5f7c6b9928cbe499c5ae66409c99901263ae746b933989f62e1c12affa8a",
+              "market_question": "Will Norwich City FC vs. Derby County FC end in a draw?",
+              "side": "No",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776803344,
+              "pnl_per_dollar": 0.1976,
+              "pnl_usd_at_100": 19.76
+            },
+            {
+              "chain_id": "2e92ce6533630904",
+              "condition_id": "0x062918e2e53609c5eecbc396b65d714fe72dfff5e4829f5de83a71391e89c358",
+              "market_question": "Will Real Madrid CF win on 2026-04-21?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776723042,
+              "pnl_per_dollar": -1.0,
+              "pnl_usd_at_100": -100.0
+            },
+            {
+              "chain_id": "946d38e4afbdd7f1",
+              "condition_id": "0x062918e2e53609c5eecbc396b65d714fe72dfff5e4829f5de83a71391e89c358",
+              "market_question": "Will Real Madrid CF win on 2026-04-21?",
+              "side": "No",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776723042,
+              "pnl_per_dollar": -1.0,
+              "pnl_usd_at_100": -100.0
+            },
+            {
+              "chain_id": "b98c4b63dfc800a7",
+              "condition_id": "0x17d8dc2d50cb679932ceb091257bb64e10813108432d4bf0759665a73a78b95d",
+              "market_question": "Will Stoke City FC vs. Millwall FC end in a draw?",
+              "side": "No",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776801020,
+              "pnl_per_dollar": 0.1976,
+              "pnl_usd_at_100": 19.76
+            }
+          ]
+        }
+      }
+    },
+    "0x5d189e816b4149be00977c1a3c8840374aec4972": {
+      "pseudonym": "gloriafoster",
+      "windows": {
+        "30d": {
+          "days": 30,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 1,
+          "copy_pnl_usd": 12400.0,
+          "copy_pnl_per_dollar": 124.0,
+          "n_avoid_decisions": 0,
+          "avoid_saved_usd": 0,
+          "best_call": {
+            "chain_id": "acb65ee35147f65c",
+            "condition_id": "0x0d14f5dc9fb3250ec888b1ac8d9fe9a0ce06f9d3ea60fdf138e8690622fea84c",
+            "market_question": "Will the Fed decrease interest rates by 25 bps after the April 2026 meeting?",
+            "side": "Yes",
+            "tier_label": "COPY_SMALL",
+            "wallet_fill_unix": 1776841276,
+            "pnl_per_dollar": 124.0,
+            "pnl_usd_at_100": 12400.0
+          },
+          "worst_call": {
+            "chain_id": "acb65ee35147f65c",
+            "condition_id": "0x0d14f5dc9fb3250ec888b1ac8d9fe9a0ce06f9d3ea60fdf138e8690622fea84c",
+            "market_question": "Will the Fed decrease interest rates by 25 bps after the April 2026 meeting?",
+            "side": "Yes",
+            "tier_label": "COPY_SMALL",
+            "wallet_fill_unix": 1776841276,
+            "pnl_per_dollar": 124.0,
+            "pnl_usd_at_100": 12400.0
+          },
+          "all_copy_calls": [
+            {
+              "chain_id": "acb65ee35147f65c",
+              "condition_id": "0x0d14f5dc9fb3250ec888b1ac8d9fe9a0ce06f9d3ea60fdf138e8690622fea84c",
+              "market_question": "Will the Fed decrease interest rates by 25 bps after the April 2026 meeting?",
+              "side": "Yes",
+              "tier_label": "COPY_SMALL",
+              "wallet_fill_unix": 1776841276,
+              "pnl_per_dollar": 124.0,
+              "pnl_usd_at_100": 12400.0
+            }
+          ],
+          "all_avoid_calls": []
+        },
+        "90d": {
+          "days": 90,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 1,
+          "copy_pnl_usd": 12400.0,
+          "copy_pnl_per_dollar": 124.0,
+          "n_avoid_decisions": 0,
+          "avoid_saved_usd": 0,
+          "best_call": {
+            "chain_id": "acb65ee35147f65c",
+            "condition_id": "0x0d14f5dc9fb3250ec888b1ac8d9fe9a0ce06f9d3ea60fdf138e8690622fea84c",
+            "market_question": "Will the Fed decrease interest rates by 25 bps after the April 2026 meeting?",
+            "side": "Yes",
+            "tier_label": "COPY_SMALL",
+            "wallet_fill_unix": 1776841276,
+            "pnl_per_dollar": 124.0,
+            "pnl_usd_at_100": 12400.0
+          },
+          "worst_call": {
+            "chain_id": "acb65ee35147f65c",
+            "condition_id": "0x0d14f5dc9fb3250ec888b1ac8d9fe9a0ce06f9d3ea60fdf138e8690622fea84c",
+            "market_question": "Will the Fed decrease interest rates by 25 bps after the April 2026 meeting?",
+            "side": "Yes",
+            "tier_label": "COPY_SMALL",
+            "wallet_fill_unix": 1776841276,
+            "pnl_per_dollar": 124.0,
+            "pnl_usd_at_100": 12400.0
+          },
+          "all_copy_calls": [
+            {
+              "chain_id": "acb65ee35147f65c",
+              "condition_id": "0x0d14f5dc9fb3250ec888b1ac8d9fe9a0ce06f9d3ea60fdf138e8690622fea84c",
+              "market_question": "Will the Fed decrease interest rates by 25 bps after the April 2026 meeting?",
+              "side": "Yes",
+              "tier_label": "COPY_SMALL",
+              "wallet_fill_unix": 1776841276,
+              "pnl_per_dollar": 124.0,
+              "pnl_usd_at_100": 12400.0
+            }
+          ],
+          "all_avoid_calls": []
+        }
+      }
+    },
     "0x4bac379da2f29d87c01ff737843e396a2cec02b1": {
       "pseudonym": "LuckyNFT444",
       "windows": {
@@ -896,6 +1194,37 @@
               "pnl_usd_at_100": 1438.46
             }
           ]
+        }
+      }
+    },
+    "0x2785e7022dc20757108204b13c08cea8613b70ae": {
+      "pseudonym": "poorsob",
+      "windows": {
+        "30d": {
+          "days": 30,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 0,
+          "avoid_saved_usd": 0,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": []
+        },
+        "90d": {
+          "days": 90,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 0,
+          "avoid_saved_usd": 0,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": []
         }
       }
     },

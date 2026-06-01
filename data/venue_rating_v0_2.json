@@ -2,12 +2,12 @@
   "schema_version": "0.2",
   "method_version": "S18-v0.2",
   "quarter": "Q2 2026",
-  "published_at_unix": 1778688598,
-  "published_at_utc": "2026-05-13",
+  "published_at_unix": 1780270221,
+  "published_at_utc": "2026-05-31",
   "venue": "Polymarket",
   "byline": "VERDICT VENUE DESK",
   "composite_grade": "B+",
-  "composite_score": 3.33,
+  "composite_score": 3.43,
   "composite_score_max": 4.0,
   "rating_status": "PROVISIONAL",
   "n_metrics_available": 3,
@@ -20,36 +20,36 @@
       "value": 0.0,
       "value_unit": "hours",
       "p90": 0.0,
-      "sample_size": 5999,
+      "sample_size": 6019,
       "grade": "A",
-      "note": "Lower is better. Industry baseline: \u226424h is healthy. n=5999 markets \u00b7 NEW v0.2 (was n=0 in v0.1)."
+      "note": "Lower is better. Industry baseline: \u226424h is healthy. n=6019 markets \u00b7 NEW v0.2 (was n=0 in v0.1)."
     },
     "settlement_accuracy": {
       "metric_label": "W3 Polygon block-timestamp accuracy vs reported resolution",
-      "value": 8519.0,
+      "value": 10535.0,
       "value_unit": "seconds (median divergence)",
-      "sample_size": 726,
-      "within_60s_count": 186,
+      "sample_size": 1016,
+      "within_60s_count": 247,
       "grade": "B",
       "note": "Cross-check of Polymarket-reported timestamps against Polygon block ts."
     },
     "backfill_coverage": {
       "metric_label": "% of audit chains in resolved or backfilled state",
-      "value": 75.2,
+      "value": 81.2,
       "value_unit": "percent",
-      "sample_size": 1330,
-      "n_resolved": 0,
-      "n_backfilled": 1000,
-      "grade": "B",
+      "sample_size": 1801,
+      "n_resolved": 12,
+      "n_backfilled": 1451,
+      "grade": "B+",
       "note": "Higher is better. Resolved chains without receipts indicate audit-trail gaps."
     }
   },
   "supplementary_metrics": {
     "uma_bond_aggregate": {
       "metric_label": "Aggregate UMA bond exposure (proxy for venue dispute-risk surface)",
-      "total_bond_usdc": 3000495.0,
+      "total_bond_usdc": 3010495.0,
       "median_bond_usdc": 500.0,
-      "n_markets_with_bond": 6001,
+      "n_markets_with_bond": 6021,
       "n_high_bond_markets": 0,
       "high_bond_threshold_usdc": 50000,
       "note": "Markets with high UMA bonds (\u2265$50K) are higher-stakes resolutions where disputes are more likely. Total exposure = sum of all bonds posted across closed markets."
@@ -60,93 +60,14 @@
     "withdraw_success_rate  \u00b7 Polygon RPC monitor of CTFExchange withdraw txs"
   ],
   "sources": [
-    "data/audit_ledger.json (M1 chain ledger \u00b7 1330 chains)",
-    "data/settlement_attestations.json (W3 Polygon RPC v60bf \u00b7 726 attestations)",
-    "data/uma_disputes_raw.json (NEW v60bz \u00b7 Polymarket Gamma /markets \u00b7 6001 closed markets)"
+    "data/audit_ledger.json (M1 chain ledger \u00b7 1801 chains)",
+    "data/settlement_attestations.json (W3 Polygon RPC v60bf \u00b7 1016 attestations)",
+    "data/uma_disputes_raw.json (NEW v60bz \u00b7 Polymarket Gamma /markets \u00b7 6021 closed markets)"
   ],
   "frame_3_role": "Venue Desk \u00b7 the Polymarket investigation beat \u00b7 S&P/Moody's pattern \u00b7 published quarterly",
   "m_axis": [
     "M2 (only neutral seat)",
     "M5 (methodology version-locked \u00b7 v0.1 \u2192 v0.2 corrections-history audit)"
   ],
-  "thresholds_published": {
-    "resolution_timing": [
-      {
-        "upper_hours": 6,
-        "grade": "A"
-      },
-      {
-        "upper_hours": 24,
-        "grade": "A-"
-      },
-      {
-        "upper_hours": 72,
-        "grade": "B+"
-      },
-      {
-        "upper_hours": 168,
-        "grade": "B"
-      },
-      {
-        "upper_hours": 336,
-        "grade": "C"
-      },
-      {
-        "upper_hours": null,
-        "grade": "D"
-      }
-    ],
-    "settlement_accuracy": [
-      {
-        "upper_sec": 60,
-        "grade": "A"
-      },
-      {
-        "upper_sec": 300,
-        "grade": "A-"
-      },
-      {
-        "upper_sec": 3600,
-        "grade": "B+"
-      },
-      {
-        "upper_sec": 14400,
-        "grade": "B"
-      },
-      {
-        "upper_sec": 86400,
-        "grade": "C"
-      },
-      {
-        "upper_sec": null,
-        "grade": "D"
-      }
-    ],
-    "backfill_coverage": [
-      {
-        "lower_pct": 95.0,
-        "grade": "A"
-      },
-      {
-        "lower_pct": 90.0,
-        "grade": "A-"
-      },
-      {
-        "lower_pct": 80.0,
-        "grade": "B+"
-      },
-      {
-        "lower_pct": 60.0,
-        "grade": "B"
-      },
-      {
-        "lower_pct": 40.0,
-        "grade": "C"
-      },
-      {
-        "lower_pct": null,
-        "grade": "D"
-      }
-    ]
-  }
+  "thresholds_note": "venue grading bands version-locked in _private/ \u00b7 re-published on customer disclosure (TOP RULE -1)"
 }
