@@ -1,14 +1,14 @@
 {
   "schema_version": "3",
-  "built_at_unix": 1780264796,
+  "built_at_unix": 1780303267,
   "source_files": [
     "data/wallets_expanded.json",
     "data/wallets_candidates.json"
   ],
-  "wallet_count": 488,
+  "wallet_count": 490,
   "data_quality_breakdown": {
     "full": 488,
-    "provisional": 0
+    "provisional": 2
   },
   "wallets": {
     "0x006cc834cc092684f1b56626e23bedb3835c16ea": {
@@ -81196,9 +81196,141 @@
       "first_trade_unix": 1722688637,
       "last_trade_unix": 1777617178,
       "data_quality": "full"
+    },
+    "0xc3cd1d612bbf9fbf80da5a9bff0b0470cb46816c": {
+      "wallet": "0xc3cd1d612bbf9fbf80da5a9bff0b0470cb46816c",
+      "pseudonym": "0xc3cd1d612bbf",
+      "name": null,
+      "profile_image": null,
+      "data_quality": "provisional",
+      "data_quality_note": "Raw counts only \u00b7 awaiting full enrichment (Brier \u00b7 drift \u00b7 extreme_share \u00b7 timing features) from next data-engine run",
+      "brier_by_domain": {
+        "Crypto": {
+          "count": 87,
+          "mean_brier": null,
+          "volume_weighted_brier": null,
+          "tier": "provisional"
+        },
+        "Entertainment": {
+          "count": 21,
+          "mean_brier": null,
+          "volume_weighted_brier": null,
+          "tier": "provisional"
+        },
+        "Macro": {
+          "count": 23,
+          "mean_brier": null,
+          "volume_weighted_brier": null,
+          "tier": "provisional"
+        },
+        "Other": {
+          "count": 11,
+          "mean_brier": null,
+          "volume_weighted_brier": null,
+          "tier": "provisional"
+        },
+        "Politics": {
+          "count": 200,
+          "mean_brier": null,
+          "volume_weighted_brier": null,
+          "tier": "provisional"
+        },
+        "Sports": {
+          "count": 272,
+          "mean_brier": null,
+          "volume_weighted_brier": null,
+          "tier": "provisional"
+        }
+      },
+      "overall_brier": {
+        "count": 614,
+        "mean_brier": null,
+        "volume_weighted_brier": null
+      },
+      "history_count": 3500,
+      "resolved_count": 614,
+      "median_trade_usd": 35.39,
+      "max_trade_usd": 1320.0,
+      "first_trade_unix": 1765725565,
+      "last_trade_unix": 1778167421,
+      "extreme_share": null,
+      "drift": null,
+      "archetype": null,
+      "recent_positions": [],
+      "passport_positions": [],
+      "sources": [
+        "data_engine_candidates"
+      ],
+      "seed_sources": []
+    },
+    "0xe613b515bd46b1585a8b137a4d291d9b80bd540e": {
+      "wallet": "0xe613b515bd46b1585a8b137a4d291d9b80bd540e",
+      "pseudonym": "0xe613b515bd46",
+      "name": null,
+      "profile_image": null,
+      "data_quality": "provisional",
+      "data_quality_note": "Raw counts only \u00b7 awaiting full enrichment (Brier \u00b7 drift \u00b7 extreme_share \u00b7 timing features) from next data-engine run",
+      "brier_by_domain": {
+        "Crypto": {
+          "count": 33,
+          "mean_brier": null,
+          "volume_weighted_brier": null,
+          "tier": "provisional"
+        },
+        "Entertainment": {
+          "count": 11,
+          "mean_brier": null,
+          "volume_weighted_brier": null,
+          "tier": "provisional"
+        },
+        "Macro": {
+          "count": 3,
+          "mean_brier": null,
+          "volume_weighted_brier": null,
+          "tier": "provisional"
+        },
+        "Other": {
+          "count": 6,
+          "mean_brier": null,
+          "volume_weighted_brier": null,
+          "tier": "provisional"
+        },
+        "Politics": {
+          "count": 24,
+          "mean_brier": null,
+          "volume_weighted_brier": null,
+          "tier": "provisional"
+        },
+        "Sports": {
+          "count": 182,
+          "mean_brier": null,
+          "volume_weighted_brier": null,
+          "tier": "provisional"
+        }
+      },
+      "overall_brier": {
+        "count": 259,
+        "mean_brier": null,
+        "volume_weighted_brier": null
+      },
+      "history_count": 3500,
+      "resolved_count": 259,
+      "median_trade_usd": 5.68,
+      "max_trade_usd": 3120.0,
+      "first_trade_unix": 1765304834,
+      "last_trade_unix": 1778181396,
+      "extreme_share": null,
+      "drift": null,
+      "archetype": null,
+      "recent_positions": [],
+      "passport_positions": [],
+      "sources": [
+        "data_engine_candidates"
+      ],
+      "seed_sources": []
     }
   },
   "public_ledger_redacted": true,
   "public_ledger_redaction_doc": "v60fd \u00b7 per-wallet proprietary intermediates stripped from the public snapshot. Fields removed: cluster_badge_state, cluster_confidence, cluster_evidence, cluster_id, copyability, execution_quality, holdout_split, layers, mw, skill_layer, sybil_cluster_id, sybil_confidence, sybil_evidence, sybil_methodology_version, timing_features. Sybil/cluster propagation moved to separate framed surface (data/wallet_clusters.json \u00b7 with statistical-not-legal disclaimers). M4 reproducibility-from-clone preserved \u00b7 brier / drift / overall_brier / brier_by_domain / recent_positions[:5] / history_count all retained.",
-  "public_ledger_redacted_at_unix": 1780297993
+  "public_ledger_redacted_at_unix": 1780363376
 }

@@ -1,10 +1,10 @@
 {
   "schema_version": "0.1",
   "method": "gamma-api-v0.1",
-  "fetched_at_unix": 1780016806,
-  "fetched_at_utc": "2026-05-29",
+  "fetched_at_unix": 1780303344,
+  "fetched_at_utc": "2026-06-01",
   "source": "Polymarket Gamma API \u00b7 /events?closed=true \u00b7 public \u00b7 whitelisted in CLAUDE.md",
-  "n_total_proposals": 6021,
+  "n_total_proposals": 6023,
   "n_disputed": 0,
   "dispute_rate": 0.0,
   "proposals": [
@@ -96343,6 +96343,38 @@
       "uma_bond": 500.0,
       "resolved_by": "0x65070BE91477460D8A7AeEb94ef92fe056C2f2A7",
       "volume_num": 1564.946661
+    },
+    {
+      "polymarket_condition_id": "0x31591f85e2c367cc31e99f095fa348cede9e7234698d30e54f24d6335eb7ddf2",
+      "event_slug": "will-neuralinks-valuation-hit-high-42pt5b-by-december-31",
+      "question": "Will Neuralink's valuation hit (HIGH) $42.5B by December 31?",
+      "closed_at_unix": 1780168623,
+      "resolved_at_unix": 1780168623,
+      "was_disputed": false,
+      "settled_price": 1.0,
+      "dispute_count": 0,
+      "uma_resolution_status": "resolved",
+      "uma_status_history": [],
+      "automatically_resolved": true,
+      "uma_bond": 500.0,
+      "resolved_by": "0x65070BE91477460D8A7AeEb94ef92fe056C2f2A7",
+      "volume_num": 1308.7878759999999
+    },
+    {
+      "polymarket_condition_id": "0x90fde48315f730495b8b001e0aa42bb18e9b9eaf47a8446c1470f20cdfe34753",
+      "event_slug": "will-anthropics-valuation-hit-high-1pt0t-by-december-31-878",
+      "question": "Will Anthropic's valuation hit (HIGH) $1.0T by December 31?",
+      "closed_at_unix": 1780081508,
+      "resolved_at_unix": 1780081508,
+      "was_disputed": false,
+      "settled_price": 1.0,
+      "dispute_count": 0,
+      "uma_resolution_status": "resolved",
+      "uma_status_history": [],
+      "automatically_resolved": true,
+      "uma_bond": 500.0,
+      "resolved_by": "0x65070BE91477460D8A7AeEb94ef92fe056C2f2A7",
+      "volume_num": 111978.74386199999
     }
   ],
   "note": "UMA dispute records derived from Polymarket Gamma API resolution metadata. v0.1 ships today using public Gamma \u00b7 v0.2 will read UMA OptimisticOracleV2 contract events directly via Polygon RPC for ground-truth accuracy."
