@@ -2,7 +2,7 @@
   "schema_version": "0.2",
   "method_version": "S18-v0.2",
   "quarter": "Q2 2026",
-  "published_at_unix": 1780541085,
+  "published_at_unix": 1780566679,
   "published_at_utc": "2026-06-04",
   "venue": "Polymarket",
   "byline": "VERDICT VENUE DESK",
@@ -35,11 +35,11 @@
     },
     "backfill_coverage": {
       "metric_label": "% of audit chains in resolved or backfilled state",
-      "value": 83.6,
+      "value": 83.1,
       "value_unit": "percent",
-      "sample_size": 2171,
-      "n_resolved": 15,
-      "n_backfilled": 1799,
+      "sample_size": 2114,
+      "n_resolved": 16,
+      "n_backfilled": 1740,
       "grade": "B+",
       "note": "Higher is better. Resolved chains without receipts indicate audit-trail gaps."
     }
@@ -60,7 +60,7 @@
     "withdraw_success_rate  \u00b7 Polygon RPC monitor of CTFExchange withdraw txs"
   ],
   "sources": [
-    "data/audit_ledger.json (M1 chain ledger \u00b7 2171 chains)",
+    "data/audit_ledger.json (M1 chain ledger \u00b7 2114 chains)",
     "data/settlement_attestations.json (W3 Polygon RPC v60bf \u00b7 1016 attestations)",
     "data/uma_disputes_raw.json (NEW v60bz \u00b7 Polymarket Gamma /markets \u00b7 6024 closed markets)"
   ],
