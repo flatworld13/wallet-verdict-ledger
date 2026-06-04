@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "methodology_version": "learning-brief-v0.1",
+  "date": "2026-06-04",
+  "built_at_unix": 1780540465,
+  "day_n": 22,
+  "milestone": "Day-7",
+  "ledger_source": "data/copyability_audit_ledger.json",
+  "ledger_methodology": "copyability-validation-v0.1",
+  "tier_rollup": {
+    "WAIT": {
+      "n_decisions": 869,
+      "n_resolved": 782,
+      "n_positive_for_follower": 574,
+      "positive_rate_for_follower": 0.734,
+      "tier_correct_rate": null,
+      "tier_correct_meaning": "neutral \u00b7 WAIT does not commit to direction",
+      "avg_follower_pnl": 16.5814,
+      "insufficient_n": false
+    },
+    "AVOID": {
+      "n_decisions": 219,
+      "n_resolved": 123,
+      "n_positive_for_follower": 71,
+      "positive_rate_for_follower": 0.5772,
+      "tier_correct_rate": 0.4228,
+      "tier_correct_meaning": "follower would have lost money (AVOID was right)",
+      "avg_follower_pnl": 2.0827,
+      "insufficient_n": false
+    },
+    "COPY_SMALL": {
+      "n_decisions": 62,
+      "n_resolved": 34,
+      "n_positive_for_follower": 12,
+      "positive_rate_for_follower": 0.3529,
+      "tier_correct_rate": 0.3529,
+      "tier_correct_meaning": "follower would have made money",
+      "avg_follower_pnl": 3.1046,
+      "insufficient_n": false
+    },
+    "COPY_NOW": {
+      "n_decisions": 0,
+      "n_resolved": 0,
+      "n_positive_for_follower": 0,
+      "positive_rate_for_follower": null,
+      "tier_correct_rate": null,
+      "tier_correct_meaning": "follower would have made money",
+      "avg_follower_pnl": null,
+      "insufficient_n": true
+    }
+  },
+  "triggers_fired": [
+    {
+      "trigger_id": "AVOID_correct_below_55",
+      "tier": "AVOID",
+      "severity": "FAIL",
+      "description": "AVOID tier_correct_rate < 55% at Day 30+ with n \u2265 30",
+      "action": "AVOID is not predicting losses \u00b7 re-examine AVOID feature weighting \u00b7 publish AVOID v3.1",
+      "observed": {
+        "tier_correct_rate": 0.4228,
+        "n_resolved": 123,
+        "avg_follower_pnl": 2.0827
+      }
+    },
+    {
+      "trigger_id": "COPY_SMALL_correct_below_60",
+      "tier": "COPY_SMALL",
+      "severity": "WARN",
+      "description": "COPY_SMALL tier_correct_rate < 60% at Day 30+ with n \u2265 30",
+      "action": "Tighten COPY_SMALL band from 60-79 \u2192 65-79 \u00b7 publish v3.1",
+      "observed": {
+        "tier_correct_rate": 0.3529,
+        "n_resolved": 34,
+        "avg_follower_pnl": 3.1046
+      }
+    }
+  ],
+  "counts": {
+    "PASS": 0,
+    "WARN": 1,
+    "FAIL": 1,
+    "TOTAL_FIRES": 2
+  },
+  "doctrine_note": "Pre-registered triggers per /methodology/copyability-validation \u00b7 committed in advance \u00b7 cannot be ad-hoc revised. M5 legal armor \u00b7 S&P-pattern. Operator-approved 2026-05-13 v60fp."
+}
