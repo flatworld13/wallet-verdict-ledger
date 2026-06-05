@@ -11,7 +11,7 @@
     "4_builder",
     "5_hedge_fund"
   ],
-  "built_at_unix": 1780566088,
+  "built_at_unix": 1780652213,
   "trade_size_usd": 100.0,
   "ledger_source": "data/copyability_audit_ledger.json",
   "ledger_methodology": "copyability-validation-v0.1",
@@ -29,10 +29,10 @@
       "days": 90,
       "trade_size_usd": 100.0,
       "n_wallets": 11,
-      "n_copy_decisions": 26,
-      "n_avoid_decisions": 37,
-      "total_copy_pnl_usd": 2306.21,
-      "total_avoid_saved_usd": -17948.43
+      "n_copy_decisions": 29,
+      "n_avoid_decisions": 38,
+      "total_copy_pnl_usd": 2775.55,
+      "total_avoid_saved_usd": -17848.43
     }
   },
   "per_wallet": {
@@ -486,9 +486,9 @@
         "90d": {
           "days": 90,
           "trade_size_usd": 100.0,
-          "n_copy_decisions": 22,
-          "copy_pnl_usd": 400.23,
-          "copy_pnl_per_dollar": 0.1819,
+          "n_copy_decisions": 25,
+          "copy_pnl_usd": 869.57,
+          "copy_pnl_per_dollar": 0.3478,
           "n_avoid_decisions": 0,
           "avoid_saved_usd": 0,
           "best_call": {
@@ -583,6 +583,16 @@
               "pnl_usd_at_100": 27.39
             },
             {
+              "chain_id": "524164c7e992c050",
+              "condition_id": "0x2ad94e09381050ebbe1e9e3268433213be00a11c30a1e0877eada033d8307fc6",
+              "market_question": "Spread: Real Madrid CF (-1.5)",
+              "side": "Real Madrid CF",
+              "tier_label": "COPY_SMALL",
+              "wallet_fill_unix": 1776670400,
+              "pnl_per_dollar": 0.7232,
+              "pnl_usd_at_100": 72.32
+            },
+            {
               "chain_id": "218d010fab886697",
               "condition_id": "0x074b8576b721617d33e837abec16a5070358acd22d8da4fed98a2ce78fc2d669",
               "market_question": "Will West Bromwich Albion FC win on 2026-04-21?",
@@ -673,6 +683,16 @@
               "pnl_usd_at_100": -100.0
             },
             {
+              "chain_id": "fb65741236457734",
+              "condition_id": "0x2c702594b54c2bd406fbf7584c08065d2b94e514051bb7773ac650ae5a32231c",
+              "market_question": "Will Valencia CF win on 2026-04-21?",
+              "side": "No",
+              "tier_label": "COPY_SMALL",
+              "wallet_fill_unix": 1776789172,
+              "pnl_per_dollar": 1.9851,
+              "pnl_usd_at_100": 198.51
+            },
+            {
               "chain_id": "0f78ef50a9b9151a",
               "condition_id": "0x0409732bafec7b5a38fa15fa69f659391ac1b2ba687da014fcffe5d5defb5586",
               "market_question": "Will RCD Mallorca vs. Valencia CF end in a draw?",
@@ -701,6 +721,16 @@
               "wallet_fill_unix": 1776789120,
               "pnl_per_dollar": 0.7391,
               "pnl_usd_at_100": 73.91
+            },
+            {
+              "chain_id": "43c50cbbd8f811bb",
+              "condition_id": "0x2c702594b54c2bd406fbf7584c08065d2b94e514051bb7773ac650ae5a32231c",
+              "market_question": "Will Valencia CF win on 2026-04-21?",
+              "side": "Yes",
+              "tier_label": "COPY_SMALL",
+              "wallet_fill_unix": 1776789172,
+              "pnl_per_dollar": 1.9851,
+              "pnl_usd_at_100": 198.51
             },
             {
               "chain_id": "24c777dcd402f24b",
@@ -801,8 +831,8 @@
           "n_copy_decisions": 0,
           "copy_pnl_usd": 0,
           "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 5,
-          "avoid_saved_usd": -665.84,
+          "n_avoid_decisions": 6,
+          "avoid_saved_usd": -565.84,
           "best_call": null,
           "worst_call": null,
           "all_copy_calls": [],
@@ -824,6 +854,16 @@
               "side": "Yes",
               "tier_label": "AVOID",
               "wallet_fill_unix": 1775962537,
+              "pnl_per_dollar": -1.0,
+              "pnl_usd_at_100": -100.0
+            },
+            {
+              "chain_id": "c823d05e11f71ab6",
+              "condition_id": "0x2c9f34a7ca3d42d22d80c8376e15561d7e576887df246d2bcce3a774dfb26a83",
+              "market_question": "Will Tisza win 130+ seats in the Hungarian National Assembly in this election?",
+              "side": "No",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1775962321,
               "pnl_per_dollar": -1.0,
               "pnl_usd_at_100": -100.0
             },
