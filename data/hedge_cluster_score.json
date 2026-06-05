@@ -1,1348 +1,1933 @@
 {
   "schema_version": 1,
   "methodology_version": "hedge-cluster-score-v0.1",
-  "date": "2026-05-11",
-  "generated_at_unix": 1778460674,
+  "date": "2026-06-05",
+  "generated_at_unix": 1780665151,
   "description": "Hedge Cluster Score per cohort wallet \u00b7 v0.1 rule-based \u00b7 applies private weights to public observables from hedge_cluster_features.json. Action labels: CLEAR / WATCH / HEDGE CLUSTER.",
   "thresholds": {
     "CLEAR_to_WATCH": 15,
     "WATCH_to_HEDGE": 40
   },
   "per_wallet": {
-    "0xa9878e59934ab507f9039bcb917c1bae0451141d": {
-      "score": 33.0,
-      "label": "WATCH",
-      "reason": "weak hedge cluster signal \u00b7 small cluster or few strong partners",
-      "cluster_size": 2,
+    "0xdb2223cc5202a4718c3069f577ec971f71c96478": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
       "cluster_id": 1,
-      "n_strong_cohort_partners": 1,
-      "max_n_co_fills_with_cohort": 14
+      "n_strong_cohort_partners": 10,
+      "max_n_co_fills_with_cohort": 6778
     },
-    "0xc613e6707bd115e5c04d303d944568232697662b": {
-      "score": 34.2,
-      "label": "WATCH",
-      "reason": "weak hedge cluster signal \u00b7 small cluster or few strong partners",
-      "cluster_size": 2,
+    "0x204f72f35326db932158cba6adff0b9a1da95e14": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
       "cluster_id": 1,
-      "n_strong_cohort_partners": 1,
-      "max_n_co_fills_with_cohort": 14
-    },
-    "0xdd572169e741c72227589c5cb56b9ddd638d694d": {
-      "score": 25.1,
-      "label": "WATCH",
-      "reason": "weak hedge cluster signal \u00b7 small cluster or few strong partners",
-      "cluster_size": 2,
-      "cluster_id": 2,
-      "n_strong_cohort_partners": 1,
-      "max_n_co_fills_with_cohort": 5
-    },
-    "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1": {
-      "score": 25.2,
-      "label": "WATCH",
-      "reason": "weak hedge cluster signal \u00b7 small cluster or few strong partners",
-      "cluster_size": 2,
-      "cluster_id": 2,
-      "n_strong_cohort_partners": 1,
-      "max_n_co_fills_with_cohort": 5
-    },
-    "0x9c667a1d1c1337c6dca9d93241d386e4ed346b66": {
-      "score": 25.1,
-      "label": "WATCH",
-      "reason": "weak hedge cluster signal \u00b7 small cluster or few strong partners",
-      "cluster_size": 2,
-      "cluster_id": 3,
-      "n_strong_cohort_partners": 1,
-      "max_n_co_fills_with_cohort": 5
-    },
-    "0x6480542954b70a674a74bd1a6015dec362dc8dc5": {
-      "score": 25.4,
-      "label": "WATCH",
-      "reason": "weak hedge cluster signal \u00b7 small cluster or few strong partners",
-      "cluster_size": 2,
-      "cluster_id": 3,
-      "n_strong_cohort_partners": 1,
-      "max_n_co_fills_with_cohort": 5
-    },
-    "0x4b7410aefbf0f38012b0dfb1131a4de147a9e8d7": {
-      "score": 25.9,
-      "label": "WATCH",
-      "reason": "weak hedge cluster signal \u00b7 small cluster or few strong partners",
-      "cluster_size": 2,
-      "cluster_id": 4,
-      "n_strong_cohort_partners": 1,
-      "max_n_co_fills_with_cohort": 5
-    },
-    "0x55b4af6a1cff148a307cad8ad098206a028e80ea": {
-      "score": 25.0,
-      "label": "WATCH",
-      "reason": "weak hedge cluster signal \u00b7 small cluster or few strong partners",
-      "cluster_size": 2,
-      "cluster_id": 4,
-      "n_strong_cohort_partners": 1,
-      "max_n_co_fills_with_cohort": 5
-    },
-    "0x8de0ee3ce923e4ae28b9745a652797eaea8887a0": {
-      "score": 4.0,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 4
-    },
-    "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418": {
-      "score": 5.6,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 4
-    },
-    "0xc88eb9ab98663254bff489c515f39f23b76bf3e1": {
-      "score": 3.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 3
-    },
-    "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf": {
-      "score": 3.8,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 3
-    },
-    "0x5bffcf561bcae83af680ad600cb99f1184d6ffbe": {
-      "score": 3.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 3
-    },
-    "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71": {
-      "score": 4.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 3
-    },
-    "0xd1acd3925d895de9aec98ff95f3a30c5279d08d5": {
-      "score": 4.2,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 3
+      "n_strong_cohort_partners": 30,
+      "max_n_co_fills_with_cohort": 6778
     },
     "0xd42f6a1634a3707e27cbae14ca966068e5d1047d": {
-      "score": 3.4,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 3
-    },
-    "0x3cf3e8d5427aed066a7a5926980600f6c3cf87b3": {
-      "score": 3.4,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 3
-    },
-    "0x1c1675a7c3662131acfd00aaabcbc97a6a4f45e9": {
-      "score": 3.6,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 3
-    },
-    "0xa61ef8773ec2e821962306ca87d4b57e39ff0abd": {
-      "score": 3.6,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 3
-    },
-    "0x9703676286b93c2eca71ca96e8757104519a69c2": {
-      "score": 2.0,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0xa40d51396185d72e7505402357b929c4f6f3ea7a": {
-      "score": 2.0,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x4f2ba33b080882c0f6b296f48cfd07b6c326f448": {
-      "score": 2.4,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0xbacd00c9080a82ded56f504ee8810af732b0ab35": {
-      "score": 2.6,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0xddff18c9e86262e62af046d818dda0c3de6f52d6": {
-      "score": 2.4,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 17,
+      "max_n_co_fills_with_cohort": 5093
     },
     "0x9d84ce0306f8551e02efef1680475fc0f1dc1344": {
-      "score": 3.4,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x8a4c788f043023b8b28a762216d037e9f148532b": {
-      "score": 2.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x1e1f17412069c0736adfaadf8ee7f46e5612c855": {
-      "score": 2.2,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0xd0d6053c3c37e727402d84c14069780d360993aa": {
-      "score": 1.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x5bab6b0b49e77983e882768030f8cc335bee53e6": {
-      "score": 2.0,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0xee00ba338c59557141789b127927a55f5cc5cea1": {
-      "score": 1.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x6a72f61820b26b1fe4d956e17b6dc2a1ea3033ee": {
-      "score": 2.0,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111": {
-      "score": 3.6,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x75e765216a57942d738d880ffcda854d9f869080": {
-      "score": 2.0,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x3b5d93e768e79c0974ac0f7d210237988120cc80": {
-      "score": 1.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x00e2d8f88b39d9b430c136c679369f41101cd56a": {
-      "score": 2.4,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x4e25605fd905e9972efc0f4d8814530c655cd7a7": {
-      "score": 2.7,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x1521b47bf0c41f6b7fd3ad41cdec566812c8f23e": {
-      "score": 1.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x4c2966a198cd7ac982110d0219b037afa9997570": {
-      "score": 2.0,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0xc6dd722558dbfbd8fa780efcbe819ed8c6604b9f": {
-      "score": 2.4,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0xcdb1f1ef8213c06911e4ba6a884176c5571e276c": {
-      "score": 2.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0xd3989ba133ab48b5b3a81e3dba9b37b5966a46d7": {
-      "score": 1.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x96b59f71f635da5da031e3e93448c54fe226f5e7": {
-      "score": 3.2,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x7ab6ac0f0d6ca5a15ec57abeaf413d31c8cdfa77": {
-      "score": 2.4,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0xe613b515bd46b1585a8b137a4d291d9b80bd540e": {
-      "score": 2.4,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x2663daca3cecf3767ca1c3b126002a8578a8ed1f": {
-      "score": 2.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x56c9fbdeccf198f1f5ad95ace39b24f5f7fb0d9e": {
-      "score": 2.0,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x2005d16a84ceefa912d4e380cd32e7ff827875ea": {
-      "score": 2.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0xed107a85a4585a381e48c7f7ca4144909e7dd2e5": {
-      "score": 2.4,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x44c1dfe43260c94ed4f1d00de2e1f80fb113ebc1": {
-      "score": 2.2,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0xf33f0dfe73e3d1b3d0453e2a02c5d19100d3085c": {
-      "score": 2.2,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0xa9f9c0ca31912bee7ecd8aa25bfad07adcd6b3de": {
-      "score": 2.2,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x7f9e2d1df78614564a70becc7fa14aa9a6623a0e": {
-      "score": 1.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x482bf5accdecfaffa67c14d4d4fbb59f428a3266": {
-      "score": 2.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0xf0ec554fe75d57fef3f2404fce070b5c71d46064": {
-      "score": 2.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x4478d7bd8a295691ac84f60a5ec2b47e122102a4": {
-      "score": 2.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x6db983ff1cbc85249e64e6ccd101aaa613ba4ab5": {
-      "score": 2.2,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x011f2d377e56119fb09196dffb0948ae55711122": {
-      "score": 2.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0x4bac379da2f29d87c01ff737843e396a2cec02b1": {
-      "score": 2.0,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0xb7d54bf1d0a362beb916d9cb58a04c41d67e0789": {
-      "score": 2.0,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2
-    },
-    "0xe72bb501df5306c75c89383d48a1e81073fbb0a0": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xff30ac5b2cb4822a1b15604ac90659ef71314a37": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xce5bec63b40392845a9a504915f607c8e03a047a": {
-      "score": 1.3,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x8c544d302252df77f939723de189dc39fdac7e8c": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xfbf3d501e88815464642d0e913f15379c3eeb218": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xdc876e6873772d38716fda7f2452a78d426d7ab6": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xd04d93be590ded67b99f053d4b6d29d3f8483312": {
-      "score": 1.4,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xfc25f141ed27bb1787338d2c4e7f51e3a15e1f7f": {
-      "score": 1.2,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xbddf61af533ff524d27154e589d2d7a81510c684": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x9cb990f1862568a63d8601efeebe0304225c32f2": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2": {
-      "score": 1.2,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x37e4728b3c4607fb2b3b205386bb1d1fb1a8c991": {
-      "score": 1.3,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xccf31ea0f5de9c0bb4bb695fc77c3683dee41dd9": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xa8b202e6e9a4c2091b6860f1f5c9e9119bbc9a39": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71": {
-      "score": 1.8,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x43372356634781eea88d61bbdd7824cdce958882": {
-      "score": 1.4,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x48185887c8dc95de60ee89722f1d0ee7894cbf0b": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x0b9cae2b0dfe7a71c413e0604eaac1c352f87e44": {
-      "score": 1.2,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xd1c769317bd15de7768a70d0214cf0bbcc531d2b": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xfbfd14dd4bb607373119de95f1d4b21c3b6c0029": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x45580feac3b916a88b7513929e26f86b3adea2b3": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b": {
-      "score": 1.6,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xfc2f4f50ce2f6045d35558a5e2d8d4b2ac6610c7": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xa84bdfe6ffa8bc7dd21b5c412258062e7b765055": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x07e78f5f58f8fa839f298cfe3fefd258883aa343": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x492442eab586f242b53bda933fd5de859c8a3782": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x80da08b50ec85bf1f575725091928fff064b4f6d": {
-      "score": 1.3,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xecb14ac6e9ca447ce2f2912e6217b43d7b655da3": {
-      "score": 1.2,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xfea31bc088000ff909be1dfd8d0e3f2c7ef2d227": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x33c2ea1151c4399309715df027688845a6a99818": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x96f608f80c73bae30939b3eb87c17462e785a92c": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x2e0b70d482e6b389e81dea528be57d825dd48070": {
-      "score": 1.2,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x2d27e4d20f3b8a2ee3bc861d9b83752f338676d8": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x162f6fff88a52864f2ecc9833e58089d5254798d": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xc3cd1d612bbf9fbf80da5a9bff0b0470cb46816c": {
-      "score": 1.3,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x5188fa0e8a77e87bc6a58e6781fdfc4e165cc804": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xa58d4f278d7953cd38eeb929f7e242bfc7c0b9b8": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x294a61964989c4e31b5ea0572d8ca839b01fbbba": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x0d16999d6ba24c2c2c8bff93f91014cc43fad24d": {
-      "score": 1.3,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x224b255eaa3279ceb77330317d3c38ee8e73f6b8": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xc4d1a863e9cc45d02ba22d3a1ae9ba7822018ce8": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xe40ea00e74059c76c0035c919ef6b99c3e25a94d": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x627a0123bef3dfa869183b806a39c91cf9afcdc2": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x2fb0f88ef5ba40e799b996e6f07b590d92b4abf8": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xbc8c61c1de7c31a8ff68aebf55256c028db9273f": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 10,
+      "max_n_co_fills_with_cohort": 5093
     },
     "0xdb27bf2ac5d428a9c63dbc914611036855a6c56e": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 8,
+      "max_n_co_fills_with_cohort": 3796
     },
-    "0xb41ac4e8907de5460e2dac0a98df8d1530d33a25": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+    "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 44,
+      "max_n_co_fills_with_cohort": 3796
     },
-    "0x2974bd0059e48f215c391882976e0f1b4c8c9c23": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+    "0x3cf3e8d5427aed066a7a5926980600f6c3cf87b3": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 7,
+      "max_n_co_fills_with_cohort": 3304
     },
-    "0x4ad6cadefae3c28f5b2caa32a99ebba3a614464c": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+    "0x7ea571c40408f340c1c8fc8eaacebab53c1bde7b": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 13,
+      "max_n_co_fills_with_cohort": 3082
     },
-    "0xf769c6390f6d564fe4859effbddb682c62660114": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+    "0xee0d153c17fe82b8866b484753b56a700ab457ab": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 10,
+      "max_n_co_fills_with_cohort": 2817
     },
-    "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1": {
-      "score": 1.2,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+    "0xf0ec554fe75d57fef3f2404fce070b5c71d46064": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 13,
+      "max_n_co_fills_with_cohort": 2802
     },
-    "0xe25b9180f5687aa85bd94ee309bb72a464320f1b": {
-      "score": 1.2,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+    "0xd809c54478c5e50fe2aa20acccf0857baa0a6542": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 12,
+      "max_n_co_fills_with_cohort": 2607
     },
-    "0x8454f39e7fa6957dfbf1ecc574820ada1c92331a": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+    "0x2005d16a84ceefa912d4e380cd32e7ff827875ea": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 19,
+      "max_n_co_fills_with_cohort": 2607
     },
-    "0x89cd944aa9cf528142e3557099c6992eb7ce4d7d": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+    "0xe9cbb1c9b3f7f411dd4fdf2ea7afa780c8b4d096": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 13,
+      "max_n_co_fills_with_cohort": 2499
     },
-    "0x8ebfdc251c6c378d4a3a54a8f15cebfa4b9183ce": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x71ed0bc95433cdf1be29f43219725fce9addd9eb": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xb786b8b6335e77dfad19928313e97753039cb18d": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x3f02a8b650d4b30449e83616f2165460209ca51c": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xcaab19659b995951a44cc992447cb2ad5be324dd": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x9e5c74c0bf46f0bf3fcd1064d17e6201c67fd8e6": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x692e411de5f7ba4d859c6b33038a81224c12ee58": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x216509be5332c6037105b4f871966eb97240f598": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x4cc3522b689a6bf1fb4a2444c523e7776db47552": {
-      "score": 1.2,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x847b8fdacd157191d47c7ccb2aad5c67bbd21027": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x1f6b85cb85876df272199039207b33166757267e": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x63ce342161250d705dc0b16df89036c8e5f9ba9a": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xcb516a0c8b8ba2e42ff5c123e2f624d6cce6359d": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0x21f90e5ff30c12f52fbb2fb220aa268f22faed12": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
-    },
-    "0xa9b44dca52ed35e59ac2a6f49d1203b8155464ed": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+    "0xd218e474776403a330142299f7796e8ba32eb5c9": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 46,
+      "max_n_co_fills_with_cohort": 2405
     },
     "0x9f47f1fcb1701bf9eaf31236ad39875e5d60af93": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 2405
+    },
+    "0xe25b9180f5687aa85bd94ee309bb72a464320f1b": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 13,
+      "max_n_co_fills_with_cohort": 2376
+    },
+    "0xee613b3fc183ee44f9da9c05f53e2da107e3debf": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 20,
+      "max_n_co_fills_with_cohort": 2318
+    },
+    "0x53757615de1c42b83f893b79d4241a009dc2aeea": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 10,
+      "max_n_co_fills_with_cohort": 2318
+    },
+    "0xf1528f12e645462c344799b62b1b421a6a4c64aa": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 6,
+      "max_n_co_fills_with_cohort": 2218
+    },
+    "0xead152b855effa6b5b5837f53b24c0756830c76a": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 30,
+      "max_n_co_fills_with_cohort": 2218
+    },
+    "0x507e52ef684ca2dd91f90a9d26d149dd3288beae": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 16,
+      "max_n_co_fills_with_cohort": 2160
+    },
+    "0x30e443872ddf63b2908a49f92cd690c304a55102": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 12,
+      "max_n_co_fills_with_cohort": 2022
+    },
+    "0xd106952ebf30a3125affd8a23b6c1f30c35fc79c": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 16,
+      "max_n_co_fills_with_cohort": 2009
+    },
+    "0x6d3c5bd13984b2de47c3a88ddc455309aab3d294": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 23,
+      "max_n_co_fills_with_cohort": 2009
+    },
+    "0x5f390e4b7d6f06d6756a6c92afdbf7b3176aa78c": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 11,
+      "max_n_co_fills_with_cohort": 1648
+    },
+    "0xdd92232bcdfbbac04132b3cbacbf32c2e5b16b2a": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 6,
+      "max_n_co_fills_with_cohort": 1647
+    },
+    "0xc8075693f48668a264b9fa313b47f52712fcc12b": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 10,
+      "max_n_co_fills_with_cohort": 1544
+    },
+    "0xecaa8806a9a05049d7d5260a33dc924220e377a9": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 14,
+      "max_n_co_fills_with_cohort": 1514
+    },
+    "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 27,
+      "max_n_co_fills_with_cohort": 1511
+    },
+    "0xe9076a87c5ed90ef16e6fe6529c943baeca0cff6": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 1485
+    },
+    "0xb27bc932bf8110d8f78e55da7d5f0497a18b5b82": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 7,
+      "max_n_co_fills_with_cohort": 1485
+    },
+    "0xea2b4224411e723499a803ce3f4758779fb31fc6": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 7,
+      "max_n_co_fills_with_cohort": 1473
+    },
+    "0x2d27e4d20f3b8a2ee3bc861d9b83752f338676d8": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 4,
+      "max_n_co_fills_with_cohort": 1437
+    },
+    "0xdc876e6873772d38716fda7f2452a78d426d7ab6": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 14,
+      "max_n_co_fills_with_cohort": 1381
+    },
+    "0xd1ed12197b7dc22dede923727e9b714024dbd7cb": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 10,
+      "max_n_co_fills_with_cohort": 1220
+    },
+    "0x55b4af6a1cff148a307cad8ad098206a028e80ea": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 1205
+    },
+    "0x07e78f5f58f8fa839f298cfe3fefd258883aa343": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 1201
+    },
+    "0xde0463ea7f611b065e8ab06bbfbddad75e6dfa37": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 18,
+      "max_n_co_fills_with_cohort": 1179
+    },
+    "0xf16640ce7cb59d7b38ca397652a5d296c6d0fb37": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 4,
+      "max_n_co_fills_with_cohort": 1171
+    },
+    "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 28,
+      "max_n_co_fills_with_cohort": 1133
+    },
+    "0xa58d4f278d7953cd38eeb929f7e242bfc7c0b9b8": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 1126
+    },
+    "0xeebde7a0e019a63e6b476eb425505b7b3e6eba30": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 1063
+    },
+    "0xc613e6707bd115e5c04d303d944568232697662b": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 15,
+      "max_n_co_fills_with_cohort": 1030
+    },
+    "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 13,
+      "max_n_co_fills_with_cohort": 983
+    },
+    "0xe7a2052a8b7c6b865e3eb3d16300a4db7432ae70": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 8,
+      "max_n_co_fills_with_cohort": 955
+    },
+    "0x4133bcbad1d9c41de776646696f41c34d0a65e70": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 8,
+      "max_n_co_fills_with_cohort": 944
+    },
+    "0x51fd8f0358cc9e8a1ee5f87a0c7e3b07ed634272": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 936
+    },
+    "0xd0d6053c3c37e727402d84c14069780d360993aa": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 5,
+      "max_n_co_fills_with_cohort": 928
+    },
+    "0x63ce342161250d705dc0b16df89036c8e5f9ba9a": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 928
+    },
+    "0xe154165732b79548f7533fc45168b102dd7a0b7f": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 9,
+      "max_n_co_fills_with_cohort": 906
+    },
+    "0xb41ac4e8907de5460e2dac0a98df8d1530d33a25": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 888
+    },
+    "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 11,
+      "max_n_co_fills_with_cohort": 886
+    },
+    "0xce5bec63b40392845a9a504915f607c8e03a047a": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 15,
+      "max_n_co_fills_with_cohort": 885
+    },
+    "0x7ba5354929bf388707f397c8b21b8322dc954252": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 885
+    },
+    "0x2a69660046d7acc4ab204d7cc5ba78b0776cd2f7": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 880
+    },
+    "0xd1acd3925d895de9aec98ff95f3a30c5279d08d5": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 11,
+      "max_n_co_fills_with_cohort": 866
+    },
+    "0xf33f0dfe73e3d1b3d0453e2a02c5d19100d3085c": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 11,
+      "max_n_co_fills_with_cohort": 846
     },
     "0xe0a2f29b1fadb2259111bbeca392d3805ec4a349": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 11,
+      "max_n_co_fills_with_cohort": 820
     },
-    "0xcb14f61711d913773f4b982af340fa7eae175358": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+    "0xb7d54bf1d0a362beb916d9cb58a04c41d67e0789": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 7,
+      "max_n_co_fills_with_cohort": 820
     },
-    "0xb4f2f0c858566fef705edf8efc1a5e9fba307862": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+    "0xdd54538fc93ad3dbb64afc26554c20c6f6c8b245": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 9,
+      "max_n_co_fills_with_cohort": 819
+    },
+    "0x7ab6ac0f0d6ca5a15ec57abeaf413d31c8cdfa77": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 7,
+      "max_n_co_fills_with_cohort": 809
+    },
+    "0x43372356634781eea88d61bbdd7824cdce958882": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 5,
+      "max_n_co_fills_with_cohort": 803
+    },
+    "0xed107a85a4585a381e48c7f7ca4144909e7dd2e5": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 11,
+      "max_n_co_fills_with_cohort": 797
+    },
+    "0x84cfffc3f16dcc353094de30d4a45226eccd2f63": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 4,
+      "max_n_co_fills_with_cohort": 744
+    },
+    "0xecb14ac6e9ca447ce2f2912e6217b43d7b655da3": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 13,
+      "max_n_co_fills_with_cohort": 729
+    },
+    "0x86fbea68d619daf670185ecd38a69aa90f7703d4": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 721
+    },
+    "0x30cecdf29f069563ea21b8ae94492e41e53a6b2b": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 15,
+      "max_n_co_fills_with_cohort": 720
+    },
+    "0xff12ffde498c958dc037def603dcbcc0052f09f9": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 719
+    },
+    "0x6356fb47642a028bc09df92023c35a21a0b41885": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 5,
+      "max_n_co_fills_with_cohort": 665
+    },
+    "0xef2684030d14a67c2a30a3e4fc00eed7a99505ba": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 7,
+      "max_n_co_fills_with_cohort": 664
+    },
+    "0xd3dff2e3b903372799b240c2338dd423086082fa": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 10,
+      "max_n_co_fills_with_cohort": 660
+    },
+    "0xfe787d2da716d60e8acff57fb87eb13cd4d10319": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 6,
+      "max_n_co_fills_with_cohort": 660
+    },
+    "0x4cc3522b689a6bf1fb4a2444c523e7776db47552": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 5,
+      "max_n_co_fills_with_cohort": 648
+    },
+    "0x4e25605fd905e9972efc0f4d8814530c655cd7a7": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 4,
+      "max_n_co_fills_with_cohort": 643
+    },
+    "0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 10,
+      "max_n_co_fills_with_cohort": 637
+    },
+    "0x5d1d9cfd66ee3068c2a8a57dedf1e1b006dcafd2": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 614
+    },
+    "0x216509be5332c6037105b4f871966eb97240f598": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 4,
+      "max_n_co_fills_with_cohort": 613
+    },
+    "0xd189664c5308903476f9f079820431e4fd7d06f4": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 610
+    },
+    "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 11,
+      "max_n_co_fills_with_cohort": 610
+    },
+    "0x7fb7ad0d194d7123e711e7db6c9d418fac14e33d": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 584
+    },
+    "0x03e8a544e97eeff5753bc1e90d46e5ef22af1697": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 583
+    },
+    "0xe5f0ae9cc9aef77ae3c2a64c9e69caa3f335dc1d": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 5,
+      "max_n_co_fills_with_cohort": 554
+    },
+    "0xcaab19659b995951a44cc992447cb2ad5be324dd": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 9,
+      "max_n_co_fills_with_cohort": 509
+    },
+    "0xb786b8b6335e77dfad19928313e97753039cb18d": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 509
+    },
+    "0x9478e0b0db650ac66ca3a2c9f6ed68ebca4863f5": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 506
     },
     "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50": {
-      "score": 1.3,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 5,
+      "max_n_co_fills_with_cohort": 501
     },
-    "0x09fc877d0f2065b37c5cb5aafc0e66602c7d4cd4": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+    "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 7,
+      "max_n_co_fills_with_cohort": 491
     },
-    "0xc21ea96be762bb55041529af6e386e7c53b80215": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+    "0xdc03d611e5bcc9f1c87edb95edeb91671471804c": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 8,
+      "max_n_co_fills_with_cohort": 490
     },
-    "0xc4086b708cd3a50880b7069add1a1a80000f4675": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+    "0x9d94f602535e518ee1cb6aade0ca9569f1b1017d": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 14,
+      "max_n_co_fills_with_cohort": 478
+    },
+    "0xe613b515bd46b1585a8b137a4d291d9b80bd540e": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 14,
+      "max_n_co_fills_with_cohort": 465
+    },
+    "0x2663daca3cecf3767ca1c3b126002a8578a8ed1f": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 4,
+      "max_n_co_fills_with_cohort": 465
+    },
+    "0xa9f9c0ca31912bee7ecd8aa25bfad07adcd6b3de": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 462
+    },
+    "0x96b59f71f635da5da031e3e93448c54fe226f5e7": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 4,
+      "max_n_co_fills_with_cohort": 462
+    },
+    "0xcb14f61711d913773f4b982af340fa7eae175358": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 14,
+      "max_n_co_fills_with_cohort": 461
+    },
+    "0x4f2ba33b080882c0f6b296f48cfd07b6c326f448": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 8,
+      "max_n_co_fills_with_cohort": 451
+    },
+    "0xf28e42d20e4826f2b10a24bc952001697947cab2": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 8,
+      "max_n_co_fills_with_cohort": 420
+    },
+    "0xd3989ba133ab48b5b3a81e3dba9b37b5966a46d7": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 9,
+      "max_n_co_fills_with_cohort": 417
     },
     "0xa5ea13a81d2b7e8e424b182bdc1db08e756bd96a": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 5,
+      "max_n_co_fills_with_cohort": 412
     },
-    "0x8c76c4787bf236398d2d1a42dd3e8af1393206ac": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+    "0xc97485a44146b5db0b8b121358f57cf297cdb33b": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 10,
+      "max_n_co_fills_with_cohort": 393
     },
-    "0xbc54e69667ceb6ccec538e5a0ba1927fc1fe680f": {
-      "score": 1.2,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+    "0x1b47e9b128e6b671edebfb2cac23dd3efc40d814": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 9,
+      "max_n_co_fills_with_cohort": 392
     },
-    "0x3980230e31f9475a5671a502854e2684fbba2062": {
-      "score": 0.9,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+    "0xcdb1f1ef8213c06911e4ba6a884176c5571e276c": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 7,
+      "max_n_co_fills_with_cohort": 391
     },
-    "0x6dd6314d1670f9f1ccccbd6746b0bf2f2fa0f5f4": {
-      "score": 1.1,
-      "label": "CLEAR",
-      "reason": "no hedge cluster signal",
-      "cluster_size": 1,
-      "cluster_id": null,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+    "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 13,
+      "max_n_co_fills_with_cohort": 391
+    },
+    "0xdf0d2ccfe3d7c2ef120395534e43afe283509f79": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 385
+    },
+    "0xdbade4c82fb72780a0db9a38f821d8671aba9c95": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 10,
+      "max_n_co_fills_with_cohort": 384
+    },
+    "0x16b29c50f2439faf627209b2ac0c7bbddaa8a881": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 383
+    },
+    "0xcf546637a326d9da6d925342658a44f0bb5ee5be": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 11,
+      "max_n_co_fills_with_cohort": 379
+    },
+    "0x84ad9c5c547a82ec9a08547b94bd922446e5bfb7": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 10,
+      "max_n_co_fills_with_cohort": 367
+    },
+    "0x6480542954b70a674a74bd1a6015dec362dc8dc5": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 6,
+      "max_n_co_fills_with_cohort": 354
+    },
+    "0x463e797dccfe0fd56839bc855f1e94b3f6ef664e": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 344
+    },
+    "0xd38b71f3e8ed1af71983e5c309eac3dfa9b35029": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 6,
+      "max_n_co_fills_with_cohort": 342
+    },
+    "0xa9878e59934ab507f9039bcb917c1bae0451141d": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 335
+    },
+    "0xdd572169e741c72227589c5cb56b9ddd638d694d": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 15,
+      "max_n_co_fills_with_cohort": 325
+    },
+    "0x9c667a1d1c1337c6dca9d93241d386e4ed346b66": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 4,
+      "max_n_co_fills_with_cohort": 325
+    },
+    "0xb3cfe7615d64db8dfa743a1b1a2b976911460ebd": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 10,
+      "max_n_co_fills_with_cohort": 321
+    },
+    "0xe72bb501df5306c75c89383d48a1e81073fbb0a0": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 9,
+      "max_n_co_fills_with_cohort": 320
+    },
+    "0x3e04fbc51adb75418129f6ce2091ae633070564d": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 311
+    },
+    "0x011f2d377e56119fb09196dffb0948ae55711122": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 306
+    },
+    "0x00e2d8f88b39d9b430c136c679369f41101cd56a": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 305
+    },
+    "0x6ac5bb06a9eb05641fd5e82640268b92f3ab4b6e": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 7,
+      "max_n_co_fills_with_cohort": 297
+    },
+    "0x79cbe531cca9eb9320b6ce22b6e471a7bb5d331e": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 7,
+      "max_n_co_fills_with_cohort": 294
+    },
+    "0x1117eade222413335b7ec959e5b48c1d3dbc3532": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 288
+    },
+    "0xc660ae71765d0d9eaf5fa8328c1c959841d2bd28": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 13,
+      "max_n_co_fills_with_cohort": 287
+    },
+    "0xd3b034d7bfb2473fb252d0414646d9786bac329e": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 8,
+      "max_n_co_fills_with_cohort": 287
+    },
+    "0xbfd770b7ff07fb2ece41b0e7c593db65a84cf0bf": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 8,
+      "max_n_co_fills_with_cohort": 287
+    },
+    "0xc6dd722558dbfbd8fa780efcbe819ed8c6604b9f": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 11,
+      "max_n_co_fills_with_cohort": 280
+    },
+    "0xbacd00c9080a82ded56f504ee8810af732b0ab35": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 9,
+      "max_n_co_fills_with_cohort": 280
+    },
+    "0x6a72f61820b26b1fe4d956e17b6dc2a1ea3033ee": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 279
+    },
+    "0x492442eab586f242b53bda933fd5de859c8a3782": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 276
+    },
+    "0x9703676286b93c2eca71ca96e8757104519a69c2": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 275
+    },
+    "0x1dbd30000dd7dd051e8fc803fac38e8246d9af92": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 271
+    },
+    "0x8e9eedf20dfa70956d49f608a205e402d9df38e4": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 12,
+      "max_n_co_fills_with_cohort": 271
+    },
+    "0xefddbb135e2cc2648e3ca6a6b3d4fa4994d5017f": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 4,
+      "max_n_co_fills_with_cohort": 269
+    },
+    "0xf68a281980f8c13828e84e147e3822381d6e5b1b": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 265
+    },
+    "0x5aa981521b4e94fee3b3bf18fe441f62e865febe": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 6,
+      "max_n_co_fills_with_cohort": 241
+    },
+    "0x37c1874a60d348903594a96703e0507c518fc53a": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 231
+    },
+    "0xa61ef8773ec2e821962306ca87d4b57e39ff0abd": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 7,
+      "max_n_co_fills_with_cohort": 227
+    },
+    "0x7edb8d9e184f9747d6957dc3d54e1e8a0d6e7993": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 6,
+      "max_n_co_fills_with_cohort": 222
+    },
+    "0xee00ba338c59557141789b127927a55f5cc5cea1": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 5,
+      "max_n_co_fills_with_cohort": 222
+    },
+    "0xfc25f141ed27bb1787338d2c4e7f51e3a15e1f7f": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 219
+    },
+    "0x224b255eaa3279ceb77330317d3c38ee8e73f6b8": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 212
     },
     "0xbefa95c276ee8ef6ff3ef43d1c1c454f52bc300d": {
-      "score": 0.9,
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 177
+    },
+    "0xc88eb9ab98663254bff489c515f39f23b76bf3e1": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 167
+    },
+    "0xde7be6d489bce070a959e0cb813128ae659b5f4b": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 6,
+      "max_n_co_fills_with_cohort": 160
+    },
+    "0xddff18c9e86262e62af046d818dda0c3de6f52d6": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 11,
+      "max_n_co_fills_with_cohort": 153
+    },
+    "0x3f7aee8f1fafcd873343105b24f83f3f98a9248e": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 153
+    },
+    "0xd1c769317bd15de7768a70d0214cf0bbcc531d2b": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 5,
+      "max_n_co_fills_with_cohort": 149
+    },
+    "0xa40d51396185d72e7505402357b929c4f6f3ea7a": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 148
+    },
+    "0xb4f2f0c858566fef705edf8efc1a5e9fba307862": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 145
+    },
+    "0x44c1dfe43260c94ed4f1d00de2e1f80fb113ebc1": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 140
+    },
+    "0xcb516a0c8b8ba2e42ff5c123e2f624d6cce6359d": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 13,
+      "max_n_co_fills_with_cohort": 137
+    },
+    "0xed2239a9150c3920000d0094d28fa51c7db03dd0": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 8,
+      "max_n_co_fills_with_cohort": 131
+    },
+    "0xef27152015c5313daf457804e7319e869ed3381b": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 6,
+      "max_n_co_fills_with_cohort": 131
+    },
+    "0xd34d2111bbc4c579e3e4dbec7bc550d369dacdb4": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 4,
+      "max_n_co_fills_with_cohort": 128
+    },
+    "0x4bac379da2f29d87c01ff737843e396a2cec02b1": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 123
+    },
+    "0xc3cd1d612bbf9fbf80da5a9bff0b0470cb46816c": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 122
+    },
+    "0xd04d93be590ded67b99f053d4b6d29d3f8483312": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 15,
+      "max_n_co_fills_with_cohort": 120
+    },
+    "0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 4,
+      "max_n_co_fills_with_cohort": 111
+    },
+    "0xcf609d3256f0f37f0595e5dc64012fa3a8fea6f5": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 8,
+      "max_n_co_fills_with_cohort": 107
+    },
+    "0x54498e4c40b17261479aeaeeddf9cc37bd46992b": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 107
+    },
+    "0xa49becb692927d455924583b5e3e5788246f4c40": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 106
+    },
+    "0xb1ca909e848cc24ec4e220ce1c453bc290c51705": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 103
+    },
+    "0x78048aa26ac1967566b8ed11910b529e5f2d7025": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 103
+    },
+    "0xd5196bdf50199e195c58a6aff2114cc0e455932c": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 100
+    },
+    "0xe1000ddb5f5025849765e29d051dfff78f5d4d41": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 6,
+      "max_n_co_fills_with_cohort": 95
+    },
+    "0xb45a797faa52b0fd8adc56d30382022b7b12192c": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 91
+    },
+    "0x4b7410aefbf0f38012b0dfb1131a4de147a9e8d7": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 90
+    },
+    "0xdb859a551fcf56e49416160911476bea7307152f": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 9,
+      "max_n_co_fills_with_cohort": 90
+    },
+    "0xd9a591340776aced8f42b426dd1f42d0e79e8ce6": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 5,
+      "max_n_co_fills_with_cohort": 86
+    },
+    "0x71ed0bc95433cdf1be29f43219725fce9addd9eb": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 86
+    },
+    "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 84
+    },
+    "0xdd882a70680633a75516f6ed5fce443e2d96dadb": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 84
+    },
+    "0xccf31ea0f5de9c0bb4bb695fc77c3683dee41dd9": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 83
+    },
+    "0xe5efd6543002653b2eef940d8254911862ad9e7a": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 75
+    },
+    "0x84571f1bf97a5c710cbe51daff2dd4556cc887fd": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 74
+    },
+    "0x96489abcb9f583d6835c8ef95ffc923d05a86825": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 71
+    },
+    "0x1c1675a7c3662131acfd00aaabcbc97a6a4f45e9": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 69
+    },
+    "0xe16d3f2a5807999b358affd9445c3a09e45e5e30": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 6,
+      "max_n_co_fills_with_cohort": 69
+    },
+    "0xe40ea00e74059c76c0035c919ef6b99c3e25a94d": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 7,
+      "max_n_co_fills_with_cohort": 69
+    },
+    "0x4be1fa92e6ceaf886aac0bbec3be6c527133aa70": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 10,
+      "max_n_co_fills_with_cohort": 64
+    },
+    "0x0e1b30c63f6bac4fa1eacc7b852fa7e72e93ecaf": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 6,
+      "max_n_co_fills_with_cohort": 63
+    },
+    "0x9abd2a42cadb471056204a84cbcd7ea7c06ff67b": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 62
+    },
+    "0x12d6cccfc7470a3f4bafc53599a4779cbf2cf2a8": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 58
+    },
+    "0x6d7776a0f954be1a7c975a1e8244de6268f7b72c": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 58
+    },
+    "0x95074f700f93bdf6e62fc965e0832064c0877b04": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 55
+    },
+    "0xd202bf6d89dc6bab1b9f00ead175f75466348973": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 9,
+      "max_n_co_fills_with_cohort": 53
+    },
+    "0xa9b44dca52ed35e59ac2a6f49d1203b8155464ed": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 52
+    },
+    "0x36a3f17401e395ef4cb1b7f42bcdb8ab8e15fafb": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 50
+    },
+    "0x23073ad0c9dff45353cedb11760570b995663934": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 47
+    },
+    "0x4a9a87962893e6e119f1cc7f67c61d0287e0f675": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 46
+    },
+    "0xef1bfe068ea3eb4c357d95805baf1050fd528697": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 8,
+      "max_n_co_fills_with_cohort": 46
+    },
+    "0x13414a77a4be48988851c73dfd824d0168e70853": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 45
+    },
+    "0xe405483ff60ab58ce973479d3317045549fec67e": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 6,
+      "max_n_co_fills_with_cohort": 45
+    },
+    "0xfbfd14dd4bb607373119de95f1d4b21c3b6c0029": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 40
+    },
+    "0xc2e7800b5af46e6093872b177b7a5e7f0563be51": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 39
+    },
+    "0xcc5bd3dd093f5f73730501e369f8928371b91edc": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 4,
+      "max_n_co_fills_with_cohort": 37
+    },
+    "0xf1b29b5ad60ca3243e383d83dc4c8eeec40fa321": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 6,
+      "max_n_co_fills_with_cohort": 37
+    },
+    "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 31
+    },
+    "0xfedc381bf3fb5d20433bb4a0216b15dbbc5c6398": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 31
+    },
+    "0x5d0f03cf1243a3e21262d6cf844795afd9fff0ad": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 8,
+      "max_n_co_fills_with_cohort": 27
+    },
+    "0xc6dd65679a32fe31a4197cb94a3dbbdc393940ce": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 9,
+      "max_n_co_fills_with_cohort": 25
+    },
+    "0x48185887c8dc95de60ee89722f1d0ee7894cbf0b": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 22
+    },
+    "0xe390f076a72fd8f125433466e1fd060a0a1773ff": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 21
+    },
+    "0x9e5c74c0bf46f0bf3fcd1064d17e6201c67fd8e6": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 18
+    },
+    "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 13
+    },
+    "0x68c24bf4a8ad4d79a6fe4b8eec6f93a02dfd1711": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 12
+    },
+    "0x5bffcf561bcae83af680ad600cb99f1184d6ffbe": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 12
+    },
+    "0x1df231bd33dae91463e1682927e8096b82c289a0": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 9
+    },
+    "0xfc2f4f50ce2f6045d35558a5e2d8d4b2ac6610c7": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 9
+    },
+    "0xa67685fa5213fd8167977bfb7b3f50c06d511c22": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 8
+    },
+    "0xedcd0a46c993217bee212b32ad37205c22062507": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 8
+    },
+    "0xedaae10a002f28ce1c7c3944a14669864dcefade": {
+      "score": 100.0,
+      "label": "HEDGE CLUSTER",
+      "reason": "strong hedge cluster signal \u00b7 large cluster + high co-fill density",
+      "cluster_size": 211,
+      "cluster_id": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 7
+    },
+    "0x966cd85371117d811aab6e6f2b98377433659b1a": {
+      "score": 2.1,
       "label": "CLEAR",
       "reason": "no hedge cluster signal",
       "cluster_size": 1,
       "cluster_id": null,
       "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1
+      "max_n_co_fills_with_cohort": 2
     }
   },
   "summary": {
-    "n_scored": 147,
+    "n_scored": 212,
     "label_counts": {
-      "CLEAR": 139,
-      "WATCH": 8,
-      "HEDGE CLUSTER": 0
+      "CLEAR": 1,
+      "WATCH": 0,
+      "HEDGE CLUSTER": 211
     },
-    "pct_clear": 94.6,
-    "pct_watch": 5.4,
-    "pct_hedge": 0.0
+    "pct_clear": 0.5,
+    "pct_watch": 0.0,
+    "pct_hedge": 99.5
   },
   "maps_to_moat_components": [
     "#13 hedge_cluster_score (NEW)"
