@@ -11,7 +11,7 @@
     "4_builder",
     "5_hedge_fund"
   ],
-  "built_at_unix": 1780711097,
+  "built_at_unix": 1780735878,
   "trade_size_usd": 100.0,
   "ledger_source": "data/copyability_audit_ledger.json",
   "ledger_methodology": "copyability-validation-v0.1",
@@ -28,11 +28,11 @@
     "90d": {
       "days": 90,
       "trade_size_usd": 100.0,
-      "n_wallets": 9,
-      "n_copy_decisions": 30,
-      "n_avoid_decisions": 40,
-      "total_copy_pnl_usd": 5378.04,
-      "total_avoid_saved_usd": -16958.83
+      "n_wallets": 10,
+      "n_copy_decisions": 23,
+      "n_avoid_decisions": 41,
+      "total_copy_pnl_usd": 1096.45,
+      "total_avoid_saved_usd": -18050.12
     }
   },
   "per_wallet": {
@@ -258,6 +258,90 @@
         }
       }
     },
+    "0xc6587b11a2209e46dfe3928b31c5514a8e33b784": {
+      "pseudonym": "Erasmus.",
+      "windows": {
+        "30d": {
+          "days": 30,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 0,
+          "avoid_saved_usd": 0,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": []
+        },
+        "90d": {
+          "days": 90,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 1,
+          "avoid_saved_usd": -445.95,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": [
+            {
+              "chain_id": "6d62d4d244ab3bcd4910925af8c244a9c48139ba715756c068fd6f7dc5c698b2",
+              "condition_id": "0x1db02ba50e2312a62b4104de691cc7a76065d8d0da40decf93eb1b914a3217b7",
+              "market_question": "US x Iran permanent peace deal by May 15, 2026?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1778081484,
+              "pnl_per_dollar": 4.4595,
+              "pnl_usd_at_100": 445.95
+            }
+          ]
+        }
+      }
+    },
+    "0xecb14ac6e9ca447ce2f2912e6217b43d7b655da3": {
+      "pseudonym": "0xECB14AC6E9ca",
+      "windows": {
+        "30d": {
+          "days": 30,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 0,
+          "avoid_saved_usd": 0,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": []
+        },
+        "90d": {
+          "days": 90,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 1,
+          "avoid_saved_usd": -653.45,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": [
+            {
+              "chain_id": "18f84775c1dde813619d303a1a4574063f4ba87bd3d64d57dba22a1c1f1809f8",
+              "condition_id": "0x1db02ba50e2312a62b4104de691cc7a76065d8d0da40decf93eb1b914a3217b7",
+              "market_question": "US x Iran permanent peace deal by May 15, 2026?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1777660770,
+              "pnl_per_dollar": 6.5345,
+              "pnl_usd_at_100": 653.45
+            }
+          ]
+        }
+      }
+    },
     "0xa61ef8773ec2e821962306ca87d4b57e39ff0abd": {
       "pseudonym": "risk-manager",
       "windows": {
@@ -411,20 +495,20 @@
         "90d": {
           "days": 90,
           "trade_size_usd": 100.0,
-          "n_copy_decisions": 25,
-          "copy_pnl_usd": 2966.0,
-          "copy_pnl_per_dollar": 1.1864,
+          "n_copy_decisions": 23,
+          "copy_pnl_usd": 1096.45,
+          "copy_pnl_per_dollar": 0.4767,
           "n_avoid_decisions": 0,
           "avoid_saved_usd": 0,
           "best_call": {
-            "chain_id": "7eb58701c7c551c2",
-            "condition_id": "0x04289eac3ff2ac695f45c0a195d53aa33a2f22108b90a921d87ce6a2efa54121",
-            "market_question": "Spread: RCD Mallorca (-2.5)",
-            "side": "Valencia CF",
+            "chain_id": "fa4397c3f483e796",
+            "condition_id": "0x1593c6e48656e70d0fb61322eb5fcf25474dd665eb07c5a812a58e0cf745044d",
+            "market_question": "Will Portsmouth FC win on 2026-04-21?",
+            "side": "Yes",
             "tier_label": "COPY_SMALL",
-            "wallet_fill_unix": 1776792236,
-            "pnl_per_dollar": 21.2222,
-            "pnl_usd_at_100": 2122.22
+            "wallet_fill_unix": 1776798522,
+            "pnl_per_dollar": 15.6667,
+            "pnl_usd_at_100": 1566.67
           },
           "worst_call": {
             "chain_id": "d12891e8df5188b5",
@@ -578,32 +662,12 @@
               "pnl_usd_at_100": -100.0
             },
             {
-              "chain_id": "5db6f00ad6d09634",
-              "condition_id": "0x04a49c759879b8c588c309a100b9443766e9678eee496b2c1aa6e1d897cbb662",
-              "market_question": "Will Athletic Club win on 2026-04-21?",
-              "side": "No",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1776785134,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
               "chain_id": "7e8678db7ab26beb",
               "condition_id": "0x0409732bafec7b5a38fa15fa69f659391ac1b2ba687da014fcffe5d5defb5586",
               "market_question": "Will RCD Mallorca vs. Valencia CF end in a draw?",
               "side": "No",
               "tier_label": "COPY_SMALL",
               "wallet_fill_unix": 1776796986,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "18ec32cc5dd16907",
-              "condition_id": "0x04a49c759879b8c588c309a100b9443766e9678eee496b2c1aa6e1d897cbb662",
-              "market_question": "Will Athletic Club win on 2026-04-21?",
-              "side": "Yes",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1776785134,
               "pnl_per_dollar": -1.0,
               "pnl_usd_at_100": -100.0
             },
@@ -668,14 +732,14 @@
               "pnl_usd_at_100": 16.46
             },
             {
-              "chain_id": "7eb58701c7c551c2",
-              "condition_id": "0x04289eac3ff2ac695f45c0a195d53aa33a2f22108b90a921d87ce6a2efa54121",
-              "market_question": "Spread: RCD Mallorca (-2.5)",
-              "side": "Valencia CF",
+              "chain_id": "58934b62f43e569a",
+              "condition_id": "0x35dee597ca540e894067ab30a2da80029a1197c7b7454cb93a717197400f3e0c",
+              "market_question": "Athletic Club vs. CA Osasuna: O/U 3.5",
+              "side": "Under",
               "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1776792236,
-              "pnl_per_dollar": 21.2222,
-              "pnl_usd_at_100": 2122.22
+              "wallet_fill_unix": 1776792176,
+              "pnl_per_dollar": 0.5267,
+              "pnl_usd_at_100": 52.67
             },
             {
               "chain_id": "fa724bdd0071ce7a",
@@ -714,22 +778,12 @@
           "n_copy_decisions": 0,
           "copy_pnl_usd": 0,
           "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 2,
-          "avoid_saved_usd": -30.73,
+          "n_avoid_decisions": 1,
+          "avoid_saved_usd": -22.62,
           "best_call": null,
           "worst_call": null,
           "all_copy_calls": [],
           "all_avoid_calls": [
-            {
-              "chain_id": "043b928377616c56b83592364f7f1d9caaf4684a117ee5618b22e9940d0369e9",
-              "condition_id": "0x8b369e10358094a99ffe7f85a81a8e8ca68c611eee0fe63a2efa790ad045bcd6",
-              "market_question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 31, 2026?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776431588,
-              "pnl_per_dollar": 0.0811,
-              "pnl_usd_at_100": 8.11
-            },
             {
               "chain_id": "1a963d77d3034f444f1f70401cc7cc4ea6cf7d6d8939e9598dbcb5de3d63bdad",
               "condition_id": "0x518a5b030b205706b8ffe6bbad9bd3de59548348e5c0471827f5de21e513333c",
@@ -918,106 +972,6 @@
         }
       }
     },
-    "0x94d71d0d28709da91fd44c7d89da272fe86dbef5": {
-      "pseudonym": "JMMMMM",
-      "windows": {
-        "30d": {
-          "days": 30,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 0,
-          "avoid_saved_usd": 0,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": []
-        },
-        "90d": {
-          "days": 90,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 5,
-          "copy_pnl_usd": 2412.04,
-          "copy_pnl_per_dollar": 4.8241,
-          "n_avoid_decisions": 0,
-          "avoid_saved_usd": 0,
-          "best_call": {
-            "chain_id": "89700e2f12014c72",
-            "condition_id": "0x0b2199b187959cb50eb0199be36877390a2b93812a822b13e72045a3f79f48a0",
-            "market_question": "Bulls vs. Spurs",
-            "side": "Bulls",
-            "tier_label": "COPY_SMALL",
-            "wallet_fill_unix": 1774918047,
-            "pnl_per_dollar": 17.1818,
-            "pnl_usd_at_100": 1718.18
-          },
-          "worst_call": {
-            "chain_id": "5e63127cdb159a33",
-            "condition_id": "0x17dafc4d9c1128c17f936e35f6772d02c0eb2f637b883b95f8dc891740d2d6cc",
-            "market_question": "Pistons vs. Timberwolves",
-            "side": "Timberwolves",
-            "tier_label": "COPY_SMALL",
-            "wallet_fill_unix": 1774733652,
-            "pnl_per_dollar": -1.0,
-            "pnl_usd_at_100": -100.0
-          },
-          "all_copy_calls": [
-            {
-              "chain_id": "77e2a8ebe1c6f5da",
-              "condition_id": "0x3215685766ee786bc4be99701dfd8c37d89fdfccde189ccc95e9ee6b4f68e113",
-              "market_question": "Suns vs. Magic",
-              "side": "Suns",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1775004573,
-              "pnl_per_dollar": 5.0606,
-              "pnl_usd_at_100": 506.06
-            },
-            {
-              "chain_id": "89700e2f12014c72",
-              "condition_id": "0x0b2199b187959cb50eb0199be36877390a2b93812a822b13e72045a3f79f48a0",
-              "market_question": "Bulls vs. Spurs",
-              "side": "Bulls",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1774918047,
-              "pnl_per_dollar": 17.1818,
-              "pnl_usd_at_100": 1718.18
-            },
-            {
-              "chain_id": "5e63127cdb159a33",
-              "condition_id": "0x17dafc4d9c1128c17f936e35f6772d02c0eb2f637b883b95f8dc891740d2d6cc",
-              "market_question": "Pistons vs. Timberwolves",
-              "side": "Timberwolves",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1774733652,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            },
-            {
-              "chain_id": "b3281037705aa4d6",
-              "condition_id": "0x2442fd430fecccb337e64263589d16597d1a6098a3848cba9ff3bc382a1b16f9",
-              "market_question": "Lakers vs. Pistons",
-              "side": "Lakers",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1774313049,
-              "pnl_per_dollar": 3.878,
-              "pnl_usd_at_100": 387.8
-            },
-            {
-              "chain_id": "4b621b8cb788ab1f",
-              "condition_id": "0x0954cc08de0ab8345bcf24f314d571e6a77d913ea9977ce2b4187983a70b450d",
-              "market_question": "Lakers vs. Magic",
-              "side": "Lakers",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1774143147,
-              "pnl_per_dollar": -1.0,
-              "pnl_usd_at_100": -100.0
-            }
-          ],
-          "all_avoid_calls": []
-        }
-      }
-    },
     "0x5bffcf561bcae83af680ad600cb99f1184d6ffbe": {
       "pseudonym": "YatSen",
       "windows": {
@@ -1057,6 +1011,37 @@
               "pnl_usd_at_100": 1438.46
             }
           ]
+        }
+      }
+    },
+    "0x5d189e816b4149be00977c1a3c8840374aec4972": {
+      "pseudonym": "gloriafoster",
+      "windows": {
+        "30d": {
+          "days": 30,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 0,
+          "avoid_saved_usd": 0,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": []
+        },
+        "90d": {
+          "days": 90,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 0,
+          "avoid_saved_usd": 0,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": []
         }
       }
     },
