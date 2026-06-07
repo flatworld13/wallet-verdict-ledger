@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "date": "2026-06-07",
-  "generated_at_unix": 1780812630,
+  "generated_at_unix": 1780818964,
   "five_bucket_framing": {
     "top_level_canonical_1liner": "VERDICT joins wallet behavior, forecast skill, execution quality, market-risk context, and timestamped proof into one verified wallet rating.",
     "lock_id": "verified_wallet_rating_lock",
@@ -60,7 +60,7 @@
           "11_ledger_manifest",
           "16_query_attestation_chain"
         ],
-        "live_evidence_count": 173
+        "live_evidence_count": 174
       }
     ],
     "output_form": "One verdict per wallet \u00b7 COPY/WATCH/AVOID/INSUFFICIENT \u00b7 with the 5-bucket evidence panel under it \u00b7 every bucket carrying a `verified by` link to the source file."
@@ -105,8 +105,8 @@
       "description": "UMA-resolved markets + engine_was_right per chain + AVOID-call accuracy",
       "evidence_count": 1801,
       "evidence_unit": "forward-witnessed chains",
-      "live_chains": 338,
-      "resolved_chains": 1463,
+      "live_chains": 237,
+      "resolved_chains": 1564,
       "avoid_accuracy_pct": 76.1,
       "avoid_accuracy_ci95": [
         73.2,
@@ -116,7 +116,7 @@
       "avoid_calls_n": 876,
       "avoid_correct_n": 667,
       "source_file": "data/audit_ledger.json",
-      "freshness_unix": 1780297899,
+      "freshness_unix": 1780818867,
       "m_axis": "M1 forward-witnessed pre-resolution truth",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/data/audit_ledger.json"
     },
@@ -128,7 +128,7 @@
       "evidence_unit": "methodology versions",
       "methodology_current": "v2.3",
       "source_file": "_private/_ingest/compute_*.py (private repo per TOP RULE -1)",
-      "freshness_unix": 1780812630,
+      "freshness_unix": 1780818964,
       "m_axis": "M5 methodology versioning + legal armor",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/methodology_versions.md"
     },
@@ -244,13 +244,13 @@
       "rank": 12,
       "name": "Truth-ephemeral \u00b7 the #1 moat (cannot be backfilled)",
       "description": "Files capturing observations that no competitor on day N+365 can ever reconstruct from public sources \u00b7 orderbook book-state at trade-time (60s snapshotter window) \u00b7 forward-witnessed audit timestamps (their git history doesn't include our day-N commits) \u00b7 J11/J12 feature observables \u00b7 trade-chain records \u00b7 per operator-locked v60cq.",
-      "evidence_count": 41,
+      "evidence_count": 42,
       "evidence_unit": "non-backfillable truth files",
-      "total_size_mb": 118.05,
+      "total_size_mb": 119.54,
       "auxiliary_truth_count": 8,
       "auxiliary_truth_mb": 181.86,
       "source_file": "data/LEDGER_MANIFEST.json totals.by_category",
-      "freshness_unix": 1780667396,
+      "freshness_unix": 1780812634,
       "m_axis": "M1 forward-witnessed (the structural moat) + M2 (only-neutral-seat capable of these captures)",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/LEDGER_MANIFEST.json",
       "shipped": "v60cq \u00b7 2026-05-10 mid-PM (operator: \"the trick is the most important moat is some truth that cannot be backfilled\")",
@@ -368,7 +368,7 @@
         "data/query_attestations_summary.json",
         "data/query_attestations_history/<date>.json"
       ],
-      "freshness_unix": 1780796919,
+      "freshness_unix": 1780813327,
       "m_axis": "M1 (forward-witnessed \u00b7 every query timestamped + sha256 grounded) + M5 (methodology version chain \u00b7 query-attestation-v0.1 pre-registered)",
       "v_axis": "V4 (every paying customer query compounds OUR moat \u00b7 v0.2 path: EIP-712 wallet signatures on paying-customer queries)",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/data/query_attestations.jsonl",
@@ -443,16 +443,16 @@
       "rank": 11,
       "name": "Public ledger manifest",
       "description": "Self-describing daily inventory of every public-ledger file \u00b7 sha256 + rows + role per file \u00b7 engine_sha cross-ref \u00b7 OTS-anchor cross-ref \u00b7 the receipt-surface for the receipt-surface itself \u00b7 v60cm \u00b7 double-anchored (manifest itself OTS-stamped separately from engine digest)",
-      "evidence_count": 94,
+      "evidence_count": 95,
       "evidence_unit": "files indexed in today's manifest",
-      "total_size_mb": 317.7,
-      "engine_sha": "e0bd11e5c9e4",
+      "total_size_mb": 319.4,
+      "engine_sha": "dcf41d86d81b",
       "strategy_locks_indexed": 12,
-      "manifest_self_anchor_btc_status": "confirmed",
-      "manifest_self_anchor_date": "2026-05-11",
-      "manifest_self_anchor_receipt": "data/ots_receipts/2026-05-11.manifest.digest.ots",
+      "manifest_self_anchor_btc_status": "pending",
+      "manifest_self_anchor_date": "2026-06-07",
+      "manifest_self_anchor_receipt": "data/ots_receipts/2026-06-07.manifest.digest.ots",
       "source_file": "data/LEDGER_MANIFEST.json",
-      "freshness_unix": 1780667396,
+      "freshness_unix": 1780812634,
       "m_axis": "M4 (reproducibility-from-clone made provable in one read) + M1 (forward-witnessed inventory \u00b7 double-anchored as of v60cm)",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/data/LEDGER_MANIFEST.json",
       "shipped": "v60ce \u00b7 2026-05-10 (Rec 2 from public-ledger Frame 3+4 alignment audit) \u00b7 v60cm \u00b7 2026-05-10 mid-PM (double-anchor pattern)",
@@ -467,9 +467,9 @@
     "ots_confirmed": 16,
     "methodology_versions_published": 46,
     "forward_chains_total": 1801,
-    "forward_chains_live": 338,
+    "forward_chains_live": 237,
     "forward_verified": 0,
-    "forward_pending": 338,
+    "forward_pending": 237,
     "avoid_accuracy_pct": 76.1,
     "avoid_accuracy_ci95": [
       73.2,
@@ -487,10 +487,10 @@
     "total_components": 18,
     "components_active": 18,
     "components_anchored": 18,
-    "strongest_component": "12 Truth-ephemeral (the #1 moat-of-moats \u00b7 41 non-backfillable files \u00b7 118.05 MB) \u00b7 operator-locked v60cq",
+    "strongest_component": "12 Truth-ephemeral (the #1 moat-of-moats \u00b7 42 non-backfillable files \u00b7 119.54 MB) \u00b7 operator-locked v60cq",
     "newest_component": "18 Price-integrity interpreter \u00b7 Layer 2 (2026-05-25) \u00b7 132 forward-witnessed price verdicts \u00b7 37 MANIPULABLE / 18 REAL \u00b7 the \"is this price real?\" answer \u00b7 $0 incremental (structural facts)",
     "snapshot_date": "2026-06-07",
-    "snapshot_unix": 1780812630,
+    "snapshot_unix": 1780818964,
     "next_scheduled_anchor": "tomorrow 03:00 UTC via daily-moat.yml Stage 6b-pre + Stage 6b"
   },
   "description": "Board 6 of the 6-board operating model \u00b7 per CLAUDE.md TOP RULE 0 \u00a7 \"THE 6-COMPONENT MOAT SURFACE\" (LOCKED 2026-05-10 \u00b7 D1) + \u00a7 \"FORWARD-ANCHORED DERIVED METRICS\" (LOCKED 2026-05-10 \u00b7 D5) + \u00a7 VERIFIED WALLET RATING LOCK (2026-05-10 mid-afternoon \u00b7 TOP-LEVEL canonical 1-liner \u00b7 v60cj). Daily snapshot pushed to Notion DB \u00b7 operator can see the moat compound over time."
