@@ -2,40 +2,40 @@
   "schema_version": 1,
   "methodology_version": "learning-brief-v0.1",
   "date": "2026-06-07",
-  "built_at_unix": 1780820462,
+  "built_at_unix": 1780829780,
   "day_n": 25,
   "milestone": "Day-7",
   "ledger_source": "data/copyability_audit_ledger.json",
   "ledger_methodology": "copyability-validation-v0.1",
   "tier_rollup": {
     "AVOID": {
-      "n_decisions": 259,
-      "n_resolved": 185,
-      "n_positive_for_follower": 124,
-      "positive_rate_for_follower": 0.6703,
-      "tier_correct_rate": 0.3297,
+      "n_decisions": 263,
+      "n_resolved": 188,
+      "n_positive_for_follower": 127,
+      "positive_rate_for_follower": 0.6755,
+      "tier_correct_rate": 0.3245,
       "tier_correct_meaning": "follower would have lost money (AVOID was right)",
-      "avg_follower_pnl": 1.6272,
+      "avg_follower_pnl": 1.7245,
       "insufficient_n": false
     },
     "WAIT": {
-      "n_decisions": 824,
-      "n_resolved": 760,
-      "n_positive_for_follower": 554,
-      "positive_rate_for_follower": 0.7289,
+      "n_decisions": 801,
+      "n_resolved": 735,
+      "n_positive_for_follower": 538,
+      "positive_rate_for_follower": 0.732,
       "tier_correct_rate": null,
       "tier_correct_meaning": "neutral \u00b7 WAIT does not commit to direction",
-      "avg_follower_pnl": 17.8874,
+      "avg_follower_pnl": 18.4063,
       "insufficient_n": false
     },
     "COPY_SMALL": {
-      "n_decisions": 75,
-      "n_resolved": 59,
-      "n_positive_for_follower": 35,
-      "positive_rate_for_follower": 0.5932,
-      "tier_correct_rate": 0.5932,
+      "n_decisions": 79,
+      "n_resolved": 63,
+      "n_positive_for_follower": 39,
+      "positive_rate_for_follower": 0.619,
+      "tier_correct_rate": 0.619,
       "tier_correct_meaning": "follower would have made money",
-      "avg_follower_pnl": 9.2392,
+      "avg_follower_pnl": 9.1328,
       "insufficient_n": false
     },
     "COPY_NOW": {
@@ -57,29 +57,17 @@
       "description": "AVOID tier_correct_rate < 55% at Day 30+ with n \u2265 30",
       "action": "AVOID is not predicting losses \u00b7 re-examine AVOID feature weighting \u00b7 publish AVOID v3.1",
       "observed": {
-        "tier_correct_rate": 0.3297,
-        "n_resolved": 185,
-        "avg_follower_pnl": 1.6272
-      }
-    },
-    {
-      "trigger_id": "COPY_SMALL_correct_below_60",
-      "tier": "COPY_SMALL",
-      "severity": "WARN",
-      "description": "COPY_SMALL tier_correct_rate < 60% at Day 30+ with n \u2265 30",
-      "action": "Tighten COPY_SMALL band from 60-79 \u2192 65-79 \u00b7 publish v3.1",
-      "observed": {
-        "tier_correct_rate": 0.5932,
-        "n_resolved": 59,
-        "avg_follower_pnl": 9.2392
+        "tier_correct_rate": 0.3245,
+        "n_resolved": 188,
+        "avg_follower_pnl": 1.7245
       }
     }
   ],
   "counts": {
     "PASS": 0,
-    "WARN": 1,
+    "WARN": 0,
     "FAIL": 1,
-    "TOTAL_FIRES": 2
+    "TOTAL_FIRES": 1
   },
   "doctrine_note": "Pre-registered triggers per /methodology/copyability-validation \u00b7 committed in advance \u00b7 cannot be ad-hoc revised. M5 legal armor \u00b7 S&P-pattern. Operator-approved 2026-05-13 v60fp."
 }

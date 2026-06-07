@@ -2,9 +2,9 @@
  "schema_version":"0.1",
  "method_version":"TradeChain-v0.1",
  "date":"2026-06-07",
- "generated_at_unix":1780821381,
+ "generated_at_unix":1780830699,
  "n_fills_in_chain":5000,
- "n_fills_total":75030,
+ "n_fills_total":75532,
  "cap_applied":80000,
  "records":[
   {
@@ -173,6 +173,64 @@
     "chain_id":"c13c9a2d4636a4cc5794eb8aba234da24bc761d8214bd8fb0b24e609abeab56f",
     "committed_at_unix":1778517438,
     "committed_grade":"C",
+    "committed_state":"live",
+    "engine_was_right":null,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":"v53 cron"
+   }
+  },
+  {
+   "fill_id":"0x51fd8f0358cc9e8a1ee5f87a0c7e3b07ed634272:0x3fb8a8de2ac275882d72b2c4f22d41776fcf033f9e413a77a84dd395c0d5257c:1778503056",
+   "wallet":"0x51fd8f0358cc9e8a1ee5f87a0c7e3b07ed634272",
+   "market_condition_id":"0x3fb8a8de2ac275882d72b2c4f22d41776fcf033f9e413a77a84dd395c0d5257c",
+   "trade_ts":1778503056,
+   "trade_size_usd_proxy":50000.0,
+   "outcome_index":0,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_1_RELAXED",
+    "brier_today":0.1424,
+    "brier_n":635,
+    "drift_today":"improving",
+    "drift_delta":-0.054,
+    "j16_bss_vs_market_vwap":-0.539
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.002,
+    "midpoint_at_fill":null,
+    "edge_over_midpoint_bps":null,
+    "book_crossed":false,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":null,
+    "best_ask_at_fill":null,
+    "depth_within_1pct_usd":null,
+    "depth_within_5pct_usd":null,
+    "coverage_status":"empty_book",
+    "window_tier_sec":null,
+    "n_orders_at_snapshot":0
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":0,
+    "expected_slip_at_1k_bps":500.0,
+    "expected_slip_at_500_bps":500.0,
+    "expected_slip_at_5k_bps":500.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":"45daec18eba5f678efe5af1060139746957d62bf187a0439c798f447effad398",
+    "committed_at_unix":1780828613,
+    "committed_grade":"F",
     "committed_state":"live",
     "engine_was_right":null,
     "l4_ots_latest_date":"2026-06-07",
@@ -1400,64 +1458,6 @@
    }
   },
   {
-   "fill_id":"0x9d84ce0306f8551e02efef1680475fc0f1dc1344:0x575e86314d77231f25c16834b4f501221f215399a79fa6f5760b0a1eb7f1e5d3:1778200841",
-   "wallet":"0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
-   "market_condition_id":"0x575e86314d77231f25c16834b4f501221f215399a79fa6f5760b0a1eb7f1e5d3",
-   "trade_ts":1778200841,
-   "trade_size_usd_proxy":13339.363333333333,
-   "outcome_index":1,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_2_LOOSE",
-    "brier_today":0.0765,
-    "brier_n":901,
-    "drift_today":"stable",
-    "drift_delta":-0.0134,
-    "j16_bss_vs_market_vwap":0.1732
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.848272,
-    "midpoint_at_fill":null,
-    "edge_over_midpoint_bps":null,
-    "book_crossed":false,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":null,
-    "best_ask_at_fill":null,
-    "depth_within_1pct_usd":null,
-    "depth_within_5pct_usd":null,
-    "coverage_status":"empty_book",
-    "window_tier_sec":null,
-    "n_orders_at_snapshot":0
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":0,
-    "expected_slip_at_1k_bps":500.0,
-    "expected_slip_at_500_bps":500.0,
-    "expected_slip_at_5k_bps":500.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":"40401bfa5329c61c",
-    "committed_at_unix":null,
-    "committed_grade":"F",
-    "committed_state":"backfilled",
-    "engine_was_right":true,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
    "fill_id":"0xfee24914ec550f6f4d772d6e4d269f9fd6b56580:0xb1d6d5be70c56615034613c2d820121a61b75d864c28d2a92e5481d767c18cce:1778198846",
    "wallet":"0xfee24914ec550f6f4d772d6e4d269f9fd6b56580",
    "market_condition_id":"0xb1d6d5be70c56615034613c2d820121a61b75d864c28d2a92e5481d767c18cce",
@@ -1794,8 +1794,8 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"ed766fa228d1de4cc8e96142bdea202e0235d5ee216fd718ed90d52d0207b035",
-    "committed_at_unix":1780819743,
+    "chain_id":"7e9a5d16ff8b893c208ac5e2a0457f12e1bc9898ed175a688c3367d9a064c5f7",
+    "committed_at_unix":1780828613,
     "committed_grade":"C",
     "committed_state":"live",
     "engine_was_right":null,
@@ -1968,8 +1968,8 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"f133d4b353eab4b4",
-    "committed_at_unix":1780819742,
+    "chain_id":"29dab35a4e4c6344",
+    "committed_at_unix":1780828613,
     "committed_grade":"\u2014",
     "committed_state":"live",
     "engine_was_right":null,
@@ -5576,6 +5576,64 @@
    }
   },
   {
+   "fill_id":"0x162f6fff88a52864f2ecc9833e58089d5254798d:0xb196a122933da9aff6cb8b0f3764d0dc5db1859f46c0481c711521eee8524291:1778151324",
+   "wallet":"0x162f6fff88a52864f2ecc9833e58089d5254798d",
+   "market_condition_id":"0xb196a122933da9aff6cb8b0f3764d0dc5db1859f46c0481c711521eee8524291",
+   "trade_ts":1778151324,
+   "trade_size_usd_proxy":884.83,
+   "outcome_index":1,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_1_RELAXED",
+    "brier_today":0.1241,
+    "brier_n":96,
+    "drift_today":"improving",
+    "drift_delta":-0.0402,
+    "j16_bss_vs_market_vwap":-0.3412
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.875741,
+    "midpoint_at_fill":null,
+    "edge_over_midpoint_bps":null,
+    "book_crossed":false,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":null,
+    "best_ask_at_fill":null,
+    "depth_within_1pct_usd":null,
+    "depth_within_5pct_usd":null,
+    "coverage_status":"empty_book",
+    "window_tier_sec":null,
+    "n_orders_at_snapshot":0
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":0,
+    "expected_slip_at_1k_bps":500.0,
+    "expected_slip_at_500_bps":500.0,
+    "expected_slip_at_5k_bps":500.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":"b1cb2be44768f7e778eac869ce88261b2f9e07d754948a1f5ff84666ff8b3399",
+    "committed_at_unix":1780828613,
+    "committed_grade":"C",
+    "committed_state":"live",
+    "engine_was_right":null,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":"v53 cron"
+   }
+  },
+  {
    "fill_id":"0x162f6fff88a52864f2ecc9833e58089d5254798d:0xb7dd41c16cd5b59e543ffcdab6a0d876f5ccef5329ea42ef1798d80c9a2b8499:1778150876",
    "wallet":"0x162f6fff88a52864f2ecc9833e58089d5254798d",
    "market_condition_id":"0xb7dd41c16cd5b59e543ffcdab6a0d876f5ccef5329ea42ef1798d80c9a2b8499",
@@ -5680,8 +5738,8 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"882ce889f9ebd970bb4e72cbf3b5638394151a92e684bc0b4fc12b4675c0492f",
-    "committed_at_unix":1780819743,
+    "chain_id":"69d178cd369c019710ac05f5f62009b5525010a7ab7117c2e814ed5f115ee264",
+    "committed_at_unix":1780828613,
     "committed_grade":"C",
     "committed_state":"live",
     "engine_was_right":null,
@@ -6388,6 +6446,64 @@
    }
   },
   {
+   "fill_id":"0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1:0xac594b2385387474e8ad819047a94549ac6fbd1c6ccdb8a2515a36a3427faac0:1778115479",
+   "wallet":"0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1",
+   "market_condition_id":"0xac594b2385387474e8ad819047a94549ac6fbd1c6ccdb8a2515a36a3427faac0",
+   "trade_ts":1778115479,
+   "trade_size_usd_proxy":378.778,
+   "outcome_index":1,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_2_LOOSE",
+    "brier_today":0.0749,
+    "brier_n":350,
+    "drift_today":"stable",
+    "drift_delta":-0.0059,
+    "j16_bss_vs_market_vwap":0.1905
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.783568,
+    "midpoint_at_fill":null,
+    "edge_over_midpoint_bps":null,
+    "book_crossed":false,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":null,
+    "best_ask_at_fill":null,
+    "depth_within_1pct_usd":null,
+    "depth_within_5pct_usd":null,
+    "coverage_status":"empty_book",
+    "window_tier_sec":null,
+    "n_orders_at_snapshot":0
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":0,
+    "expected_slip_at_1k_bps":500.0,
+    "expected_slip_at_500_bps":500.0,
+    "expected_slip_at_5k_bps":500.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":"dbc80db53852335e",
+    "committed_at_unix":null,
+    "committed_grade":"B",
+    "committed_state":"backfilled",
+    "engine_was_right":true,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
    "fill_id":"0x692e411de5f7ba4d859c6b33038a81224c12ee58:0x65f204a8ebbaa472d668cc4fdbe4dd45249405a7e0acea43b7930a216e5bfdc7:1778113048",
    "wallet":"0x692e411de5f7ba4d859c6b33038a81224c12ee58",
    "market_condition_id":"0x65f204a8ebbaa472d668cc4fdbe4dd45249405a7e0acea43b7930a216e5bfdc7",
@@ -6849,64 +6965,6 @@
     "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
     "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
     "methodology_version":"v53 cron"
-   }
-  },
-  {
-   "fill_id":"0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1:0x8b369e10358094a99ffe7f85a81a8e8ca68c611eee0fe63a2efa790ad045bcd6:1778098973",
-   "wallet":"0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1",
-   "market_condition_id":"0x8b369e10358094a99ffe7f85a81a8e8ca68c611eee0fe63a2efa790ad045bcd6",
-   "trade_ts":1778098973,
-   "trade_size_usd_proxy":1011.83,
-   "outcome_index":1,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_2_LOOSE",
-    "brier_today":0.0749,
-    "brier_n":350,
-    "drift_today":"stable",
-    "drift_delta":-0.0059,
-    "j16_bss_vs_market_vwap":0.1905
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.53,
-    "midpoint_at_fill":null,
-    "edge_over_midpoint_bps":null,
-    "book_crossed":false,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":null,
-    "best_ask_at_fill":null,
-    "depth_within_1pct_usd":null,
-    "depth_within_5pct_usd":null,
-    "coverage_status":"empty_book",
-    "window_tier_sec":null,
-    "n_orders_at_snapshot":0
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":0,
-    "expected_slip_at_1k_bps":500.0,
-    "expected_slip_at_500_bps":500.0,
-    "expected_slip_at_5k_bps":500.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":"b2c8f750b89c4bbd",
-    "committed_at_unix":null,
-    "committed_grade":"B",
-    "committed_state":"backfilled",
-    "engine_was_right":true,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
    }
   },
   {
@@ -10158,64 +10216,6 @@
    }
   },
   {
-   "fill_id":"0x9d84ce0306f8551e02efef1680475fc0f1dc1344:0xe05f83ed91d2dcf7e744f86bbda236525eb9441bbf039c858f5438d9dc3e7431:1777919972",
-   "wallet":"0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
-   "market_condition_id":"0xe05f83ed91d2dcf7e744f86bbda236525eb9441bbf039c858f5438d9dc3e7431",
-   "trade_ts":1777919972,
-   "trade_size_usd_proxy":6309.58,
-   "outcome_index":1,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_2_LOOSE",
-    "brier_today":0.0765,
-    "brier_n":901,
-    "drift_today":"stable",
-    "drift_delta":-0.0134,
-    "j16_bss_vs_market_vwap":0.1732
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.7986,
-    "midpoint_at_fill":null,
-    "edge_over_midpoint_bps":null,
-    "book_crossed":false,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":null,
-    "best_ask_at_fill":null,
-    "depth_within_1pct_usd":null,
-    "depth_within_5pct_usd":null,
-    "coverage_status":"empty_book",
-    "window_tier_sec":null,
-    "n_orders_at_snapshot":0
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":0,
-    "expected_slip_at_1k_bps":500.0,
-    "expected_slip_at_500_bps":500.0,
-    "expected_slip_at_5k_bps":500.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":"88b043e542e1b8d7",
-    "committed_at_unix":null,
-    "committed_grade":"B",
-    "committed_state":"backfilled",
-    "engine_was_right":true,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
    "fill_id":"0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1:0x789c947a9415600d30d56a4aae88d4111996679b0caed166d0c96242fdce92a2:1777918378",
    "wallet":"0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1",
    "market_condition_id":"0x789c947a9415600d30d56a4aae88d4111996679b0caed166d0c96242fdce92a2",
@@ -11306,8 +11306,8 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"f133d4b353eab4b4",
-    "committed_at_unix":1780819742,
+    "chain_id":"29dab35a4e4c6344",
+    "committed_at_unix":1780828613,
     "committed_grade":"\u2014",
     "committed_state":"live",
     "engine_was_right":null,
@@ -11956,6 +11956,64 @@
    }
   },
   {
+   "fill_id":"0x16c7f9b7b239c980929a2aa5d53b23c5cac03931:0x3f4b9f2f79e5664cacdf4afacde6c45e59a9e4abedf7b8d10bf5f07307f9566f:1777783516",
+   "wallet":"0x16c7f9b7b239c980929a2aa5d53b23c5cac03931",
+   "market_condition_id":"0x3f4b9f2f79e5664cacdf4afacde6c45e59a9e4abedf7b8d10bf5f07307f9566f",
+   "trade_ts":1777783516,
+   "trade_size_usd_proxy":2471.1396923076923,
+   "outcome_index":0,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_1_RELAXED",
+    "brier_today":0.1744,
+    "brier_n":59,
+    "drift_today":"improving",
+    "drift_delta":-0.0601,
+    "j16_bss_vs_market_vwap":-0.8849
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.1575,
+    "midpoint_at_fill":null,
+    "edge_over_midpoint_bps":null,
+    "book_crossed":false,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":null,
+    "best_ask_at_fill":null,
+    "depth_within_1pct_usd":null,
+    "depth_within_5pct_usd":null,
+    "coverage_status":"empty_book",
+    "window_tier_sec":null,
+    "n_orders_at_snapshot":0
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":0,
+    "expected_slip_at_1k_bps":500.0,
+    "expected_slip_at_500_bps":500.0,
+    "expected_slip_at_5k_bps":500.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":"1bc54da859d7917f62a6a55f36205824c4fd7f2ce24cd64fa2bfa51b50108fdd",
+    "committed_at_unix":1779622593,
+    "committed_grade":"C",
+    "committed_state":"live",
+    "engine_was_right":null,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":"v53 cron"
+   }
+  },
+  {
    "fill_id":"0x4b2d0bbb55b0f92e30edbf2e5f944b089a6af0d4:0x0e4a0c937b8934c2475613b6322b3f8edc8dedc24762e01e42b0e6f87424a089:1777757796",
    "wallet":"0x4b2d0bbb55b0f92e30edbf2e5f944b089a6af0d4",
    "market_condition_id":"0x0e4a0c937b8934c2475613b6322b3f8edc8dedc24762e01e42b0e6f87424a089",
@@ -12072,6 +12130,64 @@
    }
   },
   {
+   "fill_id":"0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1:0xac594b2385387474e8ad819047a94549ac6fbd1c6ccdb8a2515a36a3427faac0:1777754056",
+   "wallet":"0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1",
+   "market_condition_id":"0xac594b2385387474e8ad819047a94549ac6fbd1c6ccdb8a2515a36a3427faac0",
+   "trade_ts":1777754056,
+   "trade_size_usd_proxy":378.778,
+   "outcome_index":1,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_2_LOOSE",
+    "brier_today":0.0749,
+    "brier_n":350,
+    "drift_today":"stable",
+    "drift_delta":-0.0059,
+    "j16_bss_vs_market_vwap":0.1905
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.783568,
+    "midpoint_at_fill":null,
+    "edge_over_midpoint_bps":null,
+    "book_crossed":false,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":null,
+    "best_ask_at_fill":null,
+    "depth_within_1pct_usd":null,
+    "depth_within_5pct_usd":null,
+    "coverage_status":"empty_book",
+    "window_tier_sec":null,
+    "n_orders_at_snapshot":0
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":0,
+    "expected_slip_at_1k_bps":500.0,
+    "expected_slip_at_500_bps":500.0,
+    "expected_slip_at_5k_bps":500.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":"dbc80db53852335e",
+    "committed_at_unix":null,
+    "committed_grade":"B",
+    "committed_state":"backfilled",
+    "engine_was_right":true,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
    "fill_id":"0x6db983ff1cbc85249e64e6ccd101aaa613ba4ab5:0x28872d7d6f63cc8e4172a1825ce9694898f3e94e1f6f97496896d77bb54ef502:1777745062",
    "wallet":"0x6db983ff1cbc85249e64e6ccd101aaa613ba4ab5",
    "market_condition_id":"0x28872d7d6f63cc8e4172a1825ce9694898f3e94e1f6f97496896d77bb54ef502",
@@ -12181,6 +12297,122 @@
     "committed_grade":"D",
     "committed_state":"backfilled",
     "engine_was_right":false,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
+   "fill_id":"0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1:0xac594b2385387474e8ad819047a94549ac6fbd1c6ccdb8a2515a36a3427faac0:1777741046",
+   "wallet":"0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1",
+   "market_condition_id":"0xac594b2385387474e8ad819047a94549ac6fbd1c6ccdb8a2515a36a3427faac0",
+   "trade_ts":1777741046,
+   "trade_size_usd_proxy":1004.495,
+   "outcome_index":0,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_2_LOOSE",
+    "brier_today":0.0749,
+    "brier_n":350,
+    "drift_today":"stable",
+    "drift_delta":-0.0059,
+    "j16_bss_vs_market_vwap":0.1905
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.841025,
+    "midpoint_at_fill":null,
+    "edge_over_midpoint_bps":null,
+    "book_crossed":false,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":null,
+    "best_ask_at_fill":null,
+    "depth_within_1pct_usd":null,
+    "depth_within_5pct_usd":null,
+    "coverage_status":"empty_book",
+    "window_tier_sec":null,
+    "n_orders_at_snapshot":0
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":0,
+    "expected_slip_at_1k_bps":500.0,
+    "expected_slip_at_500_bps":500.0,
+    "expected_slip_at_5k_bps":500.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":"dbc80db53852335e",
+    "committed_at_unix":null,
+    "committed_grade":"B",
+    "committed_state":"backfilled",
+    "engine_was_right":true,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
+   "fill_id":"0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1:0xac594b2385387474e8ad819047a94549ac6fbd1c6ccdb8a2515a36a3427faac0:1777740972",
+   "wallet":"0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1",
+   "market_condition_id":"0xac594b2385387474e8ad819047a94549ac6fbd1c6ccdb8a2515a36a3427faac0",
+   "trade_ts":1777740972,
+   "trade_size_usd_proxy":1004.495,
+   "outcome_index":0,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_2_LOOSE",
+    "brier_today":0.0749,
+    "brier_n":350,
+    "drift_today":"stable",
+    "drift_delta":-0.0059,
+    "j16_bss_vs_market_vwap":0.1905
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.841025,
+    "midpoint_at_fill":null,
+    "edge_over_midpoint_bps":null,
+    "book_crossed":false,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":null,
+    "best_ask_at_fill":null,
+    "depth_within_1pct_usd":null,
+    "depth_within_5pct_usd":null,
+    "coverage_status":"empty_book",
+    "window_tier_sec":null,
+    "n_orders_at_snapshot":0
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":0,
+    "expected_slip_at_1k_bps":500.0,
+    "expected_slip_at_500_bps":500.0,
+    "expected_slip_at_5k_bps":500.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":"dbc80db53852335e",
+    "committed_at_unix":null,
+    "committed_grade":"B",
+    "committed_state":"backfilled",
+    "engine_was_right":true,
     "l4_ots_latest_date":"2026-06-07",
     "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
     "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
@@ -12814,8 +13046,8 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"882ce889f9ebd970bb4e72cbf3b5638394151a92e684bc0b4fc12b4675c0492f",
-    "committed_at_unix":1780819743,
+    "chain_id":"69d178cd369c019710ac05f5f62009b5525010a7ab7117c2e814ed5f115ee264",
+    "committed_at_unix":1780828613,
     "committed_grade":"C",
     "committed_state":"live",
     "engine_was_right":null,
@@ -13406,6 +13638,64 @@
    }
   },
   {
+   "fill_id":"0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1:0x108ede53b0697d627530206b24a18735e1ecc03ad5cf8bd76e29b3058aa5db15:1777637710",
+   "wallet":"0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
+   "market_condition_id":"0x108ede53b0697d627530206b24a18735e1ecc03ad5cf8bd76e29b3058aa5db15",
+   "trade_ts":1777637710,
+   "trade_size_usd_proxy":2800.0,
+   "outcome_index":0,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_2_LOOSE",
+    "brier_today":0.0384,
+    "brier_n":556,
+    "drift_today":"stable",
+    "drift_delta":-0.0136,
+    "j16_bss_vs_market_vwap":0.585
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.37,
+    "midpoint_at_fill":null,
+    "edge_over_midpoint_bps":null,
+    "book_crossed":false,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":null,
+    "best_ask_at_fill":null,
+    "depth_within_1pct_usd":null,
+    "depth_within_5pct_usd":null,
+    "coverage_status":"empty_book",
+    "window_tier_sec":null,
+    "n_orders_at_snapshot":0
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":0,
+    "expected_slip_at_1k_bps":500.0,
+    "expected_slip_at_500_bps":500.0,
+    "expected_slip_at_5k_bps":500.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":"60b8efb0cd9f9693",
+    "committed_at_unix":null,
+    "committed_grade":"A",
+    "committed_state":"backfilled",
+    "engine_was_right":false,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
    "fill_id":"0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1:0x66c0aae2c4f4abfc8864b35697726075287b6ecc150682cd871a4971e5a5ce1a:1777637652",
    "wallet":"0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
    "market_condition_id":"0x66c0aae2c4f4abfc8864b35697726075287b6ecc150682cd871a4971e5a5ce1a",
@@ -13568,8 +13858,8 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"e01477213fe497c0419c949c757bec760e3ff986d676fac838c1a5e86ba97874",
-    "committed_at_unix":1780819743,
+    "chain_id":"68532490d5828a51e3edbbdf5e139e3da9884800a2e0800b7cb2f3a8cc208a50",
+    "committed_at_unix":1780828613,
     "committed_grade":"F",
     "committed_state":"live",
     "engine_was_right":null,
@@ -13626,8 +13916,8 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"e01477213fe497c0419c949c757bec760e3ff986d676fac838c1a5e86ba97874",
-    "committed_at_unix":1780819743,
+    "chain_id":"68532490d5828a51e3edbbdf5e139e3da9884800a2e0800b7cb2f3a8cc208a50",
+    "committed_at_unix":1780828613,
     "committed_grade":"F",
     "committed_state":"live",
     "engine_was_right":null,
@@ -14798,22 +15088,22 @@
    }
   },
   {
-   "fill_id":"0x9d84ce0306f8551e02efef1680475fc0f1dc1344:0x6747bae2269c348786d0c0c0f4286ac006f13f16325d4dcbab954b46de029f19:1777554174",
-   "wallet":"0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
-   "market_condition_id":"0x6747bae2269c348786d0c0c0f4286ac006f13f16325d4dcbab954b46de029f19",
-   "trade_ts":1777554174,
-   "trade_size_usd_proxy":58105.29,
-   "outcome_index":1,
+   "fill_id":"0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1:0xbf5b6a71ebf9f79ac24834d8def3361656464d34ad0316538de07a28fe5b1e3b:1777555028",
+   "wallet":"0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
+   "market_condition_id":"0xbf5b6a71ebf9f79ac24834d8def3361656464d34ad0316538de07a28fe5b1e3b",
+   "trade_ts":1777555028,
+   "trade_size_usd_proxy":1250.0,
+   "outcome_index":0,
    "step_1_skilled_wallet":{
     "skill_layer_today":"LAYER_2_LOOSE",
-    "brier_today":0.0765,
-    "brier_n":901,
+    "brier_today":0.0384,
+    "brier_n":556,
     "drift_today":"stable",
-    "drift_delta":-0.0134,
-    "j16_bss_vs_market_vwap":0.1732
+    "drift_delta":-0.0136,
+    "j16_bss_vs_market_vwap":0.585
    },
    "step_2_fair_entry":{
-    "trade_price":0.012698,
+    "trade_price":0.76,
     "midpoint_at_fill":null,
     "edge_over_midpoint_bps":null,
     "book_crossed":false,
@@ -14844,11 +15134,11 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"2120d8e10cfc2b86",
+    "chain_id":"e13e5e06cb8e3ed8",
     "committed_at_unix":null,
-    "committed_grade":"A",
+    "committed_grade":"B",
     "committed_state":"backfilled",
-    "engine_was_right":false,
+    "engine_was_right":true,
     "l4_ots_latest_date":"2026-06-07",
     "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
     "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
@@ -14911,6 +15201,64 @@
     "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
     "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
     "methodology_version":"v53 cron"
+   }
+  },
+  {
+   "fill_id":"0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1:0xbf5b6a71ebf9f79ac24834d8def3361656464d34ad0316538de07a28fe5b1e3b:1777552598",
+   "wallet":"0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
+   "market_condition_id":"0xbf5b6a71ebf9f79ac24834d8def3361656464d34ad0316538de07a28fe5b1e3b",
+   "trade_ts":1777552598,
+   "trade_size_usd_proxy":1250.0,
+   "outcome_index":0,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_2_LOOSE",
+    "brier_today":0.0384,
+    "brier_n":556,
+    "drift_today":"stable",
+    "drift_delta":-0.0136,
+    "j16_bss_vs_market_vwap":0.585
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.76,
+    "midpoint_at_fill":null,
+    "edge_over_midpoint_bps":null,
+    "book_crossed":false,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":null,
+    "best_ask_at_fill":null,
+    "depth_within_1pct_usd":null,
+    "depth_within_5pct_usd":null,
+    "coverage_status":"empty_book",
+    "window_tier_sec":null,
+    "n_orders_at_snapshot":0
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":0,
+    "expected_slip_at_1k_bps":500.0,
+    "expected_slip_at_500_bps":500.0,
+    "expected_slip_at_5k_bps":500.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":"e13e5e06cb8e3ed8",
+    "committed_at_unix":null,
+    "committed_grade":"B",
+    "committed_state":"backfilled",
+    "engine_was_right":true,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
    }
   },
   {
@@ -18948,6 +19296,64 @@
    },
    "step_4_safe_size_at_fill":{
     "max_safe_at_0_5pct_usd":2,
+    "expected_slip_at_1k_bps":550.0,
+    "expected_slip_at_500_bps":550.0,
+    "expected_slip_at_5k_bps":550.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":null,
+    "committed_at_unix":null,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
+   "fill_id":"0xf5198df69e13937a40d1c76d6f72d9aa067d906b:0x3dc47a72ac6bb265e9cefebd2a2eeed00966394cb2d07245b5c94138b60e82a3:1777448562",
+   "wallet":"0xf5198df69e13937a40d1c76d6f72d9aa067d906b",
+   "market_condition_id":"0x3dc47a72ac6bb265e9cefebd2a2eeed00966394cb2d07245b5c94138b60e82a3",
+   "trade_ts":1777448562,
+   "trade_size_usd_proxy":6000.0,
+   "outcome_index":1,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_2_LOOSE",
+    "brier_today":0.166,
+    "brier_n":830,
+    "drift_today":"stable",
+    "drift_delta":0.0067,
+    "j16_bss_vs_market_vwap":-0.7941
+   },
+   "step_2_fair_entry":{
+    "trade_price":null,
+    "midpoint_at_fill":0.9794999996444134,
+    "edge_over_midpoint_bps":null,
+    "book_crossed":true,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":0.9809999992888266,
+    "best_ask_at_fill":0.978,
+    "depth_within_1pct_usd":46.82,
+    "depth_within_5pct_usd":46.82,
+    "coverage_status":"complete",
+    "window_tier_sec":86400,
+    "n_orders_at_snapshot":2
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":28,
     "expected_slip_at_1k_bps":550.0,
     "expected_slip_at_500_bps":550.0,
     "expected_slip_at_5k_bps":550.0,
@@ -23486,11 +23892,11 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"bf5c538c78c21f57",
+    "chain_id":null,
     "committed_at_unix":null,
-    "committed_grade":"D",
-    "committed_state":"backfilled",
-    "engine_was_right":true,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
     "l4_ots_latest_date":"2026-06-07",
     "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
     "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
@@ -29402,11 +29808,11 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"4b25f96a35811c21",
+    "chain_id":null,
     "committed_at_unix":null,
-    "committed_grade":"D",
-    "committed_state":"backfilled",
-    "engine_was_right":true,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
     "l4_ots_latest_date":"2026-06-07",
     "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
     "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
@@ -30272,11 +30678,11 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"c76bd2a9fcfe3c1a",
+    "chain_id":null,
     "committed_at_unix":null,
-    "committed_grade":"F",
-    "committed_state":"backfilled",
-    "engine_was_right":true,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
     "l4_ots_latest_date":"2026-06-07",
     "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
     "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
@@ -32546,6 +32952,64 @@
    }
   },
   {
+   "fill_id":"0x51fd8f0358cc9e8a1ee5f87a0c7e3b07ed634272:0x3d5321854a1571f6f9f27fd6a87fbefdde464260a19b03404d2eb9d97f3d2b06:1777407846",
+   "wallet":"0x51fd8f0358cc9e8a1ee5f87a0c7e3b07ed634272",
+   "market_condition_id":"0x3d5321854a1571f6f9f27fd6a87fbefdde464260a19b03404d2eb9d97f3d2b06",
+   "trade_ts":1777407846,
+   "trade_size_usd_proxy":413.65083333333337,
+   "outcome_index":0,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_1_RELAXED",
+    "brier_today":0.1424,
+    "brier_n":635,
+    "drift_today":"improving",
+    "drift_delta":-0.054,
+    "j16_bss_vs_market_vwap":-0.539
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.116513,
+    "midpoint_at_fill":0.16397367329557944,
+    "edge_over_midpoint_bps":2894.41,
+    "book_crossed":true,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":0.17870786516853931,
+    "best_ask_at_fill":0.15,
+    "depth_within_1pct_usd":0,
+    "depth_within_5pct_usd":98.77,
+    "coverage_status":"complete",
+    "window_tier_sec":86400,
+    "n_orders_at_snapshot":31
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":0,
+    "expected_slip_at_1k_bps":500.0,
+    "expected_slip_at_500_bps":500.0,
+    "expected_slip_at_5k_bps":500.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":null,
+    "committed_at_unix":null,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
    "fill_id":"0xb886580698ede4b18de3e446b2d8da8bcedd81b3:0x01dffa7abae7e5d9b7fb44b06d537c5ac932e2ca422ab4b53366672f5e2dc7d6:1777407826",
    "wallet":"0xb886580698ede4b18de3e446b2d8da8bcedd81b3",
    "market_condition_id":"0x01dffa7abae7e5d9b7fb44b06d537c5ac932e2ca422ab4b53366672f5e2dc7d6",
@@ -34390,11 +34854,11 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"5bc28880ff8c2310",
+    "chain_id":null,
     "committed_at_unix":null,
-    "committed_grade":"F",
-    "committed_state":"backfilled",
-    "engine_was_right":false,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
     "l4_ots_latest_date":"2026-06-07",
     "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
     "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
@@ -34506,11 +34970,11 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"5bc28880ff8c2310",
+    "chain_id":null,
     "committed_at_unix":null,
-    "committed_grade":"F",
-    "committed_state":"backfilled",
-    "engine_was_right":false,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
     "l4_ots_latest_date":"2026-06-07",
     "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
     "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
@@ -34564,11 +35028,11 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"b8daf7b7f77edb61",
+    "chain_id":null,
     "committed_at_unix":null,
-    "committed_grade":"D",
-    "committed_state":"backfilled",
-    "engine_was_right":true,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
     "l4_ots_latest_date":"2026-06-07",
     "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
     "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
@@ -40538,11 +41002,11 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"bf5c538c78c21f57",
+    "chain_id":null,
     "committed_at_unix":null,
-    "committed_grade":"D",
-    "committed_state":"backfilled",
-    "engine_was_right":true,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
     "l4_ots_latest_date":"2026-06-07",
     "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
     "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
@@ -42510,11 +42974,11 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"bf5c538c78c21f57",
+    "chain_id":null,
     "committed_at_unix":null,
-    "committed_grade":"D",
-    "committed_state":"backfilled",
-    "engine_was_right":true,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
     "l4_ots_latest_date":"2026-06-07",
     "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
     "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
@@ -61070,11 +61534,11 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"8c53c75b03c681bf",
+    "chain_id":null,
     "committed_at_unix":null,
-    "committed_grade":"D",
-    "committed_state":"backfilled",
-    "engine_was_right":false,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
     "l4_ots_latest_date":"2026-06-07",
     "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
     "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
@@ -111600,6 +112064,64 @@
    }
   },
   {
+   "fill_id":"0x03e8a544e97eeff5753bc1e90d46e5ef22af1697:0x3db295cda3bf9a8a262c7d88aaf0bedd2ae426ec1350dc9a8c74de3357b04614:1777336866",
+   "wallet":"0x03e8a544e97eeff5753bc1e90d46e5ef22af1697",
+   "market_condition_id":"0x3db295cda3bf9a8a262c7d88aaf0bedd2ae426ec1350dc9a8c74de3357b04614",
+   "trade_ts":1777336866,
+   "trade_size_usd_proxy":484.9398,
+   "outcome_index":1,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_2_LOOSE",
+    "brier_today":0.2382,
+    "brier_n":571,
+    "drift_today":"stable",
+    "drift_delta":0.013,
+    "j16_bss_vs_market_vwap":-1.5744
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.4697,
+    "midpoint_at_fill":0.48000000000000004,
+    "edge_over_midpoint_bps":214.58,
+    "book_crossed":false,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":0.48000000000000004,
+    "best_ask_at_fill":null,
+    "depth_within_1pct_usd":294.21,
+    "depth_within_5pct_usd":1529.01,
+    "coverage_status":"one_sided",
+    "window_tier_sec":600,
+    "n_orders_at_snapshot":18
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":176,
+    "expected_slip_at_1k_bps":300.0,
+    "expected_slip_at_500_bps":300.0,
+    "expected_slip_at_5k_bps":550.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":null,
+    "committed_at_unix":null,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
    "fill_id":"0xaa075924e1dc7cff3b9fab67401126338c4d2125:0x29615959e6830a4c806618f814dee7eb47910f690d13fd63d53353a27bc69dc8:1777336726",
    "wallet":"0xaa075924e1dc7cff3b9fab67401126338c4d2125",
    "market_condition_id":"0x29615959e6830a4c806618f814dee7eb47910f690d13fd63d53353a27bc69dc8",
@@ -113836,6 +114358,64 @@
    },
    "step_4_safe_size_at_fill":{
     "max_safe_at_0_5pct_usd":103,
+    "expected_slip_at_1k_bps":500.0,
+    "expected_slip_at_500_bps":500.0,
+    "expected_slip_at_5k_bps":500.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":null,
+    "committed_at_unix":null,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
+   "fill_id":"0x5f390e4b7d6f06d6756a6c92afdbf7b3176aa78c:0x3e166e94d38707543b2e951c325eb9b917468b99e75294d11cd853587364d934:1777331674",
+   "wallet":"0x5f390e4b7d6f06d6756a6c92afdbf7b3176aa78c",
+   "market_condition_id":"0x3e166e94d38707543b2e951c325eb9b917468b99e75294d11cd853587364d934",
+   "trade_ts":1777331674,
+   "trade_size_usd_proxy":27.91,
+   "outcome_index":0,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_2_LOOSE",
+    "brier_today":0.0788,
+    "brier_n":603,
+    "drift_today":"stable",
+    "drift_delta":0.0002,
+    "j16_bss_vs_market_vwap":0.1484
+   },
+   "step_2_fair_entry":{
+    "trade_price":null,
+    "midpoint_at_fill":0.008415840346552185,
+    "edge_over_midpoint_bps":null,
+    "book_crossed":true,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":0.01357424488103215,
+    "best_ask_at_fill":0.006,
+    "depth_within_1pct_usd":0,
+    "depth_within_5pct_usd":0,
+    "coverage_status":"complete",
+    "window_tier_sec":600,
+    "n_orders_at_snapshot":11
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":0,
     "expected_slip_at_1k_bps":500.0,
     "expected_slip_at_500_bps":500.0,
     "expected_slip_at_5k_bps":500.0,
@@ -117226,6 +117806,64 @@
    }
   },
   {
+   "fill_id":"0x03e8a544e97eeff5753bc1e90d46e5ef22af1697:0x3db295cda3bf9a8a262c7d88aaf0bedd2ae426ec1350dc9a8c74de3357b04614:1777327364",
+   "wallet":"0x03e8a544e97eeff5753bc1e90d46e5ef22af1697",
+   "market_condition_id":"0x3db295cda3bf9a8a262c7d88aaf0bedd2ae426ec1350dc9a8c74de3357b04614",
+   "trade_ts":1777327364,
+   "trade_size_usd_proxy":484.9398,
+   "outcome_index":1,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_2_LOOSE",
+    "brier_today":0.2382,
+    "brier_n":571,
+    "drift_today":"stable",
+    "drift_delta":0.013,
+    "j16_bss_vs_market_vwap":-1.5744
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.4697,
+    "midpoint_at_fill":0.46074071603672223,
+    "edge_over_midpoint_bps":-194.45,
+    "book_crossed":true,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":0.47,
+    "best_ask_at_fill":0.45,
+    "depth_within_1pct_usd":459.33,
+    "depth_within_5pct_usd":5395.65,
+    "coverage_status":"complete",
+    "window_tier_sec":600,
+    "n_orders_at_snapshot":27
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":275,
+    "expected_slip_at_1k_bps":300.0,
+    "expected_slip_at_500_bps":300.0,
+    "expected_slip_at_5k_bps":300.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":null,
+    "committed_at_unix":null,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
    "fill_id":"0xc97485a44146b5db0b8b121358f57cf297cdb33b:0x29615959e6830a4c806618f814dee7eb47910f690d13fd63d53353a27bc69dc8:1777327340",
    "wallet":"0xc97485a44146b5db0b8b121358f57cf297cdb33b",
    "market_condition_id":"0x29615959e6830a4c806618f814dee7eb47910f690d13fd63d53353a27bc69dc8",
@@ -118035,6 +118673,64 @@
     "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
     "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
     "methodology_version":"v53 cron"
+   }
+  },
+  {
+   "fill_id":"0xc8075693f48668a264b9fa313b47f52712fcc12b:0x3db295cda3bf9a8a262c7d88aaf0bedd2ae426ec1350dc9a8c74de3357b04614:1777325462",
+   "wallet":"0xc8075693f48668a264b9fa313b47f52712fcc12b",
+   "market_condition_id":"0x3db295cda3bf9a8a262c7d88aaf0bedd2ae426ec1350dc9a8c74de3357b04614",
+   "trade_ts":1777325462,
+   "trade_size_usd_proxy":100966.343,
+   "outcome_index":0,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_2_LOOSE",
+    "brier_today":0.2476,
+    "brier_n":278,
+    "drift_today":"stable",
+    "drift_delta":-0.0028,
+    "j16_bss_vs_market_vwap":-1.676
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.54,
+    "midpoint_at_fill":0.5424357061886027,
+    "edge_over_midpoint_bps":44.9,
+    "book_crossed":true,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":0.55,
+    "best_ask_at_fill":0.53,
+    "depth_within_1pct_usd":61095.18,
+    "depth_within_5pct_usd":62676.04,
+    "coverage_status":"complete",
+    "window_tier_sec":600,
+    "n_orders_at_snapshot":78
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":36657,
+    "expected_slip_at_1k_bps":25.0,
+    "expected_slip_at_500_bps":25.0,
+    "expected_slip_at_5k_bps":25.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":null,
+    "committed_at_unix":null,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
    }
   },
   {
@@ -124580,8 +125276,8 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"65d26e483737a5beeabd0aad2df5b679bc0e82cf2f453ec1225a38901b17d091",
-    "committed_at_unix":1780819743,
+    "chain_id":"fa70908728c4f903a000273584c79630eda89ba3173132ac64d29ed9b8f1840c",
+    "committed_at_unix":1780828613,
     "committed_grade":"F",
     "committed_state":"live",
     "engine_was_right":null,
@@ -144010,8 +144706,8 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"2d46346dc24c25c80d78180b93f8211830e722d6d91f7618f67376109fe2bc77",
-    "committed_at_unix":1780819743,
+    "chain_id":"1dcae93c5b39a35d3cfd342d7821e03894c9632fc37ca2c2362b8870f59983f4",
+    "committed_at_unix":1780828613,
     "committed_grade":"C",
     "committed_state":"live",
     "engine_was_right":null,
@@ -150448,8 +151144,8 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"f4d900978d14790b87ed476a1df00b62e883105ee756b4ca2ad3a51ab1d141f2",
-    "committed_at_unix":1780819743,
+    "chain_id":"bc3190543fc0a22bd6a42ce565680411ff61d0c815514e0646e52f1230adff9c",
+    "committed_at_unix":1780828613,
     "committed_grade":"C",
     "committed_state":"live",
     "engine_was_right":null,
@@ -172848,6 +173544,64 @@
    }
   },
   {
+   "fill_id":"0xa67685fa5213fd8167977bfb7b3f50c06d511c22:0x3dba3674fe9c4dbdaf9467905d91cb90794d7861a94cc7799bd4ada1b62bdd9a:1777211152",
+   "wallet":"0xa67685fa5213fd8167977bfb7b3f50c06d511c22",
+   "market_condition_id":"0x3dba3674fe9c4dbdaf9467905d91cb90794d7861a94cc7799bd4ada1b62bdd9a",
+   "trade_ts":1777211152,
+   "trade_size_usd_proxy":364.3978,
+   "outcome_index":1,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_1_RELAXED",
+    "brier_today":0.1334,
+    "brier_n":111,
+    "drift_today":"drifting",
+    "drift_delta":0.0921,
+    "j16_bss_vs_market_vwap":-0.4417
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.4803,
+    "midpoint_at_fill":0.4800880287964646,
+    "edge_over_midpoint_bps":-4.42,
+    "book_crossed":true,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":0.4802640863893938,
+    "best_ask_at_fill":0.47,
+    "depth_within_1pct_usd":179.68,
+    "depth_within_5pct_usd":351.99,
+    "coverage_status":"complete",
+    "window_tier_sec":600,
+    "n_orders_at_snapshot":3
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":107,
+    "expected_slip_at_1k_bps":550.0,
+    "expected_slip_at_500_bps":550.0,
+    "expected_slip_at_5k_bps":550.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":null,
+    "committed_at_unix":null,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
    "fill_id":"0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71:0x55c601357c17cb034462d959de0bb84a558b3fe6f6730411ac58a06092eef385:1777211032",
    "wallet":"0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
    "market_condition_id":"0x55c601357c17cb034462d959de0bb84a558b3fe6f6730411ac58a06092eef385",
@@ -179866,6 +180620,64 @@
    }
   },
   {
+   "fill_id":"0x23073ad0c9dff45353cedb11760570b995663934:0x3d1ca5144fd5541f8e0216ecc01b17b56882e80e4b55b64893747cfe17104e8c:1777198586",
+   "wallet":"0x23073ad0c9dff45353cedb11760570b995663934",
+   "market_condition_id":"0x3d1ca5144fd5541f8e0216ecc01b17b56882e80e4b55b64893747cfe17104e8c",
+   "trade_ts":1777198586,
+   "trade_size_usd_proxy":6218.6586,
+   "outcome_index":0,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_2_LOOSE",
+    "brier_today":0.2153,
+    "brier_n":570,
+    "drift_today":"improving",
+    "drift_delta":-0.0209,
+    "j16_bss_vs_market_vwap":-1.3269
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.16,
+    "midpoint_at_fill":0.1473380548301771,
+    "edge_over_midpoint_bps":-859.38,
+    "book_crossed":true,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":0.16999999999999998,
+    "best_ask_at_fill":0.12,
+    "depth_within_1pct_usd":0,
+    "depth_within_5pct_usd":704.76,
+    "coverage_status":"complete",
+    "window_tier_sec":600,
+    "n_orders_at_snapshot":184
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":0,
+    "expected_slip_at_1k_bps":500.0,
+    "expected_slip_at_500_bps":500.0,
+    "expected_slip_at_5k_bps":500.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":null,
+    "committed_at_unix":null,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
    "fill_id":"0xa5ea13a81d2b7e8e424b182bdc1db08e756bd96a:0xbddbb5e56387d627cac5e57fdd48fc45ccd31868e7eb6740a4f673c4ed2281b7:1777198468",
    "wallet":"0xa5ea13a81d2b7e8e424b182bdc1db08e756bd96a",
    "market_condition_id":"0xbddbb5e56387d627cac5e57fdd48fc45ccd31868e7eb6740a4f673c4ed2281b7",
@@ -180017,6 +180829,64 @@
     "expected_slip_at_1k_bps":25.0,
     "expected_slip_at_500_bps":25.0,
     "expected_slip_at_5k_bps":123.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":null,
+    "committed_at_unix":null,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
+   "fill_id":"0x23073ad0c9dff45353cedb11760570b995663934:0x3d1ca5144fd5541f8e0216ecc01b17b56882e80e4b55b64893747cfe17104e8c:1777198404",
+   "wallet":"0x23073ad0c9dff45353cedb11760570b995663934",
+   "market_condition_id":"0x3d1ca5144fd5541f8e0216ecc01b17b56882e80e4b55b64893747cfe17104e8c",
+   "trade_ts":1777198404,
+   "trade_size_usd_proxy":6218.6586,
+   "outcome_index":0,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_2_LOOSE",
+    "brier_today":0.2153,
+    "brier_n":570,
+    "drift_today":"improving",
+    "drift_delta":-0.0209,
+    "j16_bss_vs_market_vwap":-1.3269
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.16,
+    "midpoint_at_fill":0.15460246361106916,
+    "edge_over_midpoint_bps":-349.12,
+    "book_crossed":true,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":0.16999999999999998,
+    "best_ask_at_fill":0.12,
+    "depth_within_1pct_usd":0,
+    "depth_within_5pct_usd":4433.83,
+    "coverage_status":"complete",
+    "window_tier_sec":600,
+    "n_orders_at_snapshot":163
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":0,
+    "expected_slip_at_1k_bps":500.0,
+    "expected_slip_at_500_bps":500.0,
+    "expected_slip_at_5k_bps":500.0,
     "tolerance_published_bps":50,
     "target_size_published_usd":1000
    },
@@ -180539,6 +181409,122 @@
     "expected_slip_at_1k_bps":550.0,
     "expected_slip_at_500_bps":550.0,
     "expected_slip_at_5k_bps":550.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":null,
+    "committed_at_unix":null,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
+   "fill_id":"0x40ea9faef8f8eeac2b3262f2e1b75f9fbb16832f:0x3d1ca5144fd5541f8e0216ecc01b17b56882e80e4b55b64893747cfe17104e8c:1777196860",
+   "wallet":"0x40ea9faef8f8eeac2b3262f2e1b75f9fbb16832f",
+   "market_condition_id":"0x3d1ca5144fd5541f8e0216ecc01b17b56882e80e4b55b64893747cfe17104e8c",
+   "trade_ts":1777196860,
+   "trade_size_usd_proxy":57305.9995,
+   "outcome_index":0,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_1_RELAXED",
+    "brier_today":0.1914,
+    "brier_n":61,
+    "drift_today":"drifting",
+    "drift_delta":0.0572,
+    "j16_bss_vs_market_vwap":-1.0686
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.1701,
+    "midpoint_at_fill":0.16341521989668584,
+    "edge_over_midpoint_bps":-409.07,
+    "book_crossed":true,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":0.1705398613473238,
+    "best_ask_at_fill":0.16999997495290753,
+    "depth_within_1pct_usd":0,
+    "depth_within_5pct_usd":26664.02,
+    "coverage_status":"complete",
+    "window_tier_sec":600,
+    "n_orders_at_snapshot":88
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":0,
+    "expected_slip_at_1k_bps":500.0,
+    "expected_slip_at_500_bps":500.0,
+    "expected_slip_at_5k_bps":500.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":null,
+    "committed_at_unix":null,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
+   "fill_id":"0x40ea9faef8f8eeac2b3262f2e1b75f9fbb16832f:0x3d1ca5144fd5541f8e0216ecc01b17b56882e80e4b55b64893747cfe17104e8c:1777196828",
+   "wallet":"0x40ea9faef8f8eeac2b3262f2e1b75f9fbb16832f",
+   "market_condition_id":"0x3d1ca5144fd5541f8e0216ecc01b17b56882e80e4b55b64893747cfe17104e8c",
+   "trade_ts":1777196828,
+   "trade_size_usd_proxy":57305.9995,
+   "outcome_index":0,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_1_RELAXED",
+    "brier_today":0.1914,
+    "brier_n":61,
+    "drift_today":"drifting",
+    "drift_delta":0.0572,
+    "j16_bss_vs_market_vwap":-1.0686
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.1701,
+    "midpoint_at_fill":0.16337684663941968,
+    "edge_over_midpoint_bps":-411.51,
+    "book_crossed":true,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":0.1705398613473238,
+    "best_ask_at_fill":0.16,
+    "depth_within_1pct_usd":0,
+    "depth_within_5pct_usd":26698.68,
+    "coverage_status":"complete",
+    "window_tier_sec":600,
+    "n_orders_at_snapshot":89
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":0,
+    "expected_slip_at_1k_bps":500.0,
+    "expected_slip_at_500_bps":500.0,
+    "expected_slip_at_5k_bps":500.0,
     "tolerance_published_bps":50,
     "target_size_published_usd":1000
    },
@@ -182627,6 +183613,64 @@
     "expected_slip_at_1k_bps":25.0,
     "expected_slip_at_500_bps":25.0,
     "expected_slip_at_5k_bps":300.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":null,
+    "committed_at_unix":null,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
+   "fill_id":"0xd202bf6d89dc6bab1b9f00ead175f75466348973:0x3d1ca5144fd5541f8e0216ecc01b17b56882e80e4b55b64893747cfe17104e8c:1777192248",
+   "wallet":"0xd202bf6d89dc6bab1b9f00ead175f75466348973",
+   "market_condition_id":"0x3d1ca5144fd5541f8e0216ecc01b17b56882e80e4b55b64893747cfe17104e8c",
+   "trade_ts":1777192248,
+   "trade_size_usd_proxy":18686.9919,
+   "outcome_index":0,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_2_LOOSE",
+    "brier_today":0.2059,
+    "brier_n":67,
+    "drift_today":"improving",
+    "drift_delta":-0.037,
+    "j16_bss_vs_market_vwap":-1.2253
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.17,
+    "midpoint_at_fill":0.16499998412450942,
+    "edge_over_midpoint_bps":-303.03,
+    "book_crossed":true,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":0.17,
+    "best_ask_at_fill":0.16,
+    "depth_within_1pct_usd":0,
+    "depth_within_5pct_usd":3977.54,
+    "coverage_status":"complete",
+    "window_tier_sec":600,
+    "n_orders_at_snapshot":8
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":0,
+    "expected_slip_at_1k_bps":500.0,
+    "expected_slip_at_500_bps":500.0,
+    "expected_slip_at_5k_bps":500.0,
     "tolerance_published_bps":50,
     "target_size_published_usd":1000
    },
@@ -188774,6 +189818,122 @@
     "max_safe_at_0_5pct_usd":1,
     "expected_slip_at_1k_bps":550.0,
     "expected_slip_at_500_bps":550.0,
+    "expected_slip_at_5k_bps":550.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":null,
+    "committed_at_unix":null,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
+   "fill_id":"0xb27bc932bf8110d8f78e55da7d5f0497a18b5b82:0x3cd83d35e7970075a3fc2fe3106769b322c21578d7c4e080dbacf73bfb589e78:1777170788",
+   "wallet":"0xb27bc932bf8110d8f78e55da7d5f0497a18b5b82",
+   "market_condition_id":"0x3cd83d35e7970075a3fc2fe3106769b322c21578d7c4e080dbacf73bfb589e78",
+   "trade_ts":1777170788,
+   "trade_size_usd_proxy":67.82065,
+   "outcome_index":0,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_1_RELAXED",
+    "brier_today":0.1996,
+    "brier_n":644,
+    "drift_today":"stable",
+    "drift_delta":-0.0022,
+    "j16_bss_vs_market_vwap":-1.1572
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.4055,
+    "midpoint_at_fill":0.45348076727469633,
+    "edge_over_midpoint_bps":1058.06,
+    "book_crossed":true,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":0.9900000000000002,
+    "best_ask_at_fill":0.12999999999999998,
+    "depth_within_1pct_usd":975.95,
+    "depth_within_5pct_usd":2821.52,
+    "coverage_status":"complete",
+    "window_tier_sec":600,
+    "n_orders_at_snapshot":5322
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":585,
+    "expected_slip_at_1k_bps":300.0,
+    "expected_slip_at_500_bps":28.1,
+    "expected_slip_at_5k_bps":550.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":null,
+    "committed_at_unix":null,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
+   "fill_id":"0xb27bc932bf8110d8f78e55da7d5f0497a18b5b82:0x3cd83d35e7970075a3fc2fe3106769b322c21578d7c4e080dbacf73bfb589e78:1777170770",
+   "wallet":"0xb27bc932bf8110d8f78e55da7d5f0497a18b5b82",
+   "market_condition_id":"0x3cd83d35e7970075a3fc2fe3106769b322c21578d7c4e080dbacf73bfb589e78",
+   "trade_ts":1777170770,
+   "trade_size_usd_proxy":67.82065,
+   "outcome_index":0,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_1_RELAXED",
+    "brier_today":0.1996,
+    "brier_n":644,
+    "drift_today":"stable",
+    "drift_delta":-0.0022,
+    "j16_bss_vs_market_vwap":-1.1572
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.4055,
+    "midpoint_at_fill":0.45353171637651124,
+    "edge_over_midpoint_bps":1059.06,
+    "book_crossed":true,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":0.9900000000000002,
+    "best_ask_at_fill":0.12999999999999998,
+    "depth_within_1pct_usd":975.95,
+    "depth_within_5pct_usd":2836.11,
+    "coverage_status":"complete",
+    "window_tier_sec":600,
+    "n_orders_at_snapshot":5333
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":585,
+    "expected_slip_at_1k_bps":300.0,
+    "expected_slip_at_500_bps":28.1,
     "expected_slip_at_5k_bps":550.0,
     "tolerance_published_bps":50,
     "target_size_published_usd":1000
@@ -196036,11 +197196,11 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"b2c8f750b89c4bbd",
+    "chain_id":null,
     "committed_at_unix":null,
-    "committed_grade":"B",
-    "committed_state":"backfilled",
-    "engine_was_right":true,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
     "l4_ots_latest_date":"2026-06-07",
     "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
     "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
@@ -213390,6 +214550,64 @@
    }
   },
   {
+   "fill_id":"0x51fd8f0358cc9e8a1ee5f87a0c7e3b07ed634272:0x3df7be753c8b6ebbddf31d6d63535c4b31c836cb25b1a73085508a271bc103db:1777131318",
+   "wallet":"0x51fd8f0358cc9e8a1ee5f87a0c7e3b07ed634272",
+   "market_condition_id":"0x3df7be753c8b6ebbddf31d6d63535c4b31c836cb25b1a73085508a271bc103db",
+   "trade_ts":1777131318,
+   "trade_size_usd_proxy":206.96166666666667,
+   "outcome_index":0,
+   "step_1_skilled_wallet":{
+    "skill_layer_today":"LAYER_1_RELAXED",
+    "brier_today":0.1424,
+    "brier_n":635,
+    "drift_today":"improving",
+    "drift_delta":-0.054,
+    "j16_bss_vs_market_vwap":-0.539
+   },
+   "step_2_fair_entry":{
+    "trade_price":0.105112,
+    "midpoint_at_fill":0.1,
+    "edge_over_midpoint_bps":-511.2,
+    "book_crossed":true,
+    "spread_at_fill_bps":null
+   },
+   "step_3_live_copyability_at_fill":{
+    "best_bid_at_fill":0.1,
+    "best_ask_at_fill":0.09999999999999999,
+    "depth_within_1pct_usd":250.0,
+    "depth_within_5pct_usd":250.0,
+    "coverage_status":"complete",
+    "window_tier_sec":600,
+    "n_orders_at_snapshot":13
+   },
+   "step_4_safe_size_at_fill":{
+    "max_safe_at_0_5pct_usd":150,
+    "expected_slip_at_1k_bps":550.0,
+    "expected_slip_at_500_bps":550.0,
+    "expected_slip_at_5k_bps":550.0,
+    "tolerance_published_bps":50,
+    "target_size_published_usd":1000
+   },
+   "step_5_risk_label_at_fill":{
+    "state_today":null,
+    "reason_codes_today":[],
+    "explainer_today":null,
+    "edge_decay_state_today":null,
+    "half_life_min_today":null
+   },
+   "step_6_proof_receipt":{
+    "chain_id":null,
+    "committed_at_unix":null,
+    "committed_grade":null,
+    "committed_state":null,
+    "engine_was_right":null,
+    "l4_ots_latest_date":"2026-06-07",
+    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
+    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
+    "methodology_version":null
+   }
+  },
+  {
    "fill_id":"0xed107a85a4585a381e48c7f7ca4144909e7dd2e5:0xeeb1b35c595b19f9512c55f85fdf93f3625c3cec1a9b6bac6262921fbd87912e:1777131122",
    "wallet":"0xed107a85a4585a381e48c7f7ca4144909e7dd2e5",
    "market_condition_id":"0xeeb1b35c595b19f9512c55f85fdf93f3625c3cec1a9b6bac6262921fbd87912e",
@@ -230488,8 +231706,8 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"0fd5434afb6ed61a30051758988ea261edc99607adb2f1edd4bac91fa07ae30b",
-    "committed_at_unix":1780819743,
+    "chain_id":"607126b8233f54b4cacb500bc0dcd0be5b3cfb8f7cd8973259daaa2523de3854",
+    "committed_at_unix":1780828613,
     "committed_grade":"F",
     "committed_state":"live",
     "engine_was_right":null,
@@ -230546,8 +231764,8 @@
     "half_life_min_today":null
    },
    "step_6_proof_receipt":{
-    "chain_id":"2d46346dc24c25c80d78180b93f8211830e722d6d91f7618f67376109fe2bc77",
-    "committed_at_unix":1780819743,
+    "chain_id":"1dcae93c5b39a35d3cfd342d7821e03894c9632fc37ca2c2362b8870f59983f4",
+    "committed_at_unix":1780828613,
     "committed_grade":"C",
     "committed_state":"live",
     "engine_was_right":null,
@@ -288788,1224 +290006,6 @@
     "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
     "methodology_version":null
    }
-  },
-  {
-   "fill_id":"0x23073ad0c9dff45353cedb11760570b995663934:0x1b9ce832b071bc41f7ae43d14bd9d7c6eb4beea073cef4992ce37bbf55aa8a5a:1776990120",
-   "wallet":"0x23073ad0c9dff45353cedb11760570b995663934",
-   "market_condition_id":"0x1b9ce832b071bc41f7ae43d14bd9d7c6eb4beea073cef4992ce37bbf55aa8a5a",
-   "trade_ts":1776990120,
-   "trade_size_usd_proxy":19.562,
-   "outcome_index":0,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_2_LOOSE",
-    "brier_today":0.2153,
-    "brier_n":570,
-    "drift_today":"improving",
-    "drift_delta":-0.0209,
-    "j16_bss_vs_market_vwap":-1.3269
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.27,
-    "midpoint_at_fill":0.27,
-    "edge_over_midpoint_bps":0.0,
-    "book_crossed":false,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.27,
-    "best_ask_at_fill":null,
-    "depth_within_1pct_usd":7.2,
-    "depth_within_5pct_usd":55.6,
-    "coverage_status":"one_sided",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":3
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":4,
-    "expected_slip_at_1k_bps":550.0,
-    "expected_slip_at_500_bps":550.0,
-    "expected_slip_at_5k_bps":550.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0xf28e42d20e4826f2b10a24bc952001697947cab2:0x28a74cc81cf1abb87527febc0937e6e8b5095a8846975e5430f415af5298567a:1776989940",
-   "wallet":"0xf28e42d20e4826f2b10a24bc952001697947cab2",
-   "market_condition_id":"0x28a74cc81cf1abb87527febc0937e6e8b5095a8846975e5430f415af5298567a",
-   "trade_ts":1776989940,
-   "trade_size_usd_proxy":1431.0574,
-   "outcome_index":1,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_1_RELAXED",
-    "brier_today":0.1874,
-    "brier_n":870,
-    "drift_today":"stable",
-    "drift_delta":0.0116,
-    "j16_bss_vs_market_vwap":-1.0254
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.44,
-    "midpoint_at_fill":0.4374435335850795,
-    "edge_over_midpoint_bps":-58.44,
-    "book_crossed":true,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.6000000000000001,
-    "best_ask_at_fill":0.35000000000000003,
-    "depth_within_1pct_usd":2902.54,
-    "depth_within_5pct_usd":22017.83,
-    "coverage_status":"complete",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":1041
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":1741,
-    "expected_slip_at_1k_bps":25.0,
-    "expected_slip_at_500_bps":25.0,
-    "expected_slip_at_5k_bps":300.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0x011f2d377e56119fb09196dffb0948ae55711122:0x8b32593d14d369d0d9fb7a37cef7932a77477c1ec7577510cf8c8eff4b7acadb:1776989936",
-   "wallet":"0x011f2d377e56119fb09196dffb0948ae55711122",
-   "market_condition_id":"0x8b32593d14d369d0d9fb7a37cef7932a77477c1ec7577510cf8c8eff4b7acadb",
-   "trade_ts":1776989936,
-   "trade_size_usd_proxy":322.0303,
-   "outcome_index":1,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_2_LOOSE",
-    "brier_today":0.0683,
-    "brier_n":805,
-    "drift_today":"improving",
-    "drift_delta":-0.0458,
-    "j16_bss_vs_market_vwap":0.2618
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.999,
-    "midpoint_at_fill":0.999,
-    "edge_over_midpoint_bps":0.0,
-    "book_crossed":false,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.999,
-    "best_ask_at_fill":null,
-    "depth_within_1pct_usd":326.7,
-    "depth_within_5pct_usd":326.7,
-    "coverage_status":"one_sided",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":2
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":196,
-    "expected_slip_at_1k_bps":550.0,
-    "expected_slip_at_500_bps":550.0,
-    "expected_slip_at_5k_bps":550.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0xee613b3fc183ee44f9da9c05f53e2da107e3debf:0x0d771667088534e0288ca305723362527602762cceec055baa0af947b27835bf:1776989864",
-   "wallet":"0xee613b3fc183ee44f9da9c05f53e2da107e3debf",
-   "market_condition_id":"0x0d771667088534e0288ca305723362527602762cceec055baa0af947b27835bf",
-   "trade_ts":1776989864,
-   "trade_size_usd_proxy":110.9999,
-   "outcome_index":1,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_3_ALL",
-    "brier_today":0.1547,
-    "brier_n":491,
-    "drift_today":"improving",
-    "drift_delta":-0.0312,
-    "j16_bss_vs_market_vwap":-0.6719
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.45282,
-    "midpoint_at_fill":0.4864608853916289,
-    "edge_over_midpoint_bps":691.54,
-    "book_crossed":true,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.62,
-    "best_ask_at_fill":0.46,
-    "depth_within_1pct_usd":96.93,
-    "depth_within_5pct_usd":1147.76,
-    "coverage_status":"complete",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":159
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":58,
-    "expected_slip_at_1k_bps":300.0,
-    "expected_slip_at_500_bps":300.0,
-    "expected_slip_at_5k_bps":550.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0xee613b3fc183ee44f9da9c05f53e2da107e3debf:0x0d771667088534e0288ca305723362527602762cceec055baa0af947b27835bf:1776989842",
-   "wallet":"0xee613b3fc183ee44f9da9c05f53e2da107e3debf",
-   "market_condition_id":"0x0d771667088534e0288ca305723362527602762cceec055baa0af947b27835bf",
-   "trade_ts":1776989842,
-   "trade_size_usd_proxy":439.5906333333333,
-   "outcome_index":0,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_3_ALL",
-    "brier_today":0.1547,
-    "brier_n":491,
-    "drift_today":"improving",
-    "drift_delta":-0.0312,
-    "j16_bss_vs_market_vwap":-0.6719
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.485906,
-    "midpoint_at_fill":0.49145590362601677,
-    "edge_over_midpoint_bps":112.93,
-    "book_crossed":true,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.62,
-    "best_ask_at_fill":0.46,
-    "depth_within_1pct_usd":96.93,
-    "depth_within_5pct_usd":1147.76,
-    "coverage_status":"complete",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":145
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":58,
-    "expected_slip_at_1k_bps":300.0,
-    "expected_slip_at_500_bps":300.0,
-    "expected_slip_at_5k_bps":550.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0xe0a2f29b1fadb2259111bbeca392d3805ec4a349:0xcce5f4450b213a658b295371cede03440c93b56cb18a9fb06ad438c83ddb85fd:1776989830",
-   "wallet":"0xe0a2f29b1fadb2259111bbeca392d3805ec4a349",
-   "market_condition_id":"0xcce5f4450b213a658b295371cede03440c93b56cb18a9fb06ad438c83ddb85fd",
-   "trade_ts":1776989830,
-   "trade_size_usd_proxy":39.96285,
-   "outcome_index":0,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_1_RELAXED",
-    "brier_today":0.1592,
-    "brier_n":510,
-    "drift_today":"drifting",
-    "drift_delta":0.0343,
-    "j16_bss_vs_market_vwap":-0.7206
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.238557,
-    "midpoint_at_fill":0.12458458458458459,
-    "edge_over_midpoint_bps":-9148.2,
-    "book_crossed":true,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.13,
-    "best_ask_at_fill":0.12375375375375375,
-    "depth_within_1pct_usd":4.95,
-    "depth_within_5pct_usd":9.89,
-    "coverage_status":"complete",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":3
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":2,
-    "expected_slip_at_1k_bps":550.0,
-    "expected_slip_at_500_bps":550.0,
-    "expected_slip_at_5k_bps":550.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0xd218e474776403a330142299f7796e8ba32eb5c9:0x080e961df4eba589f5f9bf88252a58442e873a3a300a7b943c90b04a7b01e2c0:1776989822",
-   "wallet":"0xd218e474776403a330142299f7796e8ba32eb5c9",
-   "market_condition_id":"0x080e961df4eba589f5f9bf88252a58442e873a3a300a7b943c90b04a7b01e2c0",
-   "trade_ts":1776989822,
-   "trade_size_usd_proxy":140.6153125,
-   "outcome_index":1,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_2_LOOSE",
-    "brier_today":0.1465,
-    "brier_n":103,
-    "drift_today":"stable",
-    "drift_delta":0.0173,
-    "j16_bss_vs_market_vwap":-0.5833
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.473826,
-    "midpoint_at_fill":0.4862173520834477,
-    "edge_over_midpoint_bps":254.85,
-    "book_crossed":true,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.87,
-    "best_ask_at_fill":0.008,
-    "depth_within_1pct_usd":0,
-    "depth_within_5pct_usd":225.72,
-    "coverage_status":"complete",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":96
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":0,
-    "expected_slip_at_1k_bps":500.0,
-    "expected_slip_at_500_bps":500.0,
-    "expected_slip_at_5k_bps":500.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0xe0a2f29b1fadb2259111bbeca392d3805ec4a349:0xcf8bd490a58666b4f57b6672303b0a58a8e01d17f8ae891c43cb348797e960b3:1776989798",
-   "wallet":"0xe0a2f29b1fadb2259111bbeca392d3805ec4a349",
-   "market_condition_id":"0xcf8bd490a58666b4f57b6672303b0a58a8e01d17f8ae891c43cb348797e960b3",
-   "trade_ts":1776989798,
-   "trade_size_usd_proxy":41.7226,
-   "outcome_index":0,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_1_RELAXED",
-    "brier_today":0.1592,
-    "brier_n":510,
-    "drift_today":"drifting",
-    "drift_delta":0.0343,
-    "j16_bss_vs_market_vwap":-0.7206
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.609372,
-    "midpoint_at_fill":0.5236363709382345,
-    "edge_over_midpoint_bps":-1637.31,
-    "book_crossed":true,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.5700000301914937,
-    "best_ask_at_fill":0.47000000000000003,
-    "depth_within_1pct_usd":0,
-    "depth_within_5pct_usd":11.97,
-    "coverage_status":"complete",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":22
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":0,
-    "expected_slip_at_1k_bps":500.0,
-    "expected_slip_at_500_bps":500.0,
-    "expected_slip_at_5k_bps":500.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0xd218e474776403a330142299f7796e8ba32eb5c9:0x080e961df4eba589f5f9bf88252a58442e873a3a300a7b943c90b04a7b01e2c0:1776989788",
-   "wallet":"0xd218e474776403a330142299f7796e8ba32eb5c9",
-   "market_condition_id":"0x080e961df4eba589f5f9bf88252a58442e873a3a300a7b943c90b04a7b01e2c0",
-   "trade_ts":1776989788,
-   "trade_size_usd_proxy":54.71425531914894,
-   "outcome_index":0,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_2_LOOSE",
-    "brier_today":0.1465,
-    "brier_n":103,
-    "drift_today":"stable",
-    "drift_delta":0.0173,
-    "j16_bss_vs_market_vwap":-0.5833
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.299393,
-    "midpoint_at_fill":0.45001665085027587,
-    "edge_over_midpoint_bps":3347.07,
-    "book_crossed":true,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.999,
-    "best_ask_at_fill":0.08,
-    "depth_within_1pct_usd":0,
-    "depth_within_5pct_usd":0,
-    "coverage_status":"complete",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":152
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":0,
-    "expected_slip_at_1k_bps":500.0,
-    "expected_slip_at_500_bps":500.0,
-    "expected_slip_at_5k_bps":500.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0xe0a2f29b1fadb2259111bbeca392d3805ec4a349:0x87dffbcdffa0d71135edf1e99cd89d87113bb4a8ade0b071406a281a92d4cfc7:1776989762",
-   "wallet":"0xe0a2f29b1fadb2259111bbeca392d3805ec4a349",
-   "market_condition_id":"0x87dffbcdffa0d71135edf1e99cd89d87113bb4a8ade0b071406a281a92d4cfc7",
-   "trade_ts":1776989762,
-   "trade_size_usd_proxy":45.223600000000005,
-   "outcome_index":0,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_1_RELAXED",
-    "brier_today":0.1592,
-    "brier_n":510,
-    "drift_today":"drifting",
-    "drift_delta":0.0343,
-    "j16_bss_vs_market_vwap":-0.7206
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.44,
-    "midpoint_at_fill":0.36333332280701197,
-    "edge_over_midpoint_bps":-2110.09,
-    "book_crossed":true,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.41,
-    "best_ask_at_fill":0.31,
-    "depth_within_1pct_usd":1.14,
-    "depth_within_5pct_usd":7.47,
-    "coverage_status":"complete",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":12
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":0,
-    "expected_slip_at_1k_bps":550.0,
-    "expected_slip_at_500_bps":550.0,
-    "expected_slip_at_5k_bps":550.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0xee613b3fc183ee44f9da9c05f53e2da107e3debf:0x290e3d058c1d5a9cec67cd95c0df346c6593627e86362a1940abbc175033516b:1776989664",
-   "wallet":"0xee613b3fc183ee44f9da9c05f53e2da107e3debf",
-   "market_condition_id":"0x290e3d058c1d5a9cec67cd95c0df346c6593627e86362a1940abbc175033516b",
-   "trade_ts":1776989664,
-   "trade_size_usd_proxy":13.820866666666667,
-   "outcome_index":1,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_3_ALL",
-    "brier_today":0.1547,
-    "brier_n":491,
-    "drift_today":"improving",
-    "drift_delta":-0.0312,
-    "j16_bss_vs_market_vwap":-0.6719
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.5033,
-    "midpoint_at_fill":0.448080373717587,
-    "edge_over_midpoint_bps":-1232.36,
-    "book_crossed":true,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.59,
-    "best_ask_at_fill":0.38,
-    "depth_within_1pct_usd":7.32,
-    "depth_within_5pct_usd":22.65,
-    "coverage_status":"complete",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":11
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":4,
-    "expected_slip_at_1k_bps":550.0,
-    "expected_slip_at_500_bps":550.0,
-    "expected_slip_at_5k_bps":550.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0x6a72f61820b26b1fe4d956e17b6dc2a1ea3033ee:0x968bb2177306a62fef6ec7a58008a40115ce74a6c294d375284aff8263e74665:1776989660",
-   "wallet":"0x6a72f61820b26b1fe4d956e17b6dc2a1ea3033ee",
-   "market_condition_id":"0x968bb2177306a62fef6ec7a58008a40115ce74a6c294d375284aff8263e74665",
-   "trade_ts":1776989660,
-   "trade_size_usd_proxy":1101.9870222222223,
-   "outcome_index":1,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_2_LOOSE",
-    "brier_today":0.1996,
-    "brier_n":627,
-    "drift_today":"stable",
-    "drift_delta":0.0075,
-    "j16_bss_vs_market_vwap":-1.1572
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.665117,
-    "midpoint_at_fill":0.6632405004411573,
-    "edge_over_midpoint_bps":-28.29,
-    "book_crossed":true,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.7000000000000001,
-    "best_ask_at_fill":0.57,
-    "depth_within_1pct_usd":1704.07,
-    "depth_within_5pct_usd":25167.38,
-    "coverage_status":"complete",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":338
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":1022,
-    "expected_slip_at_1k_bps":46.7,
-    "expected_slip_at_500_bps":25.0,
-    "expected_slip_at_5k_bps":300.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0x011f2d377e56119fb09196dffb0948ae55711122:0xf102d50ca8be16c8d24909574e37ee7829fa840de9d123311b01fa90976f7b4f:1776989606",
-   "wallet":"0x011f2d377e56119fb09196dffb0948ae55711122",
-   "market_condition_id":"0xf102d50ca8be16c8d24909574e37ee7829fa840de9d123311b01fa90976f7b4f",
-   "trade_ts":1776989606,
-   "trade_size_usd_proxy":194.58,
-   "outcome_index":1,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_2_LOOSE",
-    "brier_today":0.0683,
-    "brier_n":805,
-    "drift_today":"improving",
-    "drift_delta":-0.0458,
-    "j16_bss_vs_market_vwap":0.2618
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.899486,
-    "midpoint_at_fill":0.5199407049679956,
-    "edge_over_midpoint_bps":-7299.78,
-    "book_crossed":true,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.9785571517801374,
-    "best_ask_at_fill":0.41,
-    "depth_within_1pct_usd":0,
-    "depth_within_5pct_usd":13.95,
-    "coverage_status":"complete",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":33
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":0,
-    "expected_slip_at_1k_bps":500.0,
-    "expected_slip_at_500_bps":500.0,
-    "expected_slip_at_5k_bps":500.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0xee613b3fc183ee44f9da9c05f53e2da107e3debf:0x2bb910f17837abada10e09b451f8225c992229cffdc7eddf583f0ef2e48f2f2e:1776989544",
-   "wallet":"0xee613b3fc183ee44f9da9c05f53e2da107e3debf",
-   "market_condition_id":"0x2bb910f17837abada10e09b451f8225c992229cffdc7eddf583f0ef2e48f2f2e",
-   "trade_ts":1776989544,
-   "trade_size_usd_proxy":300.5984,
-   "outcome_index":0,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_3_ALL",
-    "brier_today":0.1547,
-    "brier_n":491,
-    "drift_today":"improving",
-    "drift_delta":-0.0312,
-    "j16_bss_vs_market_vwap":-0.6719
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.4598,
-    "midpoint_at_fill":0.43350814085826306,
-    "edge_over_midpoint_bps":-606.49,
-    "book_crossed":true,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.5700000000000001,
-    "best_ask_at_fill":0.3499980749913375,
-    "depth_within_1pct_usd":7.33,
-    "depth_within_5pct_usd":26.73,
-    "coverage_status":"complete",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":67
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":4,
-    "expected_slip_at_1k_bps":550.0,
-    "expected_slip_at_500_bps":550.0,
-    "expected_slip_at_5k_bps":550.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0xee613b3fc183ee44f9da9c05f53e2da107e3debf:0x0d771667088534e0288ca305723362527602762cceec055baa0af947b27835bf:1776989504",
-   "wallet":"0xee613b3fc183ee44f9da9c05f53e2da107e3debf",
-   "market_condition_id":"0x0d771667088534e0288ca305723362527602762cceec055baa0af947b27835bf",
-   "trade_ts":1776989504,
-   "trade_size_usd_proxy":439.5906333333333,
-   "outcome_index":0,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_3_ALL",
-    "brier_today":0.1547,
-    "brier_n":491,
-    "drift_today":"improving",
-    "drift_delta":-0.0312,
-    "j16_bss_vs_market_vwap":-0.6719
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.485906,
-    "midpoint_at_fill":0.48461540300289274,
-    "edge_over_midpoint_bps":-26.63,
-    "book_crossed":true,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.5399999872363628,
-    "best_ask_at_fill":0.45999999999999996,
-    "depth_within_1pct_usd":21.06,
-    "depth_within_5pct_usd":979.4,
-    "coverage_status":"complete",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":95
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":12,
-    "expected_slip_at_1k_bps":550.0,
-    "expected_slip_at_500_bps":300.0,
-    "expected_slip_at_5k_bps":550.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0xee613b3fc183ee44f9da9c05f53e2da107e3debf:0x28a74cc81cf1abb87527febc0937e6e8b5095a8846975e5430f415af5298567a:1776989410",
-   "wallet":"0xee613b3fc183ee44f9da9c05f53e2da107e3debf",
-   "market_condition_id":"0x28a74cc81cf1abb87527febc0937e6e8b5095a8846975e5430f415af5298567a",
-   "trade_ts":1776989410,
-   "trade_size_usd_proxy":1655.2947000000001,
-   "outcome_index":0,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_3_ALL",
-    "brier_today":0.1547,
-    "brier_n":491,
-    "drift_today":"improving",
-    "drift_delta":-0.0312,
-    "j16_bss_vs_market_vwap":-0.6719
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.5883,
-    "midpoint_at_fill":0.5961853384731535,
-    "edge_over_midpoint_bps":132.26,
-    "book_crossed":true,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.66,
-    "best_ask_at_fill":0.55,
-    "depth_within_1pct_usd":2921.61,
-    "depth_within_5pct_usd":49221.15,
-    "coverage_status":"complete",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":795
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":1752,
-    "expected_slip_at_1k_bps":25.0,
-    "expected_slip_at_500_bps":25.0,
-    "expected_slip_at_5k_bps":300.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0xdb859a551fcf56e49416160911476bea7307152f:0x27cd15a6ed90eca5d5420b720c0b60e2001edc4be92bf55003d4d6c49e9571a3:1776989372",
-   "wallet":"0xdb859a551fcf56e49416160911476bea7307152f",
-   "market_condition_id":"0x27cd15a6ed90eca5d5420b720c0b60e2001edc4be92bf55003d4d6c49e9571a3",
-   "trade_ts":1776989372,
-   "trade_size_usd_proxy":985.6062,
-   "outcome_index":0,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_2_LOOSE",
-    "brier_today":0.2123,
-    "brier_n":205,
-    "drift_today":"stable",
-    "drift_delta":0.0183,
-    "j16_bss_vs_market_vwap":-1.2945
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.493616,
-    "midpoint_at_fill":0.47939033461508496,
-    "edge_over_midpoint_bps":-296.74,
-    "book_crossed":true,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.49361567130624195,
-    "best_ask_at_fill":0.46,
-    "depth_within_1pct_usd":604.8,
-    "depth_within_5pct_usd":1202.72,
-    "coverage_status":"complete",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":27
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":362,
-    "expected_slip_at_1k_bps":300.0,
-    "expected_slip_at_500_bps":106.7,
-    "expected_slip_at_5k_bps":550.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0xc6dd65679a32fe31a4197cb94a3dbbdc393940ce:0x28a74cc81cf1abb87527febc0937e6e8b5095a8846975e5430f415af5298567a:1776989366",
-   "wallet":"0xc6dd65679a32fe31a4197cb94a3dbbdc393940ce",
-   "market_condition_id":"0x28a74cc81cf1abb87527febc0937e6e8b5095a8846975e5430f415af5298567a",
-   "trade_ts":1776989366,
-   "trade_size_usd_proxy":2196.4543,
-   "outcome_index":0,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_1_RELAXED",
-    "brier_today":0.1625,
-    "brier_n":86,
-    "drift_today":"stable",
-    "drift_delta":0.0045,
-    "j16_bss_vs_market_vwap":-0.7562
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.58,
-    "midpoint_at_fill":0.5973307963530856,
-    "edge_over_midpoint_bps":290.14,
-    "book_crossed":true,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.66,
-    "best_ask_at_fill":0.56,
-    "depth_within_1pct_usd":2921.61,
-    "depth_within_5pct_usd":51137.02,
-    "coverage_status":"complete",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":784
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":1752,
-    "expected_slip_at_1k_bps":25.0,
-    "expected_slip_at_500_bps":25.0,
-    "expected_slip_at_5k_bps":300.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0x692e411de5f7ba4d859c6b33038a81224c12ee58:0xc637ae2f8d5c241d44b93950a422bbd0988a872abb2d6f4f4c4e895681af5f29:1776989364",
-   "wallet":"0x692e411de5f7ba4d859c6b33038a81224c12ee58",
-   "market_condition_id":"0xc637ae2f8d5c241d44b93950a422bbd0988a872abb2d6f4f4c4e895681af5f29",
-   "trade_ts":1776989364,
-   "trade_size_usd_proxy":300.86625,
-   "outcome_index":0,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_0_STRICT",
-    "brier_today":0.1778,
-    "brier_n":85,
-    "drift_today":"improving",
-    "drift_delta":-0.074,
-    "j16_bss_vs_market_vwap":-0.9216
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.360306,
-    "midpoint_at_fill":0.22490444588330877,
-    "edge_over_midpoint_bps":-6020.4,
-    "book_crossed":true,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.3399999997875,
-    "best_ask_at_fill":0.15,
-    "depth_within_1pct_usd":0,
-    "depth_within_5pct_usd":3155.68,
-    "coverage_status":"complete",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":1009
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":0,
-    "expected_slip_at_1k_bps":500.0,
-    "expected_slip_at_500_bps":500.0,
-    "expected_slip_at_5k_bps":500.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0x011f2d377e56119fb09196dffb0948ae55711122:0xeb938df2ff10c5bd776aa0fd738b3f45b8723cdb37ead46a94913430f751cfe5:1776989300",
-   "wallet":"0x011f2d377e56119fb09196dffb0948ae55711122",
-   "market_condition_id":"0xeb938df2ff10c5bd776aa0fd738b3f45b8723cdb37ead46a94913430f751cfe5",
-   "trade_ts":1776989300,
-   "trade_size_usd_proxy":124.66293333333334,
-   "outcome_index":1,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_2_LOOSE",
-    "brier_today":0.0683,
-    "brier_n":805,
-    "drift_today":"improving",
-    "drift_delta":-0.0458,
-    "j16_bss_vs_market_vwap":0.2618
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.999,
-    "midpoint_at_fill":0.999,
-    "edge_over_midpoint_bps":0.0,
-    "book_crossed":false,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.999,
-    "best_ask_at_fill":null,
-    "depth_within_1pct_usd":13.99,
-    "depth_within_5pct_usd":13.99,
-    "coverage_status":"one_sided",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":1
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":8,
-    "expected_slip_at_1k_bps":550.0,
-    "expected_slip_at_500_bps":550.0,
-    "expected_slip_at_5k_bps":550.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
-  },
-  {
-   "fill_id":"0x011f2d377e56119fb09196dffb0948ae55711122:0x8971e1023f0b18c051f2a5e4870d6b4dc4bcd8be1191a368be84ddf0ae1202ff:1776989296",
-   "wallet":"0x011f2d377e56119fb09196dffb0948ae55711122",
-   "market_condition_id":"0x8971e1023f0b18c051f2a5e4870d6b4dc4bcd8be1191a368be84ddf0ae1202ff",
-   "trade_ts":1776989296,
-   "trade_size_usd_proxy":93.15053333333333,
-   "outcome_index":1,
-   "step_1_skilled_wallet":{
-    "skill_layer_today":"LAYER_2_LOOSE",
-    "brier_today":0.0683,
-    "brier_n":805,
-    "drift_today":"improving",
-    "drift_delta":-0.0458,
-    "j16_bss_vs_market_vwap":0.2618
-   },
-   "step_2_fair_entry":{
-    "trade_price":0.999,
-    "midpoint_at_fill":0.999,
-    "edge_over_midpoint_bps":0.0,
-    "book_crossed":false,
-    "spread_at_fill_bps":null
-   },
-   "step_3_live_copyability_at_fill":{
-    "best_bid_at_fill":0.999,
-    "best_ask_at_fill":null,
-    "depth_within_1pct_usd":0.38,
-    "depth_within_5pct_usd":0.38,
-    "coverage_status":"one_sided",
-    "window_tier_sec":600,
-    "n_orders_at_snapshot":1
-   },
-   "step_4_safe_size_at_fill":{
-    "max_safe_at_0_5pct_usd":0,
-    "expected_slip_at_1k_bps":550.0,
-    "expected_slip_at_500_bps":550.0,
-    "expected_slip_at_5k_bps":550.0,
-    "tolerance_published_bps":50,
-    "target_size_published_usd":1000
-   },
-   "step_5_risk_label_at_fill":{
-    "state_today":null,
-    "reason_codes_today":[],
-    "explainer_today":null,
-    "edge_decay_state_today":null,
-    "half_life_min_today":null
-   },
-   "step_6_proof_receipt":{
-    "chain_id":null,
-    "committed_at_unix":null,
-    "committed_grade":null,
-    "committed_state":null,
-    "engine_was_right":null,
-    "l4_ots_latest_date":"2026-06-07",
-    "l4_ots_digest":"f18303d95d7d4b21ea1065f8235caaa1d47726b14a4dbc9a42a8b98cdcea6237",
-    "l4_ots_receipt_path":"data/ots_receipts/2026-06-07.digest.ots",
-    "methodology_version":null
-   }
   }
  ],
  "v01_caveats":{
@@ -290023,5 +290023,5 @@
  ],
  "post_filter_cap":5000,
  "uncapped_companion_jsonl_gz":"data/trade_chain_records.jsonl.gz",
- "uncapped_n_fills":60972
+ "uncapped_n_fills":61209
 }
