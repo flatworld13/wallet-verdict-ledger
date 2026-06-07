@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "generated_at_unix": 1780734484,
-  "date": "2026-06-06",
+  "generated_at_unix": 1780819645,
+  "date": "2026-06-07",
   "methodology_version": "VPI v1.0 candidate \u00b7 pre-published",
   "description": "Naive-forecaster baselines on the cohort's resolved-market pool \u00b7 companion to vpi_nav.json",
   "pool": {
-    "eligible_positions": 1470,
-    "unique_resolved_markets": 1363,
-    "total_volume_usd": 21172179.94,
+    "eligible_positions": 1396,
+    "unique_resolved_markets": 1295,
+    "total_volume_usd": 21139517.11,
     "skipped_positions": {
-      "unresolved": 2299
+      "unresolved": 2273
     }
   },
   "baselines": {
@@ -19,13 +19,13 @@
       "description": "forecast = 0.5 always \u00b7 the lower bound for a binary forecaster"
     },
     "favorite_naive": {
-      "mean_brier": 0.097285,
-      "nav_equiv": 90.2715,
+      "mean_brier": 0.097251,
+      "nav_equiv": 90.2749,
       "description": "forecast = 1 if market_price > 0.5 else 0 \u00b7 \"follow the favorite\" strategy"
     },
     "market_vwap": {
-      "mean_brier": 0.092524,
-      "nav_equiv": 90.7476,
+      "mean_brier": 0.092527,
+      "nav_equiv": 90.7473,
       "description": "forecast = market_price \u00b7 the prediction market itself \u00b7 the strongest naive baseline"
     }
   },
@@ -34,5 +34,5 @@
     "nav_equiv": 100.0,
     "description": "forecast = actual \u00b7 the math ceiling \u00b7 achievable only with hindsight"
   },
-  "as_of": "2026-06-06T08:28:04.252368+00:00"
+  "as_of": "2026-06-07T08:07:25.474194+00:00"
 }
