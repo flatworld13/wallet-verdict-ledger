@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "date": "2026-06-05",
-  "generated_at_unix": 1780667396,
+  "date": "2026-06-07",
+  "generated_at_unix": 1780812630,
   "five_bucket_framing": {
     "top_level_canonical_1liner": "VERDICT joins wallet behavior, forecast skill, execution quality, market-risk context, and timestamped proof into one verified wallet rating.",
     "lock_id": "verified_wallet_rating_lock",
@@ -60,7 +60,7 @@
           "11_ledger_manifest",
           "16_query_attestation_chain"
         ],
-        "live_evidence_count": 171
+        "live_evidence_count": 173
       }
     ],
     "output_form": "One verdict per wallet \u00b7 COPY/WATCH/AVOID/INSUFFICIENT \u00b7 with the 5-bucket evidence panel under it \u00b7 every bucket carrying a `verified by` link to the source file."
@@ -74,7 +74,7 @@
       "evidence_unit": "Tier 2 fills",
       "source_file": "data/orderbook_per_trade_snapshots.json",
       "cohort_coverage_pct": 100.0,
-      "freshness_unix": 1780667358,
+      "freshness_unix": 1780795479,
       "m_axis": "M5 input quality",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/data/orderbook_per_trade_snapshots.json"
     },
@@ -85,7 +85,7 @@
       "evidence_count": 490,
       "evidence_unit": "wallets in cohort",
       "source_file": "data/wallets_combined.json",
-      "freshness_unix": 1780667358,
+      "freshness_unix": 1780795480,
       "m_axis": "M3 vocabulary",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/data/wallets_combined.json"
     },
@@ -96,7 +96,7 @@
       "evidence_count": 72693,
       "evidence_unit": "timestamped fills",
       "source_file": "data/orderbook_per_trade_snapshots.json",
-      "freshness_unix": 1780667358,
+      "freshness_unix": 1780795479,
       "m_axis": "M5 + M3"
     },
     "4_outcome_verification": {
@@ -128,7 +128,7 @@
       "evidence_unit": "methodology versions",
       "methodology_current": "v2.3",
       "source_file": "_private/_ingest/compute_*.py (private repo per TOP RULE -1)",
-      "freshness_unix": 1780667396,
+      "freshness_unix": 1780812630,
       "m_axis": "M5 methodology versioning + legal armor",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/methodology_versions.md"
     },
@@ -136,15 +136,15 @@
       "rank": 6,
       "name": "Audit history",
       "description": "M1 forward chains + L3 GitHub timestamps + L4 OTS Bitcoin anchor + 6-version methodology chain",
-      "evidence_count": 15,
+      "evidence_count": 17,
       "evidence_unit": "OTS Bitcoin anchors",
-      "ots_pending": 1,
-      "ots_confirmed": 15,
+      "ots_pending": 2,
+      "ots_confirmed": 16,
       "ots_unknown": 7,
       "first_anchor": "2026-05-09",
-      "latest_anchor": "2026-06-05",
+      "latest_anchor": "2026-06-07",
       "source_file": "data/ots_anchor_history.json + data/ots_receipts/",
-      "freshness_unix": 1780657657,
+      "freshness_unix": 1780812567,
       "m_axis": "M1 + M2 (only-neutral-seat audit ledger)",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/tree/main/data/ots_receipts"
     },
@@ -368,7 +368,7 @@
         "data/query_attestations_summary.json",
         "data/query_attestations_history/<date>.json"
       ],
-      "freshness_unix": 1780657114,
+      "freshness_unix": 1780796919,
       "m_axis": "M1 (forward-witnessed \u00b7 every query timestamped + sha256 grounded) + M5 (methodology version chain \u00b7 query-attestation-v0.1 pre-registered)",
       "v_axis": "V4 (every paying customer query compounds OUR moat \u00b7 v0.2 path: EIP-712 wallet signatures on paying-customer queries)",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/data/query_attestations.jsonl",
@@ -380,22 +380,22 @@
       "rank": 17,
       "name": "Smart-money timing chain (which graded wallets entered early, which way)",
       "description": "Layer 4 \u00b7 for each market with >=4 distinct entrants, ranks wallets by entry time, marks the early window (first third), and records which GRADED wallets entered early + the size-weighted direction they took. The early-DIRECTION call is committed to a sha256-chained issue-on-change log BEFORE the market resolves (forward-witness). Entry-order is observable from public trades; our timed early-direction call cannot be backfilled into the chain. PROVISIONAL gate: forward-witnessed accuracy must reach >=55% on n>=50 resolved-after-issue markets before any accuracy claim is marketed (the retroactive backtest is a diagnostic only \u00b7 the copyability-v4.0/v60gSS lesson).",
-      "evidence_count": 910,
+      "evidence_count": 1007,
       "evidence_unit": "forward-witnessed smart-money-early signals (sha256-chained)",
-      "n_markets_analyzed": 1722,
-      "n_with_smart_early": 910,
-      "n_active_skilled_wallets": 105,
+      "n_markets_analyzed": 1852,
+      "n_with_smart_early": 981,
+      "n_active_skilled_wallets": 123,
       "edge_forward_witnessed_n": 0,
       "edge_forward_witnessed_accuracy": null,
-      "edge_retroactive_n": 165,
-      "edge_retroactive_accuracy": 0.6848,
+      "edge_retroactive_n": 173,
+      "edge_retroactive_accuracy": 0.6821,
       "rating_status": "PROVISIONAL",
       "marketed": false,
       "source_files": [
         "data/market_timing.json",
         "data/market_timing_log.jsonl"
       ],
-      "freshness_unix": 1779847075,
+      "freshness_unix": 1780701596,
       "m_axis": "M1 (early-direction call forward-witnessed before resolution) + M5 (market-timing-v0.1-provisional \u00b7 pre-registered edge gate)",
       "v_axis": "V2/V3 (T2 \"is smart money early here, which way\" \u00b7 gradeable in dollars on resolution) + T6/T7 entry-order forensics",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/data/market_timing_log.jsonl",
@@ -460,11 +460,11 @@
     }
   },
   "flywheel": {
-    "days_running": 395,
-    "days_bitcoin_anchored": 20,
-    "ots_receipts_total": 15,
-    "ots_pending": 1,
-    "ots_confirmed": 15,
+    "days_running": 397,
+    "days_bitcoin_anchored": 21,
+    "ots_receipts_total": 17,
+    "ots_pending": 2,
+    "ots_confirmed": 16,
     "methodology_versions_published": 46,
     "forward_chains_total": 1801,
     "forward_chains_live": 338,
@@ -489,8 +489,8 @@
     "components_anchored": 18,
     "strongest_component": "12 Truth-ephemeral (the #1 moat-of-moats \u00b7 41 non-backfillable files \u00b7 118.05 MB) \u00b7 operator-locked v60cq",
     "newest_component": "18 Price-integrity interpreter \u00b7 Layer 2 (2026-05-25) \u00b7 132 forward-witnessed price verdicts \u00b7 37 MANIPULABLE / 18 REAL \u00b7 the \"is this price real?\" answer \u00b7 $0 incremental (structural facts)",
-    "snapshot_date": "2026-06-05",
-    "snapshot_unix": 1780667396,
+    "snapshot_date": "2026-06-07",
+    "snapshot_unix": 1780812630,
     "next_scheduled_anchor": "tomorrow 03:00 UTC via daily-moat.yml Stage 6b-pre + Stage 6b"
   },
   "description": "Board 6 of the 6-board operating model \u00b7 per CLAUDE.md TOP RULE 0 \u00a7 \"THE 6-COMPONENT MOAT SURFACE\" (LOCKED 2026-05-10 \u00b7 D1) + \u00a7 \"FORWARD-ANCHORED DERIVED METRICS\" (LOCKED 2026-05-10 \u00b7 D5) + \u00a7 VERIFIED WALLET RATING LOCK (2026-05-10 mid-afternoon \u00b7 TOP-LEVEL canonical 1-liner \u00b7 v60cj). Daily snapshot pushed to Notion DB \u00b7 operator can see the moat compound over time."
