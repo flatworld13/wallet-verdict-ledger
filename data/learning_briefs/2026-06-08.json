@@ -2,40 +2,40 @@
   "schema_version": 1,
   "methodology_version": "learning-brief-v0.1",
   "date": "2026-06-08",
-  "built_at_unix": 1780895013,
+  "built_at_unix": 1780907004,
   "day_n": 26,
   "milestone": "Day-7",
   "ledger_source": "data/copyability_audit_ledger.json",
   "ledger_methodology": "copyability-validation-v0.1",
   "tier_rollup": {
     "AVOID": {
-      "n_decisions": 243,
-      "n_resolved": 165,
+      "n_decisions": 244,
+      "n_resolved": 166,
       "n_positive_for_follower": 106,
-      "positive_rate_for_follower": 0.6424,
-      "tier_correct_rate": 0.3576,
+      "positive_rate_for_follower": 0.6386,
+      "tier_correct_rate": 0.3614,
       "tier_correct_meaning": "follower would have lost money (AVOID was right)",
-      "avg_follower_pnl": 1.804,
+      "avg_follower_pnl": 1.7871,
       "insufficient_n": false
     },
     "WAIT": {
-      "n_decisions": 788,
-      "n_resolved": 726,
-      "n_positive_for_follower": 531,
-      "positive_rate_for_follower": 0.7314,
+      "n_decisions": 790,
+      "n_resolved": 727,
+      "n_positive_for_follower": 532,
+      "positive_rate_for_follower": 0.7318,
       "tier_correct_rate": null,
       "tier_correct_meaning": "neutral \u00b7 WAIT does not commit to direction",
-      "avg_follower_pnl": 18.4664,
+      "avg_follower_pnl": 18.4491,
       "insufficient_n": false
     },
     "COPY_SMALL": {
-      "n_decisions": 84,
-      "n_resolved": 69,
-      "n_positive_for_follower": 44,
-      "positive_rate_for_follower": 0.6377,
-      "tier_correct_rate": 0.6377,
+      "n_decisions": 86,
+      "n_resolved": 71,
+      "n_positive_for_follower": 45,
+      "positive_rate_for_follower": 0.6338,
+      "tier_correct_rate": 0.6338,
       "tier_correct_meaning": "follower would have made money",
-      "avg_follower_pnl": 10.1989,
+      "avg_follower_pnl": 9.9346,
       "insufficient_n": false
     },
     "COPY_NOW": {
@@ -57,9 +57,9 @@
       "description": "AVOID tier_correct_rate < 55% at Day 30+ with n \u2265 30",
       "action": "AVOID is not predicting losses \u00b7 re-examine AVOID feature weighting \u00b7 publish AVOID v3.1",
       "observed": {
-        "tier_correct_rate": 0.3576,
-        "n_resolved": 165,
-        "avg_follower_pnl": 1.804
+        "tier_correct_rate": 0.3614,
+        "n_resolved": 166,
+        "avg_follower_pnl": 1.7871
       }
     }
   ],

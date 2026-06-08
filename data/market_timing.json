@@ -1,8 +1,8 @@
 {
   "schema_version": "0.1",
   "method_version": "market-timing-v0.1-provisional",
-  "built_at_unix": 1780896210,
-  "built_at_iso": "2026-06-08T05:23:30.301849+00:00",
+  "built_at_unix": 1780908214,
+  "built_at_iso": "2026-06-08T08:43:34.938600+00:00",
   "doctrine": "Layer 4 \u00b7 smart-money timing \u00b7 WHICH graded wallets entered a market, HOW EARLY, WHICH WAY \u00b7 forward-witnessed \u00b7 gradeable on resolution. Trades are public; the early-direction call committed BEFORE resolution is the moat (TOP RULE 0 \u00a7TRUTH-EPHEMERAL).",
   "constants": {
     "MIN_ENTRANTS": 4,
@@ -19,7 +19,7 @@
       "note": "the ONLY edge that gates marketing \u00b7 signal committed BEFORE the market resolved \u00b7 cannot be backfilled"
     },
     "retroactive_backtest": {
-      "accuracy": 0.6933,
+      "accuracy": 0.6871,
       "n": 163,
       "note": "DIAGNOSTIC ONLY \u00b7 NOT a marketing claim \u00b7 markets already resolved when the signal was computed \u00b7 forward_witnessed=false (the copyability-v4.0 / v60gSS lesson \u00b7 retroactive accuracy is sample-size insurance, not moat)"
     },
@@ -29,14 +29,14 @@
   "rating_status": "PROVISIONAL",
   "marketed": false,
   "summary": {
-    "n_markets_analyzed": 1972,
-    "n_with_smart_money_early": 697,
+    "n_markets_analyzed": 1991,
+    "n_with_smart_money_early": 708,
     "n_skilled_wallets_total": 103,
-    "n_skilled_wallets_active": 94,
+    "n_skilled_wallets_active": 95,
     "edge_forward_witnessed_n": 2,
     "edge_forward_witnessed_accuracy": 0.5,
     "edge_retroactive_n": 163,
-    "edge_retroactive_accuracy": 0.6933
+    "edge_retroactive_accuracy": 0.6871
   },
   "tier": [
     "T2 (smart-money-early-which-way)",
@@ -17573,8 +17573,8 @@
           "size_usd_proxy": 1950.42
         }
       ],
-      "resolved_outcome_index": 0,
-      "early_smart_direction_correct": true,
+      "resolved_outcome_index": 1,
+      "early_smart_direction_correct": false,
       "edge_forward_witnessed": false
     },
     "0x2865bc483dd523f4a36eb961f7467c8635ee9a13f39748bad55f645ce1f61512": {
@@ -27515,6 +27515,37 @@
         }
       ]
     },
+    "0x472dddbe2de7704bc329cd1ceb17bfba1948ece722b98f64ca25aa7b71dab819": {
+      "condition_id": "0x472dddbe2de7704bc329cd1ceb17bfba1948ece722b98f64ca25aa7b71dab819",
+      "n_entrants": 6,
+      "early_window_size": 2,
+      "n_skilled_entrants": 1,
+      "n_skilled_early": 0,
+      "smart_money_early": false,
+      "early_smart_direction": null,
+      "early_smart_direction_confidence": null,
+      "first_mover": {
+        "wallet": "0x38337de21ff0bb0a11a40761507d51e318d633d1",
+        "pseudonym": "SineNooneEI",
+        "grade": "C",
+        "rank": 6,
+        "entry_ts": 1777914142,
+        "outcome_index": 0
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0x38337de21ff0bb0a11a40761507d51e318d633d1",
+          "pseudonym": "SineNooneEI",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 6,
+          "in_early_window": false,
+          "entry_ts": 1777914142,
+          "outcome_index": 0,
+          "size_usd_proxy": 20000.0
+        }
+      ]
+    },
     "0x46fe7c441e749e024f69e9eafa2bfba2c439552c0a03fb6831f4064106562de5": {
       "condition_id": "0x46fe7c441e749e024f69e9eafa2bfba2c439552c0a03fb6831f4064106562de5",
       "n_entrants": 5,
@@ -27577,6 +27608,48 @@
           "entry_ts": 1773344355,
           "outcome_index": 1,
           "size_usd_proxy": 1763.8
+        }
+      ]
+    },
+    "0x4764be9d3f7aaf118cd748be70ef06efd98401d01a1a6fb887dad94563cb2f8e": {
+      "condition_id": "0x4764be9d3f7aaf118cd748be70ef06efd98401d01a1a6fb887dad94563cb2f8e",
+      "n_entrants": 4,
+      "early_window_size": 2,
+      "n_skilled_entrants": 2,
+      "n_skilled_early": 1,
+      "smart_money_early": true,
+      "early_smart_direction": 1,
+      "early_smart_direction_confidence": 1.0,
+      "first_mover": {
+        "wallet": "0x3de4543d599ffb09386aac2eab198a295511b032",
+        "pseudonym": "248188374",
+        "grade": "C",
+        "rank": 2,
+        "entry_ts": 1775911551,
+        "outcome_index": 1
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0x3de4543d599ffb09386aac2eab198a295511b032",
+          "pseudonym": "248188374",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 2,
+          "in_early_window": true,
+          "entry_ts": 1775911551,
+          "outcome_index": 1,
+          "size_usd_proxy": 52632.4
+        },
+        {
+          "wallet": "0x5c3a1a602848565bb16165fcd460b00c3d43020b",
+          "pseudonym": "VARsenal",
+          "grade": "B",
+          "source": "agent_verdict",
+          "rank": 4,
+          "in_early_window": false,
+          "entry_ts": 1775924939,
+          "outcome_index": 1,
+          "size_usd_proxy": 41651.72
         }
       ]
     },
@@ -27753,6 +27826,49 @@
         }
       ]
     },
+    "0x483c0277d8e873f665b556a2b11a0580c394caed3c74eaa500f8b2103efd317e": {
+      "condition_id": "0x483c0277d8e873f665b556a2b11a0580c394caed3c74eaa500f8b2103efd317e",
+      "n_entrants": 4,
+      "early_window_size": 2,
+      "n_skilled_entrants": 0,
+      "n_skilled_early": 0,
+      "smart_money_early": false,
+      "early_smart_direction": null,
+      "early_smart_direction_confidence": null,
+      "first_mover": null,
+      "skilled_entrants": []
+    },
+    "0x488608fe45bf2dff2f4436393b91be13f23469135edb8ea8d5f0c1a47925460a": {
+      "condition_id": "0x488608fe45bf2dff2f4436393b91be13f23469135edb8ea8d5f0c1a47925460a",
+      "n_entrants": 5,
+      "early_window_size": 2,
+      "n_skilled_entrants": 1,
+      "n_skilled_early": 0,
+      "smart_money_early": false,
+      "early_smart_direction": null,
+      "early_smart_direction_confidence": null,
+      "first_mover": {
+        "wallet": "0x88c4919de76e526d55a32c1f8afb439dd1f1129a",
+        "pseudonym": "8934394839",
+        "grade": "A",
+        "rank": 4,
+        "entry_ts": 1778174487,
+        "outcome_index": 1
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0x88c4919de76e526d55a32c1f8afb439dd1f1129a",
+          "pseudonym": "8934394839",
+          "grade": "A",
+          "source": "agent_verdict",
+          "rank": 4,
+          "in_early_window": false,
+          "entry_ts": 1778174487,
+          "outcome_index": 1,
+          "size_usd_proxy": 3232.53
+        }
+      ]
+    },
     "0x48874462b88af831a4d90479286c6c1d4cd683a6b119d926f85ac66549385b21": {
       "condition_id": "0x48874462b88af831a4d90479286c6c1d4cd683a6b119d926f85ac66549385b21",
       "n_entrants": 4,
@@ -27767,9 +27883,9 @@
     },
     "0x478dfc905dd9f44631e7b3a2a76f8aaf5680bc77fd17fe79179664b0ca819a18": {
       "condition_id": "0x478dfc905dd9f44631e7b3a2a76f8aaf5680bc77fd17fe79179664b0ca819a18",
-      "n_entrants": 18,
-      "early_window_size": 6,
-      "n_skilled_entrants": 1,
+      "n_entrants": 22,
+      "early_window_size": 8,
+      "n_skilled_entrants": 2,
       "n_skilled_early": 1,
       "smart_money_early": true,
       "early_smart_direction": 0,
@@ -27793,27 +27909,289 @@
           "entry_ts": 1763516627,
           "outcome_index": 0,
           "size_usd_proxy": 20149.21
+        },
+        {
+          "wallet": "0x6d7776a0f954be1a7c975a1e8244de6268f7b72c",
+          "pseudonym": "Immaculate-Grasshopper",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 10,
+          "in_early_window": false,
+          "entry_ts": 1766855603,
+          "outcome_index": 0,
+          "size_usd_proxy": 15570.9
         }
       ],
       "resolved_outcome_index": 0,
       "early_smart_direction_correct": true,
       "edge_forward_witnessed": false
     },
+    "0x4894a87bf837238e58bba3768d046a053946bc54fd8c800f7cd2a561f1796977": {
+      "condition_id": "0x4894a87bf837238e58bba3768d046a053946bc54fd8c800f7cd2a561f1796977",
+      "n_entrants": 6,
+      "early_window_size": 2,
+      "n_skilled_entrants": 2,
+      "n_skilled_early": 1,
+      "smart_money_early": true,
+      "early_smart_direction": 0,
+      "early_smart_direction_confidence": 1.0,
+      "first_mover": {
+        "wallet": "0x0b9cae2b0dfe7a71c413e0604eaac1c352f87e44",
+        "pseudonym": "geniusMC",
+        "grade": "A",
+        "rank": 1,
+        "entry_ts": 1774162867,
+        "outcome_index": 0
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0x0b9cae2b0dfe7a71c413e0604eaac1c352f87e44",
+          "pseudonym": "geniusMC",
+          "grade": "A",
+          "source": "agent_verdict",
+          "rank": 1,
+          "in_early_window": true,
+          "entry_ts": 1774162867,
+          "outcome_index": 0,
+          "size_usd_proxy": 45863.42
+        },
+        {
+          "wallet": "0x6f8b2886707673629af6bbf7314b8081021601aa",
+          "pseudonym": "sunflowaa",
+          "grade": "B",
+          "source": "agent_verdict",
+          "rank": 5,
+          "in_early_window": false,
+          "entry_ts": 1774214509,
+          "outcome_index": 1,
+          "size_usd_proxy": 16848.33
+        }
+      ]
+    },
     "0x489fb508de0780b7361391bd92a668e028332e779c347a693f408010a59f9020": {
       "condition_id": "0x489fb508de0780b7361391bd92a668e028332e779c347a693f408010a59f9020",
-      "n_entrants": 5,
+      "n_entrants": 13,
+      "early_window_size": 5,
+      "n_skilled_entrants": 5,
+      "n_skilled_early": 1,
+      "smart_money_early": true,
+      "early_smart_direction": 0,
+      "early_smart_direction_confidence": 1.0,
+      "first_mover": {
+        "wallet": "0x6b6fb933598b17d8ba2350481f4653628a16ce60",
+        "pseudonym": "ArchelausButeo",
+        "grade": "A",
+        "rank": 2,
+        "entry_ts": 1776086021,
+        "outcome_index": 0
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0x6b6fb933598b17d8ba2350481f4653628a16ce60",
+          "pseudonym": "ArchelausButeo",
+          "grade": "A",
+          "source": "agent_verdict",
+          "rank": 2,
+          "in_early_window": true,
+          "entry_ts": 1776086021,
+          "outcome_index": 0,
+          "size_usd_proxy": 1596.65
+        },
+        {
+          "wallet": "0x1df231bd33dae91463e1682927e8096b82c289a0",
+          "pseudonym": "pedroBala",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 6,
+          "in_early_window": false,
+          "entry_ts": 1776099813,
+          "outcome_index": 1,
+          "size_usd_proxy": 122.32
+        },
+        {
+          "wallet": "0xdd92232bcdfbbac04132b3cbacbf32c2e5b16b2a",
+          "pseudonym": "Jdhdhduu",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 7,
+          "in_early_window": false,
+          "entry_ts": 1776111485,
+          "outcome_index": 0,
+          "size_usd_proxy": 27914.63
+        },
+        {
+          "wallet": "0x19254b55e7c48e88baab9e62cc218223a6544654",
+          "pseudonym": "coon777",
+          "grade": "B",
+          "source": "agent_verdict",
+          "rank": 8,
+          "in_early_window": false,
+          "entry_ts": 1776113205,
+          "outcome_index": 0,
+          "size_usd_proxy": 83768.49
+        },
+        {
+          "wallet": "0x6ade597c0e2b43c0bf3542cada8a5e330d73f5b0",
+          "pseudonym": "TheOnlyHuman",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 10,
+          "in_early_window": false,
+          "entry_ts": 1776123761,
+          "outcome_index": 1,
+          "size_usd_proxy": 5846.41
+        }
+      ]
+    },
+    "0x48dedf79ee636cd8284504a6e4ba61ecec975a3b286745ce8fe95ee2a101b5cb": {
+      "condition_id": "0x48dedf79ee636cd8284504a6e4ba61ecec975a3b286745ce8fe95ee2a101b5cb",
+      "n_entrants": 10,
+      "early_window_size": 4,
+      "n_skilled_entrants": 3,
+      "n_skilled_early": 1,
+      "smart_money_early": true,
+      "early_smart_direction": 1,
+      "early_smart_direction_confidence": 1.0,
+      "first_mover": {
+        "wallet": "0x6ade597c0e2b43c0bf3542cada8a5e330d73f5b0",
+        "pseudonym": "TheOnlyHuman",
+        "grade": "C",
+        "rank": 4,
+        "entry_ts": 1776809482,
+        "outcome_index": 1
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0x6ade597c0e2b43c0bf3542cada8a5e330d73f5b0",
+          "pseudonym": "TheOnlyHuman",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 4,
+          "in_early_window": true,
+          "entry_ts": 1776809482,
+          "outcome_index": 1,
+          "size_usd_proxy": 42905.66
+        },
+        {
+          "wallet": "0xacb206b460a17382a734de8d931cc176307eb989",
+          "pseudonym": "AppleTime67",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 6,
+          "in_early_window": false,
+          "entry_ts": 1776812160,
+          "outcome_index": 1,
+          "size_usd_proxy": 1319.82
+        },
+        {
+          "wallet": "0x23c8a4c266d10ba5846837eac391fea89ed6f293",
+          "pseudonym": "Netrol",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 10,
+          "in_early_window": false,
+          "entry_ts": 1776824466,
+          "outcome_index": 1,
+          "size_usd_proxy": 13310.0
+        }
+      ]
+    },
+    "0x48a455a40789d8431fa2df43949c02c93acdb3b5f2c86d74b73d4b64dc2035e8": {
+      "condition_id": "0x48a455a40789d8431fa2df43949c02c93acdb3b5f2c86d74b73d4b64dc2035e8",
+      "n_entrants": 4,
       "early_window_size": 2,
-      "n_skilled_entrants": 0,
+      "n_skilled_entrants": 1,
+      "n_skilled_early": 1,
+      "smart_money_early": true,
+      "early_smart_direction": 1,
+      "early_smart_direction_confidence": 1.0,
+      "first_mover": {
+        "wallet": "0x1df231bd33dae91463e1682927e8096b82c289a0",
+        "pseudonym": "pedroBala",
+        "grade": "C",
+        "rank": 1,
+        "entry_ts": 1776952778,
+        "outcome_index": 1
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0x1df231bd33dae91463e1682927e8096b82c289a0",
+          "pseudonym": "pedroBala",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 1,
+          "in_early_window": true,
+          "entry_ts": 1776952778,
+          "outcome_index": 1,
+          "size_usd_proxy": 436.44
+        }
+      ]
+    },
+    "0x490cd0fed37014f63c4816a1052936682ee641d15139170b510e99ad57371e9c": {
+      "condition_id": "0x490cd0fed37014f63c4816a1052936682ee641d15139170b510e99ad57371e9c",
+      "n_entrants": 8,
+      "early_window_size": 3,
+      "n_skilled_entrants": 1,
+      "n_skilled_early": 1,
+      "smart_money_early": true,
+      "early_smart_direction": 1,
+      "early_smart_direction_confidence": 1.0,
+      "first_mover": {
+        "wallet": "0x3de4543d599ffb09386aac2eab198a295511b032",
+        "pseudonym": "248188374",
+        "grade": "C",
+        "rank": 1,
+        "entry_ts": 1777382496,
+        "outcome_index": 1
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0x3de4543d599ffb09386aac2eab198a295511b032",
+          "pseudonym": "248188374",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 1,
+          "in_early_window": true,
+          "entry_ts": 1777382496,
+          "outcome_index": 1,
+          "size_usd_proxy": 4.0
+        }
+      ]
+    },
+    "0x493b2fdaed2ad9ccb967d3b55b2d34f474772929e25b713b5b8aee611e5b324f": {
+      "condition_id": "0x493b2fdaed2ad9ccb967d3b55b2d34f474772929e25b713b5b8aee611e5b324f",
+      "n_entrants": 6,
+      "early_window_size": 2,
+      "n_skilled_entrants": 1,
       "n_skilled_early": 0,
       "smart_money_early": false,
       "early_smart_direction": null,
       "early_smart_direction_confidence": null,
-      "first_mover": null,
-      "skilled_entrants": []
+      "first_mover": {
+        "wallet": "0x160db9bb5bf012f21251a74737093bcdc36f5295",
+        "pseudonym": "JESUSCHRISTISGOD",
+        "grade": "B",
+        "rank": 3,
+        "entry_ts": 1774738146,
+        "outcome_index": 1
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0x160db9bb5bf012f21251a74737093bcdc36f5295",
+          "pseudonym": "JESUSCHRISTISGOD",
+          "grade": "B",
+          "source": "agent_verdict",
+          "rank": 3,
+          "in_early_window": false,
+          "entry_ts": 1774738146,
+          "outcome_index": 1,
+          "size_usd_proxy": 7438.61
+        }
+      ]
     },
-    "0x493b2fdaed2ad9ccb967d3b55b2d34f474772929e25b713b5b8aee611e5b324f": {
-      "condition_id": "0x493b2fdaed2ad9ccb967d3b55b2d34f474772929e25b713b5b8aee611e5b324f",
-      "n_entrants": 4,
+    "0x48c715b695536243a128b653e59f8214262a454811a570c4b019226291c0fa69": {
+      "condition_id": "0x48c715b695536243a128b653e59f8214262a454811a570c4b019226291c0fa69",
+      "n_entrants": 5,
       "early_window_size": 2,
       "n_skilled_entrants": 0,
       "n_skilled_early": 0,
@@ -27825,8 +28203,8 @@
     },
     "0x48b0b0bca515f68fccf95af4793dbd0edbfec1f8ec6e8df2c0f69ba74f8c4722": {
       "condition_id": "0x48b0b0bca515f68fccf95af4793dbd0edbfec1f8ec6e8df2c0f69ba74f8c4722",
-      "n_entrants": 9,
-      "early_window_size": 3,
+      "n_entrants": 10,
+      "early_window_size": 4,
       "n_skilled_entrants": 1,
       "n_skilled_early": 0,
       "smart_money_early": false,
@@ -27866,6 +28244,70 @@
       "first_mover": null,
       "skilled_entrants": []
     },
+    "0x49bc4114c9181abb64fd5b09ffb9e48cc0ab5b9c20bbb34b76aaa0f570b938af": {
+      "condition_id": "0x49bc4114c9181abb64fd5b09ffb9e48cc0ab5b9c20bbb34b76aaa0f570b938af",
+      "n_entrants": 4,
+      "early_window_size": 2,
+      "n_skilled_entrants": 4,
+      "n_skilled_early": 2,
+      "smart_money_early": true,
+      "early_smart_direction": 1,
+      "early_smart_direction_confidence": 1.0,
+      "first_mover": {
+        "wallet": "0x382afec9be090039c4e70c400ce500293e98b590",
+        "pseudonym": "Made-Up-Tunnel",
+        "grade": "C",
+        "rank": 1,
+        "entry_ts": 1775604157,
+        "outcome_index": 1
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0x382afec9be090039c4e70c400ce500293e98b590",
+          "pseudonym": "Made-Up-Tunnel",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 1,
+          "in_early_window": true,
+          "entry_ts": 1775604157,
+          "outcome_index": 1,
+          "size_usd_proxy": 10.0
+        },
+        {
+          "wallet": "0x88c4919de76e526d55a32c1f8afb439dd1f1129a",
+          "pseudonym": "8934394839",
+          "grade": "A",
+          "source": "agent_verdict",
+          "rank": 2,
+          "in_early_window": true,
+          "entry_ts": 1775666191,
+          "outcome_index": 1,
+          "size_usd_proxy": 957.09
+        },
+        {
+          "wallet": "0x2974bd0059e48f215c391882976e0f1b4c8c9c23",
+          "pseudonym": "65765757",
+          "grade": "A",
+          "source": "agent_verdict",
+          "rank": 3,
+          "in_early_window": false,
+          "entry_ts": 1775682223,
+          "outcome_index": 1,
+          "size_usd_proxy": 2576.66
+        },
+        {
+          "wallet": "0x5b8f191a4a3e66fe9b7348891f21021399762c14",
+          "pseudonym": "DistortedReality",
+          "grade": "B",
+          "source": "agent_verdict",
+          "rank": 4,
+          "in_early_window": false,
+          "entry_ts": 1775711003,
+          "outcome_index": 1,
+          "size_usd_proxy": 430.12
+        }
+      ]
+    },
     "0x49a20c7523c271099008f3ef9a31521263b24d637959852a391e6b4697b1a437": {
       "condition_id": "0x49a20c7523c271099008f3ef9a31521263b24d637959852a391e6b4697b1a437",
       "n_entrants": 4,
@@ -27880,33 +28322,102 @@
     },
     "0x497d6cf1098ea666aed470ead36e66ab5a9d54ff29cdf6357708a20aa1808e6e": {
       "condition_id": "0x497d6cf1098ea666aed470ead36e66ab5a9d54ff29cdf6357708a20aa1808e6e",
-      "n_entrants": 5,
+      "n_entrants": 6,
       "early_window_size": 2,
-      "n_skilled_entrants": 0,
+      "n_skilled_entrants": 1,
       "n_skilled_early": 0,
       "smart_money_early": false,
       "early_smart_direction": null,
       "early_smart_direction_confidence": null,
-      "first_mover": null,
-      "skilled_entrants": []
+      "first_mover": {
+        "wallet": "0x73cbab26f65f5dfaa105166bda8b1c8549c3b0d0",
+        "pseudonym": "Unlucky-Incarnation",
+        "grade": "C",
+        "rank": 4,
+        "entry_ts": 1746997916,
+        "outcome_index": 0
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0x73cbab26f65f5dfaa105166bda8b1c8549c3b0d0",
+          "pseudonym": "Unlucky-Incarnation",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 4,
+          "in_early_window": false,
+          "entry_ts": 1746997916,
+          "outcome_index": 0,
+          "size_usd_proxy": 15599.43
+        }
+      ]
+    },
+    "0x49f23884174a862482e27592981a1ae33836427465b2df0b895f0a8291064591": {
+      "condition_id": "0x49f23884174a862482e27592981a1ae33836427465b2df0b895f0a8291064591",
+      "n_entrants": 4,
+      "early_window_size": 2,
+      "n_skilled_entrants": 1,
+      "n_skilled_early": 1,
+      "smart_money_early": true,
+      "early_smart_direction": 0,
+      "early_smart_direction_confidence": 1.0,
+      "first_mover": {
+        "wallet": "0x6b6fb933598b17d8ba2350481f4653628a16ce60",
+        "pseudonym": "ArchelausButeo",
+        "grade": "A",
+        "rank": 2,
+        "entry_ts": 1775967147,
+        "outcome_index": 0
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0x6b6fb933598b17d8ba2350481f4653628a16ce60",
+          "pseudonym": "ArchelausButeo",
+          "grade": "A",
+          "source": "agent_verdict",
+          "rank": 2,
+          "in_early_window": true,
+          "entry_ts": 1775967147,
+          "outcome_index": 0,
+          "size_usd_proxy": 3609.17
+        }
+      ]
     },
     "0x49e0fd35e25a3c075cba2ddd500e0a69369c88a7ecf8971304495b1970d98017": {
       "condition_id": "0x49e0fd35e25a3c075cba2ddd500e0a69369c88a7ecf8971304495b1970d98017",
-      "n_entrants": 9,
-      "early_window_size": 3,
-      "n_skilled_entrants": 0,
+      "n_entrants": 13,
+      "early_window_size": 5,
+      "n_skilled_entrants": 1,
       "n_skilled_early": 0,
       "smart_money_early": false,
       "early_smart_direction": null,
       "early_smart_direction_confidence": null,
-      "first_mover": null,
-      "skilled_entrants": []
+      "first_mover": {
+        "wallet": "0xecaa8806a9a05049d7d5260a33dc924220e377a9",
+        "pseudonym": "Melody626",
+        "grade": "C",
+        "rank": 7,
+        "entry_ts": 1777860616,
+        "outcome_index": 0
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0xecaa8806a9a05049d7d5260a33dc924220e377a9",
+          "pseudonym": "Melody626",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 7,
+          "in_early_window": false,
+          "entry_ts": 1777860616,
+          "outcome_index": 0,
+          "size_usd_proxy": 4438.88
+        }
+      ]
     },
     "0x48fbf70c1713e71a405052bc4641e26dbba435fa557672c4040763c901cbf606": {
       "condition_id": "0x48fbf70c1713e71a405052bc4641e26dbba435fa557672c4040763c901cbf606",
-      "n_entrants": 18,
-      "early_window_size": 6,
-      "n_skilled_entrants": 1,
+      "n_entrants": 23,
+      "early_window_size": 8,
+      "n_skilled_entrants": 3,
       "n_skilled_early": 1,
       "smart_money_early": true,
       "early_smart_direction": 1,
@@ -27915,7 +28426,7 @@
         "wallet": "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1",
         "pseudonym": "debased",
         "grade": "VERIFIED",
-        "rank": 6,
+        "rank": 7,
         "entry_ts": 1773694569,
         "outcome_index": 1
       },
@@ -27925,11 +28436,33 @@
           "pseudonym": "debased",
           "grade": "VERIFIED",
           "source": "verified_cohort",
-          "rank": 6,
+          "rank": 7,
           "in_early_window": true,
           "entry_ts": 1773694569,
           "outcome_index": 1,
           "size_usd_proxy": 4250.75
+        },
+        {
+          "wallet": "0x382afec9be090039c4e70c400ce500293e98b590",
+          "pseudonym": "Made-Up-Tunnel",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 12,
+          "in_early_window": false,
+          "entry_ts": 1773763517,
+          "outcome_index": 0,
+          "size_usd_proxy": 365.56
+        },
+        {
+          "wallet": "0xf16640ce7cb59d7b38ca397652a5d296c6d0fb37",
+          "pseudonym": "io-cane",
+          "grade": "A",
+          "source": "agent_verdict",
+          "rank": 13,
+          "in_early_window": false,
+          "entry_ts": 1773942941,
+          "outcome_index": 1,
+          "size_usd_proxy": 20.0
         }
       ],
       "resolved_outcome_index": 1,
@@ -27947,6 +28480,48 @@
       "early_smart_direction_confidence": null,
       "first_mover": null,
       "skilled_entrants": []
+    },
+    "0x4a67e1270a2ed86be8fc524b6114640e41b0c56303ecaa9584deacd62402650a": {
+      "condition_id": "0x4a67e1270a2ed86be8fc524b6114640e41b0c56303ecaa9584deacd62402650a",
+      "n_entrants": 4,
+      "early_window_size": 2,
+      "n_skilled_entrants": 2,
+      "n_skilled_early": 1,
+      "smart_money_early": true,
+      "early_smart_direction": 0,
+      "early_smart_direction_confidence": 1.0,
+      "first_mover": {
+        "wallet": "0x51fd8f0358cc9e8a1ee5f87a0c7e3b07ed634272",
+        "pseudonym": "TimeTraveler",
+        "grade": "A",
+        "rank": 2,
+        "entry_ts": 1773460951,
+        "outcome_index": 0
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0x51fd8f0358cc9e8a1ee5f87a0c7e3b07ed634272",
+          "pseudonym": "TimeTraveler",
+          "grade": "A",
+          "source": "agent_verdict",
+          "rank": 2,
+          "in_early_window": true,
+          "entry_ts": 1773460951,
+          "outcome_index": 0,
+          "size_usd_proxy": 1101.07
+        },
+        {
+          "wallet": "0x19254b55e7c48e88baab9e62cc218223a6544654",
+          "pseudonym": "coon777",
+          "grade": "B",
+          "source": "agent_verdict",
+          "rank": 3,
+          "in_early_window": false,
+          "entry_ts": 1775277527,
+          "outcome_index": 0,
+          "size_usd_proxy": 4620.61
+        }
+      ]
     },
     "0x4afb076c5d9dfe1c33bf300cfd9fb93a5a8d9bfce8fe2beaeccbde5f8c269fc1": {
       "condition_id": "0x4afb076c5d9dfe1c33bf300cfd9fb93a5a8d9bfce8fe2beaeccbde5f8c269fc1",
@@ -57945,6 +58520,248 @@
       "early_smart_direction_confidence": null,
       "first_mover": null,
       "skilled_entrants": []
+    },
+    "0x47aadf21f0711692d6203942c250e09a77cb1cca5d544fd71f2f5b77abb31e4a": {
+      "condition_id": "0x47aadf21f0711692d6203942c250e09a77cb1cca5d544fd71f2f5b77abb31e4a",
+      "n_entrants": 4,
+      "early_window_size": 2,
+      "n_skilled_entrants": 0,
+      "n_skilled_early": 0,
+      "smart_money_early": false,
+      "early_smart_direction": null,
+      "early_smart_direction_confidence": null,
+      "first_mover": null,
+      "skilled_entrants": []
+    },
+    "0x4871817c5f0cce381cd7e725855d3773bf19260c700f9c5d58848c7d6721ce51": {
+      "condition_id": "0x4871817c5f0cce381cd7e725855d3773bf19260c700f9c5d58848c7d6721ce51",
+      "n_entrants": 4,
+      "early_window_size": 2,
+      "n_skilled_entrants": 2,
+      "n_skilled_early": 0,
+      "smart_money_early": false,
+      "early_smart_direction": null,
+      "early_smart_direction_confidence": null,
+      "first_mover": {
+        "wallet": "0xf284ad6d607f777f34bc643cea587c33a886b9f9",
+        "pseudonym": "strike123",
+        "grade": "B",
+        "rank": 3,
+        "entry_ts": 1778615305,
+        "outcome_index": 0
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0xf284ad6d607f777f34bc643cea587c33a886b9f9",
+          "pseudonym": "strike123",
+          "grade": "B",
+          "source": "agent_verdict",
+          "rank": 3,
+          "in_early_window": false,
+          "entry_ts": 1778615305,
+          "outcome_index": 0,
+          "size_usd_proxy": 13068.64
+        },
+        {
+          "wallet": "0x3f3aa7005f8006bfcc367d43a25cde25509fe8fd",
+          "pseudonym": "us391",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 4,
+          "in_early_window": false,
+          "entry_ts": 1778615492,
+          "outcome_index": 0,
+          "size_usd_proxy": 14691.99
+        }
+      ]
+    },
+    "0x48a7d022b43bc56fcb8199ffb281ba63ff88dfc6d42812c7c7d1ccf6ae7fc3b8": {
+      "condition_id": "0x48a7d022b43bc56fcb8199ffb281ba63ff88dfc6d42812c7c7d1ccf6ae7fc3b8",
+      "n_entrants": 6,
+      "early_window_size": 2,
+      "n_skilled_entrants": 1,
+      "n_skilled_early": 0,
+      "smart_money_early": false,
+      "early_smart_direction": null,
+      "early_smart_direction_confidence": null,
+      "first_mover": {
+        "wallet": "0xcf609d3256f0f37f0595e5dc64012fa3a8fea6f5",
+        "pseudonym": "0xcF609D3256f0f37f0595E5Dc64012Fa3a8fEa6f5-17718",
+        "grade": "C",
+        "rank": 4,
+        "entry_ts": 1778425708,
+        "outcome_index": 0
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0xcf609d3256f0f37f0595e5dc64012fa3a8fea6f5",
+          "pseudonym": "0xcF609D3256f0f37f0595E5Dc64012Fa3a8fEa6f5-17718",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 4,
+          "in_early_window": false,
+          "entry_ts": 1778425708,
+          "outcome_index": 0,
+          "size_usd_proxy": 30000.0
+        }
+      ]
+    },
+    "0x493e55161a52f24c0be8f5094893669039e04d11e11285a066ce64b6610e7afa": {
+      "condition_id": "0x493e55161a52f24c0be8f5094893669039e04d11e11285a066ce64b6610e7afa",
+      "n_entrants": 6,
+      "early_window_size": 2,
+      "n_skilled_entrants": 2,
+      "n_skilled_early": 2,
+      "smart_money_early": true,
+      "early_smart_direction": 1,
+      "early_smart_direction_confidence": 1.0,
+      "first_mover": {
+        "wallet": "0x30ceffb3ac4ea49881e271d5a69883b60e0dfdce",
+        "pseudonym": "AshleySchaeffer",
+        "grade": "B",
+        "rank": 1,
+        "entry_ts": 1778821320,
+        "outcome_index": 1
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0x30ceffb3ac4ea49881e271d5a69883b60e0dfdce",
+          "pseudonym": "AshleySchaeffer",
+          "grade": "B",
+          "source": "agent_verdict",
+          "rank": 1,
+          "in_early_window": true,
+          "entry_ts": 1778821320,
+          "outcome_index": 1,
+          "size_usd_proxy": 6.45
+        },
+        {
+          "wallet": "0x3f3aa7005f8006bfcc367d43a25cde25509fe8fd",
+          "pseudonym": "us391",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 2,
+          "in_early_window": true,
+          "entry_ts": 1778845984,
+          "outcome_index": 1,
+          "size_usd_proxy": 18205.18
+        }
+      ]
+    },
+    "0x49ae30dfe1ccbbe7a31a2f89929ecbf4b480b2c9164ee34b43ce9e2d29c5b1bb": {
+      "condition_id": "0x49ae30dfe1ccbbe7a31a2f89929ecbf4b480b2c9164ee34b43ce9e2d29c5b1bb",
+      "n_entrants": 14,
+      "early_window_size": 5,
+      "n_skilled_entrants": 3,
+      "n_skilled_early": 1,
+      "smart_money_early": true,
+      "early_smart_direction": 1,
+      "early_smart_direction_confidence": 1.0,
+      "first_mover": {
+        "wallet": "0x8f8c0eb3c2450ae709c2369bb61dd1b049e9e275",
+        "pseudonym": "timezonewarrior",
+        "grade": "C",
+        "rank": 3,
+        "entry_ts": 1778276044,
+        "outcome_index": 1
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0x8f8c0eb3c2450ae709c2369bb61dd1b049e9e275",
+          "pseudonym": "timezonewarrior",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 3,
+          "in_early_window": true,
+          "entry_ts": 1778276044,
+          "outcome_index": 1,
+          "size_usd_proxy": 5872.72
+        },
+        {
+          "wallet": "0x6f8b2886707673629af6bbf7314b8081021601aa",
+          "pseudonym": "sunflowaa",
+          "grade": "B",
+          "source": "agent_verdict",
+          "rank": 8,
+          "in_early_window": false,
+          "entry_ts": 1778364150,
+          "outcome_index": 1,
+          "size_usd_proxy": 273.77
+        },
+        {
+          "wallet": "0x2b15b1cab8917d786e44765002a07a78ee8c9b08",
+          "pseudonym": "BKLUOSAFEWR",
+          "grade": "B",
+          "source": "agent_verdict",
+          "rank": 13,
+          "in_early_window": false,
+          "entry_ts": 1778365947,
+          "outcome_index": 1,
+          "size_usd_proxy": 4145.6
+        }
+      ]
+    },
+    "0x49b790f1632f7cc60127a05c0164f4290dc0b69629c5f8dff116069c862702c2": {
+      "condition_id": "0x49b790f1632f7cc60127a05c0164f4290dc0b69629c5f8dff116069c862702c2",
+      "n_entrants": 7,
+      "early_window_size": 3,
+      "n_skilled_entrants": 1,
+      "n_skilled_early": 0,
+      "smart_money_early": false,
+      "early_smart_direction": null,
+      "early_smart_direction_confidence": null,
+      "first_mover": {
+        "wallet": "0x2b15b1cab8917d786e44765002a07a78ee8c9b08",
+        "pseudonym": "BKLUOSAFEWR",
+        "grade": "B",
+        "rank": 5,
+        "entry_ts": 1778366973,
+        "outcome_index": 1
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0x2b15b1cab8917d786e44765002a07a78ee8c9b08",
+          "pseudonym": "BKLUOSAFEWR",
+          "grade": "B",
+          "source": "agent_verdict",
+          "rank": 5,
+          "in_early_window": false,
+          "entry_ts": 1778366973,
+          "outcome_index": 1,
+          "size_usd_proxy": 1461.66
+        }
+      ]
+    },
+    "0x4ad186544896ef9c123be847d784330f1675863509037145077c0964aaa6bf4f": {
+      "condition_id": "0x4ad186544896ef9c123be847d784330f1675863509037145077c0964aaa6bf4f",
+      "n_entrants": 8,
+      "early_window_size": 3,
+      "n_skilled_entrants": 1,
+      "n_skilled_early": 0,
+      "smart_money_early": false,
+      "early_smart_direction": null,
+      "early_smart_direction_confidence": null,
+      "first_mover": {
+        "wallet": "0xcf609d3256f0f37f0595e5dc64012fa3a8fea6f5",
+        "pseudonym": "0xcF609D3256f0f37f0595E5Dc64012Fa3a8fEa6f5-17718",
+        "grade": "C",
+        "rank": 4,
+        "entry_ts": 1778454018,
+        "outcome_index": 0
+      },
+      "skilled_entrants": [
+        {
+          "wallet": "0xcf609d3256f0f37f0595e5dc64012fa3a8fea6f5",
+          "pseudonym": "0xcF609D3256f0f37f0595E5Dc64012Fa3a8fEa6f5-17718",
+          "grade": "C",
+          "source": "agent_verdict",
+          "rank": 4,
+          "in_early_window": false,
+          "entry_ts": 1778454018,
+          "outcome_index": 0,
+          "size_usd_proxy": 3018.49
+        }
+      ]
     }
   },
   "per_wallet_first_mover": {
@@ -57966,8 +58783,8 @@
       "pseudonym": "DistortedReality",
       "grade": "B",
       "n_first_mover": 9,
-      "n_markets_entered": 28,
-      "first_mover_rate": 0.321
+      "n_markets_entered": 29,
+      "first_mover_rate": 0.31
     },
     "0x9c667a1d1c1337c6dca9d93241d386e4ed346b66": {
       "pseudonym": "InfiniteCrypt0",
@@ -57994,8 +58811,8 @@
       "pseudonym": "sunflowaa",
       "grade": "B",
       "n_first_mover": 7,
-      "n_markets_entered": 14,
-      "first_mover_rate": 0.5
+      "n_markets_entered": 16,
+      "first_mover_rate": 0.438
     },
     "0x65503c7f9e142ac88b1ce09df3363ff77f188451": {
       "pseudonym": "oieshfn345",
@@ -58007,23 +58824,23 @@
     "0x2b15b1cab8917d786e44765002a07a78ee8c9b08": {
       "pseudonym": "BKLUOSAFEWR",
       "grade": "B",
-      "n_first_mover": 13,
-      "n_markets_entered": 27,
-      "first_mover_rate": 0.481
+      "n_first_mover": 14,
+      "n_markets_entered": 29,
+      "first_mover_rate": 0.483
     },
     "0x88c4919de76e526d55a32c1f8afb439dd1f1129a": {
       "pseudonym": "8934394839",
       "grade": "A",
-      "n_first_mover": 50,
-      "n_markets_entered": 116,
-      "first_mover_rate": 0.431
+      "n_first_mover": 51,
+      "n_markets_entered": 118,
+      "first_mover_rate": 0.432
     },
     "0x2974bd0059e48f215c391882976e0f1b4c8c9c23": {
       "pseudonym": "65765757",
       "grade": "A",
       "n_first_mover": 37,
-      "n_markets_entered": 96,
-      "first_mover_rate": 0.385
+      "n_markets_entered": 97,
+      "first_mover_rate": 0.381
     },
     "0x7f9e2d1df78614564a70becc7fa14aa9a6623a0e": {
       "pseudonym": "nojnn",
@@ -58042,16 +58859,16 @@
     "0x1df231bd33dae91463e1682927e8096b82c289a0": {
       "pseudonym": "pedroBala",
       "grade": "C",
-      "n_first_mover": 18,
-      "n_markets_entered": 22,
-      "first_mover_rate": 0.818
+      "n_first_mover": 19,
+      "n_markets_entered": 24,
+      "first_mover_rate": 0.792
     },
     "0x160db9bb5bf012f21251a74737093bcdc36f5295": {
       "pseudonym": "JESUSCHRISTISGOD",
       "grade": "B",
-      "n_first_mover": 8,
-      "n_markets_entered": 19,
-      "first_mover_rate": 0.421
+      "n_first_mover": 9,
+      "n_markets_entered": 20,
+      "first_mover_rate": 0.45
     },
     "0x96489abcb9f583d6835c8ef95ffc923d05a86825": {
       "pseudonym": "anoin123",
@@ -58078,8 +58895,8 @@
       "pseudonym": "VARsenal",
       "grade": "B",
       "n_first_mover": 10,
-      "n_markets_entered": 17,
-      "first_mover_rate": 0.588
+      "n_markets_entered": 18,
+      "first_mover_rate": 0.556
     },
     "0x8de0ee3ce923e4ae28b9745a652797eaea8887a0": {
       "pseudonym": "0x8DE0eE3ce923",
@@ -58099,8 +58916,8 @@
       "pseudonym": "AppleTime67",
       "grade": "C",
       "n_first_mover": 5,
-      "n_markets_entered": 13,
-      "first_mover_rate": 0.385
+      "n_markets_entered": 14,
+      "first_mover_rate": 0.357
     },
     "0x3dfb153c197d4c19d3b31c1ecd2c7b6860eeabaf": {
       "pseudonym": "0x3DFb153c197D4C19D3B31c1ecD2c7B6860eeabAf-17229",
@@ -58183,15 +59000,15 @@
       "pseudonym": "coon777",
       "grade": "B",
       "n_first_mover": 7,
-      "n_markets_entered": 16,
-      "first_mover_rate": 0.438
+      "n_markets_entered": 18,
+      "first_mover_rate": 0.389
     },
     "0xdd92232bcdfbbac04132b3cbacbf32c2e5b16b2a": {
       "pseudonym": "Jdhdhduu",
       "grade": "C",
       "n_first_mover": 17,
-      "n_markets_entered": 31,
-      "first_mover_rate": 0.548
+      "n_markets_entered": 32,
+      "first_mover_rate": 0.531
     },
     "0x63d80c8bd24fe99e60bc7d3c674ec1b27858e2ab": {
       "pseudonym": "Brilliant-Blood",
@@ -58203,16 +59020,16 @@
     "0x6ade597c0e2b43c0bf3542cada8a5e330d73f5b0": {
       "pseudonym": "TheOnlyHuman",
       "grade": "C",
-      "n_first_mover": 12,
-      "n_markets_entered": 22,
-      "first_mover_rate": 0.545
+      "n_first_mover": 13,
+      "n_markets_entered": 24,
+      "first_mover_rate": 0.542
     },
     "0x6b6fb933598b17d8ba2350481f4653628a16ce60": {
       "pseudonym": "ArchelausButeo",
       "grade": "A",
-      "n_first_mover": 7,
-      "n_markets_entered": 18,
-      "first_mover_rate": 0.389
+      "n_first_mover": 9,
+      "n_markets_entered": 20,
+      "first_mover_rate": 0.45
     },
     "0xa67685fa5213fd8167977bfb7b3f50c06d511c22": {
       "pseudonym": "Active-Broad",
@@ -58274,8 +59091,8 @@
       "pseudonym": "Netrol",
       "grade": "C",
       "n_first_mover": 19,
-      "n_markets_entered": 34,
-      "first_mover_rate": 0.559
+      "n_markets_entered": 35,
+      "first_mover_rate": 0.543
     },
     "0x2580d0e16709994f5b8a0206271ad14e2b911d56": {
       "pseudonym": "Maxdaboss1",
@@ -58294,9 +59111,9 @@
     "0x382afec9be090039c4e70c400ce500293e98b590": {
       "pseudonym": "Made-Up-Tunnel",
       "grade": "C",
-      "n_first_mover": 5,
-      "n_markets_entered": 16,
-      "first_mover_rate": 0.312
+      "n_first_mover": 6,
+      "n_markets_entered": 18,
+      "first_mover_rate": 0.333
     },
     "0x3ceaef028ec937eface912a7e379c913598d1996": {
       "pseudonym": "Foolhardy-Twilight",
@@ -58308,9 +59125,9 @@
     "0x0b9cae2b0dfe7a71c413e0604eaac1c352f87e44": {
       "pseudonym": "geniusMC",
       "grade": "A",
-      "n_first_mover": 12,
-      "n_markets_entered": 15,
-      "first_mover_rate": 0.8
+      "n_first_mover": 13,
+      "n_markets_entered": 16,
+      "first_mover_rate": 0.812
     },
     "0x5aa981521b4e94fee3b3bf18fe441f62e865febe": {
       "pseudonym": "apucimama",
@@ -58364,9 +59181,9 @@
     "0xcf609d3256f0f37f0595e5dc64012fa3a8fea6f5": {
       "pseudonym": "0xcF609D3256f0f37f0595E5Dc64012Fa3a8fEa6f5-17718",
       "grade": "C",
-      "n_first_mover": 6,
-      "n_markets_entered": 14,
-      "first_mover_rate": 0.429
+      "n_first_mover": 8,
+      "n_markets_entered": 16,
+      "first_mover_rate": 0.5
     },
     "0xf5198df69e13937a40d1c76d6f72d9aa067d906b": {
       "pseudonym": "sbimbg",
@@ -58406,9 +59223,9 @@
     "0x51fd8f0358cc9e8a1ee5f87a0c7e3b07ed634272": {
       "pseudonym": "TimeTraveler",
       "grade": "A",
-      "n_first_mover": 13,
-      "n_markets_entered": 19,
-      "first_mover_rate": 0.684
+      "n_first_mover": 14,
+      "n_markets_entered": 20,
+      "first_mover_rate": 0.7
     },
     "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86": {
       "pseudonym": "influenz.eth",
@@ -58448,9 +59265,9 @@
     "0x73cbab26f65f5dfaa105166bda8b1c8549c3b0d0": {
       "pseudonym": "Unlucky-Incarnation",
       "grade": "C",
-      "n_first_mover": 3,
-      "n_markets_entered": 6,
-      "first_mover_rate": 0.5
+      "n_first_mover": 4,
+      "n_markets_entered": 7,
+      "first_mover_rate": 0.571
     },
     "0x3b96172a668b4a6dad2f39dfb22604c362c1a092": {
       "pseudonym": "0x3b96172a668b4a6dad2f39dfb22604c362c1a092",
@@ -58463,8 +59280,8 @@
       "pseudonym": "Immaculate-Grasshopper",
       "grade": "C",
       "n_first_mover": 10,
-      "n_markets_entered": 19,
-      "first_mover_rate": 0.526
+      "n_markets_entered": 20,
+      "first_mover_rate": 0.5
     },
     "0xd3989ba133ab48b5b3a81e3dba9b37b5966a46d7": {
       "pseudonym": "0xd3989BA133aB",
@@ -58497,23 +59314,23 @@
     "0xecaa8806a9a05049d7d5260a33dc924220e377a9": {
       "pseudonym": "Melody626",
       "grade": "C",
-      "n_first_mover": 3,
-      "n_markets_entered": 8,
-      "first_mover_rate": 0.375
+      "n_first_mover": 4,
+      "n_markets_entered": 9,
+      "first_mover_rate": 0.444
     },
     "0x38337de21ff0bb0a11a40761507d51e318d633d1": {
       "pseudonym": "SineNooneEI",
       "grade": "C",
-      "n_first_mover": 7,
-      "n_markets_entered": 8,
-      "first_mover_rate": 0.875
+      "n_first_mover": 8,
+      "n_markets_entered": 9,
+      "first_mover_rate": 0.889
     },
     "0xf284ad6d607f777f34bc643cea587c33a886b9f9": {
       "pseudonym": "strike123",
       "grade": "B",
-      "n_first_mover": 8,
-      "n_markets_entered": 18,
-      "first_mover_rate": 0.444
+      "n_first_mover": 9,
+      "n_markets_entered": 19,
+      "first_mover_rate": 0.474
     },
     "0x23073ad0c9dff45353cedb11760570b995663934": {
       "pseudonym": "Deep7",
@@ -58525,9 +59342,9 @@
     "0x8f8c0eb3c2450ae709c2369bb61dd1b049e9e275": {
       "pseudonym": "timezonewarrior",
       "grade": "C",
-      "n_first_mover": 9,
-      "n_markets_entered": 12,
-      "first_mover_rate": 0.75
+      "n_first_mover": 10,
+      "n_markets_entered": 13,
+      "first_mover_rate": 0.769
     },
     "0xe9cbb1c9b3f7f411dd4fdf2ea7afa780c8b4d096": {
       "pseudonym": "lameloballer",
@@ -58553,9 +59370,9 @@
     "0x3de4543d599ffb09386aac2eab198a295511b032": {
       "pseudonym": "248188374",
       "grade": "C",
-      "n_first_mover": 4,
-      "n_markets_entered": 7,
-      "first_mover_rate": 0.571
+      "n_first_mover": 6,
+      "n_markets_entered": 9,
+      "first_mover_rate": 0.667
     },
     "0xee613b3fc183ee44f9da9c05f53e2da107e3debf": {
       "pseudonym": "sovereign2013",
@@ -58578,6 +59395,13 @@
       "n_markets_entered": 1,
       "first_mover_rate": 0.0
     },
+    "0xf16640ce7cb59d7b38ca397652a5d296c6d0fb37": {
+      "pseudonym": "io-cane",
+      "grade": "A",
+      "n_first_mover": 0,
+      "n_markets_entered": 1,
+      "first_mover_rate": 0.0
+    },
     "0x4a520bc14738c0c74e6e20c8989212a52d18baaf": {
       "pseudonym": "carloslxy1",
       "grade": "C",
@@ -58589,8 +59413,8 @@
       "pseudonym": "us391",
       "grade": "C",
       "n_first_mover": 6,
-      "n_markets_entered": 13,
-      "first_mover_rate": 0.462
+      "n_markets_entered": 15,
+      "first_mover_rate": 0.4
     },
     "0x4f29e103339919c4baaea2a60195cf1c8bb27a7e": {
       "pseudonym": "0x4f2",
@@ -58602,9 +59426,9 @@
     "0x30ceffb3ac4ea49881e271d5a69883b60e0dfdce": {
       "pseudonym": "AshleySchaeffer",
       "grade": "B",
-      "n_first_mover": 9,
-      "n_markets_entered": 12,
-      "first_mover_rate": 0.75
+      "n_first_mover": 10,
+      "n_markets_entered": 13,
+      "first_mover_rate": 0.769
     }
   }
 }
