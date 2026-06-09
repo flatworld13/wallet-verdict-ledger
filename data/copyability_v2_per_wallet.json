@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "methodology_version": "copyability-v2-size-aware-v0.1",
-  "generated_at_unix": 1780916276,
+  "generated_at_unix": 1780995578,
   "description": "Size-aware copyability per wallet \u00b7 for each ($-size-bucket \u00d7 wallet) pair, score 0-100 based on Tier 2 fill edge_over_midpoint_bps. Different sizes have different copyability \u00b7 the pro-trader gets the right answer for their position-size, not a one-number-fits-all verdict.",
   "role_served": "Role 1 Pro Trader \u00b7 J11 size calculator surface",
   "size_buckets": [
@@ -32,7 +32,7 @@
     }
   ],
   "n_wallets": 413,
-  "n_wallets_full_signal": 280,
+  "n_wallets_full_signal": 284,
   "per_wallet": {
     "0x89cd944aa9cf528142e3557099c6992eb7ce4d7d": {
       "score_overall": 38.1,
@@ -9807,8 +9807,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x91583ceb1ebec79951a068e1d7d02c1ea590fa7b": {
-      "score_overall": 43.5,
-      "n_total_fills": 54,
+      "score_overall": 43.0,
+      "n_total_fills": 56,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
@@ -9839,10 +9839,10 @@
           "reason": "neutral"
         },
         "$25K+": {
-          "n": 21,
+          "n": 23,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -121.98,
+          "avg_edge_bps": -117.49,
           "reason": "slippage"
         }
       },
@@ -9928,8 +9928,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x73cbab26f65f5dfaa105166bda8b1c8549c3b0d0": {
-      "score_overall": 64.5,
-      "n_total_fills": 51,
+      "score_overall": 64.7,
+      "n_total_fills": 53,
       "buckets_with_signal": 5,
       "by_size_bucket": {
         "<$500": {
@@ -9947,10 +9947,10 @@
           "reason": "positive edge"
         },
         "$1K-$5K": {
-          "n": 15,
+          "n": 17,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 793.68,
+          "avg_edge_bps": 695.11,
           "reason": "positive edge"
         },
         "$5K-$25K": {
@@ -9971,15 +9971,15 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xee613b3fc183ee44f9da9c05f53e2da107e3debf": {
-      "score_overall": 43.8,
-      "n_total_fills": 111,
+      "score_overall": 43.7,
+      "n_total_fills": 115,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
-          "n": 65,
+          "n": 67,
           "score": 40,
           "sample_thin": false,
-          "avg_edge_bps": -1664.41,
+          "avg_edge_bps": -1639.25,
           "reason": "slippage"
         },
         "$500-$1K": {
@@ -9990,10 +9990,10 @@
           "reason": "positive edge"
         },
         "$1K-$5K": {
-          "n": 32,
+          "n": 34,
           "score": 40,
           "sample_thin": false,
-          "avg_edge_bps": -2684.51,
+          "avg_edge_bps": -2620.73,
           "reason": "slippage"
         },
         "$5K-$25K": {
@@ -10053,8 +10053,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xb744f56635b537e859152d14b022af5afe485210": {
-      "score_overall": 39.4,
-      "n_total_fills": 51,
+      "score_overall": 39.3,
+      "n_total_fills": 54,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
@@ -10077,17 +10077,17 @@
           "reason": "slippage"
         },
         "$5K-$25K": {
-          "n": 24,
+          "n": 25,
           "score": 50,
           "sample_thin": false,
-          "avg_edge_bps": -28.4,
+          "avg_edge_bps": -19.27,
           "reason": "neutral"
         },
         "$25K+": {
-          "n": 18,
+          "n": 20,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -103.04,
+          "avg_edge_bps": -106.55,
           "reason": "slippage"
         }
       },
@@ -10176,8 +10176,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x26b46988d027c6c03cfa12a7c0c6d778be49b8a9": {
-      "score_overall": 37.5,
-      "n_total_fills": 40,
+      "score_overall": 37.1,
+      "n_total_fills": 42,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
@@ -10194,10 +10194,10 @@
           "reason": "positive edge"
         },
         "$1K-$5K": {
-          "n": 16,
+          "n": 18,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -1568.7,
+          "avg_edge_bps": -1201.24,
           "reason": "slippage"
         },
         "$5K-$25K": {
@@ -10217,28 +10217,28 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xead152b855effa6b5b5837f53b24c0756830c76a": {
-      "score_overall": 60.7,
-      "n_total_fills": 74,
+      "score_overall": 60.9,
+      "n_total_fills": 80,
       "buckets_with_signal": 2,
       "by_size_bucket": {
         "<$500": {
-          "n": 67,
+          "n": 69,
           "score": 60,
           "sample_thin": false,
-          "avg_edge_bps": -4.27,
+          "avg_edge_bps": -4.36,
           "reason": "neutral"
         },
         "$500-$1K": {
-          "n": 0,
+          "n": 2,
           "score": 60,
           "sample_thin": true,
-          "reason": "thin sample n=0"
+          "reason": "thin sample n=2"
         },
         "$1K-$5K": {
-          "n": 5,
+          "n": 7,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 1624.19,
+          "avg_edge_bps": 845.62,
           "reason": "positive edge"
         },
         "$5K-$25K": {
@@ -10296,15 +10296,15 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x9abd2a42cadb471056204a84cbcd7ea7c06ff67b": {
-      "score_overall": 62.4,
-      "n_total_fills": 54,
+      "score_overall": 68.0,
+      "n_total_fills": 55,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
-          "n": 29,
-          "score": 70,
+          "n": 30,
+          "score": 80,
           "sample_thin": false,
-          "avg_edge_bps": 694.16,
+          "avg_edge_bps": 671.02,
           "reason": "positive edge"
         },
         "$500-$1K": {
@@ -10455,8 +10455,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xa2cced8bfae7d645f7f437fb76becf2fcbb70cbc": {
-      "score_overall": 62.1,
-      "n_total_fills": 39,
+      "score_overall": 48.0,
+      "n_total_fills": 44,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
@@ -10472,18 +10472,18 @@
           "reason": "thin sample n=1"
         },
         "$1K-$5K": {
-          "n": 13,
+          "n": 14,
           "score": 50,
           "sample_thin": false,
-          "avg_edge_bps": -26.95,
+          "avg_edge_bps": -36.55,
           "reason": "neutral"
         },
         "$5K-$25K": {
-          "n": 12,
-          "score": 70,
+          "n": 16,
+          "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": 46.24,
-          "reason": "positive edge"
+          "avg_edge_bps": -123.19,
+          "reason": "slippage"
         },
         "$25K+": {
           "n": 9,
@@ -10537,15 +10537,15 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x163eff4d251df4bfc95c49f4d90cd1bf224edc5b": {
-      "score_overall": 43.8,
-      "n_total_fills": 37,
+      "score_overall": 44.8,
+      "n_total_fills": 40,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
-          "n": 7,
+          "n": 9,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 722.01,
+          "avg_edge_bps": 609.99,
           "reason": "positive edge"
         },
         "$500-$1K": {
@@ -10562,10 +10562,10 @@
           "reason": "positive edge"
         },
         "$5K-$25K": {
-          "n": 13,
+          "n": 14,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -133.82,
+          "avg_edge_bps": -119.88,
           "reason": "slippage"
         },
         "$25K+": {
@@ -10618,8 +10618,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x6f8b2886707673629af6bbf7314b8081021601aa": {
-      "score_overall": 34.8,
-      "n_total_fills": 44,
+      "score_overall": 34.6,
+      "n_total_fills": 46,
       "buckets_with_signal": 2,
       "by_size_bucket": {
         "<$500": {
@@ -10642,10 +10642,10 @@
           "reason": "slippage"
         },
         "$5K-$25K": {
-          "n": 27,
+          "n": 29,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -46759.52,
+          "avg_edge_bps": -43332.31,
           "reason": "slippage"
         },
         "$25K+": {
@@ -10737,15 +10737,15 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xc8075693f48668a264b9fa313b47f52712fcc12b": {
-      "score_overall": 55.6,
-      "n_total_fills": 32,
+      "score_overall": 56.1,
+      "n_total_fills": 33,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
-          "n": 5,
+          "n": 6,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 162.55,
+          "avg_edge_bps": 203.48,
           "reason": "positive edge"
         },
         "$500-$1K": {
@@ -11026,15 +11026,15 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x1117eade222413335b7ec959e5b48c1d3dbc3532": {
-      "score_overall": 65.4,
-      "n_total_fills": 41,
+      "score_overall": 65.6,
+      "n_total_fills": 43,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
-          "n": 10,
+          "n": 12,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 41.91,
+          "avg_edge_bps": 65.23,
           "reason": "positive edge"
         },
         "$500-$1K": {
@@ -11107,15 +11107,15 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x3b96172a668b4a6dad2f39dfb22604c362c1a092": {
-      "score_overall": 40.7,
-      "n_total_fills": 55,
+      "score_overall": 40.6,
+      "n_total_fills": 63,
       "buckets_with_signal": 1,
       "by_size_bucket": {
         "<$500": {
-          "n": 53,
+          "n": 61,
           "score": 40,
           "sample_thin": false,
-          "avg_edge_bps": -1006.58,
+          "avg_edge_bps": -881.02,
           "reason": "slippage"
         },
         "$500-$1K": {
@@ -11225,15 +11225,15 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x37c1874a60d348903594a96703e0507c518fc53a": {
-      "score_overall": 74.6,
-      "n_total_fills": 67,
+      "score_overall": 74.7,
+      "n_total_fills": 68,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
-          "n": 33,
+          "n": 34,
           "score": 80,
           "sample_thin": false,
-          "avg_edge_bps": 198.97,
+          "avg_edge_bps": 179.69,
           "reason": "positive edge"
         },
         "$500-$1K": {
@@ -11267,7 +11267,7 @@
     },
     "0x3e04fbc51adb75418129f6ce2091ae633070564d": {
       "score_overall": 70.0,
-      "n_total_fills": 47,
+      "n_total_fills": 48,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
@@ -11285,10 +11285,10 @@
           "reason": "positive edge"
         },
         "$1K-$5K": {
-          "n": 20,
+          "n": 21,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 63.64,
+          "avg_edge_bps": 36.8,
           "reason": "positive edge"
         },
         "$5K-$25K": {
@@ -11308,8 +11308,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xa8e089ade142c95538e06196e09c85681112ad50": {
-      "score_overall": 47.3,
-      "n_total_fills": 37,
+      "score_overall": 48.5,
+      "n_total_fills": 39,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
@@ -11333,10 +11333,10 @@
           "reason": "slippage"
         },
         "$5K-$25K": {
-          "n": 13,
+          "n": 15,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 118.96,
+          "avg_edge_bps": 144.08,
           "reason": "positive edge"
         },
         "$25K+": {
@@ -11351,14 +11351,14 @@
     },
     "0xd809c54478c5e50fe2aa20acccf0857baa0a6542": {
       "score_overall": 60.0,
-      "n_total_fills": 70,
+      "n_total_fills": 72,
       "buckets_with_signal": 1,
       "by_size_bucket": {
         "<$500": {
-          "n": 63,
+          "n": 65,
           "score": 60,
           "sample_thin": false,
-          "avg_edge_bps": -37.71,
+          "avg_edge_bps": -34.03,
           "reason": "neutral"
         },
         "$500-$1K": {
@@ -11430,15 +11430,15 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x78048aa26ac1967566b8ed11910b529e5f2d7025": {
-      "score_overall": 63.3,
-      "n_total_fills": 45,
+      "score_overall": 63.6,
+      "n_total_fills": 47,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
-          "n": 22,
+          "n": 24,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 269.15,
+          "avg_edge_bps": 247.8,
           "reason": "positive edge"
         },
         "$500-$1K": {
@@ -11471,8 +11471,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x03e8a544e97eeff5753bc1e90d46e5ef22af1697": {
-      "score_overall": 69.0,
-      "n_total_fills": 62,
+      "score_overall": 69.2,
+      "n_total_fills": 63,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
@@ -11503,10 +11503,10 @@
           "reason": "neutral"
         },
         "$25K+": {
-          "n": 30,
+          "n": 31,
           "score": 80,
           "sample_thin": false,
-          "avg_edge_bps": 33.77,
+          "avg_edge_bps": 36.14,
           "reason": "positive edge"
         }
       },
@@ -11555,7 +11555,7 @@
     },
     "0xee0d153c17fe82b8866b484753b56a700ab457ab": {
       "score_overall": 44.7,
-      "n_total_fills": 75,
+      "n_total_fills": 77,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
@@ -11566,10 +11566,10 @@
           "reason": "neutral"
         },
         "$500-$1K": {
-          "n": 2,
+          "n": 3,
           "score": 60,
           "sample_thin": true,
-          "reason": "thin sample n=2"
+          "reason": "thin sample n=3"
         },
         "$1K-$5K": {
           "n": 18,
@@ -11586,10 +11586,10 @@
           "reason": "neutral"
         },
         "$25K+": {
-          "n": 21,
+          "n": 22,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -88.09,
+          "avg_edge_bps": -80.71,
           "reason": "slippage"
         }
       },
@@ -11597,7 +11597,7 @@
     },
     "0x777d9f00c2b4f7b829c9de0049ca3e707db05143": {
       "score_overall": 69.7,
-      "n_total_fills": 32,
+      "n_total_fills": 34,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
@@ -11627,10 +11627,10 @@
           "reason": "positive edge"
         },
         "$25K+": {
-          "n": 11,
+          "n": 13,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 77.38,
+          "avg_edge_bps": 271.43,
           "reason": "positive edge"
         }
       },
@@ -11717,8 +11717,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x4133bcbad1d9c41de776646696f41c34d0a65e70": {
-      "score_overall": 64.4,
-      "n_total_fills": 77,
+      "score_overall": 63.5,
+      "n_total_fills": 79,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
@@ -11729,10 +11729,10 @@
           "reason": "positive edge"
         },
         "$500-$1K": {
-          "n": 8,
+          "n": 10,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -837.5,
+          "avg_edge_bps": -645.3,
           "reason": "slippage"
         },
         "$1K-$5K": {
@@ -11758,8 +11758,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xef27152015c5313daf457804e7319e869ed3381b": {
-      "score_overall": 40.2,
-      "n_total_fills": 54,
+      "score_overall": 39.7,
+      "n_total_fills": 59,
       "buckets_with_signal": 2,
       "by_size_bucket": {
         "<$500": {
@@ -11781,32 +11781,32 @@
           "reason": "thin sample n=4"
         },
         "$5K-$25K": {
-          "n": 43,
+          "n": 45,
           "score": 40,
           "sample_thin": false,
-          "avg_edge_bps": -7430.31,
+          "avg_edge_bps": -7030.64,
           "reason": "slippage"
         },
         "$25K+": {
-          "n": 7,
+          "n": 10,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -89284.85,
+          "avg_edge_bps": -62129.66,
           "reason": "slippage"
         }
       },
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x0b935e95bdf36322c14815f002d9759079a03c34": {
-      "score_overall": 37.7,
-      "n_total_fills": 83,
+      "score_overall": 37.6,
+      "n_total_fills": 89,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
-          "n": 58,
+          "n": 62,
           "score": 40,
           "sample_thin": false,
-          "avg_edge_bps": -12972.47,
+          "avg_edge_bps": -12631.2,
           "reason": "slippage"
         },
         "$500-$1K": {
@@ -11817,10 +11817,10 @@
           "reason": "slippage"
         },
         "$1K-$5K": {
-          "n": 9,
+          "n": 11,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -4316.1,
+          "avg_edge_bps": -4338.17,
           "reason": "slippage"
         },
         "$5K-$25K": {
@@ -11880,8 +11880,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x88a1490ef812e52c9bcc8fe9e97d286ae873ad45": {
-      "score_overall": 53.7,
-      "n_total_fills": 81,
+      "score_overall": 53.8,
+      "n_total_fills": 82,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
@@ -11913,17 +11913,17 @@
           "reason": "slippage"
         },
         "$25K+": {
-          "n": 2,
+          "n": 3,
           "score": 60,
           "sample_thin": true,
-          "reason": "thin sample n=2"
+          "reason": "thin sample n=3"
         }
       },
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x856f95bfdbb9b1401cfe56274c9a08df1e8ae1d7": {
-      "score_overall": 38.0,
-      "n_total_fills": 50,
+      "score_overall": 37.7,
+      "n_total_fills": 52,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
@@ -11948,10 +11948,10 @@
           "reason": "slippage"
         },
         "$5K-$25K": {
-          "n": 6,
+          "n": 8,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -27269.3,
+          "avg_edge_bps": -22693.89,
           "reason": "slippage"
         },
         "$25K+": {
@@ -12044,8 +12044,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x16cbe223607a6513ae76d1e3751c78e4eabc2704": {
-      "score_overall": 35.9,
-      "n_total_fills": 58,
+      "score_overall": 35.7,
+      "n_total_fills": 60,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
@@ -12056,10 +12056,10 @@
           "reason": "slippage"
         },
         "$500-$1K": {
-          "n": 15,
+          "n": 17,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -343.71,
+          "avg_edge_bps": -345.22,
           "reason": "slippage"
         },
         "$1K-$5K": {
@@ -12167,16 +12167,16 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x0c0e270cf879583d6a0142fc817e05b768d0434e": {
-      "score_overall": 62.7,
-      "n_total_fills": 33,
+      "score_overall": 58.3,
+      "n_total_fills": 35,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
-          "n": 7,
-          "score": 70,
+          "n": 8,
+          "score": 50,
           "sample_thin": false,
-          "avg_edge_bps": 31.99,
-          "reason": "positive edge"
+          "avg_edge_bps": -7.61,
+          "reason": "neutral"
         },
         "$500-$1K": {
           "n": 2,
@@ -12199,24 +12199,24 @@
           "reason": "positive edge"
         },
         "$25K+": {
-          "n": 2,
+          "n": 3,
           "score": 60,
           "sample_thin": true,
-          "reason": "thin sample n=2"
+          "reason": "thin sample n=3"
         }
       },
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x8980903d2a8f27323e4873178c7782d92cc8d4f4": {
-      "score_overall": 60.0,
-      "n_total_fills": 28,
+      "score_overall": 60.3,
+      "n_total_fills": 29,
       "buckets_with_signal": 2,
       "by_size_bucket": {
         "<$500": {
-          "n": 11,
+          "n": 12,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 254.85,
+          "avg_edge_bps": 227.88,
           "reason": "positive edge"
         },
         "$500-$1K": {
@@ -12248,8 +12248,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x93fb8127a1b21a112b11af936361225df0563e4a": {
-      "score_overall": 44.4,
-      "n_total_fills": 73,
+      "score_overall": 50.9,
+      "n_total_fills": 74,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
@@ -12267,11 +12267,11 @@
           "reason": "slippage"
         },
         "$1K-$5K": {
-          "n": 23,
-          "score": 50,
+          "n": 24,
+          "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": -31.33,
-          "reason": "neutral"
+          "avg_edge_bps": 34.69,
+          "reason": "positive edge"
         },
         "$5K-$25K": {
           "n": 26,
@@ -12331,8 +12331,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x1d1ade627d0bb0205758580b20d808573e720df6": {
-      "score_overall": 67.4,
-      "n_total_fills": 38,
+      "score_overall": 67.6,
+      "n_total_fills": 41,
       "buckets_with_signal": 2,
       "by_size_bucket": {
         "<$500": {
@@ -12355,10 +12355,10 @@
           "reason": "positive edge"
         },
         "$5K-$25K": {
-          "n": 17,
+          "n": 20,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 22.17,
+          "avg_edge_bps": 42.74,
           "reason": "positive edge"
         },
         "$25K+": {
@@ -12453,9 +12453,9 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xdc03d611e5bcc9f1c87edb95edeb91671471804c": {
-      "score_overall": 32.3,
-      "n_total_fills": 53,
-      "buckets_with_signal": 3,
+      "score_overall": 30.0,
+      "n_total_fills": 55,
+      "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
           "n": 5,
@@ -12465,10 +12465,11 @@
           "reason": "slippage"
         },
         "$500-$1K": {
-          "n": 4,
-          "score": 60,
-          "sample_thin": true,
-          "reason": "thin sample n=4"
+          "n": 6,
+          "score": 30,
+          "sample_thin": false,
+          "avg_edge_bps": -9156.86,
+          "reason": "slippage"
         },
         "$1K-$5K": {
           "n": 22,
@@ -12494,22 +12495,22 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x1bfdf7224c358405a486b5fd8489f13c2adcb5f3": {
-      "score_overall": 37.4,
-      "n_total_fills": 57,
+      "score_overall": 59.8,
+      "n_total_fills": 65,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
-          "n": 33,
-          "score": 40,
+          "n": 37,
+          "score": 80,
           "sample_thin": false,
-          "avg_edge_bps": -236.62,
-          "reason": "slippage"
+          "avg_edge_bps": 41.78,
+          "reason": "positive edge"
         },
         "$500-$1K": {
-          "n": 11,
+          "n": 15,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -474.44,
+          "avg_edge_bps": -312.72,
           "reason": "slippage"
         },
         "$1K-$5K": {
@@ -12535,8 +12536,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xd202bf6d89dc6bab1b9f00ead175f75466348973": {
-      "score_overall": 38.1,
-      "n_total_fills": 36,
+      "score_overall": 37.8,
+      "n_total_fills": 37,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
@@ -12553,10 +12554,10 @@
           "reason": "thin sample n=1"
         },
         "$1K-$5K": {
-          "n": 7,
+          "n": 8,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -685.4,
+          "avg_edge_bps": -618.46,
           "reason": "slippage"
         },
         "$5K-$25K": {
@@ -12614,8 +12615,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xad2b18343919cf24b56b6f822360937ab322f091": {
-      "score_overall": 40.6,
-      "n_total_fills": 34,
+      "score_overall": 39.0,
+      "n_total_fills": 40,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
@@ -12638,17 +12639,17 @@
           "reason": "positive edge"
         },
         "$5K-$25K": {
-          "n": 20,
+          "n": 24,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -59.65,
+          "avg_edge_bps": -177.36,
           "reason": "slippage"
         },
         "$25K+": {
-          "n": 5,
+          "n": 7,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -1171.31,
+          "avg_edge_bps": -1047.55,
           "reason": "slippage"
         }
       },
@@ -13014,22 +13015,22 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xa803c7e478c7539ba363a0de9399c4fc2c0b2949": {
-      "score_overall": 36.9,
-      "n_total_fills": 61,
+      "score_overall": 36.6,
+      "n_total_fills": 64,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
-          "n": 6,
-          "score": 30,
-          "sample_thin": false,
-          "avg_edge_bps": -761.52,
-          "reason": "slippage"
-        },
-        "$500-$1K": {
           "n": 8,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -34974.15,
+          "avg_edge_bps": -523.79,
+          "reason": "slippage"
+        },
+        "$500-$1K": {
+          "n": 9,
+          "score": 30,
+          "sample_thin": false,
+          "avg_edge_bps": -31073.69,
           "reason": "slippage"
         },
         "$1K-$5K": {
@@ -13056,8 +13057,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xdd92232bcdfbbac04132b3cbacbf32c2e5b16b2a": {
-      "score_overall": 58.7,
-      "n_total_fills": 46,
+      "score_overall": 59.2,
+      "n_total_fills": 48,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
@@ -13080,10 +13081,10 @@
           "reason": "positive edge"
         },
         "$5K-$25K": {
-          "n": 22,
+          "n": 24,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 270.89,
+          "avg_edge_bps": 254.49,
           "reason": "positive edge"
         },
         "$25K+": {
@@ -13098,14 +13099,14 @@
     },
     "0x5cb0db08b209ad5ce29dc72d265908a2bffbafce": {
       "score_overall": 60.0,
-      "n_total_fills": 31,
+      "n_total_fills": 33,
       "buckets_with_signal": 1,
       "by_size_bucket": {
         "<$500": {
-          "n": 30,
+          "n": 31,
           "score": 60,
           "sample_thin": false,
-          "avg_edge_bps": -9.67,
+          "avg_edge_bps": -9.35,
           "reason": "neutral"
         },
         "$500-$1K": {
@@ -13121,10 +13122,10 @@
           "reason": "thin sample n=1"
         },
         "$5K-$25K": {
-          "n": 0,
+          "n": 1,
           "score": 60,
           "sample_thin": true,
-          "reason": "thin sample n=0"
+          "reason": "thin sample n=1"
         },
         "$25K+": {
           "n": 0,
@@ -13295,15 +13296,15 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xa67685fa5213fd8167977bfb7b3f50c06d511c22": {
-      "score_overall": 43.2,
-      "n_total_fills": 44,
+      "score_overall": 42.9,
+      "n_total_fills": 45,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
-          "n": 21,
+          "n": 22,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -259.21,
+          "avg_edge_bps": -58.47,
           "reason": "slippage"
         },
         "$500-$1K": {
@@ -13336,8 +13337,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x6211f97a76ed5c4b1d658f637041ac5f293db89e": {
-      "score_overall": 55.2,
-      "n_total_fills": 27,
+      "score_overall": 55.7,
+      "n_total_fills": 28,
       "buckets_with_signal": 2,
       "by_size_bucket": {
         "<$500": {
@@ -13366,10 +13367,10 @@
           "reason": "slippage"
         },
         "$25K+": {
-          "n": 14,
+          "n": 15,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 17.99,
+          "avg_edge_bps": 9.71,
           "reason": "positive edge"
         }
       },
@@ -13377,7 +13378,7 @@
     },
     "0xfd2b117412a698f322b0cd18d6827dad262b8e50": {
       "score_overall": 30.9,
-      "n_total_fills": 64,
+      "n_total_fills": 65,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
@@ -13394,10 +13395,10 @@
           "reason": "thin sample n=2"
         },
         "$1K-$5K": {
-          "n": 24,
+          "n": 25,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -5196.98,
+          "avg_edge_bps": -4989.1,
           "reason": "slippage"
         },
         "$5K-$25K": {
@@ -13418,8 +13419,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xefddbb135e2cc2648e3ca6a6b3d4fa4994d5017f": {
-      "score_overall": 48.2,
-      "n_total_fills": 17,
+      "score_overall": 50.5,
+      "n_total_fills": 19,
       "buckets_with_signal": 2,
       "by_size_bucket": {
         "<$500": {
@@ -13442,10 +13443,10 @@
           "reason": "slippage"
         },
         "$5K-$25K": {
-          "n": 7,
+          "n": 9,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 124.28,
+          "avg_edge_bps": 125.95,
           "reason": "positive edge"
         },
         "$25K+": {
@@ -13538,8 +13539,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xe5efd6543002653b2eef940d8254911862ad9e7a": {
-      "score_overall": 31.7,
-      "n_total_fills": 35,
+      "score_overall": 31.6,
+      "n_total_fills": 37,
       "buckets_with_signal": 2,
       "by_size_bucket": {
         "<$500": {
@@ -13562,10 +13563,10 @@
           "reason": "slippage"
         },
         "$5K-$25K": {
-          "n": 16,
+          "n": 18,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -2230.19,
+          "avg_edge_bps": -1994.25,
           "reason": "slippage"
         },
         "$25K+": {
@@ -13578,8 +13579,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x2580d0e16709994f5b8a0206271ad14e2b911d56": {
-      "score_overall": 46.0,
-      "n_total_fills": 47,
+      "score_overall": 46.2,
+      "n_total_fills": 50,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
@@ -13595,17 +13596,17 @@
           "reason": "thin sample n=2"
         },
         "$1K-$5K": {
-          "n": 9,
+          "n": 10,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 833.29,
+          "avg_edge_bps": 381.97,
           "reason": "positive edge"
         },
         "$5K-$25K": {
-          "n": 30,
+          "n": 32,
           "score": 40,
           "sample_thin": false,
-          "avg_edge_bps": -432943.84,
+          "avg_edge_bps": -406234.95,
           "reason": "slippage"
         },
         "$25K+": {
@@ -13659,28 +13660,29 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xa5eb75a35f54385a6aca513b65cbf67e93b093bf": {
-      "score_overall": 49.0,
-      "n_total_fills": 40,
-      "buckets_with_signal": 2,
+      "score_overall": 46.0,
+      "n_total_fills": 45,
+      "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
-          "n": 20,
+          "n": 22,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -1042.24,
+          "avg_edge_bps": -864.2,
           "reason": "slippage"
         },
         "$500-$1K": {
-          "n": 4,
-          "score": 60,
-          "sample_thin": true,
-          "reason": "thin sample n=4"
+          "n": 5,
+          "score": 30,
+          "sample_thin": false,
+          "avg_edge_bps": -285.2,
+          "reason": "slippage"
         },
         "$1K-$5K": {
-          "n": 16,
+          "n": 18,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 978.14,
+          "avg_edge_bps": 718.54,
           "reason": "positive edge"
         },
         "$5K-$25K": {
@@ -13699,9 +13701,9 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x2785e7022dc20757108204b13c08cea8613b70ae": {
-      "score_overall": 41.6,
-      "n_total_fills": 50,
-      "buckets_with_signal": 2,
+      "score_overall": 41.1,
+      "n_total_fills": 53,
+      "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
           "n": 4,
@@ -13716,10 +13718,11 @@
           "reason": "thin sample n=1"
         },
         "$1K-$5K": {
-          "n": 4,
-          "score": 60,
-          "sample_thin": true,
-          "reason": "thin sample n=4"
+          "n": 6,
+          "score": 50,
+          "sample_thin": false,
+          "avg_edge_bps": -4.85,
+          "reason": "neutral"
         },
         "$5K-$25K": {
           "n": 10,
@@ -13729,10 +13732,10 @@
           "reason": "slippage"
         },
         "$25K+": {
-          "n": 31,
+          "n": 32,
           "score": 40,
           "sample_thin": false,
-          "avg_edge_bps": -3563.28,
+          "avg_edge_bps": -3452.76,
           "reason": "slippage"
         }
       },
@@ -13819,15 +13822,16 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xb2934313d3ab754f9207380e8b84502b30b3cb90": {
-      "score_overall": 60.0,
-      "n_total_fills": 4,
-      "buckets_with_signal": 0,
+      "score_overall": 30.0,
+      "n_total_fills": 5,
+      "buckets_with_signal": 1,
       "by_size_bucket": {
         "<$500": {
-          "n": 4,
-          "score": 60,
-          "sample_thin": true,
-          "reason": "thin sample n=4"
+          "n": 5,
+          "score": 30,
+          "sample_thin": false,
+          "avg_edge_bps": -408.84,
+          "reason": "slippage"
         },
         "$500-$1K": {
           "n": 0,
@@ -13937,8 +13941,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x47bc8458d60154c8a17c2d8ce332f088a602abd2": {
-      "score_overall": 33.5,
-      "n_total_fills": 52,
+      "score_overall": 33.3,
+      "n_total_fills": 54,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
@@ -13956,10 +13960,10 @@
           "reason": "slippage"
         },
         "$1K-$5K": {
-          "n": 20,
+          "n": 22,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -8420.79,
+          "avg_edge_bps": -7710.03,
           "reason": "slippage"
         },
         "$5K-$25K": {
@@ -14059,21 +14063,21 @@
     },
     "0x3a5164ade2d7938fe00b346fb5135ebd1a08b2b6": {
       "score_overall": 60.0,
-      "n_total_fills": 45,
+      "n_total_fills": 47,
       "buckets_with_signal": 1,
       "by_size_bucket": {
         "<$500": {
-          "n": 39,
+          "n": 40,
           "score": 60,
           "sample_thin": false,
-          "avg_edge_bps": -23.02,
+          "avg_edge_bps": -22.86,
           "reason": "neutral"
         },
         "$500-$1K": {
-          "n": 2,
+          "n": 3,
           "score": 60,
           "sample_thin": true,
-          "reason": "thin sample n=2"
+          "reason": "thin sample n=3"
         },
         "$1K-$5K": {
           "n": 4,
@@ -14097,8 +14101,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xa71093cafc0c099b4ccab24c3cb8018d817923c4": {
-      "score_overall": 44.8,
-      "n_total_fills": 29,
+      "score_overall": 45.7,
+      "n_total_fills": 30,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
@@ -14114,10 +14118,10 @@
           "reason": "thin sample n=0"
         },
         "$1K-$5K": {
-          "n": 5,
+          "n": 6,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 106.67,
+          "avg_edge_bps": 121.57,
           "reason": "positive edge"
         },
         "$5K-$25K": {
@@ -14220,8 +14224,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x23073ad0c9dff45353cedb11760570b995663934": {
-      "score_overall": 53.4,
-      "n_total_fills": 35,
+      "score_overall": 53.9,
+      "n_total_fills": 36,
       "buckets_with_signal": 2,
       "by_size_bucket": {
         "<$500": {
@@ -14237,10 +14241,10 @@
           "reason": "thin sample n=1"
         },
         "$1K-$5K": {
-          "n": 19,
+          "n": 20,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 285.4,
+          "avg_edge_bps": 282.61,
           "reason": "positive edge"
         },
         "$5K-$25K": {
@@ -14537,8 +14541,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xf5198df69e13937a40d1c76d6f72d9aa067d906b": {
-      "score_overall": 40.0,
-      "n_total_fills": 18,
+      "score_overall": 39.5,
+      "n_total_fills": 19,
       "buckets_with_signal": 1,
       "by_size_bucket": {
         "<$500": {
@@ -14560,10 +14564,10 @@
           "reason": "thin sample n=1"
         },
         "$5K-$25K": {
-          "n": 12,
+          "n": 13,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -350.56,
+          "avg_edge_bps": -323.12,
           "reason": "slippage"
         },
         "$25K+": {
@@ -14576,8 +14580,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x6ade597c0e2b43c0bf3542cada8a5e330d73f5b0": {
-      "score_overall": 52.4,
-      "n_total_fills": 66,
+      "score_overall": 57.2,
+      "n_total_fills": 67,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
@@ -14601,10 +14605,10 @@
           "reason": "slippage"
         },
         "$5K-$25K": {
-          "n": 29,
-          "score": 70,
+          "n": 30,
+          "score": 80,
           "sample_thin": false,
-          "avg_edge_bps": 1.61,
+          "avg_edge_bps": 8.22,
           "reason": "positive edge"
         },
         "$25K+": {
@@ -14617,8 +14621,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x0c154c190e293b7e5f8d453b5f690c4dc9599a45": {
-      "score_overall": 49.8,
-      "n_total_fills": 41,
+      "score_overall": 49.1,
+      "n_total_fills": 44,
       "buckets_with_signal": 2,
       "by_size_bucket": {
         "<$500": {
@@ -14634,10 +14638,10 @@
           "reason": "thin sample n=0"
         },
         "$1K-$5K": {
-          "n": 2,
+          "n": 3,
           "score": 60,
           "sample_thin": true,
-          "reason": "thin sample n=2"
+          "reason": "thin sample n=3"
         },
         "$5K-$25K": {
           "n": 18,
@@ -14647,10 +14651,10 @@
           "reason": "positive edge"
         },
         "$25K+": {
-          "n": 20,
+          "n": 22,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -267.01,
+          "avg_edge_bps": -324.7,
           "reason": "slippage"
         }
       },
@@ -14738,8 +14742,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x16c7f9b7b239c980929a2aa5d53b23c5cac03931": {
-      "score_overall": 33.2,
-      "n_total_fills": 28,
+      "score_overall": 33.1,
+      "n_total_fills": 29,
       "buckets_with_signal": 1,
       "by_size_bucket": {
         "<$500": {
@@ -14755,10 +14759,10 @@
           "reason": "thin sample n=1"
         },
         "$1K-$5K": {
-          "n": 25,
+          "n": 26,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -1162.57,
+          "avg_edge_bps": -1130.87,
           "reason": "slippage"
         },
         "$5K-$25K": {
@@ -14855,8 +14859,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x40ea9faef8f8eeac2b3262f2e1b75f9fbb16832f": {
-      "score_overall": 45.2,
-      "n_total_fills": 23,
+      "score_overall": 46.2,
+      "n_total_fills": 24,
       "buckets_with_signal": 2,
       "by_size_bucket": {
         "<$500": {
@@ -14872,10 +14876,10 @@
           "reason": "thin sample n=0"
         },
         "$1K-$5K": {
-          "n": 5,
+          "n": 6,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 1227.46,
+          "avg_edge_bps": 1024.25,
           "reason": "positive edge"
         },
         "$5K-$25K": {
@@ -14895,8 +14899,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x1cc16713196d456f86fa9c7387dd326a7f73b8df": {
-      "score_overall": 43.3,
-      "n_total_fills": 61,
+      "score_overall": 42.9,
+      "n_total_fills": 63,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
@@ -14913,10 +14917,10 @@
           "reason": "positive edge"
         },
         "$1K-$5K": {
-          "n": 21,
+          "n": 23,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -517.36,
+          "avg_edge_bps": -641.63,
           "reason": "slippage"
         },
         "$5K-$25K": {
@@ -14976,14 +14980,14 @@
     },
     "0xf8e35e78265c83de7e18204502b3842710bcfd17": {
       "score_overall": 80.0,
-      "n_total_fills": 48,
+      "n_total_fills": 52,
       "buckets_with_signal": 1,
       "by_size_bucket": {
         "<$500": {
-          "n": 48,
+          "n": 52,
           "score": 80,
           "sample_thin": false,
-          "avg_edge_bps": 429.72,
+          "avg_edge_bps": 577.11,
           "reason": "positive edge"
         },
         "$500-$1K": {
@@ -15171,8 +15175,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xf5f92940519a72da460b1c2a606bc1230f0e87b0": {
-      "score_overall": 57.0,
-      "n_total_fills": 20,
+      "score_overall": 58.2,
+      "n_total_fills": 22,
       "buckets_with_signal": 2,
       "by_size_bucket": {
         "<$500": {
@@ -15188,10 +15192,10 @@
           "reason": "thin sample n=3"
         },
         "$1K-$5K": {
-          "n": 9,
+          "n": 11,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 104.97,
+          "avg_edge_bps": 103.63,
           "reason": "positive edge"
         },
         "$5K-$25K": {
@@ -15212,14 +15216,14 @@
     },
     "0xc58df0b98437f613e20916c242403e0a6c009373": {
       "score_overall": 30.0,
-      "n_total_fills": 52,
+      "n_total_fills": 58,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
-          "n": 14,
+          "n": 17,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -91.51,
+          "avg_edge_bps": -78.22,
           "reason": "slippage"
         },
         "$500-$1K": {
@@ -15230,17 +15234,17 @@
           "reason": "slippage"
         },
         "$1K-$5K": {
-          "n": 17,
+          "n": 19,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -179.0,
+          "avg_edge_bps": -149.54,
           "reason": "slippage"
         },
         "$5K-$25K": {
-          "n": 10,
+          "n": 11,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -504460.36,
+          "avg_edge_bps": -458600.33,
           "reason": "slippage"
         },
         "$25K+": {
@@ -15254,7 +15258,7 @@
     },
     "0x1e7792acc779a6af8304bd7991ff31d16d468c33": {
       "score_overall": 69.5,
-      "n_total_fills": 41,
+      "n_total_fills": 44,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
@@ -15278,25 +15282,25 @@
           "reason": "positive edge"
         },
         "$5K-$25K": {
-          "n": 10,
+          "n": 12,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 3.65,
+          "avg_edge_bps": 51.44,
           "reason": "positive edge"
         },
         "$25K+": {
-          "n": 8,
+          "n": 9,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 77.92,
+          "avg_edge_bps": 58.67,
           "reason": "positive edge"
         }
       },
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x19e27eeb3641ae664e77dbb80c86021f048ece3c": {
-      "score_overall": 42.6,
-      "n_total_fills": 27,
+      "score_overall": 42.1,
+      "n_total_fills": 28,
       "buckets_with_signal": 2,
       "by_size_bucket": {
         "<$500": {
@@ -15319,10 +15323,10 @@
           "reason": "positive edge"
         },
         "$5K-$25K": {
-          "n": 18,
+          "n": 19,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -169.86,
+          "avg_edge_bps": -177.2,
           "reason": "slippage"
         },
         "$25K+": {
@@ -15336,14 +15340,14 @@
     },
     "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563": {
       "score_overall": 73.6,
-      "n_total_fills": 83,
+      "n_total_fills": 86,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
-          "n": 14,
+          "n": 15,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 62.68,
+          "avg_edge_bps": 58.5,
           "reason": "positive edge"
         },
         "$500-$1K": {
@@ -15353,10 +15357,10 @@
           "reason": "thin sample n=3"
         },
         "$1K-$5K": {
-          "n": 14,
+          "n": 15,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 113.71,
+          "avg_edge_bps": 46.25,
           "reason": "positive edge"
         },
         "$5K-$25K": {
@@ -15367,25 +15371,26 @@
           "reason": "positive edge"
         },
         "$25K+": {
-          "n": 33,
+          "n": 34,
           "score": 80,
           "sample_thin": false,
-          "avg_edge_bps": 90.75,
+          "avg_edge_bps": 88.56,
           "reason": "positive edge"
         }
       },
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xaa075924e1dc7cff3b9fab67401126338c4d2125": {
-      "score_overall": 46.4,
-      "n_total_fills": 25,
-      "buckets_with_signal": 2,
+      "score_overall": 48.8,
+      "n_total_fills": 26,
+      "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
-          "n": 4,
-          "score": 60,
-          "sample_thin": true,
-          "reason": "thin sample n=4"
+          "n": 5,
+          "score": 70,
+          "sample_thin": false,
+          "avg_edge_bps": 162.1,
+          "reason": "positive edge"
         },
         "$500-$1K": {
           "n": 1,
@@ -15575,8 +15580,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xfedc381bf3fb5d20433bb4a0216b15dbbc5c6398": {
-      "score_overall": 40.5,
-      "n_total_fills": 39,
+      "score_overall": 42.0,
+      "n_total_fills": 41,
       "buckets_with_signal": 2,
       "by_size_bucket": {
         "<$500": {
@@ -15598,10 +15603,10 @@
           "reason": "thin sample n=2"
         },
         "$5K-$25K": {
-          "n": 8,
+          "n": 10,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 37.19,
+          "avg_edge_bps": 211.57,
           "reason": "positive edge"
         },
         "$25K+": {
@@ -15615,8 +15620,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xdbade4c82fb72780a0db9a38f821d8671aba9c95": {
-      "score_overall": 45.5,
-      "n_total_fills": 80,
+      "score_overall": 48.6,
+      "n_total_fills": 84,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
@@ -15640,10 +15645,10 @@
           "reason": "positive edge"
         },
         "$5K-$25K": {
-          "n": 28,
-          "score": 30,
+          "n": 32,
+          "score": 40,
           "sample_thin": false,
-          "avg_edge_bps": -3982.42,
+          "avg_edge_bps": -3482.18,
           "reason": "slippage"
         },
         "$25K+": {
@@ -15657,8 +15662,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x30e443872ddf63b2908a49f92cd690c304a55102": {
-      "score_overall": 50.7,
-      "n_total_fills": 71,
+      "score_overall": 50.1,
+      "n_total_fills": 73,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
@@ -15676,10 +15681,10 @@
           "reason": "slippage"
         },
         "$1K-$5K": {
-          "n": 15,
+          "n": 17,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -7142.83,
+          "avg_edge_bps": -6934.08,
           "reason": "slippage"
         },
         "$5K-$25K": {
@@ -15699,15 +15704,15 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x160db9bb5bf012f21251a74737093bcdc36f5295": {
-      "score_overall": 63.9,
-      "n_total_fills": 88,
+      "score_overall": 64.4,
+      "n_total_fills": 91,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
-          "n": 40,
+          "n": 43,
           "score": 80,
           "sample_thin": false,
-          "avg_edge_bps": 387.14,
+          "avg_edge_bps": 360.13,
           "reason": "positive edge"
         },
         "$500-$1K": {
@@ -15741,8 +15746,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xacb206b460a17382a734de8d931cc176307eb989": {
-      "score_overall": 45.0,
-      "n_total_fills": 16,
+      "score_overall": 46.7,
+      "n_total_fills": 18,
       "buckets_with_signal": 1,
       "by_size_bucket": {
         "<$500": {
@@ -15771,17 +15776,17 @@
           "reason": "thin sample n=3"
         },
         "$25K+": {
-          "n": 0,
+          "n": 2,
           "score": 60,
           "sample_thin": true,
-          "reason": "thin sample n=0"
+          "reason": "thin sample n=2"
         }
       },
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x05e35d6c71ecf67517ffb289ea53427da8f84b87": {
-      "score_overall": 40.8,
-      "n_total_fills": 37,
+      "score_overall": 41.6,
+      "n_total_fills": 38,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
@@ -15805,10 +15810,10 @@
           "reason": "slippage"
         },
         "$5K-$25K": {
-          "n": 7,
+          "n": 8,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 264.24,
+          "avg_edge_bps": 209.72,
           "reason": "positive edge"
         },
         "$25K+": {
@@ -15899,15 +15904,15 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x5c3a1a602848565bb16165fcd460b00c3d43020b": {
-      "score_overall": 69.1,
-      "n_total_fills": 47,
+      "score_overall": 69.2,
+      "n_total_fills": 51,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
-          "n": 5,
+          "n": 6,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 102.83,
+          "avg_edge_bps": 178.28,
           "reason": "positive edge"
         },
         "$500-$1K": {
@@ -15917,24 +15922,24 @@
           "reason": "thin sample n=4"
         },
         "$1K-$5K": {
-          "n": 9,
+          "n": 10,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 105.72,
+          "avg_edge_bps": 117.37,
           "reason": "positive edge"
         },
         "$5K-$25K": {
-          "n": 20,
+          "n": 21,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 162.13,
+          "avg_edge_bps": 160.97,
           "reason": "positive edge"
         },
         "$25K+": {
-          "n": 9,
+          "n": 10,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 479.32,
+          "avg_edge_bps": 430.26,
           "reason": "positive edge"
         }
       },
@@ -15981,8 +15986,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x6b6fb933598b17d8ba2350481f4653628a16ce60": {
-      "score_overall": 63.0,
-      "n_total_fills": 47,
+      "score_overall": 63.1,
+      "n_total_fills": 48,
       "buckets_with_signal": 4,
       "by_size_bucket": {
         "<$500": {
@@ -16006,10 +16011,10 @@
           "reason": "neutral"
         },
         "$5K-$25K": {
-          "n": 24,
+          "n": 25,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 137.54,
+          "avg_edge_bps": 132.04,
           "reason": "positive edge"
         },
         "$25K+": {
@@ -16023,8 +16028,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x19254b55e7c48e88baab9e62cc218223a6544654": {
-      "score_overall": 47.2,
-      "n_total_fills": 39,
+      "score_overall": 46.8,
+      "n_total_fills": 40,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
@@ -16047,10 +16052,10 @@
           "reason": "positive edge"
         },
         "$5K-$25K": {
-          "n": 5,
+          "n": 6,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -350.57,
+          "avg_edge_bps": -257.42,
           "reason": "slippage"
         },
         "$25K+": {
@@ -16143,15 +16148,15 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x12ec6d71325afac2b4d25b3de94185e2c48d41ae": {
-      "score_overall": 32.0,
-      "n_total_fills": 61,
+      "score_overall": 31.9,
+      "n_total_fills": 62,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
-          "n": 16,
+          "n": 17,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -114424.74,
+          "avg_edge_bps": -107680.08,
           "reason": "slippage"
         },
         "$500-$1K": {
@@ -16184,8 +16189,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xfd2930a094c0a6900a2dc947e5db462d11ae77ae": {
-      "score_overall": 57.2,
-      "n_total_fills": 32,
+      "score_overall": 57.9,
+      "n_total_fills": 34,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
@@ -16208,10 +16213,10 @@
           "reason": "positive edge"
         },
         "$5K-$25K": {
-          "n": 6,
+          "n": 8,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 211.49,
+          "avg_edge_bps": 177.06,
           "reason": "positive edge"
         },
         "$25K+": {
@@ -16225,16 +16230,16 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x9d94f602535e518ee1cb6aade0ca9569f1b1017d": {
-      "score_overall": 44.7,
-      "n_total_fills": 55,
+      "score_overall": 71.9,
+      "n_total_fills": 57,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
-          "n": 37,
-          "score": 40,
+          "n": 39,
+          "score": 80,
           "sample_thin": false,
-          "avg_edge_bps": -400.42,
-          "reason": "slippage"
+          "avg_edge_bps": 22.12,
+          "reason": "positive edge"
         },
         "$500-$1K": {
           "n": 11,
@@ -16306,8 +16311,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xdb859a551fcf56e49416160911476bea7307152f": {
-      "score_overall": 46.2,
-      "n_total_fills": 40,
+      "score_overall": 46.8,
+      "n_total_fills": 41,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
@@ -16330,10 +16335,10 @@
           "reason": "slippage"
         },
         "$5K-$25K": {
-          "n": 14,
+          "n": 15,
           "score": 70,
           "sample_thin": false,
-          "avg_edge_bps": 404.11,
+          "avg_edge_bps": 372.71,
           "reason": "positive edge"
         },
         "$25K+": {
@@ -16426,8 +16431,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x343d4466dc323b850e5249394894c7381d91456e": {
-      "score_overall": 33.8,
-      "n_total_fills": 16,
+      "score_overall": 33.3,
+      "n_total_fills": 18,
       "buckets_with_signal": 1,
       "by_size_bucket": {
         "<$500": {
@@ -16455,25 +16460,25 @@
           "reason": "thin sample n=2"
         },
         "$25K+": {
-          "n": 14,
+          "n": 16,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -83.67,
+          "avg_edge_bps": -102.58,
           "reason": "slippage"
         }
       },
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xe9cbb1c9b3f7f411dd4fdf2ea7afa780c8b4d096": {
-      "score_overall": 30.0,
-      "n_total_fills": 50,
+      "score_overall": 35.9,
+      "n_total_fills": 54,
       "buckets_with_signal": 2,
       "by_size_bucket": {
         "<$500": {
-          "n": 28,
-          "score": 30,
+          "n": 32,
+          "score": 40,
           "sample_thin": false,
-          "avg_edge_bps": -5093.25,
+          "avg_edge_bps": -4514.53,
           "reason": "slippage"
         },
         "$500-$1K": {
@@ -16505,15 +16510,15 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x23c8a4c266d10ba5846837eac391fea89ed6f293": {
-      "score_overall": 32.1,
-      "n_total_fills": 28,
+      "score_overall": 31.9,
+      "n_total_fills": 32,
       "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
-          "n": 9,
+          "n": 11,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -241.32,
+          "avg_edge_bps": -258.36,
           "reason": "slippage"
         },
         "$500-$1K": {
@@ -16523,10 +16528,10 @@
           "reason": "thin sample n=2"
         },
         "$1K-$5K": {
-          "n": 11,
+          "n": 13,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -1251.29,
+          "avg_edge_bps": -1127.42,
           "reason": "slippage"
         },
         "$5K-$25K": {
@@ -16586,9 +16591,9 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xc31d0a0d63d760d72a1236d16beaa6a71c854ebe": {
-      "score_overall": 52.9,
-      "n_total_fills": 38,
-      "buckets_with_signal": 2,
+      "score_overall": 53.8,
+      "n_total_fills": 40,
+      "buckets_with_signal": 3,
       "by_size_bucket": {
         "<$500": {
           "n": 15,
@@ -16604,17 +16609,18 @@
           "reason": "thin sample n=2"
         },
         "$1K-$5K": {
-          "n": 14,
+          "n": 15,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -340.38,
+          "avg_edge_bps": -322.68,
           "reason": "slippage"
         },
         "$5K-$25K": {
-          "n": 4,
-          "score": 60,
-          "sample_thin": true,
-          "reason": "thin sample n=4"
+          "n": 5,
+          "score": 70,
+          "sample_thin": false,
+          "avg_edge_bps": 179.56,
+          "reason": "positive edge"
         },
         "$25K+": {
           "n": 3,
@@ -16665,16 +16671,16 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0x51fd8f0358cc9e8a1ee5f87a0c7e3b07ed634272": {
-      "score_overall": 37.2,
-      "n_total_fills": 29,
+      "score_overall": 48.3,
+      "n_total_fills": 30,
       "buckets_with_signal": 2,
       "by_size_bucket": {
         "<$500": {
-          "n": 16,
-          "score": 30,
+          "n": 17,
+          "score": 50,
           "sample_thin": false,
-          "avg_edge_bps": -155.94,
-          "reason": "slippage"
+          "avg_edge_bps": -24.86,
+          "reason": "neutral"
         },
         "$500-$1K": {
           "n": 4,
@@ -16744,8 +16750,8 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xef1bfe068ea3eb4c357d95805baf1050fd528697": {
-      "score_overall": 31.8,
-      "n_total_fills": 33,
+      "score_overall": 32.5,
+      "n_total_fills": 36,
       "buckets_with_signal": 2,
       "by_size_bucket": {
         "<$500": {
@@ -16755,16 +16761,16 @@
           "reason": "thin sample n=1"
         },
         "$500-$1K": {
-          "n": 1,
+          "n": 2,
           "score": 60,
           "sample_thin": true,
-          "reason": "thin sample n=1"
+          "reason": "thin sample n=2"
         },
         "$1K-$5K": {
-          "n": 20,
+          "n": 22,
           "score": 30,
           "sample_thin": false,
-          "avg_edge_bps": -247359.31,
+          "avg_edge_bps": -224978.82,
           "reason": "slippage"
         },
         "$5K-$25K": {
@@ -16862,15 +16868,16 @@
       "methodology_version": "copyability-v2-size-aware-v0.1"
     },
     "0xb1ca909e848cc24ec4e220ce1c453bc290c51705": {
-      "score_overall": 60.0,
-      "n_total_fills": 12,
-      "buckets_with_signal": 0,
+      "score_overall": 56.2,
+      "n_total_fills": 13,
+      "buckets_with_signal": 1,
       "by_size_bucket": {
         "<$500": {
-          "n": 4,
-          "score": 60,
-          "sample_thin": true,
-          "reason": "thin sample n=4"
+          "n": 5,
+          "score": 50,
+          "sample_thin": false,
+          "avg_edge_bps": -31.27,
+          "reason": "neutral"
         },
         "$500-$1K": {
           "n": 2,
