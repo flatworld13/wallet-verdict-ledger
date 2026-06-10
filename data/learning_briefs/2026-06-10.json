@@ -2,14 +2,14 @@
   "schema_version": 1,
   "methodology_version": "learning-brief-v0.1",
   "date": "2026-06-10",
-  "built_at_unix": 1781087673,
-  "day_n": 28,
+  "built_at_unix": 1781102485,
+  "day_n": 29,
   "milestone": "Day-7",
   "ledger_source": "data/copyability_audit_ledger.json",
   "ledger_methodology": "copyability-validation-v0.1",
   "tier_rollup": {
     "AVOID": {
-      "n_decisions": 247,
+      "n_decisions": 248,
       "n_resolved": 169,
       "n_positive_for_follower": 110,
       "positive_rate_for_follower": 0.6509,
@@ -18,24 +18,24 @@
       "avg_follower_pnl": 1.8443,
       "insufficient_n": false
     },
-    "COPY_SMALL": {
-      "n_decisions": 93,
-      "n_resolved": 76,
-      "n_positive_for_follower": 48,
-      "positive_rate_for_follower": 0.6316,
-      "tier_correct_rate": 0.6316,
-      "tier_correct_meaning": "follower would have made money",
-      "avg_follower_pnl": 9.3135,
-      "insufficient_n": false
-    },
     "WAIT": {
-      "n_decisions": 798,
-      "n_resolved": 737,
-      "n_positive_for_follower": 537,
-      "positive_rate_for_follower": 0.7286,
+      "n_decisions": 829,
+      "n_resolved": 767,
+      "n_positive_for_follower": 554,
+      "positive_rate_for_follower": 0.7223,
       "tier_correct_rate": null,
       "tier_correct_meaning": "neutral \u00b7 WAIT does not commit to direction",
-      "avg_follower_pnl": 18.1994,
+      "avg_follower_pnl": 17.9263,
+      "insufficient_n": false
+    },
+    "COPY_SMALL": {
+      "n_decisions": 68,
+      "n_resolved": 51,
+      "n_positive_for_follower": 34,
+      "positive_rate_for_follower": 0.6667,
+      "tier_correct_rate": 0.6667,
+      "tier_correct_meaning": "follower would have made money",
+      "avg_follower_pnl": 8.0829,
       "insufficient_n": false
     },
     "COPY_NOW": {
