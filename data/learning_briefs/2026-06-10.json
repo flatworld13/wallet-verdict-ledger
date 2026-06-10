@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "methodology_version": "learning-brief-v0.1",
+  "date": "2026-06-10",
+  "built_at_unix": 1781087673,
+  "day_n": 28,
+  "milestone": "Day-7",
+  "ledger_source": "data/copyability_audit_ledger.json",
+  "ledger_methodology": "copyability-validation-v0.1",
+  "tier_rollup": {
+    "AVOID": {
+      "n_decisions": 247,
+      "n_resolved": 169,
+      "n_positive_for_follower": 110,
+      "positive_rate_for_follower": 0.6509,
+      "tier_correct_rate": 0.3491,
+      "tier_correct_meaning": "follower would have lost money (AVOID was right)",
+      "avg_follower_pnl": 1.8443,
+      "insufficient_n": false
+    },
+    "COPY_SMALL": {
+      "n_decisions": 93,
+      "n_resolved": 76,
+      "n_positive_for_follower": 48,
+      "positive_rate_for_follower": 0.6316,
+      "tier_correct_rate": 0.6316,
+      "tier_correct_meaning": "follower would have made money",
+      "avg_follower_pnl": 9.3135,
+      "insufficient_n": false
+    },
+    "WAIT": {
+      "n_decisions": 798,
+      "n_resolved": 737,
+      "n_positive_for_follower": 537,
+      "positive_rate_for_follower": 0.7286,
+      "tier_correct_rate": null,
+      "tier_correct_meaning": "neutral \u00b7 WAIT does not commit to direction",
+      "avg_follower_pnl": 18.1994,
+      "insufficient_n": false
+    },
+    "COPY_NOW": {
+      "n_decisions": 0,
+      "n_resolved": 0,
+      "n_positive_for_follower": 0,
+      "positive_rate_for_follower": null,
+      "tier_correct_rate": null,
+      "tier_correct_meaning": "follower would have made money",
+      "avg_follower_pnl": null,
+      "insufficient_n": true
+    }
+  },
+  "triggers_fired": [
+    {
+      "trigger_id": "AVOID_correct_below_55",
+      "tier": "AVOID",
+      "severity": "FAIL",
+      "description": "AVOID tier_correct_rate < 55% at Day 30+ with n \u2265 30",
+      "action": "AVOID is not predicting losses \u00b7 re-examine AVOID feature weighting \u00b7 publish AVOID v3.1",
+      "observed": {
+        "tier_correct_rate": 0.3491,
+        "n_resolved": 169,
+        "avg_follower_pnl": 1.8443
+      }
+    }
+  ],
+  "counts": {
+    "PASS": 0,
+    "WARN": 0,
+    "FAIL": 1,
+    "TOTAL_FIRES": 1
+  },
+  "doctrine_note": "Pre-registered triggers per /methodology/copyability-validation \u00b7 committed in advance \u00b7 cannot be ad-hoc revised. M5 legal armor \u00b7 S&P-pattern. Operator-approved 2026-05-13 v60fp."
+}
