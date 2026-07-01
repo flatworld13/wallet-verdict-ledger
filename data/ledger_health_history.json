@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at_unix": 1778645491,
+  "generated_at_unix": 1782173836,
   "description": "Ledger health history \u00b7 auto-job \u00b7 the moat watchdog",
   "history": [
     {
@@ -1386,6 +1386,622 @@
         "ots_methodology_version": "L4-truth-anchor v2.0",
         "vpi_nav_days": 95,
         "cohort_size": 404,
+        "vpi_methodology_version": "VPI v1.0 candidate \u00b7 pre-published"
+      }
+    },
+    {
+      "generated_at_unix": 1781793701,
+      "date": "2026-06-18",
+      "overall": "FAIL",
+      "counts": {
+        "PASS": 17,
+        "WARN": 1,
+        "FAIL": 1,
+        "TOTAL": 19
+      },
+      "checks": [
+        {
+          "name": "A1.engine_head_age",
+          "dimension": "freshness",
+          "severity": "PASS",
+          "value": 10.9,
+          "message": "last engine commit \u00b7 10.9h ago"
+        },
+        {
+          "name": "A2.vpi_nav_age",
+          "dimension": "freshness",
+          "severity": "WARN",
+          "value": 37.8,
+          "message": "VPI NAV \u00b7 date=2026-06-17 \u00b7 37.8h since generated"
+        },
+        {
+          "name": "A3.audit_ledger_age",
+          "dimension": "freshness",
+          "severity": "PASS",
+          "value": 10.9,
+          "message": "audit_ledger built 10.9h ago \u00b7 2431 rows"
+        },
+        {
+          "name": "A4.ots_anchor_today",
+          "dimension": "freshness",
+          "severity": "PASS",
+          "value": "2026-06-18",
+          "message": "OTS anchor latest = 2026-06-18 \u00b7 today"
+        },
+        {
+          "name": "B1.required_files",
+          "dimension": "integrity",
+          "severity": "PASS",
+          "value": 0,
+          "message": "12/12 required files present"
+        },
+        {
+          "name": "B2.json_parse",
+          "dimension": "integrity",
+          "severity": "PASS",
+          "value": 0,
+          "message": "12 JSON files parse cleanly"
+        },
+        {
+          "name": "B3.ots_verify_status",
+          "dimension": "integrity",
+          "severity": "PASS",
+          "value": "pending",
+          "message": "latest OTS receipt status = pending"
+        },
+        {
+          "name": "B4.methodology_version",
+          "dimension": "integrity",
+          "severity": "PASS",
+          "value": "VPI v1.0 candidate \u00b7 pre-published",
+          "message": "methodology version \u00b7 VPI v1.0 candidate \u00b7 pre-published"
+        },
+        {
+          "name": "C1.audit_ledger_growth",
+          "dimension": "growth",
+          "severity": "PASS",
+          "value": 2431,
+          "message": "audit_ledger grew \u00b7 1293 \u2192 2431 (+1138)"
+        },
+        {
+          "name": "C2.ots_anchor_growth",
+          "dimension": "growth",
+          "severity": "PASS",
+          "value": 41,
+          "message": "OTS history \u00b7 41 days"
+        },
+        {
+          "name": "C3.vpi_nav_history_growth",
+          "dimension": "growth",
+          "severity": "PASS",
+          "value": 104,
+          "message": "VPI NAV history \u00b7 104 days"
+        },
+        {
+          "name": "C4.cohort_size",
+          "dimension": "growth",
+          "severity": "PASS",
+          "value": 491,
+          "message": "cohort size \u00b7 491"
+        },
+        {
+          "name": "D1.vpi_eligibility_size",
+          "dimension": "value",
+          "severity": "PASS",
+          "value": 69,
+          "message": "VPI eligibility cohort \u00b7 69"
+        },
+        {
+          "name": "D2.forward_chain_count",
+          "dimension": "value",
+          "severity": "PASS",
+          "value": 375,
+          "message": "375 forward-witnessed chains (live + resolved-from-forward)"
+        },
+        {
+          "name": "D3.backtest_coverage_pct",
+          "dimension": "value",
+          "severity": "PASS",
+          "value": 100.0,
+          "message": "100.0% of cohort has backtest data (491/491)"
+        },
+        {
+          "name": "D4.tier2_coverage_pct",
+          "dimension": "value",
+          "severity": "FAIL",
+          "value": 0.0,
+          "message": "0.0% of cohort has Tier 2 microstructure (0/491)"
+        },
+        {
+          "name": "D5.follow_strict_size",
+          "dimension": "value",
+          "severity": "PASS",
+          "value": 15,
+          "message": "15 wallets in FOLLOW_STRICT subset \u00b7 the actually-profitable cohort"
+        },
+        {
+          "name": "E1.methodology_stable",
+          "dimension": "methodology",
+          "severity": "PASS",
+          "value": "VPI v1.0 candidate \u00b7 pre-published",
+          "message": "methodology version stable \u00b7 VPI v1.0 candidate \u00b7 pre-published"
+        },
+        {
+          "name": "E2.ots_methodology_stable",
+          "dimension": "methodology",
+          "severity": "PASS",
+          "value": "L4-truth-anchor v2.0",
+          "message": "OTS methodology stable \u00b7 L4-truth-anchor v2.0"
+        }
+      ],
+      "snapshot": {
+        "audit_ledger_rows": 2431,
+        "ots_anchor_days": 41,
+        "ots_methodology_version": "L4-truth-anchor v2.0",
+        "vpi_nav_days": 104,
+        "cohort_size": 491,
+        "vpi_methodology_version": "VPI v1.0 candidate \u00b7 pre-published"
+      }
+    },
+    {
+      "generated_at_unix": 1782106764,
+      "date": "2026-06-22",
+      "overall": "FAIL",
+      "counts": {
+        "PASS": 14,
+        "WARN": 1,
+        "FAIL": 4,
+        "TOTAL": 19
+      },
+      "checks": [
+        {
+          "name": "A1.engine_head_age",
+          "dimension": "freshness",
+          "severity": "FAIL",
+          "value": 97.9,
+          "message": "last engine commit \u00b7 97.9h ago"
+        },
+        {
+          "name": "A2.vpi_nav_age",
+          "dimension": "freshness",
+          "severity": "FAIL",
+          "value": 124.7,
+          "message": "VPI NAV \u00b7 date=2026-06-17 \u00b7 124.7h since generated"
+        },
+        {
+          "name": "A3.audit_ledger_age",
+          "dimension": "freshness",
+          "severity": "FAIL",
+          "value": 54.6,
+          "message": "audit_ledger built 54.6h ago \u00b7 2436 rows"
+        },
+        {
+          "name": "A4.ots_anchor_today",
+          "dimension": "freshness",
+          "severity": "WARN",
+          "value": "2026-06-18",
+          "message": "OTS anchor latest = 2026-06-18 \u00b7 stale"
+        },
+        {
+          "name": "B1.required_files",
+          "dimension": "integrity",
+          "severity": "PASS",
+          "value": 0,
+          "message": "12/12 required files present"
+        },
+        {
+          "name": "B2.json_parse",
+          "dimension": "integrity",
+          "severity": "PASS",
+          "value": 0,
+          "message": "12 JSON files parse cleanly"
+        },
+        {
+          "name": "B3.ots_verify_status",
+          "dimension": "integrity",
+          "severity": "PASS",
+          "value": "pending",
+          "message": "latest OTS receipt status = pending"
+        },
+        {
+          "name": "B4.methodology_version",
+          "dimension": "integrity",
+          "severity": "PASS",
+          "value": "VPI v1.0 candidate \u00b7 pre-published",
+          "message": "methodology version \u00b7 VPI v1.0 candidate \u00b7 pre-published"
+        },
+        {
+          "name": "C1.audit_ledger_growth",
+          "dimension": "growth",
+          "severity": "PASS",
+          "value": 2436,
+          "message": "audit_ledger grew \u00b7 2431 \u2192 2436 (+5)"
+        },
+        {
+          "name": "C2.ots_anchor_growth",
+          "dimension": "growth",
+          "severity": "PASS",
+          "value": 41,
+          "message": "OTS history \u00b7 41 days"
+        },
+        {
+          "name": "C3.vpi_nav_history_growth",
+          "dimension": "growth",
+          "severity": "PASS",
+          "value": 104,
+          "message": "VPI NAV history \u00b7 104 days"
+        },
+        {
+          "name": "C4.cohort_size",
+          "dimension": "growth",
+          "severity": "PASS",
+          "value": 502,
+          "message": "cohort size \u00b7 502"
+        },
+        {
+          "name": "D1.vpi_eligibility_size",
+          "dimension": "value",
+          "severity": "PASS",
+          "value": 69,
+          "message": "VPI eligibility cohort \u00b7 69"
+        },
+        {
+          "name": "D2.forward_chain_count",
+          "dimension": "value",
+          "severity": "PASS",
+          "value": 380,
+          "message": "380 forward-witnessed chains (live + resolved-from-forward)"
+        },
+        {
+          "name": "D3.backtest_coverage_pct",
+          "dimension": "value",
+          "severity": "PASS",
+          "value": 97.8,
+          "message": "97.8% of cohort has backtest data (491/502)"
+        },
+        {
+          "name": "D4.tier2_coverage_pct",
+          "dimension": "value",
+          "severity": "FAIL",
+          "value": 0.0,
+          "message": "0.0% of cohort has Tier 2 microstructure (0/502)"
+        },
+        {
+          "name": "D5.follow_strict_size",
+          "dimension": "value",
+          "severity": "PASS",
+          "value": 15,
+          "message": "15 wallets in FOLLOW_STRICT subset \u00b7 the actually-profitable cohort"
+        },
+        {
+          "name": "E1.methodology_stable",
+          "dimension": "methodology",
+          "severity": "PASS",
+          "value": "VPI v1.0 candidate \u00b7 pre-published",
+          "message": "methodology version stable \u00b7 VPI v1.0 candidate \u00b7 pre-published"
+        },
+        {
+          "name": "E2.ots_methodology_stable",
+          "dimension": "methodology",
+          "severity": "PASS",
+          "value": "L4-truth-anchor v2.0",
+          "message": "OTS methodology stable \u00b7 L4-truth-anchor v2.0"
+        }
+      ],
+      "snapshot": {
+        "audit_ledger_rows": 2436,
+        "ots_anchor_days": 41,
+        "ots_methodology_version": "L4-truth-anchor v2.0",
+        "vpi_nav_days": 104,
+        "cohort_size": 502,
+        "vpi_methodology_version": "VPI v1.0 candidate \u00b7 pre-published"
+      }
+    },
+    {
+      "generated_at_unix": 1782119205,
+      "date": "2026-06-22",
+      "overall": "FAIL",
+      "counts": {
+        "PASS": 15,
+        "WARN": 1,
+        "FAIL": 3,
+        "TOTAL": 19
+      },
+      "checks": [
+        {
+          "name": "A1.engine_head_age",
+          "dimension": "freshness",
+          "severity": "FAIL",
+          "value": 101.3,
+          "message": "last engine commit \u00b7 101.3h ago"
+        },
+        {
+          "name": "A2.vpi_nav_age",
+          "dimension": "freshness",
+          "severity": "FAIL",
+          "value": 128.2,
+          "message": "VPI NAV \u00b7 date=2026-06-17 \u00b7 128.2h since generated"
+        },
+        {
+          "name": "A3.audit_ledger_age",
+          "dimension": "freshness",
+          "severity": "PASS",
+          "value": 3.3,
+          "message": "audit_ledger built 3.3h ago \u00b7 3059 rows"
+        },
+        {
+          "name": "A4.ots_anchor_today",
+          "dimension": "freshness",
+          "severity": "WARN",
+          "value": "2026-06-18",
+          "message": "OTS anchor latest = 2026-06-18 \u00b7 stale"
+        },
+        {
+          "name": "B1.required_files",
+          "dimension": "integrity",
+          "severity": "PASS",
+          "value": 0,
+          "message": "12/12 required files present"
+        },
+        {
+          "name": "B2.json_parse",
+          "dimension": "integrity",
+          "severity": "PASS",
+          "value": 0,
+          "message": "12 JSON files parse cleanly"
+        },
+        {
+          "name": "B3.ots_verify_status",
+          "dimension": "integrity",
+          "severity": "PASS",
+          "value": "pending",
+          "message": "latest OTS receipt status = pending"
+        },
+        {
+          "name": "B4.methodology_version",
+          "dimension": "integrity",
+          "severity": "PASS",
+          "value": "VPI v1.0 candidate \u00b7 pre-published",
+          "message": "methodology version \u00b7 VPI v1.0 candidate \u00b7 pre-published"
+        },
+        {
+          "name": "C1.audit_ledger_growth",
+          "dimension": "growth",
+          "severity": "PASS",
+          "value": 3059,
+          "message": "audit_ledger grew \u00b7 2436 \u2192 3059 (+623)"
+        },
+        {
+          "name": "C2.ots_anchor_growth",
+          "dimension": "growth",
+          "severity": "PASS",
+          "value": 41,
+          "message": "OTS history \u00b7 41 days"
+        },
+        {
+          "name": "C3.vpi_nav_history_growth",
+          "dimension": "growth",
+          "severity": "PASS",
+          "value": 104,
+          "message": "VPI NAV history \u00b7 104 days"
+        },
+        {
+          "name": "C4.cohort_size",
+          "dimension": "growth",
+          "severity": "PASS",
+          "value": 502,
+          "message": "cohort size \u00b7 502"
+        },
+        {
+          "name": "D1.vpi_eligibility_size",
+          "dimension": "value",
+          "severity": "PASS",
+          "value": 69,
+          "message": "VPI eligibility cohort \u00b7 69"
+        },
+        {
+          "name": "D2.forward_chain_count",
+          "dimension": "value",
+          "severity": "PASS",
+          "value": 381,
+          "message": "381 forward-witnessed chains (live + resolved-from-forward)"
+        },
+        {
+          "name": "D3.backtest_coverage_pct",
+          "dimension": "value",
+          "severity": "PASS",
+          "value": 97.8,
+          "message": "97.8% of cohort has backtest data (491/502)"
+        },
+        {
+          "name": "D4.tier2_coverage_pct",
+          "dimension": "value",
+          "severity": "FAIL",
+          "value": 0.0,
+          "message": "0.0% of cohort has Tier 2 microstructure (0/502)"
+        },
+        {
+          "name": "D5.follow_strict_size",
+          "dimension": "value",
+          "severity": "PASS",
+          "value": 15,
+          "message": "15 wallets in FOLLOW_STRICT subset \u00b7 the actually-profitable cohort"
+        },
+        {
+          "name": "E1.methodology_stable",
+          "dimension": "methodology",
+          "severity": "PASS",
+          "value": "VPI v1.0 candidate \u00b7 pre-published",
+          "message": "methodology version stable \u00b7 VPI v1.0 candidate \u00b7 pre-published"
+        },
+        {
+          "name": "E2.ots_methodology_stable",
+          "dimension": "methodology",
+          "severity": "PASS",
+          "value": "L4-truth-anchor v2.0",
+          "message": "OTS methodology stable \u00b7 L4-truth-anchor v2.0"
+        }
+      ],
+      "snapshot": {
+        "audit_ledger_rows": 3059,
+        "ots_anchor_days": 41,
+        "ots_methodology_version": "L4-truth-anchor v2.0",
+        "vpi_nav_days": 104,
+        "cohort_size": 502,
+        "vpi_methodology_version": "VPI v1.0 candidate \u00b7 pre-published"
+      }
+    },
+    {
+      "generated_at_unix": 1782173836,
+      "date": "2026-06-23",
+      "overall": "FAIL",
+      "counts": {
+        "PASS": 15,
+        "WARN": 3,
+        "FAIL": 1,
+        "TOTAL": 19
+      },
+      "checks": [
+        {
+          "name": "A1.engine_head_age",
+          "dimension": "freshness",
+          "severity": "PASS",
+          "value": 9.3,
+          "message": "last engine commit \u00b7 9.3h ago"
+        },
+        {
+          "name": "A2.vpi_nav_age",
+          "dimension": "freshness",
+          "severity": "PASS",
+          "value": 10.2,
+          "message": "VPI NAV \u00b7 date=2026-06-22 \u00b7 10.2h since generated"
+        },
+        {
+          "name": "A3.audit_ledger_age",
+          "dimension": "freshness",
+          "severity": "PASS",
+          "value": 10.2,
+          "message": "audit_ledger built 10.2h ago \u00b7 3059 rows"
+        },
+        {
+          "name": "A4.ots_anchor_today",
+          "dimension": "freshness",
+          "severity": "WARN",
+          "value": "2026-06-22",
+          "message": "OTS anchor latest = 2026-06-22 \u00b7 stale"
+        },
+        {
+          "name": "B1.required_files",
+          "dimension": "integrity",
+          "severity": "PASS",
+          "value": 0,
+          "message": "12/12 required files present"
+        },
+        {
+          "name": "B2.json_parse",
+          "dimension": "integrity",
+          "severity": "PASS",
+          "value": 0,
+          "message": "12 JSON files parse cleanly"
+        },
+        {
+          "name": "B3.ots_verify_status",
+          "dimension": "integrity",
+          "severity": "PASS",
+          "value": "pending",
+          "message": "latest OTS receipt status = pending"
+        },
+        {
+          "name": "B4.methodology_version",
+          "dimension": "integrity",
+          "severity": "PASS",
+          "value": "VPI v1.0 candidate \u00b7 pre-published",
+          "message": "methodology version \u00b7 VPI v1.0 candidate \u00b7 pre-published"
+        },
+        {
+          "name": "C1.audit_ledger_growth",
+          "dimension": "growth",
+          "severity": "WARN",
+          "value": 3059,
+          "message": "audit_ledger unchanged \u00b7 3059 rows"
+        },
+        {
+          "name": "C2.ots_anchor_growth",
+          "dimension": "growth",
+          "severity": "PASS",
+          "value": 43,
+          "message": "OTS history \u00b7 43 days"
+        },
+        {
+          "name": "C3.vpi_nav_history_growth",
+          "dimension": "growth",
+          "severity": "PASS",
+          "value": 105,
+          "message": "VPI NAV history \u00b7 105 days"
+        },
+        {
+          "name": "C4.cohort_size",
+          "dimension": "growth",
+          "severity": "WARN",
+          "value": 500,
+          "message": "cohort SHRANK \u00b7 502 \u2192 500 (could be intentional eviction)"
+        },
+        {
+          "name": "D1.vpi_eligibility_size",
+          "dimension": "value",
+          "severity": "PASS",
+          "value": 70,
+          "message": "VPI eligibility cohort \u00b7 70"
+        },
+        {
+          "name": "D2.forward_chain_count",
+          "dimension": "value",
+          "severity": "PASS",
+          "value": 381,
+          "message": "381 forward-witnessed chains (live + resolved-from-forward)"
+        },
+        {
+          "name": "D3.backtest_coverage_pct",
+          "dimension": "value",
+          "severity": "PASS",
+          "value": 98.2,
+          "message": "98.2% of cohort has backtest data (491/500)"
+        },
+        {
+          "name": "D4.tier2_coverage_pct",
+          "dimension": "value",
+          "severity": "FAIL",
+          "value": 0.0,
+          "message": "0.0% of cohort has Tier 2 microstructure (0/500)"
+        },
+        {
+          "name": "D5.follow_strict_size",
+          "dimension": "value",
+          "severity": "PASS",
+          "value": 15,
+          "message": "15 wallets in FOLLOW_STRICT subset \u00b7 the actually-profitable cohort"
+        },
+        {
+          "name": "E1.methodology_stable",
+          "dimension": "methodology",
+          "severity": "PASS",
+          "value": "VPI v1.0 candidate \u00b7 pre-published",
+          "message": "methodology version stable \u00b7 VPI v1.0 candidate \u00b7 pre-published"
+        },
+        {
+          "name": "E2.ots_methodology_stable",
+          "dimension": "methodology",
+          "severity": "PASS",
+          "value": "L4-truth-anchor v2.0",
+          "message": "OTS methodology stable \u00b7 L4-truth-anchor v2.0"
+        }
+      ],
+      "snapshot": {
+        "audit_ledger_rows": 3059,
+        "ots_anchor_days": 43,
+        "ots_methodology_version": "L4-truth-anchor v2.0",
+        "vpi_nav_days": 105,
+        "cohort_size": 500,
         "vpi_methodology_version": "VPI v1.0 candidate \u00b7 pre-published"
       }
     }
