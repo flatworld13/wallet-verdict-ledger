@@ -11,7 +11,7 @@
     "4_builder",
     "5_hedge_fund"
   ],
-  "built_at_unix": 1783157860,
+  "built_at_unix": 1783169882,
   "trade_size_usd": 100.0,
   "ledger_source": "data/copyability_audit_ledger.json",
   "ledger_methodology": "copyability-validation-v0.1",
@@ -167,16 +167,6 @@
               "pnl_usd_at_100": 2122.22
             },
             {
-              "chain_id": "4ff8cd148e4e036abaa50628f3f45ef51b5b7f84b1984b30cbe2b31ec624ab1f",
-              "condition_id": "0x70d706fe084905dbafb95dfff13b727e4073efc3ef590adc8330562bac5d26de",
-              "market_question": "US x Iran diplomatic meeting by May 15, 2026?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1777148768,
-              "pnl_per_dollar": 1.2919,
-              "pnl_usd_at_100": 129.19
-            },
-            {
               "chain_id": "af6ea287a0f5134f3721563686275ee32ffa6487609f7413adcd6e9264d3406a",
               "condition_id": "0x36f665053a7ca5c102f2db15cfc49b1b9f38fa820a5f2bb4bde87bf9fbd9a2ab",
               "market_question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 15, 2026?",
@@ -185,6 +175,16 @@
               "wallet_fill_unix": 1777383284,
               "pnl_per_dollar": 2.9216,
               "pnl_usd_at_100": 292.16
+            },
+            {
+              "chain_id": "4ff8cd148e4e036abaa50628f3f45ef51b5b7f84b1984b30cbe2b31ec624ab1f",
+              "condition_id": "0x70d706fe084905dbafb95dfff13b727e4073efc3ef590adc8330562bac5d26de",
+              "market_question": "US x Iran diplomatic meeting by May 15, 2026?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1777148768,
+              "pnl_per_dollar": 1.2919,
+              "pnl_usd_at_100": 129.19
             },
             {
               "chain_id": "e9f6d5803ecc5b8bf54caf8c17d439f7f29edd9d705827fa116944a3d4b6c560",
@@ -260,6 +260,48 @@
         }
       }
     },
+    "0xb886580698ede4b18de3e446b2d8da8bcedd81b3": {
+      "pseudonym": "0xB886580698eDE4b18DE3E446b2D8Da8bCEdd81B3-1767532547794",
+      "windows": {
+        "30d": {
+          "days": 30,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 0,
+          "avoid_saved_usd": 0,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": []
+        },
+        "90d": {
+          "days": 90,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 1,
+          "avoid_saved_usd": -2757.14,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": [
+            {
+              "chain_id": "2912e01f3284c8904de5bd8e0a4972f3d3152aca2006e924eb4812a537a4768f",
+              "condition_id": "0x0c38dd9305e3205557885183f0730270779e7e426b0ec3e7743f23963b6d6e4a",
+              "market_question": "Will France, UK, or Germany strike Iran by June 30?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1778066264,
+              "pnl_per_dollar": 27.5714,
+              "pnl_usd_at_100": 2757.14
+            }
+          ]
+        }
+      }
+    },
     "0x162f6fff88a52864f2ecc9833e58089d5254798d": {
       "pseudonym": "Valen9",
       "windows": {
@@ -319,7 +361,7 @@
               "pnl_usd_at_100": -100.0
             },
             {
-              "chain_id": "d1e6863f87acd4c4",
+              "chain_id": "797897055547b209c4c0d287cf42eca6116fff853e8055f71cbd94a80552205e",
               "condition_id": "0x518a5b030b205706b8ffe6bbad9bd3de59548348e5c0471827f5de21e513333c",
               "market_question": "Strait of Hormuz traffic returns to normal by end of May?",
               "side": "Yes",
@@ -329,7 +371,7 @@
               "pnl_usd_at_100": 129.89
             },
             {
-              "chain_id": "797897055547b209c4c0d287cf42eca6116fff853e8055f71cbd94a80552205e",
+              "chain_id": "d1e6863f87acd4c4",
               "condition_id": "0x518a5b030b205706b8ffe6bbad9bd3de59548348e5c0471827f5de21e513333c",
               "market_question": "Strait of Hormuz traffic returns to normal by end of May?",
               "side": "Yes",
@@ -422,142 +464,6 @@
         }
       }
     },
-    "0xb886580698ede4b18de3e446b2d8da8bcedd81b3": {
-      "pseudonym": "0xB886580698eDE4b18DE3E446b2D8Da8bCEdd81B3-1767532547794",
-      "windows": {
-        "30d": {
-          "days": 30,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 0,
-          "avoid_saved_usd": 0,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": []
-        },
-        "90d": {
-          "days": 90,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 1,
-          "avoid_saved_usd": -2757.14,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": [
-            {
-              "chain_id": "2912e01f3284c8904de5bd8e0a4972f3d3152aca2006e924eb4812a537a4768f",
-              "condition_id": "0x0c38dd9305e3205557885183f0730270779e7e426b0ec3e7743f23963b6d6e4a",
-              "market_question": "Will France, UK, or Germany strike Iran by June 30?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1778066264,
-              "pnl_per_dollar": 27.5714,
-              "pnl_usd_at_100": 2757.14
-            }
-          ]
-        }
-      }
-    },
-    "0xc6dd722558dbfbd8fa780efcbe819ed8c6604b9f": {
-      "pseudonym": "0xc6dD722558DB",
-      "windows": {
-        "30d": {
-          "days": 30,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 0,
-          "avoid_saved_usd": 0,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": []
-        },
-        "90d": {
-          "days": 90,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 1,
-          "avoid_saved_usd": -71.74,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": [
-            {
-              "chain_id": "f61bdd6c59cd8584e791e2008115bb172dae16ed5a19629c9f52efb63b1eb6e4",
-              "condition_id": "0x348cd9adf4f6855f58bd9c6dbf9ff251c4142ef77233a5dc95c65b4b61cd2187",
-              "market_question": "Strait of Hormuz traffic returns to normal by end of June?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1778101199,
-              "pnl_per_dollar": 0.7174,
-              "pnl_usd_at_100": 71.74
-            }
-          ]
-        }
-      }
-    },
-    "0xc6587b11a2209e46dfe3928b31c5514a8e33b784": {
-      "pseudonym": "Erasmus.",
-      "windows": {
-        "30d": {
-          "days": 30,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 0,
-          "avoid_saved_usd": 0,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": []
-        },
-        "90d": {
-          "days": 90,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 2,
-          "avoid_saved_usd": -534.94,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": [
-            {
-              "chain_id": "3f96067b4e5f0bfa2393c9dc4256dd3bc65eec3a587008510193130c67f0b1c2",
-              "condition_id": "0x348cd9adf4f6855f58bd9c6dbf9ff251c4142ef77233a5dc95c65b4b61cd2187",
-              "market_question": "Strait of Hormuz traffic returns to normal by end of June?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1778008660,
-              "pnl_per_dollar": 0.8899,
-              "pnl_usd_at_100": 88.99
-            },
-            {
-              "chain_id": "6d62d4d244ab3bcd4910925af8c244a9c48139ba715756c068fd6f7dc5c698b2",
-              "condition_id": "0x1db02ba50e2312a62b4104de691cc7a76065d8d0da40decf93eb1b914a3217b7",
-              "market_question": "US x Iran permanent peace deal by May 15, 2026?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1778081484,
-              "pnl_per_dollar": 4.4595,
-              "pnl_usd_at_100": 445.95
-            }
-          ]
-        }
-      }
-    },
     "0x095dcfb123a4bc035ee6b0d624bab0cc964352cf": {
       "pseudonym": "Extra-Large-Begonia",
       "windows": {
@@ -615,6 +521,100 @@
             }
           ],
           "all_avoid_calls": []
+        }
+      }
+    },
+    "0xc6587b11a2209e46dfe3928b31c5514a8e33b784": {
+      "pseudonym": "Erasmus.",
+      "windows": {
+        "30d": {
+          "days": 30,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 0,
+          "avoid_saved_usd": 0,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": []
+        },
+        "90d": {
+          "days": 90,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 2,
+          "avoid_saved_usd": -534.94,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": [
+            {
+              "chain_id": "3f96067b4e5f0bfa2393c9dc4256dd3bc65eec3a587008510193130c67f0b1c2",
+              "condition_id": "0x348cd9adf4f6855f58bd9c6dbf9ff251c4142ef77233a5dc95c65b4b61cd2187",
+              "market_question": "Strait of Hormuz traffic returns to normal by end of June?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1778008660,
+              "pnl_per_dollar": 0.8899,
+              "pnl_usd_at_100": 88.99
+            },
+            {
+              "chain_id": "6d62d4d244ab3bcd4910925af8c244a9c48139ba715756c068fd6f7dc5c698b2",
+              "condition_id": "0x1db02ba50e2312a62b4104de691cc7a76065d8d0da40decf93eb1b914a3217b7",
+              "market_question": "US x Iran permanent peace deal by May 15, 2026?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1778081484,
+              "pnl_per_dollar": 4.4595,
+              "pnl_usd_at_100": 445.95
+            }
+          ]
+        }
+      }
+    },
+    "0xc6dd722558dbfbd8fa780efcbe819ed8c6604b9f": {
+      "pseudonym": "0xc6dD722558DB",
+      "windows": {
+        "30d": {
+          "days": 30,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 0,
+          "avoid_saved_usd": 0,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": []
+        },
+        "90d": {
+          "days": 90,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 1,
+          "avoid_saved_usd": -71.74,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": [
+            {
+              "chain_id": "f61bdd6c59cd8584e791e2008115bb172dae16ed5a19629c9f52efb63b1eb6e4",
+              "condition_id": "0x348cd9adf4f6855f58bd9c6dbf9ff251c4142ef77233a5dc95c65b4b61cd2187",
+              "market_question": "Strait of Hormuz traffic returns to normal by end of June?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1778101199,
+              "pnl_per_dollar": 0.7174,
+              "pnl_usd_at_100": 71.74
+            }
+          ]
         }
       }
     },
@@ -994,58 +994,6 @@
         }
       }
     },
-    "0x2974bd0059e48f215c391882976e0f1b4c8c9c23": {
-      "pseudonym": "65765757",
-      "windows": {
-        "30d": {
-          "days": 30,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 0,
-          "avoid_saved_usd": 0,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": []
-        },
-        "90d": {
-          "days": 90,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 2,
-          "avoid_saved_usd": -40.03,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": [
-            {
-              "chain_id": "92c65e14824c3758a08d75360a10767b1189b57e8073f334b442cbf0654abf11",
-              "condition_id": "0x6897736d782ce70f47126dfcec6669073f563d6e757e60bc61c0367370d6f73e",
-              "market_question": "Kharg Island no longer under Iranian control by June 30?",
-              "side": "No",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1777088408,
-              "pnl_per_dollar": 0.1581,
-              "pnl_usd_at_100": 15.81
-            },
-            {
-              "chain_id": "96452949c2f136d2f6db0a41ec5eeb8ebfdba9ee97996ff967a7740edada9ce5",
-              "condition_id": "0xa5d0dfc81e6a87faa737df4ca52fae7e18b63d9f7568e364c6c7d8c45fb39e8b",
-              "market_question": "Will Crude Oil (CL) hit (HIGH) $130 by end of June?",
-              "side": "No",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1776466346,
-              "pnl_per_dollar": 0.2422,
-              "pnl_usd_at_100": 24.22
-            }
-          ]
-        }
-      }
-    },
     "0x7f9e2d1df78614564a70becc7fa14aa9a6623a0e": {
       "pseudonym": "nojnn",
       "windows": {
@@ -1103,6 +1051,58 @@
               "wallet_fill_unix": 1775941491,
               "pnl_per_dollar": 0.0811,
               "pnl_usd_at_100": 8.11
+            }
+          ]
+        }
+      }
+    },
+    "0x2974bd0059e48f215c391882976e0f1b4c8c9c23": {
+      "pseudonym": "65765757",
+      "windows": {
+        "30d": {
+          "days": 30,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 0,
+          "avoid_saved_usd": 0,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": []
+        },
+        "90d": {
+          "days": 90,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 2,
+          "avoid_saved_usd": -40.03,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": [
+            {
+              "chain_id": "92c65e14824c3758a08d75360a10767b1189b57e8073f334b442cbf0654abf11",
+              "condition_id": "0x6897736d782ce70f47126dfcec6669073f563d6e757e60bc61c0367370d6f73e",
+              "market_question": "Kharg Island no longer under Iranian control by June 30?",
+              "side": "No",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1777088408,
+              "pnl_per_dollar": 0.1581,
+              "pnl_usd_at_100": 15.81
+            },
+            {
+              "chain_id": "96452949c2f136d2f6db0a41ec5eeb8ebfdba9ee97996ff967a7740edada9ce5",
+              "condition_id": "0xa5d0dfc81e6a87faa737df4ca52fae7e18b63d9f7568e364c6c7d8c45fb39e8b",
+              "market_question": "Will Crude Oil (CL) hit (HIGH) $130 by end of June?",
+              "side": "No",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1776466346,
+              "pnl_per_dollar": 0.2422,
+              "pnl_usd_at_100": 24.22
             }
           ]
         }
@@ -1461,48 +1461,6 @@
         }
       }
     },
-    "0xecb14ac6e9ca447ce2f2912e6217b43d7b655da3": {
-      "pseudonym": "0xECB14AC6E9ca",
-      "windows": {
-        "30d": {
-          "days": 30,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 0,
-          "avoid_saved_usd": 0,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": []
-        },
-        "90d": {
-          "days": 90,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 1,
-          "avoid_saved_usd": -653.45,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": [
-            {
-              "chain_id": "18f84775c1dde813619d303a1a4574063f4ba87bd3d64d57dba22a1c1f1809f8",
-              "condition_id": "0x1db02ba50e2312a62b4104de691cc7a76065d8d0da40decf93eb1b914a3217b7",
-              "market_question": "US x Iran permanent peace deal by May 15, 2026?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1777660770,
-              "pnl_per_dollar": 6.5345,
-              "pnl_usd_at_100": 653.45
-            }
-          ]
-        }
-      }
-    },
     "0xfd2b117412a698f322b0cd18d6827dad262b8e50": {
       "pseudonym": "surf",
       "windows": {
@@ -1605,6 +1563,48 @@
         }
       }
     },
+    "0xecb14ac6e9ca447ce2f2912e6217b43d7b655da3": {
+      "pseudonym": "0xECB14AC6E9ca",
+      "windows": {
+        "30d": {
+          "days": 30,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 0,
+          "avoid_saved_usd": 0,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": []
+        },
+        "90d": {
+          "days": 90,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 1,
+          "avoid_saved_usd": -653.45,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": [
+            {
+              "chain_id": "18f84775c1dde813619d303a1a4574063f4ba87bd3d64d57dba22a1c1f1809f8",
+              "condition_id": "0x1db02ba50e2312a62b4104de691cc7a76065d8d0da40decf93eb1b914a3217b7",
+              "market_question": "US x Iran permanent peace deal by May 15, 2026?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1777660770,
+              "pnl_per_dollar": 6.5345,
+              "pnl_usd_at_100": 653.45
+            }
+          ]
+        }
+      }
+    },
     "0x1e1f17412069c0736adfaadf8ee7f46e5612c855": {
       "pseudonym": "0x1e1f17412069",
       "windows": {
@@ -1642,6 +1642,68 @@
               "wallet_fill_unix": 1778004216,
               "pnl_per_dollar": 2.3333,
               "pnl_usd_at_100": 233.33
+            }
+          ]
+        }
+      }
+    },
+    "0xde7be6d489bce070a959e0cb813128ae659b5f4b": {
+      "pseudonym": "wan123",
+      "windows": {
+        "30d": {
+          "days": 30,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 0,
+          "avoid_saved_usd": 0,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": []
+        },
+        "90d": {
+          "days": 90,
+          "trade_size_usd": 100.0,
+          "n_copy_decisions": 0,
+          "copy_pnl_usd": 0,
+          "copy_pnl_per_dollar": null,
+          "n_avoid_decisions": 3,
+          "avoid_saved_usd": -1484.11,
+          "best_call": null,
+          "worst_call": null,
+          "all_copy_calls": [],
+          "all_avoid_calls": [
+            {
+              "chain_id": "d3d80e6e5062eba23ce454ef2543c6ad9343c60f78456fa8d72f640dee8fc378",
+              "condition_id": "0x1db02ba50e2312a62b4104de691cc7a76065d8d0da40decf93eb1b914a3217b7",
+              "market_question": "US x Iran permanent peace deal by May 15, 2026?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1777570334,
+              "pnl_per_dollar": 6.3806,
+              "pnl_usd_at_100": 638.06
+            },
+            {
+              "chain_id": "af83865efac83b941f9c0bb4a25f4d6d608b1246cde0dbd3374475c617a3251d",
+              "condition_id": "0x36f665053a7ca5c102f2db15cfc49b1b9f38fa820a5f2bb4bde87bf9fbd9a2ab",
+              "market_question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 15, 2026?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1778273995,
+              "pnl_per_dollar": 3.2105,
+              "pnl_usd_at_100": 321.05
+            },
+            {
+              "chain_id": "6339c35aff1352e110f355cf15ed77818ccc32d8365f98aea4ee8e0c7b4dedb5",
+              "condition_id": "0x2509daa236d3aea83c910be4e00f50027dd72e6fa0d350536d07cd079f58d7ab",
+              "market_question": "US x Iran permanent peace deal by May 13, 2026?",
+              "side": "Yes",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1778206297,
+              "pnl_per_dollar": 5.25,
+              "pnl_usd_at_100": 525.0
             }
           ]
         }
@@ -1689,68 +1751,6 @@
         }
       }
     },
-    "0xde7be6d489bce070a959e0cb813128ae659b5f4b": {
-      "pseudonym": "wan123",
-      "windows": {
-        "30d": {
-          "days": 30,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 0,
-          "avoid_saved_usd": 0,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": []
-        },
-        "90d": {
-          "days": 90,
-          "trade_size_usd": 100.0,
-          "n_copy_decisions": 0,
-          "copy_pnl_usd": 0,
-          "copy_pnl_per_dollar": null,
-          "n_avoid_decisions": 3,
-          "avoid_saved_usd": -1484.11,
-          "best_call": null,
-          "worst_call": null,
-          "all_copy_calls": [],
-          "all_avoid_calls": [
-            {
-              "chain_id": "af83865efac83b941f9c0bb4a25f4d6d608b1246cde0dbd3374475c617a3251d",
-              "condition_id": "0x36f665053a7ca5c102f2db15cfc49b1b9f38fa820a5f2bb4bde87bf9fbd9a2ab",
-              "market_question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 15, 2026?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1778273995,
-              "pnl_per_dollar": 3.2105,
-              "pnl_usd_at_100": 321.05
-            },
-            {
-              "chain_id": "d3d80e6e5062eba23ce454ef2543c6ad9343c60f78456fa8d72f640dee8fc378",
-              "condition_id": "0x1db02ba50e2312a62b4104de691cc7a76065d8d0da40decf93eb1b914a3217b7",
-              "market_question": "US x Iran permanent peace deal by May 15, 2026?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1777570334,
-              "pnl_per_dollar": 6.3806,
-              "pnl_usd_at_100": 638.06
-            },
-            {
-              "chain_id": "6339c35aff1352e110f355cf15ed77818ccc32d8365f98aea4ee8e0c7b4dedb5",
-              "condition_id": "0x2509daa236d3aea83c910be4e00f50027dd72e6fa0d350536d07cd079f58d7ab",
-              "market_question": "US x Iran permanent peace deal by May 13, 2026?",
-              "side": "Yes",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1778206297,
-              "pnl_per_dollar": 5.25,
-              "pnl_usd_at_100": 525.0
-            }
-          ]
-        }
-      }
-    },
     "0x7f2cf8d7491c729e718d42ff9b4a6f00ce9a48e4": {
       "pseudonym": "RidelElonMM",
       "windows": {
@@ -1780,16 +1780,6 @@
           "all_copy_calls": [],
           "all_avoid_calls": [
             {
-              "chain_id": "18e8d1a03c15ddd9",
-              "condition_id": "0x12769a1940e97ae47319323d32fff7f3e1d2eaefcffbe351fb0a4437e9fd4586",
-              "market_question": "Will ByteDance have the second-best Coding AI model at the end of May 2026?",
-              "side": "No",
-              "tier_label": "AVOID",
-              "wallet_fill_unix": 1778784694,
-              "pnl_per_dollar": 0.0101,
-              "pnl_usd_at_100": 1.01
-            },
-            {
               "chain_id": "d9bd5656502ad090",
               "condition_id": "0x554b7c5817b68846e14a4cc609b0b0e297edc9cdcf89d64bb0c76865363ec65a",
               "market_question": "Will Alibaba have the second-best Coding AI model at the end of May 2026?",
@@ -1810,9 +1800,9 @@
               "pnl_usd_at_100": 1.01
             },
             {
-              "chain_id": "d14631cd215bec0e",
-              "condition_id": "0x0f9cbde9628509238afdfec1bb67f7ac37a80ecfe21b6fb9c5e87073ca8d5bfb",
-              "market_question": "Will DeepSeek have the second-best Coding AI model at the end of May 2026?",
+              "chain_id": "18e8d1a03c15ddd9",
+              "condition_id": "0x12769a1940e97ae47319323d32fff7f3e1d2eaefcffbe351fb0a4437e9fd4586",
+              "market_question": "Will ByteDance have the second-best Coding AI model at the end of May 2026?",
               "side": "No",
               "tier_label": "AVOID",
               "wallet_fill_unix": 1778784694,
@@ -1823,6 +1813,16 @@
               "chain_id": "443a2ac0c6daae7b",
               "condition_id": "0x55356b779ac1f904a00290247318cdcb327daa54d4253c1470d3dbbe46706e56",
               "market_question": "Will Meta have the second-best Coding AI model at the end of May 2026?",
+              "side": "No",
+              "tier_label": "AVOID",
+              "wallet_fill_unix": 1778784694,
+              "pnl_per_dollar": 0.0101,
+              "pnl_usd_at_100": 1.01
+            },
+            {
+              "chain_id": "d14631cd215bec0e",
+              "condition_id": "0x0f9cbde9628509238afdfec1bb67f7ac37a80ecfe21b6fb9c5e87073ca8d5bfb",
+              "market_question": "Will DeepSeek have the second-best Coding AI model at the end of May 2026?",
               "side": "No",
               "tier_label": "AVOID",
               "wallet_fill_unix": 1778784694,
@@ -1870,9 +1870,9 @@
               "pnl_usd_at_100": 1.01
             },
             {
-              "chain_id": "f7ff6d55b5e72b6a",
-              "condition_id": "0x02964c50a45c809fdc3612b757c7c7b202c5b4d894e4b5c3aa2a816e497f9304",
-              "market_question": "Will David Burch be the Republican nominee for Senate in Oregon?",
+              "chain_id": "79449f61c69fe9ce",
+              "condition_id": "0x274ee44c98d362acd061b9146a8b3c38e6bdfc205087882f18f71002fd65a0bd",
+              "market_question": "Will Tim Skelton be the Republican nominee for Senate in Oregon?",
               "side": "No",
               "tier_label": "AVOID",
               "wallet_fill_unix": 1778698360,
@@ -1880,9 +1880,9 @@
               "pnl_usd_at_100": 1.01
             },
             {
-              "chain_id": "79449f61c69fe9ce",
-              "condition_id": "0x274ee44c98d362acd061b9146a8b3c38e6bdfc205087882f18f71002fd65a0bd",
-              "market_question": "Will Tim Skelton be the Republican nominee for Senate in Oregon?",
+              "chain_id": "f7ff6d55b5e72b6a",
+              "condition_id": "0x02964c50a45c809fdc3612b757c7c7b202c5b4d894e4b5c3aa2a816e497f9304",
+              "market_question": "Will David Burch be the Republican nominee for Senate in Oregon?",
               "side": "No",
               "tier_label": "AVOID",
               "wallet_fill_unix": 1778698360,
@@ -2146,9 +2146,29 @@
           },
           "all_copy_calls": [
             {
-              "chain_id": "ed9789c570a91f57",
-              "condition_id": "0x40f9948c7ddbd0513de2f74584cd2393ea287fbd70852b5889fc45f2c9ce4913",
-              "market_question": "Will Alba Party win the most seats in the 2026 Scottish Parliament election?",
+              "chain_id": "33c807fe007ec2c1",
+              "condition_id": "0x1da5ad3ac9a992a3d8c451eb9c0327243de5486812e7e3cc8dd36cf82af7ad49",
+              "market_question": "Will Scottish Conservatives win the most seats in the 2026 Scottish Parliament election?",
+              "side": "No",
+              "tier_label": "COPY_SMALL",
+              "wallet_fill_unix": 1777381512,
+              "pnl_per_dollar": 0.0101,
+              "pnl_usd_at_100": 1.01
+            },
+            {
+              "chain_id": "931f396c8f0c6dfb",
+              "condition_id": "0x28b3b52fd518498b8ecab082e9d966dbf199eee7a9f044d140ed23113c3890b5",
+              "market_question": "Will Reform UK win the most seats in the 2026 Scottish Parliament election?",
+              "side": "No",
+              "tier_label": "COPY_SMALL",
+              "wallet_fill_unix": 1777381512,
+              "pnl_per_dollar": 0.0101,
+              "pnl_usd_at_100": 1.01
+            },
+            {
+              "chain_id": "54f2b546d88af535",
+              "condition_id": "0x6c092f56b50843832aef4927a74232591c700d11be0b09a013401870aacd07f1",
+              "market_question": "Will Scottish Green Party win the most seats in the 2026 Scottish Parliament election?",
               "side": "No",
               "tier_label": "COPY_SMALL",
               "wallet_fill_unix": 1777381512,
@@ -2186,9 +2206,9 @@
               "pnl_usd_at_100": -100.0
             },
             {
-              "chain_id": "33c807fe007ec2c1",
-              "condition_id": "0x1da5ad3ac9a992a3d8c451eb9c0327243de5486812e7e3cc8dd36cf82af7ad49",
-              "market_question": "Will Scottish Conservatives win the most seats in the 2026 Scottish Parliament election?",
+              "chain_id": "ed9789c570a91f57",
+              "condition_id": "0x40f9948c7ddbd0513de2f74584cd2393ea287fbd70852b5889fc45f2c9ce4913",
+              "market_question": "Will Alba Party win the most seats in the 2026 Scottish Parliament election?",
               "side": "No",
               "tier_label": "COPY_SMALL",
               "wallet_fill_unix": 1777381512,
@@ -2196,22 +2216,12 @@
               "pnl_usd_at_100": 1.01
             },
             {
-              "chain_id": "54f2b546d88af535",
-              "condition_id": "0x6c092f56b50843832aef4927a74232591c700d11be0b09a013401870aacd07f1",
-              "market_question": "Will Scottish Green Party win the most seats in the 2026 Scottish Parliament election?",
+              "chain_id": "f13757727e3080dc",
+              "condition_id": "0x6f416ddd0d4e15ad8d76fff96851a154c16713a26aafc753173c49acf5c6eb74",
+              "market_question": "Will Benjamin Netanyahu be the next leader out before 2027?",
               "side": "No",
               "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1777381512,
-              "pnl_per_dollar": 0.0101,
-              "pnl_usd_at_100": 1.01
-            },
-            {
-              "chain_id": "931f396c8f0c6dfb",
-              "condition_id": "0x28b3b52fd518498b8ecab082e9d966dbf199eee7a9f044d140ed23113c3890b5",
-              "market_question": "Will Reform UK win the most seats in the 2026 Scottish Parliament election?",
-              "side": "No",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1777381512,
+              "wallet_fill_unix": 1777379838,
               "pnl_per_dollar": 0.0101,
               "pnl_usd_at_100": 1.01
             },
@@ -2236,9 +2246,9 @@
               "pnl_usd_at_100": 1.01
             },
             {
-              "chain_id": "cebd3db77ada2944",
-              "condition_id": "0x5b2acdcefaa34108ed0ccfa33d92f754b60af717f8905cbaec24c37e411f4f3b",
-              "market_question": "Will Recep Tayyip Erdo\u011fan be the next leader out before 2027?",
+              "chain_id": "832070c1ef159460",
+              "condition_id": "0xd9901ef1d9fbab09dfbf78ebbd90782456f44c0ef57ac1691ae69e6b4759c2a4",
+              "market_question": "Will Anthony Albanese be the next leader out before 2027?",
               "side": "No",
               "tier_label": "COPY_SMALL",
               "wallet_fill_unix": 1777389684,
@@ -2256,39 +2266,9 @@
               "pnl_usd_at_100": 1.01
             },
             {
-              "chain_id": "1bb29a2240ebd298",
-              "condition_id": "0x37e18924db74da1bfe2a1c5ec3b098596e51cf6199bb6edd84bad2fdfbeccab2",
-              "market_question": "Will Claudia Sheinbaum be the next leader out before 2027?",
-              "side": "No",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1777379838,
-              "pnl_per_dollar": 0.0101,
-              "pnl_usd_at_100": 1.01
-            },
-            {
               "chain_id": "b174702971ffa6e6",
               "condition_id": "0x1690499c62aab886fd6f057e0e385454da7cd0c06c103daa5a28f98a9022f08a",
               "market_question": "Will Friedrich Merz be the next leader out before 2027?",
-              "side": "No",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1777389684,
-              "pnl_per_dollar": 0.0101,
-              "pnl_usd_at_100": 1.01
-            },
-            {
-              "chain_id": "f13757727e3080dc",
-              "condition_id": "0x6f416ddd0d4e15ad8d76fff96851a154c16713a26aafc753173c49acf5c6eb74",
-              "market_question": "Will Benjamin Netanyahu be the next leader out before 2027?",
-              "side": "No",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1777379838,
-              "pnl_per_dollar": 0.0101,
-              "pnl_usd_at_100": 1.01
-            },
-            {
-              "chain_id": "832070c1ef159460",
-              "condition_id": "0xd9901ef1d9fbab09dfbf78ebbd90782456f44c0ef57ac1691ae69e6b4759c2a4",
-              "market_question": "Will Anthony Albanese be the next leader out before 2027?",
               "side": "No",
               "tier_label": "COPY_SMALL",
               "wallet_fill_unix": 1777389684,
@@ -2306,12 +2286,42 @@
               "pnl_usd_at_100": 1.63
             },
             {
+              "chain_id": "1bb29a2240ebd298",
+              "condition_id": "0x37e18924db74da1bfe2a1c5ec3b098596e51cf6199bb6edd84bad2fdfbeccab2",
+              "market_question": "Will Claudia Sheinbaum be the next leader out before 2027?",
+              "side": "No",
+              "tier_label": "COPY_SMALL",
+              "wallet_fill_unix": 1777379838,
+              "pnl_per_dollar": 0.0101,
+              "pnl_usd_at_100": 1.01
+            },
+            {
               "chain_id": "f7482c7988730a00",
               "condition_id": "0x5e02b629947c0d067d1be44a977a0b790eb34026beefb83ae165261710fd70fe",
               "market_question": "Will Miguel D\u00edaz-Canel be the next leader out before 2027?",
               "side": "No",
               "tier_label": "COPY_SMALL",
               "wallet_fill_unix": 1777389684,
+              "pnl_per_dollar": 0.0101,
+              "pnl_usd_at_100": 1.01
+            },
+            {
+              "chain_id": "cebd3db77ada2944",
+              "condition_id": "0x5b2acdcefaa34108ed0ccfa33d92f754b60af717f8905cbaec24c37e411f4f3b",
+              "market_question": "Will Recep Tayyip Erdo\u011fan be the next leader out before 2027?",
+              "side": "No",
+              "tier_label": "COPY_SMALL",
+              "wallet_fill_unix": 1777389684,
+              "pnl_per_dollar": 0.0101,
+              "pnl_usd_at_100": 1.01
+            },
+            {
+              "chain_id": "5e00fd2968a20437",
+              "condition_id": "0xd79fe765f7e2adfbaa07429050cf179647f409202f12c93879e966f1da99ecaa",
+              "market_question": "Will Vladimir Putin be the next leader out before 2027?",
+              "side": "No",
+              "tier_label": "COPY_SMALL",
+              "wallet_fill_unix": 1777379838,
               "pnl_per_dollar": 0.0101,
               "pnl_usd_at_100": 1.01
             },
@@ -2336,12 +2346,12 @@
               "pnl_usd_at_100": 1.01
             },
             {
-              "chain_id": "793ae5553abb3302",
-              "condition_id": "0x85a96cbc8c3dc059ef461a17001efd347c1d000c6cad6c2b32f7e866bfd66e3a",
-              "market_question": "Will Volodymyr Zelenskyy be the next leader out before 2027?",
+              "chain_id": "b393d500622f639f",
+              "condition_id": "0xe111b1ee12df2943a3e7c2f860f2cf38b1e00d9091450dee18b18989cdd2a990",
+              "market_question": "Will Sanae Takaichi be the next leader out before 2027?",
               "side": "No",
               "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1777379838,
+              "wallet_fill_unix": 1777389684,
               "pnl_per_dollar": 0.0101,
               "pnl_usd_at_100": 1.01
             },
@@ -2356,19 +2366,9 @@
               "pnl_usd_at_100": 1.01
             },
             {
-              "chain_id": "b393d500622f639f",
-              "condition_id": "0xe111b1ee12df2943a3e7c2f860f2cf38b1e00d9091450dee18b18989cdd2a990",
-              "market_question": "Will Sanae Takaichi be the next leader out before 2027?",
-              "side": "No",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1777389684,
-              "pnl_per_dollar": 0.0101,
-              "pnl_usd_at_100": 1.01
-            },
-            {
-              "chain_id": "5e00fd2968a20437",
-              "condition_id": "0xd79fe765f7e2adfbaa07429050cf179647f409202f12c93879e966f1da99ecaa",
-              "market_question": "Will Vladimir Putin be the next leader out before 2027?",
+              "chain_id": "793ae5553abb3302",
+              "condition_id": "0x85a96cbc8c3dc059ef461a17001efd347c1d000c6cad6c2b32f7e866bfd66e3a",
+              "market_question": "Will Volodymyr Zelenskyy be the next leader out before 2027?",
               "side": "No",
               "tier_label": "COPY_SMALL",
               "wallet_fill_unix": 1777379838,
@@ -2953,16 +2953,6 @@
               "pnl_usd_at_100": 2122.22
             },
             {
-              "chain_id": "3b28f7338fc0d584",
-              "condition_id": "0x1f7ea13dd3c788be87a5788d43097c1345ceff0d9e03277ff5521603ce86ae75",
-              "market_question": "Athletic Club vs. CA Osasuna: O/U 4.5",
-              "side": "Under",
-              "tier_label": "COPY_SMALL",
-              "wallet_fill_unix": 1776792400,
-              "pnl_per_dollar": 0.1696,
-              "pnl_usd_at_100": 16.96
-            },
-            {
               "chain_id": "58934b62f43e569a",
               "condition_id": "0x35dee597ca540e894067ab30a2da80029a1197c7b7454cb93a717197400f3e0c",
               "market_question": "Athletic Club vs. CA Osasuna: O/U 3.5",
@@ -2971,6 +2961,16 @@
               "wallet_fill_unix": 1776792176,
               "pnl_per_dollar": 0.5267,
               "pnl_usd_at_100": 52.67
+            },
+            {
+              "chain_id": "3b28f7338fc0d584",
+              "condition_id": "0x1f7ea13dd3c788be87a5788d43097c1345ceff0d9e03277ff5521603ce86ae75",
+              "market_question": "Athletic Club vs. CA Osasuna: O/U 4.5",
+              "side": "Under",
+              "tier_label": "COPY_SMALL",
+              "wallet_fill_unix": 1776792400,
+              "pnl_per_dollar": 0.1696,
+              "pnl_usd_at_100": 16.96
             },
             {
               "chain_id": "68bba099a1e5c58c",

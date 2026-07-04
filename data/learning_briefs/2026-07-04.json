@@ -2,12 +2,22 @@
   "schema_version": 1,
   "methodology_version": "learning-brief-v0.1",
   "date": "2026-07-04",
-  "built_at_unix": 1783157860,
+  "built_at_unix": 1783169882,
   "day_n": 52,
   "milestone": "Day-30",
   "ledger_source": "data/copyability_audit_ledger.json",
   "ledger_methodology": "copyability-validation-v0.1",
   "tier_rollup": {
+    "WAIT": {
+      "n_decisions": 1262,
+      "n_resolved": 1207,
+      "n_positive_for_follower": 902,
+      "positive_rate_for_follower": 0.7473,
+      "tier_correct_rate": null,
+      "tier_correct_meaning": "neutral \u00b7 WAIT does not commit to direction",
+      "avg_follower_pnl": 14.54,
+      "insufficient_n": false
+    },
     "AVOID": {
       "n_decisions": 349,
       "n_resolved": 287,
@@ -16,16 +26,6 @@
       "tier_correct_rate": 0.2962,
       "tier_correct_meaning": "follower would have lost money (AVOID was right)",
       "avg_follower_pnl": 2.7117,
-      "insufficient_n": false
-    },
-    "WAIT": {
-      "n_decisions": 1265,
-      "n_resolved": 1211,
-      "n_positive_for_follower": 905,
-      "positive_rate_for_follower": 0.7473,
-      "tier_correct_rate": null,
-      "tier_correct_meaning": "neutral \u00b7 WAIT does not commit to direction",
-      "avg_follower_pnl": 14.6701,
       "insufficient_n": false
     },
     "COPY_SMALL": {
