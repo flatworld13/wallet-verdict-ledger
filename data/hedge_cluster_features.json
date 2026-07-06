@@ -1,1661 +1,2205 @@
 {
   "schema_version": 1,
   "methodology_version": "hedge-cluster-features-v0.1",
-  "date": "2026-05-11",
-  "generated_at_unix": 1778460674,
+  "date": "2026-07-06",
+  "generated_at_unix": 1783343642,
   "description": "Hedge Cluster observable features per cohort wallet \u00b7 v0.1 rule-based \u00b7 uses only counterparty_graph.json data we already collect today. The SCORE (with weights/action-label) lives in _private/_ingest/compute_hedge_cluster_score.py per CLAUDE.md TOP RULE -1 methodology privacy.",
   "features": {
-    "0xa9878e59934ab507f9039bcb917c1bae0451141d": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 1,
-      "max_n_co_fills_with_cohort": 14,
-      "total_co_fill_volume": 14,
+    "0xd218e474776403a330142299f7796e8ba32eb5c9": {
+      "n_cohort_partners": 17,
+      "n_strong_cohort_partners": 17,
+      "max_n_co_fills_with_cohort": 4659,
+      "total_co_fill_volume": 12325,
       "cluster_id": 1,
-      "cluster_size": 2,
+      "cluster_size": 80,
       "top_partners": [
         {
-          "wallet": "0xc613e6707bd115e5c04d303d944568232697662b",
-          "pseudonym": "Adventurous-Lament",
-          "n_co_fills": 14,
+          "wallet": "0x9f47f1fcb1701bf9eaf31236ad39875e5d60af93",
+          "pseudonym": "TheGuru-791",
+          "n_co_fills": 4659,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1",
+          "pseudonym": "debased",
+          "n_co_fills": 1592,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
+          "pseudonym": "ArmageddonRewardsBilly",
+          "n_co_fills": 850,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xd42f6a1634a3707e27cbae14ca966068e5d1047d",
+          "pseudonym": "Apsalar",
+          "n_co_fills": 720,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x6356fb47642a028bc09df92023c35a21a0b41885",
+          "pseudonym": "Deficient-Armor",
+          "n_co_fills": 624,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x9f47f1fcb1701bf9eaf31236ad39875e5d60af93": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 4659,
+      "total_co_fill_volume": 4659,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+          "pseudonym": "cigarettes",
+          "n_co_fills": 4659,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xd106952ebf30a3125affd8a23b6c1f30c35fc79c": {
+      "n_cohort_partners": 8,
+      "n_strong_cohort_partners": 8,
+      "max_n_co_fills_with_cohort": 3267,
+      "total_co_fill_volume": 6911,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xee613b3fc183ee44f9da9c05f53e2da107e3debf",
+          "pseudonym": "sovereign2013",
+          "n_co_fills": 3267,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x6d3c5bd13984b2de47c3a88ddc455309aab3d294",
+          "pseudonym": "VeryLucky888",
+          "n_co_fills": 2398,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xbddf61af533ff524d27154e589d2d7a81510c684",
+          "pseudonym": "Countryside",
+          "n_co_fills": 289,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xdb27bf2ac5d428a9c63dbc914611036855a6c56e",
+          "pseudonym": "DrPufferfish",
+          "n_co_fills": 247,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xa71093cafc0c099b4ccab24c3cb8018d817923c4",
+          "pseudonym": "Talvez10",
+          "n_co_fills": 192,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xee613b3fc183ee44f9da9c05f53e2da107e3debf": {
+      "n_cohort_partners": 8,
+      "n_strong_cohort_partners": 8,
+      "max_n_co_fills_with_cohort": 3267,
+      "total_co_fill_volume": 5072,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd106952ebf30a3125affd8a23b6c1f30c35fc79c",
+          "pseudonym": "Herdonia",
+          "n_co_fills": 3267,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x6d3c5bd13984b2de47c3a88ddc455309aab3d294",
+          "pseudonym": "VeryLucky888",
+          "n_co_fills": 415,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x16b29c50f2439faf627209b2ac0c7bbddaa8a881",
+          "pseudonym": "SeriouslySirius",
+          "n_co_fills": 375,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+          "pseudonym": "swisstony",
+          "n_co_fills": 290,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
+          "pseudonym": "curie",
+          "n_co_fills": 238,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86": {
+      "n_cohort_partners": 15,
+      "n_strong_cohort_partners": 15,
+      "max_n_co_fills_with_cohort": 2900,
+      "total_co_fill_volume": 10542,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0x2d27e4d20f3b8a2ee3bc861d9b83752f338676d8",
+          "pseudonym": "interstellaar",
+          "n_co_fills": 2900,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x07e78f5f58f8fa839f298cfe3fefd258883aa343",
+          "pseudonym": "Spon",
+          "n_co_fills": 1735,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x55b4af6a1cff148a307cad8ad098206a028e80ea",
+          "pseudonym": "StarryPath",
+          "n_co_fills": 1115,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xb41ac4e8907de5460e2dac0a98df8d1530d33a25",
+          "pseudonym": "GMIB",
+          "n_co_fills": 914,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xa58d4f278d7953cd38eeb929f7e242bfc7c0b9b8",
+          "pseudonym": "0xA58D4F278d79",
+          "n_co_fills": 866,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x2d27e4d20f3b8a2ee3bc861d9b83752f338676d8": {
+      "n_cohort_partners": 2,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 2900,
+      "total_co_fill_volume": 3416,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
+          "pseudonym": "influenz.eth",
+          "n_co_fills": 2900,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+          "pseudonym": "cigarettes",
+          "n_co_fills": 516,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x6d3c5bd13984b2de47c3a88ddc455309aab3d294": {
+      "n_cohort_partners": 6,
+      "n_strong_cohort_partners": 6,
+      "max_n_co_fills_with_cohort": 2398,
+      "total_co_fill_volume": 3538,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd106952ebf30a3125affd8a23b6c1f30c35fc79c",
+          "pseudonym": "Herdonia",
+          "n_co_fills": 2398,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xdc876e6873772d38716fda7f2452a78d426d7ab6",
+          "pseudonym": "432614799197",
+          "n_co_fills": 461,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xee613b3fc183ee44f9da9c05f53e2da107e3debf",
+          "pseudonym": "sovereign2013",
+          "n_co_fills": 415,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+          "pseudonym": "gmanas",
+          "n_co_fills": 173,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "pseudonym": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "n_co_fills": 82,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xe9076a87c5ed90ef16e6fe6529c943baeca0cff6": {
+      "n_cohort_partners": 6,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 1998,
+      "total_co_fill_volume": 2837,
+      "cluster_id": 2,
+      "cluster_size": 7,
+      "top_partners": [
+        {
+          "wallet": "0xb27bc932bf8110d8f78e55da7d5f0497a18b5b82",
+          "pseudonym": "0xB27BC932bf8110D8F78e55da7d5f0497A18B5b82-1772569391020",
+          "n_co_fills": 1998,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x76d4d4703add6e94cfdb1107f3d991d85ff2c512",
+          "pseudonym": "0x76d4d4703add6e94cfdb1107f3d991d85ff2c512",
+          "n_co_fills": 829,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xe613b515bd46b1585a8b137a4d291d9b80bd540e",
+          "pseudonym": "0xe613b515bd46",
+          "n_co_fills": 6,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xe40ea00e74059c76c0035c919ef6b99c3e25a94d",
+          "pseudonym": "0xE40Ea00E7405",
+          "n_co_fills": 2,
+          "in_cluster": false
+        },
+        {
+          "wallet": "0xc88eb9ab98663254bff489c515f39f23b76bf3e1",
+          "pseudonym": "0xC88EB9AB9866",
+          "n_co_fills": 1,
+          "in_cluster": false
+        }
+      ]
+    },
+    "0xb27bc932bf8110d8f78e55da7d5f0497a18b5b82": {
+      "n_cohort_partners": 3,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 1998,
+      "total_co_fill_volume": 3903,
+      "cluster_id": 2,
+      "cluster_size": 7,
+      "top_partners": [
+        {
+          "wallet": "0xe9076a87c5ed90ef16e6fe6529c943baeca0cff6",
+          "pseudonym": "0xe9076a87c5ed90ef16e6fe6529c943baeca0cff6",
+          "n_co_fills": 1998,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xeebde7a0e019a63e6b476eb425505b7b3e6eba30",
+          "pseudonym": "Bonereaper",
+          "n_co_fills": 1408,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xdf0d2ccfe3d7c2ef120395534e43afe283509f79",
+          "pseudonym": "0xdf0D2CcfE3d7C2EF120395534e43Afe283509F79-1774320078733",
+          "n_co_fills": 497,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x07e78f5f58f8fa839f298cfe3fefd258883aa343": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 1735,
+      "total_co_fill_volume": 1735,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
+          "pseudonym": "influenz.eth",
+          "n_co_fills": 1735,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 1592,
+      "total_co_fill_volume": 1592,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+          "pseudonym": "cigarettes",
+          "n_co_fills": 1592,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xd1ed12197b7dc22dede923727e9b714024dbd7cb": {
+      "n_cohort_partners": 12,
+      "n_strong_cohort_partners": 11,
+      "max_n_co_fills_with_cohort": 1495,
+      "total_co_fill_volume": 4734,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0x507e52ef684ca2dd91f90a9d26d149dd3288beae",
+          "pseudonym": "GamblingIsAllYouNeed",
+          "n_co_fills": 1495,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+          "pseudonym": "swisstony",
+          "n_co_fills": 699,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
+          "pseudonym": "RN1",
+          "n_co_fills": 506,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x4133bcbad1d9c41de776646696f41c34d0a65e70",
+          "pseudonym": "EF203F2IPFC2ICP20W-CP3",
+          "n_co_fills": 395,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x6a72f61820b26b1fe4d956e17b6dc2a1ea3033ee",
+          "pseudonym": "kch123",
+          "n_co_fills": 355,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x507e52ef684ca2dd91f90a9d26d149dd3288beae": {
+      "n_cohort_partners": 5,
+      "n_strong_cohort_partners": 4,
+      "max_n_co_fills_with_cohort": 1495,
+      "total_co_fill_volume": 2637,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
+          "pseudonym": "curie",
+          "n_co_fills": 1495,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "pseudonym": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "n_co_fills": 619,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xe9cbb1c9b3f7f411dd4fdf2ea7afa780c8b4d096",
+          "pseudonym": "lameloballer",
+          "n_co_fills": 371,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+          "pseudonym": "gmanas",
+          "n_co_fills": 150,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xf1528f12e645462c344799b62b1b421a6a4c64aa",
+          "pseudonym": "phonesculptor",
+          "n_co_fills": 2,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xeebde7a0e019a63e6b476eb425505b7b3e6eba30": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 1408,
+      "total_co_fill_volume": 1408,
+      "cluster_id": 2,
+      "cluster_size": 7,
+      "top_partners": [
+        {
+          "wallet": "0xb27bc932bf8110d8f78e55da7d5f0497a18b5b82",
+          "pseudonym": "0xB27BC932bf8110D8F78e55da7d5f0497A18B5b82-1772569391020",
+          "n_co_fills": 1408,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x55b4af6a1cff148a307cad8ad098206a028e80ea": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 1115,
+      "total_co_fill_volume": 1115,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
+          "pseudonym": "influenz.eth",
+          "n_co_fills": 1115,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418": {
+      "n_cohort_partners": 7,
+      "n_strong_cohort_partners": 6,
+      "max_n_co_fills_with_cohort": 850,
+      "total_co_fill_volume": 3139,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+          "pseudonym": "cigarettes",
+          "n_co_fills": 850,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71",
+          "pseudonym": "planktonXD",
+          "n_co_fills": 807,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
+          "pseudonym": "influenz.eth",
+          "n_co_fills": 595,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
+          "pseudonym": "wokerjoesleeper",
+          "n_co_fills": 332,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x30cecdf29f069563ea21b8ae94492e41e53a6b2b",
+          "pseudonym": "0x30cEcDF29F06",
+          "n_co_fills": 330,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xead152b855effa6b5b5837f53b24c0756830c76a": {
+      "n_cohort_partners": 10,
+      "n_strong_cohort_partners": 10,
+      "max_n_co_fills_with_cohort": 932,
+      "total_co_fill_volume": 3216,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xb744f56635b537e859152d14b022af5afe485210",
+          "pseudonym": "wasianiversonworldchamp2025",
+          "n_co_fills": 932,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xdc876e6873772d38716fda7f2452a78d426d7ab6",
+          "pseudonym": "432614799197",
+          "n_co_fills": 408,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+          "pseudonym": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
+          "n_co_fills": 392,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+          "pseudonym": "swisstony",
+          "n_co_fills": 318,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x1117eade222413335b7ec959e5b48c1d3dbc3532",
+          "pseudonym": "benwyatt",
+          "n_co_fills": 242,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xb744f56635b537e859152d14b022af5afe485210": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 932,
+      "total_co_fill_volume": 932,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
+          "pseudonym": "elkmonkey",
+          "n_co_fills": 932,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xb41ac4e8907de5460e2dac0a98df8d1530d33a25": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 914,
+      "total_co_fill_volume": 914,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
+          "pseudonym": "influenz.eth",
+          "n_co_fills": 914,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xa58d4f278d7953cd38eeb929f7e242bfc7c0b9b8": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 866,
+      "total_co_fill_volume": 866,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
+          "pseudonym": "influenz.eth",
+          "n_co_fills": 866,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x76d4d4703add6e94cfdb1107f3d991d85ff2c512": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 829,
+      "total_co_fill_volume": 829,
+      "cluster_id": 2,
+      "cluster_size": 7,
+      "top_partners": [
+        {
+          "wallet": "0xe9076a87c5ed90ef16e6fe6529c943baeca0cff6",
+          "pseudonym": "0xe9076a87c5ed90ef16e6fe6529c943baeca0cff6",
+          "n_co_fills": 829,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 807,
+      "total_co_fill_volume": 807,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
+          "pseudonym": "ArmageddonRewardsBilly",
+          "n_co_fills": 807,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xd0d6053c3c37e727402d84c14069780d360993aa": {
+      "n_cohort_partners": 2,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 735,
+      "total_co_fill_volume": 1230,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
+          "pseudonym": "0x8dxd",
+          "n_co_fills": 735,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xe9cbb1c9b3f7f411dd4fdf2ea7afa780c8b4d096",
+          "pseudonym": "lameloballer",
+          "n_co_fills": 495,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x63ce342161250d705dc0b16df89036c8e5f9ba9a": {
+      "n_cohort_partners": 2,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 735,
+      "total_co_fill_volume": 1030,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd0d6053c3c37e727402d84c14069780d360993aa",
+          "pseudonym": "k9Q2mX4L8A7ZP3R",
+          "n_co_fills": 735,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xe9cbb1c9b3f7f411dd4fdf2ea7afa780c8b4d096",
+          "pseudonym": "lameloballer",
+          "n_co_fills": 295,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xd42f6a1634a3707e27cbae14ca966068e5d1047d": {
+      "n_cohort_partners": 2,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 720,
+      "total_co_fill_volume": 721,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+          "pseudonym": "cigarettes",
+          "n_co_fills": 720,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x7e97bd09c2ccc632fb728d91b7c37d8ec5f34d54",
+          "pseudonym": "Round-Ligula",
+          "n_co_fills": 1,
+          "in_cluster": false
+        }
+      ]
+    },
+    "0xd809c54478c5e50fe2aa20acccf0857baa0a6542": {
+      "n_cohort_partners": 14,
+      "n_strong_cohort_partners": 14,
+      "max_n_co_fills_with_cohort": 709,
+      "total_co_fill_volume": 3524,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
+          "pseudonym": "RN1",
+          "n_co_fills": 709,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x4133bcbad1d9c41de776646696f41c34d0a65e70",
+          "pseudonym": "EF203F2IPFC2ICP20W-CP3",
+          "n_co_fills": 628,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x507e52ef684ca2dd91f90a9d26d149dd3288beae",
+          "pseudonym": "GamblingIsAllYouNeed",
+          "n_co_fills": 619,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x84ad9c5c547a82ec9a08547b94bd922446e5bfb7",
+          "pseudonym": "BillBenter2026",
+          "n_co_fills": 318,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xfe787d2da716d60e8acff57fb87eb13cd4d10319",
+          "pseudonym": "ferrariChampions2026",
+          "n_co_fills": 268,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x2005d16a84ceefa912d4e380cd32e7ff827875ea": {
+      "n_cohort_partners": 4,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 709,
+      "total_co_fill_volume": 1218,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "pseudonym": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "n_co_fills": 709,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
+          "pseudonym": "curie",
+          "n_co_fills": 506,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xf1528f12e645462c344799b62b1b421a6a4c64aa",
+          "pseudonym": "phonesculptor",
+          "n_co_fills": 2,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xe0a2f29b1fadb2259111bbeca392d3805ec4a349",
+          "pseudonym": "0xE0A2F29B1faD",
+          "n_co_fills": 1,
+          "in_cluster": false
+        }
+      ]
+    },
+    "0x204f72f35326db932158cba6adff0b9a1da95e14": {
+      "n_cohort_partners": 9,
+      "n_strong_cohort_partners": 8,
+      "max_n_co_fills_with_cohort": 699,
+      "total_co_fill_volume": 2797,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
+          "pseudonym": "curie",
+          "n_co_fills": 699,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xdc876e6873772d38716fda7f2452a78d426d7ab6",
+          "pseudonym": "432614799197",
+          "n_co_fills": 546,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+          "pseudonym": "gmanas",
+          "n_co_fills": 414,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xe9cbb1c9b3f7f411dd4fdf2ea7afa780c8b4d096",
+          "pseudonym": "lameloballer",
+          "n_co_fills": 369,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
+          "pseudonym": "elkmonkey",
+          "n_co_fills": 318,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xde0463ea7f611b065e8ab06bbfbddad75e6dfa37": {
+      "n_cohort_partners": 6,
+      "n_strong_cohort_partners": 6,
+      "max_n_co_fills_with_cohort": 631,
+      "total_co_fill_volume": 2539,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xb786b8b6335e77dfad19928313e97753039cb18d",
+          "pseudonym": "0xb786b8b6335e77dfad19928313e97753039cb18d",
+          "n_co_fills": 631,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+          "pseudonym": "cigarettes",
+          "n_co_fills": 614,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
+          "pseudonym": "influenz.eth",
+          "n_co_fills": 455,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x011f2d377e56119fb09196dffb0948ae55711122",
+          "pseudonym": "0x011f2d377e56",
+          "n_co_fills": 374,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x7ab6ac0f0d6ca5a15ec57abeaf413d31c8cdfa77",
+          "pseudonym": "Superior-Format",
+          "n_co_fills": 265,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xb786b8b6335e77dfad19928313e97753039cb18d": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 631,
+      "total_co_fill_volume": 631,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xde0463ea7f611b065e8ab06bbfbddad75e6dfa37",
+          "pseudonym": "mwenya",
+          "n_co_fills": 631,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x4133bcbad1d9c41de776646696f41c34d0a65e70": {
+      "n_cohort_partners": 4,
+      "n_strong_cohort_partners": 4,
+      "max_n_co_fills_with_cohort": 628,
+      "total_co_fill_volume": 1353,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "pseudonym": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "n_co_fills": 628,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
+          "pseudonym": "curie",
+          "n_co_fills": 395,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xdc876e6873772d38716fda7f2452a78d426d7ab6",
+          "pseudonym": "432614799197",
+          "n_co_fills": 232,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+          "pseudonym": "gmanas",
+          "n_co_fills": 98,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x6356fb47642a028bc09df92023c35a21a0b41885": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 624,
+      "total_co_fill_volume": 624,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+          "pseudonym": "cigarettes",
+          "n_co_fills": 624,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xdc876e6873772d38716fda7f2452a78d426d7ab6": {
+      "n_cohort_partners": 13,
+      "n_strong_cohort_partners": 13,
+      "max_n_co_fills_with_cohort": 546,
+      "total_co_fill_volume": 2844,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+          "pseudonym": "swisstony",
+          "n_co_fills": 546,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x6d3c5bd13984b2de47c3a88ddc455309aab3d294",
+          "pseudonym": "VeryLucky888",
+          "n_co_fills": 461,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
+          "pseudonym": "elkmonkey",
+          "n_co_fills": 408,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x4133bcbad1d9c41de776646696f41c34d0a65e70",
+          "pseudonym": "EF203F2IPFC2ICP20W-CP3",
+          "n_co_fills": 232,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xd106952ebf30a3125affd8a23b6c1f30c35fc79c",
+          "pseudonym": "Herdonia",
+          "n_co_fills": 169,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x9d84ce0306f8551e02efef1680475fc0f1dc1344": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 504,
+      "total_co_fill_volume": 504,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+          "pseudonym": "cigarettes",
+          "n_co_fills": 504,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xdf0d2ccfe3d7c2ef120395534e43afe283509f79": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 497,
+      "total_co_fill_volume": 497,
+      "cluster_id": 2,
+      "cluster_size": 7,
+      "top_partners": [
+        {
+          "wallet": "0xb27bc932bf8110d8f78e55da7d5f0497a18b5b82",
+          "pseudonym": "0xB27BC932bf8110D8F78e55da7d5f0497A18B5b82-1772569391020",
+          "n_co_fills": 497,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xe9cbb1c9b3f7f411dd4fdf2ea7afa780c8b4d096": {
+      "n_cohort_partners": 8,
+      "n_strong_cohort_partners": 8,
+      "max_n_co_fills_with_cohort": 495,
+      "total_co_fill_volume": 2290,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd0d6053c3c37e727402d84c14069780d360993aa",
+          "pseudonym": "k9Q2mX4L8A7ZP3R",
+          "n_co_fills": 495,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x507e52ef684ca2dd91f90a9d26d149dd3288beae",
+          "pseudonym": "GamblingIsAllYouNeed",
+          "n_co_fills": 371,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+          "pseudonym": "swisstony",
+          "n_co_fills": 369,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
+          "pseudonym": "0x8dxd",
+          "n_co_fills": 295,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x9d94f602535e518ee1cb6aade0ca9569f1b1017d",
+          "pseudonym": "eanvanezygv",
+          "n_co_fills": 249,
           "in_cluster": true
         }
       ]
     },
     "0xc613e6707bd115e5c04d303d944568232697662b": {
-      "n_cohort_partners": 9,
-      "n_strong_cohort_partners": 1,
-      "max_n_co_fills_with_cohort": 14,
-      "total_co_fill_volume": 24,
+      "n_cohort_partners": 3,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 468,
+      "total_co_fill_volume": 1103,
       "cluster_id": 1,
-      "cluster_size": 2,
+      "cluster_size": 80,
       "top_partners": [
         {
-          "wallet": "0xa9878e59934ab507f9039bcb917c1bae0451141d",
-          "pseudonym": "ilovecircle",
-          "n_co_fills": 14,
+          "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
+          "pseudonym": "influenz.eth",
+          "n_co_fills": 468,
           "in_cluster": true
         },
         {
-          "wallet": "0x1c1675a7c3662131acfd00aaabcbc97a6a4f45e9",
-          "pseudonym": "Alarming-Notepad",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xed107a85a4585a381e48c7f7ca4144909e7dd2e5",
-          "pseudonym": "bobe2",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x07e78f5f58f8fa839f298cfe3fefd258883aa343",
-          "pseudonym": "Spon",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4ad6cadefae3c28f5b2caa32a99ebba3a614464c",
-          "pseudonym": "Unripe-Split",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xdd572169e741c72227589c5cb56b9ddd638d694d": {
-      "n_cohort_partners": 4,
-      "n_strong_cohort_partners": 1,
-      "max_n_co_fills_with_cohort": 5,
-      "total_co_fill_volume": 9,
-      "cluster_id": 2,
-      "cluster_size": 2,
-      "top_partners": [
-        {
-          "wallet": "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1",
-          "pseudonym": "debased",
-          "n_co_fills": 5,
+          "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+          "pseudonym": "cigarettes",
+          "n_co_fills": 411,
           "in_cluster": true
         },
-        {
-          "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
-          "pseudonym": "0x9703676286B9",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xd04d93be590ded67b99f053d4b6d29d3f8483312",
-          "pseudonym": "Shipoo",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x011f2d377e56119fb09196dffb0948ae55711122",
-          "pseudonym": "0x011f2d377e56",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1": {
-      "n_cohort_partners": 6,
-      "n_strong_cohort_partners": 1,
-      "max_n_co_fills_with_cohort": 5,
-      "total_co_fill_volume": 10,
-      "cluster_id": 2,
-      "cluster_size": 2,
-      "top_partners": [
-        {
-          "wallet": "0xdd572169e741c72227589c5cb56b9ddd638d694d",
-          "pseudonym": "Ignisss",
-          "n_co_fills": 5,
-          "in_cluster": true
-        },
-        {
-          "wallet": "0x1e1f17412069c0736adfaadf8ee7f46e5612c855",
-          "pseudonym": "0x1e1f17412069",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x1c1675a7c3662131acfd00aaabcbc97a6a4f45e9",
-          "pseudonym": "Alarming-Notepad",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4f2ba33b080882c0f6b296f48cfd07b6c326f448",
-          "pseudonym": "0x4f2BA33b0808",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xddff18c9e86262e62af046d818dda0c3de6f52d6",
-          "pseudonym": "0xdDff18C9E862",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x9c667a1d1c1337c6dca9d93241d386e4ed346b66": {
-      "n_cohort_partners": 5,
-      "n_strong_cohort_partners": 1,
-      "max_n_co_fills_with_cohort": 5,
-      "total_co_fill_volume": 9,
-      "cluster_id": 3,
-      "cluster_size": 2,
-      "top_partners": [
-        {
-          "wallet": "0x6480542954b70a674a74bd1a6015dec362dc8dc5",
-          "pseudonym": "tripping",
-          "n_co_fills": 5,
-          "in_cluster": true
-        },
-        {
-          "wallet": "0xc613e6707bd115e5c04d303d944568232697662b",
-          "pseudonym": "Adventurous-Lament",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x1c1675a7c3662131acfd00aaabcbc97a6a4f45e9",
-          "pseudonym": "Alarming-Notepad",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
-          "pseudonym": "0x9703676286B9",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4e25605fd905e9972efc0f4d8814530c655cd7a7",
-          "pseudonym": "0x4e25605Fd905",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x6480542954b70a674a74bd1a6015dec362dc8dc5": {
-      "n_cohort_partners": 7,
-      "n_strong_cohort_partners": 1,
-      "max_n_co_fills_with_cohort": 5,
-      "total_co_fill_volume": 11,
-      "cluster_id": 3,
-      "cluster_size": 2,
-      "top_partners": [
-        {
-          "wallet": "0x9c667a1d1c1337c6dca9d93241d386e4ed346b66",
-          "pseudonym": "InfiniteCrypt0",
-          "n_co_fills": 5,
-          "in_cluster": true
-        },
-        {
-          "wallet": "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111",
-          "pseudonym": "0x1cFC260BfA2b",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xd04d93be590ded67b99f053d4b6d29d3f8483312",
-          "pseudonym": "Shipoo",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xb7d54bf1d0a362beb916d9cb58a04c41d67e0789",
-          "pseudonym": "Wicked-Sonnet",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xf0ec554fe75d57fef3f2404fce070b5c71d46064",
-          "pseudonym": "Uneven-Processing",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x4b7410aefbf0f38012b0dfb1131a4de147a9e8d7": {
-      "n_cohort_partners": 10,
-      "n_strong_cohort_partners": 1,
-      "max_n_co_fills_with_cohort": 5,
-      "total_co_fill_volume": 15,
-      "cluster_id": 4,
-      "cluster_size": 2,
-      "top_partners": [
-        {
-          "wallet": "0x55b4af6a1cff148a307cad8ad098206a028e80ea",
-          "pseudonym": "StarryPath",
-          "n_co_fills": 5,
-          "in_cluster": true
-        },
-        {
-          "wallet": "0x1c1675a7c3662131acfd00aaabcbc97a6a4f45e9",
-          "pseudonym": "Alarming-Notepad",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xc3cd1d612bbf9fbf80da5a9bff0b0470cb46816c",
-          "pseudonym": "0xc3cd1d612bbf",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x8ebfdc251c6c378d4a3a54a8f15cebfa4b9183ce",
-          "pseudonym": "0x8eBFDc251c6C",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1",
-          "pseudonym": "debased",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x55b4af6a1cff148a307cad8ad098206a028e80ea": {
-      "n_cohort_partners": 3,
-      "n_strong_cohort_partners": 1,
-      "max_n_co_fills_with_cohort": 5,
-      "total_co_fill_volume": 8,
-      "cluster_id": 4,
-      "cluster_size": 2,
-      "top_partners": [
-        {
-          "wallet": "0x4b7410aefbf0f38012b0dfb1131a4de147a9e8d7",
-          "pseudonym": "0x4B7410AEFbF0",
-          "n_co_fills": 5,
-          "in_cluster": true
-        },
-        {
-          "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
-          "pseudonym": "0x21ffd2b7a212",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xa9b44dca52ed35e59ac2a6f49d1203b8155464ed",
-          "pseudonym": "0xa9B44DCa52eD",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x8de0ee3ce923e4ae28b9745a652797eaea8887a0": {
-      "n_cohort_partners": 3,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 4,
-      "total_co_fill_volume": 6,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
         {
           "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
           "pseudonym": "ArmageddonRewardsBilly",
-          "n_co_fills": 4,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111",
-          "pseudonym": "0x1cFC260BfA2b",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4f2ba33b080882c0f6b296f48cfd07b6c326f448",
-          "pseudonym": "0x4f2BA33b0808",
-          "n_co_fills": 1,
-          "in_cluster": false
+          "n_co_fills": 224,
+          "in_cluster": true
         }
       ]
     },
-    "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418": {
-      "n_cohort_partners": 14,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 4,
-      "total_co_fill_volume": 19,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x8de0ee3ce923e4ae28b9745a652797eaea8887a0",
-          "pseudonym": "0x8DE0eE3ce923",
-          "n_co_fills": 4,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
-          "pseudonym": "ImJustKen",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x44c1dfe43260c94ed4f1d00de2e1f80fb113ebc1",
-          "pseudonym": "aenews2",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x43372356634781eea88d61bbdd7824cdce958882",
-          "pseudonym": "0x433723566347",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x00e2d8f88b39d9b430c136c679369f41101cd56a",
-          "pseudonym": "0x00E2d8f88b39",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xc88eb9ab98663254bff489c515f39f23b76bf3e1": {
-      "n_cohort_partners": 4,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 3,
-      "total_co_fill_volume": 6,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf",
-          "pseudonym": "Fredi9999",
-          "n_co_fills": 3,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xe72bb501df5306c75c89383d48a1e81073fbb0a0",
-          "pseudonym": "0xE72Bb501df53",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xff30ac5b2cb4822a1b15604ac90659ef71314a37",
-          "pseudonym": "0xfF30AC5b2CB4",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xce5bec63b40392845a9a504915f607c8e03a047a",
-          "pseudonym": "Nexuus",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf": {
-      "n_cohort_partners": 7,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 3,
-      "total_co_fill_volume": 11,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xc88eb9ab98663254bff489c515f39f23b76bf3e1",
-          "pseudonym": "0xC88EB9AB9866",
-          "n_co_fills": 3,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x5bffcf561bcae83af680ad600cb99f1184d6ffbe",
-          "pseudonym": "YatSen",
-          "n_co_fills": 3,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x9f47f1fcb1701bf9eaf31236ad39875e5d60af93",
-          "pseudonym": "TheGuru-791",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xc4086b708cd3a50880b7069add1a1a80000f4675",
-          "pseudonym": "0xC4086B708Cd3",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xd42f6a1634a3707e27cbae14ca966068e5d1047d",
-          "pseudonym": "Apsalar",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x5bffcf561bcae83af680ad600cb99f1184d6ffbe": {
-      "n_cohort_partners": 4,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 3,
-      "total_co_fill_volume": 6,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf",
-          "pseudonym": "Fredi9999",
-          "n_co_fills": 3,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x37e4728b3c4607fb2b3b205386bb1d1fb1a8c991",
-          "pseudonym": "0x37E4728B3c46",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x96b59f71f635da5da031e3e93448c54fe226f5e7",
-          "pseudonym": "Sparkling-Commonsense",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x33c2ea1151c4399309715df027688845a6a99818",
-          "pseudonym": "0x33c2EA1151C4",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71": {
-      "n_cohort_partners": 15,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 3,
-      "total_co_fill_volume": 20,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xd1acd3925d895de9aec98ff95f3a30c5279d08d5",
-          "pseudonym": "0xd1acd3925D89",
-          "n_co_fills": 3,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xf33f0dfe73e3d1b3d0453e2a02c5d19100d3085c",
-          "pseudonym": "0xF33f0dfe73E3",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x55b4af6a1cff148a307cad8ad098206a028e80ea",
-          "pseudonym": "StarryPath",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4478d7bd8a295691ac84f60a5ec2b47e122102a4",
-          "pseudonym": "Warren-Buffett",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
-          "pseudonym": "ImJustKen",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xd1acd3925d895de9aec98ff95f3a30c5279d08d5": {
+    "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2": {
       "n_cohort_partners": 9,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 3,
-      "total_co_fill_volume": 14,
-      "cluster_id": null,
-      "cluster_size": 1,
+      "n_strong_cohort_partners": 9,
+      "max_n_co_fills_with_cohort": 414,
+      "total_co_fill_volume": 1528,
+      "cluster_id": 1,
+      "cluster_size": 80,
       "top_partners": [
         {
-          "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
-          "pseudonym": "0x21ffd2b7a212",
-          "n_co_fills": 3,
-          "in_cluster": false
+          "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+          "pseudonym": "swisstony",
+          "n_co_fills": 414,
+          "in_cluster": true
         },
         {
-          "wallet": "0xd42f6a1634a3707e27cbae14ca966068e5d1047d",
-          "pseudonym": "Apsalar",
-          "n_co_fills": 2,
-          "in_cluster": false
+          "wallet": "0x6d3c5bd13984b2de47c3a88ddc455309aab3d294",
+          "pseudonym": "VeryLucky888",
+          "n_co_fills": 173,
+          "in_cluster": true
         },
         {
-          "wallet": "0x011f2d377e56119fb09196dffb0948ae55711122",
-          "pseudonym": "0x011f2d377e56",
-          "n_co_fills": 2,
-          "in_cluster": false
+          "wallet": "0x7ea571c40408f340c1c8fc8eaacebab53c1bde7b",
+          "pseudonym": "Cannae",
+          "n_co_fills": 161,
+          "in_cluster": true
         },
         {
-          "wallet": "0x96b59f71f635da5da031e3e93448c54fe226f5e7",
-          "pseudonym": "Sparkling-Commonsense",
-          "n_co_fills": 2,
-          "in_cluster": false
+          "wallet": "0xd106952ebf30a3125affd8a23b6c1f30c35fc79c",
+          "pseudonym": "Herdonia",
+          "n_co_fills": 159,
+          "in_cluster": true
         },
         {
-          "wallet": "0xc3cd1d612bbf9fbf80da5a9bff0b0470cb46816c",
-          "pseudonym": "0xc3cd1d612bbf",
-          "n_co_fills": 1,
-          "in_cluster": false
+          "wallet": "0x507e52ef684ca2dd91f90a9d26d149dd3288beae",
+          "pseudonym": "GamblingIsAllYouNeed",
+          "n_co_fills": 150,
+          "in_cluster": true
         }
       ]
     },
-    "0xd42f6a1634a3707e27cbae14ca966068e5d1047d": {
-      "n_cohort_partners": 5,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 3,
-      "total_co_fill_volume": 8,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x3cf3e8d5427aed066a7a5926980600f6c3cf87b3",
-          "pseudonym": "0x3Cf3E8d5427a",
-          "n_co_fills": 3,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xd1acd3925d895de9aec98ff95f3a30c5279d08d5",
-          "pseudonym": "0xd1acd3925D89",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
-          "pseudonym": "ImJustKen",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4cc3522b689a6bf1fb4a2444c523e7776db47552",
-          "pseudonym": "0x4CC3522B689A",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf",
-          "pseudonym": "Fredi9999",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x3cf3e8d5427aed066a7a5926980600f6c3cf87b3": {
-      "n_cohort_partners": 6,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 3,
-      "total_co_fill_volume": 8,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xd42f6a1634a3707e27cbae14ca966068e5d1047d",
-          "pseudonym": "Apsalar",
-          "n_co_fills": 3,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x1e1f17412069c0736adfaadf8ee7f46e5612c855",
-          "pseudonym": "0x1e1f17412069",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xc613e6707bd115e5c04d303d944568232697662b",
-          "pseudonym": "Adventurous-Lament",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xbc54e69667ceb6ccec538e5a0ba1927fc1fe680f",
-          "pseudonym": "0xBc54E69667CE",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf",
-          "pseudonym": "Fredi9999",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x1c1675a7c3662131acfd00aaabcbc97a6a4f45e9": {
-      "n_cohort_partners": 6,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 3,
-      "total_co_fill_volume": 10,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xa61ef8773ec2e821962306ca87d4b57e39ff0abd",
-          "pseudonym": "risk-manager",
-          "n_co_fills": 3,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xc613e6707bd115e5c04d303d944568232697662b",
-          "pseudonym": "Adventurous-Lament",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4b7410aefbf0f38012b0dfb1131a4de147a9e8d7",
-          "pseudonym": "0x4B7410AEFbF0",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x9c667a1d1c1337c6dca9d93241d386e4ed346b66",
-          "pseudonym": "InfiniteCrypt0",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1",
-          "pseudonym": "debased",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xa61ef8773ec2e821962306ca87d4b57e39ff0abd": {
-      "n_cohort_partners": 7,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 3,
-      "total_co_fill_volume": 10,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x1c1675a7c3662131acfd00aaabcbc97a6a4f45e9",
-          "pseudonym": "Alarming-Notepad",
-          "n_co_fills": 3,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x2663daca3cecf3767ca1c3b126002a8578a8ed1f",
-          "pseudonym": "Q96s3kwozynxpau",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x43372356634781eea88d61bbdd7824cdce958882",
-          "pseudonym": "0x433723566347",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xce5bec63b40392845a9a504915f607c8e03a047a",
-          "pseudonym": "Nexuus",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xc613e6707bd115e5c04d303d944568232697662b",
-          "pseudonym": "Adventurous-Lament",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x9703676286b93c2eca71ca96e8757104519a69c2": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 3,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xdd572169e741c72227589c5cb56b9ddd638d694d",
-          "pseudonym": "Ignisss",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x9c667a1d1c1337c6dca9d93241d386e4ed346b66",
-          "pseudonym": "InfiniteCrypt0",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xa40d51396185d72e7505402357b929c4f6f3ea7a": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 3,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x4f2ba33b080882c0f6b296f48cfd07b6c326f448",
-          "pseudonym": "0x4f2BA33b0808",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x37e4728b3c4607fb2b3b205386bb1d1fb1a8c991",
-          "pseudonym": "0x37E4728B3c46",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x4f2ba33b080882c0f6b296f48cfd07b6c326f448": {
-      "n_cohort_partners": 5,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 6,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xa40d51396185d72e7505402357b929c4f6f3ea7a",
-          "pseudonym": "0xa40d51396185",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x8de0ee3ce923e4ae28b9745a652797eaea8887a0",
-          "pseudonym": "0x8DE0eE3ce923",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4e25605fd905e9972efc0f4d8814530c655cd7a7",
-          "pseudonym": "0x4e25605Fd905",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1",
-          "pseudonym": "debased",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b",
-          "pseudonym": "0x7C3Db723F1D4",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xbacd00c9080a82ded56f504ee8810af732b0ab35": {
-      "n_cohort_partners": 7,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 8,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xddff18c9e86262e62af046d818dda0c3de6f52d6",
-          "pseudonym": "0xdDff18C9E862",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4478d7bd8a295691ac84f60a5ec2b47e122102a4",
-          "pseudonym": "Warren-Buffett",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4e25605fd905e9972efc0f4d8814530c655cd7a7",
-          "pseudonym": "0x4e25605Fd905",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b",
-          "pseudonym": "0x7C3Db723F1D4",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xfc2f4f50ce2f6045d35558a5e2d8d4b2ac6610c7",
-          "pseudonym": "0xFc2F4f50ce2F6045d35558A5E2D8d4b2aC6610c7-1769097007451",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xddff18c9e86262e62af046d818dda0c3de6f52d6": {
-      "n_cohort_partners": 5,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 6,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xbacd00c9080a82ded56f504ee8810af732b0ab35",
-          "pseudonym": "ScottyNooo",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
-          "pseudonym": "ImJustKen",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1",
-          "pseudonym": "debased",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4e25605fd905e9972efc0f4d8814530c655cd7a7",
-          "pseudonym": "0x4e25605Fd905",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xcb14f61711d913773f4b982af340fa7eae175358",
-          "pseudonym": "0xCB14f61711D9",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x9d84ce0306f8551e02efef1680475fc0f1dc1344": {
-      "n_cohort_partners": 11,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 14,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
-          "pseudonym": "ArmageddonRewardsBilly",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x8a4c788f043023b8b28a762216d037e9f148532b",
-          "pseudonym": "0x8A4c788F0430",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x1e1f17412069c0736adfaadf8ee7f46e5612c855",
-          "pseudonym": "0x1e1f17412069",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x45580feac3b916a88b7513929e26f86b3adea2b3",
-          "pseudonym": "0x45580feAc3B9",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xed107a85a4585a381e48c7f7ca4144909e7dd2e5",
-          "pseudonym": "bobe2",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x8a4c788f043023b8b28a762216d037e9f148532b": {
-      "n_cohort_partners": 3,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 4,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
-          "pseudonym": "ImJustKen",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x3cf3e8d5427aed066a7a5926980600f6c3cf87b3",
-          "pseudonym": "0x3Cf3E8d5427a",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111",
-          "pseudonym": "0x1cFC260BfA2b",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x1e1f17412069c0736adfaadf8ee7f46e5612c855": {
-      "n_cohort_partners": 4,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 5,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
-          "pseudonym": "ImJustKen",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x3cf3e8d5427aed066a7a5926980600f6c3cf87b3",
-          "pseudonym": "0x3Cf3E8d5427a",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1",
-          "pseudonym": "debased",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x96b59f71f635da5da031e3e93448c54fe226f5e7",
-          "pseudonym": "Sparkling-Commonsense",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xd0d6053c3c37e727402d84c14069780d360993aa": {
+    "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563": {
       "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 392,
+      "total_co_fill_volume": 392,
+      "cluster_id": 1,
+      "cluster_size": 80,
       "top_partners": [
         {
-          "wallet": "0x5bab6b0b49e77983e882768030f8cc335bee53e6",
-          "pseudonym": "0x5bAb6B0B49E7",
-          "n_co_fills": 2,
-          "in_cluster": false
+          "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
+          "pseudonym": "elkmonkey",
+          "n_co_fills": 392,
+          "in_cluster": true
         }
       ]
     },
-    "0x5bab6b0b49e77983e882768030f8cc335bee53e6": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 3,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xd0d6053c3c37e727402d84c14069780d360993aa",
-          "pseudonym": "k9Q2mX4L8A7ZP3R",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-          "pseudonym": "0x8dxd",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xee00ba338c59557141789b127927a55f5cc5cea1": {
+    "0x16b29c50f2439faf627209b2ac0c7bbddaa8a881": {
       "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 375,
+      "total_co_fill_volume": 375,
+      "cluster_id": 1,
+      "cluster_size": 80,
       "top_partners": [
         {
-          "wallet": "0x6a72f61820b26b1fe4d956e17b6dc2a1ea3033ee",
-          "pseudonym": "kch123",
-          "n_co_fills": 2,
-          "in_cluster": false
+          "wallet": "0xee613b3fc183ee44f9da9c05f53e2da107e3debf",
+          "pseudonym": "sovereign2013",
+          "n_co_fills": 375,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x011f2d377e56119fb09196dffb0948ae55711122": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 374,
+      "total_co_fill_volume": 374,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xde0463ea7f611b065e8ab06bbfbddad75e6dfa37",
+          "pseudonym": "mwenya",
+          "n_co_fills": 374,
+          "in_cluster": true
         }
       ]
     },
     "0x6a72f61820b26b1fe4d956e17b6dc2a1ea3033ee": {
       "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 3,
-      "cluster_id": null,
-      "cluster_size": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 355,
+      "total_co_fill_volume": 357,
+      "cluster_id": 1,
+      "cluster_size": 80,
       "top_partners": [
         {
-          "wallet": "0xee00ba338c59557141789b127927a55f5cc5cea1",
-          "pseudonym": "S-Works",
-          "n_co_fills": 2,
-          "in_cluster": false
+          "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
+          "pseudonym": "curie",
+          "n_co_fills": 355,
+          "in_cluster": true
         },
         {
-          "wallet": "0xfea31bc088000ff909be1dfd8d0e3f2c7ef2d227",
-          "pseudonym": "newdogbeginning",
-          "n_co_fills": 1,
-          "in_cluster": false
+          "wallet": "0xdb27bf2ac5d428a9c63dbc914611036855a6c56e",
+          "pseudonym": "DrPufferfish",
+          "n_co_fills": 2,
+          "in_cluster": true
         }
       ]
     },
-    "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111": {
-      "n_cohort_partners": 14,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 16,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x75e765216a57942d738d880ffcda854d9f869080",
-          "pseudonym": "0x75e765216A57",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x3b5d93e768e79c0974ac0f7d210237988120cc80",
-          "pseudonym": "0x3B5D93e768e7",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x8c544d302252df77f939723de189dc39fdac7e8c",
-          "pseudonym": "0x8C544D302252",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x45580feac3b916a88b7513929e26f86b3adea2b3",
-          "pseudonym": "0x45580feAc3B9",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x8de0ee3ce923e4ae28b9745a652797eaea8887a0",
-          "pseudonym": "0x8DE0eE3ce923",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x75e765216a57942d738d880ffcda854d9f869080": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 3,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111",
-          "pseudonym": "0x1cFC260BfA2b",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71",
-          "pseudonym": "planktonXD",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x3b5d93e768e79c0974ac0f7d210237988120cc80": {
+    "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1": {
       "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 332,
+      "total_co_fill_volume": 332,
+      "cluster_id": 1,
+      "cluster_size": 80,
       "top_partners": [
-        {
-          "wallet": "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111",
-          "pseudonym": "0x1cFC260BfA2b",
-          "n_co_fills": 2,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x00e2d8f88b39d9b430c136c679369f41101cd56a": {
-      "n_cohort_partners": 5,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 6,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x4e25605fd905e9972efc0f4d8814530c655cd7a7",
-          "pseudonym": "0x4e25605Fd905",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x43372356634781eea88d61bbdd7824cdce958882",
-          "pseudonym": "0x433723566347",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x2d27e4d20f3b8a2ee3bc861d9b83752f338676d8",
-          "pseudonym": "interstellaar",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
         {
           "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
           "pseudonym": "ArmageddonRewardsBilly",
-          "n_co_fills": 1,
-          "in_cluster": false
+          "n_co_fills": 332,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x30cecdf29f069563ea21b8ae94492e41e53a6b2b": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 330,
+      "total_co_fill_volume": 330,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
+          "pseudonym": "ArmageddonRewardsBilly",
+          "n_co_fills": 330,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x3cf3e8d5427aed066a7a5926980600f6c3cf87b3": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 327,
+      "total_co_fill_volume": 327,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+          "pseudonym": "cigarettes",
+          "n_co_fills": 327,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x84ad9c5c547a82ec9a08547b94bd922446e5bfb7": {
+      "n_cohort_partners": 4,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 318,
+      "total_co_fill_volume": 333,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "pseudonym": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "n_co_fills": 318,
+          "in_cluster": true
         },
         {
-          "wallet": "0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b",
-          "pseudonym": "0x7C3Db723F1D4",
+          "wallet": "0xd3dff2e3b903372799b240c2338dd423086082fa",
+          "pseudonym": "0xD3D",
+          "n_co_fills": 8,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xf1528f12e645462c344799b62b1b421a6a4c64aa",
+          "pseudonym": "phonesculptor",
+          "n_co_fills": 6,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xe0a2f29b1fadb2259111bbeca392d3805ec4a349",
+          "pseudonym": "0xE0A2F29B1faD",
           "n_co_fills": 1,
           "in_cluster": false
+        }
+      ]
+    },
+    "0xee0d153c17fe82b8866b484753b56a700ab457ab": {
+      "n_cohort_partners": 5,
+      "n_strong_cohort_partners": 4,
+      "max_n_co_fills_with_cohort": 313,
+      "total_co_fill_volume": 440,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0x84cfffc3f16dcc353094de30d4a45226eccd2f63",
+          "pseudonym": "mooseborzoi",
+          "n_co_fills": 313,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xdc876e6873772d38716fda7f2452a78d426d7ab6",
+          "pseudonym": "432614799197",
+          "n_co_fills": 105,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x2a69660046d7acc4ab204d7cc5ba78b0776cd2f7",
+          "pseudonym": "UpTheBlues",
+          "n_co_fills": 11,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x6d3c5bd13984b2de47c3a88ddc455309aab3d294",
+          "pseudonym": "VeryLucky888",
+          "n_co_fills": 9,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+          "pseudonym": "swisstony",
+          "n_co_fills": 2,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x84cfffc3f16dcc353094de30d4a45226eccd2f63": {
+      "n_cohort_partners": 2,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 313,
+      "total_co_fill_volume": 319,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xee0d153c17fe82b8866b484753b56a700ab457ab",
+          "pseudonym": "BBPK",
+          "n_co_fills": 313,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xf1528f12e645462c344799b62b1b421a6a4c64aa",
+          "pseudonym": "phonesculptor",
+          "n_co_fills": 6,
+          "in_cluster": true
         }
       ]
     },
     "0x4e25605fd905e9972efc0f4d8814530c655cd7a7": {
-      "n_cohort_partners": 8,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 9,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x00e2d8f88b39d9b430c136c679369f41101cd56a",
-          "pseudonym": "0x00E2d8f88b39",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71",
-          "pseudonym": "planktonXD",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xbacd00c9080a82ded56f504ee8810af732b0ab35",
-          "pseudonym": "ScottyNooo",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x9c667a1d1c1337c6dca9d93241d386e4ed346b66",
-          "pseudonym": "InfiniteCrypt0",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
-          "pseudonym": "0x21ffd2b7a212",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x1521b47bf0c41f6b7fd3ad41cdec566812c8f23e": {
       "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 308,
+      "total_co_fill_volume": 308,
+      "cluster_id": 1,
+      "cluster_size": 80,
       "top_partners": [
         {
-          "wallet": "0x4c2966a198cd7ac982110d0219b037afa9997570",
-          "pseudonym": "0x4c2966a198cd",
-          "n_co_fills": 2,
-          "in_cluster": false
+          "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
+          "pseudonym": "influenz.eth",
+          "n_co_fills": 308,
+          "in_cluster": true
         }
       ]
     },
-    "0x4c2966a198cd7ac982110d0219b037afa9997570": {
+    "0x684bc3eb000bff0979d14b60cc74861736150601": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 307,
+      "total_co_fill_volume": 307,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+          "pseudonym": "cigarettes",
+          "n_co_fills": 307,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xbddf61af533ff524d27154e589d2d7a81510c684": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 289,
+      "total_co_fill_volume": 289,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd106952ebf30a3125affd8a23b6c1f30c35fc79c",
+          "pseudonym": "Herdonia",
+          "n_co_fills": 289,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xa40d51396185d72e7505402357b929c4f6f3ea7a": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 280,
+      "total_co_fill_volume": 280,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
+          "pseudonym": "influenz.eth",
+          "n_co_fills": 280,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xfe787d2da716d60e8acff57fb87eb13cd4d10319": {
       "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 3,
-      "cluster_id": null,
-      "cluster_size": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 268,
+      "total_co_fill_volume": 270,
+      "cluster_id": 1,
+      "cluster_size": 80,
       "top_partners": [
         {
-          "wallet": "0x1521b47bf0c41f6b7fd3ad41cdec566812c8f23e",
-          "pseudonym": "Unwieldy-Billing",
+          "wallet": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "pseudonym": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "n_co_fills": 268,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xf1528f12e645462c344799b62b1b421a6a4c64aa",
+          "pseudonym": "phonesculptor",
           "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
-          "pseudonym": "Pestle",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xc6dd722558dbfbd8fa780efcbe819ed8c6604b9f": {
-      "n_cohort_partners": 5,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 6,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xcdb1f1ef8213c06911e4ba6a884176c5571e276c",
-          "pseudonym": "0xcDb1f1ef8213",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x011f2d377e56119fb09196dffb0948ae55711122",
-          "pseudonym": "0x011f2d377e56",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b",
-          "pseudonym": "0x7C3Db723F1D4",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x9e5c74c0bf46f0bf3fcd1064d17e6201c67fd8e6",
-          "pseudonym": "0x9E5c74c0bF46",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
-          "pseudonym": "0x21ffd2b7a212",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xcdb1f1ef8213c06911e4ba6a884176c5571e276c": {
-      "n_cohort_partners": 3,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 4,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xc6dd722558dbfbd8fa780efcbe819ed8c6604b9f",
-          "pseudonym": "0xc6dD722558DB",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
-          "pseudonym": "ArmageddonRewardsBilly",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
-          "pseudonym": "0x21ffd2b7a212",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xd3989ba133ab48b5b3a81e3dba9b37b5966a46d7": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x96b59f71f635da5da031e3e93448c54fe226f5e7",
-          "pseudonym": "Sparkling-Commonsense",
-          "n_co_fills": 2,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x96b59f71f635da5da031e3e93448c54fe226f5e7": {
-      "n_cohort_partners": 11,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 13,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xd3989ba133ab48b5b3a81e3dba9b37b5966a46d7",
-          "pseudonym": "0xd3989BA133aB",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xd1acd3925d895de9aec98ff95f3a30c5279d08d5",
-          "pseudonym": "0xd1acd3925D89",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xa84bdfe6ffa8bc7dd21b5c412258062e7b765055",
-          "pseudonym": "0xA84BDFE6FfA8",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x43372356634781eea88d61bbdd7824cdce958882",
-          "pseudonym": "0x433723566347",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x5bffcf561bcae83af680ad600cb99f1184d6ffbe",
-          "pseudonym": "YatSen",
-          "n_co_fills": 1,
-          "in_cluster": false
+          "in_cluster": true
         }
       ]
     },
     "0x7ab6ac0f0d6ca5a15ec57abeaf413d31c8cdfa77": {
-      "n_cohort_partners": 5,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 6,
-      "cluster_id": null,
-      "cluster_size": 1,
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 265,
+      "total_co_fill_volume": 265,
+      "cluster_id": 1,
+      "cluster_size": 80,
       "top_partners": [
         {
-          "wallet": "0xe613b515bd46b1585a8b137a4d291d9b80bd540e",
-          "pseudonym": "0xe613b515bd46",
+          "wallet": "0xde0463ea7f611b065e8ab06bbfbddad75e6dfa37",
+          "pseudonym": "mwenya",
+          "n_co_fills": 265,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 259,
+      "total_co_fill_volume": 259,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+          "pseudonym": "cigarettes",
+          "n_co_fills": 259,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xf0ec554fe75d57fef3f2404fce070b5c71d46064": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 254,
+      "total_co_fill_volume": 254,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
+          "pseudonym": "influenz.eth",
+          "n_co_fills": 254,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x9d94f602535e518ee1cb6aade0ca9569f1b1017d": {
+      "n_cohort_partners": 3,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 252,
+      "total_co_fill_volume": 612,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
+          "pseudonym": "curie",
+          "n_co_fills": 252,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xe9cbb1c9b3f7f411dd4fdf2ea7afa780c8b4d096",
+          "pseudonym": "lameloballer",
+          "n_co_fills": 249,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "pseudonym": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "n_co_fills": 111,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xdb27bf2ac5d428a9c63dbc914611036855a6c56e": {
+      "n_cohort_partners": 3,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 247,
+      "total_co_fill_volume": 348,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd106952ebf30a3125affd8a23b6c1f30c35fc79c",
+          "pseudonym": "Herdonia",
+          "n_co_fills": 247,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xdc876e6873772d38716fda7f2452a78d426d7ab6",
+          "pseudonym": "432614799197",
+          "n_co_fills": 99,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x6a72f61820b26b1fe4d956e17b6dc2a1ea3033ee",
+          "pseudonym": "kch123",
           "n_co_fills": 2,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x1117eade222413335b7ec959e5b48c1d3dbc3532": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 242,
+      "total_co_fill_volume": 242,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
+          "pseudonym": "elkmonkey",
+          "n_co_fills": 242,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x9478e0b0db650ac66ca3a2c9f6ed68ebca4863f5": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 230,
+      "total_co_fill_volume": 230,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+          "pseudonym": "cigarettes",
+          "n_co_fills": 230,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x7fb7ad0d194d7123e711e7db6c9d418fac14e33d": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 230,
+      "total_co_fill_volume": 230,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
+          "pseudonym": "elkmonkey",
+          "n_co_fills": 230,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xff12ffde498c958dc037def603dcbcc0052f09f9": {
+      "n_cohort_partners": 2,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 228,
+      "total_co_fill_volume": 425,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xe9cbb1c9b3f7f411dd4fdf2ea7afa780c8b4d096",
+          "pseudonym": "lameloballer",
+          "n_co_fills": 228,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
+          "pseudonym": "curie",
+          "n_co_fills": 197,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xa9878e59934ab507f9039bcb917c1bae0451141d": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 227,
+      "total_co_fill_volume": 227,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
+          "pseudonym": "elkmonkey",
+          "n_co_fills": 227,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x9cb990f1862568a63d8601efeebe0304225c32f2": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 220,
+      "total_co_fill_volume": 220,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
+          "pseudonym": "elkmonkey",
+          "n_co_fills": 220,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x79cbe531cca9eb9320b6ce22b6e471a7bb5d331e": {
+      "n_cohort_partners": 2,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 202,
+      "total_co_fill_volume": 398,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
+          "pseudonym": "curie",
+          "n_co_fills": 202,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
+          "pseudonym": "influenz.eth",
+          "n_co_fills": 196,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111": {
+      "n_cohort_partners": 2,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 200,
+      "total_co_fill_volume": 396,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xde0463ea7f611b065e8ab06bbfbddad75e6dfa37",
+          "pseudonym": "mwenya",
+          "n_co_fills": 200,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
+          "pseudonym": "curie",
+          "n_co_fills": 196,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x45580feac3b916a88b7513929e26f86b3adea2b3": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 199,
+      "total_co_fill_volume": 199,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
+          "pseudonym": "influenz.eth",
+          "n_co_fills": 199,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xa71093cafc0c099b4ccab24c3cb8018d817923c4": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 192,
+      "total_co_fill_volume": 192,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd106952ebf30a3125affd8a23b6c1f30c35fc79c",
+          "pseudonym": "Herdonia",
+          "n_co_fills": 192,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x14964aefa2cd7caff7878b3820a690a03c5aa429": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 190,
+      "total_co_fill_volume": 190,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd106952ebf30a3125affd8a23b6c1f30c35fc79c",
+          "pseudonym": "Herdonia",
+          "n_co_fills": 190,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x00e2d8f88b39d9b430c136c679369f41101cd56a": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 189,
+      "total_co_fill_volume": 189,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
+          "pseudonym": "influenz.eth",
+          "n_co_fills": 189,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x8119010a6e589062aa03583bb3f39ca632d9f887": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 184,
+      "total_co_fill_volume": 184,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+          "pseudonym": "cigarettes",
+          "n_co_fills": 184,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x47bc8458d60154c8a17c2d8ce332f088a602abd2": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 167,
+      "total_co_fill_volume": 167,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+          "pseudonym": "cigarettes",
+          "n_co_fills": 167,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x51fd8f0358cc9e8a1ee5f87a0c7e3b07ed634272": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 164,
+      "total_co_fill_volume": 164,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+          "pseudonym": "cigarettes",
+          "n_co_fills": 164,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x7ea571c40408f340c1c8fc8eaacebab53c1bde7b": {
+      "n_cohort_partners": 2,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 161,
+      "total_co_fill_volume": 315,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+          "pseudonym": "gmanas",
+          "n_co_fills": 161,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xdc876e6873772d38716fda7f2452a78d426d7ab6",
+          "pseudonym": "432614799197",
+          "n_co_fills": 154,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xdb2223cc5202a4718c3069f577ec971f71c96478": {
+      "n_cohort_partners": 2,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 138,
+      "total_co_fill_volume": 276,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "pseudonym": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "n_co_fills": 138,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xdc876e6873772d38716fda7f2452a78d426d7ab6",
+          "pseudonym": "432614799197",
+          "n_co_fills": 138,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xf5f92940519a72da460b1c2a606bc1230f0e87b0": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 120,
+      "total_co_fill_volume": 120,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "pseudonym": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "n_co_fills": 120,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x6ac5bb06a9eb05641fd5e82640268b92f3ab4b6e": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 108,
+      "total_co_fill_volume": 108,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xdc876e6873772d38716fda7f2452a78d426d7ab6",
+          "pseudonym": "432614799197",
+          "n_co_fills": 108,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x53757615de1c42b83f893b79d4241a009dc2aeea": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 105,
+      "total_co_fill_volume": 105,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+          "pseudonym": "gmanas",
+          "n_co_fills": 105,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x7edb8d9e184f9747d6957dc3d54e1e8a0d6e7993": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 92,
+      "total_co_fill_volume": 92,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "pseudonym": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "n_co_fills": 92,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x0e1b30c63f6bac4fa1eacc7b852fa7e72e93ecaf": {
+      "n_cohort_partners": 2,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 79,
+      "total_co_fill_volume": 81,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "pseudonym": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "n_co_fills": 79,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xf1528f12e645462c344799b62b1b421a6a4c64aa",
+          "pseudonym": "phonesculptor",
+          "n_co_fills": 2,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xd3dff2e3b903372799b240c2338dd423086082fa": {
+      "n_cohort_partners": 4,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 75,
+      "total_co_fill_volume": 90,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "pseudonym": "0xd809c54478c5e50fe2aa20acccf0857baa0a6542",
+          "n_co_fills": 75,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x84ad9c5c547a82ec9a08547b94bd922446e5bfb7",
+          "pseudonym": "BillBenter2026",
+          "n_co_fills": 8,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x5268527977f700f9bf9b6d5cd843859e4e70135d",
+          "pseudonym": "HomeRunHazard",
+          "n_co_fills": 4,
           "in_cluster": false
         },
         {
-          "wallet": "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71",
-          "pseudonym": "planktonXD",
+          "wallet": "0xf1528f12e645462c344799b62b1b421a6a4c64aa",
+          "pseudonym": "phonesculptor",
+          "n_co_fills": 3,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xecb14ac6e9ca447ce2f2912e6217b43d7b655da3": {
+      "n_cohort_partners": 2,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 68,
+      "total_co_fill_volume": 71,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
+          "pseudonym": "influenz.eth",
+          "n_co_fills": 68,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xfc2f4f50ce2f6045d35558a5e2d8d4b2ac6610c7",
+          "pseudonym": "0xFc2F4f50ce2F6045d35558A5E2D8d4b2aC6610c7-1769097007451",
+          "n_co_fills": 3,
+          "in_cluster": false
+        }
+      ]
+    },
+    "0x2a69660046d7acc4ab204d7cc5ba78b0776cd2f7": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 11,
+      "total_co_fill_volume": 11,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xee0d153c17fe82b8866b484753b56a700ab457ab",
+          "pseudonym": "BBPK",
+          "n_co_fills": 11,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0xc88eb9ab98663254bff489c515f39f23b76bf3e1": {
+      "n_cohort_partners": 3,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 10,
+      "total_co_fill_volume": 12,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
+          "pseudonym": "elkmonkey",
+          "n_co_fills": 10,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x85f031d069de300055900c4055c1baeb6bde3f67",
+          "pseudonym": "RJW1",
           "n_co_fills": 1,
           "in_cluster": false
         },
         {
-          "wallet": "0xa58d4f278d7953cd38eeb929f7e242bfc7c0b9b8",
-          "pseudonym": "0xA58D4F278d79",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xbc8c61c1de7c31a8ff68aebf55256c028db9273f",
-          "pseudonym": "0xbC8C61C1DE7C",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x80da08b50ec85bf1f575725091928fff064b4f6d",
-          "pseudonym": "0x80Da08b50eC8",
+          "wallet": "0xe9076a87c5ed90ef16e6fe6529c943baeca0cff6",
+          "pseudonym": "0xe9076a87c5ed90ef16e6fe6529c943baeca0cff6",
           "n_co_fills": 1,
           "in_cluster": false
         }
       ]
     },
     "0xe613b515bd46b1585a8b137a4d291d9b80bd540e": {
-      "n_cohort_partners": 4,
+      "n_cohort_partners": 3,
+      "n_strong_cohort_partners": 2,
+      "max_n_co_fills_with_cohort": 6,
+      "total_co_fill_volume": 13,
+      "cluster_id": 2,
+      "cluster_size": 7,
+      "top_partners": [
+        {
+          "wallet": "0xe9076a87c5ed90ef16e6fe6529c943baeca0cff6",
+          "pseudonym": "0xe9076a87c5ed90ef16e6fe6529c943baeca0cff6",
+          "n_co_fills": 6,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x19254b55e7c48e88baab9e62cc218223a6544654",
+          "pseudonym": "coon777",
+          "n_co_fills": 5,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xdd92232bcdfbbac04132b3cbacbf32c2e5b16b2a",
+          "pseudonym": "Jdhdhduu",
+          "n_co_fills": 2,
+          "in_cluster": false
+        }
+      ]
+    },
+    "0xf1528f12e645462c344799b62b1b421a6a4c64aa": {
+      "n_cohort_partners": 11,
+      "n_strong_cohort_partners": 3,
+      "max_n_co_fills_with_cohort": 6,
+      "total_co_fill_volume": 34,
+      "cluster_id": 1,
+      "cluster_size": 80,
+      "top_partners": [
+        {
+          "wallet": "0x84ad9c5c547a82ec9a08547b94bd922446e5bfb7",
+          "pseudonym": "BillBenter2026",
+          "n_co_fills": 6,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x84cfffc3f16dcc353094de30d4a45226eccd2f63",
+          "pseudonym": "mooseborzoi",
+          "n_co_fills": 6,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+          "pseudonym": "swisstony",
+          "n_co_fills": 5,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xd3dff2e3b903372799b240c2338dd423086082fa",
+          "pseudonym": "0xD3D",
+          "n_co_fills": 3,
+          "in_cluster": true
+        },
+        {
+          "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
+          "pseudonym": "curie",
+          "n_co_fills": 2,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x19254b55e7c48e88baab9e62cc218223a6544654": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 1,
+      "max_n_co_fills_with_cohort": 5,
+      "total_co_fill_volume": 5,
+      "cluster_id": 2,
+      "cluster_size": 7,
+      "top_partners": [
+        {
+          "wallet": "0xe613b515bd46b1585a8b137a4d291d9b80bd540e",
+          "pseudonym": "0xe613b515bd46",
+          "n_co_fills": 5,
+          "in_cluster": true
+        }
+      ]
+    },
+    "0x5268527977f700f9bf9b6d5cd843859e4e70135d": {
+      "n_cohort_partners": 2,
       "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
+      "max_n_co_fills_with_cohort": 4,
       "total_co_fill_volume": 6,
       "cluster_id": null,
       "cluster_size": 1,
       "top_partners": [
         {
-          "wallet": "0x7ab6ac0f0d6ca5a15ec57abeaf413d31c8cdfa77",
-          "pseudonym": "Superior-Format",
+          "wallet": "0xd3dff2e3b903372799b240c2338dd423086082fa",
+          "pseudonym": "0xD3D",
+          "n_co_fills": 4,
+          "in_cluster": false
+        },
+        {
+          "wallet": "0xf1528f12e645462c344799b62b1b421a6a4c64aa",
+          "pseudonym": "phonesculptor",
           "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x6db983ff1cbc85249e64e6ccd101aaa613ba4ab5",
-          "pseudonym": "0x6Db983Ff1cbc",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x2663daca3cecf3767ca1c3b126002a8578a8ed1f",
-          "pseudonym": "Q96s3kwozynxpau",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x692e411de5f7ba4d859c6b33038a81224c12ee58",
-          "pseudonym": "0x692e411dE5F7",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x2663daca3cecf3767ca1c3b126002a8578a8ed1f": {
-      "n_cohort_partners": 3,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 4,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xa61ef8773ec2e821962306ca87d4b57e39ff0abd",
-          "pseudonym": "risk-manager",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x37e4728b3c4607fb2b3b205386bb1d1fb1a8c991",
-          "pseudonym": "0x37E4728B3c46",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xe613b515bd46b1585a8b137a4d291d9b80bd540e",
-          "pseudonym": "0xe613b515bd46",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x56c9fbdeccf198f1f5ad95ace39b24f5f7fb0d9e": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 3,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
-          "pseudonym": "RN1",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x2974bd0059e48f215c391882976e0f1b4c8c9c23",
-          "pseudonym": "65765757",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x2005d16a84ceefa912d4e380cd32e7ff827875ea": {
-      "n_cohort_partners": 3,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 4,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x56c9fbdeccf198f1f5ad95ace39b24f5f7fb0d9e",
-          "pseudonym": "0x56c9fbdeccf1",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xb786b8b6335e77dfad19928313e97753039cb18d",
-          "pseudonym": "0xb786b8b6335e77dfad19928313e97753039cb18d",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x492442eab586f242b53bda933fd5de859c8a3782",
-          "pseudonym": "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
-          "n_co_fills": 1,
           "in_cluster": false
         }
       ]
     },
     "0xed107a85a4585a381e48c7f7ca4144909e7dd2e5": {
-      "n_cohort_partners": 5,
+      "n_cohort_partners": 1,
       "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
+      "max_n_co_fills_with_cohort": 4,
+      "total_co_fill_volume": 4,
+      "cluster_id": null,
+      "cluster_size": 1,
+      "top_partners": [
+        {
+          "wallet": "0x750ca59fafbf837d939eca4cd241601a489c2fe3",
+          "pseudonym": "0x750ca59FafBF",
+          "n_co_fills": 4,
+          "in_cluster": false
+        }
+      ]
+    },
+    "0x750ca59fafbf837d939eca4cd241601a489c2fe3": {
+      "n_cohort_partners": 4,
+      "n_strong_cohort_partners": 0,
+      "max_n_co_fills_with_cohort": 4,
+      "total_co_fill_volume": 8,
+      "cluster_id": null,
+      "cluster_size": 1,
+      "top_partners": [
+        {
+          "wallet": "0xed107a85a4585a381e48c7f7ca4144909e7dd2e5",
+          "pseudonym": "bobe2",
+          "n_co_fills": 4,
+          "in_cluster": false
+        },
+        {
+          "wallet": "0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1",
+          "pseudonym": "0xDf17f4A8DD01",
+          "n_co_fills": 2,
+          "in_cluster": false
+        },
+        {
+          "wallet": "0x30e443872ddf63b2908a49f92cd690c304a55102",
+          "pseudonym": "truthteller",
+          "n_co_fills": 1,
+          "in_cluster": false
+        },
+        {
+          "wallet": "0xe154165732b79548f7533fc45168b102dd7a0b7f",
+          "pseudonym": "Nadmi",
+          "n_co_fills": 1,
+          "in_cluster": false
+        }
+      ]
+    },
+    "0xe25b9180f5687aa85bd94ee309bb72a464320f1b": {
+      "n_cohort_partners": 2,
+      "n_strong_cohort_partners": 0,
+      "max_n_co_fills_with_cohort": 3,
       "total_co_fill_volume": 6,
       "cluster_id": null,
       "cluster_size": 1,
       "top_partners": [
         {
-          "wallet": "0xc613e6707bd115e5c04d303d944568232697662b",
-          "pseudonym": "Adventurous-Lament",
-          "n_co_fills": 2,
+          "wallet": "0x63d80c8bd24fe99e60bc7d3c674ec1b27858e2ab",
+          "pseudonym": "Brilliant-Blood",
+          "n_co_fills": 3,
           "in_cluster": false
         },
         {
-          "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
-          "pseudonym": "ImJustKen",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
-          "pseudonym": "ArmageddonRewardsBilly",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x011f2d377e56119fb09196dffb0948ae55711122",
-          "pseudonym": "0x011f2d377e56",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x89cd944aa9cf528142e3557099c6992eb7ce4d7d",
-          "pseudonym": "0x89Cd944Aa9cf",
-          "n_co_fills": 1,
+          "wallet": "0x5b8f191a4a3e66fe9b7348891f21021399762c14",
+          "pseudonym": "DistortedReality",
+          "n_co_fills": 3,
           "in_cluster": false
         }
       ]
     },
-    "0x44c1dfe43260c94ed4f1d00de2e1f80fb113ebc1": {
-      "n_cohort_partners": 4,
+    "0x63d80c8bd24fe99e60bc7d3c674ec1b27858e2ab": {
+      "n_cohort_partners": 1,
       "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 5,
+      "max_n_co_fills_with_cohort": 3,
+      "total_co_fill_volume": 3,
       "cluster_id": null,
       "cluster_size": 1,
       "top_partners": [
         {
-          "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
-          "pseudonym": "ArmageddonRewardsBilly",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111",
-          "pseudonym": "0x1cFC260BfA2b",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xa58d4f278d7953cd38eeb929f7e242bfc7c0b9b8",
-          "pseudonym": "0xA58D4F278d79",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
-          "pseudonym": "0x21ffd2b7a212",
-          "n_co_fills": 1,
+          "wallet": "0xe25b9180f5687aa85bd94ee309bb72a464320f1b",
+          "pseudonym": "0xE25b9180f568",
+          "n_co_fills": 3,
           "in_cluster": false
         }
       ]
     },
-    "0xf33f0dfe73e3d1b3d0453e2a02c5d19100d3085c": {
-      "n_cohort_partners": 4,
+    "0x5b8f191a4a3e66fe9b7348891f21021399762c14": {
+      "n_cohort_partners": 1,
       "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 5,
+      "max_n_co_fills_with_cohort": 3,
+      "total_co_fill_volume": 3,
       "cluster_id": null,
       "cluster_size": 1,
       "top_partners": [
         {
-          "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
-          "pseudonym": "0x21ffd2b7a212",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x0d16999d6ba24c2c2c8bff93f91014cc43fad24d",
-          "pseudonym": "0x0d16999d6ba2",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4cc3522b689a6bf1fb4a2444c523e7776db47552",
-          "pseudonym": "0x4CC3522B689A",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111",
-          "pseudonym": "0x1cFC260BfA2b",
-          "n_co_fills": 1,
+          "wallet": "0xe25b9180f5687aa85bd94ee309bb72a464320f1b",
+          "pseudonym": "0xE25b9180f568",
+          "n_co_fills": 3,
           "in_cluster": false
         }
       ]
     },
-    "0xa9f9c0ca31912bee7ecd8aa25bfad07adcd6b3de": {
-      "n_cohort_partners": 4,
+    "0xfc2f4f50ce2f6045d35558a5e2d8d4b2ac6610c7": {
+      "n_cohort_partners": 1,
       "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 5,
+      "max_n_co_fills_with_cohort": 3,
+      "total_co_fill_volume": 3,
       "cluster_id": null,
       "cluster_size": 1,
       "top_partners": [
         {
-          "wallet": "0x7f9e2d1df78614564a70becc7fa14aa9a6623a0e",
-          "pseudonym": "nojnn",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x21f90e5ff30c12f52fbb2fb220aa268f22faed12",
-          "pseudonym": "0x21f90e5Ff30C",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xa9b44dca52ed35e59ac2a6f49d1203b8155464ed",
-          "pseudonym": "0xa9B44DCa52eD",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x96b59f71f635da5da031e3e93448c54fe226f5e7",
-          "pseudonym": "Sparkling-Commonsense",
-          "n_co_fills": 1,
+          "wallet": "0xecb14ac6e9ca447ce2f2912e6217b43d7b655da3",
+          "pseudonym": "0xECB14AC6E9ca",
+          "n_co_fills": 3,
           "in_cluster": false
         }
       ]
     },
-    "0x7f9e2d1df78614564a70becc7fa14aa9a6623a0e": {
+    "0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1": {
       "n_cohort_partners": 1,
       "n_strong_cohort_partners": 0,
       "max_n_co_fills_with_cohort": 2,
@@ -1664,102 +2208,66 @@
       "cluster_size": 1,
       "top_partners": [
         {
-          "wallet": "0xa9f9c0ca31912bee7ecd8aa25bfad07adcd6b3de",
-          "pseudonym": "Forthright-Scout",
+          "wallet": "0x750ca59fafbf837d939eca4cd241601a489c2fe3",
+          "pseudonym": "0x750ca59FafBF",
           "n_co_fills": 2,
           "in_cluster": false
         }
       ]
     },
-    "0x482bf5accdecfaffa67c14d4d4fbb59f428a3266": {
-      "n_cohort_partners": 3,
+    "0xe40ea00e74059c76c0035c919ef6b99c3e25a94d": {
+      "n_cohort_partners": 1,
       "n_strong_cohort_partners": 0,
       "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 4,
+      "total_co_fill_volume": 2,
       "cluster_id": null,
       "cluster_size": 1,
       "top_partners": [
         {
-          "wallet": "0xf0ec554fe75d57fef3f2404fce070b5c71d46064",
-          "pseudonym": "Uneven-Processing",
+          "wallet": "0xe9076a87c5ed90ef16e6fe6529c943baeca0cff6",
+          "pseudonym": "0xe9076a87c5ed90ef16e6fe6529c943baeca0cff6",
           "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71",
-          "pseudonym": "planktonXD",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
-          "pseudonym": "0x21ffd2b7a212",
-          "n_co_fills": 1,
           "in_cluster": false
         }
       ]
     },
-    "0xf0ec554fe75d57fef3f2404fce070b5c71d46064": {
-      "n_cohort_partners": 3,
+    "0xe5f0ae9cc9aef77ae3c2a64c9e69caa3f335dc1d": {
+      "n_cohort_partners": 1,
       "n_strong_cohort_partners": 0,
       "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 4,
+      "total_co_fill_volume": 2,
       "cluster_id": null,
       "cluster_size": 1,
       "top_partners": [
         {
-          "wallet": "0x482bf5accdecfaffa67c14d4d4fbb59f428a3266",
-          "pseudonym": "0x482BF5acCdeC",
+          "wallet": "0x652c9e1d3a71f42ccd362d9976e117f9a2222af0",
+          "pseudonym": "0x652c9e1d3a71f42Ccd362D9976e117f9a2222AF0-1776192441729",
           "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x71ed0bc95433cdf1be29f43219725fce9addd9eb",
-          "pseudonym": "Pointed-Appearance",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x6480542954b70a674a74bd1a6015dec362dc8dc5",
-          "pseudonym": "tripping",
-          "n_co_fills": 1,
           "in_cluster": false
         }
       ]
     },
-    "0x4478d7bd8a295691ac84f60a5ec2b47e122102a4": {
-      "n_cohort_partners": 3,
+    "0x652c9e1d3a71f42ccd362d9976e117f9a2222af0": {
+      "n_cohort_partners": 1,
       "n_strong_cohort_partners": 0,
       "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 4,
+      "total_co_fill_volume": 2,
       "cluster_id": null,
       "cluster_size": 1,
       "top_partners": [
         {
-          "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
-          "pseudonym": "0x21ffd2b7a212",
+          "wallet": "0xe5f0ae9cc9aef77ae3c2a64c9e69caa3f335dc1d",
+          "pseudonym": "0xE5F0AE9cc9aeF77ae3c2A64c9E69caa3F335dc1d-1773531520731",
           "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xbacd00c9080a82ded56f504ee8810af732b0ab35",
-          "pseudonym": "ScottyNooo",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
-          "pseudonym": "ImJustKen",
-          "n_co_fills": 1,
           "in_cluster": false
         }
       ]
     },
-    "0x6db983ff1cbc85249e64e6ccd101aaa613ba4ab5": {
-      "n_cohort_partners": 4,
+    "0xdd92232bcdfbbac04132b3cbacbf32c2e5b16b2a": {
+      "n_cohort_partners": 1,
       "n_strong_cohort_partners": 0,
       "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 5,
+      "total_co_fill_volume": 2,
       "cluster_id": null,
       "cluster_size": 1,
       "top_partners": [
@@ -1768,68 +2276,10 @@
           "pseudonym": "0xe613b515bd46",
           "n_co_fills": 2,
           "in_cluster": false
-        },
-        {
-          "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
-          "pseudonym": "ArmageddonRewardsBilly",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xc21ea96be762bb55041529af6e386e7c53b80215",
-          "pseudonym": "0xc21EA96Be762",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111",
-          "pseudonym": "0x1cFC260BfA2b",
-          "n_co_fills": 1,
-          "in_cluster": false
         }
       ]
     },
-    "0x011f2d377e56119fb09196dffb0948ae55711122": {
-      "n_cohort_partners": 9,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 10,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xd1acd3925d895de9aec98ff95f3a30c5279d08d5",
-          "pseudonym": "0xd1acd3925D89",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xdd572169e741c72227589c5cb56b9ddd638d694d",
-          "pseudonym": "Ignisss",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xfbfd14dd4bb607373119de95f1d4b21c3b6c0029",
-          "pseudonym": "XAE12Archangel",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111",
-          "pseudonym": "0x1cFC260BfA2b",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xc6dd722558dbfbd8fa780efcbe819ed8c6604b9f",
-          "pseudonym": "0xc6dD722558DB",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x4bac379da2f29d87c01ff737843e396a2cec02b1": {
+    "0xea2b4224411e723499a803ce3f4758779fb31fc6": {
       "n_cohort_partners": 2,
       "n_strong_cohort_partners": 0,
       "max_n_co_fills_with_cohort": 2,
@@ -1838,124 +2288,14 @@
       "cluster_size": 1,
       "top_partners": [
         {
-          "wallet": "0xb7d54bf1d0a362beb916d9cb58a04c41d67e0789",
-          "pseudonym": "Wicked-Sonnet",
+          "wallet": "0xfbf3d501e88815464642d0e913f15379c3eeb218",
+          "pseudonym": "VPenguin",
           "n_co_fills": 2,
           "in_cluster": false
         },
         {
-          "wallet": "0x89cd944aa9cf528142e3557099c6992eb7ce4d7d",
-          "pseudonym": "0x89Cd944Aa9cf",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xb7d54bf1d0a362beb916d9cb58a04c41d67e0789": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 2,
-      "total_co_fill_volume": 3,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x4bac379da2f29d87c01ff737843e396a2cec02b1",
-          "pseudonym": "LuckyNFT444",
-          "n_co_fills": 2,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x6480542954b70a674a74bd1a6015dec362dc8dc5",
-          "pseudonym": "tripping",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xe72bb501df5306c75c89383d48a1e81073fbb0a0": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xc88eb9ab98663254bff489c515f39f23b76bf3e1",
-          "pseudonym": "0xC88EB9AB9866",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xdc876e6873772d38716fda7f2452a78d426d7ab6",
-          "pseudonym": "432614799197",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xff30ac5b2cb4822a1b15604ac90659ef71314a37": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xc88eb9ab98663254bff489c515f39f23b76bf3e1",
-          "pseudonym": "0xC88EB9AB9866",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xce5bec63b40392845a9a504915f607c8e03a047a": {
-      "n_cohort_partners": 4,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 4,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xc88eb9ab98663254bff489c515f39f23b76bf3e1",
-          "pseudonym": "0xC88EB9AB9866",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xb41ac4e8907de5460e2dac0a98df8d1530d33a25",
-          "pseudonym": "GMIB",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
-          "pseudonym": "ArmageddonRewardsBilly",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xa61ef8773ec2e821962306ca87d4b57e39ff0abd",
-          "pseudonym": "risk-manager",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x8c544d302252df77f939723de189dc39fdac7e8c": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111",
-          "pseudonym": "0x1cFC260BfA2b",
+          "wallet": "0xd202bf6d89dc6bab1b9f00ead175f75466348973",
+          "pseudonym": "meoooow",
           "n_co_fills": 1,
           "in_cluster": false
         }
@@ -1964,20 +2304,68 @@
     "0xfbf3d501e88815464642d0e913f15379c3eeb218": {
       "n_cohort_partners": 1,
       "n_strong_cohort_partners": 0,
+      "max_n_co_fills_with_cohort": 2,
+      "total_co_fill_volume": 2,
+      "cluster_id": null,
+      "cluster_size": 1,
+      "top_partners": [
+        {
+          "wallet": "0xea2b4224411e723499a803ce3f4758779fb31fc6",
+          "pseudonym": "frankfrankfrank",
+          "n_co_fills": 2,
+          "in_cluster": false
+        }
+      ]
+    },
+    "0xbfd770b7ff07fb2ece41b0e7c593db65a84cf0bf": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 0,
+      "max_n_co_fills_with_cohort": 2,
+      "total_co_fill_volume": 2,
+      "cluster_id": null,
+      "cluster_size": 1,
+      "top_partners": [
+        {
+          "wallet": "0xf1528f12e645462c344799b62b1b421a6a4c64aa",
+          "pseudonym": "phonesculptor",
+          "n_co_fills": 2,
+          "in_cluster": false
+        }
+      ]
+    },
+    "0x30e443872ddf63b2908a49f92cd690c304a55102": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 0,
       "max_n_co_fills_with_cohort": 1,
       "total_co_fill_volume": 1,
       "cluster_id": null,
       "cluster_size": 1,
       "top_partners": [
         {
-          "wallet": "0xdc876e6873772d38716fda7f2452a78d426d7ab6",
-          "pseudonym": "432614799197",
+          "wallet": "0x750ca59fafbf837d939eca4cd241601a489c2fe3",
+          "pseudonym": "0x750ca59FafBF",
           "n_co_fills": 1,
           "in_cluster": false
         }
       ]
     },
-    "0xdc876e6873772d38716fda7f2452a78d426d7ab6": {
+    "0x85f031d069de300055900c4055c1baeb6bde3f67": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 0,
+      "max_n_co_fills_with_cohort": 1,
+      "total_co_fill_volume": 1,
+      "cluster_id": null,
+      "cluster_size": 1,
+      "top_partners": [
+        {
+          "wallet": "0xc88eb9ab98663254bff489c515f39f23b76bf3e1",
+          "pseudonym": "0xC88EB9AB9866",
+          "n_co_fills": 1,
+          "in_cluster": false
+        }
+      ]
+    },
+    "0xcdb1f1ef8213c06911e4ba6a884176c5571e276c": {
       "n_cohort_partners": 2,
       "n_strong_cohort_partners": 0,
       "max_n_co_fills_with_cohort": 1,
@@ -1986,188 +2374,14 @@
       "cluster_size": 1,
       "top_partners": [
         {
-          "wallet": "0xfbf3d501e88815464642d0e913f15379c3eeb218",
-          "pseudonym": "VPenguin",
+          "wallet": "0xccf31ea0f5de9c0bb4bb695fc77c3683dee41dd9",
+          "pseudonym": "0xcCF31Ea0F5dE",
           "n_co_fills": 1,
           "in_cluster": false
         },
         {
-          "wallet": "0xe72bb501df5306c75c89383d48a1e81073fbb0a0",
-          "pseudonym": "0xE72Bb501df53",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xd04d93be590ded67b99f053d4b6d29d3f8483312": {
-      "n_cohort_partners": 5,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 5,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xdd572169e741c72227589c5cb56b9ddd638d694d",
-          "pseudonym": "Ignisss",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xb41ac4e8907de5460e2dac0a98df8d1530d33a25",
-          "pseudonym": "GMIB",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x011f2d377e56119fb09196dffb0948ae55711122",
-          "pseudonym": "0x011f2d377e56",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x6480542954b70a674a74bd1a6015dec362dc8dc5",
-          "pseudonym": "tripping",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x0d16999d6ba24c2c2c8bff93f91014cc43fad24d",
-          "pseudonym": "0x0d16999d6ba2",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xfc25f141ed27bb1787338d2c4e7f51e3a15e1f7f": {
-      "n_cohort_partners": 3,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 3,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xbddf61af533ff524d27154e589d2d7a81510c684",
-          "pseudonym": "Countryside",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
-          "pseudonym": "0x9CB990F18625",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
-          "pseudonym": "gmanas",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xbddf61af533ff524d27154e589d2d7a81510c684": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xfc25f141ed27bb1787338d2c4e7f51e3a15e1f7f",
-          "pseudonym": ".Sisyphus",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xcb516a0c8b8ba2e42ff5c123e2f624d6cce6359d",
-          "pseudonym": "0xCb516a0C8b8B",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x9cb990f1862568a63d8601efeebe0304225c32f2": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xfc25f141ed27bb1787338d2c4e7f51e3a15e1f7f",
-          "pseudonym": ".Sisyphus",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
-          "pseudonym": "gmanas",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2": {
-      "n_cohort_partners": 3,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 3,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xfc25f141ed27bb1787338d2c4e7f51e3a15e1f7f",
-          "pseudonym": ".Sisyphus",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xdb27bf2ac5d428a9c63dbc914611036855a6c56e",
-          "pseudonym": "DrPufferfish",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
-          "pseudonym": "0x9CB990F18625",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x37e4728b3c4607fb2b3b205386bb1d1fb1a8c991": {
-      "n_cohort_partners": 4,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 4,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xa40d51396185d72e7505402357b929c4f6f3ea7a",
-          "pseudonym": "0xa40d51396185",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x2663daca3cecf3767ca1c3b126002a8578a8ed1f",
-          "pseudonym": "Q96s3kwozynxpau",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x5bffcf561bcae83af680ad600cb99f1184d6ffbe",
-          "pseudonym": "YatSen",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x492442eab586f242b53bda933fd5de859c8a3782",
-          "pseudonym": "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
+          "wallet": "0x78048aa26ac1967566b8ed11910b529e5f2d7025",
+          "pseudonym": "HorribleWork",
           "n_co_fills": 1,
           "in_cluster": false
         }
@@ -2182,14 +2396,14 @@
       "cluster_size": 1,
       "top_partners": [
         {
-          "wallet": "0xa8b202e6e9a4c2091b6860f1f5c9e9119bbc9a39",
-          "pseudonym": "Whirlwind-Mob",
+          "wallet": "0xcdb1f1ef8213c06911e4ba6a884176c5571e276c",
+          "pseudonym": "0xcDb1f1ef8213",
           "n_co_fills": 1,
           "in_cluster": false
         }
       ]
     },
-    "0xa8b202e6e9a4c2091b6860f1f5c9e9119bbc9a39": {
+    "0x78048aa26ac1967566b8ed11910b529e5f2d7025": {
       "n_cohort_partners": 1,
       "n_strong_cohort_partners": 0,
       "max_n_co_fills_with_cohort": 1,
@@ -2198,591 +2412,43 @@
       "cluster_size": 1,
       "top_partners": [
         {
-          "wallet": "0xccf31ea0f5de9c0bb4bb695fc77c3683dee41dd9",
-          "pseudonym": "0xcCF31Ea0F5dE",
+          "wallet": "0xcdb1f1ef8213c06911e4ba6a884176c5571e276c",
+          "pseudonym": "0xcDb1f1ef8213",
           "n_co_fills": 1,
           "in_cluster": false
         }
       ]
     },
-    "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71": {
-      "n_cohort_partners": 8,
+    "0x7e97bd09c2ccc632fb728d91b7c37d8ec5f34d54": {
+      "n_cohort_partners": 1,
       "n_strong_cohort_partners": 0,
       "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 8,
+      "total_co_fill_volume": 1,
       "cluster_id": null,
       "cluster_size": 1,
       "top_partners": [
         {
-          "wallet": "0x43372356634781eea88d61bbdd7824cdce958882",
-          "pseudonym": "0x433723566347",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4e25605fd905e9972efc0f4d8814530c655cd7a7",
-          "pseudonym": "0x4e25605Fd905",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x48185887c8dc95de60ee89722f1d0ee7894cbf0b",
-          "pseudonym": "0x48185887C8Dc",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x75e765216a57942d738d880ffcda854d9f869080",
-          "pseudonym": "0x75e765216A57",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x7ab6ac0f0d6ca5a15ec57abeaf413d31c8cdfa77",
-          "pseudonym": "Superior-Format",
+          "wallet": "0xd42f6a1634a3707e27cbae14ca966068e5d1047d",
+          "pseudonym": "Apsalar",
           "n_co_fills": 1,
           "in_cluster": false
         }
       ]
     },
-    "0x43372356634781eea88d61bbdd7824cdce958882": {
-      "n_cohort_partners": 5,
+    "0xd5196bdf50199e195c58a6aff2114cc0e455932c": {
+      "n_cohort_partners": 2,
       "n_strong_cohort_partners": 0,
       "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 5,
+      "total_co_fill_volume": 2,
       "cluster_id": null,
       "cluster_size": 1,
       "top_partners": [
-        {
-          "wallet": "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71",
-          "pseudonym": "planktonXD",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xa61ef8773ec2e821962306ca87d4b57e39ff0abd",
-          "pseudonym": "risk-manager",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x00e2d8f88b39d9b430c136c679369f41101cd56a",
-          "pseudonym": "0x00E2d8f88b39",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x96b59f71f635da5da031e3e93448c54fe226f5e7",
-          "pseudonym": "Sparkling-Commonsense",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
         {
           "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
           "pseudonym": "ArmageddonRewardsBilly",
           "n_co_fills": 1,
           "in_cluster": false
-        }
-      ]
-    },
-    "0x48185887c8dc95de60ee89722f1d0ee7894cbf0b": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71",
-          "pseudonym": "planktonXD",
-          "n_co_fills": 1,
-          "in_cluster": false
         },
-        {
-          "wallet": "0xbc54e69667ceb6ccec538e5a0ba1927fc1fe680f",
-          "pseudonym": "0xBc54E69667CE",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x0b9cae2b0dfe7a71c413e0604eaac1c352f87e44": {
-      "n_cohort_partners": 3,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 3,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71",
-          "pseudonym": "planktonXD",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xc613e6707bd115e5c04d303d944568232697662b",
-          "pseudonym": "Adventurous-Lament",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4b7410aefbf0f38012b0dfb1131a4de147a9e8d7",
-          "pseudonym": "0x4B7410AEFbF0",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xd1c769317bd15de7768a70d0214cf0bbcc531d2b": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71",
-          "pseudonym": "planktonXD",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
-          "pseudonym": "ArmageddonRewardsBilly",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xfbfd14dd4bb607373119de95f1d4b21c3b6c0029": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x011f2d377e56119fb09196dffb0948ae55711122",
-          "pseudonym": "0x011f2d377e56",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x45580feac3b916a88b7513929e26f86b3adea2b3": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
-          "pseudonym": "ImJustKen",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111",
-          "pseudonym": "0x1cFC260BfA2b",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b": {
-      "n_cohort_partners": 6,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 6,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xbacd00c9080a82ded56f504ee8810af732b0ab35",
-          "pseudonym": "ScottyNooo",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111",
-          "pseudonym": "0x1cFC260BfA2b",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x00e2d8f88b39d9b430c136c679369f41101cd56a",
-          "pseudonym": "0x00E2d8f88b39",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xc6dd722558dbfbd8fa780efcbe819ed8c6604b9f",
-          "pseudonym": "0xc6dD722558DB",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x3f02a8b650d4b30449e83616f2165460209ca51c",
-          "pseudonym": "0x3F02a8b650D4",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xfc2f4f50ce2f6045d35558a5e2d8d4b2ac6610c7": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xbacd00c9080a82ded56f504ee8810af732b0ab35",
-          "pseudonym": "ScottyNooo",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x162f6fff88a52864f2ecc9833e58089d5254798d",
-          "pseudonym": "Valen9",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xbacd00c9080a82ded56f504ee8810af732b0ab35",
-          "pseudonym": "ScottyNooo",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
-          "pseudonym": "ImJustKen",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xa84bdfe6ffa8bc7dd21b5c412258062e7b765055": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x96b59f71f635da5da031e3e93448c54fe226f5e7",
-          "pseudonym": "Sparkling-Commonsense",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x07e78f5f58f8fa839f298cfe3fefd258883aa343": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xc613e6707bd115e5c04d303d944568232697662b",
-          "pseudonym": "Adventurous-Lament",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x492442eab586f242b53bda933fd5de859c8a3782": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x37e4728b3c4607fb2b3b205386bb1d1fb1a8c991",
-          "pseudonym": "0x37E4728B3c46",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
-          "pseudonym": "RN1",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x80da08b50ec85bf1f575725091928fff064b4f6d": {
-      "n_cohort_partners": 4,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 4,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111",
-          "pseudonym": "0x1cFC260BfA2b",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x7ab6ac0f0d6ca5a15ec57abeaf413d31c8cdfa77",
-          "pseudonym": "Superior-Format",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x216509be5332c6037105b4f871966eb97240f598",
-          "pseudonym": "HotChili",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
-          "pseudonym": "0x21ffd2b7a212",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xecb14ac6e9ca447ce2f2912e6217b43d7b655da3": {
-      "n_cohort_partners": 3,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 3,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111",
-          "pseudonym": "0x1cFC260BfA2b",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
-          "pseudonym": "0x21ffd2b7a212",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xd1acd3925d895de9aec98ff95f3a30c5279d08d5",
-          "pseudonym": "0xd1acd3925D89",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xfea31bc088000ff909be1dfd8d0e3f2c7ef2d227": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x6a72f61820b26b1fe4d956e17b6dc2a1ea3033ee",
-          "pseudonym": "kch123",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x33c2ea1151c4399309715df027688845a6a99818": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x5bffcf561bcae83af680ad600cb99f1184d6ffbe",
-          "pseudonym": "YatSen",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x96f608f80c73bae30939b3eb87c17462e785a92c": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x2e0b70d482e6b389e81dea528be57d825dd48070",
-          "pseudonym": "0x2e0B70D482E6",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x2e0b70d482e6b389e81dea528be57d825dd48070": {
-      "n_cohort_partners": 3,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 3,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x96f608f80c73bae30939b3eb87c17462e785a92c",
-          "pseudonym": "0x96F608f80C73",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x627a0123bef3dfa869183b806a39c91cf9afcdc2",
-          "pseudonym": "Outlandish-Mattock",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x3980230e31f9475a5671a502854e2684fbba2062",
-          "pseudonym": "Loose-Few",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x2d27e4d20f3b8a2ee3bc861d9b83752f338676d8": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x00e2d8f88b39d9b430c136c679369f41101cd56a",
-          "pseudonym": "0x00E2d8f88b39",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x162f6fff88a52864f2ecc9833e58089d5254798d": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xfc2f4f50ce2f6045d35558a5e2d8d4b2ac6610c7",
-          "pseudonym": "0xFc2F4f50ce2F6045d35558A5E2D8d4b2aC6610c7-1769097007451",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xc3cd1d612bbf9fbf80da5a9bff0b0470cb46816c": {
-      "n_cohort_partners": 4,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 4,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xd1acd3925d895de9aec98ff95f3a30c5279d08d5",
-          "pseudonym": "0xd1acd3925D89",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4b7410aefbf0f38012b0dfb1131a4de147a9e8d7",
-          "pseudonym": "0x4B7410AEFbF0",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xbacd00c9080a82ded56f504ee8810af732b0ab35",
-          "pseudonym": "ScottyNooo",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x5188fa0e8a77e87bc6a58e6781fdfc4e165cc804",
-          "pseudonym": "AllByMyseIf",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x5188fa0e8a77e87bc6a58e6781fdfc4e165cc804": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xc3cd1d612bbf9fbf80da5a9bff0b0470cb46816c",
-          "pseudonym": "0xc3cd1d612bbf",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xa58d4f278d7953cd38eeb929f7e242bfc7c0b9b8": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x44c1dfe43260c94ed4f1d00de2e1f80fb113ebc1",
-          "pseudonym": "aenews2",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x7ab6ac0f0d6ca5a15ec57abeaf413d31c8cdfa77",
-          "pseudonym": "Superior-Format",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x294a61964989c4e31b5ea0572d8ca839b01fbbba": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
         {
           "wallet": "0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
           "pseudonym": "Fake-Guard",
@@ -2792,6 +2458,22 @@
       ]
     },
     "0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834": {
+      "n_cohort_partners": 1,
+      "n_strong_cohort_partners": 0,
+      "max_n_co_fills_with_cohort": 1,
+      "total_co_fill_volume": 1,
+      "cluster_id": null,
+      "cluster_size": 1,
+      "top_partners": [
+        {
+          "wallet": "0xd5196bdf50199e195c58a6aff2114cc0e455932c",
+          "pseudonym": "0xD5196BDf5019",
+          "n_co_fills": 1,
+          "in_cluster": false
+        }
+      ]
+    },
+    "0xe0a2f29b1fadb2259111bbeca392d3805ec4a349": {
       "n_cohort_partners": 2,
       "n_strong_cohort_partners": 0,
       "max_n_co_fills_with_cohort": 1,
@@ -2800,447 +2482,11 @@
       "cluster_size": 1,
       "top_partners": [
         {
-          "wallet": "0x294a61964989c4e31b5ea0572d8ca839b01fbbba",
-          "pseudonym": "0x294a61964989",
+          "wallet": "0x84ad9c5c547a82ec9a08547b94bd922446e5bfb7",
+          "pseudonym": "BillBenter2026",
           "n_co_fills": 1,
           "in_cluster": false
         },
-        {
-          "wallet": "0xa61ef8773ec2e821962306ca87d4b57e39ff0abd",
-          "pseudonym": "risk-manager",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x0d16999d6ba24c2c2c8bff93f91014cc43fad24d",
-          "pseudonym": "0x0d16999d6ba2",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x0d16999d6ba24c2c2c8bff93f91014cc43fad24d": {
-      "n_cohort_partners": 4,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 4,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5",
-          "pseudonym": "0xA53C26443FB6",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xd04d93be590ded67b99f053d4b6d29d3f8483312",
-          "pseudonym": "Shipoo",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xf33f0dfe73e3d1b3d0453e2a02c5d19100d3085c",
-          "pseudonym": "0xF33f0dfe73E3",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x1c1675a7c3662131acfd00aaabcbc97a6a4f45e9",
-          "pseudonym": "Alarming-Notepad",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x224b255eaa3279ceb77330317d3c38ee8e73f6b8": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xc4d1a863e9cc45d02ba22d3a1ae9ba7822018ce8",
-          "pseudonym": "0xC4D1a863e9CC",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xc4d1a863e9cc45d02ba22d3a1ae9ba7822018ce8": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x224b255eaa3279ceb77330317d3c38ee8e73f6b8",
-          "pseudonym": "0x224B255EaA32",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xe40ea00e74059c76c0035c919ef6b99c3e25a94d": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x627a0123bef3dfa869183b806a39c91cf9afcdc2",
-          "pseudonym": "Outlandish-Mattock",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x627a0123bef3dfa869183b806a39c91cf9afcdc2": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xe40ea00e74059c76c0035c919ef6b99c3e25a94d",
-          "pseudonym": "0xE40Ea00E7405",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x2e0b70d482e6b389e81dea528be57d825dd48070",
-          "pseudonym": "0x2e0B70D482E6",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xd1acd3925d895de9aec98ff95f3a30c5279d08d5",
-          "pseudonym": "0xd1acd3925D89",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292",
-          "pseudonym": "0x6bAB41A0dc40",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
-          "pseudonym": "wokerjoesleeper",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x8c76c4787bf236398d2d1a42dd3e8af1393206ac",
-          "pseudonym": "Bare-Toothpaste",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x2fb0f88ef5ba40e799b996e6f07b590d92b4abf8": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x96b59f71f635da5da031e3e93448c54fe226f5e7",
-          "pseudonym": "Sparkling-Commonsense",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xbc8c61c1de7c31a8ff68aebf55256c028db9273f": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x7ab6ac0f0d6ca5a15ec57abeaf413d31c8cdfa77",
-          "pseudonym": "Superior-Format",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xdb27bf2ac5d428a9c63dbc914611036855a6c56e": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
-          "pseudonym": "gmanas",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x6dd6314d1670f9f1ccccbd6746b0bf2f2fa0f5f4",
-          "pseudonym": "0x6DD6314D1670",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xb41ac4e8907de5460e2dac0a98df8d1530d33a25": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xd04d93be590ded67b99f053d4b6d29d3f8483312",
-          "pseudonym": "Shipoo",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xce5bec63b40392845a9a504915f607c8e03a047a",
-          "pseudonym": "Nexuus",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x2974bd0059e48f215c391882976e0f1b4c8c9c23": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x56c9fbdeccf198f1f5ad95ace39b24f5f7fb0d9e",
-          "pseudonym": "0x56c9fbdeccf1",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x4ad6cadefae3c28f5b2caa32a99ebba3a614464c": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xc613e6707bd115e5c04d303d944568232697662b",
-          "pseudonym": "Adventurous-Lament",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x847b8fdacd157191d47c7ccb2aad5c67bbd21027",
-          "pseudonym": "Creepy-Championship",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xf769c6390f6d564fe4859effbddb682c62660114": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
-          "pseudonym": "ArmageddonRewardsBilly",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1": {
-      "n_cohort_partners": 3,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 3,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
-          "pseudonym": "ArmageddonRewardsBilly",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x692e411de5f7ba4d859c6b33038a81224c12ee58",
-          "pseudonym": "0x692e411dE5F7",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xa5ea13a81d2b7e8e424b182bdc1db08e756bd96a",
-          "pseudonym": "bossoskil1",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xe25b9180f5687aa85bd94ee309bb72a464320f1b": {
-      "n_cohort_partners": 3,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 3,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
-          "pseudonym": "ArmageddonRewardsBilly",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
-          "pseudonym": "0x21ffd2b7a212",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x96b59f71f635da5da031e3e93448c54fe226f5e7",
-          "pseudonym": "Sparkling-Commonsense",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x8454f39e7fa6957dfbf1ecc574820ada1c92331a": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
-          "pseudonym": "ArmageddonRewardsBilly",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x89cd944aa9cf528142e3557099c6992eb7ce4d7d": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xed107a85a4585a381e48c7f7ca4144909e7dd2e5",
-          "pseudonym": "bobe2",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4bac379da2f29d87c01ff737843e396a2cec02b1",
-          "pseudonym": "LuckyNFT444",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x8ebfdc251c6c378d4a3a54a8f15cebfa4b9183ce": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x4b7410aefbf0f38012b0dfb1131a4de147a9e8d7",
-          "pseudonym": "0x4B7410AEFbF0",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x71ed0bc95433cdf1be29f43219725fce9addd9eb": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xf0ec554fe75d57fef3f2404fce070b5c71d46064",
-          "pseudonym": "Uneven-Processing",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xb786b8b6335e77dfad19928313e97753039cb18d": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
         {
           "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
           "pseudonym": "RN1",
@@ -3249,23 +2495,7 @@
         }
       ]
     },
-    "0x3f02a8b650d4b30449e83616f2165460209ca51c": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b",
-          "pseudonym": "0x7C3Db723F1D4",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xcaab19659b995951a44cc992447cb2ad5be324dd": {
+    "0xe154165732b79548f7533fc45168b102dd7a0b7f": {
       "n_cohort_partners": 2,
       "n_strong_cohort_partners": 0,
       "max_n_co_fills_with_cohort": 1,
@@ -3274,20 +2504,20 @@
       "cluster_size": 1,
       "top_partners": [
         {
-          "wallet": "0x4b7410aefbf0f38012b0dfb1131a4de147a9e8d7",
-          "pseudonym": "0x4B7410AEFbF0",
+          "wallet": "0xe9076a87c5ed90ef16e6fe6529c943baeca0cff6",
+          "pseudonym": "0xe9076a87c5ed90ef16e6fe6529c943baeca0cff6",
           "n_co_fills": 1,
           "in_cluster": false
         },
         {
-          "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
-          "pseudonym": "0x21ffd2b7a212",
+          "wallet": "0x750ca59fafbf837d939eca4cd241601a489c2fe3",
+          "pseudonym": "0x750ca59FafBF",
           "n_co_fills": 1,
           "in_cluster": false
         }
       ]
     },
-    "0x9e5c74c0bf46f0bf3fcd1064d17e6201c67fd8e6": {
+    "0xd202bf6d89dc6bab1b9f00ead175f75466348973": {
       "n_cohort_partners": 1,
       "n_strong_cohort_partners": 0,
       "max_n_co_fills_with_cohort": 1,
@@ -3296,454 +2526,8 @@
       "cluster_size": 1,
       "top_partners": [
         {
-          "wallet": "0xc6dd722558dbfbd8fa780efcbe819ed8c6604b9f",
-          "pseudonym": "0xc6dD722558DB",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x692e411de5f7ba4d859c6b33038a81224c12ee58": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
-          "pseudonym": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xe613b515bd46b1585a8b137a4d291d9b80bd540e",
-          "pseudonym": "0xe613b515bd46",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x216509be5332c6037105b4f871966eb97240f598": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x80da08b50ec85bf1f575725091928fff064b4f6d",
-          "pseudonym": "0x80Da08b50eC8",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x4cc3522b689a6bf1fb4a2444c523e7776db47552": {
-      "n_cohort_partners": 3,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 3,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xf33f0dfe73e3d1b3d0453e2a02c5d19100d3085c",
-          "pseudonym": "0xF33f0dfe73E3",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x9f47f1fcb1701bf9eaf31236ad39875e5d60af93",
-          "pseudonym": "TheGuru-791",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xd42f6a1634a3707e27cbae14ca966068e5d1047d",
-          "pseudonym": "Apsalar",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x847b8fdacd157191d47c7ccb2aad5c67bbd21027": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x4ad6cadefae3c28f5b2caa32a99ebba3a614464c",
-          "pseudonym": "Unripe-Split",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x1f6b85cb85876df272199039207b33166757267e": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
-          "pseudonym": "0x8dxd",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x63ce342161250d705dc0b16df89036c8e5f9ba9a": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x1f6b85cb85876df272199039207b33166757267e",
-          "pseudonym": "0x1f6b85CB8587",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x5bab6b0b49e77983e882768030f8cc335bee53e6",
-          "pseudonym": "0x5bAb6B0B49E7",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xcb516a0c8b8ba2e42ff5c123e2f624d6cce6359d": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xbddf61af533ff524d27154e589d2d7a81510c684",
-          "pseudonym": "Countryside",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x21f90e5ff30c12f52fbb2fb220aa268f22faed12": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xa9f9c0ca31912bee7ecd8aa25bfad07adcd6b3de",
-          "pseudonym": "Forthright-Scout",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xa9b44dca52ed35e59ac2a6f49d1203b8155464ed": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xa9f9c0ca31912bee7ecd8aa25bfad07adcd6b3de",
-          "pseudonym": "Forthright-Scout",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x55b4af6a1cff148a307cad8ad098206a028e80ea",
-          "pseudonym": "StarryPath",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x9f47f1fcb1701bf9eaf31236ad39875e5d60af93": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x4cc3522b689a6bf1fb4a2444c523e7776db47552",
-          "pseudonym": "0x4CC3522B689A",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf",
-          "pseudonym": "Fredi9999",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xe0a2f29b1fadb2259111bbeca392d3805ec4a349": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x011f2d377e56119fb09196dffb0948ae55711122",
-          "pseudonym": "0x011f2d377e56",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xcb14f61711d913773f4b982af340fa7eae175358": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xddff18c9e86262e62af046d818dda0c3de6f52d6",
-          "pseudonym": "0xdDff18C9E862",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xb4f2f0c858566fef705edf8efc1a5e9fba307862": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
-          "pseudonym": "Pestle",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50": {
-      "n_cohort_partners": 4,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 4,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xb4f2f0c858566fef705edf8efc1a5e9fba307862",
-          "pseudonym": "Desy-1725192185234",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x4c2966a198cd7ac982110d0219b037afa9997570",
-          "pseudonym": "0x4c2966a198cd",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x6480542954b70a674a74bd1a6015dec362dc8dc5",
-          "pseudonym": "tripping",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xa61ef8773ec2e821962306ca87d4b57e39ff0abd",
-          "pseudonym": "risk-manager",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x09fc877d0f2065b37c5cb5aafc0e66602c7d4cd4": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x4b7410aefbf0f38012b0dfb1131a4de147a9e8d7",
-          "pseudonym": "0x4B7410AEFbF0",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xc21ea96be762bb55041529af6e386e7c53b80215": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x6db983ff1cbc85249e64e6ccd101aaa613ba4ab5",
-          "pseudonym": "0x6Db983Ff1cbc",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xc4086b708cd3a50880b7069add1a1a80000f4675": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf",
-          "pseudonym": "Fredi9999",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xa5ea13a81d2b7e8e424b182bdc1db08e756bd96a": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
-          "pseudonym": "0x21ffd2b7a212",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
-          "pseudonym": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x8c76c4787bf236398d2d1a42dd3e8af1393206ac": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292",
-          "pseudonym": "0x6bAB41A0dc40",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xbc54e69667ceb6ccec538e5a0ba1927fc1fe680f": {
-      "n_cohort_partners": 3,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 3,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x48185887c8dc95de60ee89722f1d0ee7894cbf0b",
-          "pseudonym": "0x48185887C8Dc",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x96b59f71f635da5da031e3e93448c54fe226f5e7",
-          "pseudonym": "Sparkling-Commonsense",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0x3cf3e8d5427aed066a7a5926980600f6c3cf87b3",
-          "pseudonym": "0x3Cf3E8d5427a",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x3980230e31f9475a5671a502854e2684fbba2062": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0x2e0b70d482e6b389e81dea528be57d825dd48070",
-          "pseudonym": "0x2e0B70D482E6",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0x6dd6314d1670f9f1ccccbd6746b0bf2f2fa0f5f4": {
-      "n_cohort_partners": 2,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 2,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xd1acd3925d895de9aec98ff95f3a30c5279d08d5",
-          "pseudonym": "0xd1acd3925D89",
-          "n_co_fills": 1,
-          "in_cluster": false
-        },
-        {
-          "wallet": "0xdb27bf2ac5d428a9c63dbc914611036855a6c56e",
-          "pseudonym": "DrPufferfish",
-          "n_co_fills": 1,
-          "in_cluster": false
-        }
-      ]
-    },
-    "0xbefa95c276ee8ef6ff3ef43d1c1c454f52bc300d": {
-      "n_cohort_partners": 1,
-      "n_strong_cohort_partners": 0,
-      "max_n_co_fills_with_cohort": 1,
-      "total_co_fill_volume": 1,
-      "cluster_id": null,
-      "cluster_size": 1,
-      "top_partners": [
-        {
-          "wallet": "0xd1acd3925d895de9aec98ff95f3a30c5279d08d5",
-          "pseudonym": "0xd1acd3925D89",
+          "wallet": "0xea2b4224411e723499a803ce3f4758779fb31fc6",
+          "pseudonym": "frankfrankfrank",
           "n_co_fills": 1,
           "in_cluster": false
         }
@@ -3751,11 +2535,11 @@
     }
   },
   "summary": {
-    "n_cohort_wallets_with_any_partner": 147,
-    "n_cohort_wallets_in_a_cluster": 8,
-    "n_clusters": 4,
-    "largest_cluster_size": 2,
-    "n_cohort_to_cohort_edges": 415,
+    "n_cohort_wallets_with_any_partner": 113,
+    "n_cohort_wallets_in_a_cluster": 87,
+    "n_clusters": 2,
+    "largest_cluster_size": 80,
+    "n_cohort_to_cohort_edges": 157,
     "strong_partner_threshold": 5
   },
   "source_engine": "build_hedge_cluster_features.py \u00b7 v60cz",
