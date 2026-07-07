@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "methodology_version": "walkforward-v0.1",
-  "generated_at_unix": 1783341290,
+  "generated_at_unix": 1783413610,
   "description": "Walk-forward validation per methodology version. For each published version, evaluate the Brier mean of forward chains committed AT-OR-AFTER ship_date and resolved within the lookahead window. Accumulates over time as new chains mature.",
   "role_served": "Role 7 enterprise audit \u00b7 Role 10 research/fund \u00b7 M5 legal armor (S&P-pattern \u00b7 audit-resistant methodology version chain).",
   "windows_days": [
@@ -10,7 +10,7 @@
     90
   ],
   "n_methodology_versions": 6,
-  "n_chains_evaluated_total": 8751,
+  "n_chains_evaluated_total": 11610,
   "versions": [
     {
       "version": "v1",
@@ -33,7 +33,7 @@
           "n": 0,
           "brier_mean": null,
           "sample_thin": true,
-          "reason": "window not yet matured (matures 2554499 sec from now)"
+          "reason": "window not yet matured (matures 2482179 sec from now)"
         }
       }
     },
@@ -58,7 +58,7 @@
           "n": 0,
           "brier_mean": null,
           "sample_thin": true,
-          "reason": "window not yet matured (matures 2554499 sec from now)"
+          "reason": "window not yet matured (matures 2482179 sec from now)"
         }
       }
     },
@@ -83,7 +83,7 @@
           "n": 0,
           "brier_mean": null,
           "sample_thin": true,
-          "reason": "window not yet matured (matures 2554499 sec from now)"
+          "reason": "window not yet matured (matures 2482179 sec from now)"
         }
       }
     },
@@ -108,7 +108,7 @@
           "n": 0,
           "brier_mean": null,
           "sample_thin": true,
-          "reason": "window not yet matured (matures 2559651 sec from now)"
+          "reason": "window not yet matured (matures 2487331 sec from now)"
         }
       }
     },
@@ -124,16 +124,16 @@
           "sample_thin": false
         },
         "60d": {
-          "n": 0,
-          "brier_mean": null,
-          "sample_thin": true,
-          "reason": "window not yet matured (matures 31348 sec from now)"
+          "n": 1434,
+          "brier_mean": 0.0933,
+          "brier_median": 0.0105,
+          "sample_thin": false
         },
         "90d": {
           "n": 0,
           "brier_mean": null,
           "sample_thin": true,
-          "reason": "window not yet matured (matures 2623348 sec from now)"
+          "reason": "window not yet matured (matures 2551028 sec from now)"
         }
       }
     },
@@ -149,16 +149,16 @@
           "sample_thin": false
         },
         "60d": {
-          "n": 0,
-          "brier_mean": null,
-          "sample_thin": true,
-          "reason": "window not yet matured (matures 70639 sec from now)"
+          "n": 1425,
+          "brier_mean": 0.0927,
+          "brier_median": 0.0102,
+          "sample_thin": false
         },
         "90d": {
           "n": 0,
           "brier_mean": null,
           "sample_thin": true,
-          "reason": "window not yet matured (matures 2662639 sec from now)"
+          "reason": "window not yet matured (matures 2590319 sec from now)"
         }
       }
     }
