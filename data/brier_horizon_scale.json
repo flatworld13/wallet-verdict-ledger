@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "methodology_version": "Le-2026-v0.1",
-  "generated_at_unix": 1783497162,
+  "generated_at_unix": 1783589827,
   "description": "Brier horizon decomposition \u00b7 Le 2026 4-component framework \u00b7 component 1 (horizon-only) live in v0.1 \u00b7 component 2 (domain-only) via brier_by_domain \u00b7 components 3+4 queued for v0.2",
   "M3_vocabulary_citation": "Le 2026 \u00b7 4-component Brier decomposition (horizon \u00d7 domain \u00d7 domain-horizon \u00d7 scale)",
   "horizon_buckets": [
@@ -31,41 +31,104 @@
       "hi_sec": 315360000
     }
   ],
-  "n_chains_used": 2959,
-  "n_chains_missing_horizon": 1862,
+  "n_chains_used": 3103,
+  "n_chains_missing_horizon": 1964,
   "cohort_horizon_brier": {
     "<24h": {
-      "n": 1755,
-      "brier_mean": 0.1099,
+      "n": 1821,
+      "brier_mean": 0.1089,
       "brier_median": 0.0259,
       "sample_thin": false
     },
     "1-7d": {
-      "n": 527,
-      "brier_mean": 0.0761,
+      "n": 560,
+      "brier_mean": 0.075,
       "brier_median": 0.0021,
       "sample_thin": false
     },
     "1-4w": {
-      "n": 415,
-      "brier_mean": 0.0487,
-      "brier_median": 0.0017,
+      "n": 451,
+      "brier_mean": 0.0502,
+      "brier_median": 0.0019,
       "sample_thin": false
     },
     "1-3mo": {
-      "n": 203,
-      "brier_mean": 0.0669,
+      "n": 211,
+      "brier_mean": 0.0665,
       "brier_median": 0.0074,
       "sample_thin": false
     },
     ">3mo": {
-      "n": 59,
-      "brier_mean": 0.0544,
+      "n": 60,
+      "brier_mean": 0.0537,
       "brier_median": 0.0027,
       "sample_thin": false
     }
   },
   "per_wallet": {
+    "0xb4f2f0c858566fef705edf8efc1a5e9fba307862": {
+      "<24h": {
+        "n": 1,
+        "brier_mean": 0.0,
+        "brier_median": 0.0,
+        "sample_thin": true
+      },
+      "1-7d": {
+        "n": 0,
+        "brier_mean": null,
+        "sample_thin": true
+      },
+      "1-4w": {
+        "n": 8,
+        "brier_mean": 0.0002,
+        "brier_median": 0.0,
+        "sample_thin": false
+      },
+      "1-3mo": {
+        "n": 6,
+        "brier_mean": 0.0,
+        "brier_median": 0.0,
+        "sample_thin": false
+      },
+      ">3mo": {
+        "n": 0,
+        "brier_mean": null,
+        "sample_thin": true
+      },
+      "total_n_resolved_horizon_known": 15
+    },
+    "0xfea31bc088000ff909be1dfd8d0e3f2c7ef2d227": {
+      "<24h": {
+        "n": 29,
+        "brier_mean": 0.1031,
+        "brier_median": 0.0037,
+        "sample_thin": false
+      },
+      "1-7d": {
+        "n": 29,
+        "brier_mean": 0.0594,
+        "brier_median": 0.0,
+        "sample_thin": false
+      },
+      "1-4w": {
+        "n": 11,
+        "brier_mean": 0.0989,
+        "brier_median": 0.0008,
+        "sample_thin": false
+      },
+      "1-3mo": {
+        "n": 4,
+        "brier_mean": 0.1017,
+        "brier_median": 0.0646,
+        "sample_thin": true
+      },
+      ">3mo": {
+        "n": 0,
+        "brier_mean": null,
+        "sample_thin": true
+      },
+      "total_n_resolved_horizon_known": 73
+    },
     "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1": {
       "<24h": {
         "n": 10,
@@ -74,21 +137,21 @@
         "sample_thin": false
       },
       "1-7d": {
-        "n": 12,
-        "brier_mean": 0.0936,
-        "brier_median": 0.0026,
+        "n": 13,
+        "brier_mean": 0.0983,
+        "brier_median": 0.0028,
         "sample_thin": false
       },
       "1-4w": {
-        "n": 33,
-        "brier_mean": 0.0712,
+        "n": 35,
+        "brier_mean": 0.0685,
         "brier_median": 0.006,
         "sample_thin": false
       },
       "1-3mo": {
-        "n": 24,
-        "brier_mean": 0.07,
-        "brier_median": 0.0558,
+        "n": 25,
+        "brier_mean": 0.0681,
+        "brier_median": 0.0517,
         "sample_thin": false
       },
       ">3mo": {
@@ -97,7 +160,7 @@
         "brier_median": 0.0032,
         "sample_thin": true
       },
-      "total_n_resolved_horizon_known": 81
+      "total_n_resolved_horizon_known": 85
     },
     "0x1a2f67124f12eaa88be0f6683a95abede555647a": {
       "<24h": {
@@ -128,68 +191,6 @@
         "sample_thin": true
       },
       "total_n_resolved_horizon_known": 44
-    },
-    "0xfea31bc088000ff909be1dfd8d0e3f2c7ef2d227": {
-      "<24h": {
-        "n": 25,
-        "brier_mean": 0.0977,
-        "brier_median": 0.0025,
-        "sample_thin": false
-      },
-      "1-7d": {
-        "n": 27,
-        "brier_mean": 0.0384,
-        "brier_median": 0.0,
-        "sample_thin": false
-      },
-      "1-4w": {
-        "n": 11,
-        "brier_mean": 0.0989,
-        "brier_median": 0.0008,
-        "sample_thin": false
-      },
-      "1-3mo": {
-        "n": 4,
-        "brier_mean": 0.1017,
-        "brier_median": 0.0646,
-        "sample_thin": true
-      },
-      ">3mo": {
-        "n": 0,
-        "brier_mean": null,
-        "sample_thin": true
-      },
-      "total_n_resolved_horizon_known": 67
-    },
-    "0xb4f2f0c858566fef705edf8efc1a5e9fba307862": {
-      "<24h": {
-        "n": 0,
-        "brier_mean": null,
-        "sample_thin": true
-      },
-      "1-7d": {
-        "n": 0,
-        "brier_mean": null,
-        "sample_thin": true
-      },
-      "1-4w": {
-        "n": 8,
-        "brier_mean": 0.0002,
-        "brier_median": 0.0,
-        "sample_thin": false
-      },
-      "1-3mo": {
-        "n": 6,
-        "brier_mean": 0.0,
-        "brier_median": 0.0,
-        "sample_thin": false
-      },
-      ">3mo": {
-        "n": 0,
-        "brier_mean": null,
-        "sample_thin": true
-      },
-      "total_n_resolved_horizon_known": 14
     },
     "0x95074f700f93bdf6e62fc965e0832064c0877b04": {
       "<24h": {
@@ -316,6 +317,38 @@
         "sample_thin": true
       },
       "total_n_resolved_horizon_known": 5
+    },
+    "0x714a685b5454ea4d52979563bbafa77b8168ab2f": {
+      "<24h": {
+        "n": 10,
+        "brier_mean": 0.0891,
+        "brier_median": 0.0094,
+        "sample_thin": false
+      },
+      "1-7d": {
+        "n": 15,
+        "brier_mean": 0.0195,
+        "brier_median": 0.0018,
+        "sample_thin": false
+      },
+      "1-4w": {
+        "n": 18,
+        "brier_mean": 0.0314,
+        "brier_median": 0.0024,
+        "sample_thin": false
+      },
+      "1-3mo": {
+        "n": 4,
+        "brier_mean": 0.003,
+        "brier_median": 0.0004,
+        "sample_thin": true
+      },
+      ">3mo": {
+        "n": 0,
+        "brier_mean": null,
+        "sample_thin": true
+      },
+      "total_n_resolved_horizon_known": 47
     },
     "0x53757615de1c42b83f893b79d4241a009dc2aeea": {
       "<24h": {
@@ -477,20 +510,20 @@
     },
     "0x5371f1b6954e31c502064614649cea3568cb76eb": {
       "<24h": {
-        "n": 17,
-        "brier_mean": 0.0021,
+        "n": 18,
+        "brier_mean": 0.0022,
         "brier_median": 0.0003,
         "sample_thin": false
       },
       "1-7d": {
-        "n": 39,
-        "brier_mean": 0.0041,
+        "n": 41,
+        "brier_mean": 0.004,
         "brier_median": 0.0011,
         "sample_thin": false
       },
       "1-4w": {
-        "n": 28,
-        "brier_mean": 0.0029,
+        "n": 33,
+        "brier_mean": 0.0027,
         "brier_median": 0.0014,
         "sample_thin": false
       },
@@ -505,7 +538,7 @@
         "brier_mean": null,
         "sample_thin": true
       },
-      "total_n_resolved_horizon_known": 85
+      "total_n_resolved_horizon_known": 93
     },
     "0x06f22ff6d9362ce82243f8ca594c97485d9c1269": {
       "<24h": {
@@ -983,6 +1016,35 @@
       },
       "total_n_resolved_horizon_known": 39
     },
+    "0x5b6e80132e843cb8570ee93e448f05f40ef3f544": {
+      "<24h": {
+        "n": 21,
+        "brier_mean": 0.0413,
+        "brier_median": 0.0128,
+        "sample_thin": false
+      },
+      "1-7d": {
+        "n": 0,
+        "brier_mean": null,
+        "sample_thin": true
+      },
+      "1-4w": {
+        "n": 0,
+        "brier_mean": null,
+        "sample_thin": true
+      },
+      "1-3mo": {
+        "n": 0,
+        "brier_mean": null,
+        "sample_thin": true
+      },
+      ">3mo": {
+        "n": 0,
+        "brier_mean": null,
+        "sample_thin": true
+      },
+      "total_n_resolved_horizon_known": 21
+    },
     "0x160db9bb5bf012f21251a74737093bcdc36f5295": {
       "<24h": {
         "n": 23,
@@ -1046,9 +1108,9 @@
     },
     "0xfbfd14dd4bb607373119de95f1d4b21c3b6c0029": {
       "<24h": {
-        "n": 2,
-        "brier_mean": 0.04,
-        "brier_median": 0.04,
+        "n": 3,
+        "brier_mean": 0.1006,
+        "brier_median": 0.0797,
         "sample_thin": true
       },
       "1-7d": {
@@ -1074,7 +1136,7 @@
         "brier_median": 0.0232,
         "sample_thin": true
       },
-      "total_n_resolved_horizon_known": 8
+      "total_n_resolved_horizon_known": 9
     },
     "0xe734e7bf7cfb9e464681f71822f6c2f6be514f0c": {
       "<24h": {
@@ -1170,6 +1232,36 @@
         "sample_thin": true
       },
       "total_n_resolved_horizon_known": 10
+    },
+    "0x09b540739cfa17ba6b61f4351000583cd6397e72": {
+      "<24h": {
+        "n": 4,
+        "brier_mean": 0.2136,
+        "brier_median": 0.217,
+        "sample_thin": true
+      },
+      "1-7d": {
+        "n": 1,
+        "brier_mean": 0.0883,
+        "brier_median": 0.0883,
+        "sample_thin": true
+      },
+      "1-4w": {
+        "n": 0,
+        "brier_mean": null,
+        "sample_thin": true
+      },
+      "1-3mo": {
+        "n": 0,
+        "brier_mean": null,
+        "sample_thin": true
+      },
+      ">3mo": {
+        "n": 0,
+        "brier_mean": null,
+        "sample_thin": true
+      },
+      "total_n_resolved_horizon_known": 5
     },
     "0x5b1cc236a84a45cb644b6ea1da37e846cc88c3b0": {
       "<24h": {
@@ -1425,6 +1517,39 @@
       },
       "total_n_resolved_horizon_known": 14
     },
+    "0x20bd2dfcd3412caa5bba38e06cf46d9499ee4845": {
+      "<24h": {
+        "n": 11,
+        "brier_mean": 0.0079,
+        "brier_median": 0.0011,
+        "sample_thin": false
+      },
+      "1-7d": {
+        "n": 33,
+        "brier_mean": 0.0085,
+        "brier_median": 0.0037,
+        "sample_thin": false
+      },
+      "1-4w": {
+        "n": 20,
+        "brier_mean": 0.0188,
+        "brier_median": 0.0084,
+        "sample_thin": false
+      },
+      "1-3mo": {
+        "n": 11,
+        "brier_mean": 0.0129,
+        "brier_median": 0.0034,
+        "sample_thin": false
+      },
+      ">3mo": {
+        "n": 9,
+        "brier_mean": 0.0264,
+        "brier_median": 0.0277,
+        "sample_thin": false
+      },
+      "total_n_resolved_horizon_known": 84
+    },
     "0x4cc3522b689a6bf1fb4a2444c523e7776db47552": {
       "<24h": {
         "n": 5,
@@ -1456,39 +1581,6 @@
         "sample_thin": true
       },
       "total_n_resolved_horizon_known": 11
-    },
-    "0x20bd2dfcd3412caa5bba38e06cf46d9499ee4845": {
-      "<24h": {
-        "n": 9,
-        "brier_mean": 0.0095,
-        "brier_median": 0.0026,
-        "sample_thin": false
-      },
-      "1-7d": {
-        "n": 32,
-        "brier_mean": 0.0086,
-        "brier_median": 0.0033,
-        "sample_thin": false
-      },
-      "1-4w": {
-        "n": 20,
-        "brier_mean": 0.0188,
-        "brier_median": 0.0084,
-        "sample_thin": false
-      },
-      "1-3mo": {
-        "n": 11,
-        "brier_mean": 0.0129,
-        "brier_median": 0.0034,
-        "sample_thin": false
-      },
-      ">3mo": {
-        "n": 9,
-        "brier_mean": 0.0264,
-        "brier_median": 0.0277,
-        "sample_thin": false
-      },
-      "total_n_resolved_horizon_known": 81
     },
     "0x1c4f729bb55675cf8cbb863f5ebc9c3074e32852": {
       "<24h": {
@@ -1716,8 +1808,8 @@
     },
     "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86": {
       "<24h": {
-        "n": 77,
-        "brier_mean": 0.0339,
+        "n": 79,
+        "brier_mean": 0.0335,
         "brier_median": 0.0001,
         "sample_thin": false
       },
@@ -1741,7 +1833,7 @@
         "brier_mean": null,
         "sample_thin": true
       },
-      "total_n_resolved_horizon_known": 77
+      "total_n_resolved_horizon_known": 79
     },
     "0xb6c258450d5c6ff0c7337865e9e7db0d52284708": {
       "<24h": {
@@ -1836,6 +1928,36 @@
         "sample_thin": true
       },
       "total_n_resolved_horizon_known": 16
+    },
+    "0x7b02b2bac2a30ed5e40b7094e734f4c3dc2a4991": {
+      "<24h": {
+        "n": 0,
+        "brier_mean": null,
+        "sample_thin": true
+      },
+      "1-7d": {
+        "n": 5,
+        "brier_mean": 0.004,
+        "brier_median": 0.001,
+        "sample_thin": false
+      },
+      "1-4w": {
+        "n": 5,
+        "brier_mean": 0.0063,
+        "brier_median": 0.0059,
+        "sample_thin": false
+      },
+      "1-3mo": {
+        "n": 0,
+        "brier_mean": null,
+        "sample_thin": true
+      },
+      ">3mo": {
+        "n": 0,
+        "brier_mean": null,
+        "sample_thin": true
+      },
+      "total_n_resolved_horizon_known": 10
     },
     "0x42477970683d4d0a52ec7082fee5d760cc5591c4": {
       "<24h": {
@@ -2144,9 +2266,9 @@
     },
     "0x83cdbcf1d454c88a1a8aed1c5e8d7f46309726d0": {
       "<24h": {
-        "n": 7,
-        "brier_mean": 0.1612,
-        "brier_median": 0.1412,
+        "n": 11,
+        "brier_mean": 0.1436,
+        "brier_median": 0.1192,
         "sample_thin": false
       },
       "1-7d": {
@@ -2169,7 +2291,7 @@
         "brier_mean": null,
         "sample_thin": true
       },
-      "total_n_resolved_horizon_known": 7
+      "total_n_resolved_horizon_known": 11
     },
     "0x8e9eedf20dfa70956d49f608a205e402d9df38e4": {
       "<24h": {
@@ -2729,9 +2851,9 @@
     },
     "0x886f7e2516710ad04b458012636b3766e13795aa": {
       "<24h": {
-        "n": 6,
-        "brier_mean": 0.0638,
-        "brier_median": 0.0073,
+        "n": 7,
+        "brier_mean": 0.0548,
+        "brier_median": 0.0012,
         "sample_thin": false
       },
       "1-7d": {
@@ -2756,7 +2878,7 @@
         "brier_mean": null,
         "sample_thin": true
       },
-      "total_n_resolved_horizon_known": 15
+      "total_n_resolved_horizon_known": 16
     },
     "0xd0d6053c3c37e727402d84c14069780d360993aa": {
       "<24h": {
@@ -2815,6 +2937,39 @@
         "sample_thin": true
       },
       "total_n_resolved_horizon_known": 88
+    },
+    "0x9478e0b0db650ac66ca3a2c9f6ed68ebca4863f5": {
+      "<24h": {
+        "n": 15,
+        "brier_mean": 0.1124,
+        "brier_median": 0.0948,
+        "sample_thin": false
+      },
+      "1-7d": {
+        "n": 1,
+        "brier_mean": 0.2478,
+        "brier_median": 0.2478,
+        "sample_thin": true
+      },
+      "1-4w": {
+        "n": 4,
+        "brier_mean": 0.2146,
+        "brier_median": 0.2112,
+        "sample_thin": true
+      },
+      "1-3mo": {
+        "n": 2,
+        "brier_mean": 0.209,
+        "brier_median": 0.209,
+        "sample_thin": true
+      },
+      ">3mo": {
+        "n": 1,
+        "brier_mean": 0.0137,
+        "brier_median": 0.0137,
+        "sample_thin": true
+      },
+      "total_n_resolved_horizon_known": 23
     },
     "0xfc65fc16afdee2cd662032fe009d165bc08ce624": {
       "<24h": {
@@ -3700,6 +3855,6 @@
       "total_n_resolved_horizon_known": 59
     }
   },
-  "n_wallets_horizon_known": 118,
+  "n_wallets_horizon_known": 123,
   "note": "v0.1 ships horizon-only component (Le component 1) from audit_ledger forward-witnessed chains. Domain \u00d7 horizon (Le component 3) requires per-chain domain tagging \u00b7 queued for v0.2 once build_audit_ledger.py is enriched."
 }

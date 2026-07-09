@@ -2,8 +2,8 @@
   "schema_version": "0.2",
   "method_version": "S18-v0.2",
   "quarter": "Q3 2026",
-  "published_at_unix": 1783499331,
-  "published_at_utc": "2026-07-08",
+  "published_at_unix": 1783591684,
+  "published_at_utc": "2026-07-09",
   "venue": "Polymarket",
   "byline": "VERDICT VENUE DESK",
   "composite_grade": "A-",
@@ -12,7 +12,7 @@
   "rating_status": "PROVISIONAL",
   "n_metrics_available": 3,
   "n_metrics_planned": 5,
-  "delta_vs_prior": "+0.4 notch from prior quarter",
+  "delta_vs_prior": "first published",
   "methodology_summary": "S18 v0.2 ships with 3 of 5 planned metrics live + 1 supplementary. v0.2 vs v0.1 delta: resolution_timing now LIVE (was pending due to missing end_unix in audit_ledger; now sourced from data/uma_disputes_raw.json closed_at_unix + resolved_at_unix). v0.3 will add uma_dispute_frequency (via Polygon RPC OO V2 contract events) + withdraw_success_rate (Polygon RPC withdraw monitor). Each metric graded A-D; composite is equal-weighted mean. Sources: audit_ledger + settlement_attestations + uma_disputes_raw (Polymarket Gamma /markets resolution metadata).",
   "components": {
     "resolution_timing": {
@@ -35,11 +35,11 @@
     },
     "backfill_coverage": {
       "metric_label": "% of audit chains in resolved or backfilled state",
-      "value": 96.0,
+      "value": 96.1,
       "value_unit": "percent",
-      "sample_size": 5435,
-      "n_resolved": 231,
-      "n_backfilled": 4989,
+      "sample_size": 5470,
+      "n_resolved": 233,
+      "n_backfilled": 5021,
       "grade": "A",
       "note": "Higher is better. Resolved chains without receipts indicate audit-trail gaps."
     }
@@ -60,7 +60,7 @@
     "withdraw_success_rate  \u00b7 Polygon RPC monitor of CTFExchange withdraw txs"
   ],
   "sources": [
-    "data/audit_ledger.json (M1 chain ledger \u00b7 5435 chains)",
+    "data/audit_ledger.json (M1 chain ledger \u00b7 5470 chains)",
     "data/settlement_attestations.json (W3 Polygon RPC v60bf \u00b7 1016 attestations)",
     "data/uma_disputes_raw.json (NEW v60bz \u00b7 Polymarket Gamma /markets \u00b7 6137 closed markets)"
   ],
