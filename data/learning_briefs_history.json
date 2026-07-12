@@ -2,7 +2,7 @@
   "schema_version": 1,
   "methodology_version": "learning-brief-v0.1",
   "description": "Daily Copyability Learning Brief history \u00b7 365-day rolling \u00b7 cumulative timeline of pre-registered trigger fires + per-milestone snapshots",
-  "updated_at_unix": 1783758559,
+  "updated_at_unix": 1783845037,
   "history": [
     {
       "date": "2026-05-13",
@@ -160,6 +160,34 @@
         "COPY_NOW": null,
         "COPY_SMALL": 0.7547,
         "AVOID": 0.3316
+      }
+    },
+    {
+      "date": "2026-07-12",
+      "day_n": 60,
+      "milestone": "Day-60",
+      "counts": {
+        "PASS": 0,
+        "WARN": 0,
+        "FAIL": 1,
+        "TOTAL_FIRES": 2
+      },
+      "fires_summary": [
+        {
+          "id": "AVOID_correct_below_55",
+          "tier": "AVOID",
+          "sev": "FAIL"
+        },
+        {
+          "id": "tier_insufficient_n",
+          "tier": "COPY_NOW",
+          "sev": "INFO"
+        }
+      ],
+      "snapshot_rates": {
+        "COPY_NOW": null,
+        "COPY_SMALL": 0.7576,
+        "AVOID": 0.3291
       }
     }
   ]
