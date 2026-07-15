@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at_unix": 1784017718,
+  "generated_at_unix": 1784074297,
   "methodology_version": "L4-truth-anchor v2.0",
   "description": "Daily OpenTimestamps Bitcoin anchor for the engine-state digest \u00b7 the Layer 4 belt-and-suspenders attestation",
   "verify_instructions": "Anyone can verify any row: `ots verify <receipt_path>`. Pending status upgrades to confirmed within 24-72h as Bitcoin includes the calendar attestations.",
@@ -940,13 +940,14 @@
     {
       "date": "2026-07-14",
       "mode": "manifest",
-      "digest_sha256": "1a457e20afab4673c493df154c83297b2eb254145eb2538deb0385a3cb34fb76",
+      "digest_sha256": "c5ff2874a35dab1179d215568cc632647878ab7febd945182ec460bede5876b5",
       "methodology_version": "L4-manifest v1.0",
       "receipt_path": "data/ots_receipts/2026-07-14.manifest.digest.ots",
       "digest_input_path": "data/ots_receipts/2026-07-14.manifest.digest",
-      "status": "pending",
-      "stamped_at_unix": 1784017715,
-      "verify_command": "ots verify data/ots_receipts/2026-07-14.manifest.digest.ots"
+      "status": "confirmed",
+      "stamped_at_unix": 1784024995,
+      "verify_command": "ots verify data/ots_receipts/2026-07-14.manifest.digest.ots",
+      "confirmed_at_unix": 1784074285
     },
     {
       "date": "2026-07-14",
@@ -955,9 +956,32 @@
       "methodology_version": "L4-truth-anchor v2.0",
       "receipt_path": "data/ots_receipts/2026-07-14.digest.ots",
       "digest_input_path": "data/ots_receipts/2026-07-14.digest",
+      "status": "confirmed",
+      "stamped_at_unix": 1784024991,
+      "verify_command": "ots verify data/ots_receipts/2026-07-14.digest.ots",
+      "confirmed_at_unix": 1784024993
+    },
+    {
+      "date": "2026-07-15",
+      "mode": "manifest",
+      "digest_sha256": "e18d5dcca2b3f8cd1081a383c3d598e28803d99da58a58424da55c7077d9794d",
+      "methodology_version": "L4-manifest v1.0",
+      "receipt_path": "data/ots_receipts/2026-07-15.manifest.digest.ots",
+      "digest_input_path": "data/ots_receipts/2026-07-15.manifest.digest",
       "status": "pending",
-      "stamped_at_unix": 1784017569,
-      "verify_command": "ots verify data/ots_receipts/2026-07-14.digest.ots"
+      "stamped_at_unix": 1784074290,
+      "verify_command": "ots verify data/ots_receipts/2026-07-15.manifest.digest.ots"
+    },
+    {
+      "date": "2026-07-15",
+      "mode": "truth",
+      "digest_sha256": "9d8388dca56388d2e23220d28fc47f670917cc9ced207555b7bf3336dfbead95",
+      "methodology_version": "L4-truth-anchor v2.0",
+      "receipt_path": "data/ots_receipts/2026-07-15.digest.ots",
+      "digest_input_path": "data/ots_receipts/2026-07-15.digest",
+      "status": "pending",
+      "stamped_at_unix": 1784074281,
+      "verify_command": "ots verify data/ots_receipts/2026-07-15.digest.ots"
     }
   ]
 }
