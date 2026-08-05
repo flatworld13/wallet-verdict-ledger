@@ -3,7 +3,7 @@
 Auto-generated from `engine/server.py` `methodology_versions` list at sync time.
 Each version has a real GitHub commit URL · timestamp witnessed by GitHub's server.
 
-_Last synced: 2026-08-04 23:52 UTC_
+_Last synced: 2026-08-05 21:33 UTC_
 
 ## Why we publish a correction history
 
