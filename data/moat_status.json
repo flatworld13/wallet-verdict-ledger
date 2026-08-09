@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "date": "2026-08-08",
-  "generated_at_unix": 1786232214,
+  "date": "2026-08-09",
+  "generated_at_unix": 1786288344,
   "five_bucket_framing": {
     "top_level_canonical_1liner": "VERDICT joins wallet behavior, forecast skill, execution quality, market-risk context, and timestamped proof into one verified wallet rating.",
     "lock_id": "verified_wallet_rating_lock",
@@ -27,7 +27,7 @@
           "4_outcome_verification",
           "14_copyability_execution_validation"
         ],
-        "live_evidence_count": 9151
+        "live_evidence_count": 9355
       },
       {
         "order": 3,
@@ -85,7 +85,7 @@
       "evidence_count": 502,
       "evidence_unit": "wallets in cohort",
       "source_file": "data/wallets_combined.json",
-      "freshness_unix": 1785304239,
+      "freshness_unix": 1786267722,
       "m_axis": "M3 vocabulary",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/data/wallets_combined.json"
     },
@@ -103,20 +103,20 @@
       "rank": 4,
       "name": "Outcome verification",
       "description": "UMA-resolved markets + engine_was_right per chain + AVOID-call accuracy",
-      "evidence_count": 6819,
+      "evidence_count": 7023,
       "evidence_unit": "forward-witnessed chains",
       "live_chains": 219,
-      "resolved_chains": 6600,
-      "avoid_accuracy_pct": 78.3,
+      "resolved_chains": 6804,
+      "avoid_accuracy_pct": 78.6,
       "avoid_accuracy_ci95": [
-        77.0,
-        79.5
+        77.4,
+        79.8
       ],
       "avoid_accuracy_method": "Wilson score interval \u00b7 z=1.96",
-      "avoid_calls_n": 4208,
-      "avoid_correct_n": 3295,
+      "avoid_calls_n": 4361,
+      "avoid_correct_n": 3428,
       "source_file": "data/audit_ledger.json",
-      "freshness_unix": 1786232210,
+      "freshness_unix": 1786288341,
       "m_axis": "M1 forward-witnessed pre-resolution truth",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/data/audit_ledger.json"
     },
@@ -128,7 +128,7 @@
       "evidence_unit": "methodology versions",
       "methodology_current": "v2.3",
       "source_file": "_private/_ingest/compute_*.py (private repo per TOP RULE -1)",
-      "freshness_unix": 1786232214,
+      "freshness_unix": 1786288344,
       "m_axis": "M5 methodology versioning + legal armor",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/blob/main/methodology_versions.md"
     },
@@ -144,7 +144,7 @@
       "first_anchor": "2026-05-09",
       "latest_anchor": "2026-08-08",
       "source_file": "data/ots_anchor_history.json + data/ots_receipts/",
-      "freshness_unix": 1786196788,
+      "freshness_unix": 1786232233,
       "m_axis": "M1 + M2 (only-neutral-seat audit ledger)",
       "verifiable_at": "github.com/flatworld13/wallet-verdict-ledger/tree/main/data/ots_receipts"
     },
@@ -198,13 +198,13 @@
       "description": "Universe of distinct identities the cohort transacted with \u00b7 cohort + external counterparties \u00b7 co-fill edges \u00b7 the FIRST real broadening of the base since cohort hit 241",
       "evidence_count": 3508,
       "evidence_unit": "distinct identities (cohort + counterparties)",
-      "cohort_size": 500,
+      "cohort_size": 502,
       "external_nodes": 3020,
       "edges": 14596,
-      "expansion_factor": 7.016,
+      "expansion_factor": 6.988,
       "methodology": "W2-v0.2-full",
       "source_file": "data/counterparty_graph.json",
-      "freshness_unix": 1785304241,
+      "freshness_unix": 1786267724,
       "w2_status": "LIVE since 2026-05-10 (v60bg \u00b7 W2 of the 4-axis base-widening \u00b7 the REAL widening)",
       "m_axis": "M1 (forward-witnessed universe snapshot) + M3 (vocabulary lock-in)",
       "v_axis": "V1 (verdict-on-watchlist \u00b7 cohort-INDEPENDENT \u00b7 works on any address)",
@@ -388,7 +388,7 @@
       "edge_forward_witnessed_n": 18,
       "edge_forward_witnessed_accuracy": 0.6667,
       "edge_retroactive_n": 464,
-      "edge_retroactive_accuracy": 0.5754,
+      "edge_retroactive_accuracy": 0.5733,
       "rating_status": "PROVISIONAL",
       "marketed": false,
       "source_files": [
@@ -466,21 +466,21 @@
     "ots_pending": 4,
     "ots_confirmed": 111,
     "methodology_versions_published": 47,
-    "forward_chains_total": 6819,
+    "forward_chains_total": 7023,
     "forward_chains_live": 219,
     "forward_verified": 21,
     "forward_pending": 219,
-    "avoid_accuracy_pct": 78.3,
+    "avoid_accuracy_pct": 78.6,
     "avoid_accuracy_ci95": [
-      77.0,
-      79.5
+      77.4,
+      79.8
     ],
-    "avoid_calls_n": 4208,
+    "avoid_calls_n": 4361,
     "cohort_size": 502,
     "tier2_fills": 86264,
     "derived_metrics_today": 502,
     "universe_size": 3508,
-    "universe_expansion_x": 7.016,
+    "universe_expansion_x": 6.988,
     "note": "The compounding-dataset flywheel \u00b7 per CLAUDE.md TOP RULE 0 \u00a7 \"THE COMPOUNDING-DATASET FLYWHEEL\". A new entrant on Day 1 has 0 of any of the above. Every day from now, our gap WIDENS \u00b7 not stays flat."
   },
   "summary": {
@@ -489,8 +489,8 @@
     "components_anchored": 18,
     "strongest_component": "12 Truth-ephemeral (the #1 moat-of-moats \u00b7 42 non-backfillable files \u00b7 155.28 MB) \u00b7 operator-locked v60cq",
     "newest_component": "18 Price-integrity interpreter \u00b7 Layer 2 (2026-05-25) \u00b7 212 forward-witnessed price verdicts \u00b7 8 MANIPULABLE / 14 REAL \u00b7 the \"is this price real?\" answer \u00b7 $0 incremental (structural facts)",
-    "snapshot_date": "2026-08-08",
-    "snapshot_unix": 1786232214,
+    "snapshot_date": "2026-08-09",
+    "snapshot_unix": 1786288344,
     "next_scheduled_anchor": "tomorrow 03:00 UTC via daily-moat.yml Stage 6b-pre + Stage 6b"
   },
   "description": "Board 6 of the 6-board operating model \u00b7 per CLAUDE.md TOP RULE 0 \u00a7 \"THE 6-COMPONENT MOAT SURFACE\" (LOCKED 2026-05-10 \u00b7 D1) + \u00a7 \"FORWARD-ANCHORED DERIVED METRICS\" (LOCKED 2026-05-10 \u00b7 D5) + \u00a7 VERIFIED WALLET RATING LOCK (2026-05-10 mid-afternoon \u00b7 TOP-LEVEL canonical 1-liner \u00b7 v60cj). Daily snapshot pushed to Notion DB \u00b7 operator can see the moat compound over time."
