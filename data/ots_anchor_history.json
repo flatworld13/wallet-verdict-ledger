@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at_unix": 1786366347,
+  "generated_at_unix": 1786406632,
   "methodology_version": "L4-truth-anchor v2.0",
   "description": "Daily OpenTimestamps Bitcoin anchor for the engine-state digest \u00b7 the Layer 4 belt-and-suspenders attestation",
   "verify_instructions": "Anyone can verify any row: `ots verify <receipt_path>`. Pending status upgrades to confirmed within 24-72h as Bitcoin includes the calendar attestations.",
@@ -1483,9 +1483,10 @@
       "methodology_version": "L4-manifest v1.0",
       "receipt_path": "data/ots_receipts/2026-08-10.manifest.digest.ots",
       "digest_input_path": "data/ots_receipts/2026-08-10.manifest.digest",
-      "status": "pending",
+      "status": "confirmed",
       "stamped_at_unix": 1786366339,
-      "verify_command": "ots verify data/ots_receipts/2026-08-10.manifest.digest.ots"
+      "verify_command": "ots verify data/ots_receipts/2026-08-10.manifest.digest.ots",
+      "confirmed_at_unix": 1786406614
     },
     {
       "date": "2026-08-10",
@@ -1494,9 +1495,32 @@
       "methodology_version": "L4-truth-anchor v2.0",
       "receipt_path": "data/ots_receipts/2026-08-10.digest.ots",
       "digest_input_path": "data/ots_receipts/2026-08-10.digest",
-      "status": "pending",
+      "status": "confirmed",
       "stamped_at_unix": 1786366325,
-      "verify_command": "ots verify data/ots_receipts/2026-08-10.digest.ots"
+      "verify_command": "ots verify data/ots_receipts/2026-08-10.digest.ots",
+      "confirmed_at_unix": 1786406618
+    },
+    {
+      "date": "2026-08-11",
+      "mode": "manifest",
+      "digest_sha256": "588ba533a7aa8a2944f4163567b792479c60d4ebfef12360f727b4b8f5328b9f",
+      "methodology_version": "L4-manifest v1.0",
+      "receipt_path": "data/ots_receipts/2026-08-11.manifest.digest.ots",
+      "digest_input_path": "data/ots_receipts/2026-08-11.manifest.digest",
+      "status": "pending",
+      "stamped_at_unix": 1786406624,
+      "verify_command": "ots verify data/ots_receipts/2026-08-11.manifest.digest.ots"
+    },
+    {
+      "date": "2026-08-11",
+      "mode": "truth",
+      "digest_sha256": "8e83888cbe0cc7dac234b0e5870913e7c2a61ad87c4fdf9c9f9c9be5fb659ba7",
+      "methodology_version": "L4-truth-anchor v2.0",
+      "receipt_path": "data/ots_receipts/2026-08-11.digest.ots",
+      "digest_input_path": "data/ots_receipts/2026-08-11.digest",
+      "status": "pending",
+      "stamped_at_unix": 1786406610,
+      "verify_command": "ots verify data/ots_receipts/2026-08-11.digest.ots"
     }
   ]
 }
