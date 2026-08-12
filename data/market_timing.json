@@ -1,8 +1,8 @@
 {
   "schema_version": "0.1",
   "method_version": "market-timing-v0.1-provisional",
-  "built_at_unix": 1786491309,
-  "built_at_iso": "2026-08-11T23:35:09.466794+00:00",
+  "built_at_unix": 1786539544,
+  "built_at_iso": "2026-08-12T12:59:04.710101+00:00",
   "doctrine": "Layer 4 \u00b7 smart-money timing \u00b7 WHICH graded wallets entered a market, HOW EARLY, WHICH WAY \u00b7 forward-witnessed \u00b7 gradeable on resolution. Trades are public; the early-direction call committed BEFORE resolution is the moat (TOP RULE 0 \u00a7TRUTH-EPHEMERAL).",
   "constants": {
     "MIN_ENTRANTS": 4,
@@ -19,7 +19,7 @@
       "note": "the ONLY edge that gates marketing \u00b7 signal committed BEFORE the market resolved \u00b7 cannot be backfilled"
     },
     "retroactive_backtest": {
-      "accuracy": 0.5733,
+      "accuracy": 0.5711,
       "n": 464,
       "note": "DIAGNOSTIC ONLY \u00b7 NOT a marketing claim \u00b7 markets already resolved when the signal was computed \u00b7 forward_witnessed=false (the copyability-v4.0 / v60gSS lesson \u00b7 retroactive accuracy is sample-size insurance, not moat)"
     },
@@ -36,7 +36,7 @@
     "edge_forward_witnessed_n": 18,
     "edge_forward_witnessed_accuracy": 0.6667,
     "edge_retroactive_n": 464,
-    "edge_retroactive_accuracy": 0.5733
+    "edge_retroactive_accuracy": 0.5711
   },
   "tier": [
     "T2 (smart-money-early-which-way)",
@@ -21268,8 +21268,8 @@
           "size_usd_proxy": 333.33
         }
       ],
-      "resolved_outcome_index": 1,
-      "early_smart_direction_correct": true,
+      "resolved_outcome_index": 0,
+      "early_smart_direction_correct": false,
       "edge_forward_witnessed": false
     },
     "0x253310f4e8839dd3eab2cffac9585f723ea7f1e88dc5cf36032186ac12a0722b": {
@@ -55824,8 +55824,8 @@
           "size_usd_proxy": 1176.47
         }
       ],
-      "resolved_outcome_index": 0,
-      "early_smart_direction_correct": true,
+      "resolved_outcome_index": 1,
+      "early_smart_direction_correct": false,
       "edge_forward_witnessed": false
     },
     "0x70f4e79f7273a98f12f54bea2e70f4b9b98467a15dab085b9f4423f1189cac2c": {
@@ -96606,8 +96606,8 @@
           "size_usd_proxy": 7611.72
         }
       ],
-      "resolved_outcome_index": 0,
-      "early_smart_direction_correct": false,
+      "resolved_outcome_index": 1,
+      "early_smart_direction_correct": true,
       "edge_forward_witnessed": false
     },
     "0x535b665c29711b52c8e3b576e71a1f57bbdd0b371ccfbd0a983c03a4c48c2d31": {
